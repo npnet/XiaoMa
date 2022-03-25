@@ -1,0 +1,94 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/seat_table_tap_hotel_height"
+    android:gravity="center_vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tap_one_hotel"
+            android:layout_width="@dimen/seat_table_tap_hotel_circle_width"
+            android:layout_height="@dimen/seat_table_tap_hotel_circle_height"
+            android:background="@drawable/round_back_yellow"
+            android:gravity="center"
+            android:text="@string/one_number"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/seat_table_tap_hotel_text_size" />
+
+        <TextView
+            android:id="@+id/tap_one_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/seat_table_tap_hotel_margin_left"
+            android:text="@string/select_room_type"
+            android:textSize="@dimen/seat_table_tap_hotel_text_size" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="@dimen/seat_table_tap_hotel_line_width"
+        android:layout_height="@dimen/seat_table_tap_hotel_line_height"
+        android:layout_marginLeft="@dimen/seat_table_tap_hotel_line_margin_left"
+        android:layout_marginRight="@dimen/seat_table_tap_hotel_line_margin_right"
+        android:background="@color/color_8a919d"
+        android:gravity="center" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tap_two_hotel"
+            android:layout_width="@dimen/seat_table_tap_hotel_circle_width"
+            android:layout_height="@dimen/seat_table_tap_hotel_circle_height"
+            android:background="@drawable/round_back_gray"
+            android:gravity="center"
+            android:text="@string/two_number"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/seat_table_tap_hotel_text_size" />
+
+        <TextView
+            android:id="@+id/tap_two_select_session"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/seat_table_tap_hotel_margin_left"
+            android:text="@string/input_book_info"
+            android:textColor="@color/color_8a919d"
+            android:textSize="@dimen/seat_table_tap_hotel_text_size" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="@dimen/seat_table_tap_hotel_line_width"
+        android:layout_height="@dimen/seat_table_tap_hotel_line_height"
+        android:layout_marginLeft="@dimen/seat_table_tap_hotel_line_margin_left"
+        android:layout_marginRight="@dimen/seat_table_tap_hotel_line_margin_right"
+        android:background="@color/color_8a919d"
+        android:gravity="center" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tap_three_hotel"
+            android:layout_width="@dimen/seat_table_tap_hotel_circle_width"
+            android:layout_height="@dimen/seat_table_tap_hotel_circle_height"
+            android:background="@drawable/round_back_gray"
+            android:gravity="center"
+            android:text="@string/three_number"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/seat_table_tap_hotel_text_size" />
+
+        <TextView
+            android:id="@+id/tap_three_confirm_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/seat_table_tap_hotel_margin_left"
+            android:text="@string/pay_code"
+            android:textColor="@color/color_8a919d"
+            android:textSize="@dimen/seat_table_tap_hotel_text_size" />
+    </LinearLayout>
+</LinearLayout>

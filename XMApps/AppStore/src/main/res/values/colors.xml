@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="act_mian_navi_color">#484038</color>
+    <color name="white">#ffffff</color>
+    <color name="bg_list_selected_color">#33ffffff</color>
+    <color name="bg_navigation">#071725</color>
+
+    <color name="color_white">#ffffff</color>
+    <color name="color_gray">#999999</color>
+    <color name="color_tab_select">#4A4B4F</color>
+    <color name="color_tab_un_select">#0F0F10</color>
+
+    <color name="color_tab_selected">#8a919d</color>
+
+    <color name="white_80">#33ffffff</color>
+
+    <color name="color_979da7">#979da7</color>
+    <color name="color_7e838d">#7e838d</color>
+    <color name="color_8a919c">#8a919c</color>
+    <color name="color_8a919d">#8a919d</color>
+    <color name="window_bg" type="drawable">#00000000</color>
+
+    <!--下载按钮已走进度颜色-->
+    <color name="download_bg_color">#E64764a8</color>
+    <!--下载按钮点击颜色-->
+    <color name="download_bg_press_color">#0D999999</color>
+    <!--下载暂停文字颜色-->
+    <color name="download_pause_text_color">#fbd3a4</color>
+    <!--下载暂停已走进度颜色-->
+    <color name="download_pause_bg_colorr">#E6454d5a</color>
+    <!--不可点击-->
+    <color name="download_un_click_color">#8a919c</color>
+</resources>

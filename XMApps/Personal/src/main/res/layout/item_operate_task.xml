@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="150px"
+    tools:ignore="MissingDefaultResource">
+    <!--app:layout_constraintBottom_toBottomOf="@id/tvCount"-->
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/ivIcon"
+        android:layout_width="@dimen/width_task_center_right_list_icon"
+        android:layout_height="@dimen/height_task_center_right_list_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/test" />
+
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_task_center_right_list_desc"
+        android:gravity="center_vertical"
+        android:layout_marginStart="@dimen/size_task_center_right_list_progress_margin_start"
+        android:layout_marginEnd="@dimen/size_task_center_right_list_progress_margin_end"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnOperate"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/ivIcon"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/test" />
+
+    <Button
+        android:id="@+id/btnOperate"
+        android:layout_width="@dimen/width_task_center_right_list_btn"
+        android:layout_height="@dimen/height_task_center_right_list_btn"
+        android:layout_marginTop="@dimen/size_task_center_right_list_btn_margin_top"
+        android:background="@drawable/selector_button"
+        android:textColor="@color/selector_button_text_color"
+        android:textSize="@dimen/font_task_center_right_list_btn_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/go_to_finish" />
+
+</android.support.constraint.ConstraintLayout>

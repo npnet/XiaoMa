@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="656px"
+    android:layout_height="425px"
+    android:background="@drawable/bg_ai_recom">
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="300px"
+        android:layout_height="60px"
+        android:layout_marginTop="20px"
+        android:gravity="center"
+        android:text="@string/travel_tip_str"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dialog_title_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_recommend"
+        android:layout_width="352px"
+        android:layout_height="160px"
+        android:layout_marginTop="20px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_title" />
+
+    <TextView
+        android:id="@+id/dialog_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38px"
+        android:layout_marginTop="20px"
+        android:layout_marginEnd="38px"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="2"
+        android:textColor="@color/white"
+        android:textSize="24px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_recommend"
+        tools:text="快到饭点了快到饭点了快到饭点了快到饭点了快到饭点了快到饭点了快到饭点了快到饭点了" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_marginBottom="73px"
+        android:background="@drawable/bg_line_hor"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+    <TextView
+        android:id="@+id/dialog_sure"
+        android:layout_width="0px"
+        android:layout_height="72px"
+        android:background="@drawable/bg_recom_title_small"
+        android:gravity="center"
+        android:text="@string/have_a_look"
+        android:textSize="28px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/dialog_cancel"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <TextView
+        android:id="@+id/dialog_cancel"
+        android:layout_width="0px"
+        android:layout_height="72px"
+        android:gravity="center"
+        android:text="@string/not_need_now"
+        android:textSize="28px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/dialog_sure" />
+
+    <ImageView
+        android:id="@+id/iv_rec_play"
+        android:layout_width="72px"
+        android:layout_height="52px"
+        android:scaleType="centerInside"
+        android:src="@drawable/icon_recom_play"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/dialog_sure"
+        app:layout_constraintEnd_toEndOf="@+id/dialog_sure"
+        app:layout_constraintStart_toStartOf="@+id/dialog_sure"
+        app:layout_constraintTop_toTopOf="@+id/dialog_sure" />
+
+
+    <View
+        android:layout_width="2px"
+        android:layout_height="72px"
+        android:background="@drawable/bg_line_ver"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>

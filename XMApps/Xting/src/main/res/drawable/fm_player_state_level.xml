@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:drawable="@drawable/fm_player_state_loading_selector_press"
+        android:maxLevel="1" />
+    <item
+        android:drawable="@drawable/fm_player_state_pause_selector_press"
+        android:maxLevel="2" />
+    <item
+        android:drawable="@drawable/fm_player_state_play_selector_press"
+        android:maxLevel="7" />
+    <item
+        android:drawable="@drawable/fm_player_state_switch_selector_press"
+        android:maxLevel="20" />
+
+    <item
+        android:drawable="@drawable/transparent_bg"
+        android:maxLevel="21" />
+
+</level-list>

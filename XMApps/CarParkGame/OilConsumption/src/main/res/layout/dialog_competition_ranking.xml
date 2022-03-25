@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="1000px"
+    android:layout_height="420px">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="46px"
+        android:layout_marginTop="45px"
+        android:background="@drawable/selector_music_mg"/>
+
+    <FrameLayout
+        android:id="@+id/frame_rank"
+        android:layout_width="188px"
+        android:layout_height="233px"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="150px"
+        android:layout_marginTop="73px"
+        android:background="@drawable/selector_music_mg">
+
+        <TextView
+            android:id="@+id/rank"
+            android:text="888"
+            android:textSize="48px"
+            android:textColor="#a66408"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="55px"/>
+
+    </FrameLayout>
+
+    <TextView
+        android:text="当前名次"
+        android:textSize="30px"
+        android:textColor="#a1a7b3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/frame_rank"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="10px"
+        android:layout_marginLeft="186px"/>
+
+    <TextView
+        android:id="@+id/rank_prefix"
+        android:text="名次上升"
+        android:textSize="47px"
+        android:textColor="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="160px"
+        android:layout_marginLeft="493px"/>
+    <TextView
+        android:id="@+id/rank_suffix"
+        android:text="12名"
+        android:textSize="47px"
+        android:textColor="#ffcc66"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/rank_prefix"
+        app:layout_constraintLeft_toRightOf="@id/rank_prefix"
+        android:drawableRight="@drawable/selector_music_mg"/>
+    <TextView
+        android:id="@+id/update_prefix"
+        android:text="(排行排名词于"
+        android:textSize="24px"
+        android:textColor="#a1a7b3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/rank_prefix"
+        app:layout_constraintLeft_toLeftOf="@id/rank_prefix"/>
+
+    <TextView
+        android:id="@+id/update_suffix"
+        android:text="12月12日"
+        android:textSize="24px"
+        android:textColor="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/update_prefix"
+        app:layout_constraintLeft_toRightOf="@id/update_prefix"/>
+    <TextView
+        android:text="更新"
+        android:textSize="24px"
+        android:textColor="#a1a7b3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/update_suffix"
+        app:layout_constraintLeft_toRightOf="@id/update_suffix"/>
+
+</android.support.constraint.ConstraintLayout>

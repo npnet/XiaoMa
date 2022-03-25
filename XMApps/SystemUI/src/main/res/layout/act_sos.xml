@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:divider="@drawable/status_bar_icon_divider"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_car_launcher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="原生桌面"
+        android:textSize="@dimen/btn_open_notification_text" />
+
+    <Button
+        android:id="@+id/btn_engineering_model"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="工程模式"
+        android:textSize="@dimen/btn_open_notification_text" />
+
+    <Button
+        android:id="@+id/btn_simple_launcher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="精简桌面"
+        android:textSize="@dimen/btn_open_notification_text" />
+</LinearLayout>

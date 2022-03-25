@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:id="@+id/service_main_layout"
+    android:visibility="invisible"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="@dimen/service_main_left_width"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/maintain_details_layout_margin"
+        >
+
+        <TextView
+            android:id="@+id/update_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/update_distance_text_padding"
+            android:text="用于测试修改车机里程数"
+            android:textSize="@dimen/update_distance_text_sixe"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tv_maintain_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/tv_maintain_title_start"
+            android:layout_marginTop="@dimen/tv_maintain_title_top"
+            android:text="@string/maintain_title"
+            android:textSize="@dimen/maintain_tiltle_text_size"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/layout_kilometre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/layout_kilometre_start"
+            android:layout_marginTop="@dimen/layout_kilometre_top"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_maintain_title">
+
+            <TextView
+                android:id="@+id/tv_maintain_kilometre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/maintain_kilometre"
+                android:textSize="@dimen/maintain_kilometre_text_size"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/tv_kilometre_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/tv_kilometre_detail_top"
+                android:text="1200KM"
+                android:textSize="@dimen/kilometre_details_text_size"
+                android:textStyle="bold"
+                app:layout_constraintHorizontal_bias="0.1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/tv_maintain_kilometre"
+                app:layout_constraintTop_toBottomOf="@+id/tv_maintain_kilometre" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/divide"
+            android:visibility="gone"
+            android:layout_width="@dimen/divide_width"
+            android:layout_height="@dimen/divide_height"
+            android:layout_marginStart="@dimen/divide_start"
+            android:layout_marginTop="@dimen/divide_top"
+            android:src="@drawable/line"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/layout_kilometre"
+            app:layout_constraintTop_toBottomOf="@+id/tv_maintain_title" />
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/layout_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_time_left"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/layout_kilometre"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/divide"
+            app:layout_constraintTop_toTopOf="@+id/layout_kilometre"
+            app:layout_constraintVertical_bias="0.0">
+
+            <TextView
+                android:id="@+id/tv_maintain_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/maintain_time"
+                android:textSize="@dimen/maintain_time_text_size"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/tv_time_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/tv_time_detail_top"
+                android:text="@string/three_months"
+                android:textSize="@dimen/time_details_text_size"
+                android:textStyle="bold"
+                app:layout_constraintHorizontal_bias="0.3"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_maintain_time" />
+        </android.support.constraint.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/tv_maintain_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/tv_maintain_tips_top"
+            android:textSize="@dimen/maintain_tips_text_size"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@+id/btn_maintain"
+            app:layout_constraintStart_toStartOf="@+id/btn_maintain"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_check_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffcd91"
+            android:layout_marginTop="@dimen/tv_check_more_top"
+            android:text="@string/check_more"
+            android:drawableRight="@drawable/more_right"
+            android:drawablePadding="@dimen/tv_check_more_img_padding"
+            android:textSize="@dimen/check_more_text_size"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@+id/tv_maintain_tips"
+            app:layout_constraintStart_toStartOf="@+id/tv_maintain_tips"
+            app:layout_constraintTop_toBottomOf="@+id/tv_maintain_tips" />
+
+        <Button
+            android:id="@+id/btn_maintain"
+            android:layout_width="@dimen/btn_maintain_width"
+            android:layout_height="@dimen/btn_maintain_height"
+            android:layout_marginStart="@dimen/btn_maintain_start"
+            android:layout_marginTop="@dimen/btn_maintain_top"
+            android:background="@drawable/selector_button"
+            android:text="@string/go_to_maintain"
+            android:textSize="@dimen/btn_maintain_size"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+     <ImageView
+         android:src="@drawable/light_striation"
+         android:layout_marginTop="@dimen/light_striation_top"
+         android:layout_width="@dimen/light_striation_width"
+         android:layout_height="@dimen/light_striation_height" />
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        >
+
+        <include
+            layout="@layout/main_item"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </android.support.constraint.ConstraintLayout>
+</LinearLayout>
+</LinearLayout>

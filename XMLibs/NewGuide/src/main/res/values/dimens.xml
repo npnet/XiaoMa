@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="px_300">300px</dimen>
+    <dimen name="px_70">70px</dimen>
+    <dimen name="px_32">32px</dimen>
+    <dimen name="px_56">56px</dimen>
+    <dimen name="px_28">28px</dimen>
+    <dimen name="px_220">220px</dimen>
+    <dimen name="px_654">654px</dimen>
+    <dimen name="px_50">50px</dimen>
+</resources>

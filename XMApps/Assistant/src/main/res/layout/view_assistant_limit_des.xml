@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+  <!--  &lt;!&ndash;分割线&ndash;&gt;
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/limit_divider_height"
+        android:layout_marginBottom="15px"
+        android:background="@color/color_limit_divider" />-->
+
+    <!--限行时间-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10px"
+        android:orientation="horizontal"
+        android:paddingLeft="20px"
+        android:paddingRight="20px">
+
+        <TextView
+            style="@style/limit_text_view_style_light"
+            android:text="@string/limit_date" />
+
+        <TextView
+            android:id="@+id/tv_limit_time"
+            style="@style/limit_text_view_style_dark" />
+
+    </LinearLayout>
+
+    <!--限行路段-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15px"
+        android:orientation="horizontal"
+        android:paddingLeft="20px"
+        android:paddingRight="20px">
+
+        <TextView
+            style="@style/limit_text_view_style_light"
+            android:text="@string/limit_area" />
+
+        <TextView
+            android:id="@+id/tv_limit_place"
+            style="@style/limit_text_view_style_dark" />
+
+    </LinearLayout>
+
+</LinearLayout>

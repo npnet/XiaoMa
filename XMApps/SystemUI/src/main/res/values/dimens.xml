@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="PxUsage">
+    <dimen name="status_bar_horizontal_padding">30px</dimen>
+    <dimen name="status_bar_text_behind_icon">22px</dimen>
+    <dimen name="status_bar_text_pure">26px</dimen>
+    <dimen name="status_bar_volume_text">26px</dimen>
+
+    <dimen name="navigation_bar_ver_padding">50px</dimen>
+    <!--通知栏 begin-->
+    <dimen name="btn_open_notification_text">50px</dimen>
+
+    <dimen name="notification_panel_height">720px</dimen>
+    <dimen name="notification_panel_start_margin">435px</dimen>
+    <dimen name="notification_panel_empty_width">968px</dimen>
+
+    <dimen name="notification_item_group_height">100px</dimen>
+    <dimen name="notification_item_big_content_height">416px</dimen>
+    <dimen name="notification_item_icon_size">136px</dimen>
+    <dimen name="notification_item_del_width">136px</dimen>
+    <dimen name="notification_item_del_height">190px</dimen>
+    <dimen name="notification_item_del_text">30px</dimen>
+    <dimen name="notification_item_title_text">26px</dimen>
+    <dimen name="notification_item_content_text">24px</dimen>
+    <dimen name="notification_item_time_text">22px</dimen>
+    <dimen name="notification_item_timeline_width">180px</dimen>
+    <dimen name="notification_stick_top_padding">108px</dimen>
+    <dimen name="notification_stick_left_padding">7px</dimen>
+    <dimen name="notification_stick_width">8px</dimen>
+    <!--通知栏 end-->
+</resources>

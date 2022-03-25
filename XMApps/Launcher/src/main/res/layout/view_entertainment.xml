@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:id="@+id/rl_entertainment"
+        android:layout_width="@dimen/view_entertainment_rl_width"
+        android:layout_height="@dimen/view_entertainment_rl_height"
+        android:layout_gravity="center">
+
+
+        <ImageView
+            android:id="@+id/iv_entertainment"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_entertainment_iv_height"
+            android:src="@drawable/icon_default_icon" />
+
+        <TextView
+            android:id="@+id/tv_entertainment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_entertainment"
+            android:layout_marginTop="@dimen/view_entertainment_tv_top"
+            android:gravity="center"
+            android:textSize="@dimen/view_entertainment_tv_size" />
+
+
+        <!--<com.xiaoma.ui.view.MarqueeTextView-->
+        <!--android:id="@+id/tv_navi_tip"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/tv_navi"-->
+        <!--android:layout_marginTop="@dimen/dimen_20"-->
+        <!--android:gravity="center"-->
+        <!--android:singleLine="true"-->
+        <!--android:text="距离深南大道还有500m"-->
+        <!--android:textSize="@dimen/dimen_28" />-->
+
+        <Button
+            android:id="@+id/btn_operation"
+            android:layout_width="@dimen/view_entertainment_btn_operation_width"
+            android:layout_height="@dimen/view_entertainment_btn_operation_height"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/circle_shape"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/view_entertainment_btn_operation_size" />
+
+
+    </RelativeLayout>
+
+</merge>

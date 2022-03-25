@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="110px">
+
+    <TextView
+        android:id="@+id/tv_history_name"
+        android:layout_width="500px"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80px"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="#8a919d"
+        android:textSize="30px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="东风破" />
+
+
+    <Button
+        android:id="@+id/btn_history_delete"
+        android:layout_width="39px"
+        android:layout_height="39px"
+        android:background="@drawable/audio_delete"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>

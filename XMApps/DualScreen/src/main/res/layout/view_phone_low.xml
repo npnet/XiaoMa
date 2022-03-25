@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#fff"
+            android:textSize="28px"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/tv_contact_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20px"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:text="@string/contacts"
+            android:textColor="#fff"
+            android:textSize="28px"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_phone_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15px"
+            android:text="7608025"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textColor="#efd595"
+            android:textSize="34px"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/rl_un_hung_container"
+            android:layout_width="325px"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15px"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv_hung_up"
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/btn_hung_up" />
+
+            <ImageView
+                android:id="@+id/iv_answer"
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/btn_answer" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_hung_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15px"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv_hung_up_2"
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/btn_hung_up" />
+
+            <TextView
+                android:id="@+id/tv_contact_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15px"
+                android:text="02:13"
+                android:textColor="#ffffff"
+                android:textSize="28px" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="360px"
+            android:layout_height="230px"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:id="@+id/contact_list_ll">
+
+            <TextView
+                android:id="@+id/recent_calls_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24px"
+                android:gravity="center"
+                android:textColor="@color/simple_tv_color_yellow"
+                android:text="@string/recent_calls"
+                android:layout_marginBottom="20px"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rc_contact"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/rl_no_contact"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv_no_contact"
+                android:layout_width="380px"
+                android:layout_height="356px"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/icon_no_contact_high_wisdom"
+                android:layout_marginTop="55px"/>
+
+            <TextView
+                android:id="@+id/tv_no_contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/no_call_record"
+                android:textColor="#fff"
+                android:textSize="34px"
+                android:layout_marginTop="60px"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_no_blue"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_no_blue"
+                android:layout_width="380px"
+                android:layout_height="356px"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/icon_no_blue_high_wisdom"
+                android:layout_marginTop="55px"/>
+
+            <TextView
+                android:id="@+id/tv_no_blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/bt_disconnected"
+                android:textColor="#fff"
+                android:textSize="34px"
+                android:layout_marginTop="75px"/>
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rc_other_contact"
+            android:layout_width="440px"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone" />
+
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/bg_low_wisdom"
+        android:layout_width="460px"
+        android:layout_height="520px"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10px"
+        android:background="@drawable/bg_low_wisdom"
+        android:visibility="gone"/>
+</FrameLayout>

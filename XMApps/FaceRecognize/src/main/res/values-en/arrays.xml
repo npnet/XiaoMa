@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="types">
+        <item>LightFatigueDriving</item>
+        <item>MiddleFatigueDriving</item>
+        <item>HeavyFatigueDriving</item>
+        <item>Inattention</item>
+        <item>Smoking</item>
+        <item>PhoneCall</item>
+    </string-array>
+    <string-array name="light">
+        <item>Sleepy? take a break.</item>
+        <item>Is it tired? Take a break</item>
+        <item>Feeling tired？ Then take a break</item>
+    </string-array>
+    <string-array name="middles">
+        <item>You are sleepy, listen to the song.</item>
+        <item>Listen to music, wake up</item>
+        <item>Is it sleepy? Come to the song</item>
+    </string-array>
+    <string-array name="smoke">
+        <item>Smoking affects driving attention and always pays attention to driving safety</item>
+        <item>Smoking affects driving attention and always pays attention to driving safety</item>
+        <item>Smoking affects driving attention and always pays attention to driving safety</item>
+    </string-array>
+    <string-array name="phone">
+        <item>Driving on the phone, really unsafe</item>
+        <item>Driving on the phone, really unsafe</item>
+        <item>Driving on the phone, really unsafe</item>
+    </string-array>
+    <string-array name="attention">
+        <item>Don't look around, drive to concentrate.</item>
+        <item>Don't look around, drive to concentrate.</item>
+        <item>Detected that your attention is not concentrated, please keep an eye on the front view</item>
+    </string-array>
+    <string-array name="cancel">
+        <item>不</item>
+        <item>不需要</item>
+        <item>不要</item>
+        <item>不用</item>
+        <item>不听</item>
+        <item>关闭</item>
+        <item>取消</item>
+    </string-array>
+    <string-array name="ok">
+        <item>是</item>
+        <item>确定</item>
+        <item>好的</item>
+        <item>OK</item>
+        <item>来一首</item>
+    </string-array>
+</resources>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/like_friend_icon"
+                android:layout_width="80px"
+                android:layout_height="80px"
+                android:background="#847d8b" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:layout_marginLeft="15px">
+
+                <TextView
+                    android:id="@+id/like_friend_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="26px" />
+
+                <TextView
+                    android:id="@+id/like_msg_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="26px" />
+
+                <ImageView
+                    android:id="@+id/like_msg_delete"
+                    android:layout_width="35px"
+                    android:layout_height="35px"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/bg_common" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:layout_marginTop="15px"
+            android:background="#acaca9"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/like_share_icon"
+                android:layout_width="100px"
+                android:layout_height="70px"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15px"
+                android:background="#4a4b4a" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15px">
+
+                <TextView
+                    android:id="@+id/like_share_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15px"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="26px" />
+
+                <TextView
+                    android:id="@+id/like_share_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="25px"
+                    android:text=""
+                    android:textColor="#515050"
+                    android:textSize="24px" />
+
+                <TextView
+                    android:id="@+id/like_share_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="8px"
+                    android:layout_marginRight="15px"
+                    android:text=""
+                    android:textColor="#7e7c7c"
+                    android:textSize="24px" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="15px" />
+
+    </LinearLayout>
+</FrameLayout>

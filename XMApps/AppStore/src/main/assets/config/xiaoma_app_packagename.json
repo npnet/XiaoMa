@@ -1,0 +1,32 @@
+[
+  {
+    "packageName": "com.xiaoma.launcher"
+  },
+  {
+    "packageName": "com.xiaoma.app"
+  },
+  {
+    "packageName": "com.xiaoma.service"
+  },
+  {
+    "packageName": "com.xiaoma.club"
+  },
+  {
+    "packageName": "com.xiaoma.xting"
+  },
+  {
+    "packageName": "com.xiaoma.factoryactivities"
+  },
+  {
+    "packageName": "com.xiaoma.instruction"
+  },
+  {
+    "packageName": "com.xiaoma.trafficquery"
+  },
+  {
+    "packageName": "com.xiaoma.smart"
+  },
+  {
+    "packageName": "com.xiaoma.setting"
+  }
+]

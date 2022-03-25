@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_dialog_middle">
+
+
+    <ImageView
+        android:id="@+id/iv_close_scan_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_close_scan_code_margin"
+        android:layout_marginTop="@dimen/size_close_scan_code_margin"
+        android:src="@drawable/close_scan_code"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tv_prompt_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_dialog_title_margin_top"
+        android:gravity="center"
+        android:text="@string/prompt_title"
+        android:textSize="@dimen/font_of_shop_28"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tv_cash_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_price_text_margin_top"
+        android:textSize="@dimen/font_of_shop_26"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_prompt_title" />
+
+
+    <com.xiaoma.ui.view.RoundImageView
+        android:id="@+id/iv_scan_code_pay"
+        android:layout_width="@dimen/size_qr_code"
+        android:layout_height="@dimen/size_qr_code"
+        android:layout_marginTop="@dimen/size_qr_code_margin_top"
+        android:src="@drawable/place_holder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_cash_message" />
+
+    <ImageView
+        android:id="@+id/ali_pay_icon"
+        android:layout_width="30px"
+        android:layout_height="30px"
+        android:layout_marginStart="20px"
+        android:src="@drawable/ali_pay"
+        app:layout_constraintBottom_toBottomOf="@id/iv_scan_code_pay"
+        app:layout_constraintStart_toEndOf="@id/iv_scan_code_pay" />
+
+
+    <ImageView
+        android:id="@+id/we_chat_icon"
+        android:layout_width="30px"
+        android:layout_height="30px"
+        android:layout_marginStart="10px"
+        android:src="@drawable/wechat_pay"
+        app:layout_constraintBottom_toBottomOf="@id/ali_pay_icon"
+        app:layout_constraintStart_toEndOf="@id/ali_pay_icon" />
+
+
+    <LinearLayout
+        android:id="@+id/go_to_car_coin_pay"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/size_dialog_bottom_button"
+        android:background="@drawable/dialog_button_select"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/size_dialog_button_margin_bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <TextView
+            android:id="@+id/tv_buy_prefix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/buy_prefix"
+            android:textSize="@dimen/font_of_shop_32" />
+
+        <TextView
+            android:id="@+id/tv_car_coin_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_cash_margin"
+            android:drawableStart="@drawable/coin_yellow_middle"
+            android:drawablePadding="10px"
+            android:gravity="center"
+            android:textSize="@dimen/font_of_shop_32" />
+
+        <TextView
+            android:id="@+id/tv_buy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_cash_margin"
+            android:text="购买"
+            android:textSize="@dimen/font_of_shop_32" />
+    </LinearLayout>
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>

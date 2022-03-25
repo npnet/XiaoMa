@@ -1,0 +1,46 @@
+apply plugin: 'com.android.application'
+apply from: "$rootDir$Skin"
+
+def APP_STORE = 1//车应用
+def CLUB = 2//车信
+def LAUNCHER = 3//桌面
+def SERVICE = 4//车服务
+def XKAN = 5//媒体
+def XTING = 6//想听
+def PERSONAL_CENTER = 7//个人中心
+def ASSISTANT = 8 //语音助手
+def MUSIC = 9  //超级音乐
+def CARPARK = 10   //车乐园
+def SETTING = 11  //设置
+def BLUETOOTHPHONE = 12 //蓝牙电话
+def SHOP = 13   //商城
+def MOTORCADE = 14 //车队
+def INSTRUCTION = 15
+def DrivingScoreQM = 16  //驾驶评分
+def Demo = 17
+
+
+//皮肤类型，设置需要打包的应用的皮肤包
+//打单个皮肤包时，可更改skin method中skinType定义传入，来打不同应用的皮肤包
+android skin("com.xiaom.skin.renwen", LAUNCHER)
+
+//全局修改 主题HMI全部打包(需要时释放下面被注释的行)
+//android skin("com.xiaom.skin.renwen", APP_STORE)
+//android skin("com.xiaom.skin.renwen", CLUB)
+//android skin("com.xiaom.skin.renwen", LAUNCHER)
+//android skin("com.xiaom.skin.renwen", SERVICE)
+//android skin("com.xiaom.skin.renwen", XKAN)
+//android skin("com.xiaom.skin.renwen", XTING)
+//android skin("com.xiaom.skin.renwen", PERSONAL_CENTER)
+//android skin("com.xiaom.skin.renwen", ASSISTANT)
+//android skin("com.xiaom.skin.renwen", Demoi)
+//android skin("com.xiaom.skin.renwen", CARPARK)
+//android skin("com.xiaom.skin.renwen", SETTING)
+//android skin("com.xiaom.skin.renwen", BLUETOOTHPHONE)
+//android skin("com.xiaom.skin.renwen", SHOP)
+//android skin("com.xiaom.skin.renwen", MOTORCADE)
+//android skin("com.xiaom.skin.renwen", INSTRUCTION)
+//android skin("com.xiaom.skin.renwen", DrivingScoreQM)
+
+dependencies {
+}

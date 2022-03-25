@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme">
+        <!-- Customize your theme here. -->
+        <item name="android:keepScreenOn">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="PanelDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <!--状态栏动画-->
+    <style name="StatusBarAnimation">
+        <item name="android:windowEnterAnimation">@anim/dock_top_enter</item>
+        <item name="android:windowExitAnimation">@anim/dock_top_exit</item>
+    </style>
+
+    <!--导航栏动画-->
+    <style name="NavigationBarAnimation">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+    <style name="btn_test">
+        <item name="android:layout_width">0px</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">40sp</item>
+    </style>
+
+    <style name="navigation_bar_btn">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0px</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:background">@null</item>
+    </style>
+</resources>

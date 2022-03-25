@@ -1,0 +1,24 @@
+apply plugin: 'com.android.library'
+apply from: "$rootDir$Android"
+
+android library()
+
+//android {
+//
+//    sourceSets {
+//        main {
+//            jniLibs.srcDirs = ['jniLibs']
+//        }
+//    }
+//}
+
+dependencies {
+    implementation project(':XMLibs:Utils')
+    implementation project(':XMLibs:Network')
+    implementation project(':XMLibs:Config')
+    implementation project(':XMLibs:Thread')
+    implementation project(':XMLibs:Model')
+    implementation project(path: ':XMLibs:VR:Vr')
+    implementation files("${XMJars}Msc.jar")
+    implementation 'com.jakewharton:disklrucache:2.0.2'
+}

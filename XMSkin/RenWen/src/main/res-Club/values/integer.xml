@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="chat_msg_voice_playing_anim_frame_duration">300</integer>
+    <integer name="voice_record_anim_frame_duration">30</integer>
+    <integer name="rp_greeting_max_len">15</integer>
+    <integer name="rp_max_distance_can_open_metres">1000</integer>
+    <integer name="rp_max_send_money_per">10000</integer>
+    <integer name="rp_max_send_count">100</integer>
+
+</resources>

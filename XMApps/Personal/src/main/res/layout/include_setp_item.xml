@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/step_line"
+        android:layout_width="30px"
+        android:layout_height="@dimen/height_step_line"
+        android:background="@drawable/selector_step_line"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/step_circle"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/step_circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:duplicateParentState="true"
+        android:src="@drawable/selector_step_circle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_step"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:duplicateParentState="true"
+        android:gravity="center"
+        android:textColor="@color/selector_step_line"
+        android:textSize="28px"
+        app:layout_constraintBottom_toBottomOf="@+id/step_circle"
+        app:layout_constraintEnd_toEndOf="@+id/step_circle"
+        app:layout_constraintStart_toStartOf="@+id/step_circle"
+        app:layout_constraintTop_toTopOf="@+id/step_circle"
+        tools:text="3" />
+
+</android.support.constraint.ConstraintLayout>

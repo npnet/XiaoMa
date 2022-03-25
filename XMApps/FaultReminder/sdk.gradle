@@ -1,0 +1,42 @@
+ext {
+    sdk = this.&sdk
+}
+
+class ReminderSDK {
+    private static final String TYPE_TEST = "TEST"
+    private static final String TYPE_YQ = "YQ"
+
+    private static String pick(String sdkType) {
+        if (TYPE_YQ.equalsIgnoreCase(sdkType)) {
+            return TYPE_YQ
+        }
+        return TYPE_TEST
+    }
+}
+
+class SDK {
+    private reminderSDKType = ReminderSDK.TYPE_TEST
+
+    void reminder(String sdk) {
+        this.reminderSDKType = sdk
+    }
+}
+
+def sdk(Closure closure) {
+    def sdk = new SDK()
+    closure.delegate = sdk
+    closure.call()
+
+    def reminderSDKType = ReminderSDK.pick(sdk.reminderSDKType)
+    setupReminderSourceSet(reminderSDKType)
+}
+
+def setupReminderSourceSet(String sdk) {
+    project.android.sourceSets.main.java {
+        if (ReminderSDK.TYPE_TEST.equalsIgnoreCase(sdk)) {
+            srcDir 'src/main/sdk/reminder/test'
+        } else if (ReminderSDK.TYPE_YQ.equalsIgnoreCase(sdk)) {
+            srcDir 'src/main/sdk/reminder/yq'
+        }
+    }
+}

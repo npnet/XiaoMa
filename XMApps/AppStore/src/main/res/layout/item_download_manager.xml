@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingStart="@dimen/item_download_manager_padding_left"
+    android:paddingTop="@dimen/item_download_manager_padding_top"
+    android:paddingEnd="@dimen/item_download_manager_padding_right">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.xiaoma.ui.view.ReflectionImageView
+            android:id="@+id/icon"
+            android:layout_width="@dimen/item_download_manager_app_icon_width"
+            android:layout_height="@dimen/item_download_manager_app_icon_height"
+            android:scaleType="fitXY"
+            app:reflectionHeight="33px"
+            app:reflectionPadding="10px" />
+
+        <!--遮罩层-->
+        <ImageView
+            android:layout_width="@dimen/item_download_manager_app_icon_width"
+            android:layout_height="@dimen/item_download_manager_app_icon_width"
+            android:src="@drawable/img_light" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/item_download_manager_inner_padding_left">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="@dimen/item_download_manager_app_name_width"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:singleLine="true"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/item_download_manager_app_name_size" />
+
+            <TextView
+                android:id="@+id/remove"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/start"
+                android:paddingLeft="@dimen/item_download_manager_remove_padding_left"
+                android:paddingTop="@dimen/item_download_manager_remove_padding_top"
+                android:paddingRight="@dimen/item_download_manager_remove_padding_right"
+                android:paddingBottom="@dimen/item_download_manager_remove_padding_bottom"
+                android:text="@string/cancel"
+                android:textColor="@color/color_979da7"
+                android:textSize="@dimen/item_download_manager_remove_text_size" />
+
+            <TextView
+                android:id="@+id/start"
+                android:layout_width="@dimen/item_download_manager_start_width"
+                android:layout_height="@dimen/item_download_manager_start_height"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/selector_button"
+                android:gravity="center"
+                android:textColor="@color/color_979da7"
+                android:textSize="@dimen/item_download_manager_start_text_size" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/app_version"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:paddingBottom="@dimen/item_download_manager_app_version_padding_bottom"
+                android:textColor="@color/color_979da7"
+                android:textSize="@dimen/item_download_manager_app_version_text_size" />
+
+            <TextView
+                android:id="@+id/tv_speed"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:paddingBottom="@dimen/item_download_manager_speed_padding_bottom"
+                android:textColor="@color/color_979da7"
+                android:textSize="@dimen/item_download_manager_speed_text_size" />
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/download_progress_bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_download_manager_progressbar_height"
+            android:progressDrawable="@drawable/layer_list_progressbar" />
+    </LinearLayout>
+</LinearLayout>

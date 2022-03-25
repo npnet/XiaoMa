@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/wifi_connection_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/hot_spot_name_margin_top">
+
+        <TextView
+            android:id="@+id/wifi_switch_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/wifi_switch"
+            android:textSize="@dimen/bluetooth_title_text_size" />
+
+        <CheckBox
+            android:id="@+id/wifi_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/checkbox_margin_left"
+            android:layout_toRightOf="@+id/wifi_switch_tv"
+            android:background="@drawable/bg_switch"
+            android:button="@null" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/wifi_unable_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/image_margin_left"
+        android:layout_marginTop="@dimen/switch_disable_bg_margin"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/blt_close_bg_width"
+            android:layout_height="@dimen/blt_close_bg_height"
+            android:background="@drawable/wifi_close_bg" />
+
+        <ImageView
+            android:layout_width="@dimen/blt_close_bg_width"
+            android:layout_height="@dimen/blt_bg_shadow_height"
+            android:background="@drawable/wifi_close_shadow"
+            android:scaleType="fitXY" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/scan_devices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/matched_hint_margin_top"
+        android:layout_marginBottom="@dimen/matched_hint_margin_bottom"
+        android:text="@string/scan_devices"
+        android:textColor="@color/blt_match_hint"
+        android:textSize="@dimen/bluetooth_fragment_text_size"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="@dimen/total_width_vertical_scrollbar"
+            android:layout_height="match_parent">
+
+            <com.xiaoma.ui.view.VerticalScrollBar
+                android:id="@+id/scroll_bar"
+                android:layout_width="@dimen/width_vertical_scrollbar"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="20px"
+                android:paddingLeft="@dimen/margin_left_vertical_scrollbar"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

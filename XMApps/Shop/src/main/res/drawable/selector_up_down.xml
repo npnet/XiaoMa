@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:drawable="@drawable/icon_price_default"
+        android:maxLevel="0" />
+    <item
+        android:drawable="@drawable/icon_price_des"
+        android:maxLevel="1" />
+    <item
+        android:drawable="@drawable/icon_price_asc"
+        android:maxLevel="2" />
+
+</level-list>

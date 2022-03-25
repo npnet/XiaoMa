@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/ivShrink"
+        android:layout_width="@dimen/width_player_shrink"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/size_shrink_margin_left"
+        android:layout_marginTop="@dimen/size_shrink_margin_top"
+        android:padding="@dimen/size_add_click_padding"
+        android:src="@drawable/fm_player_shrink_press"
+        app:layout_constraintDimensionRatio="w,1:1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:background="@android:color/holo_red_dark" />
+
+    <ImageView
+        android:id="@+id/ivArrowUp"
+        android:layout_width="@dimen/width_arrow_up"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/size_arrow_up_margin_left"
+        android:layout_marginTop="@dimen/size_arrow_up_margin_top"
+        android:src="@drawable/fm_player_arrow_up"
+        app:layout_constraintDimensionRatio="w,1:1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:background="@android:color/holo_blue_light" />
+
+    <TextView
+        android:id="@+id/tvBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingLeft="20px"
+        android:paddingTop="@dimen/size_add_click_padding"
+        android:paddingBottom="@dimen/size_add_click_padding"
+        android:text="@string/back_to_player"
+        android:textSize="@dimen/font_28"
+        app:layout_constraintBottom_toBottomOf="@id/ivArrowUp"
+        app:layout_constraintLeft_toRightOf="@id/ivArrowUp"
+        app:layout_constraintTop_toTopOf="@id/ivArrowUp" />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_tab_item_margin_back_player"
+        android:paddingTop="@dimen/size_add_click_padding"
+        android:paddingBottom="@dimen/size_add_click_padding"
+        app:layout_constraintBottom_toBottomOf="@id/tvBack"
+        app:layout_constraintLeft_toRightOf="@id/tvBack"
+        app:layout_constraintTop_toTopOf="@id/tvBack"
+        app:tabIndicatorHeight="@dimen/size_zero"
+        app:tabMaxWidth="@dimen/size_max_width_400"
+        app:tabPaddingEnd="@dimen/size_similar_tab_padding"
+        app:tabPaddingStart="@dimen/size_similar_tab_padding">
+
+    </android.support.design.widget.TabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vpContent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tab_container">
+
+    </android.support.v4.view.ViewPager>
+
+</android.support.constraint.ConstraintLayout>

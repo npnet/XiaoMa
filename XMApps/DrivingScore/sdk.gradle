@@ -1,0 +1,42 @@
+ext {
+    sdk = this.&sdk
+}
+
+class DriverSDK {
+    private static final String TYPE_TEST = "TEST"
+    private static final String TYPE_YQ = "YQ"
+
+    private static String pick(String sdkType) {
+        if (TYPE_YQ.equalsIgnoreCase(sdkType)) {
+            return TYPE_YQ
+        }
+        return TYPE_TEST
+    }
+}
+
+class SDK {
+    private driverSDKType = DriverSDK.TYPE_TEST
+
+    void reminder(String sdk) {
+        this.driverSDKType = sdk
+    }
+}
+
+def sdk(Closure closure) {
+    def sdk = new SDK()
+    closure.delegate = sdk
+    closure.call()
+
+    def driverSDKType = DriverSDK.pick(sdk.driverSDKType)
+    setupSourceSet(driverSDKType)
+}
+
+def setupSourceSet(String sdk) {
+    project.android.sourceSets.main.java {
+        if (DriverSDK.TYPE_TEST.equalsIgnoreCase(sdk)) {
+            srcDir 'src/main/sdk/driver/test'
+        } else if (DriverSDK.TYPE_YQ.equalsIgnoreCase(sdk)) {
+            srcDir 'src/main/sdk/driver/yq'
+        }
+    }
+}

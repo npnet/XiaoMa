@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="BlueToothPhone" parent="@style/Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowActivityTransitions">false</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowFrame">@null</item>
+    </style>
+
+    <style name="DialpadKeyButtonStyle">
+        <item name="android:clickable">true</item>
+        <item name="android:layout_columnSpan">1</item>
+        <item name="android:layout_rowSpan">1</item>
+        <item name="android:focusable">true</item>
+    </style>+
+
+    <style name="NumberKeyButtonStyle" parent="DialpadKeyButtonStyle">
+        <item name="android:background">@drawable/bg_num_key</item>
+        <item name="android:layout_width">@dimen/width_num_key</item>
+        <item name="android:layout_height">@dimen/height_num_key</item>
+    </style>
+
+    <style name="BigDialpadKeyButtonStyle" parent="DialpadKeyButtonStyle">
+        <item name="android:layout_width">@dimen/width_num_key</item>
+        <item name="android:layout_height">@dimen/height_big_key</item>
+    </style>
+
+    <style name="style_tab_layout" parent="android:Widget">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="tabIndicatorHeight">0dp</item>
+    </style>
+
+    <style name="CommonSettingDialog" parent="@android:style/Theme.Holo.Dialog">
+        <!-- 是否有边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!--是否在悬浮Activity之上  -->
+        <item name="android:windowIsFloating">true</item>
+        <!--标题  -->
+        <item name="android:windowNoTitle">true</item>
+        <!--阴影  -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!--透明背景-->
+        <item name="android:background">@android:color/transparent</item>
+        <!--窗口背景透明-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--弹窗背景是否变暗-->
+        <!--<item name="android:backgroundDimEnabled">true</item>-->
+    </style>
+
+    <style name="phoneTextColor_noSelect">
+        <item name="android:textColor">@color/dark_gray_text</item>
+    </style>
+
+    <style name="phoneTextColor_Select">
+        <item name="android:textColor">@color/call_selected_text_color</item>
+    </style>
+</resources>

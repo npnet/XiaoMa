@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:id="@+id/rl_radio"
+        android:layout_width="@dimen/view_radio_rl_width"
+        android:layout_height="@dimen/view_radio_rl_height"
+        android:layout_gravity="center">
+
+
+        <ImageView
+            android:id="@+id/iv_radio"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_radio_iv_height"
+            android:src="@drawable/icon_default_icon" />
+
+        <TextView
+            android:id="@+id/tv_radio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_radio"
+            android:layout_marginTop="@dimen/view_radio_tv_top"
+            android:gravity="center"
+            android:text="在线电台"
+            android:textSize="@dimen/view_radio_tv_size" />
+
+
+        <com.xiaoma.ui.view.MarqueeTextView
+            android:id="@+id/tv_radio_tip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_radio"
+            android:layout_marginTop="@dimen/view_radio_tv_tip_top"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textSize="@dimen/view_radio_tv_tip_size" />
+
+        <ImageView
+            android:id="@+id/iv_radio_previous"
+            android:layout_width="@dimen/view_radio_iv_previous_width"
+            android:layout_height="@dimen/view_radio_iv_previous_height"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/icon_default_icon" />
+
+
+        <ImageView
+            android:id="@+id/iv_radio_play_pause"
+            android:layout_width="@dimen/view_radio_iv_play_pause_width"
+            android:layout_height="@dimen/view_radio_iv_play_pause_height"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/icon_default_icon" />
+
+        <ImageView
+            android:id="@+id/iv_radio_next"
+            android:layout_width="@dimen/view_radio_iv_next_width"
+            android:layout_height="@dimen/view_radio_iv_next_height"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/icon_default_icon" />
+
+
+    </RelativeLayout>
+
+</merge>

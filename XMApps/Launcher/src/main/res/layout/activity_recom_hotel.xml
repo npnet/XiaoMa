@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/notdata_view"
+        android:layout_width="@dimen/delicious_activity_rl_width"
+        android:layout_height="@dimen/delicious_activity_rl_height"
+        android:layout_centerInParent="true"
+        android:background="@drawable/iv_empty"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@id/tv_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/delicious_activity_tv_tips_top"
+            android:layout_marginBottom="75px"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="@string/nearby_hotel_no_data"
+            android:textColor="@color/state_view_text_color"
+            android:textSize="@dimen/delicious_activity_tv_tips_size" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_nearby_hotel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/hotel_recom_tv_nearby_hotel_margin_left"
+        android:layout_marginTop="@dimen/hotel_recom_tv_nearby_hotel_margin_top"
+        android:text="@string/nearby_hotel"
+        android:textSize="@dimen/hotel_recom_tv_nearby_hotel_text_size" />
+
+    <com.discretescrollview.DiscreteScrollView
+        android:id="@+id/scrollview_recom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hotel_recom_scrollview_height"
+        android:layout_marginTop="@dimen/hotel_recom_scrollview_top" />
+
+    <TextView
+        android:id="@+id/tv_hotel_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scrollview_recom"
+        android:layout_marginTop="@dimen/hotel_recom_name_top"
+        android:gravity="center"
+        android:textSize="@dimen/hotel_recom_tv_hotel_name_text_size"
+        tools:text="维也纳酒店" />
+
+    <TextView
+        android:id="@+id/tv_hotel_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_hotel_name"
+        android:layout_marginTop="@dimen/hotel_recom_msg_top"
+        android:gravity="center"
+        android:textColor="@color/color_8a919d"
+        android:textSize="@dimen/hotel_recom_tv_hotel_msg_text_size"
+        tools:text="|3km|" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="78px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/hotel_recom_ll_padding_bottom"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_guide"
+            android:layout_width="@dimen/hotel_recom_btn_guide_width"
+            android:layout_height="@dimen/hotel_recom_btn_guide_height"
+
+            android:background="@drawable/selector_button"
+            android:gravity="center_horizontal"
+            android:paddingTop="@dimen/hotel_recom_tv_padding_top"
+            android:text="@string/guide_map"
+            android:textSize="@dimen/hotel_recom_btn_guide_size" />
+
+        <Button
+            android:id="@+id/btn_book"
+            android:layout_width="@dimen/hotel_recom_btn_book_width"
+            android:layout_height="@dimen/hotel_recom_btn_book_height"
+            android:layout_marginLeft="@dimen/hotel_recom_btn_book_margin_left"
+            android:background="@drawable/selector_button"
+            android:gravity="center_horizontal"
+            android:paddingTop="@dimen/hotel_recom_tv_padding_top"
+            android:text="@string/book_order"
+            android:textSize="@dimen/hotel_recom_btn_book_size" />
+
+        <Button
+            android:id="@+id/btn_call"
+            android:layout_width="@dimen/hotel_recom_btn_call_width"
+            android:layout_height="@dimen/hotel_recom_btn_call_height"
+            android:layout_marginLeft="@dimen/hotel_recom_btn_call_left"
+            android:background="@drawable/selector_button"
+            android:gravity="center_horizontal"
+            android:paddingTop="@dimen/hotel_recom_tv_padding_top"
+            android:text="@string/call_phone"
+            android:textSize="@dimen/hotel_recom_btn_call_size" />
+
+
+        <LinearLayout
+            android:id="@+id/ll_date"
+            android:layout_width="@dimen/hotel_recom_tv_date_width"
+            android:layout_height="@dimen/hotel_recom_tv_date_height"
+            android:layout_marginLeft="@dimen/hotel_recom_tv_date_margin_left"
+            android:background="@drawable/selector_button"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:paddingTop="2px">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17px"
+                android:layout_marginRight="10px"
+                android:src="@drawable/icon_in" />
+
+            <TextView
+                android:id="@+id/tv_check_in"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingTop="@dimen/hotel_recom_tv_time_padding_top"
+                android:text="2019.01.24"
+                android:textColor="@color/white"
+                android:textSize="@dimen/hotel_recom_btn_date_text_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8px"
+                android:layout_marginRight="8px"
+                android:gravity="center_horizontal"
+                android:text="——"
+                android:textSize="@dimen/hotel_recom_btn_date_text_size" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17px"
+                android:layout_marginRight="10px"
+                android:src="@drawable/icon_out" />
+
+            <TextView
+                android:id="@+id/tv_check_out"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingTop="@dimen/hotel_recom_tv_time_padding_top"
+                android:text="2019.01.24"
+                android:textColor="@color/white"
+                android:textSize="@dimen/hotel_recom_btn_date_text_size" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

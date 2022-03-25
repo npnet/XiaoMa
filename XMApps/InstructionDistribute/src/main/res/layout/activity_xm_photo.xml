@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <!--左边布局-->
+    <View
+        android:id="@+id/ll_left"
+        android:layout_width="@dimen/dimen_150"
+        android:layout_height="match_parent"
+        android:background="@drawable/photo_left_back"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/icon_close"
+        android:layout_width="@dimen/dimen_85"
+        android:layout_height="@dimen/dimen_85"
+        android:layout_marginStart="@dimen/dimen_18"
+        android:padding="@dimen/dimen_10"
+        android:scaleType="center"
+        android:src="@drawable/ic_photo_close"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/icon_left"
+        android:layout_width="@dimen/dimen_60"
+        android:layout_height="@dimen/dimen_60"
+        android:layout_marginStart="@dimen/dimen_40"
+        android:src="@drawable/icon_previous"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--右边布局-->
+    <View
+        android:id="@+id/ll_right"
+        android:layout_width="@dimen/dimen_150"
+        android:layout_height="match_parent"
+        android:background="@drawable/photo_right_back"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/icon_right"
+        android:layout_width="@dimen/dimen_60"
+        android:layout_height="@dimen/dimen_60"
+        android:layout_marginEnd="@dimen/dimen_40"
+        android:src="@drawable/icon_next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--图片-->
+    <com.xiaoma.instructiondistribute.xkan.photoview.PhotoView
+        android:id="@+id/iv_photo"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toStartOf="@+id/ll_right"
+        app:layout_constraintStart_toEndOf="@+id/ll_left" />
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="@dimen/dimen_65"
+        android:layout_height="@dimen/dimen_65"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+    <!--放大-->
+    <ImageView
+        android:id="@+id/iv_increase"
+        android:layout_width="@dimen/dimen_74"
+        android:layout_height="@dimen/dimen_104"
+        android:layout_marginStart="@dimen/dimen_27"
+        android:src="@drawable/icon_increase"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintStart_toEndOf="@+id/ll_left" />
+
+    <!--旋转-->
+    <ImageView
+        android:id="@+id/iv_rotate"
+        android:layout_width="@dimen/dimen_74"
+        android:layout_height="@dimen/dimen_104"
+        android:layout_marginStart="@dimen/dimen_27"
+        android:layout_marginTop="@dimen/dimen_2"
+        android:src="@drawable/icon_rotate"
+        app:layout_constraintStart_toEndOf="@+id/ll_left"
+        app:layout_constraintTop_toBottomOf="@+id/guideline" />
+
+    <com.xiaoma.instructiondistribute.xkan.common.view.VerticalSeekBarWrapper
+        android:id="@+id/seekbar_setting"
+        android:layout_width="@dimen/dimen_30"
+        android:layout_height="@dimen/dimen_260"
+        android:layout_marginStart="@dimen/dimen_28"
+        android:background="@drawable/drag_img"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_increase"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.xiaoma.instructiondistribute.xkan.common.view.VerticalSeekBar
+            android:id="@+id/mySeekBar"
+            style="@style/Widget.SeekBar.Normal"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:duplicateParentState="true"
+            android:splitTrack="false"
+            android:thumb="@drawable/seekbar_thumb"
+            app:seekBarRotation="CW270" /> <!-- Rotation: CW90 or CW270 -->
+    </com.xiaoma.instructiondistribute.xkan.common.view.VerticalSeekBarWrapper>
+
+    <!--中间显示区域-->
+    <!--<android.support.constraint.ConstraintLayout-->
+    <!--android:id="@+id/pic_constraint"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--app:layout_constraintEnd_toStartOf="@+id/ll_right"-->
+    <!--app:layout_constraintStart_toEndOf="@+id/ll_left">-->
+
+
+    <!--</android.support.constraint.ConstraintLayout>-->
+
+
+    <include
+        layout="@layout/empty_view"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@+id/ll_right"
+        app:layout_constraintStart_toEndOf="@+id/ll_left" />
+
+    <!--标题-->
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dimen_80"
+        android:background="@drawable/bg_photo_top"
+        app:layout_constraintEnd_toStartOf="@+id/ll_right"
+        app:layout_constraintStart_toEndOf="@+id/ll_left"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_photo"
+            android:layout_width="@dimen/dimen_800"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dimen_30"
+            tools:text="真实死亡游戏“蓝鲸”疑似进入国游戏“蓝鲸”疑似进入国内，家长内，家长们要注意了实死亡游戏“蓝鲸”疑似进入国内，家" />
+
+        <TextView
+            android:id="@+id/tv_size"
+            android:layout_width="@dimen/dimen_200"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dimen_30" />
+    </RelativeLayout>
+
+    <android.support.constraint.Group
+        android:id="@+id/pic_constraint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="icon_close,icon_left,rl_title,icon_right"
+        tools:ignore="NotSibling" />
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="MyTabLayoutTextAppearance" parent="TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="Segment">
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginTop">5px</item>
+        <item name="android:layout_marginLeft">20px</item>
+        <item name="android:layout_marginRight">20px</item>
+        <item name="android:textSize">18sp</item>
+        <item name="com.xiaoma.setting:cornerRadius">5dp</item>
+        <item name="com.xiaoma.setting:horizonGap">30dp</item>
+        <item name="com.xiaoma.setting:normalColor">#2b2b2b</item>
+        <item name="com.xiaoma.setting:selectedColor">#32ADFF</item>
+        <item name="com.xiaoma.setting:separatorWidth">0dp</item>
+        <item name="com.xiaoma.setting:textColors">#ffffff</item>
+        <item name="com.xiaoma.setting:verticalGap">10dp</item>
+    </style>
+
+    <style name="line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">@drawable/line</item>
+    </style>
+
+    <style name="line_car">
+        <item name="android:layout_width">@dimen/px_647</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:layout_marginTop">@dimen/px_30</item>
+        <item name="android:background">@drawable/line</item>
+    </style>
+
+    <style name="setting_item_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/default_font</item>
+        <item name="android:textSize">20px</item>
+    </style>
+
+    <style name="setting_check_view">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/setting_power_view_height</item>
+        <item name="com.xiaoma.setting:line">true</item>
+    </style>
+
+    <style name="setting_item_view">
+        <item name="com.xiaoma.setting:titleSize">20px</item>
+        <item name="com.xiaoma.setting:showLines">true</item>
+        <item name="com.xiaoma.setting:checkBox">true</item>
+        <item name="com.xiaoma.setting:showTitle">true</item>
+        <item name="com.xiaoma.setting:segmentHeight">50px</item>
+        <item name="com.xiaoma.setting:segmentWidth">400px</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentTop">true</item>
+    </style>
+
+    <style name="radio_group_text">
+        <item name="android:layout_width">460px</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">105px</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">30px</item>
+    </style>
+
+    <style name="radio_group_text_car">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">30px</item>
+    </style>
+
+    <style name="style_tab_layout" parent="android:Widget">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">120px</item>
+        <item name="android:layout_marginStart">50px</item>
+        <item name="tabPaddingStart">50px</item>
+        <item name="tabPaddingEnd">50px</item>
+        <item name="tabMaxWidth">500px</item>
+        <item name="tabMinWidth">10px</item>
+        <item name="tabMode">scrollable</item>
+        <item name="tabIndicatorHeight">0dp</item>
+    </style>
+
+    <style name="style_setting_seekbar">
+        <item name="android:layout_width">540px</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:thumb">@drawable/seekbar_indicator</item>
+        <item name="android:max">40</item>
+        <item name="android:maxHeight">10px</item>
+        <item name="android:progress">0</item>
+        <item name="android:progressDrawable">@drawable/text_tack_seekbar_style</item>
+        <item name="android:splitTrack">false</item>
+        <item name="com.xiaoma.setting:textcolor">#fff</item>
+        <item name="com.xiaoma.setting:textsize">32px</item>
+    </style>
+
+    <style name="style_setting_item_v2">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="com.xiaoma.setting:titleColor">@color/white</item>
+        <item name="com.xiaoma.setting:titleSize">30px</item>
+    </style>
+
+    <style name="style_setting_item_v2_car">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_marginTop">@dimen/px_30</item>
+        <item name="com.xiaoma.setting:titleColor">@color/white</item>
+        <item name="com.xiaoma.setting:titleSize">30px</item>
+    </style>
+
+    <style name="style_setting_item_v3">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="com.xiaoma.setting:titleColor">#a7a8aa</item>
+        <item name="com.xiaoma.setting:titleSize">26px</item>
+        <item name="com.xiaoma.setting:titleWidth">360px</item>
+    </style>
+
+    <style name="style_setting_item_v4">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="com.xiaoma.setting:titleColor">@color/white</item>
+        <item name="com.xiaoma.setting:titleSize">30px</item>
+        <item name="com.xiaoma.setting:titleWidth">360px</item>
+    </style>
+
+    <style name="radiobutton_text_color">
+       <item name="android:textColor">@color/radio_button_text_color</item>
+    </style>
+
+    <style name="style_switch_animation">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">25px</item>
+        <item name="com.xiaoma.setting:textColor">#fff</item>
+        <item name="com.xiaoma.setting:textSize">30px</item>
+        <item name="android:layout_marginBottom">25px</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="style_switch_animation_car">
+        <item name="android:layout_width">@dimen/px_647</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/px_30</item>
+        <item name="com.xiaoma.setting:textColor">#fff</item>
+        <item name="com.xiaoma.setting:textSize">30px</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <!--<style name="Base.Widget.Design.TabLayout" parent="android:Widget">-->
+    <!--<item name="tabBackground">@drawable/tab_backgroud</item>-->
+    <!--<item name="tabIndicatorColor">#ff00ff</item>-->
+    <!--<item name="tabIndicatorHeight">2dp</item>-->
+    <!--</style>-->
+    <declare-styleable name="XiaoMaSwitch">
+        <attr name="text_size" format="reference" />
+        <attr name="text_unselected_color" format="color" />
+        <attr name="text_selected_color" format="color" />
+        <attr name="is_turn_on" format="boolean" />
+        <attr name="right_text" format="string" />
+        <attr name="left_text" format="string" />
+    </declare-styleable>
+
+    <style name="CommonSettingDialog" parent="@android:style/Theme.Holo.Dialog">
+        <!-- 是否有边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!--是否在悬浮Activity之上  -->
+        <item name="android:windowIsFloating">true</item>
+        <!--标题  -->
+        <item name="android:windowNoTitle">true</item>
+        <!--阴影  -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!--透明背景-->
+        <item name="android:background">@android:color/transparent</item>
+        <!--窗口背景透明-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--弹窗背景是否变暗-->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="setting_tv">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">106px</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">30px</item>
+        <item name="android:textColor">#8a919d</item>
+    </style>
+
+    <style name="setting_toggle">
+        <item name="android:layout_width">137px</item>
+        <item name="android:layout_height">56px</item>
+        <item name="android:background">@drawable/bg_switch</item>
+        <item name="android:textOff">@null</item>
+        <item name="android:textOn">@null</item>
+    </style>
+
+    <declare-styleable name="AtmosphereSelcetor">
+        <attr name="colorStr" format="string|reference"/>
+        <attr name="selectorType" format="string"/>
+    </declare-styleable>
+
+    <style name="tv_color_n">
+        <item name="android:textColor">#72889b</item>
+    </style>
+    <style name="tv_color_p">
+        <item name="android:textColor">@color/tv_reply_y</item>
+    </style>
+
+    <style name="color_select_style">
+        <item name="android:layout_width">80px</item>
+        <item name="android:layout_height">80px</item>
+        <item name="android:layout_marginRight">32px</item>
+        <item name="android:layout_marginTop">16px</item>
+        <item name="android:layout_marginBottom">16px</item>
+    </style>
+
+    <style name="PopupWindowInfoAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/popup_enter_personal_info</item>
+        <item name="android:windowExitAnimation">@anim/popup_exit_personal_info</item>
+    </style>
+</resources>

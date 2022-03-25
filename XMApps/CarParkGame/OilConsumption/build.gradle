@@ -1,0 +1,14 @@
+apply plugin: 'com.android.application'
+apply from: "$rootDir$Android"
+apply from: "$rootDir$Modules"
+
+android application('com.xiaoma.oilconsumption')
+dependencies dependency(OilConsumption)
+
+apply plugin: 'replugin-plugin-gradle'
+
+dependencies {
+    implementation "com.qihoo360.replugin:replugin-plugin-lib:$REPLUGIN_VERSION"
+    implementation "com.android.support.constraint:constraint-layout:${CONSTRAINT_LAYOUT}"
+    implementation "com.github.lzyzsd:jsbridge:$JSBRIDGE"
+}

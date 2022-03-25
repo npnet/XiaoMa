@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="dialog_btn_color">#33ffffff</color>
+    <!--设置-->
+    <color name="switch_check_color">#E1C474</color>
+    <color name="switch_notcheck_color">#626976</color>
+    <color name="motorcade_info_color">#8a919d</color>
+    <color name="bg_navigation_bar">#000000</color>
+    <color name="thumb_uncheck_color">#141820</color>
+    <!--dialog-->
+    <color name="et_text_color">#4C4C4C</color>
+    <color name="et_text_color_hint">#9D9D9D</color>
+    <!--window-->
+    <color name="bg_dim">#80000000</color>
+    <color name="club_text_gray">#e6979da7</color>
+</resources>

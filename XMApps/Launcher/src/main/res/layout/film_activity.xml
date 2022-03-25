@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/notdata_view"
+        android:layout_width="@dimen/film_activity_iv_layout_width"
+        android:layout_height="@dimen/film_activity_iv_layout_height"
+        android:background="@drawable/iv_empty"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@id/tv_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="75px"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="@string/state_view_empty_text"
+            android:textColor="@color/state_view_text_color"
+            android:textSize="@dimen/film_activity_tv_tips_size" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/film_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/film_activity_film_title_left"
+            android:layout_marginTop="@dimen/film_activity_film_title_top"
+            android:text="@string/recom_film"
+            android:textSize="@dimen/film_activity_film_title_size" />
+
+        <com.discretescrollview.DiscreteScrollView
+            android:id="@+id/film_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/film_activity_film_rv_top" />
+
+        <LinearLayout
+            android:id="@+id/film_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/film_activity_film_layout_top"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/film_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/film_title_size" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/hasdata_select_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60px"
+        android:gravity="center_horizontal"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <Button
+            android:id="@+id/buy_film_ticket"
+            android:layout_width="@dimen/film_activity_buy_film_ticket_width"
+            android:layout_height="@dimen/film_activity_buy_film_ticket_height"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/selector_button"
+            android:text="@string/right_now_buy_film_ticket"
+            android:textSize="@dimen/film_activity_buy_film_ticket_size" />
+
+        <Button
+            android:id="@+id/look_trailer"
+            android:layout_width="@dimen/film_activity_look_teailer_widith"
+            android:layout_height="@dimen/film_activity_look_teailer_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/film_activity_look_teailer_left"
+            android:background="@drawable/selector_button"
+            android:text="@string/prevue"
+            android:textSize="@dimen/film_activity_look_teailer_size" />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

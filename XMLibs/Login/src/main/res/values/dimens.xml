@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="keypad_number_padding">10px</dimen>
+    <dimen name="size_key_bind_item_padding">50px</dimen>
+    <dimen name="width_factory_entrance">200px</dimen>
+    <dimen name="height_factory_entrance">200px</dimen>
+    <dimen name="width_passwd_confirm">302px</dimen>
+    <dimen name="height_passwd_confirm">76px</dimen>
+    <dimen name="width_key_num">86px</dimen>
+    <dimen name="height_key_num">86px</dimen>
+    <dimen name="size_key_num_margin_start">42px</dimen>
+    <dimen name="size_key_num_margin_top">26px</dimen>
+    <dimen name="size_passwd_keyboard_pass_margin_top">200px</dimen>
+    <dimen name="size_passwd_under_line_width">80px</dimen>
+    <dimen name="size_passwd_under_line_margin">40px</dimen>
+    <dimen name="width_passwd_delete">66px</dimen>
+    <dimen name="height_passwd_delete">45px</dimen>
+    <dimen name="size_passwd_confirm_margin_bottom">62px</dimen>
+    <dimen name="font_passwd_confirm">30px</dimen>
+    <dimen name="size_lighting_vertical_divide_margin_top">62px</dimen>
+    <dimen name="size_lighting_vertical_divide_margin_bottom">20px</dimen>
+    <dimen name="size_desc_img_margin_top">160px</dimen>
+    <dimen name="size_passwd_desc_text_margin_top">28px</dimen>
+    <dimen name="font_passwd_desc_text">30px</dimen>
+    <dimen name="font_num_keyboard_num">32px</dimen>
+    <dimen name="size_car_key_bind_create_sub_margin_top">32px</dimen>
+    <dimen name="size_car_key_bind_create_sub_margin_end">32px</dimen>
+    <dimen name="font_create_sub_account">24px</dimen>
+    <dimen name="font_account_type_title">30px</dimen>
+    <dimen name="width_account_avatar">168px</dimen>
+    <dimen name="height_account_avatar">168px</dimen>
+    <dimen name="size_account_avatar_margin_top">28px</dimen>
+    <dimen name="size_bluetooth_key_margin_top">60px</dimen>
+    <dimen name="font_account_bind_key_text">24px</dimen>
+    <dimen name="font_account_bind_face_name_text">30px</dimen>
+    <dimen name="font_account_bind_face_text">36px</dimen>
+    <dimen name="size_normal_key_margin_top">24px</dimen>
+    <dimen name="size_master_account_margin_start">180px</dimen>
+    <dimen name="size_key_margin_start">8px</dimen>
+    <dimen name="size_factory_tip_margin_top">12px</dimen>
+    <dimen name="size_factory_btn_margin_top">60px</dimen>
+    <dimen name="size_factory_passwd_margin_start">16px</dimen>
+    <dimen name="font_factory_verify_code">24px</dimen>
+    <dimen name="size_factory_edit_margin_start">106px</dimen>
+    <dimen name="size_factory_passwd_margin_top">50px</dimen>
+    <dimen name="width_factory_edit_bg">518px</dimen>
+    <dimen name="height_factory_edit_bg">70px</dimen>
+    <dimen name="size_factory_phone_margin_top">110px</dimen>
+    <dimen name="font_factory_title">32px</dimen>
+    <dimen name="size_factory_icon">40px</dimen>
+    <dimen name="font_factory_tip">20px</dimen>
+
+    <!--PersonalInfoPopupWindow-->
+    <dimen name="width_popup_personal_info">550px</dimen>
+    <dimen name="size_popup_personal_info_item_margin_left_right">70px</dimen>
+    <dimen name="size_popup_personal_info_item_margin_root_top">140px</dimen>
+    <dimen name="font_popup_personal_info_value">28px</dimen>
+    <dimen name="width_popup_personal_info_arrow">30px</dimen>
+    <dimen name="height_popup_personal_info_arrow">25px</dimen>
+    <dimen name="size_popup_personal_info_arrow_right">30px</dimen>
+    <dimen name="size_popup_personal_item_top">16px</dimen>
+    <dimen name="size_popup_personal_info_key_margin_left">20px</dimen>
+    <dimen name="font_size_home">32px</dimen>
+    <dimen name="height_pop_personal_info_bar">90px</dimen>
+    <dimen name="width_user_info">580px</dimen>
+    <dimen name="size_user_info_margin_start">210px</dimen>
+    <dimen name="width_face_record">820px</dimen>
+    <dimen name="size_face_margin_start_user">44px</dimen>
+
+    <!--dialog_personal_sex-->
+    <dimen name="size_dialog_personal_sex_title_top">28px</dimen>
+    <dimen name="width_dialog_personal_sex_man">140px</dimen>
+    <dimen name="height_dialog_personal_sex_man">60px</dimen>
+    <dimen name="height_dialog_personal_sex_bottom">24px</dimen>
+
+    <!--dialog_personal_name.xml-->
+    <dimen name="size_dialog_personal_name_left">40px</dimen>
+    <dimen name="size_dialog_personal_name_top">30px</dimen>
+    <dimen name="height_dialog_personal_name_edit">50px</dimen>
+    <dimen name="size_dialog_personal_name_edit_left">20px</dimen>
+
+    <!--dialog_personal_age.xml-->
+    <dimen name="font_dialog_personal_age_title">32px</dimen>
+    <dimen name="width_dialog_personal_age_wheel">180px</dimen>
+
+    <dimen name="height_change_avatar_layout">460px</dimen>
+    <dimen name="width_change_avatar_layout">800px</dimen>
+    <dimen name="width_change_avatar_qr">370px</dimen>
+    <dimen name="height_change_avatar_qr">370px</dimen>
+    <dimen name="font_change_avatar_title">30px</dimen>
+    <dimen name="size_change_avatar_qr_margin_top">12px</dimen>
+    <dimen name="size_change_avatar_layouty_padding">24px</dimen>
+
+
+    <dimen name="font_size_24px">24px</dimen>
+    <dimen name="font_size_home_28">28px</dimen>
+    <dimen name="size_suer_info_margin_top">30px</dimen>
+    <dimen name="font_not_bind_pls_select">36px</dimen>
+    <dimen name="size_not_bind_pls_select_margion_top">32px</dimen>
+    <dimen name="font_go_tourists_mode">36px</dimen>
+    <dimen name="font_skip">34px</dimen>
+    <dimen name="width_bind_face_tips">568px</dimen>
+    <dimen name="size_bind_face_tips_margin_top">30px</dimen>
+    <dimen name="font_bind_face_tips">30px</dimen>
+    <dimen name="font_bind_face_title">30px</dimen>
+    <dimen name="size_face_recognize_margin_top">38px</dimen>
+    <dimen name="size_user_avatar_padding">16px</dimen>
+    <dimen name="size_passwd_tips_margin_start">100px</dimen>
+    <dimen name="size_passwd_tips_margin_end">100px</dimen>
+    <dimen name="size_passwd_title_margin_start">100px</dimen>
+    <dimen name="size_passwd_title_margin_top">100px</dimen>
+    <dimen name="font_passwd_title">36px</dimen>
+    <dimen name="size_checked_relation">32px</dimen>
+    <dimen name="size_unchecked_relation">28px</dimen>
+    <dimen name="size_relation_item_margin_start">16px</dimen>
+    <dimen name="size_not_network_title_margin_top">110px</dimen>
+    <dimen name="width_setting">80px</dimen>
+    <dimen name="height_setting">80px</dimen>
+    <dimen name="size_setting_margin_start">32px</dimen>
+    <dimen name="size_setting_margin_bottom">32px</dimen>
+    <dimen name="size_select_user_margin_top">90px</dimen>
+    <dimen name="size_empty_user_text">36px</dimen>
+    <dimen name="size_empty_user_padding">40px</dimen>
+    <dimen name="size_icon_margin_start">20px</dimen>
+    <dimen name="size_active_margin">32px</dimen>
+    <dimen name="font_active">24px</dimen>
+    <dimen name="width_face_recognize">472px</dimen>
+    <dimen name="height_face_recognize">294px</dimen>
+</resources>

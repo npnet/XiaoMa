@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 选择城市item-->
+    <dimen name="item_city_location_text_top">70px</dimen>
+    <dimen name="item_city_location_text_size">30px</dimen>
+    <dimen name="item_city_location_layout_top">40px</dimen>
+    <dimen name="item_city_location_layout_height">60px</dimen>
+    <dimen name="item_city_location_img_left">10px</dimen>
+    <dimen name="item_city_location_img_width">38px</dimen>
+    <dimen name="item_city_location_img_height">40px</dimen>
+    <dimen name="item_city_location_tv_left">35px</dimen>
+    <dimen name="item_city_location_tv_right">30px</dimen>
+    <dimen name="item_city_location_tv_size">28px</dimen>
+    <dimen name="item_city_location_tv_top">35px</dimen>
+    <dimen name="item_city_location_tv_bottom">10px</dimen>
+
+    <dimen name="item_city_tag_height">50px</dimen>
+    <dimen name="item_city_tag_size">28px</dimen>
+    <dimen name="item_city_name_height">60px</dimen>
+    <dimen name="item_city_name_size">24px</dimen>
+    <dimen name="city_dividing_line_img_width">613px</dimen>
+    <dimen name="city_dividing_line_img_height">1px</dimen>
+    <!-- 选择城市item-->
+
+    <!-- 新闻-->
+    <dimen name="size_news_channel_item_vertical_margin">30px</dimen>
+    <dimen name="size_news_channel_item_horizontal_margin">60px</dimen>
+    <dimen name="size_news_channel_item_extra_margin">40px</dimen>
+    <!-- 新闻-->
+
+
+</resources>

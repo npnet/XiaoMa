@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/phone_fragment_width"
+    android:background="@drawable/bg_layout_without_left_light"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/layout_disconnect_bluetooth"
+        layout="@layout/layout_disconnect_bluetooth"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/no_contact_layout"
+        layout="@layout/no_call_log_check_permission_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/no_access_to_contact_layout"
+        layout="@layout/unauthorized_read_call_log"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="650px"
+            android:layout_height="match_parent" />
+
+        <com.xiaoma.bluetooth.phone.common.views.VerticalScrollBar
+            android:id="@+id/scroll_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/history_fg_scroll_bar_margin_left"
+            android:layout_marginRight="@dimen/history_fg_scroll_bar_margin_right"
+            android:layout_marginTop="@dimen/history_fg_scroll_bar_margin_top"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</RelativeLayout>

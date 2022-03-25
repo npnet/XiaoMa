@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:layout_width="654px"
+        android:layout_height="421px"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="188px"
+            android:layout_height="60px"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25px"
+            android:background="@drawable/disclamir_title"
+            android:gravity="center"
+            android:text="@string/travel_tip_str"
+            android:textSize="30px" />
+
+        <TextView
+            android:id="@+id/tv_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60px"
+            android:gravity="center"
+            android:text="@string/accepted_before_using"
+            android:textSize="40px" />
+
+        <TextView
+            android:id="@+id/disclaimer_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_msg"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30px"
+            android:text="@string/disclaimer_agreement"
+            android:textColor="#fcd4a1"
+            android:textSize="30px" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/disclaimer_but"
+            android:src="@drawable/horizontal_divider_line" />
+
+        <TextView
+            android:id="@+id/disclaimer_but"
+            android:layout_width="match_parent"
+            android:layout_height="75px"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/agree"
+            android:textSize="30px" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/ivIcon"
+        android:layout_width="@dimen/width_task_center_right_list_icon"
+        android:layout_height="@dimen/height_task_center_right_list_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/task_every_day" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_car_coin_list_margin_top"
+        android:layout_marginTop="@dimen/size_car_coin_list_margin_top"
+        android:textColor="@color/white"
+        android:textSize="@dimen/size_car_coin_list_task_title"
+        app:layout_constraintBottom_toTopOf="@id/tvTime"
+        app:layout_constraintLeft_toRightOf="@id/ivIcon"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread_inside"
+        tools:text='完成"XXX"任务' />
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_car_coin_list_date_margin_top"
+        android:layout_marginBottom="@dimen/size_car_coin_list_date_margin_bottom"
+        tools:text="2018年01月01日   13:30"
+        android:textSize="@dimen/font_car_coin_list_date"
+        android:textColor="@color/color_car_coin_task_time"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/tvTitle"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+
+    <TextView
+        android:id="@+id/tvScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/size_car_coin_list_num_margin_end"
+        tools:text="+5"
+        android:textSize="@dimen/font_car_coin_list_num"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/iv_car_coin_icon"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_car_coin_icon"
+        android:layout_width="@dimen/width_car_coin_list_icon"
+        android:layout_height="@dimen/height_car_coin_list_icon"
+        android:src="@drawable/coin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

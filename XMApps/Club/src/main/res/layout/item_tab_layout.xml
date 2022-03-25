@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/club_view_tab_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/margin_tab_text_top"
+            android:gravity="left"
+            android:textColor="@color/main_tab_text"
+            android:textSize="@dimen/font_text_big_plus"
+            />
+
+        <TextView
+            android:id="@+id/unread_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/width_main_red_dot"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@id/club_view_tab_tv"
+            android:background="@drawable/conversation_newmsg_count_bg"
+            android:gravity="center"
+            android:minWidth="@dimen/width_main_red_dot"
+            android:paddingLeft="@dimen/padding_red_dot"
+            android:paddingRight="@dimen/padding_red_dot"
+            android:textColor="@color/club_white"
+            android:textSize="@dimen/font_text_red_dot"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+</LinearLayout>

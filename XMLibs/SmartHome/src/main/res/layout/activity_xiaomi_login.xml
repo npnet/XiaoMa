@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_mi_login_out"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="86px"
+            android:textColor="@color/white"
+            android:textSize="32px" />
+
+        <TextView
+            android:id="@+id/tv_notify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28px"
+            android:textColor="#ccffffff"
+            android:textSize="28px" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10px">
+
+            <ImageView
+                android:layout_width="204px"
+                android:layout_height="204px"
+                android:src="@drawable/image_head_base_map" />
+
+            <com.xiaoma.ui.view.RoundImageView
+                android:id="@+id/image_head"
+                android:layout_width="180px"
+                android:layout_height="180px"
+                android:layout_gravity="center"
+                android:src="@drawable/image_head_default"
+                app:type="circle"/>
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/btn_unbind"
+            android:layout_width="330px"
+            android:layout_height="85px"
+            android:layout_marginTop="20px"
+            android:background="@drawable/selector_button"
+            android:text="@string/logout"
+            android:textColor="@color/white"
+            android:textSize="28px" />
+
+        <Button
+            android:id="@+id/btn_open"
+            android:layout_marginTop="10px"
+            android:text="@string/open_led"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_close"
+            android:layout_marginTop="10px"
+            android:text="@string/close_led"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_mi_login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="86px"
+            android:text="@string/mi_tips_three"
+            android:textColor="@color/white"
+            android:textSize="32px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32px"
+            android:text="@string/mi_tips_two"
+            android:textColor="#ccffffff"
+            android:textSize="28px" />
+
+        <ImageView
+            android:id="@+id/image_qr_code"
+            android:layout_width="266px"
+            android:layout_height="266px"
+            android:layout_marginTop="28px"
+            android:background="@drawable/bg_white_qr_code"
+            android:padding="11px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="21px"
+            android:text="@string/mi_tips_four"
+            android:textColor="#ffffff"
+            android:textSize="28px" />
+    </LinearLayout>
+
+</FrameLayout>

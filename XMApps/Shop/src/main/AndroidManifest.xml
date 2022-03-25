@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xiaoma.shop">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.FORCE_STOP_PACKAGES" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <application
+        android:name=".ShopApp"
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon_shop"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/XiaoMaTheme">
+
+        <meta-data
+            android:name="CarType"
+            android:value="XMLX" />
+
+        <meta-data
+            android:name="CarChannelId"
+            android:value="${CAR_CHANNEL_ID}" />
+
+        <meta-data
+            android:name="XmGitRev"
+            android:value="${XM_GIT_REV}" />
+
+        <activity
+            android:name=".business.ui.bought.BoughtActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".business.ui.main.MainActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/XiaoMaTheme_Main"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+                <action android:name="com.xiaoma.shop.assistan.jump" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <data
+                    android:host="com.xiaoma.shop"
+                    android:path="/main_shop"
+                    android:scheme="xiaoma" />
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".business.ui.hologram.HologramDetailActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".business.ui.theme.TrialEndActivity"
+            android:theme="@style/XiaoMaTheme.Transparent" />
+
+        <service
+            android:name=".common.manager.TrialRestoreService"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <service android:name=".business.download.DownloadService" />
+
+        <receiver
+            android:name=".business.skin.UserSkinReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <!--登录相关-->
+                <action android:name="com.xiaoma.login.ON_LOGIN" />
+                <action android:name="com.xiaoma.login.ON_LOGOUT" />
+                <!--换肤相关-->
+                <action android:name="com.xiaoma.skin.success" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_home_draw_left">
+
+    <com.xiaoma.ui.navi.NavigationBar
+        android:id="@+id/personal_popup_nav"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/personal_popup_nav"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- 姓名 -->
+            <RelativeLayout
+                android:id="@+id/personal_name_relative"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_pop_personal_info_bar"
+                android:layout_marginStart="@dimen/size_popup_personal_info_item_margin_left_right"
+                android:layout_marginTop="@dimen/size_popup_personal_info_item_margin_root_top"
+                android:layout_marginEnd="@dimen/size_popup_personal_info_item_margin_left_right"
+                android:background="@drawable/bg_home_draw_input"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/size_popup_personal_info_key_margin_left"
+                    android:text="@string/personal_name_tip"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/font_size_home" />
+
+                <ImageView
+                    android:id="@+id/name_image_point"
+                    android:layout_width="@dimen/width_popup_personal_info_arrow"
+                    android:layout_height="@dimen/height_popup_personal_info_arrow"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/size_popup_personal_info_arrow_right"
+                    android:src="@drawable/icon_right_arrow" />
+
+                <TextView
+                    android:id="@+id/personal_name_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10px"
+                    android:layout_toStartOf="@id/name_image_point"
+                    android:text="张三"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/font_popup_personal_info_value" />
+            </RelativeLayout>
+
+            <!-- 性别 -->
+            <RelativeLayout
+                android:id="@+id/personal_sex_relative"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_pop_personal_info_bar"
+                android:layout_marginStart="@dimen/size_popup_personal_info_item_margin_left_right"
+                android:layout_marginTop="@dimen/size_popup_personal_item_top"
+                android:layout_marginEnd="@dimen/size_popup_personal_info_item_margin_left_right"
+                android:background="@drawable/bg_home_draw_input"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/size_popup_personal_info_key_margin_left"
+                    android:text="@string/personal_sex_tip"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/font_size_home" />
+
+                <ImageView
+                    android:id="@+id/sex_image_point"
+                    android:layout_width="@dimen/width_popup_personal_info_arrow"
+                    android:layout_height="@dimen/height_popup_personal_info_arrow"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/size_popup_personal_info_arrow_right"
+                    android:src="@drawable/icon_right_arrow" />
+
+                <TextView
+                    android:id="@+id/personal_sex_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10px"
+                    android:layout_toStartOf="@id/sex_image_point"
+                    android:text="男"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/font_popup_personal_info_value" />
+            </RelativeLayout>
+
+
+            <!-- 年龄 -->
+            <RelativeLayout
+                android:id="@+id/personal_age_relative"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_pop_personal_info_bar"
+                android:layout_marginStart="@dimen/size_popup_personal_info_item_margin_left_right"
+                android:layout_marginTop="@dimen/size_popup_personal_item_top"
+                android:layout_marginEnd="@dimen/size_popup_personal_info_item_margin_left_right"
+                android:background="@drawable/bg_home_draw_input"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/size_popup_personal_info_key_margin_left"
+                    android:text="@string/personal_age_tip"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/font_size_home" />
+
+                <ImageView
+                    android:id="@+id/age_image_point"
+                    android:layout_width="@dimen/width_popup_personal_info_arrow"
+                    android:layout_height="@dimen/height_popup_personal_info_arrow"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/size_popup_personal_info_arrow_right"
+                    android:src="@drawable/icon_right_arrow" />
+
+                <TextView
+                    android:id="@+id/personal_age_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10px"
+                    android:layout_toStartOf="@id/age_image_point"
+                    android:text="18"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/font_popup_personal_info_value" />
+            </RelativeLayout>
+        </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>

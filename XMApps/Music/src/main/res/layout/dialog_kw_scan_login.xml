@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="655px"
+    android:layout_height="370px"
+    android:background="@drawable/dialog_bg_middle">
+
+    <ImageView
+        android:id="@+id/login_close"
+        android:layout_width="25px"
+        android:layout_height="25px"
+        android:layout_marginTop="20px"
+        android:layout_marginLeft="20px"
+        android:background="@drawable/close_pay_dialog"/>
+
+    <ImageView
+        android:id="@+id/login_code_iv"
+        android:layout_width="215px"
+        android:layout_height="215px"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60px"/>
+
+    <TextView
+        android:id="@+id/login_state_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30px"
+        android:textSize="@dimen/font_search_text_middle"
+        android:textColor="@color/white"
+        android:text="@string/login_desc_content"/>
+
+</RelativeLayout>

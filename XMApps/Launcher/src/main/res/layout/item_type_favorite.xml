@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/card_normal_favorite_width"
+    android:layout_height="@dimen/card_normal_height"
+    android:layout_marginLeft="160px"
+    android:layout_marginTop="@dimen/card_normal_margin_top"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/item_title"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <com.xiaoma.ui.view.ReflectionImageView
+            android:id="@+id/audio_iv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            app:reflectionHeight="40px"
+            app:reflectionPadding="6px" />
+
+        <TextView
+            android:id="@+id/audio_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="166px"
+            android:paddingLeft="24px"
+            android:textColor="@color/white"
+            android:textSize="30px" />
+
+        <TextView
+            android:id="@+id/audio_tv_sub_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="40px"
+            android:paddingLeft="24px"
+            android:paddingBottom="43px"
+            android:textColor="#999999"
+            android:textSize="26px" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/music_favorite"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <com.xiaoma.ui.view.ReflectionImageView
+            android:id="@+id/iv_music_favorite"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            app:reflectionHeight="40px"
+            app:reflectionPadding="6px" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="70px"
+            android:background="@drawable/music_card_word_n"
+            android:gravity="center"
+            android:padding="20px"
+            android:text="@string/favorite_music"
+            android:textSize="26px" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/xting_favorite"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <com.xiaoma.ui.view.ReflectionImageView
+            android:id="@+id/iv_xting_favorite"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            app:reflectionHeight="40px"
+            app:reflectionPadding="6px" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="70px"
+            android:background="@drawable/music_card_word_n"
+            android:gravity="center"
+            android:padding="20px"
+            android:text="@string/favorite_xting"
+            android:textSize="26px" />
+
+    </RelativeLayout>
+</LinearLayout>

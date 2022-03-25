@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/item_city_location_text_top"
+        android:text="@string/gps_location"
+        android:textColor="#FFF"
+        android:textSize="@dimen/item_city_location_text_size" />
+
+    <LinearLayout
+        android:id="@+id/location_layout"
+        android:layout_marginTop="@dimen/item_city_location_layout_top"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@drawable/position_frame"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/item_city_location_layout_height">
+        <ImageView
+            android:id="@+id/location_img"
+            android:src="@drawable/position_img"
+            android:layout_marginLeft="@dimen/item_city_location_img_left"
+            android:layout_width="@dimen/item_city_location_img_width"
+            android:layout_height="@dimen/item_city_location_img_height" />
+        <TextView
+            android:id="@+id/location_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/item_city_location_tv_left"
+            android:paddingRight="@dimen/item_city_location_tv_right"
+            android:textColor="#FFF"
+            android:textSize="@dimen/item_city_location_tv_size" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/item_city_location_tv_top"
+        android:layout_marginBottom="@dimen/item_city_location_tv_bottom"
+        android:text="@string/choose"
+        android:textColor="#FFF"
+        android:textSize="@dimen/item_city_location_tv_size" />
+</LinearLayout>

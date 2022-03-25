@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="30px"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@drawable/bg_line"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_curr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/item_city_location_text_top"
+        android:text="@string/current_city"
+        android:textColor="#8a919d"
+        android:textSize="@dimen/item_city_location_text_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_bg_location"
+        android:layout_width="230px"
+        android:layout_height="60px"
+        android:layout_marginStart="30px"
+        android:background="@drawable/bg_location"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_curr"
+        app:layout_constraintStart_toEndOf="@+id/tv_curr"
+        app:layout_constraintTop_toTopOf="@+id/tv_curr" />
+
+    <ImageView
+        android:id="@+id/iv_location"
+        android:layout_width="40px"
+        android:layout_height="40px"
+        android:layout_marginStart="10px"
+        android:src="@drawable/icon_curr_location"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_bg_location"
+        app:layout_constraintStart_toStartOf="@+id/iv_bg_location"
+        app:layout_constraintTop_toTopOf="@+id/iv_bg_location" />
+
+    <TextView
+        android:id="@+id/location_tv"
+        android:layout_width="165px"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15px"
+        android:ellipsize="end"
+        android:maxLines="1"
+        tools:text="@string/location_ing"
+        android:textColor="#FFF"
+        android:textSize="@dimen/item_city_location_tv_size"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_bg_location"
+        app:layout_constraintStart_toEndOf="@+id/iv_location"
+        app:layout_constraintTop_toTopOf="@+id/iv_bg_location" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginStart="100px"
+        android:layout_marginTop="35px"
+        android:background="@drawable/bg_line"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_bg_location" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="187px"
+        android:text="@string/manual_selection"
+        android:textColor="#8a919d"
+        android:textSize="30px"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

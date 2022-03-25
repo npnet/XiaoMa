@@ -1,0 +1,108 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="650px"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:background="@drawable/dialog_big_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="214px"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:background="@drawable/dialog_title_bg_big"
+        android:gravity="center"
+        android:text="@string/tips"
+        android:textColor="#fff"
+        android:textSize="28px" />
+
+    <ImageView
+        android:id="@+id/app_icon"
+        android:layout_width="135px"
+        android:layout_height="135px"
+        android:layout_marginTop="15px" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10px"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:textSize="30px" />
+
+        <TextView
+            android:id="@+id/app_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15px"
+            android:textColor="#fff"
+            android:textSize="24px" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_update_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:maxLines="4"
+        android:textColor="#fff"
+        android:textSize="30px" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/dialog_divide_big"
+        android:layout_marginTop="20px"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70px"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/btn_update"
+           android:layout_weight="1"
+            android:layout_width="0px"
+            android:layout_height="48px"
+            android:gravity="center"
+            android:paddingLeft="60px"
+            android:paddingRight="60px"
+            android:text="@string/immediately_update"
+            android:background="@drawable/dialog_button_bg_big"
+            android:textColor="@color/selector_dialog_sure_cancel"
+            android:textSize="30px" />
+
+        <TextView
+            android:id="@+id/btn_force_update"
+            android:layout_weight="1"
+            android:layout_width="0px"
+            android:layout_height="48px"
+            android:gravity="center"
+            android:text="@string/immediately_update"
+            android:background="@drawable/dialog_button_bg_big"
+            android:textColor="@color/selector_dialog_sure_cancel"
+            android:textSize="30px"
+            android:visibility="gone" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/dialog_line_big"/>
+        <TextView
+            android:id="@+id/btn_cancel_update"
+            android:layout_weight="1"
+            android:layout_width="0px"
+            android:layout_height="48px"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="@string/wait_update"
+            android:textColor="@color/selector_dialog_sure_cancel"
+            android:textSize="30px" />
+    </LinearLayout>
+
+</LinearLayout>

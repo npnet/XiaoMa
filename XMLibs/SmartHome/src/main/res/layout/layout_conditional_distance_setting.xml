@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="684px"
+    android:layout_height="430px"
+    android:background="@drawable/dialog_bg_middle">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25px"
+        android:text="@string/set_excute_condition"
+        android:textColor="@android:color/white"
+        android:textSize="30px" />
+
+    <TextView
+        android:id="@+id/tv_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15px"
+        android:gravity="center"
+        android:text="@string/when_distance_excute"
+        android:textColor="#d9d9d9"
+        android:textSize="23px" />
+
+    <LinearLayout
+        android:id="@+id/ll_distant1"
+        android:layout_width="match_parent"
+        android:layout_height="65px"
+        android:layout_below="@id/tv_desc"
+        android:layout_marginTop="55px"
+        android:gravity="center">
+
+        <com.xiaoma.smarthome.scene.view.ClickButtonView
+            android:id="@+id/btn_distant1"
+            android:layout_width="181px"
+            android:layout_height="match_parent"
+            android:layout_marginRight="24px"
+            android:background="@drawable/bg_btn_set_distant"
+            android:gravity="center"
+            android:text="@string/distance_500"
+            android:textColor="@color/white"
+            android:textSize="24px" />
+
+        <com.xiaoma.smarthome.scene.view.ClickButtonView
+            android:id="@+id/btn_distant2"
+            android:layout_width="181px"
+            android:layout_height="match_parent"
+            android:layout_marginRight="24px"
+            android:background="@drawable/bg_btn_set_distant"
+            android:gravity="center"
+            android:text="@string/distance_1000"
+            android:textColor="@color/white"
+            android:textSize="24px" />
+
+        <com.xiaoma.smarthome.scene.view.ClickButtonView
+            android:id="@+id/btn_distant3"
+            android:layout_width="181px"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_btn_set_distant"
+            android:gravity="center"
+            android:text="@string/distance_2000"
+            android:textColor="@color/white"
+            android:textSize="24px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_leave_home"
+        android:layout_width="match_parent"
+        android:layout_height="65px"
+        android:layout_below="@+id/ll_distant1"
+        android:layout_marginTop="35px"
+        android:gravity="center">
+
+        <com.xiaoma.smarthome.scene.view.ClickButtonView
+            android:id="@+id/btn_distant4"
+            android:layout_width="181px"
+            android:layout_height="match_parent"
+            android:layout_marginRight="24px"
+            android:background="@drawable/bg_btn_set_distant"
+            android:gravity="center"
+            android:text="@string/distance_3000"
+            android:textColor="@color/white"
+            android:textSize="24px" />
+
+        <com.xiaoma.smarthome.scene.view.ClickButtonView
+            android:id="@+id/btn_distant5"
+            android:layout_width="181px"
+            android:layout_height="match_parent"
+            android:layout_marginRight="24px"
+            android:background="@drawable/bg_btn_set_distant"
+            android:gravity="center"
+            android:text="@string/distance_4000"
+            android:textColor="@color/white"
+            android:textSize="24px" />
+
+        <com.xiaoma.smarthome.scene.view.ClickButtonView
+            android:id="@+id/btn_distant6"
+            android:layout_width="181px"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_btn_set_distant"
+            android:gravity="center"
+            android:text="@string/distance_5000"
+            android:textColor="@color/white"
+            android:textSize="24px" />
+    </LinearLayout>
+</RelativeLayout>

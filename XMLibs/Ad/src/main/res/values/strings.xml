@@ -1,0 +1,8 @@
+<resources>
+    <string name="module_desc">Ad</string>
+
+    <string name="advertisement_display_countdown_skip">%ds跳过</string>
+    <string name="advertisement_display_countdown">%ds后关闭</string>
+    <string name="advertisement_display_skip">跳过</string>
+
+</resources>

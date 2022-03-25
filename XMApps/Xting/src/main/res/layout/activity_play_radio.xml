@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/btn_native"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="115px"
+        android:layout_marginTop="106px"
+        android:text="@string/local_radio"
+        android:textColor="@color/white"
+        android:textSize="32px"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/btn_online"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="90px"
+        android:text="@string/online_radio"
+        android:textColor="@color/color_main_selector"
+        android:textSize="32px"
+        app:layout_constraintLeft_toRightOf="@id/btn_native"
+        app:layout_constraintTop_toTopOf="@id/btn_native" />
+
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_width="187px"
+        android:layout_height="76px"
+        android:layout_marginLeft="1472px"
+        android:background="@drawable/audio_ok"
+        android:textColor="@color/white"
+        android:textSize="30px"
+        app:layout_constraintBottom_toBottomOf="@id/btn_native"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/btn_native" />
+
+    <!--本地电台-->
+    <include
+        android:id="@+id/include_native"
+        layout="@layout/include_manual_radio"
+        android:visibility="visible" />
+    <!--在线电台-->
+    <include
+        android:id="@+id/include_online"
+        layout="@layout/include_music_radio"
+        android:visibility="gone" />
+
+</android.support.constraint.ConstraintLayout>

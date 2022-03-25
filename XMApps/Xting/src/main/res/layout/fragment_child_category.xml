@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="@drawable/bg_common">
+
+    <TextView
+        android:id="@+id/tv_class_name"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/height_fragment_tab_title_child"
+        android:layout_marginStart="@dimen/size_fragment_title_margin_start"
+        android:layout_marginTop="@dimen/size_fragment_title_margin_top"
+        android:gravity="center"
+        android:textAppearance="@style/text_view_light_blue"
+        android:textSize="@dimen/size_fragment_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="分类名称" />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tl_child_class"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/size_child_title_margin_start"
+        app:tabMode="scrollable"
+        app:tabIndicatorHeight="@dimen/size_zero"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_class_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_class_name"
+        app:layout_constraintTop_toTopOf="@+id/tv_class_name"
+        app:tabTextAppearance="@style/XMChildTabLayoutTextAppearance" />
+
+    <com.xiaoma.ui.StateControl.StateView
+        android:id="@+id/state_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/size_list_margin_title_top"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_class_name">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_child_class"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </com.xiaoma.ui.StateControl.StateView>
+
+</android.support.constraint.ConstraintLayout>

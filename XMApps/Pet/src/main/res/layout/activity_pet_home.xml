@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pet_welcome">
+
+
+    <FrameLayout
+        android:id="@+id/pet_home_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <FrameLayout
+        android:id="@+id/pet_icon_frame_layout"
+        android:layout_width="@dimen/width_pet_home_operation"
+        android:layout_height="@dimen/size_operation_bt"
+        android:layout_marginStart="@dimen/size_operation_bt_margin_start"
+        android:layout_marginTop="@dimen/size_operation_bt_margin_top"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/pet_eat_food_linear"
+            android:layout_width="@dimen/width_right_popup"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/size_popup_margin_start"
+            android:background="@drawable/eat_food_popup"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20px"
+                android:text="主人，我的肚子饿了"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/pet_font_size_30" />
+
+
+            <Button
+                android:id="@+id/go_to_eat_foot_bt"
+                android:layout_width="@dimen/width_go_to_eat_food"
+                android:layout_height="@dimen/height_go_to_eat_food"
+                android:layout_marginStart="@dimen/size_go_to_eat_food_margin_start"
+                android:layout_marginTop="@dimen/size_go_to_eat_food_margin_top"
+                android:background="@drawable/round_pop"
+                android:gravity="center"
+                android:text="@string/go_eat_food"
+                android:textColor="@color/color_text"
+                android:textSize="@dimen/pet_font_size_26" />
+        </LinearLayout>
+
+        <include layout="@layout/pet_progress_view" />
+    </FrameLayout>
+
+
+    <TextView
+        android:id="@+id/tv_pet_upgrade"
+        android:layout_width="@dimen/width_level_flag"
+        android:layout_height="@dimen/height_level_flag"
+        android:layout_marginStart="@dimen/size_level_margin_start"
+        android:layout_marginTop="@dimen/size_level_margin_top"
+        android:background="@drawable/level_flag_icon"
+        android:gravity="center"
+        android:text="LV0"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/pet_font_size_20"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/tv_pet_map_text"
+        android:layout_width="@dimen/size_operation_bt"
+        android:layout_height="@dimen/size_operation_bt"
+        android:layout_marginStart="@dimen/size_operation_bt_margin_start"
+        android:layout_marginTop="@dimen/size_operation_bt_interval"
+        android:src="@drawable/map_bt_selector"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pet_icon_frame_layout" />
+
+
+    <FrameLayout
+        android:layout_width="@dimen/width_pet_home_operation"
+        android:layout_height="@dimen/size_operation_bt"
+        android:layout_marginStart="@dimen/size_operation_bt_margin_start"
+        android:layout_marginTop="@dimen/size_operation_bt_interval"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_pet_map_text">
+
+        <RelativeLayout
+            android:id="@+id/treasure_relative_layout"
+            android:layout_width="@dimen/width_right_popup"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/size_popup_margin_start"
+            android:background="@drawable/eat_food_popup"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv_small_icon"
+                android:layout_width="@dimen/size_popup_icon"
+                android:layout_height="@dimen/size_popup_icon"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/size_popup_icon_margin_start"
+                android:src="@drawable/small_food_detail" />
+
+            <TextView
+                android:id="@+id/tv_small_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/iv_small_icon"
+                android:layout_marginStart="@dimen/size_treasure_box_content_margin_start"
+                android:layout_toEndOf="@id/iv_small_icon"
+                android:text="+1"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/pet_font_size_30" />
+
+
+            <TextView
+                android:id="@+id/tv_small_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_small_title"
+                android:layout_alignBottom="@id/iv_small_icon"
+                android:layout_marginStart="@dimen/size_treasure_box_content_margin_start"
+                android:layout_toEndOf="@id/iv_small_icon"
+                android:text="获得“小份食物”"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/pet_font_size_30" />
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/tv_treasure_chest"
+            android:layout_width="@dimen/size_operation_bt"
+            android:layout_height="@dimen/size_operation_bt"
+            android:src="@drawable/treasure_bt_selector" />
+    </FrameLayout>
+
+    <com.xiaoma.pet.ui.view.DrawStrokeTextView
+        android:id="@+id/treasure_box_number"
+        android:layout_width="80px"
+        android:layout_height="40px"
+        android:layout_marginStart="@dimen/size_treasure_box_number_start"
+        android:layout_marginTop="@dimen/size_treasure_box_number_top"
+        android:clickable="true"
+        android:enabled="true"
+        android:focusable="true"
+        android:visibility="gone"
+        app:gradient="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:letter_spacing="0.1"
+        app:stroke_text_size="@dimen/pet_font_size_40"
+        app:text_content="x3" />
+
+    <com.xiaoma.pet.ui.view.InterceptView
+        android:id="@+id/intercept_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="1750px"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="564px"
+            android:layout_marginTop="110px"
+            android:orientation="vertical">
+
+            <com.xiaoma.pet.ui.view.CarSpeedView
+                android:id="@+id/car_speed_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <com.xiaoma.pet.ui.view.AccelerateView
+                android:id="@+id/accelerate_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/drag_icon" />
+        </LinearLayout>
+    </com.xiaoma.pet.ui.view.InterceptView>
+
+</android.support.constraint.ConstraintLayout>

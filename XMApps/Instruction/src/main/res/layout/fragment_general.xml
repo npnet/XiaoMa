@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical">
+
+    <FrameLayout
+        android:layout_width="@dimen/px_410"
+        android:layout_height="@dimen/px_456"
+        android:background="@drawable/bg_text_description">
+
+        <com.xiaoma.instruction.view.ObservableScrollView
+            android:id="@+id/sisclamer_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/px_45"
+            android:overScrollMode="never"
+            android:scrollbars="none">
+
+            <TextView
+                android:id="@+id/manual_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:lineSpacingExtra="@dimen/px_21"
+                android:textSize="@dimen/px_24"
+                android:includeFontPadding="false"
+                android:textColor="@color/white"/>
+
+        </com.xiaoma.instruction.view.ObservableScrollView>
+
+        <com.xiaoma.instruction.view.VerticalScrollBar
+            android:id="@+id/sisclamer_scrollbar"
+            android:layout_width="4px"
+            android:layout_height="331px"
+            android:layout_centerVertical="true"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="@dimen/px_8"
+            />
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/iv_content"
+        android:layout_width="@dimen/px_988"
+        android:layout_height="@dimen/px_388"
+        android:layout_marginLeft="@dimen/px_123" />
+
+</LinearLayout>

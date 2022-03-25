@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:parentTag="android.support.constraint.ConstraintLayout">
+
+    <com.xiaoma.ui.view.ReflectionImageView
+        android:id="@+id/iv_cover"
+        android:layout_width="@dimen/width_mini_player_cover"
+        android:layout_height="@dimen/height_mini_player_cover"
+        android:layout_marginStart="@dimen/size_mini_player_cover_margin_start"
+        android:layout_marginTop="@dimen/size_mini_player_cover_margin_top"
+        android:layout_marginBottom="@dimen/size_mini_player_cover_margin_bottom"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:reflectionHeight="@dimen/size_mini_player_reflex_height"
+        app:reflectionPadding="@dimen/size_mini_player_reflex_padding" />
+
+    <ImageView
+        android:id="@+id/ib_control"
+        android:layout_width="@dimen/width_mini_player_control"
+        android:layout_height="@dimen/height_mini_player_control"
+        android:layout_marginTop="0dp"
+        android:clickable="true"
+        android:padding="@dimen/size_mini_player_control_padding"
+        android:src="@drawable/mini_player_selector"
+        app:layout_constraintEnd_toEndOf="@+id/iv_cover"
+        app:layout_constraintStart_toStartOf="@+id/iv_cover"
+        app:layout_constraintTop_toTopOf="@+id/iv_cover" />
+
+    <com.xiaoma.ui.view.AutoScrollTextView
+        android:id="@+id/tv_name"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/size_mini_title_margin_start"
+        android:layout_marginEnd="@dimen/size_mini_title_margin_start"
+        android:ellipsize="marquee"
+        android:gravity="center_vertical"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:textColor="@color/selector_text_press_inverse"
+        android:textSize="@dimen/size_mini_player_title"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_cover"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Let it go! Let it go!" />
+</merge>

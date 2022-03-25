@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginTop="45px"
+    android:layout_width="445px"
+    android:layout_height="450px"
+    android:layout_marginBottom="30px"
+    android:background="@drawable/bg_order_frame"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_hotel_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20px"
+        android:layout_marginStart="44px"
+        android:layout_marginTop="58px"
+        android:maxLines="1"
+        android:textSize="30px"
+        android:textStyle="bold"
+        tools:text="维也纳酒店" />
+
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20px"
+        android:layout_marginStart="44px"
+        android:layout_marginTop="16px"
+        android:textSize="26px"
+        android:lines="2"
+        android:ellipsize="end"
+        tools:text="南京路" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20px"
+        android:layout_marginStart="44px"
+        android:layout_marginTop="29px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="55px"
+            android:layout_height="35px"
+            android:gravity="center"
+            android:text="@string/time"
+            android:background="@drawable/bg_order_but_icon"
+            android:textSize="22px" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginStart="22px"
+            android:textSize="26px"
+            tools:text="2月1日 共一天" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20px"
+        android:layout_marginStart="44px"
+        android:layout_marginTop="20px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="55px"
+            android:layout_height="35px"
+            android:gravity="center"
+            android:text="@string/room"
+            android:background="@drawable/bg_order_but_icon"
+            android:textSize="22px"  />
+
+        <TextView
+            android:id="@+id/tv_count"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20px"
+            android:gravity="center_vertical"
+            android:textSize="26px"
+            tools:text="2间" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_guide"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="25px"
+        android:paddingTop="8px"
+        android:layout_width="286px"
+        android:layout_height="70px"
+        android:background="@drawable/selector_button"
+        android:text="@string/im_guide"
+        android:textSize="26px" />
+</LinearLayout>

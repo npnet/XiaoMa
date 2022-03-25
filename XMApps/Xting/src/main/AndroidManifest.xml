@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.xiaoma.xting">
+
+    <!--Android 提供的权限-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!--其他权限-->
+    <uses-permission android:name="android.car.permission.CAR_CONTROL_AUDIO_VOLUME" />
+    <uses-permission android:name="android.car.permission.CAR_RADIO" />
+    <uses-permission android:name="android.car.permission.CAR_CONTROL_AUDIO_SETTINGS" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_BROADCAST_RADIO"
+        tools:ignore="ProtectedPermissions" />
+
+
+    <application
+        android:name=".XtingApp"
+        android:icon="@drawable/icon_fm"
+        android:label="@string/app_name"
+        android:theme="@style/XiaoMaTheme">
+
+
+        <!--小马元数据start-->
+        <meta-data
+            android:name="CarType"
+            android:value="XMLX" />
+        <meta-data
+            android:name="CarChannelId"
+            android:value="${CAR_CHANNEL_ID}" />
+        <meta-data
+            android:name="XmGitRev"
+            android:value="${XM_GIT_REV}"/>
+        <!--小马元数据end-->
+
+        <!--喜马拉雅元数据start-->
+        <meta-data
+            android:name="app_key"
+            android:value="ba39f971bcb35d12afe892ab20be0e14" />
+        <meta-data
+            android:name="pack_id"
+            android:value="com.xiaoma.xting.yiqihongqihfive" />
+        <!--喜马拉雅元数据end-->
+
+        <!-- 高德地图key start -->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="fda804e9e18d819395176c1ef0ec8346" />
+        <!-- 高德地图key end -->
+
+        <!-- 百度地图key start -->
+        <!-- <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="vgqU0dQYlPLtwSZXuOYxAsj21TcUpsZh"/> -->
+        <!-- 百度地图key end -->
+
+        <!--koala 电台-->
+        <meta-data
+            android:name="com.kaolafm.open.sdk.AppKey"
+            android:value="17a9f4b271dc2b7784694525ee682e9d" /> <!--申请开发所需APP_KEY配置-->
+        <meta-data
+            android:name="com.kaolafm.open.sdk.AppId"
+            android:value="av4252" /> <!--申请开发所需APP_ID配置-->
+
+        <meta-data
+            android:name="com.kaolafm.open.sdk.Channel"
+            android:value="benteng" />
+
+        <meta-data
+            android:name="com.kaolafm.open.sdk.Suffix"
+            android:value="true" />
+
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/XiaoMaTheme_Main"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaoma.xting.main" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="@string/host"
+                    android:path="@string/path_subscribe_detail"
+                    android:scheme="@string/scheme" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".welcome.ui.SplashActivity"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name=".player.ui.FMPlayerActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="com.xiaoma.xting.player" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="@string/host"
+                    android:path="@string/path_player_detail"
+                    android:scheme="@string/scheme" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".search.ui.SearchActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".search.ui.SearchResultActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".sdk.test.XMLYTestPanelActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".sdk.test.YQFMTestPanelActivity"
+            android:exported="true"
+            android:screenOrientation="landscape" />
+
+        <service
+            android:name="com.ximalaya.ting.android.opensdk.player.service.XmPlayerService"
+            android:process=":player" />
+        <service android:name="com.kaolafm.sdk.core.mediaplayer.PlayerService" />
+        <service android:name="com.kaolafm.sdk.core.mediaplayer.VLCMediaPlayService" />
+        <service
+            android:name="com.android.car.radio.RadioService"
+            android:exported="true"
+            android:label="RadioService" />
+        <!-- 定位需要的服务 -->
+        <service android:name="com.amap.api.location.APSService" />
+        <!-- 百度定位服务 start -->
+        <!-- <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote"/> -->
+        <!-- 百度定位服务 end -->
+
+
+        <receiver android:name=".common.NetworkReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+                <action android:name="android.net.wifi.STATE_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <activity
+            android:name=".XtingActivity"
+            android:exported="true"
+            android:launchMode="singleInstance"
+            android:theme="@style/TranslucentTheme" />
+        <!--<receiver android:name=".launcher.BootReceiver">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.BOOT_COMPLETED" />-->
+            <!--</intent-filter>-->
+        <!--</receiver>-->
+
+        <activity
+            android:name=".practice.ui.PlayRadioActivity"
+            android:exported="true" />
+        <meta-data
+            android:name="com.xiaoma.skill"
+            android:value="radio" />
+    </application>
+
+
+</manifest>

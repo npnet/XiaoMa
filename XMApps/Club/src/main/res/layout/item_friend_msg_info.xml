@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_msg_item"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_msg_content_item"
+        android:layout_marginTop="@dimen/margin_msg_content_item"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/friend_head_rl"
+            android:layout_width="@dimen/height_msg_content_item"
+            android:layout_height="@dimen/height_msg_content_item">
+
+            <ImageView
+                android:id="@+id/friend_msg_icon"
+                android:layout_width="@dimen/height_msg_head_item"
+                android:layout_height="@dimen/height_msg_head_item"
+                android:layout_alignParentBottom="true" />
+
+            <TextView
+                android:id="@+id/friend_item_new_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/width_main_red_dot"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/conversation_newmsg_count_bg"
+                android:gravity="center"
+                android:minWidth="@dimen/width_main_red_dot"
+                android:paddingLeft="@dimen/padding_red_dot"
+                android:paddingRight="@dimen/padding_red_dot"
+                android:textColor="@color/club_white"
+                android:textSize="@dimen/font_text_red_dot"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_msg_content_tv_item"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_msg_content_tv_left"
+            android:layout_toRightOf="@id/friend_head_rl">
+
+            <TextView
+                android:id="@+id/friend_msg_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxEms="10"
+                android:singleLine="true"
+                android:textColor="@color/club_white"
+                android:textSize="@dimen/font_text_middle" />
+
+            <TextView
+                android:id="@+id/friend_msg_newmsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:ellipsize="end"
+                android:maxEms="25"
+                android:singleLine="true"
+                android:textColor="@color/text_msg_item"
+                android:textSize="@dimen/font_text_small_plus" />
+
+            <TextView
+                android:id="@+id/friend_msg_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/club_white"
+                android:textSize="@dimen/font_text_middle" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/friend_msg_delete"
+            android:layout_width="@dimen/width_msg_delete"
+            android:layout_height="@dimen/width_msg_delete"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="@dimen/padding_msg_delete_left"
+            android:paddingTop="@dimen/padding_msg_delete"
+            android:src="@drawable/delete_conversation" />
+
+    </RelativeLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_msg_content_item" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@drawable/conversation_divider" />
+</LinearLayout>

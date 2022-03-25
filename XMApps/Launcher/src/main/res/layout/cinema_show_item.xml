@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/cinema_show_item_layout_top"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="@dimen/cinema_show_item_relative_width"
+        android:layout_height="@dimen/cinema_show_item_relative_height">
+
+        <ImageView
+            android:id="@+id/film_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/not_film_img" />
+
+        <LinearLayout
+            android:id="@+id/socer_linear"
+            android:layout_width="@dimen/cinema_show_item_socer_linear_width"
+            android:layout_height="@dimen/cinema_show_item_socer_linear_height"
+            android:background="@drawable/collect_item_type_back"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="@dimen/cinema_show_item_socer_img_width"
+                android:layout_height="@dimen/cinema_show_item_socer_img_height"
+                android:src="@drawable/fraction_icon" />
+
+            <TextView
+                android:id="@+id/film_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/attraction_socer_left"
+                android:gravity="center"
+                android:text="5.0"
+                android:textColor="#222222"
+                android:textSize="@dimen/cinema_show_item_film_score_szie" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/film_type"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/cinema_item_position_height"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:background="#60000000"
+            android:textSize="@dimen/cinema_show_item_film_type_size"
+            android:paddingTop="19px"
+            android:paddingLeft="24px"
+            android:textColor="@color/color_fbd3a4"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/film_name"
+        android:layout_width="@dimen/cinema_show_item_film_name_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/cinema_show_item_film_name_top"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textSize="@dimen/cinema_show_item_film_name_size" />
+
+    <TextView
+        android:id="@+id/time_and_price"
+        android:layout_width="@dimen/cinema_show_item_time_and_price_width"
+        android:layout_marginTop="@dimen/cinema_show_item_time_and_price_top"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textSize="@dimen/cinema_show_item_time_and_price_size"
+        android:textColor="@color/color_8a919d"/>
+
+</LinearLayout>

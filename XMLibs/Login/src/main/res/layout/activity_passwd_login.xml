@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <com.xiaoma.login.business.ui.verify.view.NumberKeyboard
+        android:id="@+id/number_keyboard"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:paddingStart="60px"
+        android:paddingEnd="60px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60px"
+        android:text="登录账户"
+        android:textSize="48px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/number_keyboard"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16px"
+        tools:text="132****8888"
+        android:textSize="48px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/number_keyboard"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <com.xiaoma.ui.view.UnderLineTextView
+        android:id="@+id/passwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:input_type="passwd"
+        app:layout_constraintBottom_toTopOf="@+id/login_now"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/number_keyboard"
+        app:layout_constraintTop_toBottomOf="@+id/phone" />
+
+    <Button
+        android:id="@+id/login_now"
+        android:layout_width="400px"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60px"
+        android:background="@drawable/shape_semicircle_round"
+        android:text="立即登录"
+        app:layout_constraintBottom_toTopOf="@+id/forget_passwd"
+        app:layout_constraintEnd_toStartOf="@+id/voiceprint_login"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@+id/number_keyboard" />
+
+    <Button
+        android:id="@+id/voiceprint_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60px"
+        android:background="@drawable/shape_semicircle_round"
+        android:text="声纹登录"
+        app:layout_constraintBottom_toBottomOf="@+id/login_now"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/login_now"
+        app:layout_constraintTop_toTopOf="@+id/login_now" />
+
+    <TextView
+        android:id="@+id/forget_passwd"
+        android:layout_width="140px"
+        android:layout_height="58px"
+        android:padding="10px"
+        android:gravity="center"
+        android:layout_marginBottom="60px"
+        android:text="忘记密码"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/number_keyboard" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="2px"
+        android:layout_height="0dp"
+        android:background="@color/white_60"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/number_keyboard"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

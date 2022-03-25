@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/title_layout_margin_left"
+        android:layout_marginTop="@dimen/title_layout_margin_top"
+        android:gravity="center"
+        android:text="@string/order_service"
+        android:textColor="@color/white"
+        android:textSize="@dimen/title_layout_text_size" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/ll_layout_margin_left"
+        android:layout_marginTop="@dimen/ll_layout_margin_top_40"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_store"
+            android:layout_width="@dimen/order_ll_width"
+            android:layout_height="@dimen/order_ll_height"
+            android:layout_marginRight="@dimen/order_ll_margin_right"
+            android:background="@drawable/bg_booking_car_service"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/order_text_margin_left"
+                android:gravity="center_vertical"
+                android:text="@string/service_shop"
+                android:textSize="@dimen/order_left_text_size" />
+
+            <TextView
+                android:id="@+id/shop_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/order_text_margin_right"
+                android:drawableRight="@drawable/icon_right"
+                android:drawablePadding="@dimen/order_text_drawable_padding"
+                android:gravity="right|center_vertical"
+                android:text="@string/choose_shop_tips"
+                android:textSize="@dimen/order_right_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_time"
+            android:layout_width="@dimen/order_ll_width"
+            android:layout_height="@dimen/order_ll_height"
+            android:background="@drawable/bg_booking_car_service">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/order_text_margin_left"
+                android:gravity="center_vertical"
+                android:text="@string/arrive_time"
+                android:textSize="@dimen/order_left_text_size" />
+
+            <TextView
+                android:id="@+id/arrive_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/icon_right"
+                android:drawablePadding="@dimen/order_text_drawable_padding"
+                android:ellipsize="end"
+                android:layout_marginRight="@dimen/order_text_margin_right"
+                android:gravity="right|center_vertical"
+                android:singleLine="true"
+                android:text="@string/arrive_time_tips"
+                android:textSize="@dimen/order_right_text_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/ll_layout_margin_left"
+        android:layout_marginTop="@dimen/ll_layout_margin_top_30"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="@dimen/order_ll_width"
+            android:layout_height="@dimen/order_ll_height"
+            android:layout_marginRight="@dimen/order_ll_margin_right"
+            android:background="@drawable/bg_booking_car_service"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/order_text_margin_left"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="@string/name"
+                android:textSize="@dimen/order_left_text_size" />
+
+            <!--<TextView
+                android:id="@+id/tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20px"
+                android:gravity="right|center_vertical"
+                android:padding="25px"
+                android:text="@string/alter"
+                android:textSize="35px" />-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_phone"
+            android:layout_width="@dimen/order_ll_width"
+            android:layout_height="@dimen/order_ll_height"
+            android:background="@drawable/bg_booking_car_service">
+
+            <TextView
+                android:id="@+id/tv_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/order_text_margin_left"
+                android:gravity="center_vertical"
+                android:text="@string/phone"
+                android:textSize="@dimen/order_left_text_size" />
+
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:drawableRight="@drawable/right"-->
+            <!--android:drawablePadding="20px"-->
+            <!--android:gravity="right|center_vertical"-->
+            <!--android:padding="25px"-->
+            <!--android:text="@string/alter"-->
+            <!--android:textSize="35px" />-->
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/ll_layout_margin_left"
+        android:layout_marginTop="@dimen/ll_layout_margin_top_40"
+        android:gravity="center"
+        android:text="@string/program_check"
+        android:textSize="@dimen/order_left_text_size" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/ll_layout_margin_left"
+        android:layout_marginTop="@dimen/ll_layout_margin_top_40"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/program_tv"
+            android:layout_width="@dimen/order_ll_width"
+            android:layout_height="@dimen/order_ll_height"
+            android:background="@drawable/bg_booking_car_service"
+            android:drawableRight="@drawable/right"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/order_text_padding_left"
+            android:singleLine="true"
+            android:text="@string/choose_program"
+            android:paddingRight="@dimen/order_text_padding_right"
+            android:textSize="@dimen/order_left_text_size" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"></LinearLayout>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/submit_order"
+        android:layout_width="@dimen/submit_order_width"
+        android:layout_height="@dimen/submit_order_height"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/submit_order_margin_top"
+        android:enabled="false"
+        android:background="@drawable/selector_button"
+        android:textColor="@color/selector_button_text_color"
+        android:text="@string/commit_order"
+        android:textSize="@dimen/submit_order_text_size" />
+</LinearLayout>

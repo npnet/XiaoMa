@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/tv_step"
+        layout="@layout/select_tap_hotel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/book_hotel_one_tab_margin_left"
+        android:layout_marginTop="@dimen/book_hotel_one_tab_margin_top" />
+
+    <LinearLayout
+        android:id="@+id/ll_step_first"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv_step"
+        android:layout_marginTop="@dimen/book_hotel_one_ll_margin_top"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_hotel_detail"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/book_hotel_one_rv_height"
+            android:scrollbars="none" />
+
+
+        <com.xiaoma.ui.view.XmScrollBar
+            android:id="@+id/scroll_bar"
+            android:layout_width="@dimen/width_scrollbar"
+            android:layout_height="@dimen/height_scrollbar"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginTop="@dimen/book_hotel_one_scroll_bar_margin_top"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+</RelativeLayout>

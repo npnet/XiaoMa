@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/nearby_cinema_collection_layout_width"
+    android:layout_height="@dimen/nearby_cinema_collection_layout_height"
+    android:layout_gravity="center"
+    >
+
+    <ImageView
+        android:id="@+id/gallery_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/not_film_img" />
+
+    <LinearLayout
+        android:id="@+id/nearby_cinema_linear"
+        android:gravity="center"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/collect_item_type_back"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/attraction_collection_height">
+        <ImageView
+            android:id="@+id/iv_nearby_cinema"
+            android:src="@drawable/collect_star_select"
+            android:layout_width="@dimen/iv_delicious_width"
+            android:layout_height="@dimen/iv_delicious_height" />
+
+        <TextView
+            android:id="@+id/nearby_cinema_collection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/delicious_collection_left"
+            android:gravity="center"
+            android:text="@string/already_collect"
+            android:textColor="#000"
+            android:textSize="@dimen/attraction_collection_size" />
+    </LinearLayout>
+
+</RelativeLayout>

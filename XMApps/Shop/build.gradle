@@ -1,0 +1,38 @@
+apply plugin: 'com.android.application'
+//apply plugin: 'android-aspectjx'
+apply from: "sdk.gradle"
+apply from: "$rootDir$Android"
+apply from: "$rootDir$Modules"
+apply from: "$rootDir$Tinker"
+android application('com.xiaoma.shop')
+dependencies dependency(Shop)
+
+
+dependencies {
+    implementation "com.android.support.constraint:constraint-layout:${CONSTRAINT_LAYOUT}"
+    implementation "com.github.CymChad:BaseRecyclerViewAdapterHelper:${BASE_RECYCLERVIEW_ADAPTER_HELPER}"
+    implementation "org.simple:androideventbus:$EVENT_BUS_VERSION"
+    implementation files("${XMJars}otaserver_1.11.aar")
+    implementation "tv.danmaku.ijk.media:ijkplayer-java:$IJK_PLAYER_VERSION"
+    implementation files("${XMJars}ijkplayer-armv7a-release.aar")
+    implementation files("${XMJars}ijkplayer-arm64-release.aar")
+}
+
+sdk {
+    local 'test'
+}
+
+tinker {
+    appClassName 'com.xiaoma.shop.ShopApp'
+    buildPatch {
+        baseApkPath ''
+        baseResMapping ''
+        baseMapping ''
+    }
+    patchDesc {
+        baseVersion ''
+        patchVersion 0
+        patchMessage ''
+    }
+}
+

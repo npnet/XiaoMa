@@ -1,0 +1,126 @@
+﻿{
+  "music": [
+    {
+      "audioType": 3,
+      "category": "music",
+      "nameEn": "Listen as you like",
+      "name": "随心听",
+      "channelId": "AA1090",
+      "logo": "http:\/\/www.carbuyin.net\/by2\/qrCodeImage\/b53eec33-b811-4750-992e-ffed01788e64.png",
+      "createDate": 1557181912000,
+      "modifyDate": 1565937004000,
+      "orderList": 4,
+      "id": 1
+    },
+    {
+      "audioType": 3,
+      "category": "music",
+      "nameEn": "Hot list",
+      "name": "热门榜",
+      "channelId": "AA1090",
+      "logo": "http:\/\/www.carbuyin.net\/by2\/qrCodeImage\/7c28c066-ca5d-4e87-a53b-c10b49d6b1b5.png",
+      "createDate": 1557181912000,
+      "modifyDate": 1565937018000,
+      "orderList": 3,
+      "id": 2
+    },
+    {
+      "audioType": 5,
+      "category": "music",
+      "nameEn": "Bluetooth music",
+      "name": "蓝牙音乐",
+      "channelId": "AA1090",
+      "logo": "http:\/\/www.carbuyin.net\/by2\/qrCodeImage\/b56c7c05-9feb-4180-931f-2681409823bd.png",
+      "createDate": 1557181912000,
+      "modifyDate": 1565937034000,
+      "orderList": 2,
+      "id": 3
+    },
+    {
+      "audioType": 4,
+      "category": "music",
+      "nameEn": "USB music",
+      "name": "USB音乐",
+      "channelId": "AA1090",
+      "logo": "http:\/\/www.carbuyin.net\/by2\/qrCodeImage\/8504d909-0055-41f8-bd10-805835eb5bec.png",
+      "createDate": 1557181912000,
+      "modifyDate": 1565937045000,
+      "orderList": 1,
+      "id": 4
+    }
+  ],
+  "radio": [
+    {
+      "audioType": 8,
+      "category": "radio",
+      "nameEn": "Besturn Radio",
+      "name": "奔腾电台",
+      "channelId": "AA1090",
+      "logo": "http:\/\/www.carbuyin.net\/by2\/filePath\/b8e7d9af-737b-44aa-b268-40282968a313.png",
+      "createDate": 1557181912000,
+      "modifyDate": 1557181912000,
+      "orderList": 6,
+      "id": 10
+    },
+    {
+      "audioType": 1,
+      "category": "radio",
+      "nameEn": "Daily listen",
+      "name": "每日必听",
+      "channelId": "AA1090",
+      "logo": "http:\/\/www.carbuyin.net\/by2\/qrCodeImage\/3b069a62-948d-405a-9eb4-025e1ac77a6b.png",
+      "createDate": 1557181912000,
+      "modifyDate": 1565937058000,
+      "orderList": 5,
+      "id": 5
+    },
+    {
+      "audioType": 2,
+      "category": "radio",
+      "nameEn": "Local FM",
+      "name": "本地电台",
+      "channelId": "AA1090",
+      "logo": "http:\/\/www.carbuyin.net\/by2\/qrCodeImage\/c9b743da-e288-4988-a2ce-b8565288b2b4.png",
+      "createDate": 1557181912000,
+      "modifyDate": 1557181912000,
+      "orderList": 4,
+      "id": 6
+    },
+    {
+      "audioType": 1,
+      "category": "radio",
+      "nameEn": "News",
+      "name": "新闻",
+      "channelId": "AA1090",
+      "logo": "http:\/\/www.carbuyin.net\/by2\/qrCodeImage\/e961c071-0c21-4cfa-bddb-9c2dd1316f80.png",
+      "createDate": 1557181912000,
+      "modifyDate": 1565937083000,
+      "orderList": 3,
+      "id": 7
+    },
+    {
+      "audioType": 1,
+      "category": "radio",
+      "nameEn": "Crosstalk",
+      "name": "相声",
+      "channelId": "AA1090",
+      "logo": "http:\/\/www.carbuyin.net\/by2\/qrCodeImage\/0751af45-05b1-4f97-9355-60ed28c1716e.png",
+      "createDate": 1557181912000,
+      "modifyDate": 1565937099000,
+      "orderList": 2,
+      "id": 8
+    },
+    {
+      "audioType": 1,
+      "category": "radio",
+      "nameEn": "Funny",
+      "name": "娱乐",
+      "channelId": "AA1090",
+      "logo": "http:\/\/www.carbuyin.net\/by2\/qrCodeImage\/b19a109f-750c-40b5-8a59-a4a351c801fd.png",
+      "createDate": 1557181912000,
+      "modifyDate": 1564035508000,
+      "orderList": 1,
+      "id": 9
+    }
+  ]
+}

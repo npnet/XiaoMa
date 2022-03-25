@@ -1,0 +1,16 @@
+apply plugin: 'com.android.library'
+apply from: "$rootDir$Android"
+
+android library()
+
+dependencies {
+
+    implementation files("${XMJars}acrcloud-android-sdk-1.5.7.2.jar")
+    implementation files("${XMJars}acrcloud-universal-sdk-1.2.2.jar")
+    implementation project(path: ':XMLibs:UI')
+    implementation project(path: ':XMLibs:Component')
+    implementation project(path: ':XMLibs:Utils')
+    implementation project(path: ':XMLibs:Image')
+    implementation project(':XMLibs:DB')
+    implementation project(':XMLibs:Thread')
+}

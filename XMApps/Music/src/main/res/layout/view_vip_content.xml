@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/vip_content_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/tv_vip_privilege"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_privilege_title_margin_start"
+        android:layout_marginTop="@dimen/size_privilege_title_margin_top"
+        android:text="@string/vip_privilege"
+        android:textSize="@dimen/font_size_px32"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_vip_privilege"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_privilege_margin"
+        android:overScrollMode="never"
+        app:layout_constraintStart_toStartOf="@id/tv_vip_privilege"
+        app:layout_constraintTop_toBottomOf="@id/tv_vip_privilege" />
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/vip_divider_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.3" />
+
+
+    <TextView
+        android:id="@+id/tv_vip_validity_period_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_vip_validity_date_margin_top"
+        android:layout_marginEnd="@dimen/size_vip_validity_date_margin_end"
+        android:text="会员有效期"
+        android:textSize="@dimen/px_18"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_vip_price_options"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never"
+        app:layout_constraintStart_toEndOf="@id/vip_divider_line"
+        app:layout_constraintTop_toTopOf="@id/rv_vip_privilege" />
+
+
+    <Button
+        android:id="@+id/bt_open_vip"
+        android:layout_width="@dimen/size_open_vip_bt_width"
+        android:layout_height="@dimen/size_open_vip_bt_height"
+        android:layout_marginStart="@dimen/size_open_vip_bt_margin_start"
+        android:layout_marginTop="@dimen/size_open_vip_bt_margin_top"
+        android:background="@drawable/bg_btn"
+        android:text="@string/open_vip_bt"
+        android:textSize="@dimen/font_size_24px"
+        app:layout_constraintStart_toEndOf="@+id/vip_divider_line"
+        app:layout_constraintTop_toBottomOf="@id/rv_vip_price_options" />
+
+
+</android.support.constraint.ConstraintLayout>

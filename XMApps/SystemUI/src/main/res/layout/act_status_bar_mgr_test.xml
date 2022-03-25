@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/btn_expand"
+        style="@style/btn_test"
+        android:text="展开面板"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_collapse"
+        style="@style/btn_test"
+        android:text="收起面板"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_add_icon"
+        style="@style/btn_test"
+        android:text="增加图标"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_remove_icon"
+        style="@style/btn_test"
+        android:text="移除图标"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_add_notify"
+        style="@style/btn_test"
+        android:text="发布通知" />
+
+    <Button
+        android:id="@+id/btn_remove_notify"
+        style="@style/btn_test"
+        android:text="移除通知" />
+</LinearLayout>

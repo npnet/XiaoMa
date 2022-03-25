@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">人脸识别</string>
+    <string name="fatigue_tip">Fatigue reminder</string>
+    <string name="count_cancel">Cancel (%1ds)</string>
+    <string name="count_close">Close (%1ds)</string>
+    <string name="cancel">Cancel</string>
+    <string name="close">Close</string>
+    <string name="light_fatigue_driving_tip">You seem a little sleepy, take a break!</string>
+    <string name="heavy_fatigue_driving_tip">You are too tired, take a break, please choose to go</string>
+    <string name="fating_tip_title">Fatigue reminder</string>
+    <string name="behavior_tip_title">Behavior reminder</string>
+    <string name="rest_area">rest area</string>
+    <string name="coffee_shop">Café</string>
+    <string name="service_area">Service area</string>
+    <string name="parking_lot">parking area</string>
+    <string name="count_down_close">%1ds Close</string>
+    <string name="ten_seconds_to_close">10s Close</string>
+    <string name="confirm">Play music</string>
+    <string name="yomi_chinese_char">YOMI</string>
+    <string name="yomi_en_display">YOMI</string>
+</resources>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="1000px"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_cloudmi_login">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="61px"
+        android:layout_marginTop="98px"
+        android:text="@string/setting"
+        android:textColor="@color/white"
+        android:textSize="30px" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="123px"
+        android:layout_marginTop="183px"
+        android:text="@string/set_home_address"
+        android:textColor="@color/white"
+        android:textSize="30px" />
+
+    <EditText
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:id="@+id/et_address"
+        android:layout_width="750px"
+        android:layout_height="100px"
+        android:layout_marginStart="123px"
+        android:layout_marginTop="250px"
+        android:background="@drawable/bg_inputbox"
+        android:drawableEnd="@drawable/icon_next"
+        android:focusable="false"
+        android:hint="@string/input_home_address"
+        android:paddingEnd="25px"
+        android:paddingStart="34px"
+        android:textColor="@color/white"
+        android:textColorHint="#8a919b"
+        android:textSize="30px" />
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="350px"
+        android:layout_height="100px"
+        android:layout_marginStart="323px"
+        android:layout_marginTop="591px"
+        android:background="@drawable/btn_selector"
+        android:paddingBottom="10px"
+        android:text="@string/logout"
+        android:textColor="@color/white"
+        android:textSize="22px" />
+
+</RelativeLayout>

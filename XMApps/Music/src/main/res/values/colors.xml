@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffff</color>
+    <color name="dirty_white">#edf6fe</color>
+    <color name="dialog_btn_color">#33ffffff</color>
+
+    <color name="lrc_normal_text_color">#9E9E9E</color>
+    <color name="lrc_current_text_color">#FF4081</color>
+    <color name="lrc_timeline_text_color">#F8BBD0</color>
+    <color name="lrc_timeline_color">#809E9E9E</color>
+    <color name="lrc_time_text_color">#809E9E9E</color>
+    <color name="search_key_word">#fbd3a4</color>
+    <color name="color_tab_normal">#8a919d</color>
+    <color name="bug_vip_btn">#D6A849</color>
+    <color name="quality_btn_normal_bg">#21293B</color>
+    <color name="quality_btn_select_bg">#1F2636</color>
+    <color name="provider_by_kuwo">#BDBEC1</color>
+    <color name="buy_tag_text_color">#FF0000</color>
+    <color name="quality_text_bg_disable">#919096</color>
+
+    <!--usb-->
+    <color name="fragment_usb_unsupport_small_color">#8a919d</color>
+    <color name="color_8a919d">#8a919d</color>
+    <color name="color_edf6fe">#edf6fe</color>
+    <color name="color_home_menus_unchecked">#8a919d</color>
+</resources>
+

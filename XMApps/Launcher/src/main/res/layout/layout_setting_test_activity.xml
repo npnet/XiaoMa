@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/btn_bind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30px"
+        android:text="绑定" />
+
+    <Button
+        android:id="@+id/btn_get_wify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30px"
+        android:text="测试wify接口" />
+
+    <Button
+        android:id="@+id/btn_get_blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30px"
+        android:text="测试蓝牙接口" />
+
+    <Button
+        android:id="@+id/btn_get_hot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30px"
+        android:text="测试hot接口" />
+
+    <Button
+        android:id="@+id/btn_get_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30px"
+        android:text="测试display接口" />
+
+    <Button
+        android:id="@+id/btn_get_keyboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30px"
+        android:text="测试keyboard接口" />
+
+    <Button
+        android:id="@+id/btn_get_screen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30px"
+        android:text="测试screen接口" />
+
+    <Button
+        android:id="@+id/btn_get_sound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30px"
+        android:text="测试音量接口" />
+
+    <Button
+        android:id="@+id/btn_get_car"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30px"
+        android:text="测试car接口" />
+
+</LinearLayout>

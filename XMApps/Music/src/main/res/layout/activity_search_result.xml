@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical"
+        tools:context=".search.ui.SearchResultActivity">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_search_result_top"
+            android:paddingLeft="@dimen/size_search_main_margin"
+            android:paddingRight="@dimen/size_search_main_margin">
+
+            <ImageView
+                android:id="@+id/tv_search"
+                android:layout_width="@dimen/width_search_result_icon"
+                android:layout_height="@dimen/width_search_result_icon"
+                android:layout_centerVertical="true"
+                android:background="@drawable/icon_search" />
+
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tablayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="left"
+                android:layout_marginLeft="@dimen/size_search_result_tab_margin"
+                app:tabBackground="@null"
+                app:tabIndicatorHeight="0dp"
+                app:tabPaddingEnd="@dimen/size_search_tab_padding" />
+
+
+            <TextView
+                android:id="@+id/tv_show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/size_search_result_text_margin"
+                android:maxEms="20"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_search_text_big" />
+
+        </RelativeLayout>
+
+        <com.xiaoma.ui.view.ControllableViewPager
+            android:id="@+id/fragment_search_music_vp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/size_search_result_page_margin"
+            android:layout_weight="1" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_content_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_common"
+        android:visibility="gone"
+        android:clickable="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bg_progress"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="35px">
+
+            <ProgressBar
+                android:id="@+id/pb_progress"
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:layout_gravity="center"
+                android:indeterminateBehavior="repeat"
+                android:indeterminateOnly="true"/>
+
+            <TextView
+                android:id="@+id/tv_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15px"
+                android:maxLines="3"
+                android:text="正在加载中..."
+                android:textColor="@android:color/white"
+                android:textSize="30px"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</FrameLayout>
+

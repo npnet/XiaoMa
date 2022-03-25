@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/attach_movie_serial_number_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:id="@+id/ll_ticket_code_first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/ll_ticket_code_third"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/ticket_code_first_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/serial_no"
+            android:textSize="@dimen/font_size_34px" />
+
+        <TextView
+            android:id="@+id/ticket_code_first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10px"
+            android:text="@string/ticket_code"
+            android:textColor="@color/wait_pay_color"
+            android:textSize="@dimen/font_mine_order_size_42px" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_ticket_code_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@id/ll_ticket_code_first"
+        app:layout_constraintTop_toTopOf="@id/ll_ticket_code_first">
+
+        <TextView
+            android:id="@+id/ticket_code_second_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/get_ticket_code"
+            android:textSize="@dimen/font_size_34px" />
+
+        <TextView
+            android:id="@+id/ticket_code_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10px"
+            android:text="@string/sample_ticket_code"
+            android:textColor="@color/wait_pay_color"
+            android:textSize="@dimen/font_mine_order_size_42px" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_ticket_code_third"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_ticket_code_first">
+
+        <TextView
+            android:id="@+id/ticket_code_third_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/enter_code"
+            android:textSize="@dimen/font_size_34px" />
+
+        <TextView
+            android:id="@+id/ticket_code_third"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10px"
+            android:text="@string/sample_enter_code"
+            android:textColor="@color/wait_pay_color"
+            android:textSize="@dimen/font_mine_order_size_42px" />
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

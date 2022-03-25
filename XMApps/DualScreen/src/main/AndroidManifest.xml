@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xiaoma.dualscreen">
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+    <uses-permission android:name="android.permission.CAPTURE_VIDEO_OUTPUT" />
+    <uses-permission android:name="android.permission.CAPTURE_SECURE_VIDEO_OUTPUT" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application
+        android:name=".DualScreenApp"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_launcher_round"
+        android:persistent="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="CarType"
+            android:value="XMLX"/>
+
+        <meta-data
+            android:name="CarChannelId"
+            android:value="${CAR_CHANNEL_ID}"/>
+
+        <meta-data
+            android:name="XmGitRev"
+            android:value="${XM_GIT_REV}"/>
+
+        <!--
+        <activity
+            android:name=".ui.MainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.TestMusicActivity"
+            android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+        </activity>
+        <activity
+            android:name="com.xiaoma.component.base.LauncherActivity"
+            android:exported="true"
+            android:theme="@style/TranslucentTheme" />-->
+        <service
+            android:name=".service.PresentationService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.xiaoma.dualscreen.service" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="PxUsage">
+
+    <LinearLayout
+        android:id="@+id/add_friend_container"
+        android:layout_width="match_parent"
+        android:layout_height="60px"
+        android:background="@drawable/bg_add_friend_headsup"
+        android:gravity="center_horizontal"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/btn_add_friend"
+            android:layout_width="187px"
+            android:layout_height="54px"
+            android:layout_marginTop="8px"
+            android:background="@drawable/btn_add_friend"
+            android:gravity="center_horizontal"
+            android:paddingTop="5px"
+            android:text="@string/add_friend"
+            android:textColor="@color/add_friend_headsup_text"
+            android:textSize="24px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="20px"
+            android:text="@string/add_friend_instruction"
+            android:textColor="@color/add_friend_headsup_text"
+            android:textSize="24px" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_msg_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toStartOf="@+id/scroll_bar"
+            android:scrollbars="none" />
+
+        <com.xiaoma.ui.view.XmScrollBar
+            android:id="@+id/scroll_bar"
+            android:layout_width="@dimen/vertical_scroll_bar_width"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            app:xmdirection="vertical" />
+    </RelativeLayout>
+</LinearLayout>

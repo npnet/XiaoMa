@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="TaskState">
+        <item>Go to finish</item>
+        <item>Go to finish</item>
+        <item>Go to finish</item>
+        <item>已完成</item>
+        <item>finished</item>
+    </string-array>
+</resources>

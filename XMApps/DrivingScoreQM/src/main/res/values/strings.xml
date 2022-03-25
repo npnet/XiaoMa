@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">驾驶评分</string>
+    <string name="travel_time">行车不规范,亲人两行泪</string>
+    <string name="start_time">上车时间：</string>
+    <string name="avg_speed">平均车速（Km/h）</string>
+    <string name="avg_fuel_consumer">平均油耗（L/100Km）</string>
+    <string name="current_score">本次驾驶评分</string>
+    <string name="last_score">上次驾驶评分</string>
+    <string name="default_score">100</string>
+    <string name="default_num">0次</string>
+    <string name="rapid_accelerate">急加速</string>
+    <string name="rapid_deceleration">急减速</string>
+    <string name="sharp_turn">急转弯</string>
+    <string name="history">历史记录</string>
+    <string name="loading_again">重新加载</string>
+    <string name="loading_common">网络不给力</string>
+    <string name="loading_fail">网络连接不可用</string>
+    <string name="system_error">系统异常啦，请联系管理员或拨打客服热线</string>
+    <string name="network_error">网络出错啦，请点击按钮重新加载</string>
+    <string name="loading_timeout">当前处于熄火状态，没有驾驶数据，请点火!!!</string>
+    <string name="pop_score_hi">HI，主人</string>
+    <string name="pop_score">100分</string>
+    <string name="pop_score_text">驾驶评分</string>
+    <string name="dialog">dialog</string>
+    <!--<string name="history_acc_num">急加速</string>-->
+    <!--<string name="history_dec_num">急减速</string>-->
+    <!--<string name="history_turn_num">急转弯</string>-->
+    <string name="history_record">历史记录</string>
+    <string name="history_yellow_dot">黄色圆点</string>
+    <string name="history_delete_item">删除</string>
+    <string name="pop_score_100">太棒了，您有很强的安全意识！</string>
+    <string name="pop_score_99">您的驾驶很出色，请继续保持</string>
+    <string name="pop_score_89">安全万里行</string>
+    <string name="pop_score_79">您需要保持良好的驾驶习惯</string>
+    <string name="pop_score_69">需注意行车规范</string>
+    <string name="pop_score_59">行车不规范，亲人两行泪！</string>
+    <string name="count">次</string>
+    <string name="history_score">分</string>
+    <string name="drived">已行驶：</string>
+    <string name="drive_unit">分钟</string>
+    <string name="last_week_drive_score">您上周的驾驶评分</string>
+
+</resources>

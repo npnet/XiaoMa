@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 个人信息窗口动画 -->
+    <style name="PersonalInfoAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/popup_enter_personal_info</item>
+        <item name="android:windowExitAnimation">@anim/popup_exit_personal_info</item>
+    </style>
+
+
+    <style name="def_sign">
+        <item name="sign_in_bg_color">#000</item>
+        <item name="sign_in_pb_color">@android:color/holo_orange_dark</item>\
+        <item name="sign_in_check_color">@android:color/white</item>
+        <item name="sign_in_text_color">@android:color/holo_purple</item>
+        <item name="sign_in_text_siz">12sp</item>
+    </style>
+
+    <style name="Task_Type_Text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">20px</item>
+        <item name="android:paddingBottom">20px</item>
+        <item name="android:textSize">32px</item>
+    </style>
+
+
+    <style name="order_tab_item_selected">
+        <item name="android:shadowRadius">10</item>
+        <item name="android:shadowColor">#3358a4</item>
+        <item name="android:shadowDy">0.5</item>
+        <item name="android:shadowDx">0.5</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="order_tab_item_normal">
+        <item name="android:shadowRadius">0</item>
+        <item name="android:shadowColor">#8a919d</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:shadowDy">0</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+</resources>

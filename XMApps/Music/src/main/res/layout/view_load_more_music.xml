@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent"
+             android:layout_marginTop="35px"
+             android:layout_marginBottom="95px">
+
+    <RelativeLayout
+        android:id="@+id/rl_Loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/progress_bar"
+            android:layout_centerHorizontal="true"
+            android:text="@string/load_more_loading"
+            android:textSize="32px"/>
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_Failed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/load_error"
+        android:textSize="32px"
+        android:visibility="gone"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_End"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/load_no_more"
+        android:textSize="32px"
+        android:visibility="gone"/>
+
+</FrameLayout>

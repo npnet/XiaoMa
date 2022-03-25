@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/friend_details_outside"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_dim" />
+
+    <LinearLayout
+        android:id="@+id/friend_details_parent"
+        android:layout_width="@dimen/width_personal_drawer"
+        android:layout_height="match_parent"
+        android:background="@drawable/drawer_bg"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/padding_personal_drawer"
+        android:paddingRight="@dimen/padding_personal_drawer"
+        android:paddingTop="@dimen/padding_friend_top">
+
+        <RelativeLayout
+            android:layout_width="@dimen/width_friend_switch"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="center_vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/group_details_msg_notice"
+                android:textColor="@color/club_white"
+                android:textSize="@dimen/font_text_middle" />
+
+            <Switch
+                android:id="@+id/friend_msg_notice_switch"
+                android:layout_width="@dimen/width_setting_switch"
+                android:layout_height="@dimen/height_setting_switch"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:thumb="@drawable/switch_thumb"
+                android:track="@drawable/switch_track" />
+        </RelativeLayout>
+
+        <com.xiaoma.club.common.view.UserHeadView
+            android:id="@+id/friend_details_icon"
+            android:layout_width="168px"
+            android:layout_height="168px"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_friend_top" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="90px">
+
+            <TextView
+                android:id="@+id/friend_user_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/club_white"
+                android:textSize="@dimen/font_text_big_plus" />
+
+            <TextView
+                android:id="@+id/friend_user_age_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:ellipsize="end"
+                android:maxEms="5"
+                android:singleLine="true"
+                android:textColor="@color/club_text_gray"
+                android:textSize="@dimen/font_text_small_plus" />
+
+            <TextView
+                android:id="@+id/friend_user_sign_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/friend_user_name_tv"
+                android:layout_marginTop="36px"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:textColor="@color/club_white"
+                android:textSize="@dimen/font_text_small_plus" />
+px
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="60px"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/friend_details_add_friend_btn"
+                    android:layout_width="@dimen/width_add_friend_btn"
+                    android:layout_height="@dimen/height_add_friend_btn"
+                    android:layout_marginRight="@dimen/margin_friend_btn_right"
+                    android:background="@drawable/club_btn_selector"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="@dimen/padding_personal_edit_btn"
+                    android:text="@string/add_friend"
+                    android:textColor="@color/club_white"
+                    android:textSize="@dimen/font_text_small_plus"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/friend_details_private_chat_btn"
+                    android:layout_width="@dimen/width_add_friend_btn"
+                    android:layout_height="@dimen/height_add_friend_btn"
+                    android:layout_marginLeft="@dimen/margin_friend_btn_right"
+                    android:background="@drawable/club_btn_selector"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="@dimen/padding_personal_edit_btn"
+                    android:text="@string/private_chat"
+                    android:textColor="@color/club_white"
+                    android:textSize="@dimen/font_text_small_plus" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

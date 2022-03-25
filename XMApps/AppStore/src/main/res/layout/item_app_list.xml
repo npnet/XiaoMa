@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/item_app_list_width"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:minHeight="@dimen/item_app_list_min_height">
+
+        <com.xiaoma.ui.view.ReflectionImageView
+            android:id="@+id/iv_app_icon"
+            android:layout_width="@dimen/item_app_list_app_icon_width"
+            android:layout_height="@dimen/item_app_list_app_icon_height"
+            android:scaleType="fitXY"
+            app:reflectionHeight="63px"
+            app:reflectionPadding="6px" />
+
+        <!--遮罩层-->
+        <ImageView
+            android:layout_width="@dimen/item_app_list_app_icon_width"
+            android:layout_height="@dimen/item_app_list_app_icon_width"
+            android:src="@drawable/img_light" />
+
+        <TextView
+            android:id="@+id/tv_app_name"
+            android:layout_width="@dimen/item_app_list_app_icon_width"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/item_app_list_app_name_margin_top"
+            android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:maxLines="1"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/item_app_list_app_name_text_size" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_app_introduce"
+        android:layout_width="@dimen/item_app_list_app_introduce_width"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:lines="2"
+        android:textColor="@color/color_979da7"
+        android:textSize="@dimen/item_app_list_app_introduce_text_size"
+        tools:text="app描述" />
+
+    <TextView
+        android:id="@+id/tv_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:visibility="gone" />
+
+    <com.xiaoma.app.views.DownloadProgressButton
+        android:id="@+id/progressBtn"
+        android:layout_width="@dimen/item_app_list_download_button_width"
+        android:layout_height="@dimen/item_app_list_download_button_height"
+        android:layout_marginTop="@dimen/item_app_list_download_button_margin_top"
+        android:textSize="@dimen/item_app_list_download_button_text_size" />
+</LinearLayout>

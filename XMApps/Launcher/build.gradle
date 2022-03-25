@@ -1,0 +1,133 @@
+import org.aspectj.bridge.IMessage
+import org.aspectj.bridge.MessageHandler
+import org.aspectj.tools.ajc.Main
+
+apply plugin: 'com.android.application'
+//apply plugin: 'android-aspectjx' //launcher 插件配置有问题，引入代码配置形式
+apply from: "$rootDir$Android"
+apply from: "$rootDir$Modules"
+//apply from: "$rootDir$Tinker"
+apply from: 'sdk.gradle'
+
+sdk {
+    boolean isCar = BUILD_PLATFORM.equalsIgnoreCase("CAR")
+    xmInstall isCar ? 'car' : 'pad'
+}
+
+android application('com.xiaoma.launcher')
+dependencies dependency(Launcher)
+android {
+    defaultConfig {
+        if (projectBuildPlatform.equalsIgnoreCase("PAD")) {
+            ndk {
+                // 如果需要在Module中自定义abiFilters
+                // 请先调用一下方法清空现有的abiFilters
+                abiFilters?.clear()
+                abiFilters 'armeabi'
+            }
+        }
+        multiDexEnabled true
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath = true
+            }
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    packagingOptions {
+        exclude  'META-INF/INDEX.LIST'
+    }
+}
+
+repositories {
+    flatDir {
+        dirs "${XMJars}"
+    }
+}
+
+dependencies {
+    implementation "com.android.support.constraint:constraint-layout:${CONSTRAINT_LAYOUT}"
+    implementation "tv.danmaku.ijk.media:ijkplayer-java:$IJK_PLAYER_VERSION"
+    implementation files("${XMJars}ijkplayer-armeabi-release.aar")
+    implementation files("${XMJars}ijkplayer-arm64-release.aar")
+    implementation 'id.zelory:compressor:2.1.0'
+    implementation files("${XMJars}acrcloud-android-sdk-1.5.7.2.jar")
+    implementation files("${XMJars}acrcloud-universal-sdk-1.2.2.jar")
+    implementation "org.simple:androideventbus:$EVENT_BUS_VERSION"
+    annotationProcessor "com.github.bumptech.glide:compiler:${GLIDE_VERSION}"
+    implementation "android.arch.persistence.room:runtime:$ROOM_VERSION"
+    annotationProcessor "android.arch.persistence.room:compiler:$ROOM_VERSION"
+    //-----------------------集成四维地图------------------------
+    implementation 'org.greenrobot:eventbus:3.0.0'
+    implementation 'com.jakewharton.timber:timber:4.7.1'
+    implementation(name: 'navi_lib_0822', ext: 'aar')
+    implementation project(':XMLibs:Navi:limpidj_annotation')
+    annotationProcessor project(':XMLibs:Navi:limpidj_compiler')
+    //-----------------------集成四维地图------------------------
+
+}
+/*tinker {
+    appClassName 'com.xiaoma.launcher.LauncherApp'
+    buildPatch {
+        // 构建补丁时基础包的版本
+        baseApkPath '/Users/youthyj/Code/XiaoMa/XMAgateOS/output/tinker/Launcher/base/2018_11_16-11_41_00/Launcher-debug.apk'
+        // 构建补丁时基础包资源映射文件
+        baseResMapping '/Users/youthyj/Code/XiaoMa/XMAgateOS/output/tinker/Launcher/base/2018_11_16-11_41_00/Launcher-debug-R.txt'
+        // 构建补丁时基础包混淆映射文件
+        baseMapping ''
+    }
+    patchDesc {
+        // 生成补丁对应的基础包版本
+        baseVersion '5.1.1.3'
+        // 生成补丁包的版本
+        patchVersion 0
+        // 补丁包修复内容
+        patchMessage 'base'
+    }
+}*/
+
+//----------------------------------------android-aspectjx  start-----------------------------------
+final def log = project.logger
+final def variants = project.android.applicationVariants
+variants.all { variant ->
+    if (!variant.buildType.isDebuggable()) {
+        log.debug("Skipping non-debuggable build type '${variant.buildType.name}'.")
+        return
+    }
+    JavaCompile javaCompile = variant.javaCompile
+    javaCompile.doLast {
+        String[] args = ["-showWeaveInfo",
+                         "-1.5",
+                         "-inpath", javaCompile.destinationDir.toString(),
+                         "-aspectpath", javaCompile.classpath.asPath,
+                         "-d", javaCompile.destinationDir.toString(),
+                         "-classpath", javaCompile.classpath.asPath,
+                         "-bootclasspath", project.android.bootClasspath.join(File.pathSeparator)]
+        log.debug "ajc args: " + Arrays.toString(args)
+        MessageHandler handler = new MessageHandler(true)
+        new Main().run(args, handler)
+        for (IMessage message : handler.getMessages(null, true)) {
+            switch (message.getKind()) {
+                case IMessage.ABORT:
+                case IMessage.ERROR:
+                case IMessage.FAIL:
+                    log.error message.message, message.thrown
+                    break
+                case IMessage.WARNING:
+                    log.warn message.message, message.thrown
+                    break
+                case IMessage.INFO:
+                    log.info message.message, message.thrown
+                    break
+                case IMessage.DEBUG:
+                    log.debug message.message, message.thrown
+                    break
+            }
+        }
+    }
+}
+//----------------------------------------android-aspectjx  end-------------------------------------

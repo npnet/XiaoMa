@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/view_book_margin"
+    android:paddingRight="@dimen/view_book_margin">
+
+    <TextView
+        android:id="@+id/tv_room_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/hotel_pay_tv_room_name_size"
+        tools:text="大床房" />
+
+    <TextView
+        android:id="@+id/tv_room_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/hotel_pay_ttv_room_msg_left"
+        android:layout_toRightOf="@+id/tv_room_name"
+        android:textSize="@dimen/hotel_pay_ttv_room_msg_size"
+        tools:text="不含早餐" />
+
+    <TextView
+        android:id="@+id/tv_hotel_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_room_name"
+        android:layout_marginBottom="@dimen/hotel_pay_tv_hotel_name_bottom"
+        android:layout_marginTop="@dimen/hotel_pay_tv_hotel_name_top"
+        android:textSize="@dimen/hotel_pay_tv_hotel_name_size"
+        tools:text="维也纳酒店" />
+
+    <TextView
+        android:id="@+id/tv_book_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_hotel_name"
+        android:textSize="@dimen/hotel_pay_tv_book_count_size"
+        android:lineSpacingExtra="@dimen/view_book_line_spac"
+        tools:text="@string/room_number" />
+
+    <TextView
+        android:id="@+id/tv_book_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_hotel_name"
+        android:layout_marginStart="@dimen/hotel_pay_tv_book_date_start"
+        android:layout_toEndOf="@+id/tv_book_count"
+        android:textSize="@dimen/hotel_pay_tv_book_date_size"
+        android:lineSpacingExtra="@dimen/view_book_line_spac"
+        tools:text="@string/check_in_data" />
+
+    <TextView
+        android:id="@+id/tv_book_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_hotel_name"
+        android:layout_marginStart="@dimen/hotel_pay_tv_book_cancel_start"
+        android:layout_toEndOf="@+id/tv_book_date"
+        android:lineSpacingExtra="@dimen/view_book_line_spac"
+        android:textSize="@dimen/hotel_pay_tv_book_cancel_size"
+        tools:text="@string/cancel_appointment" />
+
+    <TextView
+        android:id="@+id/tv_book_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_hotel_name"
+        android:layout_marginStart="@dimen/hotel_pay_tv_book_call_start"
+        android:layout_toEndOf="@+id/tv_book_cancel"
+        android:textSize="@dimen/hotel_pay_tv_book_call_size"
+        android:visibility="gone"
+        tools:text="@string/contact_str" />
+
+    <ImageView
+        android:id="@+id/iv_pay"
+        android:layout_width="@dimen/hotel_pay_iv_pay_width"
+        android:layout_height="@dimen/hotel_pay_iv_pay_height"
+        android:layout_below="@+id/tv_room_msg"
+        android:layout_marginStart="@dimen/hotel_pay_tv_book_call_start"
+        android:layout_toEndOf="@+id/tv_book_cancel"
+        android:src="@drawable/ic_cover_hotel" />
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_room_msg"
+        android:layout_marginStart="@dimen/tv_price_margin_start"
+        android:layout_toEndOf="@+id/iv_pay"
+        android:lineSpacingExtra="@dimen/view_book_line_spac"
+        android:textSize="@dimen/tv_price_size"
+        tools:text="@string/total_cost" />
+
+    <Button
+        android:id="@+id/btn_pay"
+        android:layout_width="@dimen/btn_pay_width"
+        android:layout_height="@dimen/btn_pay_height"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/hotel_pay_btn_pay_bottom"
+        android:text="@string/already_paid"
+        android:textSize="@dimen/hotel_pay_btn_pay_size"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hotel_pay_ll_bottom_height"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/hotel_pay_ll_bottom_bottom"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/btn_call"
+            android:layout_width="@dimen/hotel_pay_btn_call_width"
+            android:layout_height="@dimen/hotel_pay_btn_call_height"
+            android:text="@string/call_phone"
+            android:textSize="@dimen/hotel_pay_btn_call_size"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/btn_guide"
+            android:layout_width="@dimen/hotel_pay_btn_guide_width"
+            android:layout_height="@dimen/hotel_pay_btn_guide_height"
+            android:text="@string/guide_map"
+            android:textSize="@dimen/hotel_pay_btn_guide_size"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="@dimen/hotel_pay_btn_cancel_width"
+            android:layout_height="@dimen/hotel_pay_btn_cancel_height"
+            android:text="@string/cancel_book"
+            android:textSize="@dimen/hotel_pay_btn_cancel_size"
+            android:visibility="visible" />
+    </LinearLayout>
+
+
+</RelativeLayout>

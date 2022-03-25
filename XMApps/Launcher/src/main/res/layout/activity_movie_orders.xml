@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50px"
+        android:layout_marginTop="90px"
+        android:text="@string/my_order"
+        android:textSize="30px"
+        android:textStyle="bold" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_movie_orders"
+        android:layout_width="match_parent"
+        android:visibility="invisible"
+        android:layout_height="500px"
+        android:scrollbars="none" />
+
+    <com.xiaoma.ui.view.XmScrollBar
+        android:id="@+id/scroll_bar"
+        android:layout_width="@dimen/width_scrollbar"
+        android:layout_height="@dimen/height_scrollbar"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="80px"
+        android:visibility="invisible" />
+</LinearLayout>

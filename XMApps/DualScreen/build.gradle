@@ -1,0 +1,45 @@
+apply plugin: 'com.android.application'
+apply plugin: 'android-aspectjx'
+apply from: "$rootDir$Android"
+apply from: "$rootDir$Modules"
+apply from: "$rootDir$Tinker"
+android application('com.xiaoma.dualscreen')
+dependencies dependency(DualScreen)
+android {
+    // 使用系统签名需要在AndroidManifest.xml根标签中添加:
+    // android:sharedUserId="android.uid.system"
+    // 才能使用系统权限
+    signingConfigs {
+        release {
+            storeFile file("${rootDir}/XMKeystore/yq/shinco.keystore")
+            storePassword "shinco"
+            keyAlias "shinco"
+            keyPassword "shinco"
+        }
+        debug {
+            storeFile file("${rootDir}/XMKeystore/yq/shinco.keystore")
+            storePassword "shinco"
+            keyAlias "shinco"
+            keyPassword "shinco"
+        }
+    }
+    defaultConfig {
+        compileSdkVersion 27
+    }
+}
+
+tinker {
+    appClassName 'com.xiaoma.dualscreen.dualscreenApp'
+    buildPatch {
+        baseApkPath ''
+        baseResMapping ''
+        baseMapping ''
+    }
+    patchDesc {
+        baseVersion ''
+        patchVersion 0
+        patchMessage ''
+    }
+}
+dependencies {
+}

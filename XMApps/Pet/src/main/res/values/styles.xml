@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="PetMapPopupAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/popup_enter_map</item>
+        <item name="android:windowExitAnimation">@anim/popup_exit_map</item>
+    </style>
+
+
+    <style name="PaySuccessViewAnimation" parent="android:Animation">
+        <item name="android:windowExitAnimation">@anim/red_point_scale</item>
+    </style>
+
+    <style name="HorizontalProgressBar" >
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:mirrorForRtl">true</item>
+        <item name="android:max">100</item>
+    </style>
+
+
+    <style name="mall_tab_item_select">
+        <!--<item name="android:shadowRadius">10</item>-->
+        <!--<item name="android:shadowColor">@color/mall_text_shadow</item>-->
+        <!--<item name="android:shadowDy">0.5</item>-->
+        <!--<item name="android:shadowDx">0.5</item>-->
+        <item name="android:textColor">@color/mall_left_bar_text</item>
+    </style>
+
+    <style name="mall_tab_item_not_select">
+        <item name="android:textColor">@color/mall_tab_color</item>
+    </style>
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/switch_button_left_selector"
+        android:gravity="center"
+        android:paddingBottom="@dimen/switch_button_padding_bottom"
+        android:text="@string/on" />
+
+    <TextView
+        android:id="@+id/right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/switch_button_margin"
+        android:background="@drawable/switch_button_right_selector"
+        android:gravity="center"
+        android:paddingBottom="@dimen/switch_button_padding_bottom"
+        android:text="@string/off" />
+
+</merge>

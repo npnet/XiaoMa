@@ -1,0 +1,19 @@
+apply plugin: 'com.android.library'
+apply from: "$rootDir$Android"
+
+android library()
+
+repositories {
+    maven {
+        url "https://repo.eclipse.org/content/repositories/paho-snapshots/"
+    }
+
+}
+
+dependencies {
+    implementation project(':XMLibs:Utils')
+    implementation project(':XMLibs:Config')
+    implementation project(':XMLibs:Thread')
+    implementation 'org.eclipse.paho:org.eclipse.paho.client.mqttv3:1.2.0'
+    implementation 'org.eclipse.paho:org.eclipse.paho.android.service:1.1.1'
+}

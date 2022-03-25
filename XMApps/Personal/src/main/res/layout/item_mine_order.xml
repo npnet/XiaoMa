@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.xiaoma.personal.order.ui.view.SlideView
+        android:id="@+id/slide_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:SlideLeft="false"
+        app:SlideMargin="@dimen/size_slide_margin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <include layout="@layout/item_order_content" />
+
+        <TextView
+            android:id="@+id/delete_text"
+            android:layout_width="@dimen/width_order_delete_button"
+            android:layout_height="@dimen/height_mine_order_item"
+            android:background="@drawable/order_delete_default"
+            android:gravity="center"
+            android:text="@string/delete_record"
+            android:textSize="@dimen/font_mine_order_size_30px" />
+    </com.xiaoma.personal.order.ui.view.SlideView>
+
+</android.support.constraint.ConstraintLayout>

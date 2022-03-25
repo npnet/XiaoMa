@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/state_view_text_color"
+    android:padding="@dimen/size_search_key_padding"
+    android:layout_margin="@dimen/size_search_key_margin">
+
+    <TextView
+        android:id="@+id/tv_key_text"
+        android:layout_width="@dimen/width_item_search_key"
+        android:layout_height="@dimen/height_item_search_key"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/font_item_search_key" />
+</LinearLayout>

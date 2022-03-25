@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <!-- 蓝牙钥匙 -->
+
+    <LinearLayout
+        android:id="@+id/bluetooth_key_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/size_key_manager_layout_margin_bottom"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/normal_key_layout"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bluetooth_key"
+            android:textSize="@dimen/font_key_manager_title"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:id="@+id/iv_bluetooth_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_key_manager_img_margin_top"
+            android:src="@drawable/bluetooth_key" />
+
+
+        <Button
+            android:id="@+id/unbind_bluetooth_key_bt"
+            android:layout_width="@dimen/width_normal_button"
+            android:layout_height="@dimen/height_normal_button"
+            android:layout_marginTop="@dimen/size_key_manager_margin_top"
+            android:background="@drawable/selector_button"
+            android:text="@string/unbind"
+            android:textColor="@color/selector_button_text_color"
+            android:textSize="@dimen/font_unbind_btn" />
+    </LinearLayout>
+
+
+    <!-- 普通钥匙 -->
+    <LinearLayout
+        android:id="@+id/normal_key_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/size_key_manager_layout_margin_bottom"
+        android:layout_marginStart="@dimen/size_key_manager_layout_margin_start"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/bluetooth_key_layout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/normal_key"
+            android:textSize="@dimen/font_key_manager_title"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:id="@+id/iv_normal_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_key_manager_img_margin_top"
+            android:src="@drawable/normal_key" />
+
+
+        <Button
+            android:id="@+id/unbind_normal_key_bt"
+            android:layout_width="@dimen/width_normal_button"
+            android:layout_height="@dimen/height_normal_button"
+            android:layout_marginTop="@dimen/size_key_manager_margin_top"
+            android:background="@drawable/selector_button"
+            android:text="@string/unbind"
+            android:textColor="@color/selector_button_text_color"
+            android:textSize="@dimen/font_unbind_btn" />
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

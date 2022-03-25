@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#353434"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dialog_hot_line_title_margin_top"
+        android:gravity="center"
+        android:textSize="@dimen/dialog_hot_line_text_size" />
+
+    <TextView
+        android:id="@+id/tv_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dialog_hot_line_phone_text_margin_top"
+        android:gravity="center"
+        android:textSize="@dimen/dialog_hot_line_phone_text_size" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/button_hot_line_margin_top"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/call"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/button_hot_line_height"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/call"
+                android:textColor="@color/color_dialog_button_text"
+                android:textSize="@dimen/dialog_hot_line_text_size" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/white" />
+
+            <TextView
+                android:id="@+id/call_off"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/button_hot_line_height"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/color_dialog_button_text"
+                android:text="@string/call_off"
+                android:textSize="@dimen/dialog_hot_line_text_size" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

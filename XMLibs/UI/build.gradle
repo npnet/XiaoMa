@@ -1,0 +1,21 @@
+apply plugin: 'com.android.library'
+apply from: "$rootDir$Android"
+
+android library()
+
+dependencies {
+    implementation project(path: ':XMLibs:Config')
+    implementation project(path: ':XMLibs:Utils')
+    implementation project(path: ':XMLibs:Thread')
+    implementation project(path: ':XMLibs:Model')
+    implementation project(path: ':XMLibs:Image')
+    implementation project(path: ':XMLibs:VR:Vr')
+    api project(path: ':XMLibs:Skin')
+    implementation "com.android.support.constraint:constraint-layout:${CONSTRAINT_LAYOUT}"
+    implementation "com.android.support:support-annotations:$SUPPORT_LIBRARY_VERSION"
+    implementation "com.android.support:appcompat-v7:${SUPPORT_LIBRARY_VERSION}"
+    implementation "com.android.support:recyclerview-v7:${SUPPORT_LIBRARY_VERSION}"
+    api "com.github.CymChad:BaseRecyclerViewAdapterHelper:${BASE_RECYCLERVIEW_ADAPTER_HELPER}"
+    api 'com.airbnb.android:lottie:2.7.0'
+
+}

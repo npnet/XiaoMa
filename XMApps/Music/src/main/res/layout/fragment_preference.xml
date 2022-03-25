@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/size_preference_bottom_padding"
+    android:paddingLeft="@dimen/size_preference_left_padding"
+    android:paddingRight="@dimen/size_preference_right_padding"
+    android:paddingTop="@dimen/size_preference_top_padding">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/design_xting"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/font_search_text_big"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/tvSkip"
+            android:layout_width="@dimen/width_skip_text"
+            android:layout_height="@dimen/height_skip_text"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/skip"
+            android:textColor="@color/color_tab_normal"
+            android:textSize="@dimen/font_search_text_small" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_preference_rv">
+
+            <include
+                android:id="@+id/rl_preference_no_network"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone"
+                layout="@layout/include_no_network_view" />
+
+            <include
+                android:id="@+id/rl_preference_empty"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:visibility="gone"
+                layout="@layout/include_empty_view" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvPreferenceTypes"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_preference_rv"
+                android:layout_gravity="center" />
+
+        </FrameLayout>
+
+
+        <com.xiaoma.ui.view.XmScrollBar
+            android:id="@+id/scroll_bar"
+            android:layout_width="@dimen/width_scroll"
+            android:layout_height="@dimen/height_scroll_bar"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/size_scroll_top_margin"
+            android:visibility="gone" />
+
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="@dimen/width_preference_savebtn"
+            android:layout_height="@dimen/height_preference_savebtn"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/size_savebtn_top_margin"
+            android:background="@drawable/bg_preference_sure"
+            android:gravity="center_horizontal"
+            android:paddingTop="@dimen/size_savebtn_top_padding"
+            android:text="@string/start_xting"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_search_text_small_plus" />
+    </LinearLayout>
+
+</LinearLayout>

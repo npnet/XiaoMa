@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:ignore="PxUsage">
+
+    <com.xiaoma.ui.view.ReflectionImageView
+        android:id="@+id/ivCover"
+        android:layout_width="@dimen/width_fm_cover"
+        android:layout_height="@dimen/height_fm_cover"
+        android:scaleType="fitXY"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:reflectionHeight="92px"
+        app:reflectionPadding="@dimen/size_gallery_item_shadow_padding"
+        tools:background="@drawable/fm_default_cover_with_shadow" />
+
+    <ImageView
+        android:id="@+id/ivStateLevelBg"
+        android:layout_width="@dimen/width_player_state_level"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/size_player_state_margin_top"
+        android:src="@drawable/bg_play_control"
+        app:layout_constraintDimensionRatio="w,1:1"
+        app:layout_constraintLeft_toLeftOf="@id/ivCover"
+        app:layout_constraintRight_toRightOf="@id/ivCover"
+        app:layout_constraintTop_toTopOf="@id/ivCover" />
+
+    <ImageView
+        android:id="@+id/ivStateLevel"
+        android:layout_width="@dimen/width_player_state_level"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/size_player_state_margin_top"
+        android:src="@drawable/fm_player_state_level"
+        app:layout_constraintDimensionRatio="w,1:1"
+        app:layout_constraintLeft_toLeftOf="@id/ivCover"
+        app:layout_constraintRight_toRightOf="@id/ivCover"
+        app:layout_constraintTop_toTopOf="@id/ivCover" />
+
+    <ImageView
+        android:id="@+id/ivPre"
+        android:layout_width="@dimen/width_player_operate"
+        android:layout_height="0dp"
+        android:layout_marginRight="@dimen/size_player_operate_margin_span"
+        android:src="@drawable/fm_player_state_pre_selector_press"
+        app:layout_constraintBottom_toBottomOf="@id/ivStateLevel"
+        app:layout_constraintDimensionRatio="w,1:1"
+        app:layout_constraintRight_toLeftOf="@id/ivCover"
+        app:layout_constraintTop_toTopOf="@id/ivStateLevel"
+        tools:background="@android:color/holo_red_dark" />
+
+    <ImageView
+        android:id="@+id/ivNext"
+        android:layout_width="@dimen/width_player_operate"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/size_player_operate_margin_span"
+        android:src="@drawable/fm_player_state_next_selector_press"
+        app:layout_constraintBottom_toBottomOf="@id/ivStateLevel"
+        app:layout_constraintDimensionRatio="w,1:1"
+        app:layout_constraintLeft_toRightOf="@id/ivCover"
+        app:layout_constraintTop_toTopOf="@id/ivStateLevel"
+        tools:background="@android:color/holo_red_dark" />
+
+    <ImageView
+        android:id="@+id/ivDirection"
+        android:layout_width="@dimen/width_player_control_hint_arrow"
+        android:layout_height="@dimen/height_player_control_hint_arrow"
+        android:src="@drawable/fm_player_up_double_arrow"
+        app:layout_constraintBottom_toBottomOf="@id/tvHint"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintLeft_toLeftOf="@id/ivCover"
+        app:layout_constraintRight_toLeftOf="@id/tvHint"
+        app:layout_constraintTop_toTopOf="@id/tvHint" />
+
+    <TextView
+        android:id="@+id/tvHint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_player_control_hint_text_margin_left"
+        android:layout_marginTop="@dimen/size_player_control_margin_top"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="@string/slide_up_to_switch_function"
+        android:textColor="@color/color_play_control_hint_text"
+        android:textSize="@dimen/font_player_control_hint_text"
+        app:layout_constraintLeft_toRightOf="@id/ivDirection"
+        app:layout_constraintRight_toRightOf="@id/ivCover"
+        app:layout_constraintTop_toTopOf="@id/ivCover" />
+
+</android.support.constraint.ConstraintLayout>

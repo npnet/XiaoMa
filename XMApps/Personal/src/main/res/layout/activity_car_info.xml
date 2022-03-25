@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/car_pic"
+        android:layout_width="@dimen/width_car_info_pic"
+        android:layout_height="@dimen/height_car_info_pic"
+        android:layout_marginStart="@dimen/size_car_info_pic_margin_start"
+        android:layout_marginTop="@dimen/size_car_info_pic_margin_top"
+        android:scaleType="fitXY"
+        android:src="@drawable/car_info"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_car_info_text_margin_start"
+        android:layout_marginTop="@dimen/size_car_info_text_margin_first_top"
+        android:text="@string/car_model"
+        android:textSize="@dimen/font_car_info_text"
+        app:layout_constraintBottom_toTopOf="@+id/textView7"
+        app:layout_constraintStart_toEndOf="@+id/car_pic"
+        app:layout_constraintTop_toTopOf="@+id/car_pic"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/models"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_car_info_value_margin_start"
+        android:text="@string/car_brand"
+        android:textSize="@dimen/font_car_info_text"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView5"
+        app:layout_constraintStart_toEndOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_car_info_text_margin_start"
+        android:layout_marginTop="@dimen/size_car_info_text_margin_top"
+        android:text="@string/car_frame_number"
+        android:textSize="@dimen/font_car_info_text"
+        app:layout_constraintBottom_toTopOf="@+id/textView8"
+        app:layout_constraintStart_toEndOf="@+id/car_pic"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/chassis_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_car_info_value_margin_start"
+        tools:text="B34d8000"
+        android:textSize="@dimen/font_car_info_text"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView7"
+        app:layout_constraintStart_toEndOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_car_info_text_margin_start"
+        android:layout_marginTop="@dimen/size_car_info_text_margin_top"
+        android:text="@string/engine_number"
+        android:textSize="@dimen/font_car_info_text"
+        app:layout_constraintBottom_toTopOf="@+id/textView18"
+        app:layout_constraintStart_toEndOf="@+id/car_pic"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/engine_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_car_info_value_margin_start"
+        tools:text="233333"
+        android:textSize="@dimen/font_car_info_text"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView8"
+        app:layout_constraintStart_toEndOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_car_info_text_margin_start"
+        android:layout_marginTop="@dimen/size_car_info_text_margin_top"
+        android:text="@string/iccid_number"
+        android:textSize="@dimen/font_car_info_text"
+        app:layout_constraintBottom_toTopOf="@+id/ll_car_plate_number"
+        app:layout_constraintStart_toEndOf="@+id/car_pic"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/iccid_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_car_info_value_margin_start"
+        tools:text="233333"
+        android:textSize="@dimen/font_car_info_text"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView18"
+        app:layout_constraintStart_toEndOf="@+id/textView18" />
+
+    <LinearLayout
+        android:id="@+id/ll_car_plate_number"
+        android:layout_width="@dimen/width_car_info_ll"
+        android:layout_height="@dimen/height_car_info_ll"
+        android:layout_marginStart="@dimen/size_car_info_text_margin_start"
+        android:layout_marginTop="@dimen/size_car_info_text_margin_top"
+        android:background="@drawable/car_plate_number_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toEndOf="@+id/car_pic"
+        app:layout_constraintTop_toBottomOf="@+id/textView18">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/car_plate_number"
+            android:textSize="@dimen/font_car_info_text" />
+
+        <TextView
+            android:id="@+id/plate_number"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="@dimen/size_car_info_value_margin_start"
+            tools:text="粤B23333"
+            android:textSize="@dimen/font_car_info_text" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/left_arrow" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

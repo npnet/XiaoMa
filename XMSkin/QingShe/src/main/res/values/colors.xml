@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color1">#008577</color>
+    <color name="color_qingshe">#23a8f2</color>
+
+    <color name="radio_button_selected_color">@color/color_qingshe</color>
+    <color name="radio_button_unselected_color">#72889b</color>
+
+    <color name="tv_reply_g">#72889b</color>
+    <color name="tv_reply_y">@color/color_qingshe</color>
+
+
+    <!--Xting-->
+    <color name="search_title">@color/color_qingshe</color>
+    <color name="color_tune_mark">@color/color_qingshe</color>
+    <color name="color_tune_text">@color/color_qingshe</color>
+
+    <color name="sould_field_text_selected_color">@color/color_qingshe</color>
+    <color name="color_using">@color/color_qingshe</color>
+    <color name="sould_field_text_unselected_color">#72889b</color>
+
+
+    <!--BluetoothPhone-->
+    <color name="dark_gray_text">#8598b4</color>
+    <color name="car_card_ripple_background">#BEBFC1</color>
+</resources>
+

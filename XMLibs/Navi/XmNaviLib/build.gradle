@@ -1,0 +1,9 @@
+apply plugin: 'com.android.library'
+apply from: "$rootDir$Android"
+
+android library()
+
+dependencies {
+    implementation project(':XMLibs:Utils')
+    compileOnly project(':XMLibs:Navi:XmNaviLibAidl')
+}

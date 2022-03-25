@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dp_5">5dp</dimen>
+    <dimen name="dp_20">20dp</dimen>
+
+    <dimen name="pet_font_size_20">20px</dimen>
+    <dimen name="pet_font_size_22">22px</dimen>
+    <dimen name="pet_font_size_24">24px</dimen>
+    <dimen name="pet_font_size_26">26px</dimen>
+    <dimen name="pet_font_size_28">28px</dimen>
+    <dimen name="pet_font_size_30">30px</dimen>
+    <dimen name="pet_font_size_32">32px</dimen>
+    <dimen name="pet_font_size_34">34px</dimen>
+    <dimen name="pet_font_size_36">36px</dimen>
+    <dimen name="pet_font_size_40">40px</dimen>
+
+    <!-- welcome page -->
+    <dimen name="size_welcome_page_pet_icon_margin_top">10px</dimen>
+    <dimen name="width_welcome_page_pet_icon">172px</dimen>
+    <dimen name="height_welcome_page_pet_icon">340px</dimen>
+    <dimen name="size_start_travel_margin_top">50px</dimen>
+    <dimen name="size_welcome_title_margin_top">90px</dimen>
+    <dimen name="size_welcome_title_padding">30px</dimen>
+    <dimen name="size_close_icon">36px</dimen>
+    <dimen name="size_close_icon_margin_top">44px</dimen>
+    <dimen name="size_close_icon_margin_start">83px</dimen>
+    <dimen name="width_pet_toast">556px</dimen>
+    <dimen name="height_pet_toast">180px</dimen>
+    <dimen name="size_pet_toast_text_margin_start">30px</dimen>
+    <dimen name="size_pet_toast_icon">62px</dimen>
+    <dimen name="size_pet_pass_chapter_loading_width">360px</dimen>
+    <dimen name="size_pet_pass_chapter_loading_height">12px</dimen>
+    <dimen name="size_pet_pass_chapter_loading_text_margin_top">20px</dimen>
+    <dimen name="size_pet_page_close_image">100px</dimen>
+    <dimen name="size_navigation_image">90px</dimen>
+    <dimen name="size_navigation_image_padding">20px</dimen>
+
+    <!-- pet home -->
+    <dimen name="width_navigation_bar_left">130px</dimen>
+    <dimen name="width_pet_home_operation">570px</dimen>
+    <dimen name="width_right_popup">420px</dimen>
+    <dimen name="size_operation_bt">140px</dimen>
+    <dimen name="size_operation_bt_margin_start">60px</dimen>
+    <dimen name="size_operation_bt_margin_top">150px</dimen>
+    <dimen name="size_operation_bt_interval">40px</dimen>
+    <dimen name="width_level_flag">90px</dimen>
+    <dimen name="height_level_flag">34px</dimen>
+    <dimen name="size_level_margin_top">138px</dimen>
+    <dimen name="size_level_margin_start">85px</dimen>
+    <dimen name="size_popup_icon">80px</dimen>
+    <dimen name="size_popup_icon_margin_start">80px</dimen>
+    <dimen name="size_popup_margin_start">70px</dimen>
+    <dimen name="size_treasure_box_number_start">96px</dimen>
+    <dimen name="size_treasure_box_number_top">490px</dimen>
+    <dimen name="width_go_to_eat_food">120px</dimen>
+    <dimen name="height_go_to_eat_food">43px</dimen>
+    <dimen name="size_go_to_eat_food_margin_start">20px</dimen>
+    <dimen name="size_go_to_eat_food_margin_top">10px</dimen>
+    <dimen name="size_upgrade_margin_start">205px</dimen>
+    <dimen name="size_treasure_box_content_margin_start">10px</dimen>
+
+    <!-- pet mall -->
+    <dimen name="size_top_bar_margin_top">20px</dimen>
+    <dimen name="width_pet_top_bar">1160px</dimen>
+    <dimen name="height_pet_top_bar">130px</dimen>
+    <dimen name="width_pet_mall">1120px</dimen>
+    <dimen name="height_pet_mall">680px</dimen>
+    <dimen name="size_mall_product_margin_bottom">20px</dimen>
+    <dimen name="width_mall_product_navigation">240px</dimen>
+    <dimen name="size_pet_mall_coin_icon">44px</dimen>
+    <dimen name="height_pet_coin">100px</dimen>
+    <dimen name="width_pet_coin">210px</dimen>
+    <dimen name="size_mall_product_margin_end">20px</dimen>
+    <dimen name="size_mall_product_list_tab">135px</dimen>
+    <dimen name="width_mall_pet_image">220px</dimen>
+    <dimen name="height_mall_pet_image">440px</dimen>
+    <dimen name="size_mall_pet_image_margin_top">160px</dimen>
+    <dimen name="size_mall_pet_image_margin_start">1250px</dimen>
+    <dimen name="width_mall_left_bar">230px</dimen>
+    <dimen name="height_mall_left_bar">140px</dimen>
+    <dimen name="size_mall_left_bar_margin">10px</dimen>
+    <dimen name="size_mall_left_bar_margin_top">100px</dimen>
+    <dimen name="size_mall_left_bar_margin_start">10px</dimen>
+    <dimen name="width_mall_tab_item">120px</dimen>
+    <dimen name="height_mall_tab_item">54px</dimen>
+    <dimen name="width_pet_experience">280px</dimen>
+    <dimen name="height_pet_experience">14px</dimen>
+    <dimen name="size_pet_level_margin_top">30px</dimen>
+    <dimen name="size_pet_experience_margin_top">10px</dimen>
+    <dimen name="width_pet_product_list_image">240px</dimen>
+    <dimen name="size_pet_goods_image">140px</dimen>
+    <dimen name="height_pet_product_list_image">160px</dimen>
+    <dimen name="width_product_item_desc">240px</dimen>
+    <dimen name="height_product_item_desc">64px</dimen>
+    <dimen name="size_product_item_coin">40px</dimen>
+    <dimen name="size_product_item_title_margin_top">10px</dimen>
+    <dimen name="size_mall_prompt_margin_start">30px</dimen>
+    <dimen name="size_mall_prompt_margin_top">40px</dimen>
+    <dimen name="size_mall_prompt_text_padding_bottom">12px</dimen>
+    <dimen name="size_mall_experience_margin_start">70px</dimen>
+    <dimen name="width_mall_timer_text">280px</dimen>
+    <dimen name="height_mall_timer_text">42px</dimen>
+    <dimen name="size_mall_timer_text_margin_top">200px</dimen>
+    <dimen name="size_mall_pet_image_icon_margin_top">40px</dimen>
+    <dimen name="size_goods_empty_image">100px</dimen>
+
+    <!-- 购买 -->
+    <dimen name="size_buy_page_margin">20px</dimen>
+    <dimen name="size_buy_page_padding_top">100px</dimen>
+    <dimen name="size_buy_page_padding_start">30px</dimen>
+    <dimen name="size_buy_product_detail_image">240px</dimen>
+    <dimen name="height_buy_product_detail_image">160px</dimen>
+    <dimen name="width_add_product">260px</dimen>
+    <dimen name="height_add_product">50px</dimen>
+    <dimen name="size_buy_detail_title_top">20px</dimen>
+    <dimen name="size_buy_detail_icon_top">30px</dimen>
+    <dimen name="size_buy_detail_title_start">50px</dimen>
+    <dimen name="size_buy_detail_desc_top">10px</dimen>
+    <dimen name="size_buy_detail_pet_coin_top">30px</dimen>
+    <dimen name="size_buy_add_product_margin_end">30px</dimen>
+    <dimen name="size_buy_with_car_coin_text_top">37px</dimen>
+    <dimen name="size_buy_with_car_coin_text_start">30px</dimen>
+    <dimen name="size_buy_with_car_coin_text_margin">10px</dimen>
+    <dimen name="width_pay_button">292px</dimen>
+    <dimen name="height_pay_button">62px</dimen>
+    <dimen name="size_pay_button_margin_bottom">30px</dimen>
+    <dimen name="height_car_coin_type">72px</dimen>
+    <dimen name="size_car_coin_type_margin_top">10px</dimen>
+    <dimen name="size_car_coin_text_desc_margin_end">60px</dimen>
+    <dimen name="width_pet_prompt_dialog">654px</dimen>
+    <dimen name="height_pet_prompt_dialog">420px</dimen>
+    <dimen name="size_pet_prompt_dialog_title_margin_top">50px</dimen>
+    <dimen name="size_pet_prompt_dialog_desc_margin_top">50px</dimen>
+    <dimen name="height_pet_prompt_dialog_button">62px</dimen>
+    <dimen name="width_pet_prompt_dialog_button">232px</dimen>
+    <dimen name="size_pet_prompt_dialog_button_margin_bottom">80px</dimen>
+
+    <!-- 喂食 -->
+    <dimen name="size_eat_food_image_margin_start">100px</dimen>
+    <dimen name="size_eat_food_image_margin_top">150px</dimen>
+    <dimen name="size_eat_food_title_margin_start">50px</dimen>
+    <dimen name="size_eat_food_title_margin_top">30px</dimen>
+    <dimen name="size_eat_food_time_margin_top">50px</dimen>
+    <dimen name="size_eat_food_balance_margin_top">100px</dimen>
+    <dimen name="size_eat_food_desc_margin_top">20px</dimen>
+    <dimen name="size_eat_food_bt_margin_top">90px</dimen>
+    <dimen name="size_wait_eat_food_bt_margin_start">50px</dimen>
+
+    <dimen name="height_pet_scroll_bar">420px</dimen>
+    <dimen name="width_pet_scroll_bar">32px</dimen>
+    <dimen name="width_pet_scroll_bar_size">12px</dimen>
+    <dimen name="size_pet_scroll_bar_margin_start">20px</dimen>
+
+    <!-- 地图 -->
+    <dimen name="size_map_navigation">50px</dimen>
+    <dimen name="size_map_pet_icon_margin_top">80px</dimen>
+    <dimen name="size_map_pet_icon_margin_start">226px</dimen>
+    <dimen name="size_map_prompt_margin_start">15px</dimen>
+    <dimen name="height_map_prompt_margin">100px</dimen>
+    <dimen name="size_map_pet_level_margin_top">68px</dimen>
+    <dimen name="size_map_pet_level_margin_start">251px</dimen>
+    <dimen name="size_map_track_view">12px</dimen>
+    <dimen name="width_map_travel_car">62px</dimen>
+    <dimen name="height_map_travel_car">24px</dimen>
+    <dimen name="height_map_travel_text">94px</dimen>
+    <dimen name="size_map_travel_view_margin_top">584px</dimen>
+    <dimen name="size_map_travel_view_margin_start">266px</dimen>
+    <dimen name="size_city_name_margin_top">10px</dimen>
+
+    <!-- 升级奖励 -->
+    <dimen name="size_upgrade_reward_title_margin_top">60px</dimen>
+    <dimen name="size_upgrade_reward_prompt_margin_top">30px</dimen>
+    <dimen name="size_upgrade_reward_list_margin_top">10px</dimen>
+
+
+    <!-- 新手引导 -->
+    <dimen name="px_300">300px</dimen>
+    <dimen name="px_70">70px</dimen>
+    <dimen name="px_290">290px</dimen>
+    <dimen name="px_181">181px</dimen>
+    <dimen name="px_32">32px</dimen>
+    <dimen name="px_382">382px</dimen>
+    <dimen name="px_81">81px</dimen>
+    <dimen name="px_80">80px</dimen>
+    <dimen name="px_120">120px</dimen>
+    <dimen name="px_316">316px</dimen>
+    <dimen name="px_754">754px</dimen>
+    <dimen name="px_289">289px</dimen>
+    <dimen name="px_504">504px</dimen>
+    <dimen name="px_760">760px</dimen>
+    <dimen name="px_249">249px</dimen>
+    <dimen name="px_150">150px</dimen>
+    <dimen name="px_440">440px</dimen>
+    <dimen name="px_64">64px</dimen>
+    <dimen name="px_1800">1800px</dimen>
+    <dimen name="px_210">210px</dimen>
+    <dimen name="px_288">288px</dimen>
+    <dimen name="px_200">200px</dimen>
+    <dimen name="px_560">560px</dimen>
+    <dimen name="px_809">809px</dimen>
+</resources>

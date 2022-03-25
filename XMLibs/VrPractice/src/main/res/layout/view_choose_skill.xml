@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="938px"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_choose">
+
+    <ImageView
+        android:layout_width="165px"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/navi_bg2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="50px"
+        android:layout_height="50px"
+        android:layout_marginStart="40px"
+        android:src="@drawable/navi_back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_action"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="205px"
+        android:layout_marginTop="83px"
+        android:text="@string/yomi_will_excute"
+        android:textColor="@color/white"
+        android:textSize="30px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <GridView
+        android:id="@+id/gv_skill"
+        android:layout_width="match_parent"
+        android:layout_marginEnd="25px"
+        android:layout_height="0px"
+        android:layout_marginStart="165px"
+        android:layout_marginTop="30px"
+        android:numColumns="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_action" />
+
+</android.support.constraint.ConstraintLayout>

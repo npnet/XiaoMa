@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/size_preference_title_margin_top">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_preference_margin_left"
+        android:text="@string/design_xting"
+        android:textSize="@dimen/font_preference_title"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/tvSubInfo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvSkip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/size_preference_skip_margin_right"
+        android:padding="@dimen/dp_10"
+        android:text="@string/skip"
+        android:textColor="@color/color_preference_skip"
+        android:textSize="@dimen/font_28"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvPreferenceTypes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_preference_margin_left"
+        android:layout_marginRight="@dimen/size_preference_margin_right"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <com.xiaoma.ui.view.XmScrollBar
+        android:id="@+id/scroll_bar"
+        android:layout_width="@dimen/width_scrollbar"
+        android:layout_height="@dimen/height_scrollbar"
+        android:layout_marginBottom="@dimen/size_preference_scrollbar_margin_bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/tvStart"
+        android:layout_width="@dimen/width_preference_start"
+        android:layout_height="@dimen/height_preference_start"
+        android:layout_marginBottom="@dimen/size_preference_start_margin_bottom"
+        android:background="@drawable/btn_state_select"
+        android:gravity="center"
+        android:text="@string/start_xting"
+        android:textSize="@dimen/font_22"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <com.xiaoma.ui.StateControl.StateView
+        android:id="@+id/stateView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </com.xiaoma.ui.StateControl.StateView>
+
+</android.support.constraint.ConstraintLayout>

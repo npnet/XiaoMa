@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100px"
+        android:layout_marginTop="98px"
+        android:text="@string/check_in_out"
+        android:textColor="@color/white"
+        android:textSize="@dimen/select_data_tv_title_size" />
+
+    <TextView
+        android:id="@+id/tv_start_time"
+        android:layout_width="160px"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title"
+        android:layout_marginLeft="405px"
+        android:layout_marginTop="15px"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/select_data_tv_start_time_size"
+        tools:text="2018.9" />
+
+    <ImageView
+        android:id="@+id/iv_pre"
+        android:layout_width="45px"
+        android:layout_height="45px"
+        android:layout_alignStart="@+id/weekview1"
+        android:layout_alignTop="@+id/tv_start_time"
+        android:layout_marginStart="20px"
+        android:src="@drawable/ic_pre" />
+
+    <TextView
+        android:id="@+id/tv_end_time"
+        android:layout_width="160px"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title"
+        android:layout_marginLeft="686px"
+        android:layout_marginTop="15px"
+        android:layout_toEndOf="@+id/tv_start_time"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/select_data_tv_end_time_size" />
+
+    <ImageView
+        android:id="@+id/iv_next"
+        android:layout_width="45px"
+        android:layout_height="45px"
+        android:layout_alignEnd="@+id/weekview2"
+        android:layout_alignTop="@+id/tv_start_time"
+        android:layout_marginEnd="20px"
+        android:src="@drawable/ic_next" />
+
+
+    <com.xiaoma.launcher.travel.hotel.calendar.WeekView
+        android:id="@+id/weekview1"
+        android:layout_width="@dimen/select_data_weekview1_width"
+        android:layout_height="60px"
+        android:layout_below="@+id/tv_start_time"
+        android:layout_marginLeft="185px"
+        android:layout_marginTop="32px" />
+
+    <com.xiaoma.launcher.travel.hotel.calendar.WeekView
+        android:id="@+id/weekview2"
+        android:layout_width="@dimen/select_data_weekview2_width"
+        android:layout_height="60px"
+        android:layout_below="@+id/tv_start_time"
+        android:layout_marginLeft="246px"
+        android:layout_marginTop="32px"
+        android:layout_toEndOf="@+id/weekview1" />
+
+
+    <GridView
+        android:id="@+id/calendar_start"
+        android:layout_width="@dimen/select_data_calendar_start_width"
+        android:layout_height="@dimen/select_data_calendar_start_height"
+        android:layout_below="@+id/weekview1"
+        android:layout_marginLeft="185px"
+        android:numColumns="7"
+        android:verticalSpacing="14px" />
+
+    <GridView
+        android:id="@+id/calendar_end"
+        android:layout_width="@dimen/select_data_calendar_end_width"
+        android:layout_height="@dimen/select_data_calendar_end_height"
+        android:layout_below="@+id/weekview1"
+        android:layout_marginLeft="246px"
+        android:layout_toEndOf="@+id/calendar_start"
+        android:numColumns="7"
+        android:verticalSpacing="14px" />
+
+    <TextView
+        android:id="@+id/btn_clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/select_data_btn_clear_bottom"
+        android:layout_marginLeft="@dimen/select_data_btn_clear_start"
+        android:paddingTop="12px"
+        android:text="@string/clear_date"
+        android:textColor="@color/color_fc3838"
+        android:textSize="30px" />
+
+    <Button
+        android:id="@+id/btn_sure"
+        android:layout_width="@dimen/select_data_btn_sure_width"
+        android:layout_height="@dimen/select_data_btn_sure_height"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/select_data_btn_sure_bottom"
+        android:background="@drawable/selector_button_342"
+        android:gravity="center_horizontal"
+        android:paddingTop="12px"
+        android:text="@string/btn_sure"
+        android:textSize="24px" />
+
+
+</RelativeLayout>

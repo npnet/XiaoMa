@@ -1,0 +1,194 @@
+<resources>
+    <string name="app_name">奔腾商城</string>
+    <string name="theme">个性主题</string>
+    <string name="flow">流量商城</string>
+    <string name="Hologram">全息形象</string>
+    <string name="VehicleSound">整车音效</string>
+    <string name="tab_system_theme">系统主题</string>
+    <string name="tab_theme_sound">语音音色</string>
+    <string name="bt_buyed">我的购买</string>
+    <string name="clothing_title">服装</string>
+    <string name="skill_title">技能</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="prompt_title">提示</string>
+    <string name="pay_confirm">确定</string>
+    <string name="pay_cancel">取消</string>
+    <string name="balance_lack">您的账户不足</string>
+    <string name="earn_car_coin">去赚车币</string>
+    <string name="network_does_not_force">网络不给力</string>
+    <string name="refreshing_the_next_page">别紧张，试试刷新下页面</string>
+    <string name="reload">重新加载</string>
+    <string name="network_unavailable">网络不可用，请检查网络</string>
+    <string name="congratulate_pay_success">恭喜购买成功</string>
+    <string name="now_use_resource">立即使用</string>
+    <string name="not_use_resource">暂不使用</string>
+    <string name="network_anomaly">网络异常，请稍后再试</string>
+    <string name="purchase_success">恭喜您购买成功</string>
+    <string name="confirm">确认</string>
+
+    <string name="trial_first_start">开始试用</string>
+    <string name="confirm_to_buy">确认购买</string>
+    <string name="close">关闭</string>
+    <string name="hint">提示</string>
+
+    <!-- 我的购买 -->
+    <string name="buy_success">购买成功</string>
+    <string name="buy_system_theme_title">系统主题</string>
+    <string name="buy_voice_style_title">语音音色</string>
+    <string name="buy_hologram_title">全息形象</string>
+    <string name="buy_vehicle_sound_title">整车音效</string>
+    <string name="start_clean_cache">开始清理</string>
+    <string name="clean_cache">清理文件</string>
+    <string name="use_text">使用</string>
+    <string name="load_text">下载</string>
+    <string name="unzip_executing">解压中</string>
+    <string name="buy_failed">网络异常，请稍后再试</string>
+    <string name="pay_timeout">交易超时，请重试</string>
+    <string name="all_select">全选</string>
+    <string name="executing_clean_cache">缓存清理中，请耐心等待</string>
+    <string name="i_known">知道了</string>
+
+    <string name="bind_hologram_title">全息奔腾APP账号绑定</string>
+    <string name="bind_hologram_step_one">下载手机APP</string>
+    <string name="bind_hologram_step_two">使用手机APP扫码</string>
+    <string name="bind_hologram_step_three">绑定完成</string>
+    <string name="load_install_after">下载安装后进入\n“我的-绑定车机账号”页面</string>
+    <string name="scan_qr_code_bind_hologram">扫描此二维码\n进行账号绑定</string>
+    <string name="in_phone_click_confirm_bind">手机APP内\n点击 “确认绑定” 后完成</string>
+    <string name="cancel_bound_account">解绑</string>
+    <string name="confirm_cancel_bound">确认解绑</string>
+    <string name="cancel_bound_account_desc">解除与全息奔腾APP账号绑定后，将清空已\n上传的自定义3D形象数据</string>
+
+
+    <!--Common-->
+    <string name="tab_integrated">综合</string>
+    <string name="tab_sales">销量</string>
+    <string name="tab_latest">最近上架</string>
+    <string name="tab_price_score">价格</string>
+
+    <!--个性主题-->
+    <string name="state_use">使用</string>
+    <string name="state_buy">购买</string>
+    <string name="state_trial">试用</string>
+    <string name="state_using">使用中…</string>
+    <string name="state_trying">试用中</string>
+    <string name="state_download_pending">下载中</string>
+    <string name="state_free">免费</string>
+    <string name="state_download">下载</string>
+    <string name="state_update">更新</string>
+
+    <string name="hint_start_trying">开始试用!</string>
+    <string name="hint_switch_skin_fail">换肤失败</string>
+    <string name="hint_download_error">下载失败,请稍后再试!</string>
+
+    <string name="str_buy_count">%1$s次</string>
+    <string name="str_download_progress">%1$d%%</string>
+
+    <!--皮肤详情-->
+    <string name="str_download_size">下载%1$s</string>
+
+    <!-- string format -->
+    <string name="confirm_use_car_coin">您确定使用 %1$s车币 购买吗？</string>
+    <string name="current_car_coin_balance">当前余额：%1$s车币</string>
+    <string name="buy_valid_for_the_month">购买</string>
+    <string name="scanCodeToPayCash">扫码支付现金￥</string>
+    <string name="down_load_size">%1$s</string>
+    <string name="down_load_number">%1$s次</string>
+    <string name="describe_skins">【%1$s】%2$s</string>
+    <string name="rmb_price">￥%1$s</string>
+    <string name="scan_code_pay_cash">扫码支付现金￥%1$s</string>
+    <string name="own_cache_size">已占用空间%1$s</string>
+    <string name="selected_cache_size">已选空间%1$s</string>
+    <string name="skin_trial_msg">您选择的【%1$s】%2$s\n将在 %3$d 天后过期,只能试用一次.</string>
+    <string name="clean_cache_success">为您成功清理了%1$s空间</string>
+
+    <!--整车音效-->
+    <string name="status_download">下载</string>
+    <string name="audio_sound">音响音效</string>
+    <string name="instrument_sound">仪表音效</string>
+    <string name="reversing_radar_distance">倒车雷达距离</string>
+    <string name="lane_change_aid">换道辅助提示</string>
+    <string name="bluetooth_phone_button_tone">蓝牙电话按键音</string>
+    <string name="front_collision_warning">前碰撞预警</string>
+    <string name="turning_tips">转向提示</string>
+    <string name="seat_belt_is_not_reminded">安全带未系提醒</string>
+    <string name="alarm_prompt">报警提示</string>
+    <string name="message_notification">信息提示</string>
+    <string name="prompt">提示</string>
+    <string name="str_pro_update_msg">已下载完成，是否立即使用?</string>
+    <string name="str_update_left">使用</string>
+    <string name="str_update_right">取消</string>
+    <string name="str_update_msg_one">\t已下载完成，是否立即更新。此升级过程中\n仪表和音响将重新启动，请您保证以下状态:\n\t1.车辆保持为上电但未启动状态\n\t2.车辆档位保持在P档\n\t3.电子驻车为拉起状态\n\n</string>
+    <string name="str_update_msg_two">\t为了保证您的行驶安全，请保证以上状态直至更新结束。</string>
+    <string name="str_pro_undone_update_msg">\t您有未完成的音效更新，是否立即更新。</string>
+    <string name="str_undone_update_msg_one">\t您有未完成的音效更新，是否立即更新。此升级过程中\n仪表和音响将重新启动，请您保证以下状态:\n\t1.车辆保持为上电但未启动状态\n\t2.车辆档位保持在P档\n\t3.电子驻车为拉起状态\n\n</string>
+    <string name="str_undone_update_msg_two">\t为了保证您的行驶安全，请保证以上状态直至更新结束。</string>
+
+    <string name="now_download_resource">立即下载</string>
+    <string name="not_download_resource">暂不下载</string>
+    <string name="congratulations_purchase_success">恭喜您购买成功</string>
+    <string name="update_failed">使用失败，请稍后再试</string>
+    <string name="click_toshow_scan_code">您可以点击对应的「购\n买」按钮购买商品会弹\n出支付二维码。\n\n用户可以通过支付宝或\n微信进行扫码支付。</string>
+    <string name="commodity_purchase">商品购买</string>
+    <string name="skip">跳过</string>
+
+    <string name="car_coins_price">车币价</string>
+    <string name="cash_price">现金价</string>
+    <string name="content_loading">内容加载中</string>
+    <string name="load_failed">加载失败</string>
+    <string name="avaliable_flow">可用流量: </string>
+    <string name="avaliable_flow_OM">可用流量: 0.00M</string>
+    <string name="total_flow_OM">总流量: 0.00M</string>
+    <string name="total_flow">总流量: </string>
+    <string name="no_more">没有更多数据了</string>
+    <string name="total">总计: 30</string>
+    <string name="unpack_failed">解压失败</string>
+    <string name="wait_for_complete">请等待当前下载完成后再操作</string>
+    <string name="sure_to_buy_990">您确定使用 990车币 购买吗？</string>
+
+    <string name="successful_use">使用成功</string>
+    <string name="condition_not_satisfied">条件不满足，请检查后更新</string>
+    <string name="condition_unsatisfied_check_retry">条件不满足，请检查后重试</string>
+    <string name="please_select_flow">请选择购买的流量包</string>
+    <string name="guide_goods_list">商品列表</string>
+    <string name="guide_goods_list_description">您可以切换不同商品列\n表，进行商品购买或使\n用。\n\n您可以点击商品查看商\n品详情。</string>
+    <string name="guide_goods_details">商品详情</string>
+    <string name="guide_goods_details_description">进入后您可以看到对应\n商品的详情。\n\n您可以对选中商品进行\n信息查看，购买，或试\n用，点击图片即可查看\n大图。</string>
+    <string name="guide_goods_pic">商品图片</string>
+    <string name="guide_goods_pic_description">点击图片后即可查看商\n品图片。\n\n用户点击关闭即可回到\n商品详情页面。</string>
+
+    <string name="goods_info_cannot_obtain">未获取到产品信息</string>
+    <string name="tips_select_res_for_clean">请选择需要清理的资源</string>
+    <string name="tips_no_need_to_clean">空间占用为0，无需清理</string>
+    <string name="tips_3d_invalid_role">无效的形象</string>
+    <string name="tips_3d_invalid_cloth">无效的服装</string>
+    <string name="invalid_audition_url">无效的试听URL</string>
+    <string name="invalid_download_url">无效的下载URL</string>
+    <string name="please_wait">请等待当前安装完成后再操作</string>
+    <string name="tips_wait_download_complete">请等待当前下载完成后再操作</string>
+    <string name="tips_download_success_and_use">下载完成，点击使用切换</string>
+    <string name="trial_end_msg_format">"您选择的【%1$s】皮肤试用结束\n需要购买后可继续用，确定购买？"</string>
+    <string name="trial_failed">试用失败</string>
+    <string name="trial_success">试用成功</string>
+    <!--<string name="skin_using_condition">\t切换使用主题皮肤过程中会出现界面卡顿,\n请您保证以下状态：\n\t1.车辆档位保持在P档\n\t2.电子驻车为拉起状态\n\n\t为保证您的行驶安全, 请保持以上状态直至更新结束。</string>-->
+    <string name="skin_using_condition_one">\t切换使用主题皮肤过程中会出现界面卡顿,\n请您保证以下状态：\n\t1.车辆档位保持在P档\n\t2.电子驻车为拉起状态\n\n</string>
+    <string name="skin_using_condition_two">\t为保证您的行驶安全, 请保持以上状态直至更新结束。</string>
+    <string name="verify_fail">验证失败,请重试</string>
+    <string name="invalid_tts_id">无效的音色ID</string>
+    <string name="play_audio_error">播放失败!</string>
+    <string name="to_clean">去清理</string>
+    <string name="download_limit_prompt">您已下载10套系统皮肤，请清理已下载\n皮肤缓存数据后再试</string>
+    <string name="cash_purchasing">现金购买</string>
+    <string name="coin_purchasing">车币兑换</string>
+    <string name="buy_failuer">购买失败</string>
+    <string name="network_error">网络异常</string>
+    <string name="txt_close_dialog">关闭弹窗</string>
+    <string name="automatically_close_the_popup">%1$ds后自动关闭弹窗</string>
+    <string name="buy_prefix">使用</string>
+    <string name="loading">正在努力加载中…</string>
+    <string name="state_error_update_3d">全息设备升级失败</string>
+    <string name="str_installing">安装中...</string>
+    <string name="default_3d_self">自定义</string>
+</resources>

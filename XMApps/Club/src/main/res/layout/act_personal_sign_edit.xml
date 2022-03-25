@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/edit_sign_bg"
+    tools:ignore="PxUsage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_edit_sign">
+
+        <TextView
+            android:id="@+id/sign_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/club_white"
+            android:textSize="@dimen/font_text_middle"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_edit_sign_bottom"
+            android:background="@drawable/edit_sign_et_bg"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/padding_edit_sign_bottom">
+
+            <EditText
+                android:id="@+id/edit_user_sign"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_edit_sign"
+                android:layout_marginTop="@dimen/margin_edit_sign_top"
+                android:background="@null"
+                android:imeOptions="actionDone"
+                android:padding="@dimen/padding_edit_sign_et"
+                android:singleLine="true"
+                android:textColor="@color/club_white"
+                android:textSize="@dimen/font_text_middle" />
+
+            <TextView
+                android:id="@+id/user_sign_max"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_edit_sign_number"
+                android:paddingLeft="@dimen/padding_edit_sign_et"
+                android:text="0/30"
+                android:textColor="@color/club_white"
+                android:textSize="@dimen/font_text_middle" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px"
+            android:background="@drawable/club_btn_selector"
+            android:paddingBottom="8px"
+            android:text="@string/btn_edit_sign_save"
+            android:textSize="26px" />
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,46 @@
+apply plugin: 'com.android.application'
+apply from: "$rootDir$Android"
+apply from: "$rootDir$Modules"
+apply from: "$rootDir$Tinker"
+
+android application('com.xiaoma.pet')
+dependencies dependency(Pet)
+
+android{
+    defaultConfig {
+        ndk {
+            // 如果需要在Module中自定义abiFilters
+            // 请先调用一下方法清空现有的abiFilters
+            abiFilters?.clear()
+            abiFilters 'arm64-v8a', 'armeabi-v7a'
+        }
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+}
+
+dependencies {
+
+    implementation "com.android.support.constraint:constraint-layout:${CONSTRAINT_LAYOUT}"
+    implementation "com.github.CymChad:BaseRecyclerViewAdapterHelper:${BASE_RECYCLERVIEW_ADAPTER_HELPER}"
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    implementation files('libs/unity-classes.jar')
+    implementation files('libs/UnityAds.aar')
+}
+
+tinker {
+    appClassName 'com.xiaoma.pet.petApp'
+    buildPatch {
+        baseApkPath ''
+        baseResMapping ''
+        baseMapping ''
+    }
+    patchDesc {
+        baseVersion ''
+        patchVersion 0
+        patchMessage ''
+    }
+}

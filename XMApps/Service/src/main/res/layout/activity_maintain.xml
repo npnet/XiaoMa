@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_maintain_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/tv_maintain_number_margin_left"
+        android:layout_marginTop="@dimen/tv_maintain_number_margin_top"
+        android:textSize="@dimen/tv_maintain_number_text_size"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/maintain_recycler_view_top"
+        android:layout_centerVertical="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_maintain_number" />
+
+    <Button
+        android:id="@+id/btn_to_maintain"
+        android:layout_width="@dimen/btn_to_maintain_width"
+        android:layout_height="@dimen/btn_to_maintain_height"
+        android:layout_marginTop="@dimen/btn_to_maintain_top"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/selector_button"
+        android:text="@string/go_maintain"
+        android:textSize="24px"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/maintain_scroll_bar"
+       />
+
+    <com.xiaoma.ui.view.XmScrollBar
+        android:id="@+id/maintain_scroll_bar"
+        android:layout_width="@dimen/width_scrollbar"
+        android:layout_height="@dimen/height_scrollbar"
+        android:layout_marginTop="@dimen/scroll_bar_top"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recycler_view" />
+
+</android.support.constraint.ConstraintLayout>

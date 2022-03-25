@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="1000px"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_cloudmi_login">
+
+    <TextView
+        android:id="@+id/tv_setting_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44px"
+        android:layout_marginTop="97px"
+        android:text="@string/setting"
+        android:textColor="@color/white"
+        android:textSize="30px" />
+
+    <TextView
+        android:id="@+id/tv_auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_setting_title"
+        android:layout_marginLeft="109px"
+        android:layout_marginTop="54px"
+        android:text="@string/auto_excute"
+        android:textColor="@color/white"
+        android:textSize="30px" />
+
+    <Switch
+        android:id="@+id/auto_switch"
+        android:layout_width="60px"
+        android:layout_height="30px"
+        android:layout_alignTop="@+id/tv_auto"
+        android:layout_alignEnd="@+id/et_address"
+        android:layout_alignBottom="@+id/tv_auto"
+        android:thumb="@drawable/switch_thumb"
+        android:track="@drawable/switch_track" />
+
+    <TextView
+        android:id="@+id/tv_set_address_lable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_auto"
+        android:layout_marginLeft="109px"
+        android:layout_marginTop="46px"
+        android:text="@string/set_home_address"
+        android:textColor="@color/white"
+        android:textSize="30px" />
+
+    <EditText
+        android:id="@+id/et_address"
+        android:layout_width="705px"
+        android:layout_height="80px"
+        android:layout_below="@id/tv_set_address_lable"
+        android:layout_marginLeft="109px"
+        android:layout_marginTop="25px"
+        android:background="@drawable/bg_inputbox"
+        android:drawableEnd="@drawable/icon_next"
+        android:ellipsize="end"
+        android:focusable="false"
+        android:hint="@string/input_home_address"
+        android:paddingStart="34px"
+        android:paddingEnd="25px"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textColorHint="#8a919b"
+        android:textSize="30px" />
+
+    <TextView
+        android:id="@+id/tv_set_execute_lable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_address"
+        android:layout_marginLeft="109px"
+        android:layout_marginTop="46px"
+        android:text="@string/set_excute_condition"
+        android:textColor="@color/white"
+        android:textSize="30px" />
+
+    <EditText
+        android:id="@+id/et_execute_condition"
+        android:layout_width="705px"
+        android:layout_height="80px"
+        android:layout_below="@id/tv_set_execute_lable"
+        android:layout_marginLeft="109px"
+        android:layout_marginTop="25px"
+        android:background="@drawable/bg_inputbox"
+        android:drawableEnd="@drawable/icon_next"
+        android:ellipsize="end"
+        android:focusable="false"
+        android:paddingStart="34px"
+        android:paddingEnd="25px"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textColorHint="#8a919b"
+        android:textSize="30px" />
+</RelativeLayout>

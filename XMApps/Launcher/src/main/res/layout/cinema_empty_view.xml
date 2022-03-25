@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/iv_layout"
+        android:layout_width="560px"
+        android:layout_height="514px"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44px"
+        android:background="@drawable/iv_empty">
+
+
+        <TextView
+            android:id="@id/tv_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="75px"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="@string/state_view_empty_text"
+            android:textColor="@color/state_view_text_color"
+            android:textSize="30px" />
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/renew_trailer"
+        android:layout_width="300px"
+        android:layout_height="75px"
+        android:layout_below="@+id/iv_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="35px"
+        android:background="@drawable/selector_button"
+        android:text="@string/renew_select_film"
+        android:textSize="30px" />
+</RelativeLayout>

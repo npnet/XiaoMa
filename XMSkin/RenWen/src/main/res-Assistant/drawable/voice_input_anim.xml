@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/voice_input1" android:duration="0"/>
+    <item android:drawable="@drawable/voice_input2" android:duration="0"/>
+    <item android:drawable="@drawable/voice_input3" android:duration="0"/>
+    <item android:drawable="@drawable/voice_input4" android:duration="0"/>
+    <item android:drawable="@drawable/voice_input5" android:duration="0"/>
+    <item android:drawable="@drawable/voice_input6" android:duration="0"/>
+    <item android:drawable="@drawable/voice_input7" android:duration="0"/>
+    <item android:drawable="@drawable/voice_input8" android:duration="0"/>
+    <item android:drawable="@drawable/voice_input9" android:duration="0"/>
+    <item android:drawable="@drawable/voice_input10" android:duration="0"/>
+    <item android:drawable="@drawable/voice_input11" android:duration="0"/>
+    <item android:drawable="@drawable/voice_input12" android:duration="0"/>
+    <item android:drawable="@drawable/voice_input13" android:duration="0"/>
+    <item android:drawable="@drawable/voice_input14" android:duration="0"/>
+    <item android:drawable="@drawable/voice_input15" android:duration="0"/>
+</animation-list>

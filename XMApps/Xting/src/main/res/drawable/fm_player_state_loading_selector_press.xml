@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/mini_player_loading"
+    android:inset="@dimen/size_player_loading_inset">
+
+
+    <!--<item android:drawable="@drawable/fm_player_state_loading_pressed" android:state_pressed="true" />-->
+</inset>

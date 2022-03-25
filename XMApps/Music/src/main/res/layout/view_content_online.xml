@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="15px">
+
+    <RelativeLayout
+        android:id="@+id/music_name_rl"
+        android:layout_width="@dimen/width_view_content_song_name_tv"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_fragment_play_content_rl_margin_s"
+        android:layout_marginTop="@dimen/size_fragment_play_content_rl_margin_t">
+
+        <com.xiaoma.ui.view.AutoScrollTextView
+            android:id="@+id/play_content_song_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:ellipsize="marquee"
+            android:includeFontPadding="false"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:textSize="@dimen/font_play_content_song_name" />
+
+        <TextView
+            android:id="@+id/play_content_album_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/play_content_song_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/size_play_content_album_name_margin_t"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:textSize="@dimen/font_play_content_album_name" />
+
+    </RelativeLayout>
+
+    <com.xiaoma.music.player.view.player.QualityView
+        android:id="@+id/online_music_quality_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15px"
+        android:layout_marginTop="@dimen/size_fragment_quality_rl_margin_t"
+        android:layout_toRightOf="@id/music_name_rl" />
+
+    <com.xiaoma.music.player.view.player.ProgressView
+        android:id="@+id/fragment_content_view"
+        android:layout_width="@dimen/width_fragment_content_progess"
+        android:layout_height="@dimen/height_fragment_content_progess"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/size_fragment_content_progess_margin_b" />
+
+</RelativeLayout>

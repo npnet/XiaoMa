@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="TaskState">
+        <item>去完成</item>
+        <item>去完成</item>
+        <item>去完成</item>
+        <item>已完成</item>
+        <item>已结束</item>
+    </string-array>
+
+    <string-array name="OperateItem">
+        <item>我的车币</item>
+        <item>任务中心</item>
+        <item>我的订单</item>
+        <item>车辆信息</item>
+        <item>账户设置</item>
+        <item>反馈</item>
+        <item>新手模式</item>
+        <item>二维码管理</item>
+    </string-array>
+
+    <string-array name="NewGuilderApp">
+        <item>桌面</item>
+        <item>电台</item>
+        <item>音乐</item>
+        <item>应用</item>
+        <item>车服务</item>
+        <item>车友圈</item>
+        <item>车乐汇</item>
+        <item>奔腾商城</item>
+        <item>个人中心</item>
+    </string-array>
+</resources>

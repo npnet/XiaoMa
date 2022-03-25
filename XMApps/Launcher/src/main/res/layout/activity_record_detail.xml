@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_common"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:layout_marginBottom="30px">
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="80px"
+            android:textSize="40px"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="2019/01/02" />
+
+        <TextView
+            android:id="@+id/tv_lunar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="60px"
+            android:layout_toEndOf="@+id/tv_date"
+            android:textColor="@color/bt_unable"
+            android:textSize="26px"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_date"
+            app:layout_constraintLeft_toRightOf="@+id/tv_date"
+            tools:text="辛亥年" />
+
+        <TextView
+            android:id="@+id/tv_week"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="20px"
+            android:layout_toEndOf="@+id/tv_lunar"
+            android:text="周三"
+            android:textColor="@color/bt_unable"
+            android:textSize="26px"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_date"
+            app:layout_constraintLeft_toRightOf="@+id/tv_lunar" />
+
+        <TextView
+            android:id="@+id/tv_compile"
+            android:layout_width="150px"
+            android:layout_height="70px"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="80px"
+            android:background="@drawable/btn_selector"
+            android:gravity="center"
+            android:paddingBottom="10px"
+            android:text="@string/compile"
+            android:textColor="#ffffff"
+            android:textSize="24px"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_date"
+            app:layout_constraintRight_toRightOf="parent" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/schedule_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.xiaoma.ui.view.XmScrollBar
+            android:id="@+id/scroll_bar"
+            android:layout_width="@dimen/width_scrollbar"
+            android:layout_height="@dimen/height_scrollbar"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20px"
+            android:visibility="invisible" />
+
+        <include
+            android:id="@+id/ll_net"
+            layout="@layout/include_no_network_view"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

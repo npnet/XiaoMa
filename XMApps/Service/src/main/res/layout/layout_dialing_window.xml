@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="550px"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_layout">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/title_parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/minimum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32px"
+                android:layout_marginTop="26px"
+                android:src="@drawable/minimize" />
+
+            <TextView
+                android:id="@+id/current_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="31px"
+                android:text="@string/calling"
+                android:textColor="#8598b4"
+                android:textSize="32px" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/title_parent"
+            android:orientation="vertical">
+
+            <com.xiaoma.service.common.views.CircleCharAvatarView
+                android:id="@+id/icon"
+                android:layout_width="125px"
+                android:layout_height="125px"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="81px" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="14px"
+                android:singleLine="true"
+                android:textSize="38px" />
+
+            <TextView
+                android:id="@+id/phone_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="11px"
+                android:singleLine="true"
+                android:textColor="#8598b4"
+                android:textSize="28px" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="23px">
+
+
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/hang_up"
+                    android:layout_width="91px"
+                    android:layout_height="91px"
+                    android:layout_marginBottom="23px"
+                    android:src="@drawable/hangup_selector" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/hand_up"
+                    android:textSize="26px" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/hang_up_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="17px"
+        android:background="#4D03121a"
+        android:visibility="gone" />
+</RelativeLayout>

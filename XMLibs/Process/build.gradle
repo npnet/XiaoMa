@@ -1,0 +1,17 @@
+apply plugin: 'com.android.library'
+apply from: "$rootDir$Android"
+
+android library()
+
+dependencies {
+    implementation project(path: ':XMLibs:Utils')
+    api files("${XMJars}lite-orm-1.9.1.jar")
+}
+
+gradle.taskGraph.whenReady {
+    tasks.each { task ->
+        if (task.name=='mockableAndroidJar') {
+            task.enabled = false
+        }
+    }
+}

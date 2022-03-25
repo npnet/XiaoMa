@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--<item android:drawable="@drawable/mini_player_playing_press" android:state_enabled="true" android:state_pressed="true" android:state_selected="true" />-->
+    <!--<item android:drawable="@drawable/mini_player_playing_normal" android:state_enabled="true" android:state_pressed="false" android:state_selected="true" />-->
+    <!--<item android:drawable="@drawable/mini_player_pause_press" android:state_enabled="true" android:state_pressed="true" android:state_selected="false" />-->
+    <!--<item android:drawable="@drawable/mini_player_pause_normal" android:state_enabled="true" android:state_pressed="false" android:state_selected="false" />-->
+    <!--<item android:drawable="@drawable/mini_player_loading" android:state_enabled="false" />-->
+    <item
+        android:drawable="@drawable/mini_player_loading"
+        android:maxLevel="1" />
+    <item
+        android:drawable="@drawable/selector_mini_pause"
+        android:maxLevel="2" />
+    <item
+        android:drawable="@drawable/selector_mini_playing"
+        android:maxLevel="7" />
+
+    <item
+        android:drawable="@drawable/transparent_bg"
+        android:maxLevel="20" />
+</level-list>

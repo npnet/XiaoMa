@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/satisfaction_linear"
+        android:layout_width="@dimen/width_satisfaction_view"
+        android:layout_height="@dimen/height_satisfaction_view"
+        android:background="@drawable/comment_normal"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/size_comment_padding_bottom">
+
+        <ImageView
+            android:layout_width="@dimen/size_comment_image"
+            android:layout_height="@dimen/size_comment_image"
+            android:src="@drawable/happy" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_comment_margin_start"
+            android:text="@string/satisfaction"
+            android:textSize="@dimen/font_size_home_28" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/non_satisfaction_linear"
+        android:layout_width="@dimen/width_satisfaction_view"
+        android:layout_height="@dimen/height_satisfaction_view"
+        android:layout_marginStart="@dimen/size_satisfaction_view_margin"
+        android:background="@drawable/comment_normal"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/size_comment_padding_bottom">
+
+        <ImageView
+            android:layout_width="@dimen/size_comment_image"
+            android:layout_height="@dimen/size_comment_image"
+            android:src="@drawable/unhappy" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_comment_margin_start"
+            android:text="@string/non_satisfaction"
+            android:textSize="@dimen/font_size_home_28" />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingStart="@dimen/size_player_margin_left">
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/size_fragment_rl_margin_s"
+        android:layout_marginEnd="@dimen/size_fragment_rl_margin_e"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/activity_player_playlist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/size_fragment_play_playlist_margin_t"
+            android:padding="@dimen/size_fragment_iv_padding"
+            android:src="@drawable/icon_playlist_selector"/>
+
+        <ImageView
+            android:id="@+id/activity_player_play_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/activity_player_playlist"
+            android:padding="@dimen/size_fragment_iv_padding"
+            android:src="@drawable/icon_order_selector"/>
+
+    </RelativeLayout>
+
+    <com.xiaoma.music.player.view.player.PlayerView
+        android:id="@+id/fragment_player_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <com.xiaoma.music.player.view.UsbContentView
+        android:id="@+id/usb_content_view"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+
+</LinearLayout>

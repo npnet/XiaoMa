@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_guide_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:src="@drawable/guide_bg"/>
+
+    <ImageView
+        android:id="@+id/iv_shop_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px_59"
+        android:layout_marginTop="@dimen/px_95"
+        android:src="@drawable/icon_guide_shop"
+        app:layout_constraintLeft_toLeftOf="@+id/iv_guide_bg"
+        app:layout_constraintTop_toTopOf="@+id/iv_guide_bg" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px_10"
+        android:text="@string/guide_goods_list"
+        android:textColor="@color/color_edf6fe"
+        android:textSize="@dimen/px_32"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_shop_icon"
+        app:layout_constraintLeft_toRightOf="@+id/iv_shop_icon"
+        app:layout_constraintTop_toTopOf="@+id/iv_shop_icon" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px_35"
+        android:text="@string/guide_goods_list_description"
+        android:textColor="@color/color_8a919d"
+        android:textSize="@dimen/px_28"
+        app:layout_constraintLeft_toLeftOf="@+id/iv_shop_icon"
+        app:layout_constraintTop_toBottomOf="@+id/iv_shop_icon" />
+
+    <TextView
+        android:id="@+id/tv_guide_skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px_53"
+        android:layout_marginBottom="@dimen/px_60"
+        android:background="@drawable/selector_guide_skip"
+        android:gravity="center"
+        android:paddingBottom="@dimen/px_18"
+        android:text="@string/guide_skip"
+        android:textColor="@color/color_edf6fe"
+        android:textSize="@dimen/px_28"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/iv_guide_bg" />
+
+    <ImageView
+        android:id="@+id/iv_wave_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0"
+        android:scaleType="fitXY"
+        android:src="@drawable/guide_wave_skin_one"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_wave_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0"
+        android:scaleType="fitXY"
+        android:src="@drawable/guide_wave_skin_two"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_wave_three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0"
+        android:scaleType="fitXY"
+        android:src="@drawable/guide_wave_skin_three"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_gesture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0"
+        android:src="@drawable/icon_guide_hand_one"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

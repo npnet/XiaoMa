@@ -1,0 +1,36 @@
+apply plugin: 'com.android.library'
+apply from: 'sdk.gradle'
+apply from: "$rootDir$Android"
+
+android library()
+
+sdk {
+    boolean isCar = BUILD_PLATFORM.equalsIgnoreCase("CAR")
+    carKey isCar ? 'yq' : 'test'
+    face isCar ? 'yq' : 'test'
+}
+
+dependencies {
+    implementation project(path: ':XMLibs:Image')
+    implementation project(path: ':XMLibs:UI')
+    implementation project(path: ':XMLibs:Utils')
+    implementation project(path: ':XMLibs:Skin')
+    implementation project(path: ':XMLibs:Config')
+    implementation project(path: ':XMLibs:Model')
+    implementation project(path: ':XMLibs:Center')
+    implementation project(path: ':XMLibs:DB')
+    implementation project(path: ':XMLibs:Network')
+    implementation project(path: ':XMLibs:Component')
+    implementation project(path: ':XMLibs:VoicePrint')
+    implementation project(path: ':XMLibs:CarLib')
+    implementation project(path: ':XMLibs:AutoTracker')
+    implementation project(path: ':XMLibs:SystemUILib')
+    implementation project(path: ':XMLibs:Thread')
+    implementation "com.android.support.constraint:constraint-layout:${CONSTRAINT_LAYOUT}"
+    implementation "com.google.android:flexbox:${FLEX_BOX}"
+    api "android.arch.lifecycle:runtime:$LIFECYCLE_VERSION"
+    api "android.arch.lifecycle:extensions:$LIFECYCLE_VERSION"
+    annotationProcessor "android.arch.lifecycle:compiler:$LIFECYCLE_VERSION"
+    implementation "android.arch.persistence.room:runtime:$ROOM_VERSION"
+    annotationProcessor "android.arch.persistence.room:compiler:$ROOM_VERSION"
+}

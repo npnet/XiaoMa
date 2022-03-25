@@ -1,0 +1,42 @@
+ext {
+    sdk = this.&sdk
+}
+
+class BluetoothPhoneSDK {
+    private static final String TYPE_TEST = "TEST"
+    private static final String TYPE_YQ = "YQ"
+
+    private static String pick(String sdkType) {
+        if (TYPE_YQ.equalsIgnoreCase(sdkType)) {
+            return TYPE_YQ
+        }
+        return TYPE_TEST
+    }
+}
+
+class SDK {
+    private bluetoothPhoneSDKType = BluetoothPhoneSDK.TYPE_TEST
+
+    void bluetoothPhone(String sdk) {
+        this.bluetoothPhoneSDKType = sdk
+    }
+}
+
+def sdk(Closure closure) {
+    def sdk = new SDK()
+    closure.delegate = sdk
+    closure.call()
+
+    def bluetoothPhoneSDKType = BluetoothPhoneSDK.pick(sdk.bluetoothPhoneSDKType)
+    setupBluetoothPhoneSourceSet(bluetoothPhoneSDKType)
+}
+
+def setupBluetoothPhoneSourceSet(String sdk) {
+    project.android.sourceSets.main.java {
+        if (BluetoothPhoneSDK.TYPE_TEST.equalsIgnoreCase(sdk)) {
+            srcDir 'src/main/sdk/test'
+        } else if (BluetoothPhoneSDK.TYPE_YQ.equalsIgnoreCase(sdk)) {
+            srcDir 'src/main/sdk/yq'
+        }
+    }
+}

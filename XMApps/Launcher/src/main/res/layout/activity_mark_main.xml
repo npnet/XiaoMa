@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="197px">
+
+        <RelativeLayout
+            android:id="@+id/record_trip_moment"
+            android:layout_width="@dimen/camera_view_width"
+            android:layout_height="@dimen/camera_view_height"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/camera_view_left"
+            android:background="@drawable/mark_bg_photo_frame">
+
+            <ImageView
+                android:id="@+id/camera_occupy"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/mark_surface_margin"
+                android:src="@drawable/mark_camera_occupy"
+                android:visibility="gone" />
+
+            <com.google.android.cameraview.CameraView
+                android:id="@+id/mark_surface"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/mark_surface_margin"
+                android:scaleType="fitXY"
+                app:flash="redEye"
+                app:autoFocus="true" />
+
+
+            <ImageView
+                android:id="@+id/photo_btn"
+                android:layout_width="@dimen/mark_photo_btn_width"
+                android:layout_height="@dimen/mark_photo_btn_height"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/mark_photo_btn_bottom"
+                android:padding="@dimen/mark_photo_btn_padding"
+                android:src="@drawable/camera_img" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/trip_album"
+            android:layout_width="@dimen/mark_trip_album_width"
+            android:layout_height="@dimen/mark_trip_album_height"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/mark_trip_album_left"
+            android:background="@drawable/mark_frame_bg"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/mark_trip_album_img_width"
+                android:layout_height="@dimen/mark_trip_album_img_height"
+                android:src="@drawable/photo_img" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mark_album"
+                android:textSize="@dimen/mark_trip_album_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/trip_footprint"
+            android:layout_width="@dimen/mark_trip_footprint_width"
+            android:layout_height="@dimen/mark_trip_footprint_height"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/mark_trip_footprint_left"
+            android:background="@drawable/mark_frame_bg"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/mark_trip_footprint_img_width"
+                android:layout_height="@dimen/mark_trip_footprint_img_height"
+                android:src="@drawable/fold_img" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mark_footprint"
+                android:textSize="@dimen/mark_trip_footprint_text_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
+</RelativeLayout>

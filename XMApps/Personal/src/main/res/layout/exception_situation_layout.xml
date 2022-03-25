@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/exception_page_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_exception_image"
+        android:layout_width="@dimen/width_non_mine_message"
+        android:layout_height="@dimen/height_non_mine_message"
+        android:layout_marginTop="@dimen/size_non_mine_message_top"
+        android:src="@drawable/not_mine_message" />
+
+    <TextView
+        android:id="@+id/tv_exception_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3px"
+        android:text="@string/non_message"
+        android:textSize="@dimen/font_size_feedback_30px" />
+
+
+    <Button
+        android:id="@+id/bt_exception_reload"
+        android:layout_width="@dimen/width_home_btn"
+        android:layout_height="@dimen/height_home_btn"
+        android:layout_marginTop="20px"
+        android:background="@drawable/selector_button"
+        android:text="@string/reload"
+        android:textSize="@dimen/font_size_feedback_28px" />
+</LinearLayout>

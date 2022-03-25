@@ -1,0 +1,34 @@
+apply plugin: 'com.android.application'
+apply plugin: 'android-aspectjx'
+apply from: "$rootDir$Android"
+apply from: "$rootDir$Modules"
+apply from: "$rootDir$Tinker"
+
+android application('com.xiaoma.xkan')
+dependencies dependency(Xkan)
+
+dependencies {
+    implementation "com.android.support.constraint:constraint-layout:${CONSTRAINT_LAYOUT}"
+    implementation "com.github.CymChad:BaseRecyclerViewAdapterHelper:${BASE_RECYCLERVIEW_ADAPTER_HELPER}"
+    implementation "org.simple:androideventbus:$EVENT_BUS_VERSION"
+    implementation "tv.danmaku.ijk.media:ijkplayer-java:$IJK_PLAYER_VERSION"
+    //implementation "tv.danmaku.ijk.media:ijkplayer-armv7a:$IJK_PLAYER_VERSION"
+
+    implementation files("${XMJars}ijkplayer-armv7a-release.aar")
+    implementation files("${XMJars}ijkplayer-arm64-release.aar")
+    annotationProcessor "com.github.bumptech.glide:compiler:${GLIDE_VERSION}"
+}
+
+tinker {
+    appClassName 'com.xiaoma.xkan.XkanApp'
+    buildPatch {
+        baseApkPath ''
+        baseResMapping ''
+        baseMapping ''
+    }
+    patchDesc {
+        baseVersion ''
+        patchVersion 0
+        patchMessage ''
+    }
+}

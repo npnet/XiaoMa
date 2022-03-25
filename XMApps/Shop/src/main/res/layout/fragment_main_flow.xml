@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/width_ll_margin_left"
+        android:layout_marginTop="@dimen/height_ll_margin_top">
+
+        <TextView
+            android:id="@+id/tv_available_flow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/avaliable_flow_OM"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_of_shop_32" />
+
+        <TextView
+            android:id="@+id/tv_all_flow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/width_tv_margin_left"
+            android:text="@string/total_flow_OM"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_of_shop_32" />
+    </LinearLayout>
+
+    <com.xiaoma.ui.StateControl.StateView
+        android:id="@+id/state_view_flow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_rv"
+                android:layout_marginLeft="@dimen/width_rv_margin_left"
+                android:layout_marginRight="@dimen/width_rv_margin_right"
+                android:layout_marginTop="@dimen/height_rv_margin_top"
+                android:overScrollMode="never" />
+
+            <TextView
+                android:id="@+id/tv_buy"
+                android:layout_width="@dimen/width_tv_buy"
+                android:layout_height="@dimen/height_tv_buy"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/height_tv_buy_margin_top"
+                android:background="@drawable/icon_buy"
+                android:gravity="center_horizontal"
+                android:paddingTop="@dimen/height_tv_buy_pad_top"
+                android:text="@string/state_buy"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_of_shop_32" />
+        </LinearLayout>
+
+    </com.xiaoma.ui.StateControl.StateView>
+
+
+</LinearLayout>

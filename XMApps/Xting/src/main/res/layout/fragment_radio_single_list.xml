@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="@drawable/bg_common">
+
+    <TextView
+        android:id="@+id/category_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_fragment_title_margin_start"
+        android:layout_marginTop="@dimen/size_fragment_title_margin_top"
+        android:layout_marginBottom="@dimen/size_fragment_title_margin_bottom"
+        android:textSize="@dimen/size_fragment_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="怕行榜名称" />
+
+    <com.xiaoma.ui.StateControl.StateView
+        android:id="@+id/state_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/size_list_margin_title_top"
+        app:layout_constraintBottom_toTopOf="@+id/scroll_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/category_name"
+        app:layout_constraintVertical_bias="0.0">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.xiaoma.ui.StateControl.StateView>
+
+
+    <com.xiaoma.ui.view.XmScrollBar
+        android:id="@+id/scroll_bar"
+        android:layout_width="@dimen/width_scrollbar"
+        android:layout_height="@dimen/height_scrollbar"
+        android:layout_marginBottom="@dimen/size_scrollbar_margin_bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

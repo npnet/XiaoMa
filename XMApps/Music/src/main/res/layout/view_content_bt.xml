@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="15px">
+
+
+    <!--<com.xiaoma.ui.view.MusicWaveView-->
+    <!--android:id="@+id/play_content_bt_iv"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_marginLeft="85px"-->
+    <!--android:layout_marginRight="200px"-->
+    <!--android:layout_marginTop="10px"-->
+    <!--android:layout_marginBottom="460px"-->
+    <!--android:background="#000000"-->
+    <!--android:alpha="0.5"-->
+    <!--app:cellWidth="20px"-->
+    <!--app:waveDuration="100"-->
+    <!--app:waveSpace="5px"-->
+    <!--app:rate="0.75"/>-->
+    <RelativeLayout
+        android:layout_width="@dimen/width_view_content_song_name_tv"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/size_fragment_play_content_rl_margin_e"
+        android:layout_marginStart="@dimen/size_fragment_play_content_rl_margin_s"
+        android:layout_marginTop="@dimen/size_view_content_usb_rl_margin_t">
+
+        <com.xiaoma.ui.view.AutoScrollTextView
+            android:id="@+id/bt_content_song_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:ellipsize="marquee"
+            android:includeFontPadding="false"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:text=""
+            android:textSize="@dimen/font_play_content_song_name" />
+
+        <TextView
+            android:id="@+id/bt_content_artist_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bt_content_song_tv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/size_play_content_album_name_margin_t"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:text=""
+            android:textSize="@dimen/font_play_content_album_name" />
+
+    </RelativeLayout>
+
+    <com.xiaoma.music.player.view.player.ProgressView
+        android:id="@+id/view_bt_progress_view"
+        android:layout_width="@dimen/width_fragment_content_progess"
+        android:layout_height="@dimen/height_fragment_content_progess"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/size_fragment_content_progess_margin_b" />
+
+</RelativeLayout>

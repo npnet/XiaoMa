@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="size_fault_item_margin_start">120px</dimen>
+    <dimen name="size_fault_item_margin_top">100px</dimen>
+    <dimen name="font_fault_item_text">32px</dimen>
+    <dimen name="font_fault_title_text">34px</dimen>
+    <dimen name="size_fault_list_margin_top">32px</dimen>
+    <dimen name="width_go_to_fix">303px</dimen>
+    <dimen name="height_go_to_fix">81px</dimen>
+    <dimen name="font_go_to_fix">24px</dimen>
+    <dimen name="size_fault_shrink_margin_start">64px</dimen>
+    <dimen name="size_fault_shrink_margin_top">64px</dimen>
+</resources>

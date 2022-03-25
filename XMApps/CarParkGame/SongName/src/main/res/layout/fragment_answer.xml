@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="82px"
+        android:layout_marginTop="45px"
+        android:padding="20px"
+        android:src="@drawable/ic_close"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/game_over_view"
+        android:layout_width="820px"
+        android:layout_height="540px"
+        android:layout_marginTop="110px"
+        android:background="@drawable/bg_game_over"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_total_record_lab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="274px"
+            android:layout_marginTop="130px"
+            android:text="总分"
+            android:textColor="#a1a7b3"
+            android:textSize="36px" />
+
+        <TextView
+            android:id="@+id/tv_total_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="90px"
+            android:layout_marginTop="100px"
+            android:layout_toRightOf="@id/tv_total_record_lab"
+            android:textColor="#ffcc66"
+            android:textSize="72px" />
+
+        <TextView
+            android:id="@+id/tv_beat_record_lab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_total_record_lab"
+            android:layout_marginLeft="238px"
+            android:layout_marginTop="104px"
+            android:text="击败车主"
+            android:textColor="#a1a7b3"
+            android:textSize="36px" />
+
+        <TextView
+            android:id="@+id/tv_beat_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_total_record"
+            android:layout_marginLeft="60px"
+            android:layout_marginTop="60px"
+            android:layout_toRightOf="@id/tv_beat_record_lab"
+            android:textColor="#ffcc66"
+            android:textSize="72px" />
+
+        <TextView
+            android:id="@+id/tv_game_continue"
+            android:layout_width="240px"
+            android:layout_height="70px"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="110px"
+            android:layout_marginBottom="50px"
+            android:background="@drawable/btn_answer_selector"
+            android:gravity="center"
+            android:text="继续游戏"
+            android:textColor="@color/white"
+            android:textSize="30px" />
+
+        <TextView
+            android:id="@+id/tv_sort"
+            android:layout_width="240px"
+            android:layout_height="70px"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="110px"
+            android:layout_marginBottom="50px"
+            android:background="@drawable/btn_sort_selector"
+            android:gravity="center"
+            android:text="查看排行榜"
+            android:textColor="#4a36b2"
+            android:textSize="30px" />
+    </RelativeLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/view_answer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/tv_question"
+            android:layout_width="wrap_content"
+            android:layout_height="80px"
+            android:layout_marginTop="70px"
+            android:background="@drawable/question_bg"
+            android:gravity="center"
+            android:minWidth="480px"
+            android:paddingLeft="130px"
+            android:paddingRight="70px"
+            android:textColor="@color/white"
+            android:textSize="32px"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:layout_marginTop="60px"
+            android:src="@drawable/ic_head"
+            app:layout_constraintStart_toStartOf="@+id/tv_question"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="#e6a1a7b3"
+            android:textSize="26px"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_question" />
+
+        <Button
+            android:id="@+id/btn_answer"
+            android:layout_width="320px"
+            android:layout_height="90px"
+            android:layout_marginTop="444px"
+            android:background="@drawable/btn_answer_selector"
+            android:enabled="false"
+            android:text="开始回答"
+            android:textColor="@color/white"
+            android:textSize="32px"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_voice_anim"
+            android:layout_width="448px"
+            android:layout_height="108px"
+            android:layout_marginTop="350px"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_error_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="350px"
+            android:textColor="@color/white"
+            android:textSize="52px"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_tip_answer"
+            android:layout_width="500px"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="613px"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/answer_tip"
+            android:textColor="#a1a7b2"
+            android:textSize="32px"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_success_result"
+            android:layout_width="520px"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="361px"
+            android:gravity="center"
+            android:text="你简直太棒了~"
+            android:textColor="@color/white"
+            android:textSize="52px"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@id/tv_question"
+            app:layout_constraintStart_toStartOf="@id/tv_question"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_count"
+            android:layout_width="520px"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="441px"
+            android:gravity="center"
+            android:textColor="#e6a1a7b3"
+            android:textSize="26px"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@id/tv_question"
+            app:layout_constraintStart_toStartOf="@id/tv_question"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+    <include
+        android:id="@+id/view_no_network"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:visibility="gone"
+        layout="@layout/include_no_network_view" />
+</android.support.constraint.ConstraintLayout>

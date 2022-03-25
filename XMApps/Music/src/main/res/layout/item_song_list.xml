@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/item_song_list_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="@dimen/width_item_songlist_tv"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_search_text_big" />
+
+    <FrameLayout
+        android:layout_width="@dimen/width_item_songlist_fl"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_search_result_image_top">
+
+        <FrameLayout
+            android:layout_width="@dimen/width_item_songlist_circle_fl"
+            android:layout_height="@dimen/height_item_songlist_circle_fl"
+            android:layout_gravity="right">
+
+            <ImageView
+                android:layout_width="@dimen/width_item_songlist_circle_fl"
+                android:layout_height="@dimen/height_item_songlist_circle_iv"
+                android:layout_marginTop="@dimen/size_item_songlist_circle_iv"
+                android:background="@drawable/search_songlist_bg_circle" />
+
+            <ImageView
+                android:id="@+id/item_song_list_circle_iv"
+                android:layout_width="@dimen/width_item_songlist_circle_center"
+                android:layout_height="@dimen/width_item_songlist_circle_center"
+                android:layout_gravity="center" />
+
+        </FrameLayout>
+
+        <com.xiaoma.ui.view.ReflectionImageView
+            android:id="@+id/item_song_list_iv"
+            android:layout_width="@dimen/width_item_music_songlist_iv"
+            android:layout_height="@dimen/height_item_music_songlist_iv"
+            android:scaleType="fitXY"
+            app:reflectionHeight="114px"
+            app:reflectionPadding="16px" />
+
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,1330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--免责声明相关-->
+    <dimen name="dialog_disclaimer_width">800px</dimen>
+    <dimen name="dialog_disclaimer_height">500px</dimen>
+    <!--电影推荐相关-->
+    <dimen name="film_rv_height">420.0px</dimen>
+    <dimen name="film_margin_top">40px</dimen>
+    <dimen name="buy_film_ticket_width">350.0px</dimen>
+    <dimen name="look_trailer_margin_left">50.0px</dimen>
+    <dimen name="look_trailer_width">350.0px</dimen>
+    <dimen name="film_title_top">20px</dimen>
+    <dimen name="film_title_size">30px</dimen>
+    <!--电影推荐相关-->
+
+    <!--电影订单相关-->
+    <dimen name="film_order_tap_height">150.0px</dimen>
+    <dimen name="film_order_tap_text1_width">63px</dimen>
+    <dimen name="film_order_tap_text1_height">62px</dimen>
+    <dimen name="film_order_tap_text1_size">50px</dimen>
+    <dimen name="film_order_content_height">450px</dimen>
+    <dimen name="film_order_cancel_text_left">40px</dimen>
+    <dimen name="film_order_name_start">100px</dimen>
+    <dimen name="film_order_name_top">40px</dimen>
+    <dimen name="film_order_type_start">40px</dimen>
+    <dimen name="film_order_unit_price_start">40px</dimen>
+    <dimen name="film_cinema_top">24px</dimen>
+    <dimen name="film_order_cinema_seat_top">48px</dimen>
+    <dimen name="film_order_user_info_layout_height">200px</dimen>
+    <dimen name="film_order_user_info_layout_top">8px</dimen>
+    <dimen name="film_order_phone_text_start">100px</dimen>
+    <dimen name="film_order_phone_text_top">40px</dimen>
+    <dimen name="film_order_user_phone_top">24px</dimen>
+    <dimen name="film_order_view_width">2px</dimen>
+    <dimen name="film_order_view_height">100px</dimen>
+    <dimen name="film_order_view_start">186px</dimen>
+    <dimen name="film_order_ticket_text_start">204px</dimen>
+    <dimen name="film_order_ticket_text_top">40px</dimen>
+    <dimen name="film_order_ticket_total_price_top">24px</dimen>
+    <dimen name="film_order_view2_start">222px</dimen>
+    <dimen name="film_order_view2_width">2px</dimen>
+    <dimen name="film_order_view2_height">100px</dimen>
+    <dimen name="film_order_film_time_text_start">194px</dimen>
+    <dimen name="film_order_film_time_text_top">40px</dimen>
+    <dimen name="film_order_film_time_top">24px</dimen>
+    <dimen name="film_order_again_set_start">210px</dimen>
+    <dimen name="film_order_again_set_bottom">60px</dimen>
+    <dimen name="film_order_film_navigation_start">100px</dimen>
+    <dimen name="film_order_film_phone_start">100px</dimen>
+    <!--电影订单相关-->
+
+    <!--电影支付相关-->
+    <dimen name="film_order_pay_tap_height">200px</dimen>
+    <dimen name="film_order_pay_tap_text1_width">100px</dimen>
+    <dimen name="film_order_pay_tap_text1_height">100px</dimen>
+    <dimen name="film_order_pay_tap_text1_size">50px</dimen>
+    <dimen name="film_order_pay_tap_text2_width">100px</dimen>
+    <dimen name="film_order_pay_tap_text2_height">100px</dimen>
+    <dimen name="film_order_pay_tap_text2_size">50px</dimen>
+    <dimen name="film_order_pay_select_session_left">20px</dimen>
+    <dimen name="film_order_pay_select_session_size">50px</dimen>
+    <dimen name="film_order_pay_select_seat_left">20px</dimen>
+    <dimen name="film_order_pay_select_seat_size">50px</dimen>
+    <dimen name="film_order_pay_tap_text3_width">100px</dimen>
+    <dimen name="film_order_pay_tap_text3_height">100px</dimen>
+    <dimen name="film_order_pay_tap_text3_size">50px</dimen>
+    <dimen name="film_order_pay_confirm_left">20px</dimen>
+    <dimen name="film_order_pay_confirm_size">50px</dimen>
+    <dimen name="film_order_pay_constraintLayout_width">1000px</dimen>
+    <dimen name="film_order_pay_constraintLayout_height">430px</dimen>
+    <dimen name="film_order_pay_film_name_start">50px</dimen>
+    <dimen name="film_order_pay_film_name_top">40px</dimen>
+    <dimen name="film_order_pay_film_type_start">10px</dimen>
+    <dimen name="film_order_pay_film_unit_price_start">20px</dimen>
+    <dimen name="film_order_pay_cinema_name_top">40px</dimen>
+    <dimen name="film_order_pay_cinema_seat_top">40px</dimen>
+    <dimen name="film_order_pay_constraintLayout2_height">150px</dimen>
+    <dimen name="film_order_pay_constraintLayout2_top">8px</dimen>
+    <dimen name="film_order_pay_ticket_text_start">50px</dimen>
+    <dimen name="film_order_pay_ticket_text_top">40px</dimen>
+    <dimen name="film_order_pay_ticket_number_top">30px</dimen>
+    <dimen name="film_order_pay_view1_width">2px</dimen>
+    <dimen name="film_order_pay_view1_height">100px</dimen>
+    <dimen name="film_order_pay_view1_start">100px</dimen>
+    <dimen name="film_order_pay_film_time_text_start">50px</dimen>
+    <dimen name="film_order_pay_film_time_text_top">40px</dimen>
+    <dimen name="film_order_pay_film_time_top">30px</dimen>
+    <dimen name="film_order_pay_view2_width">2px</dimen>
+    <dimen name="film_order_pay_view2_height">100px</dimen>
+    <dimen name="film_order_pay_view2_start">40px</dimen>
+    <dimen name="film_order_pay_phone_text_start">50px</dimen>
+    <dimen name="film_order_pay_phone_text_top">40px</dimen>
+    <dimen name="film_order_pay_user_phone_top">30px</dimen>
+    <dimen name="film_order_pay_left_layout_width">900px</dimen>
+    <dimen name="film_order_pay_left_layout_height">430px</dimen>
+    <dimen name="film_order_pay_pay_qr_code_width">240px</dimen>
+    <dimen name="film_order_pay_pay_qr_code_height">240px</dimen>
+    <dimen name="film_order_pay_pay_qr_code_start">50px</dimen>
+    <dimen name="film_order_pay_pay_qr_code_top">60px</dimen>
+    <dimen name="film_order_pay_textview2_start">60px</dimen>
+    <dimen name="film_order_pay_textview2_top">70px</dimen>
+    <dimen name="film_order_pay_pay_sum_top">40px</dimen>
+    <dimen name="film_order_pay_pay_sum_size">36px</dimen>
+    <dimen name="film_order_pay_pay_img_width">58px</dimen>
+    <dimen name="film_order_pay_pay_img_height">58px</dimen>
+    <dimen name="film_order_pay_pay_img_top">40px</dimen>
+    <dimen name="film_order_pay_countdown_start">30px</dimen>
+    <dimen name="film_order_name_size">32px</dimen>
+    <dimen name="film_order_textview2_size">24px</dimen>
+    <dimen name="film_order_user_phone_size">28px</dimen>
+    <dimen name="film_order_phone_text_size">24px</dimen>
+    <dimen name="film_order_time_size">28px</dimen>
+    <dimen name="film_order_time_text_size">24px</dimen>
+    <dimen name="film_order_ticket_number_size">28px</dimen>
+    <dimen name="film_order_ticket_text_size">24px</dimen>
+    <dimen name="film_order_cinema_seat_size">24px</dimen>
+    <dimen name="film_order_cinema_name_size">24px</dimen>
+    <dimen name="film_order_unit_price_size">32px</dimen>
+    <dimen name="film_order_type_size">32px</dimen>
+    <!--电影支付相关-->
+
+    <!-- 支付结果相关-->
+    <dimen name="film_oreder_success_tap">150px</dimen>
+    <dimen name="film_oreder_success_text1_width">62px</dimen>
+    <dimen name="film_oreder_success_text1_height">62px</dimen>
+    <dimen name="film_oreder_success_text1_size">50px</dimen>
+    <dimen name="film_oreder_success_text1_left">40px</dimen>
+    <dimen name="film_oreder_success_text_size">50px</dimen>
+    <dimen name="film_oreder_success_constraintlayout_width">1000px</dimen>
+    <dimen name="film_oreder_success_constraintlayout_height">450px</dimen>
+    <dimen name="film_oreder_success_film_name_start">100px</dimen>
+    <dimen name="film_oreder_success_film_name_top">40px</dimen>
+    <dimen name="film_oreder_success_film_type_start">40px</dimen>
+    <dimen name="film_oreder_success_film_unit_price_start">40px</dimen>
+    <dimen name="film_oreder_success_cinema_name_top">24px</dimen>
+    <dimen name="film_oreder_success_cinema_seat_top">48px</dimen>
+    <dimen name="film_oreder_success_constraintlayout2_height">200px</dimen>
+    <dimen name="film_oreder_constraintlayout2_top">8px</dimen>
+    <dimen name="film_oreder_success_ticket_text_start">100px</dimen>
+    <dimen name="film_oreder_success_ticket_text_top">40px</dimen>
+    <dimen name="film_oreder_success_ticket_total_number_top">24px</dimen>
+    <dimen name="film_oreder_success_view1_width">2px</dimen>
+    <dimen name="film_oreder_success_view1_height">100px</dimen>
+    <dimen name="film_oreder_success_view1_start">100px</dimen>
+    <dimen name="film_oreder_success_film_time_text_start">50px</dimen>
+    <dimen name="film_oreder_success_film_time_text_top">40px</dimen>
+    <dimen name="film_oreder_success_film_time_top">24px</dimen>
+    <dimen name="film_oreder_success_view2_width">2px</dimen>
+    <dimen name="film_oreder_success_view2_height">100px</dimen>
+    <dimen name="film_oreder_success_view2_start">164px</dimen>
+    <dimen name="film_oreder_success_phone_text_start">48px</dimen>
+    <dimen name="film_oreder_success_phone_text_top">40px</dimen>
+    <dimen name="film_oreder_success_user_phone_top">24px</dimen>
+    <dimen name="film_oreder_success_constraintlayout_left_width">550px</dimen>
+    <dimen name="film_oreder_success_constraintlayout_left_height">450px</dimen>
+    <dimen name="film_oreder_success_pay_qr_code_width">300px</dimen>
+    <dimen name="film_oreder_success_pay_qr_code_height">300px</dimen>
+    <dimen name="film_oreder_success_pay_qr_code_start">50px</dimen>
+    <dimen name="film_oreder_success_textview2_start">60px</dimen>
+    <dimen name="film_oreder_success_textview2_top">70px</dimen>
+    <dimen name="film_oreder_success_pay_qr_code__top">60px</dimen>
+    <dimen name="film_oreder_success_textview6__top">40px</dimen>
+    <dimen name="film_oreder_success_admission_code__top">20px</dimen>
+    <dimen name="film_oreder_success_admission_code_size">35px</dimen>
+    <dimen name="film_oreder_success_film_navigation__top">30px</dimen>
+    <dimen name="film_oreder_success_film_phone_start">20px</dimen>
+    <!-- 支付结果相关-->
+
+    <!--座位选择相关-->
+    <dimen name="seat_table_tap_height">180px</dimen>
+    <dimen name="seat_table_text1_width">100px</dimen>
+    <dimen name="seat_table_text1_height">100px</dimen>
+    <dimen name="seat_table_text1_size">50px</dimen>
+    <dimen name="seat_table_text12_left">20px</dimen>
+    <dimen name="seat_table_text12_size">50px</dimen>
+    <dimen name="seat_table_text2_width">100px</dimen>
+    <dimen name="seat_table_text2_height">100px</dimen>
+    <dimen name="seat_table_text2_size">50px</dimen>
+    <dimen name="seat_table_text22_l">20px</dimen>
+    <dimen name="seat_table_text22_size">50px</dimen>
+    <dimen name="seat_table_text23_l">20px</dimen>
+    <dimen name="seat_table_text24_size">50px</dimen>
+    <dimen name="seat_table_text3_width">100px</dimen>
+    <dimen name="seat_table_text3_height">100px</dimen>
+    <dimen name="seat_table_text3_size">50px</dimen>
+    <dimen name="seat_table_text31_size">50px</dimen>
+    <dimen name="seat_table_text31_l">20px</dimen>
+    <dimen name="seat_table_seat_layout_width">450px</dimen>
+    <dimen name="seat_table_seat_rv_width">700px</dimen>
+    <dimen name="seat_table_seat_layout_height">450px</dimen>
+    <dimen name="seat_table_seat_rv_height">380px</dimen>
+    <dimen name="seat_table_seat_number_height">100px</dimen>
+    <dimen name="seat_table_seat_number_size">18px</dimen>
+    <dimen name="seat_table_seat_view_height">450px</dimen>
+    <dimen name="seat_table_seat_phone_text_height">60px</dimen>
+    <dimen name="seat_table_seat_phone_text_width">300px</dimen>
+    <dimen name="seat_table_confirm_seat_width">400px</dimen>
+
+    <dimen name="tap_one_img_size">30px</dimen>
+    <dimen name="seat_table_tap_linear_right">48px</dimen>
+    <dimen name="tap_one_img_width">50px</dimen>
+    <dimen name="tap_one_img_height">50px</dimen>
+    <dimen name="tap_one_text_size">30px</dimen>
+    <dimen name="tap_one_text_left">12px</dimen>
+    <dimen name="tap_two_img_width">50px</dimen>
+    <dimen name="tap_two_img_height">50px</dimen>
+    <dimen name="tap_two_img_size">30px</dimen>
+    <dimen name="tap_two_select_session_left">12px</dimen>
+    <dimen name="tap_two_select_session_size">30px</dimen>
+    <dimen name="tap_two_select_seat_left">20px</dimen>
+    <dimen name="tap_two_select_seat_size">30px</dimen>
+    <dimen name="tap_three_img_width">50px</dimen>
+    <dimen name="tap_three_img_height">50px</dimen>
+    <dimen name="tap_three_img_size">30px</dimen>
+    <dimen name="tap_three_confirm_pay_left">20px</dimen>
+    <dimen name="tap_three_confirm_pay_size">30px</dimen>
+    <!--座位选择相关-->
+
+    <!--美食列表相关-->
+    <dimen name="delicious_recommend_text_top">20px</dimen>
+    <dimen name="delicious_recommend_text_size">50px</dimen>
+    <dimen name="delicious_delicious_rv_height">400px</dimen>
+    <dimen name="delicious_layout_top">18px</dimen>
+    <dimen name="delicious_position_width">200px</dimen>
+    <dimen name="delicious_style_width">200px</dimen>
+    <dimen name="delicious_distance_width">200px</dimen>
+    <dimen name="delicious_price_width">200px</dimen>
+    <dimen name="delicious_layout2_top">35px</dimen>
+    <dimen name="delicious_navigation_width">400px</dimen>
+    <dimen name="delicious_phone_width">400px</dimen>
+    <dimen name="delicious_phone_l">50px</dimen>
+
+    <dimen name="delicious_item_width">380px</dimen>
+    <dimen name="delicious_item_height">272px</dimen>
+    <dimen name="delicious_item_image_height">330px</dimen>
+    <dimen name="delicious_item_image_width">25px</dimen>
+    <dimen name="delicious_item_marg">8px</dimen>
+    <dimen name="delicious_item_score_width">80px</dimen>
+    <dimen name="delicious_item_score_height">50px</dimen>
+    <dimen name="delicious_item_score_size">25px</dimen>
+    <dimen name="delicious_item_collection_width">80px</dimen>
+    <dimen name="delicious_item_collection_height">50px</dimen>
+    <dimen name="delicious_item_collection_size">25px</dimen>
+
+    <dimen name="delicious_collect_tv_margin_left">30px</dimen>
+    <dimen name="delicious_collect_tv_margin_top">30px</dimen>
+    <dimen name="delicious_collect_tv_text_size">32px</dimen>
+    <dimen name="delicious_collect_rv_height">500px</dimen>
+
+    <dimen name="delicious_comfort_margin">5px</dimen>
+    <!--美食列表相关-->
+
+    <!--景点列表相关-->
+    <dimen name="attartion_rv_height">400px</dimen>
+    <dimen name="attartion_layout_top">20px</dimen>
+    <dimen name="attartion_layout2_top">18px</dimen>
+    <dimen name="attartion_position_width">200px</dimen>
+    <dimen name="attraction_distance_width">200px</dimen>
+    <dimen name="attraction_price_width">200px</dimen>
+    <dimen name="attartion_layout3_top">30px</dimen>
+    <dimen name="attraction_navigation_width">305px</dimen>
+    <dimen name="attraction_navigation_height">75px</dimen>
+    <dimen name="attraction_navigation_top">6px</dimen>
+    <dimen name="attraction_navigation_size">28px</dimen>
+    <dimen name="attraction_phone_width">305px</dimen>
+    <dimen name="attraction_phone_height">75px</dimen>
+    <dimen name="attraction_phone_top">6px</dimen>
+    <dimen name="attraction_phone_size">28px</dimen>
+    <dimen name="attraction_ml">120px</dimen>
+    <dimen name="attractio_item_width">234px</dimen>
+    <dimen name="attractio_item_height">330px</dimen>
+    <dimen name="attractio_item_mar">8px</dimen>
+
+    <dimen name="attraction_socer_width">90px</dimen>
+    <dimen name="attraction_socer_height">40px</dimen>
+    <dimen name="attraction_socer_size">20px</dimen>
+    <dimen name="attraction_collection_width">112px</dimen>
+    <dimen name="attraction_collection_height">40px</dimen>
+    <dimen name="attraction_collection_size">20px</dimen>
+    <dimen name="attraction_socer_left">10px</dimen>
+    <dimen name="iv_delicious_width">20px</dimen>
+    <dimen name="iv_delicious_height">20px</dimen>
+    <dimen name="delicious_collection_left">7px</dimen>
+
+    <dimen name="attractions_collect_tv_margin_left">50px</dimen>
+    <dimen name="attractions_collect_tv_margin_top">90px</dimen>
+    <dimen name="attractions_collect_tv_text_size">30px</dimen>
+    <dimen name="attractions_collect_rv_height">500px</dimen>
+    <!--景点列表相关-->
+
+
+    <!--停车场相关-->
+    <dimen name="parking_item_width">400px</dimen>
+    <dimen name="parking_item_height">300px</dimen>
+    <dimen name="parking_item_margin">8px</dimen>
+    <dimen name="parking_item_score_width">80px</dimen>
+    <dimen name="parking_item_score_height">50px</dimen>
+    <dimen name="parking_item_score_size">25px</dimen>
+    <dimen name="parking_item_text">20px</dimen>
+    <dimen name="parking_item_text_size">40px</dimen>
+    <dimen name="parking_item_feetext_top">20px</dimen>
+
+    <dimen name="parking_activity_recommend_top">20px</dimen>
+    <dimen name="parking_activity_recommend_size">50px</dimen>
+    <dimen name="parking_activity_rv_height">450px</dimen>
+    <dimen name="parking_activity_layout_top">20px</dimen>
+    <dimen name="parking_activity_position_width">200px</dimen>
+    <dimen name="parking_remaining_space_width">200px</dimen>
+    <dimen name="parking_distance_width">200px</dimen>
+    <dimen name="parking_open_type_width">200px</dimen>
+    <dimen name="parking_activity_layout2_top">20px</dimen>
+    <dimen name="parking_navigation_width">400px</dimen>
+    <dimen name="parking_details_margub_left">50px</dimen>
+    <dimen name="parking_details_margub_width">400px</dimen>
+    <!--停车场相关-->
+
+    <!--音乐相关-->
+    <dimen name="tv_music_tip_top">20px</dimen>
+    <dimen name="view_tv_music_top">30px</dimen>
+    <dimen name="view_tv_music_size">35px</dimen>
+    <dimen name="tv_music_tip_size">28px</dimen>
+    <dimen name="iv_music_previous_width">80px</dimen>
+    <dimen name="iv_music_previous_height">80px</dimen>
+    <dimen name="iv_music_play_pause_width">80px</dimen>
+    <dimen name="iv_music_play_pause_height">80px</dimen>
+    <dimen name="iv_music_next_width">80px</dimen>
+    <dimen name="iv_music_next_height">80px</dimen>
+    <dimen name="rl_music_width">300px</dimen>
+    <dimen name="rl_music_height">450px</dimen>
+    <dimen name="iv_music_height">200px</dimen>
+    <!--音乐相关-->
+
+    <!-- 酒店相关-->
+    <dimen name="view_hotel_rl_width">300px</dimen>
+    <dimen name="view_hotel_rl_height">450px</dimen>
+    <dimen name="view_hotel_iv_height">200px</dimen>
+    <dimen name="view_hotel_tv_size">35px</dimen>
+    <dimen name="view_hotel_tv_top">30px</dimen>
+    <dimen name="view_hotel_btn_left_width">80px</dimen>
+    <dimen name="view_hotel_btn_left_height">80px</dimen>
+    <dimen name="view_hotel_btn_left_size">20px</dimen>
+    <dimen name="view_hotel_btn_right_width">80px</dimen>
+    <dimen name="view_hotel_btn_right_height">80px</dimen>
+    <dimen name="view_hotel_btn_rixght_size">20px</dimen>
+    <!-- 酒店相关-->
+
+
+    <dimen name="view_entertainment_rl_width">300px</dimen>
+    <dimen name="view_entertainment_rl_height">450px</dimen>
+    <dimen name="view_entertainment_iv_height">200px</dimen>
+    <dimen name="view_entertainment_tv_top">30px</dimen>
+    <dimen name="view_entertainment_tv_size">35px</dimen>
+    <dimen name="view_entertainment_btn_operation_width">80px</dimen>
+    <dimen name="view_entertainment_btn_operation_height">80px</dimen>
+    <dimen name="view_entertainment_btn_operation_size">30px</dimen>
+
+
+    <dimen name="view_radio_rl_width">300px</dimen>
+    <dimen name="view_radio_rl_height">450px</dimen>
+    <dimen name="view_radio_iv_height">200px</dimen>
+    <dimen name="view_radio_tv_top">30px</dimen>
+    <dimen name="view_radio_tv_size">35px</dimen>
+    <dimen name="view_radio_tv_tip_top">30px</dimen>
+    <dimen name="view_radio_tv_tip_size">28px</dimen>
+    <dimen name="view_radio_iv_previous_width">80px</dimen>
+    <dimen name="view_radio_iv_previous_height">80px</dimen>
+    <dimen name="view_radio_iv_play_pause_width">80px</dimen>
+    <dimen name="view_radio_iv_play_pause_height">80px</dimen>
+    <dimen name="view_radio_iv_next_width">80px</dimen>
+    <dimen name="view_radio_iv_next_height">80px</dimen>
+
+    <!--酒店支付相关-->
+    <dimen name="hotel_pay_tv_room_name_size">40px</dimen>
+    <dimen name="hotel_pay_ttv_room_msg_left">150px</dimen>
+    <dimen name="hotel_pay_ttv_room_msg_size">40px</dimen>
+    <dimen name="hotel_pay_tv_hotel_name_bottom">30px</dimen>
+    <dimen name="hotel_pay_tv_hotel_name_top">30px</dimen>
+    <dimen name="hotel_pay_tv_hotel_name_size">40px</dimen>
+    <dimen name="hotel_pay_tv_book_count_size">30px</dimen>
+    <dimen name="hotel_pay_tv_book_date_start">80px</dimen>
+    <dimen name="hotel_pay_tv_book_date_size">30px</dimen>
+    <dimen name="hotel_pay_tv_book_cancel_start">80px</dimen>
+    <dimen name="hotel_pay_tv_book_cancel_size">30px</dimen>
+    <dimen name="hotel_pay_tv_book_call_start">80px</dimen>
+    <dimen name="hotel_pay_tv_book_call_size">30px</dimen>
+    <dimen name="hotel_pay_iv_pay_width">300px</dimen>
+    <dimen name="hotel_pay_iv_pay_height">300px</dimen>
+    <dimen name="hotel_pay_btn_pay_bottom">30px</dimen>
+    <dimen name="hotel_pay_btn_pay_size">25px</dimen>
+    <dimen name="hotel_pay_ll_bottom_height">80px</dimen>
+    <dimen name="hotel_pay_ll_bottom_bottom">30px</dimen>
+    <dimen name="hotel_pay_btn_call_width">200px</dimen>
+    <dimen name="hotel_pay_btn_call_height">80px</dimen>
+    <dimen name="hotel_pay_btn_call_size">20px</dimen>
+    <dimen name="hotel_pay_btn_guide_width">200px</dimen>
+    <dimen name="hotel_pay_btn_guide_height">80px</dimen>
+    <dimen name="hotel_pay_btn_guide_size">20px</dimen>
+    <dimen name="hotel_pay_btn_cancel_width">200px</dimen>
+    <dimen name="hotel_pay_btn_cancel_height">80px</dimen>
+    <dimen name="hotel_pay_btn_cancel_size">20px</dimen>
+
+    <dimen name="hotel_recom_tv_date_width">373px</dimen>
+    <dimen name="hotel_recom_tv_date_height">78px</dimen>
+    <dimen name="hotel_recom_tv_date_margin_left">40px</dimen>
+    <dimen name="hotel_recom_tv_data_size">18px</dimen>
+    <dimen name="hotel_recom_text_top">12px</dimen>
+    <dimen name="hotel_recom_text_size">30px</dimen>
+    <dimen name="hotel_recom_scrollview_height">280px</dimen>
+    <dimen name="hotel_recom_scrollview_top">175px</dimen>
+    <dimen name="hotel_recom_name_top">20px</dimen>
+    <dimen name="hotel_recom_msg_top">16px</dimen>
+
+    <dimen name="hotel_recom_btn_book_width">215px</dimen>
+    <dimen name="hotel_recom_btn_book_margin_left">40px</dimen>
+    <dimen name="hotel_recom_btn_book_height">78px</dimen>
+    <dimen name="hotel_recom_btn_book_top">20px</dimen>
+    <dimen name="hotel_recom_btn_book_size">24px</dimen>
+    <dimen name="hotel_recom_btn_guide_width">215px</dimen>
+    <dimen name="hotel_recom_btn_guide_height">78px</dimen>
+    <dimen name="hotel_recom_btn_guide_right">50px</dimen>
+    <dimen name="hotel_btn_book_margin_top">20px</dimen>
+    <dimen name="hotel_recom_btn_guide_size">24px</dimen>
+    <dimen name="hotel_recom_btn_call_width">215px</dimen>
+    <dimen name="hotel_recom_btn_call_height">78px</dimen>
+    <dimen name="hotel_recom_btn_call_left">40px</dimen>
+    <dimen name="hotel_recom_btn_call_margin_left">5px</dimen>
+    <dimen name="hotel_recom_btn_call_top">20px</dimen>
+    <dimen name="hotel_recom_btn_call_size">24px</dimen>
+    <dimen name="hotel_recom_tv_padding_top">10px</dimen>
+    <dimen name="hotel_recom_tv_time_padding_top">12px</dimen>
+    <!--酒店支付相关-->
+
+
+    <dimen name="item_room_detail_relative_width">440px</dimen>
+    <dimen name="item_room_detail_relative_left">50px</dimen>
+    <dimen name="item_room_detail_relative_right">50px</dimen>
+    <dimen name="item_room_detail_iv_cover_height">290px</dimen>
+    <dimen name="item_room_detail_tv_price_width">114px</dimen>
+    <dimen name="item_room_detail_tv_price_height">40px</dimen>
+    <dimen name="item_room_detail_tv_price_size">18px</dimen>
+    <dimen name="item_room_detail_tv_detail_size">20px</dimen>
+    <dimen name="item_room_detail_tv_detail_height">60px</dimen>
+    <dimen name="item_room_detail_tv_detail_top">400px</dimen>
+    <dimen name="item_room_detail_tv_room_name_top">26px</dimen>
+    <dimen name="item_room_detail_tv_room_name_size">28px</dimen>
+
+    <!-- 影院选择相关-->
+    <dimen name="cinema_item_linear_left">50px</dimen>
+    <dimen name="cinema_item_linear_right">50px</dimen>
+    <dimen name="cinema_item_relative_width">430px</dimen>
+    <dimen name="cinema_item_relative_height">330px</dimen>
+    <dimen name="cinema_item_distance_width">94px</dimen>
+    <dimen name="cinema_item_distance_height">40px</dimen>
+    <dimen name="cinema_item_distance_size">20px</dimen>
+    <dimen name="cinema_item_position_height">60px</dimen>
+    <dimen name="cinema_item_position_size">24px</dimen>
+    <dimen name="cinema_item_name_size">28px</dimen>
+    <dimen name="cinema_item_name_top">16px</dimen>
+    <dimen name="cinema_item_name_and_price_size">24px</dimen>
+    <dimen name="cinema_item_name_and_price_top">12px</dimen>
+    <dimen name="session_item_linear_left">50px</dimen>
+    <dimen name="session_item_linear_right">50px</dimen>
+    <dimen name="session_item_relative_width">442px</dimen>
+    <dimen name="session_item_relative_height">326px</dimen>
+    <dimen name="session_item_price_width">130px</dimen>
+    <dimen name="session_item_price_height">40px</dimen>
+    <dimen name="session_item_go_in_end">15px</dimen>
+    <dimen name="session_item_line_top">148px</dimen>
+    <dimen name="session_item_go_out_start">15px</dimen>
+    <dimen name="session_item_go_int_time_top">16px</dimen>
+    <!-- 影院选择相关-->
+
+    <!--   欢迎界面相关-->
+    <dimen name="driving_icon_img_width">300px</dimen>
+    <dimen name="driving_icon_img_heigh">300px</dimen>
+    <dimen name="driving_icon_score_top">100px</dimen>
+    <dimen name="driving_icon_score_size">50px</dimen>
+    <dimen name="driving_icon_score_text_size">25px</dimen>
+    <dimen name="driving_score_text_size">40px</dimen>
+    <dimen name="driving_score_text_top">40px</dimen>
+    <!--   欢迎界面相关-->
+
+    <!--音频相关-->
+    <dimen name="fragment_audio_margin_left">250px</dimen>
+    <dimen name="fragment_audio_table_layout_height">40px</dimen>
+    <dimen name="fragment_audio_table_layout_margin_start">100px</dimen>
+    <dimen name="fragment_audio_table_layout_margin_top">40px</dimen>
+    <dimen name="fragment_audio_table_text_size">32px</dimen>
+    <dimen name="fragment_audio_table_layout_indicator_height">0px</dimen>
+    <dimen name="fragment_audio_table_layout_padding_end">100px</dimen>
+    <dimen name="fragment_audio_viewpager_margin_top">30px</dimen>
+
+    <dimen name="rv_audio_source_divider_horizontal">20px</dimen>
+    <dimen name="rv_audio_source_divider_extra">70px</dimen>
+    <dimen name="item_audio_source_bg_width">281px</dimen>
+    <dimen name="item_audio_source_bg_height">281px</dimen>
+    <dimen name="item_audio_source_title_padding_left">20px</dimen>
+    <dimen name="item_audio_source_title_padding_top">25px</dimen>
+    <dimen name="item_audio_source_title_text_size">26px</dimen>
+    <dimen name="item_audio_source_bottom_play_status_height">82px</dimen>
+    <dimen name="item_audio_source_play_status_iv_width">42px</dimen>
+    <dimen name="item_audio_source_play_status_iv_height">42px</dimen>
+    <dimen name="item_audio_source_play_status_iv_margin_right">16px</dimen>
+    <dimen name="item_audio_source_play_status_text_size">20px</dimen>
+
+    <dimen name="fragment_audio_play_progress_padding_left">160px</dimen>
+    <dimen name="fragment_audio_play_progress_padding_right">160px</dimen>
+    <dimen name="fragment_audio_play_progress_text_padding">40px</dimen>
+    <dimen name="fragment_audio_play_progress_text_size">26px</dimen>
+    <dimen name="fragment_audio_play_progress_bar_height">28px</dimen>
+    <dimen name="fragment_audio_play_progress_bar_margin_top">18px</dimen>
+    <dimen name="fragment_audio_play_control_margin_left">160px</dimen>
+    <dimen name="fragment_audio_play_control_padding">20px</dimen>
+    <dimen name="fragment_audio_play_control_collect_margin_right">100px</dimen>
+    <dimen name="fragment_audio_play_control_pre_margin_right">40px</dimen>
+    <dimen name="fragment_audio_play_control_play_pause_margin_right">40px</dimen>
+    <dimen name="fragment_audio_play_control_next_margin_right">100px</dimen>
+
+    <dimen name="card_normal_width">250px</dimen>
+    <dimen name="card_normal_height_without_right">282px</dimen>
+
+    <dimen name="card_normal_favorite_width">750px</dimen>
+    <dimen name="card_normal_height">328px</dimen>
+    <dimen name="card_height">424px</dimen>
+
+    <dimen name="card_bg_large_width">360px</dimen>
+    <dimen name="card_bg_large_height">394px</dimen>
+
+    <dimen name="card_iv_large_width">276px</dimen>
+    <dimen name="card_iv_large_height">312px</dimen>
+
+    <dimen name="card_normal_margin_top">60px</dimen>
+    <!--音频相关-->
+
+    <dimen name="sort_text_size">50px</dimen>
+
+    <!--酒店选择房间类型-->
+    <dimen name="hotel_book_tv_step_first_width">250px</dimen>
+    <dimen name="hotel_book_tv_step_first_height">80px</dimen>
+    <dimen name="hotel_book_tv_step_first_size">30px</dimen>
+    <dimen name="hotel_book_tv_step_second_width">250px</dimen>
+    <dimen name="hotel_book_tv_step_second_height">80px</dimen>
+    <dimen name="hotel_book_tv_step_second_size">30px</dimen>
+    <dimen name="hotel_book_tv_step_third_width">250px</dimen>
+    <dimen name="hotel_book_tv_step_third_height">80px</dimen>
+    <dimen name="hotel_book_tv_step_third_size">30px</dimen>
+    <dimen name="hotel_book_tv_book_tip_width">250px</dimen>
+    <dimen name="hotel_book_tv_book_tip_height">80px</dimen>
+    <dimen name="hotel_book_tv_book_tip_size">40px</dimen>
+    <dimen name="hotel_book_framelayout_height">640px</dimen>
+
+
+    <!--酒店选择房间类型-->
+
+    <!--  酒店入住日期选择-->
+    <dimen name="select_data_tv_title_size">36px</dimen>
+    <dimen name="select_data_tv_start_time_width">999px</dimen>
+    <dimen name="select_data_tv_start_time_height">70px</dimen>
+    <dimen name="select_data_tv_start_time_size">36px</dimen>
+    <dimen name="select_data_tv_end_time_width">999px</dimen>
+    <dimen name="select_data_tv_end_time_height">70px</dimen>
+    <dimen name="select_data_tv_end_time_size">36px</dimen>
+    <dimen name="select_data_iv_next_width">70px</dimen>
+    <dimen name="select_data_iv_next_height">70px</dimen>
+    <dimen name="select_data_weekview1_width">600px</dimen>
+    <dimen name="select_data_weekview1_height">70px</dimen>
+    <dimen name="select_data_weekview2_width">600px</dimen>
+    <dimen name="select_data_weekview2_height">70px</dimen>
+    <dimen name="select_data_calendar_start_width">600px</dimen>
+    <dimen name="select_data_calendar_start_height">320px</dimen>
+    <dimen name="select_data_calendar_end_width">600px</dimen>
+    <dimen name="select_data_calendar_end_height">320px</dimen>
+    <dimen name="select_data_btn_clear_bottom">60px</dimen>
+    <dimen name="select_data_btn_clear_start">200px</dimen>
+    <dimen name="select_data_btn_sure_width">342px</dimen>
+    <dimen name="select_data_btn_sure_height">78px</dimen>
+    <dimen name="select_data_btn_sure_bottom">30px</dimen>
+
+    <!--  酒店入住日期选择-->
+    <!--服务相关-->
+    <dimen name="fragment_service_table_text_size">35px</dimen>
+    <dimen name="fragment_service_margin_left">224px</dimen>
+    <dimen name="fragment_service_table_layout_height">70px</dimen>
+    <dimen name="fragment_service_table_layout_margin_start">43px</dimen>
+    <dimen name="fragment_service_table_layout_margin_top">78px</dimen>
+    <dimen name="fragment_service_table_layout_indicator_height">0px</dimen>
+    <dimen name="fragment_service_table_layout_padding_end">100px</dimen>
+    <dimen name="fragment_service_viewpager_margin_top">60px</dimen>
+    <dimen name="fragment_service_rv_divider_left">160px</dimen>
+    <dimen name="fragment_service_rv_divider_top">30px</dimen>
+    <dimen name="fragment_service_rv_extra_margin">43px</dimen>
+    <dimen name="fragment_service_card_width">250px</dimen>
+    <dimen name="fragment_service_card_height">378px</dimen>
+    <dimen name="fragment_service_card_padding">6px</dimen>
+    <dimen name="fragment_service_card_reflex_height">40px</dimen>
+
+    <!--服务相关-->
+
+    <!--服务相关item-->
+    <dimen name="item_fragment_service_height">500px</dimen>
+    <dimen name="item_fragment_service_tv_name_margin_top">60px</dimen>
+    <dimen name="item_fragment_service_tv_name_text_size">35px</dimen>
+    <dimen name="item_fragment_service_tv_message_margin_top">30px</dimen>
+    <dimen name="item_fragment_service_tv_message_text_size">25px</dimen>
+    <dimen name="item_fragment_service_tv_message_line_spacing_extra">20px</dimen>
+    <dimen name="item_fragment_service_ll_title_width">350px</dimen>
+    <dimen name="item_fragment_service_ll_title_padding_left">30px</dimen>
+    <dimen name="item_fragment_service_ll_content_width">200px</dimen>
+    <dimen name="item_fragment_service_iv_width">100px</dimen>
+    <dimen name="item_fragment_service_iv_height">100px</dimen>
+    <dimen name="item_fragment_service_tv_action_margin_top">40px</dimen>
+    <dimen name="item_fragment_service_tv_action_text_size">35px</dimen>
+
+    <!--服务相关item-->
+
+    <!--出行服务Fragment-->
+    <dimen name="rv_travel_divider_horizontal">20px</dimen>
+    <dimen name="rv_travel_item_width">230px</dimen>
+    <dimen name="rv_travel_item_height">300px</dimen>
+    <dimen name="rv_travel_item_image_width">230px</dimen>
+    <dimen name="rv_travel_divider_extra">70px</dimen>
+    <dimen name="rv_travel_item_text_size">35px</dimen>
+    <dimen name="rv_travel_item_tv_height">80px</dimen>
+    <!--出行服务Fragment-->
+
+    <!--车辆服务Fragment-->
+    <dimen name="rv_car_divider_horizontal">20px</dimen>
+    <dimen name="rv_car_item_width">230px</dimen>
+    <dimen name="rv_car_item_height">300px</dimen>
+    <dimen name="rv_car_item_image_width">230px</dimen>
+    <dimen name="rv_car_divider_extra">70px</dimen>
+    <dimen name="rv_car_item_text_size">35px</dimen>
+    <dimen name="rv_car_item_tv_height">80px</dimen>
+    <!--车辆服务Fragment-->
+
+    <!--影院无数据视图-->
+    <dimen name="cinema_nodata_temporaryimg_width">500px</dimen>
+    <dimen name="cinema_nodata_temporaryimg_height">300px</dimen>
+    <dimen name="cinema_nodata_text_size">40px</dimen>
+    <dimen name="cinema_nodata_text_top">30px</dimen>
+
+    <!--影院无数据视图-->
+
+    <!--  影片条目视图-->
+    <dimen name="film_item_relative_width">272px</dimen>
+    <dimen name="film_item_relative_height">336px</dimen>
+    <dimen name="film_item_relative_margin">8px</dimen>
+    <dimen name="film_item_score_width">80px</dimen>
+    <dimen name="film_item_score_height">32px</dimen>
+    <dimen name="film_item_score_size">18px</dimen>
+    <dimen name="film_item_score_left">12px</dimen>
+    <dimen name="film_item_collection_width">80px</dimen>
+    <dimen name="film_item_collection_height">50px</dimen>
+    <dimen name="film_item_collection_size">25px</dimen>
+    <dimen name="film_item_layout_height">70px</dimen>
+    <dimen name="film_item_type_size">18px</dimen>
+    <dimen name="film_item_type_left">24px</dimen>
+    <dimen name="film_item_time_size">18px</dimen>
+    <dimen name="film_item_time_left">20px</dimen>
+    <dimen name="film_item_view_height">18px</dimen>
+    <dimen name="film_item_view_left">20px</dimen>
+    <dimen name="film_item_view_width">2px</dimen>
+    <!--  影片条目视图-->
+
+    <!-- 欢迎页面-->
+    <dimen name="welcome_img_width">226px</dimen>
+    <dimen name="welcome_img_height">300px</dimen>
+    <dimen name="welcome_img_bg_width">200px</dimen>
+    <dimen name="welcome_img_bg_height">270px</dimen>
+    <dimen name="welcome_text_top">20px</dimen>
+    <dimen name="welcome_text_size">32px</dimen>
+    <dimen name="welcome_name_text_size">32px</dimen>
+
+    <!-- 欢迎页面-->
+
+    <!--酒店列表item视图-->
+    <dimen name="hotel_recom_frame_width">360px</dimen>
+    <dimen name="hotel_recom_iv_cover_height">280px</dimen>
+    <dimen name="hotel_recom_tv_star_width">82px</dimen>
+    <dimen name="hotel_recom_tv_star_height">38px</dimen>
+    <dimen name="hotel_recom_tv_collect_width">100px</dimen>
+    <!--酒店列表item视图-->
+
+    <!--酒店预订信息视图-->
+    <dimen name="hotel_book_msg_btn_book_size">25px</dimen>
+    <dimen name="hotel_book_msg_btn_book_bottom">30px</dimen>
+    <dimen name="hotel_book_msg_tv_room_count_size">25px</dimen>
+    <dimen name="hotel_book_msg_tv_room_count_top">25px</dimen>
+    <dimen name="hotel_book_msg_tv_call_size">25px</dimen>
+    <dimen name="hotel_book_msg_tv_call_top">50px</dimen>
+    <dimen name="hotel_book_msg_name_size">25px</dimen>
+    <dimen name="hotel_book_msg_tv_room_type_size">25px</dimen>
+    <dimen name="hotel_book_msg_tv_book_date_size">25px</dimen>
+
+    <!--酒店预订信息视图-->
+    <dimen name="style_item_top">20px</dimen>
+    <dimen name="item_enterratainment_width">300px</dimen>
+    <dimen name="appfragment_setpadding">40px</dimen>
+    <dimen name="appfragment_set_horizontal">90px</dimen>
+    <dimen name="appfragment_set_extra">30px</dimen>
+
+
+    <dimen name="seat_table_item_row_col_text_size">24px</dimen>
+    <dimen name="seat_table_item_price_text_size">24px</dimen>
+    <dimen name="seat_table_item_price_text_end">30px</dimen>
+    <dimen name="seat_table_item_row_col_text_start">40px</dimen>
+    <dimen name="seat_table_item_height">80px</dimen>
+    <dimen name="seat_table_item_width">400px</dimen>
+    <dimen name="pb_width">100px</dimen>
+    <dimen name="pb_height">100px</dimen>
+    <dimen name="tv_size_25">25px</dimen>
+    <dimen name="view_book_margin">30px</dimen>
+    <dimen name="view_book_line_spac">6px</dimen>
+    <dimen name="add_room_margin_bottom">70px</dimen>
+    <dimen name="add_room_width">400px</dimen>
+    <dimen name="add_room_height">78px</dimen>
+    <dimen name="item_book_margin">20px</dimen>
+    <dimen name="item_tv_room_tv_size">30px</dimen>
+    <dimen name="book_user_height">158px</dimen>
+    <dimen name="user_name_margin_top">20px</dimen>
+    <dimen name="tv_user_name_height">118px</dimen>
+    <dimen name="user_name_padding">30px</dimen>
+    <dimen name="iv_delete_margin_top">45px</dimen>
+    <dimen name="iv_delete_margin_right">40px</dimen>
+    <dimen name="iv_delete_width">36px</dimen>
+    <dimen name="iv_delete_height">36px</dimen>
+    <dimen name="iv_edit_width">36px</dimen>
+    <dimen name="iv_edit_height">36px</dimen>
+    <dimen name="iv_edit_margin_top">45px</dimen>
+    <dimen name="iv_edit_margin_right">100px</dimen>
+    <dimen name="tv_user_size">35px</dimen>
+    <dimen name="btn_pay_width">390px</dimen>
+    <dimen name="btn_pay_height">100px</dimen>
+
+    <!--应用列表页面-->
+    <dimen name="fragment_app_iv_head_user_width">100px</dimen>
+    <dimen name="fragment_app_iv_head_user_height">100px</dimen>
+    <dimen name="fragment_app_iv_head_user_margin_left">263px</dimen>
+    <dimen name="fragment_app_tv_user_name_height">100px</dimen>
+    <dimen name="fragment_app_tv_user_name_margin_left">16px</dimen>
+    <dimen name="fragment_app_tv_user_name_text_size">34px</dimen>
+    <dimen name="fragment_app_rv_main_app_margin_left">270px</dimen>
+    <dimen name="fragment_app_rv_main_app_margin_top">60px</dimen>
+    <!--应用列表页面-->
+
+    <!--应用列表适配器-->
+    <dimen name="rv_main_app_divider_horizontal">20px</dimen>
+    <dimen name="rv_main_app_divider_extra">30px</dimen>
+    <dimen name="rv_main_app_item_width">300px</dimen>
+    <dimen name="rv_main_app_item_tv_name_text_size">34px</dimen>
+    <dimen name="rv_main_app_item_iv_app_height">300px</dimen>
+    <dimen name="rv_main_app_item_iv_app_margin_top">40px</dimen>
+    <dimen name="rv_main_app_item_tv_introduce_margin_top">30px</dimen>
+    <dimen name="rv_main_app_item_tv_introduce_text_size">25px</dimen>
+    <dimen name="item_app_list_width">174px</dimen>
+    <dimen name="item_app_list_min_height">266px</dimen>
+    <dimen name="item_app_list_app_icon_width">186px</dimen>
+    <dimen name="item_app_list_app_icon_height">270px</dimen>
+    <dimen name="tv_price_margin_start">50px</dimen>
+    <dimen name="tv_price_size">30px</dimen>
+    <!--应用列表适配器-->
+
+    <!--管家item页面-->
+    <dimen name="item_service_housekeeper_width">700px</dimen>
+    <dimen name="item_service_housekeeper_height">500px</dimen>
+    <dimen name="tv_item_service_housekeeper_weather_margin_left">30px</dimen>
+    <dimen name="tv_item_service_housekeeper_weather_text_size">35px</dimen>
+    <dimen name="iv_item_service_housekeeper_weather_width">96px</dimen>
+    <dimen name="iv_item_service_housekeeper_weather_height">96px</dimen>
+    <dimen name="iv_item_service_housekeeper_weather_margin_left">10px</dimen>
+    <dimen name="iv_item_service_housekeeper_weather_margin_right">80px</dimen>
+    <dimen name="iv_item_service_housekeeper_weather_margin_top">30px</dimen>
+    <dimen name="tv_item_service_housekeeper_tip1_margin_left">80px</dimen>
+    <dimen name="tv_item_service_housekeeper_tip1_margin_top">30px</dimen>
+    <dimen name="tv_item_service_housekeeper_tip1_margin_text_size">35px</dimen>
+    <dimen name="tv_item_service_housekeeper_tip2_margin_left">80px</dimen>
+    <dimen name="tv_item_service_housekeeper_tip2_margin_top">30px</dimen>
+    <dimen name="tv_item_service_housekeeper_tip2_margin_text_size">35px</dimen>
+    <dimen name="iv_item_service_housekeeper_pets_width">280px</dimen>
+    <dimen name="iv_item_service_housekeeper_pets_height">100px</dimen>
+    <dimen name="iv_item_service_housekeeper_pets_margin_left">30px</dimen>
+    <dimen name="tv_item_service_housekeeper_destination_drawable_padding">10px</dimen>
+    <dimen name="tv_item_service_housekeeper_destination_text_size">35px</dimen>
+    <dimen name="tv_item_service_housekeeper_address_drawable_padding">10px</dimen>
+    <dimen name="tv_item_service_housekeeper_address_text_size">35px</dimen>
+    <dimen name="item_service_housekeeper_ll_width">336px</dimen>
+    <dimen name="tv_item_service_housekeeper_food_text_size">35px</dimen>
+    <dimen name="tv_item_service_housekeeper_scenic_text_size">35px</dimen>
+
+    <!--管家item页面-->
+
+    <!--服务通用item页面-->
+    <dimen name="item_service_three_action_width">800px</dimen>
+    <dimen name="item_service_three_action_height">500px</dimen>
+    <dimen name="iv_item_service_three_action_width">100px</dimen>
+    <dimen name="iv_item_service_three_action_height">100px</dimen>
+    <dimen name="tv_item_service_three_action_text_size">35px</dimen>
+    <dimen name="tv_item_service_three_action_one_text_size">35px</dimen>
+    <dimen name="tv_item_service_three_action_two_text_size">35px</dimen>
+    <dimen name="tv_item_service_three_action_three_text_size">35px</dimen>
+    <!--服务通用item页面-->
+
+    <!--景点item页面-->
+    <dimen name="item_service_scenic_spot_width">600px</dimen>
+    <dimen name="item_service_scenic_spot_height">500px</dimen>
+    <dimen name="iv_item_service_scenic_spot_width">100px</dimen>
+    <dimen name="iv_item_service_scenic_spot_height">100px</dimen>
+    <dimen name="tv_item_service_scenic_spot_text_size">35px</dimen>
+    <dimen name="tv_item_service_scenic_spot_one_text_size">35px</dimen>
+    <dimen name="tv_item_service_scenic_spot_two_text_size">35px</dimen>
+    <!--景点item页面-->
+
+    <!--电影页面-->
+    <dimen name="item_service_film_width">1250px</dimen>
+    <dimen name="item_service_film_height">424px</dimen>
+    <dimen name="tv_item_service_film_text_margin_top">220px</dimen>
+    <dimen name="tv_item_service_film_text_ens_margin_top">268px</dimen>
+    <dimen name="iv_item_service_film_width">100px</dimen>
+    <dimen name="iv_item_service_film_height">100px</dimen>
+    <dimen name="tv_item_service_film_text_size">30px</dimen>
+    <dimen name="tv_item_service_film_text_ens_size">26px</dimen>
+    <dimen name="tv_item_service_film_one_text_size">26px</dimen>
+    <dimen name="tv_item_service_film_two_text_size">26px</dimen>
+    <dimen name="tv_item_service_film_three_text_size">26px</dimen>
+    <dimen name="tv_item_service_film_four_text_size">26px</dimen>
+    <dimen name="movie_not_date_view_img_width">300px</dimen>
+    <dimen name="movie_not_date_view_img_height">380px</dimen>
+    <dimen name="movie_not_date_view_text_bottom">60px</dimen>
+    <dimen name="movie_not_date_view_text_size">40px</dimen>
+    <dimen name="tv_item_service_film_service_text_height">70px</dimen>
+    <dimen name="tv_item_service_film_service_text_margin_top">284px</dimen>
+    <!--电影酒店页面-->
+
+    <!--美食景点酒店页面-->
+    <dimen name="item_service_food_play_width">1000px</dimen>
+    <dimen name="item_service_food_play_height">424px</dimen>
+    <dimen name="iv_item_service_food_play_width">100px</dimen>
+    <dimen name="iv_item_service_food_play_height">100px</dimen>
+    <dimen name="tv_item_service_food_play_text_size">30px</dimen>
+    <dimen name="tv_item_service_food_play_text_margin_top">220px</dimen>
+    <dimen name="tv_item_service_food_play_text_ens_size">26px</dimen>
+    <dimen name="tv_item_service_food_play_text_ens_margin_top">268px</dimen>
+    <dimen name="tv_item_service_food_play_one_text_size">26px</dimen>
+    <dimen name="tv_item_service_food_play_two_text_size">26px</dimen>
+    <dimen name="tv_item_service_food_play_three_text_size">26px</dimen>
+    <dimen name="tv_item_service_food_play_service_text_margin_top">284px</dimen>
+    <dimen name="tv_item_service_food_play_service_text_height">70px</dimen>
+    <!--美食景点页面-->
+
+    <!--汽车服务页面-->
+    <dimen name="item_service_car_width">1000px</dimen>
+    <dimen name="item_service_car_height">424px</dimen>
+    <dimen name="iv_item_service_car_width">100px</dimen>
+    <dimen name="iv_item_service_car_height">100px</dimen>
+    <dimen name="tv_item_service_car_text_size">30px</dimen>
+    <dimen name="tv_item_service_car_text_margin_top">220px</dimen>
+    <dimen name="tv_item_service_car_text_ens_size">26px</dimen>
+    <dimen name="tv_item_service_car_text_ens_margin_top">268px</dimen>
+    <dimen name="tv_item_service_car_one_text_size">26px</dimen>
+    <dimen name="tv_item_service_car_two_text_size">26px</dimen>
+    <dimen name="tv_item_service_car_three_text_size">26px</dimen>
+    <dimen name="tv_item_service_car_service_text_margin_top">284px</dimen>
+    <dimen name="tv_item_service_car_service_text_height">70px</dimen>
+    <dimen name="tv_item_service_car_warn_text_height">60px</dimen>
+    <dimen name="tv_item_service_car_warn_text_width">151px</dimen>
+    <dimen name="tv_item_service_car_warn_text_size">20px</dimen>
+    <dimen name="tv_item_service_car_warn_margin_top">36px</dimen>
+    <!--汽车服务页面-->
+
+    <!--微信互联-->
+    <dimen name="wechat_relative_left">30px</dimen>
+    <dimen name="wechat_relative_right">30px</dimen>
+    <dimen name="wechat_clean_img_width">80px</dimen>
+    <dimen name="wechat_clean_img_height">80px</dimen>
+    <dimen name="wechat_clean_img_padding">10px</dimen>
+    <dimen name="wechat_bind_qr_width">600px</dimen>
+    <dimen name="wechat_bind_qr_height">600px</dimen>
+    <dimen name="wechat_bind_tv_margintop">50px</dimen>
+    <dimen name="wechat_bind_qr_tv_size">32px</dimen>
+    <dimen name="wechat_bind_qr_img_width">300px</dimen>
+    <dimen name="wechat_bind_qr_img_height">300px</dimen>
+    <dimen name="wechat_bind_qr_img_margintop">40px</dimen>
+    <dimen name="tv_bind_wechat_tip_margintop">50px</dimen>
+    <dimen name="tv_bind_wechat_tip_size">28px</dimen>
+    <dimen name="wechat_loding_width">600px</dimen>
+    <dimen name="wechat_loding_height">600px</dimen>
+    <dimen name="wechat_loding_text_top">38px</dimen>
+    <dimen name="wechat_loding_text_size">26px</dimen>
+    <dimen name="wechat_update_width">600px</dimen>
+    <dimen name="wechat_update_height">600px</dimen>
+    <dimen name="wechat_update_img_top">100px</dimen>
+    <dimen name="wechat_update_img_width">200px</dimen>
+    <dimen name="wechat_update_img_height">200px</dimen>
+    <dimen name="wechat_update_text1_top">38px</dimen>
+    <dimen name="wechat_update_text1_size">26px</dimen>
+    <dimen name="wechat_update_text2_top">100px</dimen>
+    <dimen name="wechat_update_text2_size">26px</dimen>
+    <dimen name="wechat_bind_succer_width">600px</dimen>
+    <dimen name="wechat_bind_succer_height">600px</dimen>
+    <dimen name="wechat_bind_succer_text_top">50px</dimen>
+    <dimen name="wechat_bind_succer_text_size">32px</dimen>
+    <dimen name="wechat_bind_succer_img_width">120px</dimen>
+    <dimen name="wechat_bind_succer_img_height">120px</dimen>
+    <dimen name="wechat_bind_succer_img_top">40px</dimen>
+    <dimen name="tv_bind_wechat_success_size">40px</dimen>
+    <dimen name="tv_bind_wechat_success_top">40px</dimen>
+    <dimen name="btn_unbind_wechat_top">60px</dimen>
+    <dimen name="btn_unbind_wechat_size">32px</dimen>
+    <!--微信互联-->
+
+    <!--Mark相关-->
+    <dimen name="mark_clean_img_width">100px</dimen>
+    <dimen name="mark_clean_img_height">100px</dimen>
+    <dimen name="mark_clean_img_padding">20px</dimen>
+    <dimen name="trip_album_not_data_right">100px</dimen>
+    <dimen name="trip_album_not_data_mark_icon_nothing_width">186px</dimen>
+    <dimen name="trip_album_not_data_mark_icon_nothing_height">224px</dimen>
+    <dimen name="trip_album_not_data_mark_text_nothing_size">36px</dimen>
+
+    <!--Mark相关-->
+
+    <!--美食景点分类-->
+    <dimen name="attraction_sort_tv_margin_left">55px</dimen>
+    <dimen name="attraction_sort_tv_margin_top">95px</dimen>
+    <dimen name="attraction_sort_tv_text_size">32px</dimen>
+    <dimen name="attraction_sort_rv_height">470px</dimen>
+    <dimen name="attraction_sort_rv_top">10px</dimen>
+    <dimen name="attraction_sort_rv_bottom">90px</dimen>
+
+    <dimen name="item_attraction_sort_tv_text_size">30px</dimen>
+    <dimen name="item_attraction_sort_tv_height">97px</dimen>
+    <dimen name="item_attraction_sort_tv_width">332px</dimen>
+    <!--美食景点分类-->
+
+    <!--出行左边侧栏-->
+    <dimen name="navigation_travel_padding_top">80px</dimen>
+    <dimen name="navigation_travel_padding_bottom">80px</dimen>
+    <dimen name="navigation_travel_iv_padding">30px</dimen>
+    <!--出行左边侧栏-->
+
+    <!--20190129出行酒店交互-->
+    <dimen name="hotel_recom_view_navigation_travel_width">168px</dimen>
+    <dimen name="hotel_recom_tv_nearby_hotel_margin_left">50px</dimen>
+    <dimen name="hotel_recom_tv_nearby_hotel_margin_top">90px</dimen>
+    <dimen name="hotel_recom_tv_nearby_hotel_text_size">30px</dimen>
+    <dimen name="hotel_recom_tv_hotel_name_text_size">28px</dimen>
+    <dimen name="hotel_recom_tv_hotel_msg_text_size">24px</dimen>
+    <dimen name="hotel_recom_ll_padding_bottom">60px</dimen>
+    <dimen name="hotel_recom_btn_date_text_size">20px</dimen>
+
+    <!--20190129出行酒店交互-->
+
+    <!--出行dialog-->
+    <dimen name="dialog_travel_width">710px</dimen>
+    <dimen name="dialog_travel_height">350px</dimen>
+
+    <dimen name="dialog_travel_height_320">350px</dimen>
+    <dimen name="dialog_travel_height_350">350px</dimen>
+    <dimen name="dialog_activity_dialog_width">560px</dimen>
+    <dimen name="dialog_activity_dialog_height">290px</dimen>
+    <dimen name="dialog_title_margin_top">60px</dimen>
+    <dimen name="dialog_title_margin_bottom">40px</dimen>
+    <dimen name="dialog_title_text_size">28px</dimen>
+    <dimen name="dialog_message_text_size">30px</dimen>
+    <dimen name="dialog_ll_margin_top">30px</dimen>
+    <dimen name="dialog_btn_sure_text_size">30px</dimen>
+    <dimen name="dialog_btn_cancel_text_size">30px</dimen>
+    <dimen name="shop_list_notdata_img_top">18px</dimen>
+    <!--出行dialog-->
+
+    <!--mark camera-->
+    <dimen name="camera_view_width">636px</dimen>
+    <dimen name="camera_view_height">384px</dimen>
+    <dimen name="fragment_audio_rv_main_app_margin_left">224px</dimen>
+    <dimen name="mark_surface_margin">30px</dimen>
+    <dimen name="mark_photo_btn_width">120px</dimen>
+    <dimen name="mark_photo_btn_height">120px</dimen>
+    <dimen name="mark_photo_btn_padding">10px</dimen>
+    <dimen name="mark_photo_btn_bottom">30px</dimen>
+    <dimen name="mark_trip_album_width">422px</dimen>
+    <dimen name="mark_trip_album_height">384px</dimen>
+    <dimen name="mark_trip_album_left">56px</dimen>
+    <dimen name="mark_trip_album_img_width">166px</dimen>
+    <dimen name="mark_trip_album_img_height">196px</dimen>
+    <dimen name="mark_trip_album_text_size">30px</dimen>
+    <dimen name="mark_trip_footprint_width">422px</dimen>
+    <dimen name="mark_trip_footprint_height">384px</dimen>
+    <dimen name="mark_trip_footprint_left">56px</dimen>
+    <dimen name="mark_trip_footprint_img_width">166px</dimen>
+    <dimen name="mark_trip_footprint_img_height">196px</dimen>
+    <dimen name="mark_trip_footprint_text_size">30px</dimen>
+    <!--mark camera-->
+
+    <!--酒店步骤-->
+    <dimen name="seat_table_tap_hotel_height">50px</dimen>
+    <dimen name="seat_table_tap_hotel_margin_left">12px</dimen>
+    <dimen name="seat_table_tap_hotel_text_size">30px</dimen>
+    <dimen name="seat_table_tap_hotel_line_width">240px</dimen>
+    <dimen name="seat_table_tap_hotel_line_height">1px</dimen>
+    <dimen name="seat_table_tap_hotel_line_margin_left">60px</dimen>
+    <dimen name="seat_table_tap_hotel_line_margin_right">60px</dimen>
+    <dimen name="seat_table_tap_hotel_circle_width">50px</dimen>
+    <dimen name="seat_table_tap_hotel_circle_height">50px</dimen>
+    <!--酒店步骤-->
+
+
+    <!--酒店预定信息-->
+    <dimen name="book_hotel_two_icon_width">64px</dimen>
+    <dimen name="book_hotel_two_icon_height">64px</dimen>
+    <dimen name="book_hotel_two_text_margin_top">18px</dimen>
+    <dimen name="book_hotel_two_text_margin_left">20px</dimen>
+    <dimen name="book_hotel_two_text_margin_top_22">22px</dimen>
+    <dimen name="book_hotel_two_text_size_24">24px</dimen>
+    <dimen name="book_hotel_two_text_size_28">28px</dimen>
+    <dimen name="book_hotel_two_drawable_padding">10px</dimen>
+    <dimen name="book_hotel_two_drawable_padding_14">14px</dimen>
+    <dimen name="book_hotel_two_btn_width">400px</dimen>
+    <dimen name="book_hotel_two_btn_height">78px</dimen>
+    <dimen name="book_hotel_two_margin_right">100px</dimen>
+    <dimen name="book_hotel_two_margin_top">60px</dimen>
+    <dimen name="book_hotel_two_btn_margin_bottom">80px</dimen>
+    <dimen name="book_hotel_two_text_padding_left_102">102px</dimen>
+    <dimen name="book_hotel_two_text_padding_left_24">24px</dimen>
+    <dimen name="book_hotel_two_text_padding_top">12px</dimen>
+    <dimen name="book_hotel_two_line_width">1px</dimen>
+    <dimen name="book_hotel_two_line_height">30px</dimen>
+    <dimen name="book_hotel_two_line_margin_top">15px</dimen>
+    <dimen name="book_hotel_two_table_margin_left">100px</dimen>
+    <dimen name="book_hotel_two_table_margin_top">98px</dimen>
+    <dimen name="book_hotel_two_info_margin_top">80px</dimen>
+    <dimen name="book_hotel_two_info_margin_left">100px</dimen>
+    <!--酒店预定信息-->
+
+    <!--酒店预定信息-->
+    <dimen name="book_hotel_one_tab_margin_left">100px</dimen>
+    <dimen name="book_hotel_one_tab_margin_top">98px</dimen>
+    <dimen name="book_hotel_one_ll_margin_top">72px</dimen>
+    <dimen name="book_hotel_one_rv_height">350px</dimen>
+    <dimen name="book_hotel_one_scroll_bar_margin_top">75px</dimen>
+    <dimen name="delicious_socer_linear_height">25px</dimen>
+    <dimen name="delicious_socer_linear_width">25px</dimen>
+    <!--酒店预定信息-->
+
+    <!--附近美食-->
+    <dimen name="delicious_activity_rl_width">560px</dimen>
+    <dimen name="delicious_activity_rl_height">514px</dimen>
+    <dimen name="delicious_activity_iv_tips_width">188px</dimen>
+    <dimen name="delicious_activity_iv_tips_height">188px</dimen>
+    <dimen name="delicious_activity_tv_tips_top">15px</dimen>
+    <dimen name="delicious_activity_tv_tips_size">30px</dimen>
+    <dimen name="delicious_activity_delicious_title_left">50px</dimen>
+    <dimen name="delicious_activity_delicious_title_top">90px</dimen>
+    <dimen name="delicious_activity_delicious_title_size">30px</dimen>
+    <dimen name="delicious_activity_delicious_rv_top">30px</dimen>
+    <dimen name="delicious_activity_delicious_rv_height">272px</dimen>
+    <dimen name="delicious_activity_delicious_ly_top">20px</dimen>
+    <dimen name="delicious_activity_delicious_name_size">28px</dimen>
+    <dimen name="delicious_activity_delicious_position_size">24px</dimen>
+    <dimen name="delicious_activity_delicious_segmentation_size">24px</dimen>
+    <dimen name="delicious_activity_delicious_style_size">24px</dimen>
+    <dimen name="delicious_activity_delicious_distance_size">24px</dimen>
+    <dimen name="delicious_activity_delicious_price_size">24px</dimen>
+    <dimen name="delicious_activity_navigation_width">305px</dimen>
+    <dimen name="delicious_activity_navigation_height">75px</dimen>
+    <dimen name="delicious_activity_navigation_top">6px</dimen>
+    <dimen name="delicious_activity_navigation_size">28px</dimen>
+    <dimen name="delicious_activity_phone_top">6px</dimen>
+    <dimen name="delicious_activity_phoneheight">75px</dimen>
+    <dimen name="delicious_activity_phone_size">28px</dimen>
+
+    <!--附近美食-->
+
+    <!--收藏item1-->
+    <dimen name="food_scenic_collect_item_width">440px</dimen>
+    <dimen name="food_scenic_collect_item_height">370px</dimen>
+    <dimen name="food_scenic_collect_item_marg">8px</dimen>
+    <dimen name="food_scenic_collect_item_score_width">90px</dimen>
+    <dimen name="food_scenic_collect_item_score_height">40px</dimen>
+    <dimen name="food_scenic_collect_item_score_size">20px</dimen>
+    <dimen name="food_scenic_collect_item_collection_width">112px</dimen>
+    <dimen name="food_scenic_collect_item_collection_height">40px</dimen>
+    <dimen name="food_scenic_collect_item_collection_size">25px</dimen>
+    <dimen name="food_scenic_collect_item_margin_left_30">30px</dimen>
+    <dimen name="food_scenic_collect_item_tv_width_100">100px</dimen>
+    <dimen name="food_scenic_collect_item_tv_width_200">200px</dimen>
+    <dimen name="food_scenic_collect_item_btn_width_300">300px</dimen>
+    <dimen name="food_scenic_collect_item_btn_margin_left_50">50px</dimen>
+
+    <dimen name="collect_adapter_v1_width">1050px</dimen>
+    <dimen name="collect_adapter_v1_cover_width">440px</dimen>
+    <dimen name="collect_adapter_v1_cover_height">370px</dimen>
+    <dimen name="collect_adapter_v1_cover_left">31px</dimen>
+    <dimen name="collect_adapter_v1_cover_top">31px</dimen>
+    <dimen name="collect_adapter_v1_cover_right">31px</dimen>
+    <dimen name="collect_adapter_v1_cover_bottom">95px</dimen>
+    <dimen name="collect_adapter_v1_socer_linear_left">31px</dimen>
+    <dimen name="collect_adapter_v1_socer_linear_top">31px</dimen>
+    <dimen name="collect_adapter_v1_socer_linear_img_width">25px</dimen>
+    <dimen name="collect_adapter_v1_socer_linea_img_height">25px</dimen>
+    <dimen name="collect_adapter_v1_socer_tv_left">10px</dimen>
+    <dimen name="collect_adapter_v1_collection_linear_top">31px</dimen>
+    <dimen name="collect_adapter_v1_collection_linear_right">31px</dimen>
+    <dimen name="collect_adapter_v1_iv__collection_width">20px</dimen>
+    <dimen name="collect_adapter_v1_iv__collection_height">20px</dimen>
+    <dimen name="collect_adapter_v1_tv__collection_left">7px</dimen>
+    <dimen name="collect_adapter_v1_tv__collection_size">20px</dimen>
+    <dimen name="collect_adapter_v1_collection_name_left">84px</dimen>
+    <dimen name="collect_adapter_v1_collection_name_top">48px</dimen>
+    <dimen name="collect_adapter_v1_collection_detail_left">84px</dimen>
+    <dimen name="collect_adapter_v1_collection_detail_top">36px</dimen>
+    <dimen name="collect_adapter_v1_collection_detail_size">26px</dimen>
+    <dimen name="collect_adapter_v1_tv_action_width">176px</dimen>
+    <dimen name="collect_adapter_v1_tv_action_height">78px</dimen>
+    <dimen name="collect_adapter_v1_tv_action_left">84px</dimen>
+    <dimen name="collect_adapter_v1_tv_action_top">70px</dimen>
+    <dimen name="collect_adapter_v1_tv_action_padding_top">9px</dimen>
+    <dimen name="collect_adapter_v1_tv_action_size">26px</dimen>
+    <dimen name="collect_adapter_v1_tv_action2_width">176px</dimen>
+    <dimen name="collect_adapter_v1_tv_action2_height">78px</dimen>
+    <dimen name="collect_adapter_v1_tv_action2_left">45px</dimen>
+    <dimen name="collect_adapter_v1_tv_action2_padding_top">9px</dimen>
+    <dimen name="collect_adapter_v1_tv_action2_size">26px</dimen>
+    <dimen name="attraction_activity_iv_layout_width">560px</dimen>
+    <dimen name="attraction_activity_iv_layout_height">514px</dimen>
+    <dimen name="attraction_activity_iv_tips_width">188px</dimen>
+    <dimen name="attraction_activity_iv_tips_height">188px</dimen>
+    <dimen name="attraction_activity_tv_tips_top">15px</dimen>
+    <dimen name="attraction_activity_tv_tips_size">30px</dimen>
+    <dimen name="attraction_title_left">50px</dimen>
+    <dimen name="attraction_title_rv_width">272px</dimen>
+    <dimen name="attraction_title_top">90px</dimen>
+    <dimen name="attraction_rv_height">400px</dimen>
+    <dimen name="attraction_title_rv_top">30px</dimen>
+    <dimen name="attraction_layout_rv_top">20px</dimen>
+    <dimen name="attraction_name_size">28px</dimen>
+    <dimen name="attraction_delicious_size">24px</dimen>
+    <dimen name="attraction_sort_activity_top">10px</dimen>
+    <dimen name="attraction_sort_activity_bottom">90px</dimen>
+    <dimen name="attraction_item_socer_img_widith">25px</dimen>
+    <dimen name="attraction_item_socer_img_height">25px</dimen>
+    <dimen name="attraction_item_socer_img_left">10px</dimen>
+    <dimen name="attraction_item_attractions_width">20px</dimen>
+    <dimen name="attraction_item_attractions_height">20px</dimen>
+    <dimen name="attraction_item_attractions_collection_left">7px</dimen>
+    <dimen name="collect_adapter_v1_collection_name_size">28px</dimen>
+    <dimen name="activity_cinema_show_select_size">30px</dimen>
+    <dimen name="activity_cinema_show_select_width">300px</dimen>
+    <dimen name="activity_cinema_show_select_height">75px</dimen>
+    <!--收藏item-->
+    <!--热门电影-->
+    <dimen name="film_activity_iv_layout_width">560px</dimen>
+    <dimen name="film_activity_iv_layout_height">514px</dimen>
+    <dimen name="film_activity_iv_tips_width">188px</dimen>
+    <dimen name="film_activity_iv_tups_height">188px</dimen>
+    <dimen name="film_activity_tv_tips_top">15px</dimen>
+    <dimen name="film_activity_tv_tips_size">30px</dimen>
+    <dimen name="film_activity_film_title_left">50px</dimen>
+    <dimen name="film_activity_film_title_top">90px</dimen>
+    <dimen name="film_activity_film_title_size">30px</dimen>
+    <dimen name="film_activity_film_rv_top">30px</dimen>
+    <dimen name="film_activity_film_layout_top">22px</dimen>
+    <dimen name="film_activity_buy_film_ticket_width">305px</dimen>
+    <dimen name="film_activity_buy_film_ticket_height">75px</dimen>
+    <dimen name="film_activity_buy_film_ticket_top">6px</dimen>
+    <dimen name="film_activity_buy_film_ticket_size">28px</dimen>
+    <dimen name="film_activity_look_teailer_widith">305px</dimen>
+    <dimen name="film_activity_look_teailer_height">75px</dimen>
+    <dimen name="film_activity_look_teailer_left">120px</dimen>
+    <dimen name="film_activity_look_teailer_top">6px</dimen>
+    <dimen name="film_activity_look_teailer_size">28px</dimen>
+    <!--热门电影-->
+
+    <!--附近电影-->
+    <dimen name="nearby_cinema_activity_iv_layout_width">560px</dimen>
+    <dimen name="nearby_cinema_activity_iv_layout_height">514px</dimen>
+    <dimen name="nearby_cinema_activity_iv_tips_width">188px</dimen>
+    <dimen name="nearby_cinema_activity_iv_tips_height">188px</dimen>
+    <dimen name="nearby_cinema_activity_tv_tips_top">15px</dimen>
+    <dimen name="nearby_cinema_activity_tv_tips_size">30px</dimen>
+    <dimen name="nearby_cinema_activity_neatby_cinema_left">50px</dimen>
+    <dimen name="nearby_cinema_activity_nearby_cinema_top">90px</dimen>
+    <dimen name="nearby_cinema_activity_nearby_cinema_size">30px</dimen>
+    <dimen name="nearby_cinema_activity_nearby_cinema_rv_top">30px</dimen>
+    <dimen name="nearby_cinema_activity_nearby_layout_top">20px</dimen>
+    <dimen name="nearby_cinema_activity_nearby_cinema_name_size">30px</dimen>
+    <dimen name="nearby_cinema_activity_delition_size">26px</dimen>
+    <dimen name="attraction_navigation_cimema_buy_height">75px</dimen>
+    <dimen name="attraction_navigation_cimema_buy_top">6px</dimen>
+    <dimen name="attraction_navigation_cimema_buy_size">28px</dimen>
+    <dimen name="attraction_navigation_cimema_navigation_top">6px</dimen>
+    <dimen name="attraction_navigation_cimema_navigation_height">75px</dimen>
+    <dimen name="attraction_navigation_cimema_navigation_left">120px</dimen>
+    <dimen name="attraction_navigation_cimema_navigation_size">28px</dimen>
+    <!--附近电影-->
+    <!--影院排期列表-->
+    <dimen name="cinema_show_item_layout_top">44px</dimen>
+    <dimen name="cinema_show_item_relative_width">264px</dimen>
+    <dimen name="cinema_show_item_relative_height">352px</dimen>
+    <dimen name="cinema_show_item_socer_linear_width">95px</dimen>
+    <dimen name="cinema_show_item_socer_linear_height">40px</dimen>
+    <dimen name="cinema_show_item_socer_img_width">25px</dimen>
+    <dimen name="cinema_show_item_socer_img_height">25px</dimen>
+    <dimen name="cinema_show_item_film_score_szie">20px</dimen>
+    <dimen name="cinema_show_item_film_type_size">24px</dimen>
+    <dimen name="cinema_show_item_film_name_width">264px</dimen>
+    <dimen name="cinema_show_item_film_name_top">24px</dimen>
+    <dimen name="cinema_show_item_film_name_bottom">10px</dimen>
+    <dimen name="cinema_show_item_film_name_size">30px</dimen>
+    <dimen name="cinema_show_item_time_and_price_width">264px</dimen>
+    <dimen name="cinema_show_item_time_and_price_top">12px</dimen>
+    <dimen name="cinema_show_item_time_and_price_size">26px</dimen>
+    <dimen name="nearby_cinema_collection_layout_width">380px</dimen>
+    <dimen name="nearby_cinema_collection_layout_height">272px</dimen>
+
+    <!--影院排期列表-->
+
+    <!--影厅列表相关-->
+    <dimen name="session_item_relative2_top">33px</dimen>
+    <dimen name="session_item_relative2_width">379px</dimen>
+    <dimen name="session_item_relative2_height">261px</dimen>
+    <dimen name="session_item_relative2_session_img_width">379px</dimen>
+    <dimen name="session_item_relative2_session_img_height">261px</dimen>
+    <dimen name="session_item_relative2_session_item_price_size">22px</dimen>
+    <dimen name="session_item_relative2_session_film_language_top">68px</dimen>
+    <dimen name="session_item_relative2_session_film_language_size">32px</dimen>
+    <dimen name="session_item_relative2_session_go_in_end">34px</dimen>
+    <dimen name="session_item_relative2_session_go_in_size">26px</dimen>
+    <dimen name="session_item_relative2_session_go_out_start">34px</dimen>
+    <dimen name="session_item_relative2_session_go_out_size">26px</dimen>
+    <dimen name="session_item_relative2_session_go_in_time_size">28px</dimen>
+    <dimen name="session_item_relative2_session_go_out_time_szie">28px</dimen>
+    <dimen name="session_item_relative2_session_name_size">28px</dimen>
+    <dimen name="session_item_relative2_session_name_top">28px</dimen>
+    <dimen name="session_item_relative2_session_name_width">350px</dimen>
+    <dimen name="camera_view_left">105px</dimen>
+    <dimen name="mark_activity_record_trip_cam_pic_width">640px</dimen>
+    <dimen name="mark_activity_record_trip_cam_pic_height">360px</dimen>
+    <dimen name="mark_activity_record_trip_cam_pic_start">100px</dimen>
+    <dimen name="mark_activity_record_trip_cam_pic_top">200px</dimen>
+    <dimen name="mark_activity_record_trip_linear_top">224px</dimen>
+    <dimen name="mark_activity_record_trip_happy_tip_img_width">40px</dimen>
+    <dimen name="mark_activity_record_trip_happy_tip_img_height">40px</dimen>
+    <dimen name="mark_activity_record_trip_happy_tip_img_start">106px</dimen>
+    <dimen name="mark_activity_record_trip_dull_tip_img_width">40px</dimen>
+    <dimen name="mark_activity_record_trip_dull_tip_img_height">40px</dimen>
+    <dimen name="mark_activity_record_trip_dull_tip_img_start">60px</dimen>
+    <dimen name="mark_activity_record_trip_lose_tip_img_width">40px</dimen>
+    <dimen name="mark_activity_record_trip_lose_tip_img_height">40px</dimen>
+    <dimen name="mark_activity_record_trip_lose_tip_img_start">60px</dimen>
+    <dimen name="mark_activity_record_trip_linear2_top">68px</dimen>
+    <dimen name="mark_activity_record_trip_weather_img_width">36px</dimen>
+    <dimen name="mark_activity_record_trip_weather_img_height">36px</dimen>
+    <dimen name="mark_activity_record_trip_weather_img_start">106px</dimen>
+    <dimen name="mark_activity_record_trip_photo_time_size">26px</dimen>
+    <dimen name="mark_activity_record_trip_photo_time_start">36px</dimen>
+    <dimen name="mark_activity_record_trip_linear3_top">12px</dimen>
+    <dimen name="mark_activity_record_trip_position_img_width">36px</dimen>
+    <dimen name="mark_activity_record_trip_position_img_height">36px</dimen>
+    <dimen name="mark_activity_record_trip_position_img_start">106px</dimen>
+    <dimen name="mark_activity_record_trip_photo_address_size">26px</dimen>
+    <dimen name="mark_activity_record_trip_photo_address_start">36px</dimen>
+    <dimen name="mark_activity_record_trip_linear4_top">80px</dimen>
+    <dimen name="mark_activity_record_trip_save_but_size">26px</dimen>
+    <dimen name="mark_activity_record_trip_save_but_width">230px</dimen>
+    <dimen name="mark_activity_record_trip_save_but_height">80px</dimen>
+    <dimen name="mark_activity_record_trip_save_but_start">106px</dimen>
+    <dimen name="mark_activity_record_trip_clean_but_size">26px</dimen>
+    <dimen name="mark_activity_record_trip_clean_but_width">230px</dimen>
+    <dimen name="mark_activity_record_trip_clean_but_height">80px</dimen>
+    <dimen name="mark_activity_record_trip_clean_but_start">20px</dimen>
+    <dimen name="mark_activity_record_trip_facial_text_start">34px</dimen>
+    <dimen name="mark_activity_record_trip_facial_text_size">26px</dimen>
+    <dimen name="mark_activity_record_trip_photo_address_right">100px</dimen>
+    <dimen name="activity_trip_ablum_linear_width">260px</dimen>
+    <dimen name="activity_trip_ablum_years_top">176px</dimen>
+    <dimen name="activity_trip_ablum_years_size">36px</dimen>
+    <dimen name="activity_trip_ablum_month_picker_width">220px</dimen>
+    <dimen name="activity_trip_ablum_month_picker_hright">300px</dimen>
+    <dimen name="activity_trip_ablum_month_picker_top">60px</dimen>
+    <dimen name="activity_trip_ablum_month_picker_horizontal">8px</dimen>
+    <dimen name="activity_trip_ablum_month_picker_vertical">8px</dimen>
+    <dimen name="activity_trip_ablum_month_picker_sizenormal">30px</dimen>
+    <dimen name="activity_trip_ablum_month_picker_sizeselected">32px</dimen>
+    <dimen name="activity_trip_ablum_recording_number_start">100px</dimen>
+    <dimen name="activity_trip_ablum_recording_number_top">150px</dimen>
+    <dimen name="activity_trip_ablum_recording_number_size">32px</dimen>
+    <dimen name="activity_trip_ablum_trip_edit_width">230px</dimen>
+    <dimen name="activity_trip_ablum_trip_edit_height">80px</dimen>
+    <dimen name="activity_trip_ablum_trip_edit_end">50px</dimen>
+    <dimen name="activity_trip_ablum_trip_edit_top">140px</dimen>
+    <dimen name="activity_trip_ablum_trip_edit_size">26px</dimen>
+    <dimen name="activity_trip_ablum_trip_rv_top">40px</dimen>
+    <dimen name="activity_trip_ablum_scroll_bar_top">78px</dimen>
+    <!--影厅列表相关-->
+
+    <!--附近加油站停车场-->
+    <dimen name="oilpark_activity_rl_width">560px</dimen>
+    <dimen name="oilpark_activity_rl_height">514px</dimen>
+    <dimen name="oilpark_activity_iv_tips_width">188px</dimen>
+    <dimen name="oilpark_activity_iv_tips_height">188px</dimen>
+    <dimen name="oilpark_activity_tv_tips_top">15px</dimen>
+    <dimen name="oilpark_activity_tv_tips_size">30px</dimen>
+    <dimen name="oilpark_activity_delicious_title_left">50px</dimen>
+    <dimen name="oilpark_activity_delicious_title_top">90px</dimen>
+    <dimen name="oilpark_activity_delicious_title_size">30px</dimen>
+    <dimen name="oilpark_activity_delicious_rv_top">30px</dimen>
+    <dimen name="oilpark_activity_delicious_rv_height">272px</dimen>
+    <dimen name="oilpark_activity_delicious_ly_top">20px</dimen>
+    <dimen name="oilpark_activity_delicious_name_size">28px</dimen>
+    <dimen name="oilpark_activity_delicious_position_size">24px</dimen>
+    <dimen name="oilpark_activity_delicious_segmentation_size">24px</dimen>
+    <dimen name="oilpark_activity_delicious_style_size">24px</dimen>
+    <dimen name="oilpark_activity_delicious_distance_size">24px</dimen>
+    <dimen name="oilpark_activity_delicious_price_size">24px</dimen>
+    <dimen name="oilpark_activity_navigation_width">305px</dimen>
+    <dimen name="oilpark_activity_navigation_height">75px</dimen>
+    <dimen name="oilpark_activity_navigation_top">6px</dimen>
+    <dimen name="oilpark_activity_navigation_size">28px</dimen>
+    <dimen name="oilpark_activity_phone_top">6px</dimen>
+    <dimen name="oilpark_activity_phoneheight">75px</dimen>
+    <dimen name="oilpark_activity_phone_size">28px</dimen>
+    <dimen name="oilpark_layout_top">18px</dimen>
+    <dimen name="oilpark_layout2_top">35px</dimen>
+    <dimen name="mark_activity_record_save_text_size">24px</dimen>
+    <dimen name="mark_activity_record_trip_save_layout_top">10px</dimen>
+    <dimen name="mark_activity_record_save_text_left">100px</dimen>
+    <dimen name="item_app_list_app_name_margin_bottom">10px</dimen>
+    <!--附近美食-->
+
+</resources>

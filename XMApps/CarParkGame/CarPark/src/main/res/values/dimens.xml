@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="size_scroll_bar_margin_start">436px</dimen>
+    <dimen name="size_scroll_bar_margin_end">586px</dimen>
+    <dimen name="size_scroll_bar_margin_bottom">18px</dimen>
+    <dimen name="height_scroll_bar">20px</dimen>
+    <dimen name="size_scrollbar_margin_bottom">50px</dimen>
+    <dimen name="size_game_item_horizontal_margin">30px</dimen>
+    <dimen name="size_game_item_extra_margin">70px</dimen>
+    <dimen name="width_game_item">200px</dimen>
+    <dimen name="height_game_item">200px</dimen>
+    <dimen name="size_game_bottom_text">28px</dimen>
+    <dimen name="size_game_top_text">32px</dimen>
+    <dimen name="size_game_item_top_margin">30px</dimen>
+
+    <dimen name="main_tab_menu_width">235px</dimen>
+    <dimen name="main_tab_item_height">120px</dimen>
+    <dimen name="main_tab_text_padding">30px</dimen>
+    <dimen name="main_tab_marign_top">20px</dimen>
+    <dimen name="main_tab_text_size">30px</dimen>
+
+    <dimen name="item_horizontal_margin">45px</dimen>
+    <dimen name="item_extra_margin">90px</dimen>
+
+    <dimen name="item_plugin_width">376px</dimen>
+    <dimen name="item_plugin_height">360px</dimen>
+    <dimen name="item_plugin_img_height">272px</dimen>
+    <dimen name="item_plugin_count_margin_bottom">30px</dimen>
+    <dimen name="item_plugin_count_size">30px</dimen>
+    <dimen name="item_plugin_name_margin_top">20px</dimen>
+    <dimen name="item_plugin_name_size">34px</dimen>
+    <dimen name="px_1420">1420px</dimen>
+    <dimen name="px_80">80px</dimen>
+    <dimen name="px_92">92px</dimen>
+    <dimen name="px_10">10px</dimen>
+    <dimen name="px_32">32px</dimen>
+    <dimen name="px_900">900px</dimen>
+    <dimen name="px_28">28px</dimen>
+    <dimen name="px_79">79px</dimen>
+    <dimen name="px_60">60px</dimen>
+    <dimen name="px_18">18px</dimen>
+    <dimen name="px_35">35px</dimen>
+    <dimen name="px_1010">1010px</dimen>
+
+</resources>

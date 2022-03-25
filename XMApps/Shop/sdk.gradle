@@ -1,0 +1,43 @@
+ext{
+    sdk = this.&sdk
+}
+
+def sdk(Closure closure) {
+    SDKImpl sDKImpl = new SDKImpl()
+    closure.delegate = sDKImpl
+    closure.call()
+
+    def localTemp = LocalTest.pick(sDKImpl.localTest)
+    setupActuallyResource(localTemp)
+}
+
+
+class SDKImpl {
+    String localTest = LocalTest.TYPE_TEST
+
+    void local(String type) {
+        localTest = type
+    }
+}
+
+
+class LocalTest {
+    public static final String TYPE_TEST = "TEST"
+
+    static String pick(String type) {
+        if (TYPE_TEST.equalsIgnoreCase(type)) {
+            return TYPE_TEST
+        }
+        return null
+    }
+}
+
+def setupActuallyResource(String type) {
+    project.android.sourceSets.main.java {
+        if (LocalTest.TYPE_TEST.equalsIgnoreCase(type)) {
+            srcDir 'src/main/sdk/test'
+        }
+    }
+}
+
+

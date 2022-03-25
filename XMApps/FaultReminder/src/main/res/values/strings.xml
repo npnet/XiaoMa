@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">故障提醒</string>
+    <string name="start">开始</string>
+    <string name="end">结束</string>
+    <string name="car_fault_check">车辆故障检测</string>
+    <string name="go_to_fix">去维修</string>
+
+    <!--车辆报警提示-->
+    <string name="out_light_fault_brake">外部灯光故障报警-制动灯</string>
+    <string name="out_light_fault_turn_left">外部灯光故障报警-左转向灯</string>
+    <string name="engine_fault">发动机车载诊断发动机故障报警</string>
+    <string name="tyre_right_front_fault">右前方胎压异常报警</string>
+</resources>

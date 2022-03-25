@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/order_detail_paid_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <Button
+        android:id="@+id/bt_paid_navigation"
+        android:layout_width="@dimen/width_home_btn"
+        android:layout_height="@dimen/height_home_btn"
+        android:background="@drawable/selector_button"
+        android:text="@string/navigation"
+        android:textSize="@dimen/font_size_feedback_24px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bt_paid_phone"
+        android:layout_width="@dimen/width_home_btn"
+        android:layout_height="@dimen/height_home_btn"
+        android:layout_marginStart="@dimen/size_order_detail_operation_button_margin"
+        android:background="@drawable/selector_button"
+        android:text="@string/phone"
+        android:textSize="@dimen/font_size_feedback_24px"
+        app:layout_constraintStart_toEndOf="@id/bt_paid_navigation"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bt_paid_predestine"
+        android:layout_width="@dimen/width_home_btn"
+        android:layout_height="@dimen/height_home_btn"
+        android:layout_marginStart="@dimen/size_order_detail_operation_button_margin"
+        android:background="@drawable/selector_button"
+        android:text="@string/re_predestine"
+        android:textSize="@dimen/font_size_feedback_24px"
+        app:layout_constraintStart_toEndOf="@id/bt_paid_phone"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

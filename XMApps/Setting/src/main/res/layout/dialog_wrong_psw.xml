@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/error_dialog_width"
+    android:layout_height="@dimen/wrong_psw_dialog_width">
+
+    <TextView
+        android:id="@+id/msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/name_wrong_psw"
+        android:gravity="center"
+        android:textSize="@dimen/wrong_psw_dialog_text_size" />
+
+    <TextView
+        android:id="@+id/close"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:textSize="@dimen/wrong_psw_dialog_text_size"
+        android:padding="@dimen/edit_bit_name_dialog_padding"
+        android:text="@string/close" />
+
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/vip_price_options_layout"
+    android:layout_width="@dimen/size_vip_options_width"
+    android:layout_height="@dimen/size_vip_options_height"
+    android:background="@drawable/vip_options_normal">
+
+
+    <TextView
+        android:id="@+id/tv_vip_renewal_fee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/renewal_text_bg"
+        android:gravity="center"
+        android:text="@string/vip_renewal_text"
+        android:textSize="@dimen/font_size_24px"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tv_vip_validity_month"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_vip_options_content_margin"
+        android:gravity="center"
+        android:textColor="@color/color_8a919d"
+        android:textSize="@dimen/font_size_px32"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tv_vip_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/size_vip_options_content_margin_bottom"
+        android:drawableStart="@drawable/car_icon"
+        android:drawablePadding="@dimen/size_privilege_icon_padding"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/font_size_home_28"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

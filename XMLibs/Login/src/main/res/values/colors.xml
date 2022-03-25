@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="not_bind">#ffffff</color>
+    <color name="bound">#FFCD91</color>
+    <color name="login_bg_blue">#169BD5</color>
+    <color name="login_bg_gray">#777777</color>
+    <color name="color_passwd_under_line">#ffd97e</color>
+    <color name="color_num_keyboard">#eccd83</color>
+    <color name="color_factory_error_tip">#eb3838</color>
+    <color name="face_pop_window_bg">#77000000</color>
+    <color name="bt_pressed">#ccffffff</color>
+    <color name="bt_unable">#8a919d</color>
+    <color name="bt_normal">#00000000</color>
+    <color name="skip_color">#f7c78d</color>
+    <color name="tourists_mode_color">#f7c78d</color>
+    <color name="get_verify_text_color">#f7c78d</color>
+    <color name="get_verify_text_color_disable">#8a919d</color>
+    <color name="must_select_color">#f7c78d</color>
+</resources>

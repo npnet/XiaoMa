@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_common"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="@dimen/activity_trip_ablum_linear_width"
+        android:orientation="vertical"
+        android:background="@drawable/mark_frame_bg"
+        android:gravity="center_horizontal"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/years"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_trip_ablum_years_top"
+            android:text="2018"
+            android:textSize="@dimen/activity_trip_ablum_years_size"
+            />
+
+        <com.xiaoma.launcher.schedule.view.NumberPickerView
+            android:id="@+id/month_picker"
+            android:layout_width="@dimen/activity_trip_ablum_month_picker_width"
+            android:layout_height="@dimen/activity_trip_ablum_month_picker_hright"
+            android:layout_marginTop="@dimen/activity_trip_ablum_month_picker_top"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="test_number_picker_view"
+            app:npv_ItemPaddingHorizontal="@dimen/activity_trip_ablum_month_picker_horizontal"
+            app:npv_ItemPaddingVertical="@dimen/activity_trip_ablum_month_picker_vertical"
+            app:npv_ShowCount="3"
+            app:npv_ShowDivider="false"
+            app:npv_TextColorNormal="#f5504f4f"
+            app:npv_TextColorSelected="#ffffff"
+            app:npv_TextSelectedBackground="@drawable/bg_month_select"
+            app:npv_TextSizeNormal="@dimen/activity_trip_ablum_month_picker_sizenormal"
+            app:npv_TextSizeSelected="@dimen/activity_trip_ablum_month_picker_sizeselected"
+            app:npv_WrapSelectorWheel="false" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/recording_linear"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/recording_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activity_trip_ablum_recording_number_start"
+            android:layout_marginTop="@dimen/activity_trip_ablum_recording_number_top"
+            android:text="共去了5个地方，记录下了32个瞬间"
+            android:textSize="@dimen/activity_trip_ablum_recording_number_size"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/trip_edit"
+            android:layout_width="@dimen/activity_trip_ablum_trip_edit_width"
+            android:layout_height="@dimen/activity_trip_ablum_trip_edit_height"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/activity_trip_ablum_trip_edit_end"
+            android:layout_marginTop="@dimen/activity_trip_ablum_trip_edit_top"
+            android:background="@drawable/selector_button"
+            android:text="@string/mark_edit"
+            android:textSize="@dimen/activity_trip_ablum_trip_edit_size" />
+    </RelativeLayout>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/trip_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_trip_ablum_trip_rv_top"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recording_number">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <com.xiaoma.ui.view.XmScrollBar
+            android:id="@+id/scroll_bar"
+            android:layout_width="@dimen/width_scrollbar"
+            android:layout_height="@dimen/height_scrollbar"
+            android:layout_marginTop="@dimen/activity_trip_ablum_scroll_bar_top"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/trip_rv" />
+
+    </LinearLayout>
+</LinearLayout>

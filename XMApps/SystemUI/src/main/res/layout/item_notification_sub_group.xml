@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/collapse_item_container"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/notification_item_group_height"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    tools:ignore="PxUsage">
+
+    <TextView
+        android:id="@+id/tv_app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/notification_headsup_content_text"
+        android:textSize="34px" />
+
+    <TextView
+        android:id="@+id/tv_collapse_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40px"
+        android:text="@string/notification_collapsing"
+        android:textColor="@color/notification_headsup_title_text"
+        android:textSize="34px" />
+
+    <ImageView
+        android:id="@+id/iv_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12px"
+        android:src="@drawable/notification_group_arrow_down" />
+</LinearLayout>

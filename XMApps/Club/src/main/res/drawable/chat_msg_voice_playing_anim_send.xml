@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:drawable="@drawable/chat_msg_voice_playing_send_0"
+        android:duration="@integer/chat_msg_voice_playing_anim_frame_duration" />
+    <item
+        android:drawable="@drawable/chat_msg_voice_playing_send_1"
+        android:duration="@integer/chat_msg_voice_playing_anim_frame_duration" />
+    <item
+        android:drawable="@drawable/chat_msg_voice_playing_send_2"
+        android:duration="@integer/chat_msg_voice_playing_anim_frame_duration" />
+</animation-list>

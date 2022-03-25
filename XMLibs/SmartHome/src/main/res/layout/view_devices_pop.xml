@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="1100px"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_cloudmi_login">
+
+    <TextView
+        android:id="@+id/tv_device"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="226px"
+        android:layout_marginTop="98px"
+        android:text="@string/device_state"
+        android:textColor="@color/white"
+        android:textSize="30px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:layout_width="127px"
+        android:layout_height="match_parent"
+        android:background="@drawable/navi_bg_left"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="50px"
+        android:layout_height="50px"
+        android:layout_marginStart="40px"
+        android:src="@drawable/icon_back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_device"
+        android:layout_width="807px"
+        android:layout_height="0px"
+        android:layout_marginStart="193px"
+        android:layout_marginTop="35px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_device" />
+
+    <com.xiaoma.ui.view.XmScrollBar
+        android:id="@+id/scroll_bar"
+        android:layout_width="30px"
+        android:layout_height="500px"
+        android:layout_marginStart="20px"
+        android:layout_marginTop="160px"
+        app:layout_constraintStart_toEndOf="@+id/rv_device"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

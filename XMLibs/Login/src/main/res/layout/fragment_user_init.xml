@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90px"
+        android:text="@string/perfect_user_info"
+        android:textSize="36px"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="@dimen/width_user_info"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_user_info_margin_start"
+        android:layout_marginTop="@dimen/size_suer_info_margin_top"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        app:layout_constraintVertical_bias="0.0">
+
+        <!-- 姓名 -->
+        <LinearLayout
+            android:id="@+id/personal_name_relative"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_pop_personal_info_bar"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*"
+                android:textSize="36px"
+                android:textColor="@color/must_select_color" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_pop_personal_info_bar"
+                android:layout_marginStart="@dimen/size_icon_margin_start"
+                android:background="@drawable/bg_home_draw_input"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/size_popup_personal_info_key_margin_left"
+                    android:text="@string/personal_name_tip"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/font_size_home" />
+
+                <ImageView
+                    android:id="@+id/name_image_point"
+                    android:layout_width="@dimen/width_popup_personal_info_arrow"
+                    android:layout_height="@dimen/height_popup_personal_info_arrow"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/size_popup_personal_info_arrow_right"
+                    android:src="@drawable/icon_right_arrow" />
+
+                <TextView
+                    android:id="@+id/personal_name_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10px"
+                    android:layout_toStartOf="@id/name_image_point"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/font_popup_personal_info_value"
+                    tools:text="张三" />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+        <!-- 性别 -->
+        <LinearLayout
+            android:id="@+id/personal_sex_relative"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_pop_personal_info_bar"
+            android:layout_marginTop="@dimen/size_popup_personal_item_top"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*"
+                android:textSize="36px"
+                android:textColor="@color/must_select_color" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_pop_personal_info_bar"
+                android:layout_marginStart="@dimen/size_icon_margin_start"
+                android:background="@drawable/bg_home_draw_input"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/size_popup_personal_info_key_margin_left"
+                    android:text="@string/personal_sex_tip"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/font_size_home" />
+
+                <ImageView
+                    android:id="@+id/sex_image_point"
+                    android:layout_width="@dimen/width_popup_personal_info_arrow"
+                    android:layout_height="@dimen/height_popup_personal_info_arrow"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/size_popup_personal_info_arrow_right"
+                    android:src="@drawable/icon_right_arrow" />
+
+                <TextView
+                    android:id="@+id/personal_sex_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10px"
+                    android:layout_toStartOf="@id/sex_image_point"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/font_popup_personal_info_value"
+                    tools:text="男" />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+        <!-- 年龄 -->
+        <LinearLayout
+            android:id="@+id/personal_age_relative"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_pop_personal_info_bar"
+            android:layout_marginTop="@dimen/size_popup_personal_item_top"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*"
+                android:textSize="36px"
+                android:textColor="@color/must_select_color" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_pop_personal_info_bar"
+                android:layout_marginStart="@dimen/size_icon_margin_start"
+                android:background="@drawable/bg_home_draw_input"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/size_popup_personal_info_key_margin_left"
+                    android:text="@string/personal_age_tip"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/font_size_home" />
+
+                <ImageView
+                    android:id="@+id/age_image_point"
+                    android:layout_width="@dimen/width_popup_personal_info_arrow"
+                    android:layout_height="@dimen/height_popup_personal_info_arrow"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/size_popup_personal_info_arrow_right"
+                    android:src="@drawable/icon_right_arrow" />
+
+                <TextView
+                    android:id="@+id/personal_age_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10px"
+                    android:layout_toStartOf="@id/age_image_point"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/font_popup_personal_info_value"
+                    tools:text="18" />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+        <!-- 与车主关系 -->
+        <LinearLayout
+            android:id="@+id/personal_relation_relative"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_pop_personal_info_bar"
+            android:layout_marginTop="@dimen/size_popup_personal_item_top"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*"
+                android:textSize="36px"
+                android:textColor="@color/must_select_color" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_pop_personal_info_bar"
+                android:layout_marginStart="@dimen/size_icon_margin_start"
+                android:background="@drawable/bg_home_draw_input"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/size_popup_personal_info_key_margin_left"
+                    android:text="@string/personal_relation_tip"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/font_size_home" />
+
+                <ImageView
+                    android:id="@+id/relation_image_point"
+                    android:layout_width="@dimen/width_popup_personal_info_arrow"
+                    android:layout_height="@dimen/height_popup_personal_info_arrow"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/size_popup_personal_info_arrow_right"
+                    android:src="@drawable/icon_right_arrow" />
+
+                <TextView
+                    android:id="@+id/personal_relation_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10px"
+                    android:layout_toStartOf="@id/relation_image_point"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/font_popup_personal_info_value"
+                    tools:text="亲人" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="@dimen/width_face_record"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/size_face_margin_start_user"
+        android:layout_marginTop="8px"
+        android:layout_marginBottom="8px"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:background="@drawable/icon_box"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout">
+
+        <TextView
+            android:id="@+id/verify_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_face_recognize_margin_top"
+            android:text="@string/face_recognize"
+            android:textSize="@dimen/font_bind_face_title"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tips"
+            android:layout_width="@dimen/width_bind_face_tips"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_bind_face_tips_margin_top"
+            android:gravity="center"
+            android:text="@string/face_record_tips"
+            android:textSize="@dimen/font_bind_face_tips"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/verify_title" />
+
+        <Button
+            android:id="@+id/confirm"
+            style="@style/common_button"
+            android:layout_marginBottom="16px"
+            android:background="@drawable/selector_button"
+            android:gravity="center"
+            android:text="@string/add_face"
+            android:textColor="@color/selector_button_text_color"
+            android:textSize="@dimen/font_button_text"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+    <Button
+        android:id="@+id/done_setting"
+        style="@style/common_button"
+        android:enabled="false"
+        android:text="@string/setting_done"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+</android.support.constraint.ConstraintLayout>

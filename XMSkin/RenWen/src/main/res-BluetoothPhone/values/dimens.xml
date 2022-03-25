@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="width_num_key">163px</dimen>
+    <dimen name="height_num_key">91px</dimen>
+</resources>

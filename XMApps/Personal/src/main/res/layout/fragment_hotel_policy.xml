@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/hotel_policy_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_hotel_policy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_order_detail_content_margin_left"
+        android:layout_marginTop="@dimen/size_hotel_policy_top"
+        android:text="@string/hotel_policy"
+        android:textSize="@dimen/font_mine_order_size_32px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hotel_policy_title_desc"
+        android:textColor="@color/hotel_policy_title_desc_color"
+        android:textSize="@dimen/font_mine_order_size_24px"
+        app:layout_constraintBottom_toBottomOf="@id/tv_hotel_policy"
+        app:layout_constraintStart_toEndOf="@id/tv_hotel_policy" />
+
+
+    <TextView
+        android:id="@+id/tv_in_out_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_hotel_policy_title_margin"
+        android:text="@string/in_out_hotel_desc"
+        android:textSize="@dimen/font_mine_order_size_28px"
+        app:layout_constraintStart_toStartOf="@id/tv_hotel_policy"
+        app:layout_constraintTop_toBottomOf="@id/tv_hotel_policy" />
+
+
+    <TextView
+        android:id="@+id/tv_in_out_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_hotel_policy_in_out_content_left"
+        android:text="@string/hint_in_out_time"
+        android:textSize="@dimen/font_mine_order_size_24px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_in_out_title" />
+
+
+    <View
+        android:id="@+id/hotel_policy_divider_line1"
+        android:layout_width="@dimen/width_hotel_policy_divider_line"
+        android:layout_height="@dimen/height_hotel_policy_divider_line"
+        android:layout_marginTop="@dimen/size_hotel_policy_divider_line_top"
+        android:background="@drawable/hotel_policy_divider"
+        app:layout_constraintStart_toStartOf="@id/tv_in_out_title"
+        app:layout_constraintTop_toBottomOf="@id/tv_in_out_title" />
+
+
+    <TextView
+        android:id="@+id/tv_cancel_policy_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_hotel_policy_divider_line_top"
+        android:text="@string/cancel_hotel_policy"
+        android:textSize="@dimen/font_mine_order_size_28px"
+        app:layout_constraintStart_toStartOf="@id/tv_in_out_title"
+        app:layout_constraintTop_toBottomOf="@id/hotel_policy_divider_line1" />
+
+
+    <TextView
+        android:id="@+id/tv_cancel_policy_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/size_hotel_policy_content_end"
+        android:lineSpacingMultiplier="1.3"
+        android:text="@string/hint_policy_cancel"
+        android:textSize="@dimen/font_mine_order_size_24px"
+        app:layout_constraintEnd_toEndOf="@id/hotel_policy_divider_line1"
+        app:layout_constraintStart_toStartOf="@id/tv_in_out_content"
+        app:layout_constraintTop_toTopOf="@id/tv_cancel_policy_title" />
+
+
+    <View
+        android:id="@+id/hotel_policy_divider_line2"
+        android:layout_width="@dimen/width_hotel_policy_divider_line"
+        android:layout_height="@dimen/height_hotel_policy_divider_line"
+        android:layout_marginTop="@dimen/size_hotel_policy_divider_line_top"
+        android:background="@drawable/hotel_policy_divider"
+        app:layout_constraintStart_toStartOf="@id/tv_cancel_policy_title"
+        app:layout_constraintTop_toBottomOf="@id/tv_cancel_policy_content" />
+
+
+    <TextView
+        android:id="@+id/tv_child_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_hotel_policy_divider_line_top"
+        android:text="@string/hotel_child_policy"
+        android:textSize="@dimen/font_mine_order_size_28px"
+        app:layout_constraintStart_toStartOf="@id/tv_hotel_policy"
+        app:layout_constraintTop_toBottomOf="@id/hotel_policy_divider_line2" />
+
+
+    <TextView
+        android:id="@+id/tv_child_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/size_hotel_policy_content_end"
+        android:lineSpacingMultiplier="1.3"
+        android:text="@string/hint_policy_forbid"
+        android:textSize="@dimen/font_mine_order_size_24px"
+        app:layout_constraintEnd_toEndOf="@id/hotel_policy_divider_line2"
+        app:layout_constraintStart_toStartOf="@id/tv_in_out_content"
+        app:layout_constraintTop_toTopOf="@id/tv_child_title" />
+
+
+    <View
+        android:id="@+id/hotel_policy_divider_line3"
+        android:layout_width="@dimen/width_hotel_policy_divider_line"
+        android:layout_height="@dimen/height_hotel_policy_divider_line"
+        android:layout_marginTop="@dimen/size_hotel_policy_divider_line_top"
+        android:background="@drawable/hotel_policy_divider"
+        app:layout_constraintStart_toStartOf="@id/tv_cancel_policy_title"
+        app:layout_constraintTop_toBottomOf="@id/tv_child_content" />
+
+    <TextView
+        android:id="@+id/tv_pet_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_hotel_policy_divider_line_top"
+        android:text="@string/hotel_pet_title"
+        android:textSize="@dimen/font_mine_order_size_28px"
+        app:layout_constraintStart_toStartOf="@id/tv_hotel_policy"
+        app:layout_constraintTop_toBottomOf="@id/hotel_policy_divider_line3" />
+
+
+    <TextView
+        android:id="@+id/tv_pet_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/size_hotel_policy_content_end"
+        android:text="@string/cancel_hotel_policy"
+        android:textSize="@dimen/font_mine_order_size_24px"
+        app:layout_constraintEnd_toEndOf="@id/hotel_policy_divider_line2"
+        app:layout_constraintStart_toStartOf="@id/tv_in_out_content"
+        app:layout_constraintTop_toTopOf="@id/tv_pet_title" />
+
+</android.support.constraint.ConstraintLayout>

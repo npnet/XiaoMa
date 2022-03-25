@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="290px"
+    android:layout_height="205px"
+    android:paddingEnd="26px">
+
+    <ImageView
+        android:id="@+id/view_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/img_skill_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_del"
+        android:layout_width="45px"
+        android:layout_height="45px"
+        android:padding="3px"
+        android:src="@drawable/icon_del"
+        app:layout_constraintEnd_toEndOf="@id/view_bg"
+        app:layout_constraintTop_toTopOf="@id/view_bg" />
+
+    <TextView
+        android:id="@+id/tv_skill_name"
+        android:layout_width="180px"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25px"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textColor="@color/white"
+        android:textSize="28px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="播报一段话" />
+
+    <ImageView
+        android:id="@+id/item_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="70px"
+        android:background="@drawable/img_skill_bottom"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tv_skill_action"
+        android:layout_width="200px"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textColor="#8a919d"
+        android:textSize="24px"
+        app:layout_constraintBottom_toBottomOf="@+id/item_bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/item_bottom"
+        tools:text="今天天气和心情一样糟糕" />
+</android.support.constraint.ConstraintLayout>

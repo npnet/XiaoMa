@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/parking_item_width"
+    android:layout_height="@dimen/parking_item_height"
+    android:layout_gravity="center"
+    android:layout_margin="@dimen/parking_item_margin">
+
+    <ImageView
+        android:id="@+id/parking_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/temporaryimg" />
+
+    <LinearLayout
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80px"
+        android:id="@+id/parking_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/parking_item_text"
+        >
+
+        <TextView
+            android:id="@+id/parking_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="dasdadadad"
+            android:textColor="@color/yellow"
+            android:textSize="@dimen/parking_item_text_size" />
+
+        <TextView
+            android:id="@+id/parking_feetext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/parking_item_feetext_top"
+            android:textSize="30px"
+            android:textColor="@color/yellow"/>
+    </LinearLayout>
+</RelativeLayout>

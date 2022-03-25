@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/panel_view"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/notification_panel_height"
+    tools:ignore="PxUsage">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_notifications"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/notification_panel_height"
+        android:clipToPadding="false"
+        android:paddingTop="@dimen/status_bar_height"
+        android:scrollbars="none" />
+
+    <include
+        android:id="@+id/empty_container"
+        layout="@layout/panel_view_empty"
+        android:layout_width="@dimen/notification_panel_empty_width"
+        android:layout_height="@dimen/notification_panel_height"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/btn_launcher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20px"
+        android:text="Sos(Debug环境下显示)"
+        android:textSize="16px" />
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="edit_button_bg_shape">#5C5C5C</color>
+    <color name="account_item_manager_bg_shape">#7b7a7a</color>
+    <color name="account_item_normal_bg_shape">#c7c5c5</color>
+    <color name="account_item_login_status_shape">#232323</color>
+
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="green">#00FF00</color>
+
+    <color name="black_feedback_voice">#333333</color>
+
+    <color name="plate_dialog_bg">#a3a3a3</color>
+    <color name="wheel_selected_text_color">#dce6ec</color>
+    <color name="color_dialog_input_text">#b3000000</color>
+    <color name="car_plate_divide_color">#dec07f</color>
+
+    <color name="bt_pressed">#ccffffff</color>
+    <color name="bt_unable">#8a919d</color>
+    <color name="bt_normal">#00000000</color>
+
+    <color name="mine_message_color">#edc28c</color>
+    <color name="feedback_edit_text_color">#8a919d</color>
+    <color name="color_car_coin_task_time">#8A919D</color>
+    <color name="step_done">#ffc766</color>
+    <color name="step_undone">#c4c4c4</color>
+    <color name="color_task_center_right_list_progress_bound">#ecf2fa</color>
+    <color name="color_task_center_right_list_progress_bar">#f1b449</color>
+    <color name="color_task_record">#ffcd91</color>
+    <color name="mine_order_item_color">#998a919d</color>
+    <color name="wait_pay_color">#ffd676</color>
+    <color name="hotel_policy_title_desc_color">#8a919d</color>
+
+    <color name="white_60">#66ffffff</color>
+</resources>

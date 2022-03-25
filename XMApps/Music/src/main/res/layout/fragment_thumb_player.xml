@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/width_thumb"
+    android:layout_height="@dimen/height_thumb"
+    android:background="@drawable/bg_thumb">
+
+    <ImageView
+        android:id="@+id/line"
+        android:layout_width="@dimen/width_thumb_line"
+        android:layout_height="@dimen/height_thumb_line"
+        android:layout_centerHorizontal="true" />
+
+    <FrameLayout
+        android:id="@+id/fragment_thumb_fl_cover"
+        android:layout_width="@dimen/width_thumb_cover"
+        android:layout_height="match_parent"
+        android:layout_below="@id/line"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/size_thumb_cover_margin_start"
+        android:paddingTop="@dimen/size_thumb_cover_margin_top">
+
+        <com.xiaoma.ui.view.ReflectionImageView
+            android:id="@+id/fragment_thumb_iv_cover"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/iv_default_cover"
+            app:reflectionHeight="30px"
+            app:reflectionPadding="5px" />
+
+        <ImageView
+            android:id="@+id/fragment_thumb_iv_status"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:layout_marginStart="@dimen/size_thumb_status_margin_start"
+            android:layout_marginTop="@dimen/size_thumb_status_margin_top"
+            android:src="@drawable/icon_thumb_play"
+            android:visibility="invisible" />
+
+    </FrameLayout>
+
+    <com.xiaoma.ui.view.AutoScrollTextView
+        android:id="@+id/fragment_thumb_tv_music_info"
+        android:layout_width="match_parent"
+        android:layout_height="143px"
+        android:layout_below="@id/line"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/size_fragment_thumb_tv_margin_l"
+        android:layout_marginEnd="@dimen/size_thumb_tv"
+        android:layout_toEndOf="@+id/fragment_thumb_fl_cover"
+        android:ellipsize="marquee"
+        android:gravity="center"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:text="@string/super_music"
+        android:textSize="@dimen/font_fragment_thumb_tv" />
+
+    <ImageView
+        android:id="@+id/music_charge_tag"
+        android:layout_width="@dimen/thumb_vip_tag_width"
+        android:layout_height="@dimen/thumb_vip_tag_height"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15px"
+        android:background="@drawable/thumb_vip_tag"
+        android:visibility="gone" />
+
+</RelativeLayout>

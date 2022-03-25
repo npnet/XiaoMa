@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_selected="false">
+        <shape>
+            <solid android:color="@color/quality_btn_normal_bg" />
+            <corners android:radius="5px" />
+        </shape>
+    </item>
+    <item android:state_selected="true">
+        <shape>
+            <solid android:color="@color/quality_btn_select_bg" />
+            <stroke android:width="1px" android:color="@color/search_key_word" />
+            <corners android:radius="5px" />
+        </shape>
+    </item>
+
+</selector>

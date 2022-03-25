@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rlv_assistant_help"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@color/transparent"
+        android:gravity="center"
+        android:listSelector="@color/transparent"
+        android:overScrollMode="never" />
+
+    <RelativeLayout
+        android:id="@+id/fl_help_page_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_help_page_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120px"
+            android:layout_marginBottom="284px"
+            android:layout_alignParentBottom="true"
+            android:textColor="#ffffff"
+            android:textSize="48px" />
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rlv_assistant_help_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="284px"
+            android:layout_marginTop="10px"
+            android:layout_toRightOf="@id/tv_help_page_title"
+            android:cacheColorHint="@color/transparent"
+            android:divider="@color/transparent"
+            android:gravity="center"
+            android:listSelector="@color/transparent" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

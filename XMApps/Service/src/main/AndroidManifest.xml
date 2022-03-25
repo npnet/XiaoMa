@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.xiaoma.service">
+    <!-- android:sharedUserId="android.uid.system" -->
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.USE_SIP" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission
+        android:name="android.permission.MOUNT_FORMAT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.FORCE_STOP_PACKAGES" />
+
+    <application
+        android:name=".ServiceApp"
+        android:allowBackup="true"
+        android:icon="@drawable/icon_app_service"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/XiaoMaTheme">
+
+        <meta-data
+            android:name="CarType"
+            android:value="XMLX" />
+
+        <meta-data
+            android:name="CarChannelId"
+            android:value="${CAR_CHANNEL_ID}" />
+
+        <meta-data
+            android:name="XmGitRev"
+            android:value="${XM_GIT_REV}" />
+
+        <activity
+            android:name=".main.ui.MainActivity"
+            android:exported="true"
+            android:theme="@style/XiaoMaTheme_Main"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".plan.ui.MaintenancePlanActivity" />
+
+        <activity
+            android:name=".order.ui.OrderListActivity"
+            android:exported="true" />
+        <activity android:name=".main.ui.MaintainListActivity" />
+        <activity android:name="com.xiaoma.mapadapter.ui.MapActivity" />
+
+        <activity
+            android:name=".order.ui.OrderActivity"
+            android:label="@string/order_service" />
+
+        <activity
+            android:name=".order.ui.Choose4sShopActivity"
+            android:label="@string/choose_shop" />
+
+        <activity
+            android:name=".order.ui.ShopDetailActivity"
+            android:label="@string/shop_detail" />
+
+        <activity
+            android:name=".order.ui.ChooseCityDialog"
+            android:theme="@style/DialogTheme" />
+
+        <activity
+            android:name=".order.ui.ChooseTimeDialog"
+            android:label="@string/arrive_time"
+            android:theme="@style/DialogTheme" />
+
+        <activity
+            android:name=".order.ui.ChooseProgramDialog"
+            android:label="@string/choose_program"
+            android:theme="@style/DialogTheme" />
+
+        <activity
+            android:name=".order.ui.OrderDetailDialog"
+            android:label="@string/maintain_detail"
+            android:theme="@style/DialogTheme" />
+
+        <activity
+            android:name=".main.ui.MaintainDetailDialog"
+            android:theme="@style/DialogTheme" />
+
+        <!-- 高德地图 begin -->
+        <!--此为伟世通申请的开发者key-->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="bf3620d231e831afca985a003498685a" />
+
+        <!-- 高德地图定位需要的服务 -->
+        <service android:name="com.amap.api.location.APSService" />
+        <!-- 高德地图 end -->
+
+        <service
+            android:name=".common.service.CarNotificationService"
+            android:exported="true" />
+
+        <!-- 百度地图key -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="vgqU0dQYlPLtwSZXuOYxAsj21TcUpsZh" />
+
+        <!-- 百度定位服务 -->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+
+        <service android:name="com.xiaoma.service.common.service.TboxCallWindowService" />
+
+        <receiver
+            android:name=".common.receiver.IBCallReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="xiaoma_assistant_icall_action" />
+                <action android:name="xiaoma_assistant_bcall_action" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

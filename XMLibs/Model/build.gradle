@@ -1,0 +1,12 @@
+apply plugin: 'com.android.library'
+apply from: "$rootDir$Android"
+
+android library()
+
+dependencies {
+    implementation project(path: ':XMLibs:Utils')
+    implementation project(path: ':XMLibs:DB')
+    implementation "android.arch.persistence.room:runtime:$ROOM_VERSION"
+    annotationProcessor "android.arch.persistence.room:compiler:$ROOM_VERSION"
+    implementation "com.github.CymChad:BaseRecyclerViewAdapterHelper:${BASE_RECYCLERVIEW_ADAPTER_HELPER}"
+}

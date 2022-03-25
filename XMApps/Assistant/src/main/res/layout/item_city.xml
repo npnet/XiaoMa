@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tag"
+        android:layout_width="match_parent"
+        android:layout_height="60px"
+        android:background="@drawable/bg_city_tag"
+        android:gravity="center_vertical"
+        android:paddingStart="30px"
+        android:textColor="#fff"
+        android:textSize="24px"
+        tools:text="A" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="82px"
+        android:layout_marginStart="30px"
+        android:gravity="center_vertical"
+        android:textColor="#bcc7de"
+        android:textSize="@dimen/item_city_name_size"
+        tools:text="@string/shenzhen_city" />
+
+    <ImageView
+        android:id="@+id/city_dividing_img"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/city_dividing_line_img_height"
+        android:layout_marginStart="30px"
+        android:scaleType="fitXY"
+        android:src="@drawable/city_dividing" />
+</LinearLayout>

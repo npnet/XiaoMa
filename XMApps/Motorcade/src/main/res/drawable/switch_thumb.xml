@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_checked="true">
+        <shape android:shape="rectangle">
+            <size android:width="@dimen/height_setting_switch" android:height="@dimen/height_setting_switch" />
+            <corners android:radius="@dimen/height_setting_switch" />
+            <gradient android:endColor="@color/white" android:startColor="@color/white" />
+            <stroke android:width="@dimen/size_switch_stroke" android:color="@color/switch_check_color" />
+        </shape>
+    </item>
+
+    <item>
+        <shape android:shape="rectangle">
+            <size android:width="@dimen/height_setting_switch" android:height="@dimen/height_setting_switch" />
+            <corners android:radius="@dimen/height_setting_switch" />
+            <gradient android:endColor="@color/thumb_uncheck_color" android:startColor="@color/thumb_uncheck_color" />
+            <stroke android:width="@dimen/size_switch_stroke" android:color="@color/switch_notcheck_color" />
+        </shape>
+    </item>
+
+</selector>

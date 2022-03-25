@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="XiaoMaTheme" parent="@style/Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/bg_common</item>
+        <item name="android:windowAnimationStyle">@style/XiaomaTheme_Animation_Activity</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:fitsSystemWindows">false</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:selectableItemBackground">@null</item>
+        <item name="android:selectableItemBackgroundBorderless">@null</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:longClickable">false</item>
+        <item name="android:textIsSelectable">false</item>
+    </style>
+
+    <style name="XiaoMaTheme.FullScreen" parent="@style/XiaoMaTheme">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+
+    <style name="XiaoMaTheme_Main" parent="@style/XiaoMaTheme">
+        <!--<item name="android:windowDisablePreview">false</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowBackground">@drawable/win_preview_bg</item>-->
+    </style>
+
+    <style name="NotAnimation">
+        <item name="android:activityOpenEnterAnimation">@null</item>
+        <item name="android:activityOpenExitAnimation">@null</item>
+        <item name="android:activityCloseEnterAnimation">@null</item>
+        <item name="android:activityCloseExitAnimation">@null</item>
+        <item name="android:taskOpenEnterAnimation">@null</item>
+        <item name="android:taskOpenExitAnimation">@null</item>
+        <item name="android:launchTaskBehindTargetAnimation">@null</item>
+        <item name="android:launchTaskBehindSourceAnimation">@null</item>
+        <item name="android:taskCloseEnterAnimation">@null</item>
+        <item name="android:taskCloseExitAnimation">@null</item>
+        <item name="android:taskToFrontEnterAnimation">@null</item>
+        <item name="android:taskToFrontExitAnimation">@null</item>
+        <item name="android:taskToBackEnterAnimation">@null</item>
+        <item name="android:taskToBackExitAnimation">@null</item>
+        <item name="android:wallpaperOpenEnterAnimation">@null</item>
+        <item name="android:wallpaperOpenExitAnimation">@null</item>
+        <item name="android:wallpaperCloseEnterAnimation">@null</item>
+        <item name="android:wallpaperCloseExitAnimation">@null</item>
+        <item name="android:wallpaperIntraOpenEnterAnimation">@null</item>
+        <item name="android:wallpaperIntraOpenExitAnimation">@null</item>
+        <item name="android:wallpaperIntraCloseEnterAnimation">@null</item>
+        <item name="android:wallpaperIntraCloseExitAnimation">@null</item>
+        <item name="android:fragmentOpenEnterAnimation">@null</item>
+        <item name="android:fragmentOpenExitAnimation">@null</item>
+        <item name="android:fragmentCloseEnterAnimation">@null</item>
+        <item name="android:fragmentCloseExitAnimation">@null</item>
+        <item name="android:fragmentFadeEnterAnimation">@null</item>
+        <item name="android:fragmentFadeExitAnimation">@null</item>
+    </style>
+
+    <style name="TranslucentTheme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="XiaomaTheme_Animation_Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/scale_fade_enter</item>
+        <item name="android:activityOpenExitAnimation">@anim/scale_fade_exit</item>
+        <item name="android:activityCloseEnterAnimation">@anim/scale_fade_enter</item>
+        <item name="android:activityCloseExitAnimation">@anim/scale_fade_exit</item>
+        <item name="android:taskOpenEnterAnimation">@anim/scale_fade_enter</item>
+        <item name="android:taskOpenExitAnimation">@anim/scale_fade_exit</item>
+        <item name="android:launchTaskBehindTargetAnimation">@anim/scale_fade_exit</item>
+        <item name="android:launchTaskBehindSourceAnimation">@anim/scale_fade_exit</item>
+        <item name="android:taskCloseEnterAnimation">@anim/scale_fade_enter</item>
+        <item name="android:taskCloseExitAnimation">@anim/scale_fade_exit</item>
+        <item name="android:taskToFrontEnterAnimation">@anim/scale_fade_enter</item>
+        <item name="android:taskToFrontExitAnimation">@anim/scale_fade_exit</item>
+        <item name="android:taskToBackEnterAnimation">@anim/scale_fade_enter</item>
+        <item name="android:taskToBackExitAnimation">@anim/scale_fade_exit</item>
+        <item name="android:wallpaperOpenEnterAnimation">@anim/scale_fade_enter</item>
+        <item name="android:wallpaperOpenExitAnimation">@anim/scale_fade_exit</item>
+        <item name="android:wallpaperCloseEnterAnimation">@anim/scale_fade_enter</item>
+        <item name="android:wallpaperCloseExitAnimation">@anim/scale_fade_exit</item>
+        <item name="android:wallpaperIntraOpenEnterAnimation">@anim/scale_fade_enter</item>
+        <item name="android:wallpaperIntraOpenExitAnimation">@anim/scale_fade_exit</item>
+        <item name="android:wallpaperIntraCloseEnterAnimation">@anim/scale_fade_enter</item>
+        <item name="android:wallpaperIntraCloseExitAnimation">@anim/scale_fade_exit</item>
+        <item name="android:fragmentOpenEnterAnimation">@anim/scale_fade_enter</item>
+        <item name="android:fragmentOpenExitAnimation">@anim/scale_fade_exit</item>
+        <item name="android:fragmentCloseEnterAnimation">@anim/scale_fade_enter</item>
+        <item name="android:fragmentCloseExitAnimation">@anim/scale_fade_exit</item>
+        <item name="android:fragmentFadeEnterAnimation">@anim/scale_fade_enter</item>
+        <item name="android:fragmentFadeExitAnimation">@anim/scale_fade_exit</item>
+    </style>
+</resources>
+

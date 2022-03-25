@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_container"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_details_item"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <com.xiaoma.xting.welcome.view.PropertyAnimImageView
+        android:id="@+id/ivStateLevel"
+        android:layout_width="@dimen/width_play_state"
+        android:layout_height="@dimen/height_play_state"
+        android:layout_marginRight="@dimen/size_player_list_item_margin_right"
+        android:src="@drawable/fm_player_list_state_level" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@drawable/color_text_white_yellow_select"
+        android:textSize="@dimen/font_time_text" />
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_margin_20"
+        android:layout_marginRight="@dimen/size_time_margin_right"
+        android:gravity="right"
+        android:minWidth="@dimen/width_list_time"
+        android:textSize="@dimen/font_time_text"
+        tools:text="@string/test" />
+
+</LinearLayout>

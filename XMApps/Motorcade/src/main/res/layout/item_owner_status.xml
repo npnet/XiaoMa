@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/width_setting_item"
+    android:layout_height="@dimen/item_setting_owner_status"
+    android:background="@drawable/frame_normal"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <com.xiaoma.motorcade.common.view.UserHeadView
+        android:id="@+id/avatar_iv"
+        android:layout_width="@dimen/size_icon_member"
+        android:layout_height="@dimen/size_icon_member"
+        android:layout_marginStart="@dimen/margin_start_icon"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/owner_nickname_tv"
+        android:layout_width="0px"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginLeft="@dimen/margin_left_name"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="@string/eric"
+        android:textSize="@dimen/font_member_info" />
+
+    <TextView
+        android:id="@+id/owner_status_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="105px"
+        android:layout_marginEnd="@dimen/margin_end_online_status"
+        android:gravity="right"
+        android:text="@string/offline"
+        android:textSize="@dimen/font_member_info" />
+
+</LinearLayout>

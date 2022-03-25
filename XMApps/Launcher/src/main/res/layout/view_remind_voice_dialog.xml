@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="600px"
+    android:layout_height="160px"
+    android:background="@drawable/bg_voice_remind">
+
+
+    <ImageView
+        android:id="@+id/iv_voice"
+        android:layout_width="100px"
+        android:layout_height="100px"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="20px"
+        android:background="@drawable/bg_circle_voice"
+        android:src="@drawable/icon_circle_voice" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="153px"
+        android:layout_marginTop="30px"
+        android:text="@string/need_record_something"
+        android:textSize="30px" />
+
+    <TextView
+        android:id="@+id/tv_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title"
+        android:layout_marginStart="153px"
+        android:layout_marginTop="20px"
+        android:text="@string/remind_demo"
+        android:textSize="24px" />
+
+    <!--语音文本-->
+    <com.xiaoma.launcher.schedule.view.VoiceTextView
+        android:id="@+id/tv_voice_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="153px"
+        android:maxWidth="300px"
+        android:textSize="24px"
+        android:visibility="gone"
+        app:animSwitch="true"
+        app:ellipsisLine="2"
+        app:imageList="@drawable/voice_input_anim"
+        app:imageWidth="50px" />
+
+</RelativeLayout>

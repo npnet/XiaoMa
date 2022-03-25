@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="PxUsage">
+
+    <ProgressBar
+        android:id="@+id/pb"
+        style="@style/horizontal_progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:max="100"
+        tools:progress="0" />
+
+
+    <TextView
+        android:id="@+id/tvState"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="24px"
+        android:textStyle="bold"
+        tools:text="@tools:sample/last_names"
+        tools:textColor="@android:color/holo_red_dark" />
+
+</FrameLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <TextView
+        android:text="排行榜"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:layout_marginLeft="40px"
+        android:layout_gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_height="60px"/>
+    <android.support.v7.widget.RecyclerView
+        android:paddingRight="10px"
+        android:id="@+id/rv_leaderboard_list"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:requiresFadingEdge="horizontal"/>
+
+    <com.xiaoma.ui.view.XmScrollBar
+        android:id="@+id/scroll_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_scroll_bar"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/size_scroll_bar_margin_bottom"
+        android:layout_marginEnd="@dimen/size_scroll_bar_margin_end"
+        android:layout_marginStart="@dimen/size_scroll_bar_margin_start"
+        android:visibility="gone"/>
+</LinearLayout>

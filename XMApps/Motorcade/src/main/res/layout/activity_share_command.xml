@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/command_bg_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_dim" />
+
+    <RelativeLayout
+        android:id="@+id/content_ll"
+        android:layout_width="@dimen/width_pop_content"
+        android:layout_height="match_parent"
+        android:background="@color/bg_navigation_bar"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <LinearLayout
+
+            android:layout_width="@dimen/width_pop_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/share_bg"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/share_command_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_pop_content_top"
+                android:gravity="center"
+                android:text="@string/your_command"
+                android:textSize="@dimen/font_setting" />
+
+            <TextView
+                android:id="@+id/share_command_content_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_share_btn_top"
+                android:layout_marginTop="@dimen/margin_pop_text_top"
+                android:gravity="center"
+                android:textSize="@dimen/font_text_big" />
+
+            <TextView
+                android:id="@+id/share_command_btn"
+                android:layout_width="@dimen/width_share_btn"
+                android:layout_height="@dimen/height_share_btn"
+                android:background="@drawable/share_button_bg"
+                android:gravity="center"
+                android:paddingBottom="@dimen/padding_share_btn_bottom"
+                android:text="@string/share_command"
+                android:textSize="@dimen/font_launch_button" />
+
+            <TextView
+                android:id="@+id/enter_home_btn"
+                android:layout_width="@dimen/width_share_btn"
+                android:layout_height="@dimen/height_share_btn"
+                android:layout_marginTop="@dimen/margin_share_top"
+                android:background="@drawable/share_button_bg"
+                android:gravity="center"
+                android:paddingBottom="@dimen/padding_share_btn_bottom"
+                android:text="@string/goto_main"
+                android:textSize="@dimen/font_launch_button" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</FrameLayout>

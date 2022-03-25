@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/menu_item_height"
+    android:layout_gravity="center"
+    android:clipChildren="false"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_menu_name"
+        android:layout_width="match_parent"
+        android:layout_height="35px"
+        android:layout_marginTop="5px"
+        android:gravity="center"
+        android:textSize="@dimen/menu_font_size" />
+
+    <ImageView
+        android:id="@+id/bg_cover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="10px"
+         />
+</FrameLayout>

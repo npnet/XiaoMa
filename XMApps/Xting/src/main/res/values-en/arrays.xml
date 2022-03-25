@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="playMode">
+        <item>play in order</item>
+        <item>Single cycle</item>
+        <item>Shuffle Playback</item>
+        <item>Loop</item>
+    </array>
+
+    <array name="onlineFMTab">
+        <item>Similar radio</item>
+        <item>My Collection</item>
+    </array>
+
+    <array name="localFMTab">
+        <item>电台切换</item>
+        <item>(My) Collection</item>
+    </array>
+</resources>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_title_voice"
+        android:layout_width="@dimen/size_feedback_home_icon"
+        android:layout_height="@dimen/size_feedback_home_icon"
+        android:layout_marginStart="@dimen/size_feedback_title_icon_start"
+        android:layout_marginTop="@dimen/size_feedback_title_icon_top"
+        android:src="@drawable/feedback_title_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tv_feedback_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_feedback_title_start"
+        android:layout_marginTop="@dimen/size_feedback_title_top"
+        android:text="@string/feedback_title_content"
+        android:textSize="@dimen/font_size_feedback_32px"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/iv_title_voice"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tv_mine_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/size_feedback_mine_message_start"
+        android:text="@string/feedback_mine_message"
+        android:textColor="@color/mine_message_color"
+        android:textSize="@dimen/font_size_feedback_28px"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/tv_feedback_title"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/iv_mine_message_prompt"
+        android:layout_width="@dimen/size_mine_message_prompt_red_point"
+        android:layout_height="@dimen/size_mine_message_prompt_red_point"
+        android:src="@drawable/mine_message_red"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@id/tv_mine_message"
+        app:layout_constraintTop_toTopOf="@id/tv_mine_message" />
+
+
+    <ImageView
+        android:id="@+id/iv_serial_number_one"
+        android:layout_width="@dimen/size_feedback_serial_number"
+        android:layout_height="@dimen/size_feedback_serial_number"
+        android:layout_marginTop="@dimen/size_feedback_one_top"
+        android:src="@drawable/icon_one"
+        app:layout_constraintStart_toStartOf="@id/tv_feedback_title"
+        app:layout_constraintTop_toBottomOf="@id/tv_feedback_title" />
+
+    <TextView
+        android:id="@+id/tv_question_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_feedback_one_second_title_start"
+        android:layout_marginTop="@dimen/size_feedback_one_title_top"
+        android:text="@string/feedback_please_desc_question"
+        android:textSize="@dimen/font_size_feedback_28px"
+        app:layout_constraintStart_toEndOf="@id/iv_serial_number_one"
+        app:layout_constraintTop_toBottomOf="@id/tv_feedback_title" />
+
+
+    <ImageView
+        android:id="@+id/iv_voice_input"
+        android:layout_width="@dimen/width_feedback_voice_input"
+        android:layout_height="@dimen/height_feedback_voice_input"
+        android:layout_marginTop="@dimen/size_feedback_input_voice_top"
+        android:src="@drawable/icon_voice_input"
+        app:layout_constraintStart_toStartOf="@id/iv_serial_number_one"
+        app:layout_constraintTop_toBottomOf="@id/tv_question_desc" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_edit_tag"
+        android:layout_width="@dimen/width_edit_layout"
+        android:layout_height="@dimen/height_edit_layout"
+        android:layout_marginStart="@dimen/size_feedback_input_edit_start"
+        android:background="@drawable/bg_feedback_edit"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/size_edit_padding"
+        app:layout_constraintStart_toEndOf="@id/iv_voice_input"
+        app:layout_constraintTop_toTopOf="@id/iv_voice_input">
+
+        <EditText
+            android:id="@+id/et_feedback_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:gravity="top|start"
+            android:hint="@string/feedback_content_limit_hint"
+            android:maxLength="200"
+            android:textColor="@color/feedback_edit_text_color"
+            android:textColorHint="@color/feedback_edit_text_color"
+            android:textSize="@dimen/font_size_feedback_24px" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_edit_counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_feedback_input_edit_end"
+        android:text="200"
+        android:textColor="@color/feedback_edit_text_color"
+        android:textSize="@dimen/font_size_feedback_24px"
+        app:layout_constraintBottom_toBottomOf="@id/ll_edit_tag"
+        app:layout_constraintStart_toEndOf="@id/ll_edit_tag" />
+
+
+    <ImageView
+        android:id="@+id/iv_serial_number_two"
+        android:layout_width="@dimen/size_feedback_serial_number"
+        android:layout_height="@dimen/size_feedback_serial_number"
+        android:layout_marginTop="@dimen/size_feedback_category_title_top"
+        android:src="@drawable/icon_second"
+        app:layout_constraintStart_toStartOf="@id/tv_feedback_title"
+        app:layout_constraintTop_toBottomOf="@id/ll_edit_tag" />
+
+    <TextView
+        android:id="@+id/tv_select_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_feedback_one_second_title_start"
+        android:layout_marginTop="@dimen/size_feedback_category_title_top"
+        android:text="@string/feedback_select_question_category"
+        android:textSize="@dimen/font_size_feedback_28px"
+        app:layout_constraintStart_toEndOf="@id/iv_serial_number_two"
+        app:layout_constraintTop_toBottomOf="@id/ll_edit_tag" />
+
+
+    <com.xiaoma.personal.feedback.ui.view.QuestionCategoryGroup
+        android:id="@+id/question_category_group"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_feedback_category_group_start"
+        android:layout_marginTop="@dimen/size_feedback_category_group_top"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_select_category" />
+
+
+    <Button
+        android:id="@+id/bt_feedback_post"
+        android:layout_width="@dimen/width_home_btn"
+        android:layout_height="@dimen/height_home_btn"
+        android:layout_marginStart="@dimen/size_feedback_post_bt_start"
+        android:layout_marginTop="@dimen/size_feedback_post_bt_top"
+        android:background="@drawable/selector_button"
+        android:enabled="false"
+        android:gravity="center"
+        android:text="@string/action_submit"
+        android:textColor="@color/bt_unable"
+        android:textSize="@dimen/font_size_feedback_24px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

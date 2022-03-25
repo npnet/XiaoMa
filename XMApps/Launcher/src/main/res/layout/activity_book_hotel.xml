@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/tv_step"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="60px"
+        layout="@layout/select_tap_hotel"/>
+
+    <TextView
+        android:id="@+id/tv_book_tip"
+        android:layout_width="@dimen/hotel_book_tv_book_tip_width"
+        android:layout_height="@dimen/hotel_book_tv_book_tip_height"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@string/order_success"
+        android:textColor="#00ffff"
+        android:textSize="@dimen/hotel_book_tv_book_tip_size"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hotel_book_framelayout_height"
+        android:layout_marginLeft="30px"
+        android:layout_below="@+id/tv_step">
+
+        <LinearLayout
+            android:id="@+id/ll_step_first"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.xiaoma.ui.view.XmScrollBar
+                android:id="@+id/scroll_bar"
+                android:layout_width="@dimen/width_scrollbar"
+                android:layout_height="@dimen/height_scrollbar"
+                android:layout_gravity="center_horizontal"
+                android:visibility="invisible" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_hotel_detail"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:scrollbars="none" />
+        </LinearLayout>
+
+
+        <ViewStub
+            android:id="@+id/vs_step_second"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout="@layout/view_book_msg"
+            android:visibility="gone" />
+
+        <ViewStub
+            android:id="@+id/vs_step_third"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout="@layout/view_pay_hotel"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+</RelativeLayout>

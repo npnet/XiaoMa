@@ -1,0 +1,619 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="module_desc">Launcher</string>
+    <string name="app_name_launhcer">Launcher</string>
+    <string name="wechat_connect">Smart WeChat</string>
+    <string name="fetching_qr_code">Reloading for you...</string>
+    <string name="retry_qr_code">Network exception, please reload</string>
+    <string name="retry_qr_click_img">Click the icon to reload</string>
+    <string name="bind_wechat_tip">Open WeChat scan code QR code</string>
+    <string name="bind_wechat_instruction">绑定微信可将微信中的位置、歌曲发送至车机，上车即可发起导航或收听歌曲</string>
+    <string name="unbind_wechat">Untie >></string>
+    <string name="bind_wechat_success">微信号“XXXXX”已绑定该车机</string>
+    <string name="unbind_wechat_fail">解绑失败请重新操作</string>
+    <string name="app_mark_no_find">应用未安装</string>
+    <string name="phone_to_car_dialog_title">导航通知</string>
+    <string name="sure">Confirm</string>
+    <string name="cancel">Cancel</string>
+    <string name="auto_check">收到飞幕后5s自动查看</string>
+    <string name="received_picture">收到一张图片</string>
+    <string name="photo_damage">照片路径损坏</string>
+    <string name="received_video">收到一段视频</string>
+    <string name="received_link">收到一条分享链接</string>
+    <string name="open_picture">打开图片</string>
+    <string name="open_video">打开视频</string>
+    <string name="open_link">打开链接</string>
+    <string name="temporary_poi">武汉天河国际机场</string>
+    <string name="temporaty_location">湖北省武汉市黄陂区机场大道</string>
+    <string name="log_test_plugin">插件</string>
+    <string name="file_size"><![CDATA[&#160;&#160;&#160;&#160;%s]]></string>
+    <string name="recent_booking">最近\n预定</string>
+    <string name="recent_visiting">最近\n访问</string>
+    <string name="collect">Collection</string>
+    <string name="confirm_to_create">Confirm creation(%ds)</string>
+    <string name="confirm_to_create2">Confirm creation</string>
+    <string name="found_succeed">Created successfully</string>
+    <string name="call_phone">Phone</string>
+    <string name="guide_map">Navigation</string>
+    <string name="book_order">Book</string>
+    <string name="recom_hotel">Hotel recommendation</string>
+    <string name="check_in_out">Check-in and out date</string>
+    <string name="cancel_book">Cancel the reservation</string>
+    <string name="book_success">Successful reservation</string>
+    <string name="date_year_month">%1$d.%2$d</string>
+    <string name="compile">Edit</string>
+    <string name="finish">Done</string>
+    <string name="no_order_hotel">No hotel order</string>
+    <string name="enable_activity_url">无效的活动链接</string>
+    <string name="skip_time">跳过(%d秒)</string>
+    <!--音频相关-->
+    <string name="audio_fragment_audio_source">音源</string>
+    <string name="audio_fragment_audio_music">音乐</string>
+    <string name="audio_fragment_audio_xting">电台</string>
+    <string name="audio_fragment_audio_favorite">MY Collection</string>
+    <string name="audio_fragment_audio_music_en">MUSIC</string>
+    <string name="audio_fragment_audio_xting_en">RADIO</string>
+    <string name="audio_fragment_audio_favorite_en">COLLECT</string>
+
+    <string name="favorite_music">Music Collection</string>
+    <string name="favorite_xting">Radio Collection</string>
+
+    <string name="audio_type_xting_net_fm">在线电台</string>
+    <string name="audio_type_xting_local_fm">Local FM</string>
+    <string name="audio_type_music_online">在线音乐</string>
+    <string name="audio_type_music_usb">USB music</string>
+    <string name="audio_type_music_bt">Bluetooth music</string>
+
+    <string name="audio_play_back_main">返回主菜单</string>
+
+    <string name="audio_play_mode_sequential">顺序播放</string>
+    <string name="audio_play_mode_list_loop">循环播放</string>
+    <string name="audio_play_mode_single_loop">单曲循环</string>
+    <string name="audio_play_mode_shuffle">随机播放</string>
+
+    <string name="audio_local_music_connect">Connected</string>
+    <string name="audio_local_music_disconnect">Unconnected</string>
+
+    <string name="no_audio_info">No song</string>
+
+    <string name="audio_first">已经是第一首了</string>
+    <string name="audio_last">已经是最后一首了</string>
+
+    <string name="audio_music_list">音乐列表</string>
+    <string name="audio_no_network">Network anomaly, please try again later</string>
+    <string name="audio_bt_play_error">蓝牙音乐播放失败</string>
+    <string name="audio_usb_play_error">没有发现音乐文件哦</string>
+
+    <string name="usb_audio_no_found">No USB devices</string>
+    <string name="bt_audio_no_found">未连接蓝牙音乐</string>
+
+    <string name="collected_audio_success">collected</string>
+    <string name="un_collected_audio_success">Cancel collection</string>
+
+    <string name="setting_pkg">com.xiaoma.setting</string>
+    <string name="setting_main_cls">com.xiaoma.setting.main.ui.MainActivity</string>
+
+    <string name="service_disconnect_press_again">服务重新连接,请点击重试</string>
+    <string name="audio_fm_searching">Searching &#8230;</string>
+    <string name="audio_not_play">音频数据异常,无法播放</string>
+    <!--音频相关-->
+
+    <!--服务相关-->
+    <string name="service_fragment_service_recommend">服务推荐</string>
+    <string name="service_fragment_travel_service">出行服务</string>
+    <string name="service_fragment_car_service">车辆服务</string>
+    <string name="fragment_car_service_need_period">Has reached the maintenance period</string>
+    <string name="fragment_car_service_no_need_period">Maintenance time not up</string>
+    <string name="clear_date">Clear the date</string>
+    <string name="btn_sure">Confirm</string>
+
+    <!--电影相关-->
+    <string name="row_col_price">%s排%s座&#160;%s元&#160;&#160;&#160;&#160;</string>
+    <string name="film_duration">%s分钟</string>
+    <string name="select_film">Choose a movie</string>
+    <string name="stop_buy_tick">该场次停止购票，请选择其他场次</string>
+    <string name="not_user_info">暂无用户信息</string>
+    <string name="recom_film">Movie recommendation</string>
+    <string name="cinema_landmark">%s&#160;&#160;&#160;&#160;|&#160;&#160;&#160;&#160;%skm&#160;&#160;&#160;&#160;|&#160;&#160;&#160;&#160;</string>
+    <string name="row_and_col">%s排%s座</string>
+    <string name="film_name">《%s》</string>
+    <string name="price_people">￥%s/人</string>
+    <string name="film_price">%s/￥%s元起</string>
+    <string name="film_min_price">￥%s元起</string>
+    <string name="film_not_price">暂无价格</string>
+    <string name="film_time_price">《%s》/%s元起</string>
+    <string name="date_str_format">%d-%d-%d</string>
+    <string name="landmark">%s|%skm|¥%s起</string>
+    <string name="trailer">《%s》-Prevue</string>
+    <string name="seat_list">￥%s</string>
+    <string name="not_slete_seat">Not slete seat</string>
+    <string name="ticket_sheet">张</string>
+    <string name="row">排</string>
+    <string name="seat">座&#160;</string>
+    <string name="yuan">元&#160;&#160;&#160;</string>
+    <string name="seat_max_four">/4）</string>
+    <string name="seat_list_zero_four">座位列表（0/4）</string>
+    <string name="select_session_and_seats">Select the session and seat</string>
+    <string name="scan_code_pay">Scan to pay</string>
+    <string name="right_now_buy_film_ticket">Buy tickets now</string>
+    <string name="prevue">Watch trailer</string>
+    <string name="driving_forbid_watch_video">行车过程中不可观看视频</string>
+    <string name="driving_watch_video_message">驾驶中观看视频属于危险行为，\n是否继续播放</string>
+    <string name="driving_watch_video_tip">(在设置中可关闭该提醒)</string>
+    <string name="driving_watch_video_replay">继续播放</string>
+    <string name="driving_watch_video_stop_close">停止并关闭</string>
+
+    <string name="hotel_landmark">%s&#160;&#160;&#160;&#160;|&#160;&#160;&#160;&#160;%s&#160;&#160;&#160;&#160;|&#160;&#160;&#160;&#160;%skm&#160;&#160;&#160;&#160;|&#160;&#160;&#160;&#160;¥%s起</string>
+    <string name="check_date">Check-in and out date:\n %s-%s</string>
+    <string name="price">¥%s</string>
+    <string name="sure_book">确认预订</string>
+    <string name="sure_book_room">确认预订 ¥%s</string>
+    <string name="hotel_name">Hotel name:\n%s</string>
+    <string name="room_type">Room type:\n%s</string>
+    <string name="room_count">Room reservations:\n%d rooms</string>
+    <string name="book_call">Contact information:\n%s</string>
+    <string name="no_room">已满</string>
+    <string name="booking">book</string>
+    <string name="one_hour_to_confirm">1小时内确认</string>
+    <string name="room_condition">%s&#160;&#160;|&#160;&#160;%s&#160;&#160;|&#160;&#160;%s</string>
+    <string name="room_condition_cancel">%s&#160;&#160;&#160;&#160;|&#160;&#160;&#160;&#160;%s&#160;&#160;&#160;&#160;|&#160;&#160;&#160;&#160;%s&#160;&#160;&#160;&#160;|&#160;&#160;&#160;&#160;%s</string>
+    <string name="no_window">无窗</string>
+    <string name="has_window">有窗</string>
+    <string name="some_window">部分有窗</string>
+    <string name="no_net">无网</string>
+    <string name="has_kuandai">有宽带</string>
+    <string name="has_wifi">有WIFI</string>
+    <string name="add_room">Add a room</string>
+    <string name="cancel_not">不可取消</string>
+    <string name="cancel_ok">可取消</string>
+    <string name="confirm_right_away">Instant confirmation</string>
+    <string name="confirm_wait">to be confirmed</string>
+
+    <string name="app_remove_notify">"抱歉，应用「%s」已下线"</string>
+    <string name="book_room_count">预订房间:\n%d间</string>
+    <string name="scan_code_cancel">扫码支付后:\n%s都可取消预约</string>
+    <string name="scan_code_price">Use Alipay, WeChat scan to pay\n¥%s</string>
+    <string name="cancel_order_success">Cancel booking successfully</string>
+    <string name="order_loading">Submitted reservation information for business feedback</string>
+    <string name="order_out_date">The order has expired,please reschedule...</string>
+    <string name="order_failed">Reserve failed,not enough room,the deposit will be returned later</string>
+    <string name="order_success">Successful reservation</string>
+    <string name="already_cancel_order">Reservation cancelled</string>
+    <string name="rescan_to_pay">No payment information has been received yet, please try again later</string>
+    <string name="no_more_data">No more data</string>
+    <string name="no_room_left">Sorry,the room is fully booked</string>
+    <string name="re_booking">Reschedule</string>
+    <string name="hotel_no_room_message">The hotel has no room to book</string>
+    <string name="hotel_no_room_add">The room type of this room is full.</string>
+    <string name="hotel_no_land">暂无地标</string>
+    <string name="nearby_hotel">Nearby hotel</string>
+    <string name="recommend_hotel">Hotel recommendation</string>
+
+    <string name="address_distance">%sm</string>
+    <string name="thousand_address_distance">%skm</string>
+    <string name="load_more_loading">Loading...</string>
+    <string name="load_complete">加载完成</string>
+    <string name="load_no_more">No more data</string>
+    <string name="load_error">Load failed, try again</string>
+    <string name="im_guide">Yes</string>
+    <string name="room">房间</string>
+    <string name="time">时间</string>
+    <string name="play_time">开播</string>
+    <string name="ticket_count">票数</string>
+    <string name="my_order">My order</string>
+
+    <string name="app_no_install_tip">当前应用还未安装</string>
+    <string name="nearby_play">周边游</string>
+    <string name="btn_navi">Navigation</string>
+    <string name="btn_phone">Phone</string>
+    <string name="buy_tickets_now">Buy tickets now</string>
+
+    <string name="housekeeper_tip1">"Hi，我是您的出行管家"</string>
+    <string name="housekeeper_tip2">"我会提供目的地相关的服务"</string>
+    <string name="housekeeper_tip3">"变更目的地>>"</string>
+    <string name="destination_food">目的地\n 美食</string>
+    <string name="destination_scenic">目的地\n 景点</string>
+    <string name="hotel_image">酒店外景</string>
+
+    <string name="booking_three_room_type_price">%s&#160;&#160;&#160;&#160;<font color='#ffcc33'>s%</font></string>
+    <string name="booking_three_room_count">%d间</string>
+    <string name="booking_three_room_date">%s-%s</string>
+    <string name="booking_three_room_cancel_date">%s前都可取消</string>
+    <string name="booking_three_phone">%s</string>
+    <string name="booking_three_no_cancel">当前订单:不可取消</string>
+
+    <string name="not_area">暂无地标</string>
+    <string name="item_four_detail">%s&#160;&#160;&#160;|&#160;&#160;&#160;%s&#160;&#160;&#160;|&#160;&#160;&#160;%skm&#160;&#160;&#160;|&#160;&#160;&#160;人均¥%s&#160;&#160;&#160;</string>
+    <string name="item_four_detail_no_price">%s&#160;&#160;&#160;|&#160;&#160;&#160;%s&#160;&#160;&#160;|&#160;&#160;&#160;%skm&#160;&#160;&#160;|&#160;&#160;&#160;暂无人均</string>
+    <string name="item_four_attraction_detail">%s&#160;&#160;&#160;|&#160;&#160;&#160;%skm&#160;&#160;&#160;|&#160;&#160;&#160;人均¥%s&#160;&#160;&#160;</string>
+    <string name="item_three_detail">%s&#160;&#160;&#160;|&#160;&#160;&#160;%skm&#160;&#160;&#160;|&#160;&#160;&#160;¥%s起&#160;&#160;&#160;</string>
+    <string name="item_three_detail2">%s&#160;&#160;&#160;|&#160;&#160;&#160;%skm&#160;&#160;&#160;|&#160;&#160;&#160;¥%s起&#160;&#160;&#160;</string>
+    <string name="item_three_detail_null">%s&#160;&#160;&#160;|&#160;&#160;&#160;%skm&#160;&#160;&#160;|&#160;&#160;&#160;暂无价格&#160;&#160;&#160;</string>
+    <string name="item_film_detail">%s&#160;&#160;&#160;|&#160;&#160;&#160;%s分钟&#160;&#160;&#160;</string>
+    <!--景点美食-->
+    <string name="nearby_attractions">Nearby attractions</string>
+    <string name="recommend_attractions">Attractions recommendation</string>
+    <string name="nearly_delicious">Nearby cuisine</string>
+    <string name="recom_delicious">Food recommendation</string>
+    <string name="avgprice_text">人均￥%s</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="phone_sure">Phone number is %s</string>
+    <string name="user_not_load">没有用户信息</string>
+    <string name="not_nvi_info">没有定位信息</string>
+    <string name="not_time_info">没有时间信息</string>
+    <string name="not_location_information_was_obtained">未获取到定位信息</string>
+    <string name="pay_being">正在支付请稍等</string>
+    <string name="hot_film">Hot movie</string>
+    <string name="not_find_film">No prevue.</string>
+    <string name="select_cinema">Select cinema</string>
+    <string name="delicious_landmark">%s&#160;&#160;&#160;&#160;|&#160;&#160;&#160;&#160;%s&#160;&#160;&#160;&#160;|&#160;&#160;&#160;&#160;%s&#160;&#160;&#160;&#160;|&#160;&#160;&#160;&#160;人均¥%s</string>
+    <string name="delicious_landmark_no_price">%s&#160;&#160;&#160;&#160;|&#160;&#160;&#160;&#160;%s&#160;&#160;&#160;&#160;|&#160;&#160;&#160;&#160;%s&#160;&#160;&#160;&#160;|&#160;&#160;&#160;&#160;暂无人均</string>
+    <string name="attractions_landmark">%s&#160;&#160;&#160;&#160;|&#160;&#160;&#160;&#160;%s&#160;&#160;&#160;&#160;|&#160;&#160;&#160;&#160;人均¥%s</string>
+
+    <!--景点美食-->
+
+
+    <!--附近停车场加油站-->
+    <string name="nearby_oilpark">Nearby %s</string>
+    <string name="recommend_oilpark">%s recommendation</string>
+    <string name="oilpark_landmark">%s&#160;&#160;&#160;&#160;|&#160;&#160;&#160;&#160;%s</string>
+    <!--附近停车场加油站-->
+
+
+    <!--出行对话框String-->
+    <string name="travel_tip_str">Prompt</string>
+    <string name="travel_message_navi_hotel">Whether to navigate to the hotel?</string>
+    <string name="travel_message_navi_delicious">Whether to navigate to the business？</string>
+    <string name="travel_message_navi_cinema">Whether to navigate to the cinema？</string>
+    <string name="message_buy_tickets_now">是否影院购票？</string>
+    <string name="travel_message_navi_attractions">Start navigation？</string>
+    <string name="travel_message_navi_park">Whether to navigate to the park？</string>
+    <string name="travel_message_navi_oil">Whether to navigate to the oil station？</string>
+    <string name="travel_left_btn_navi">Yes</string>
+    <string name="travel_right_btn">No</string>
+    <string name="travel_booking_three_message">The order has been generated,only need to be paid\r\nconfirm to leave?</string>
+    <string name="travel_left_btn_back">Confirm to leave</string>
+    <string name="travel_booking_three_cancel_message">Confirm the cancellation of the reservation?\nAfter cancelling the reservation,the deposit will be returned to the original account</string>
+    <string name="travel_left_btn_cancel_book">Cancel the reservation</string>
+    <string name="usb_unsupport">不支持的USB设备</string>
+    <string name="please_connect_usb">请连接USB设备</string>
+    <string name="order_generate">Order has been generated, please scan to pay</string>
+    <string name="renew_select_cinema">Reselect cinema</string>
+    <string name="retry">重试</string>
+    <string name="renew_select_film">Reselect movie</string>
+
+    <string name="nearby_park_station">Nearby parking lots</string>
+    <string name="nearby_gas_station">Nearby gas stations</string>
+    <string name="travel_message_phone_hotel">Whether to call the hotel?\n%s</string>
+    <string name="travel_message_phone_delicious">Whether to call the business?\n%s</string>
+    <string name="travel_message_phone_cinema">Whether to call the cinema？\n%s</string>
+    <string name="travel_message_phone_attraction">Whether to call the attraction？\n%s</string>
+    <string name="travel_left_btn_phone">Yes</string>
+    <string name="travel_left_btn_delete">立即删除</string>
+    <string name="travel_message_room_delete_hotel">是否删除"房间%d"的登记信息</string>
+    <string name="travel_message_room_hotel">unable to delete\nAt least one room.</string>
+    <string name="travel_left_btn_i_know">OK</string>
+
+    <!--出行对话框String-->
+    <string name="gas_stations">gas stations</string>
+    <string name="parking_lots">parking lots</string>
+    <string name="oil_shortage">Insufficient oil</string>
+    <string name="maintenance_time_not_up">Maintenance time not up</string>
+    <string name="input_right_phone_number">please enter a valid phone number</string>
+    <string name="phone_number_revise_success">Contact info modified</string>
+    <string name="please_scan_qrcode_pay">Order has been generated, please scan to pay</string>
+    <string name="dialog_modify">Modify</string>
+    <string name="zero_time">00:00</string>
+    <string name="open_phone">打开电话</string>
+    <string name="open_nvi">打开导航</string>
+    <string name="open_nvi_error">打开导航失败</string>
+    <string name="obtaining_viewing_code">正在获取观影码....</string>
+    <string name="collection_failed">Collection failed</string>
+    <string name="collection_success">collected</string>
+    <string name="cancle_collect">Cancel collection</string>
+    <string name="goto_nvi">去导航</string>
+    <string name="leaf">张</string>
+    <string name="already_collect">Already collection</string>
+    <string name="collcet_operate_fail">%s fail</string>
+    <string name="collcet_operate_success">%s succeed</string>
+    <string name="watch_movie">查看电影</string>
+    <string name="guide">Navigation</string>
+    <string name="delicious">Cuisine</string>
+    <string name="cinema">Cinema</string>
+    <string name="move">Movie</string>
+    <string name="attraction">Attractions</string>
+    <string name="hotel">hotel</string>
+    <string name="no_collect">No %s collection</string>
+    <string name="no_cinema_no_move">没有影院有该影片资源</string>
+    <string name="cinema_notany_move">The cinema has no video resources</string>
+    <string name="cinema_no_move">附近暂无影院有《%s》影片上映</string>
+    <string name="no_order">No %s order</string>
+    <string name="no_recommend">No %s recommended</string>
+    <string name="no_hotel">暂无热门%s</string>
+    <string name="no_nearly">No %s nearby</string>
+    <string name="no_find_related">没有找到“%s”相关%s</string>
+    <string name="look_details">look_details</string>
+    <string name="nearby_cinema">Nearby cinema</string>
+    <string name="cuisine_classification">Cuisine classification</string>
+    <string name="attraction_classification">Attraction classification</string>
+    <string name="select_the_session">Select the session</string>
+    <string name="choose_a_seat">Seat</string>
+    <string name="confirm_payment">Confirm payment</string>
+
+
+    <!--RecommendDialog-->
+    <string name="recommend_message_hotel">为您推荐了一些酒店，请查看</string>
+    <string name="recommend_message_food">发现附近几家不错的美食~</string>
+    <string name="recommend_message_attraction">发现附近几家不错的景点~</string>
+    <string name="recommend_message_parking">发现附近几家停车场~</string>
+    <string name="recommend_message_oil">发现附近几家加油站~</string>
+    <string name="recommend_oil">加油站</string>
+    <string name="recommend_parking">停车场</string>
+    <string name="recommend_message_map">地图推荐</string>
+    <string name="recommend_message_radio">电台推荐</string>
+    <string name="recommend_message_music">音乐推荐</string>
+    <string name="recommend_message_film">要不要去看个电影放松下？</string>
+    <!--RecommendDialog-->
+    <string name="error_msg">Server Error</string>
+    <string name="error_msg_hotel_id">Not getting the hotel</string>
+
+    <!--酒店政策-->
+    <string name="hotel_policy">Hotel policy</string>
+    <string name="hotel_policy_tip">Hotel information may be adjusted, please refer to the actual occupancy</string>
+    <string name="hotel_policy_time"><![CDATA[Check-in&out date]]></string>
+    <string name="hotel_policy_cancel">取消政策</string>
+    <string name="hotel_policy_add_bed">儿童及加床政策</string>
+    <string name="hotel_policy_pet">宠物</string>
+    <string name="parking_recomomend">Parking lot recommendation</string>
+    <string name="not_data">数据为空</string>
+    <string name="not_movie_order_date">暂无已完成影片订单</string>
+    <!--酒店政策-->
+
+    <string name="location_error_hotel">当前定位失败，请稍后重试</string>
+    <string name="happy_flat_trip_text">这是一次心情美丽的旅行</string>
+    <string name="stupid_flat_trip_text">这是一次心情平淡的旅行</string>
+    <string name="cry_flat_trip_text">这是一次心情糟糕的旅行</string>
+    <string name="trip_date_delete">Deleted</string>
+    <string name="mark_save_dwon">Keep(%ds)</string>
+    <string name="recording_number">You went to %d places and recorded %d moments.</string>
+    <string name="price_test_failure">价格效验失败，请重新选择电影</string>
+
+
+    <!--自定义相机-->
+    <string name="tips_camera_not_exist">不存在相机设备</string>
+    <string name="topic_camera_flashlight_off">关闭</string>
+    <string name="topic_camera_flashlight_on">开启</string>
+    <string name="topic_camera_flashlight_auto">自动</string>
+    <string name="topic_camera_front">前镜头</string>
+    <string name="topic_camera_back">后镜头</string>
+    <string name="topic_camera_takephoto_failure">拍照竟然失败了！</string>
+    <string name="tips_camera_forbidden">初始化相机失败</string>
+
+    <string name="product_more_detail">更多详情</string>
+    <string name="product_ingredients">查看成分分析</string>
+    <string name="product_count_in_meila">%s件收录，国内最大的妆品信息库</string>
+    <!--<string name="topic_camera_photo_save">拍照文件存储失败了！</string>-->
+
+    <string name="hotel_empty">当前暂无酒店数据</string>
+    <string name="net_work_error">Network exception, please try again later</string>
+    <string name="please_install_xting">请先安装电台</string>
+    <string name="please_install_music">请先安装音乐</string>
+    <string name="str_year">%d年</string>
+    <string name="lunar_first_day">初一</string>
+    <string name="lunar_first_month">正月</string>
+    <string name="lunar_spring_festival">春节</string>
+    <string name="error_net_retry">Network anomaly, please try again later</string>
+    <string name="retry_load">Reload</string>
+    <string name="del_sch_success">删除成功</string>
+    <string name="add_location_msg">Click to add location information</string>
+    <string name="no_sch">No schedule</string>
+    <string name="please_input_name">请输入名字</string>
+    <string name="schedule_time">%s  %s</string>
+    <string name="none">无</string>
+    <string name="speak_nothing">你未说话</string>
+    <string name="hi_master">Hi，master</string>
+    <string name="select_model_fetch_res">Different resources for mode</string>
+    <string name="life_mode">Life</string>
+    <string name="work_mode">Work</string>
+    <string name="travel_mode">Travel</string>
+    <string name="need_quiet">Queit</string>
+
+
+    <string name="welcome_str">%1$s,%2$s</string>
+    <string name="one_number">1</string>
+    <string name="two_number">2</string>
+    <string name="three_number">3</string>
+    <string name="select_room_type">Room type</string>
+    <string name="input_book_info">Reservation info</string>
+    <string name="pay_code">Scan to pay</string>
+    <string name="already_end">已经到末尾了</string>
+    <string name="hotel_name_str">Hotel name</string>
+    <string name="room_type_str">Room type</string>
+    <string name="check_in_out_str">Check in-Check out</string>
+    <string name="book_room_num_str">Booked Number</string>
+    <string name="contact_str">Contact information</string>
+    <string name="pay_str">Pay</string>
+    <string name="request_overlay_permission">请打开悬浮窗权限</string>
+    <string name="surce_goaway">Confirm to leave</string>
+    <string name="forget_it">Cancel</string>
+
+    <string name="pay_timer_interval">%1$s:%2$s</string>
+    <string name="book_user_hint">请填写住户姓名</string>
+    <string name="book_user_phone_hint">Please fill in the resident\&#39;s phone number.</string>
+    <string name="film_user_phone_hint">Enter mobile number</string>
+    <string name="mark_clean_message">Delete or Not?</string>
+    <string name="mark_clean_ok">Confirm</string>
+    <string name="merk_clean_no">Cancel</string>
+    <string name="clean_failure">删除失败</string>
+    <string name="trip_complete">完成</string>
+    <string name="trip_edit">Edit</string>
+    <string name="year_month">%d-%d</string>
+    <string name="nearby_no_cinema_data">No cinema nearby</string>
+    <string name="nearby_delicious_no_data">No delicious nearby</string>
+    <string name="nearby_hotel_no_data">No hotels nearby</string>
+    <string name="nearby_attractions_no_data">No attractions nearby</string>
+    <string name="cinema_collect_text">My collection</string>
+    <string name="create_sch_fail">创建日程失败</string>
+    <string name="say_about_sch_remind">请说关于日程提醒的</string>
+    <string name="no_time_say_again">您没告诉我日期，再说一次吧</string>
+    <string name="wrong_time_say_again">您的日程时间不正确，再说一次吧</string>
+    <string name="no_msg_say_again">您没告诉我事件，再说一次吧</string>
+    <string name="not_clear_say_again">我没听清,请再说一次</string>
+    <string name="need_record_something">Anything need to record?</string>
+    <string name="error_operate_failed">异常情况，操作失败</string>
+    <string name="schedule_reminder">你今日有%d个提醒事项</string>
+    <string name="password_login">Password login</string>
+    <string name="bluetooth_key_login">Bluetooth key login</string>
+    <string name="ordinary_key_login">Key login</string>
+    <string name="face_recognition_login">Face recognition login</string>
+
+    <!--快捷设置-->
+    <string name="bluetooth_close">Bluetooth is off</string>
+    <string name="bluetooth_open">蓝牙已开启</string>
+    <string name="data_switch_open">移动数据已开启</string>
+    <string name="data_switch_close">移动数据已关闭</string>
+    <string name="wifi_close">WiFi is off</string>
+    <string name="wifi_open">WIFI已开启</string>
+    <string name="hotspot_close">热点已关闭</string>
+    <string name="hotspot_open">热点已开启</string>
+    <string name="action_failed">异常情况，操作失败</string>
+    <!--快捷设置-->
+
+    <string name="please_launcher_bluetooth_phone">Please turn on the Bluetooth phone first.</string>
+    <string name="tourist_login">Tourist landing</string>
+    <string name="offline_login">Offline landing</string>
+    <string name="myself_collect">My collection</string>
+    <string name="sure_to_create_with_3s">Confirm creation(3s)</string>
+    <string name="remind_demo">You can say: remind me to meet at 3 o\&#39;clock tomorrow afternoon.</string>
+    <string name="trip_city">途记城市</string>
+    <string name="mark_list_number">当前途记相册您共留下了%d个瞬间</string>
+    <string name="record_prompt">Prompt</string>
+    <string name="photo_upload_text">上传</string>
+    <string name="record_save_most"><u>更多</u></string>
+    <string name="most_prompt_text">
+        <Data>
+         <![CDATA[
+            <font color="#ffffff"> 云端存储是指拍摄到照片存至奔腾云端，您可在“奔腾FAN”app中查看 </font><br/>
+            <font color="#8A919D">（存储上限为200张）</font><br/>
+            <font color="#ffffff"> 本地存储是指拍摄的照片存储在本地，您可在旅途相册中查看</font><br/>
+            <font color="#8A919D">（存储上限为1000张)</font>
+            ]]>
+        </Data>
+    </string>
+    <string name="delete">删除</string>
+    <string name="already_save_service">提示：已保存至云端</string>
+    <string name="click_save_service">提示：点击上传可保存至云端</string>
+    <string name="photo_again_save">照片已保存至云端，是否再次保存？</string>
+    <string name="me_know">知道了</string>
+
+    <string name="not_photo_falue">无照片资源，上传失败</string>
+    <string name="saved_to_cloud_disk">已保存至云端</string>
+    <string name="fast_cloud_storage_limit">快到云端存储上限了,请通过奔腾FAN删除瞬间</string>
+    <string name="upload_file_aleary_upper_limit">上传失败,云端存储已达200张</string>
+    <string name="network_anomaly_save_local">网络异常，已保存至本地，请稍后再试</string>
+    <string name="network_anomaly">Network anomaly, please try again later</string>
+    <string name="save_local_aleary_finish">本地存储空间已使用完毕，请删除部分瞬间</string>
+    <string name="save_local_will_finish">本地存储空间将使用完毕，请删除部分瞬间</string>
+    <string name="camera_permission_not_granted">相机开启失败</string>
+
+    <string name="calendar_lunar_date">%s%s%s</string>
+    <string name="not_need_now">Not yet needed(%dS)</string>
+    <string name="have_a_look">take a look</string>
+    <string name="please_hangup_phone">请挂断当前通话</string>
+    <string name="listening_to_songs">听歌识曲</string>
+    <string name="not_have_phono">暂无电话</string>
+    <string name="colse_over_muscirec_date">清空全部数据？</string>
+    <string name="mark_finished">拍完了</string>
+    <string name="mark_ok">拍好了</string>
+    <string name="mark_yes">拍了</string>
+    <string name="mark_share_to_circle_friends">,你可以在手机车控应用中分享到朋友圈哦</string>
+    <string name="mark_album">Journey album</string>
+    <string name="mark_footprint">Journey trail</string>
+    <string name="mark_edit">Edit</string>
+
+    <string name="driving_score">Driving score</string>
+    <string name="disclaimer">Disclaimer</string>
+    <string name="agree">Agree</string>
+    <string name="disclaimer_agreement">Disclaimer agreement</string>
+    <string name="accepted_before_using">Following agreements should be accepted before using</string>
+
+    <string name="confirm">Confirm</string>
+    <string name="confirm_number_correct">Please confirm your phone number</string>
+    <string name="phone_number">Phone number</string>
+    <string name="already_paid">Paid already</string>
+    <string name="date_of_stay">Date of stay</string>
+    <string name="loading_wait">Loading</string>
+    <string name="unable_to_play">Network anomalies,unable to play.</string>
+    <string name="not_connect_network">Sorry,unable to connect to the network.</string>
+    <string name="check_in">Check in</string>
+    <string name="check_out">Check out</string>
+    <string name="optional">Optional</string>
+    <string name="sold">Sold</string>
+    <string name="selected">Selected</string>
+    <string name="choose_seat">Choose a seat</string>
+    <string name="ticket_accepting">（Ticket accepting）</string>
+    <string name="ticket_number">Purchase number of votes</string>
+    <string name="watch_movie_time">Viewing time</string>
+    <string name="use_alipay_wechat">Pay by Alipay/Wechat</string>
+    <string name="ticket_to_phone">Reserve successfully,ticket has been sent to your phone</string>
+    <string name="getting_admission_vouchers">Getting admission vouchers</string>
+    <string name="check_your_phone">please check your phone</string>
+    <string name="phone_certificate">Celphone number(ticket accepting)</string>
+    <string name="film_start">Start</string>
+    <string name="film_end">End</string>
+    <string name="no_score">No score</string>
+    <string name="reserve_successfully">Reserve successfully</string>
+
+    <string name="good_morning1">Good morning</string>
+    <string name="good_morning2">Good morning</string>
+    <string name="good_afternoon1">Good afternoon</string>
+    <string name="good_afternoon2">Good afternoon</string>
+    <string name="good_evening">Good evening</string>
+
+    <string name="cancel_appointment">Can cancel the appointment</string>
+    <string name="check_in_data">Check-in date</string>
+    <string name="check_out_data">Check-out date</string>
+    <string name="total_cost">Total cost</string>
+    <string name="room_number">Number of rooms booked</string>
+    <string name="replay">Replay</string>
+    <string name="no_park">No parking lots nearby</string>
+    <string name="no_gas">No gas stations nearby</string>
+    <string name="nothing">Nothing</string>
+    <string name="nearby_parking_lots">Nearby parking lots</string>
+    <string name="cinema_name">Cinema name</string>
+    <string name="position">Position</string>
+    <string name="serial_no">Serial number</string>
+    <string name="get_ticket_code">Ticket collection code</string>
+    <string name="enter_code">Admission code</string>
+    <string name="volume_adjustment">Volume adjustment</string>
+    <string name="push_message_phone">Push message to mobile phone</string>
+    <string name="common_ddress">Common address</string>
+    <string name="destination">Destination</string>
+    <string name="total_amount">Total amount</string>
+    <string name="no_movie_resources">No movie resources</string>
+    <string name="no_food_resources">No delicious resources</string>
+    <string name="no_attraction_resources">No attraction resources</string>
+    <string name="default_message">Default message</string>
+    <string name="channel_searching">Channel searching</string>
+    <string name="whether_cancel">Whether to cancel the collection</string>
+    <string name="details">Details</string>
+
+    <string name="no_found_number">No phone number found</string>
+    <string name="fast_setting">Quick settings</string>
+    <string name="app_plugin">Application plugin</string>
+    <string name="no_collection_food">No collection</string>
+    <string name="no_collection_attraction">No collection</string>
+    <string name="no_collection_cinema">No collection</string>
+    <string name="no_collection_hotel">No collection</string>
+
+    <string name="media_volume">Media Volume</string>
+    <string name="phone_volume">Phone Volume</string>
+    <string name="tts_volume">Tts Volume</string>
+    <string name="bl_volume">BlueTooth Music Volume</string>
+    <string name="recommender_mode">Recommended mode</string>
+    <string name="select_mode">Different modes,different resources</string>
+
+    <string name="mark_take_photo_prompt">提示：保存后瞬间将默认存至云端和车机本地</string>
+    <string name="song_name_failed">歌曲名获取失败</string>
+    <string name="singer_name_failed">歌手名获取失败</string>
+</resources>

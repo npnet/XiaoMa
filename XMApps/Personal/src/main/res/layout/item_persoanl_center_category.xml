@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/width_category_adapter"
+    android:layout_height="@dimen/height_category_adapter"
+    android:layout_marginLeft="@dimen/height_category_margin_left"
+    android:layout_marginTop="@dimen/size_category_layout_margin_top"
+    android:layout_marginBottom="@dimen/size_category_layout_margin_bottom"
+    android:layout_marginRight="@dimen/height_category_margin_right"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_category_icon"
+        android:layout_width="@dimen/size_category_adapter_avatar"
+        android:layout_height="@dimen/size_category_adapter_avatar"
+        android:src="@drawable/test" />
+
+
+    <TextView
+        android:id="@+id/tv_icon_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="tag"
+        android:textSize="@dimen/font_size_30px"
+        android:visibility="gone" />
+
+
+    <TextView
+        android:id="@+id/tv_category_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_category_layout_title_margin_top"
+        android:text="@string/account_manager"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_home" />
+
+
+</LinearLayout>

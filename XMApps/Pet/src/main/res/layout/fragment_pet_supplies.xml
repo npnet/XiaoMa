@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_pet_supplies"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:overScrollMode="never"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.xiaoma.pet.ui.view.PetScrollBar
+        android:id="@+id/pet_scroll_bar"
+        android:layout_width="@dimen/width_pet_scroll_bar"
+        android:layout_height="@dimen/height_pet_scroll_bar"
+        android:layout_marginStart="@dimen/size_pet_scroll_bar_margin_start"
+        app:background_bar_color="@color/pet_scroll_bar_bg"
+        app:foreground_bar_color="@color/mall_tab_color"
+        app:foreground_bar_width="@dimen/width_pet_scroll_bar_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/rv_pet_supplies"
+        app:layout_constraintTop_toTopOf="parent"
+        app:scroll_bar_width="@dimen/width_pet_scroll_bar" />
+
+
+    <LinearLayout
+        android:id="@+id/goods_empty_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="@dimen/size_goods_empty_image"
+            android:layout_height="@dimen/size_goods_empty_image"
+            android:src="@drawable/goods_empty" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/goods_empty_text"
+            android:textColor="@color/product_item_title"
+            android:textSize="@dimen/pet_font_size_30" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

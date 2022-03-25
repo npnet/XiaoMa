@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_shop_content_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/bt_complex"
+        style="@style/Sub_Title"
+        android:layout_marginStart="@dimen/size_tab_1_margin_left"
+        android:text="@string/tab_integrated"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/btn_sales_volume"
+        style="@style/Sub_Title"
+        android:layout_marginStart="@dimen/size_tab_other_margin_left"
+        android:text="@string/tab_sales"
+        app:layout_constraintStart_toEndOf="@id/bt_complex"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/bt_shelf"
+        style="@style/Sub_Title"
+        android:layout_marginStart="@dimen/size_tab_other_margin_left"
+        android:text="@string/tab_latest"
+        app:layout_constraintStart_toEndOf="@+id/btn_sales_volume"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/ll_coin_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_tab_other_margin_left"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toEndOf="@+id/bt_shelf"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/bt_coin_price"
+            style="@style/Sub_Title"
+            android:text="@string/car_coins_price" />
+
+        <ImageView
+            android:id="@+id/iv_coin_price_sort"
+            android:layout_width="@dimen/width_level_up_down"
+            android:layout_height="@dimen/height_level_up_down"
+            android:src="@drawable/selector_up_down" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_cash_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_tab_other_margin_left"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/ll_coin_price"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/bt_cash_price"
+            style="@style/Sub_Title"
+            android:text="@string/cash_price" />
+
+
+        <ImageView
+            android:id="@+id/iv_cash_price_sort"
+            android:layout_width="@dimen/width_level_up_down"
+            android:layout_height="@dimen/height_level_up_down"
+            android:src="@drawable/selector_up_down" />
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_list_margin_top"
+        android:clipToPadding="false"
+        android:paddingLeft="@dimen/size_list_padding_left"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_coin_price" />
+
+    <com.xiaoma.ui.view.XmScrollBar
+        android:id="@+id/scroll_bar"
+        android:layout_width="@dimen/width_scrollbar"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rv" />
+
+    <com.xiaoma.ui.StateControl.StateView
+        android:id="@+id/state_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_coin_price">
+
+    </com.xiaoma.ui.StateControl.StateView>
+
+</android.support.constraint.ConstraintLayout>

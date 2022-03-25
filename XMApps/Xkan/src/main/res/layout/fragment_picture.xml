@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <com.xiaoma.xkan.common.view.FilterView
+        android:id="@+id/filter_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_70"
+        android:layout_marginStart="@dimen/size_common_margin_left"
+        android:layout_marginTop="@dimen/dimen_92"
+        app:layout_constraintBottom_toTopOf="@+id/rv_file"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_file"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_500"
+        android:layout_marginTop="@dimen/size_common_rv_margin_top"
+        android:scrollbars="none"
+        app:layout_goneMarginTop="@dimen/dimen_178"
+        app:layout_constraintBottom_toTopOf="@+id/fl_bar_container"
+        app:layout_constraintTop_toBottomOf="@+id/filter_view" />
+
+
+    <FrameLayout
+        android:id="@+id/fl_bar_container"
+        android:layout_width="@dimen/width_scrollbar"
+        android:layout_height="@dimen/height_scrollbar"
+        android:layout_marginBottom="@dimen/size_scrollbar_margin_bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rv_file">
+
+        <com.xiaoma.xkan.common.view.XmScrollBar
+            android:id="@+id/scroll_bar"
+            android:layout_width="@dimen/width_scrollbar"
+            android:layout_height="@dimen/height_scrollbar" />
+    </FrameLayout>
+
+    <!--<include-->
+    <!--layout="@layout/empty_view"-->
+    <!--android:visibility="gone" />-->
+
+    <android.support.constraint.Group
+        android:id="@+id/group_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="rv_file,fl_bar_container" />
+
+</android.support.constraint.ConstraintLayout>

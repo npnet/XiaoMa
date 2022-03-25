@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/rl_flow_item"
+                android:layout_width="@dimen/width_item"
+                android:layout_height="@dimen/height_item"
+                android:background="@drawable/selector_item_flow">
+
+    <ImageView
+            android:id="@+id/iv_foreground"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    <TextView
+            android:id="@+id/tv_flow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/height_tv_flow_margin_top"
+            android:text="50M"
+            android:textSize="@dimen/font_of_shop_36"/>
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_price_layout"
+            android:layout_below="@id/tv_flow"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/size_price_layout_margin_top">
+
+        <LinearLayout
+                android:id="@+id/ll_price"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:id="@+id/tv_discount_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="￥100"
+                    android:layout_marginRight="@dimen/size_ll_price_margin_right"
+                    android:textColor="@color/color_number_yellow"
+                    android:textSize="@dimen/font_of_shop_28"
+                    android:textStyle="bold"/>
+
+            <!--<com.xiaoma.shop.business.ui.view.SlopeDeleteTextView-->
+                    <!--android:id="@+id/tv_price"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:includeFontPadding="false"-->
+                    <!--android:layout_marginRight="@dimen/size_ll_price_margin_right"-->
+                    <!--android:lines="1"-->
+                    <!--android:paddingLeft="4px"-->
+                    <!--android:paddingRight="4px"-->
+                    <!--android:text="￥100"-->
+                    <!--android:textColor="@color/color_flow_tv_origin_price"-->
+                    <!--android:textSize="@dimen/font_of_shop_20"-->
+                    <!--android:textStyle="bold"-->
+                    <!--app:slope_line_color="@android:color/holo_red_dark"/>-->
+
+        </LinearLayout>
+        <LinearLayout
+                android:id="@+id/ll_coin_price"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+            <ImageView
+                    android:id="@+id/iv_yellow_coin"
+                    android:layout_width="@dimen/size_flow_dimen_30x"
+                    android:layout_height="@dimen/size_flow_dimen_30x"
+                    android:background="@drawable/coin_yellow_middle"/>
+
+            <TextView
+                    android:id="@+id/tv_discount_coin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size_tv_discount_car_coin"
+                    android:textColor="@color/color_number_yellow"
+                    android:textSize="@dimen/font_of_shop_28"
+                    tools:text="20"/>
+
+            <!--<com.xiaoma.shop.business.ui.view.SlopeDeleteTextView-->
+                    <!--android:id="@+id/tv_coin"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:includeFontPadding="false"-->
+                    <!--android:lines="1"-->
+                    <!--android:layout_marginLeft="@dimen/size_ll_price_margin_right"-->
+                    <!--android:paddingLeft="4px"-->
+                    <!--android:paddingRight="4px"-->
+                    <!--android:textColor="@color/color_flow_tv_origin_price"-->
+                    <!--android:textSize="@dimen/font_of_shop_22"-->
+                    <!--app:slope_line_color="@android:color/holo_red_dark"-->
+                    <!--tools:text="20"/>-->
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

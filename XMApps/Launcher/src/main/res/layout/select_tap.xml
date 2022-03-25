@@ -1,0 +1,114 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingTop="90px"
+    android:layout_marginLeft="50px"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="@dimen/seat_table_tap_linear_right"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tap_one_img"
+            android:layout_width="@dimen/tap_one_img_width"
+            android:layout_height="@dimen/tap_one_img_height"
+
+            android:background="@drawable/round_back_yellow"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/tap_one_img_size" />
+
+        <TextView
+            android:id="@+id/tap_one_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/tap_one_text_left"
+            android:text="@string/select_cinema"
+            android:textSize="@dimen/tap_one_text_size" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="300px"
+        android:layout_height="1px"
+        android:gravity="center"
+        android:background="@color/color_8a919d"
+        />
+
+    <LinearLayout
+        android:layout_width="400px"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tap_two_img"
+            android:layout_width="@dimen/tap_two_img_width"
+            android:layout_height="@dimen/tap_two_img_height"
+            android:background="@drawable/round_back_gray"
+            android:gravity="center"
+            android:text="2"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/tap_two_img_size" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tap_two_select_session"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/tap_two_select_session_left"
+                android:text="@string/select_the_session"
+                android:textSize="@dimen/tap_two_select_session_size" />
+            <TextView
+                android:id="@+id/tap_two_branching"
+                android:text="/"
+                android:textSize="30px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tap_two_select_seat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/choose_a_seat"
+                android:textSize="@dimen/tap_two_select_seat_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="300px"
+        android:layout_height="1px"
+        android:gravity="center"
+        android:background="@color/color_8a919d"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingLeft="48px">
+
+        <TextView
+            android:id="@+id/tap_three_img"
+            android:layout_width="@dimen/tap_three_img_width"
+            android:layout_height="@dimen/tap_three_img_height"
+            android:background="@drawable/round_back_gray"
+            android:gravity="center"
+            android:text="3"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/tap_three_img_size" />
+
+        <TextView
+            android:id="@+id/tap_three_confirm_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/tap_three_confirm_pay_left"
+            android:text="@string/confirm_payment"
+            android:textSize="@dimen/tap_three_confirm_pay_size" />
+    </LinearLayout>
+</LinearLayout>

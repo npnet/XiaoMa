@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_common"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:paddingTop="160px">
+
+    <LinearLayout
+        android:id="@+id/user_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="190px"
+        android:paddingRight="190px">
+
+        <TextView
+            android:id="@+id/xiaomi_accout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="30px" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="66px">
+
+            <ImageView
+                android:id="@+id/xiaomi_head"
+                android:layout_width="226px"
+                android:layout_height="226px" />
+
+            <ImageView
+                android:background="@drawable/pic_headphoto_line"
+                android:layout_width="226px"
+                android:layout_height="226px" />
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/btn_login_out"
+            android:layout_width="310px"
+            android:layout_height="80px"
+            android:layout_marginTop="60px"
+            android:background="@drawable/btn_login_selector"
+            android:paddingBottom="30px"
+            android:text="@string/xiaomia_login_out_account"
+            android:textColor="@color/white"
+            android:textSize="22px" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/user_view"
+        android:paddingLeft="20px"
+        android:text="@string/xiao_mi_login_lable_1"
+        android:textColor="@color/white"
+        android:textSize="30px"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="812px"
+        android:layout_height="420px"
+        android:layout_below="@id/tv_title"
+        android:layout_marginTop="20px"
+        android:layout_toRightOf="@id/user_view"
+        android:src="@drawable/xiaomi_smart_home_bg" />
+</RelativeLayout>

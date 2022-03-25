@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="act_mian_navi_color">#484038</color>
+    <color name="white">#fff</color>
+    <color name="black">#000</color>
+    <color name="check_more">#192ac9</color>
+    <color name="red">#ff0000</color>
+    <color name="blue">#0000ff</color>
+    <color name="maintenance_plan_line_color">#ffc682</color>
+    <color name="color_ffc682">#ffc682</color>
+
+    <color name="color_fbd3a4">#fbd3a4</color>
+    <color name="color_ccedf6fe">#ccedf6fe</color>
+    <color name="color_999">#999999</color>
+    <color name="color_ffcd91">#ffcd91</color>
+    <color name="color_ffe8a1">#ffe8a1</color>
+    <color name="color_8a919d">#8a919d</color>
+    <color name="color_33ffffff">#33ffffff</color>
+
+    <color name="dark_gray_text">#8598b4</color>
+    <color name="call_selected_text_color">#f5c89a</color>
+
+    <color name="sould_field_text_selected_color">#FBD3A4</color>
+    <color name="sould_field_text_unselected_color">#72889b</color>
+    <color name="timepicker_textcolor_out">#ccedf6fe</color>
+</resources>

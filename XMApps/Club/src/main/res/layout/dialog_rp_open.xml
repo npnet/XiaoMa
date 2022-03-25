@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="423px"
+    android:layout_height="500px"
+    android:layout_gravity="center"
+    android:background="@drawable/rp_open_dlg_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:ignore="PxUsage">
+
+    <ImageView
+        android:id="@+id/iv_avatar"
+        android:layout_width="130px"
+        android:layout_height="130px"
+        android:layout_marginTop="30px"
+        android:background="@drawable/rp_open_dlg_avatar_bg"
+        android:padding="16px"
+        android:src="@drawable/default_head_icon" />
+
+    <TextView
+        android:id="@+id/tv_sender_display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5px"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:paddingStart="100px"
+        android:paddingEnd="100px"
+        android:textColor="@android:color/white"
+        android:textSize="24px" />
+
+    <TextView
+        android:id="@+id/tv_poi_display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:paddingStart="100px"
+        android:paddingEnd="100px"
+        android:textColor="@android:color/white"
+        android:textSize="18px" />
+
+    <TextView
+        android:id="@+id/tv_greeting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="66px"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="2"
+        android:paddingStart="30px"
+        android:paddingEnd="30px"
+        android:textColor="@android:color/white"
+        android:textSize="36px" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_open_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="46px"
+            android:text="@string/rp_open_dlg_open_details"
+            android:textColor="@color/rp_view_gain_detail"
+            android:textSize="28px" />
+
+        <Button
+            android:id="@+id/btn_open"
+            android:layout_width="216px"
+            android:layout_height="58px"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="43px"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:background="@drawable/rp_open_dlg_btn_bg"
+            android:gravity="top|center_horizontal"
+            android:paddingTop="8px"
+            android:textColor="@android:color/white"
+            android:textSize="24px" />
+    </FrameLayout>
+</LinearLayout>

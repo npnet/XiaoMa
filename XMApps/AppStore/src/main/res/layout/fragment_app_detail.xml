@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layerType="software">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/fragment_app_detail_top_highlight_margin_left"
+        android:layout_marginTop="@dimen/fragment_app_detail_top_highlight_margin_top"
+        android:layout_marginRight="@dimen/fragment_app_detail_top_highlight_margin_right"
+        android:background="@drawable/top_highlight_strip"
+        android:visibility="invisible" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/app_detail_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fragment_app_detail_recycler_margin_top" />
+
+    <com.xiaoma.ui.view.XmScrollBar
+        android:id="@+id/scroll_bar"
+        android:layout_width="@dimen/fragment_app_detail_scrollbar_width"
+        android:layout_height="@dimen/fragment_app_detail_scrollbar_height"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/fragment_app_detail_scrollbar_margin_bottom" />
+
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/notification_item_container"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:ignore="PxUsage,ContentDescription">
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="136px"
+        android:layout_height="136px"
+        android:layout_marginStart="24px"
+        android:layout_marginTop="30px"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="370px"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="168px"
+        android:layout_marginTop="64px"
+        android:ellipsize="end"
+        android:maxWidth="370px"
+        android:maxLines="1"
+        android:textColor="@color/notification_headsup_title_text"
+        android:textSize="@dimen/notification_headsup_title_text" />
+
+    <TextView
+        android:id="@+id/tv_text"
+        android:layout_width="510px"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="168px"
+        android:layout_marginTop="135px"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/notification_headsup_content_text"
+        android:textSize="@dimen/notification_headsup_content_text" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="110px"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="675px"
+        android:layout_marginTop="64px"
+        android:lineSpacingMultiplier="1.2"
+        android:textColor="@color/notification_headsup_time_text"
+        android:textSize="@dimen/notification_headsup_time_text" />
+</FrameLayout>

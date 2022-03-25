@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/width_item_recommend"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <com.xiaoma.ui.view.AutoScrollTextView
+        android:id="@+id/item_recommend_tv"
+        android:layout_width="@dimen/width_item_recommend"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_online_mar_top"
+        android:ellipsize="marquee"
+        android:gravity="center"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:maxEms="7"
+        android:singleLine="true"
+        android:textSize="@dimen/font_online_title" />
+
+    <com.xiaoma.ui.view.ReflectionImageView
+        android:id="@+id/item_recommend_iv"
+        style="@style/item_recom_or_ranking_iv" />
+
+</LinearLayout>

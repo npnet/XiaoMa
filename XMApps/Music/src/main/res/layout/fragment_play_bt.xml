@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingStart="@dimen/size_fragment_rl_margin_s">
+
+    <com.xiaoma.music.player.view.player.PlayerView
+        android:id="@+id/fragment_bt_player_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="200px"/>
+
+    <com.xiaoma.music.player.view.BtContentView
+        android:id="@+id/play_content_bt_iv"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+
+</LinearLayout>

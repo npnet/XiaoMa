@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/order_operation_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <Button
+        android:id="@+id/bt_pay_order"
+        android:layout_width="@dimen/width_home_btn"
+        android:layout_height="@dimen/height_home_btn"
+        android:background="@drawable/selector_button"
+        android:text="@string/pay_immediately"
+        android:textSize="@dimen/font_mine_order_size_24px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bt_call_phone"
+        android:layout_width="@dimen/width_home_btn"
+        android:layout_height="@dimen/height_home_btn"
+        android:layout_marginStart="@dimen/size_mine_order_item_button"
+        android:background="@drawable/selector_button"
+        android:text="@string/call_phone"
+        android:textSize="@dimen/font_mine_order_size_24px"
+        app:layout_constraintStart_toEndOf="@id/bt_pay_order"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bt_navigation_go"
+        android:layout_width="@dimen/width_home_btn"
+        android:layout_height="@dimen/height_home_btn"
+        android:layout_marginStart="@dimen/size_mine_order_item_button"
+        android:background="@drawable/selector_button"
+        android:text="@string/navigation_go"
+        android:textSize="@dimen/font_mine_order_size_24px"
+        app:layout_constraintStart_toEndOf="@id/bt_call_phone"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

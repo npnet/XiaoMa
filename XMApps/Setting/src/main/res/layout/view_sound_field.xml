@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="@dimen/width_sound_field_layout"
+        android:layout_height="@dimen/height_sound_field_layout"
+        android:background="@drawable/bg_sound_field_layout">
+
+        <ImageView
+            android:id="@+id/front_master_seat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_icon_top_left_seat_margin_left"
+            android:layout_marginTop="@dimen/size_icon_front_master_margin_top"
+            android:src="@drawable/seat" />
+
+        <ImageView
+            android:id="@+id/front_slave_seat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/size_icon_top_left_seat_margin_left"
+            android:layout_marginTop="@dimen/size_icon_front_master_margin_top"
+            android:src="@drawable/seat" />
+
+        <ImageView
+            android:id="@+id/rear_master_seat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/size_icon_rear_master_margin_bottom"
+            android:layout_marginLeft="@dimen/size_icon_top_left_seat_margin_left"
+            android:src="@drawable/seat" />
+
+        <ImageView
+            android:id="@+id/rear_slave_seat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/size_icon_rear_master_margin_bottom"
+            android:layout_marginRight="@dimen/size_icon_top_left_seat_margin_left"
+            android:src="@drawable/seat" />
+
+        <ImageView
+            android:id="@+id/front_master_audio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/front_master_volume"
+            android:layout_marginLeft="@dimen/size_icon_top_left_radio_margin_left"
+            android:layout_marginTop="@dimen/size_icon_top_left_radio_margin_top" />
+
+        <TextView
+            android:id="@+id/tv_front_master"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_textview_front_master_margin_left"
+            android:layout_marginTop="@dimen/size_textview_front_master_margin_top"
+            android:text="@string/main_driving_position"
+            android:textColor="@drawable/text_sound_field"
+            android:textSize="@dimen/font_textview_sound_field" />
+
+        <ImageView
+            android:id="@+id/front_slave_audio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/front_slave_volume"
+            android:layout_marginRight="@dimen/size_icon_top_left_radio_margin_left"
+            android:layout_marginTop="@dimen/size_icon_top_left_radio_margin_top" />
+
+        <TextView
+            android:id="@+id/tv_front_slave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/size_textview_front_slave_margin_right"
+            android:layout_marginTop="@dimen/size_textview_front_master_margin_top"
+            android:text="@string/copilot_seat"
+            android:textColor="@drawable/text_sound_field"
+            android:textSize="@dimen/font_textview_sound_field" />
+
+        <ImageView
+            android:id="@+id/rear_master_audio"
+            android:layout_width="wrap_content"
+            android:src="@drawable/rear_master_volume"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/size_icon_bottom_left_radio_margin_bottom"
+            android:layout_marginLeft="@dimen/size_icon_top_left_radio_margin_left" />
+
+        <TextView
+            android:id="@+id/tv_rear_master"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_front_master"
+            android:layout_marginTop="@dimen/size_textview_back_margin_top"
+            android:layout_marginLeft="@dimen/size_textview_front_master_margin_left"
+            android:text="@string/back_left"
+            android:textColor="@drawable/text_sound_field"
+            android:textSize="@dimen/font_textview_sound_field" />
+
+        <ImageView
+            android:id="@+id/rear_slave_audio"
+            android:layout_width="wrap_content"
+            android:src="@drawable/rear_slave_volume"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/size_icon_bottom_left_radio_margin_bottom"
+            android:layout_marginRight="@dimen/size_icon_top_left_radio_margin_left" />
+
+        <TextView
+            android:id="@+id/tv_rear_slave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_front_slave"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/size_textview_front_slave_margin_right"
+            android:layout_marginTop="@dimen/size_textview_back_margin_top"
+            android:text="@string/back_right"
+            android:textColor="@drawable/text_sound_field"
+            android:textSize="@dimen/font_textview_sound_field" />
+
+        <ImageView
+            android:id="@+id/center_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="386px"
+            android:layout_marginTop="231px"
+            android:src="@drawable/cross_slider" />
+    </RelativeLayout>
+
+</LinearLayout>

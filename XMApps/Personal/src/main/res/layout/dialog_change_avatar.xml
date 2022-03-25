@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/width_change_avatar_layout"
+    android:layout_height="@dimen/height_change_avatar_layout"
+    android:padding="@dimen/size_change_avatar_layouty_padding"
+    android:gravity="center"
+    android:background="@drawable/dialog_bg_middle"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/qr_change_avatar"
+        android:id="@+id/textView"
+        android:textSize="@dimen/font_change_avatar_title" />
+
+    <com.xiaoma.ui.StateControl.StateView
+        android:id="@+id/state_view"
+        android:layout_width="@dimen/width_change_avatar_qr"
+        android:layout_height="@dimen/height_change_avatar_qr"
+        android:layout_marginTop="@dimen/size_change_avatar_qr_margin_top">
+
+        <ImageView
+            android:id="@+id/change_qr"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </com.xiaoma.ui.StateControl.StateView>
+</LinearLayout>

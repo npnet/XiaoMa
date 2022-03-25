@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <View
+        android:id="@+id/upgrade_background_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.8"
+        android:background="@android:color/black" />
+
+
+    <!--<ImageView-->
+    <!--android:id="@+id/pet_upgrade_icon"-->
+    <!--android:layout_width="200px"-->
+    <!--android:layout_height="300px"-->
+    <!--android:layout_marginStart="300px"-->
+    <!--android:src="@drawable/test"-->
+    <!--android:visibility="gone"-->
+    <!--app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+    <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+
+    <!--<include-->
+    <!--layout="@layout/per_experience_view"-->
+    <!--android:layout_width="300px"-->
+    <!--android:layout_height="60px"-->
+    <!--android:layout_marginStart="250px"-->
+    <!--android:visibility="gone"-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+    <!--app:layout_constraintTop_toBottomOf="@id/pet_upgrade_icon" />-->
+
+
+    <TextView
+        android:id="@+id/pet_upgrade_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_upgrade_margin_start"
+        android:layout_marginTop="@dimen/size_upgrade_reward_title_margin_top"
+        android:text="@string/upgrade_prompt"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/pet_font_size_40"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/upgrade_reward_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_upgrade_margin_start"
+        android:layout_marginTop="@dimen/size_upgrade_reward_prompt_margin_top"
+        android:text="@string/upgrade_reward"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/pet_font_size_30"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pet_upgrade_title" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_upgrade_reward"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_upgrade_margin_start"
+        android:layout_marginTop="@dimen/size_upgrade_reward_list_margin_top"
+        android:overScrollMode="never"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/upgrade_reward_text" />
+
+
+    <TextView
+        android:id="@+id/next_upgrade_reward_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_upgrade_margin_start"
+        android:layout_marginTop="@dimen/size_upgrade_reward_prompt_margin_top"
+        android:text="@string/next_upgrade_reward"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/pet_font_size_30"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rv_upgrade_reward" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_next_upgrade_reward"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_upgrade_margin_start"
+        android:layout_marginTop="@dimen/size_upgrade_reward_list_margin_top"
+        android:overScrollMode="never"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/next_upgrade_reward_text" />
+
+</android.support.constraint.ConstraintLayout>

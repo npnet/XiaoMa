@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_search_res_tab"
+            android:layout_marginTop="@dimen/margin_search_res_tab_top">
+
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/discovery_search_tab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="left"
+                android:layout_marginLeft="@dimen/margin_search_res_tab_left"
+                app:tabBackground="@null"
+                app:tabIndicatorHeight="0dp"
+                app:tabPaddingEnd="@dimen/padding_search_res_tab_end" />
+
+            <TextView
+                android:id="@+id/search_result_right_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingBottom="@dimen/padding_search_res_text_top"
+                android:paddingLeft="@dimen/padding_search_res_text_left"
+                android:paddingRight="@dimen/padding_search_res_text_left"
+                android:paddingTop="@dimen/padding_search_res_text_top"
+                android:text="@string/adout_search_result"
+                android:textColor="@color/club_white"
+                android:textSize="@dimen/font_text_middle" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.xiaoma.ui.view.ControllableViewPager
+                android:id="@+id/discovery_search_pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/margin_search_res_rv_top" />
+
+            <include
+                android:id="@+id/discovery_result_empty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_search_empty_top"
+                android:visibility="gone"
+                layout="@layout/include_empty_view" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,11 @@
+apply plugin: "com.android.library"
+apply from: "$rootDir$Android"
+
+android library()
+
+dependencies {
+    implementation project(path: ":XMLibs:Thread")
+    implementation project(path: ":XMLibs:Config")
+    implementation project(path: ":XMLibs:Utils")
+    implementation "com.squareup.okhttp3:okhttp:$OK_HTTP_VERSION"
+}

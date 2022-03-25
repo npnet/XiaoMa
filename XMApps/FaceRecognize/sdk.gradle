@@ -1,0 +1,42 @@
+ext {
+    sdk = this.&sdk
+}
+
+class FaceSDK {
+    private static final String TYPE_TEST = "TEST"
+    private static final String TYPE_YQ = "YQ"
+
+    private static String pick(String sdkType) {
+        if (TYPE_YQ.equalsIgnoreCase(sdkType)) {
+            return TYPE_YQ
+        }
+        return TYPE_TEST
+    }
+}
+
+class SDK {
+    private faceSDKType = FaceSDK.TYPE_TEST
+
+    void face(String sdk) {
+        this.faceSDKType = sdk
+    }
+}
+
+def sdk(Closure closure) {
+    def sdk = new SDK()
+    closure.delegate = sdk
+    closure.call()
+
+    def faceSDKType = FaceSDK.pick(sdk.faceSDKType)
+    setupFaceSourceSet(faceSDKType)
+}
+
+def setupFaceSourceSet(String sdk) {
+    project.android.sourceSets.main.java {
+        if (FaceSDK.TYPE_TEST.equalsIgnoreCase(sdk)) {
+            srcDir 'src/main/sdk/face/test'
+        } else if (FaceSDK.TYPE_YQ.equalsIgnoreCase(sdk)) {
+            srcDir 'src/main/sdk/face/yq'
+        }
+    }
+}

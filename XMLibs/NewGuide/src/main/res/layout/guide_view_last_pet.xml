@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#db000000">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="654px"
+        android:layout_height="420px"
+        android:background="@drawable/bg_guide_last"
+        android:paddingTop="50px"
+        android:paddingBottom="50px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/guide_finish"
+            android:textColor="@color/white"
+            android:textSize="32px"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="530px"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60px"
+            android:text="@string/guide_reopen"
+            android:textColor="@color/white"
+            android:textSize="28px"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+        <TextView
+            android:id="@+id/tv_ok"
+            android:layout_width="@dimen/px_300"
+            android:layout_height="@dimen/px_70"
+            android:background="@drawable/selector_last_guide_confirm_button"
+            android:gravity="center"
+            android:text="@string/guide_ok"
+            android:textColor="@color/color_edf6fe"
+            android:textSize="26px"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

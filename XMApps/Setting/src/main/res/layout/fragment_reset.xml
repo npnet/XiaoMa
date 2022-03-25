@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="360px"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="530px">
+
+        <ImageView
+            android:layout_width="63px"
+            android:layout_height="63px"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="90px"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_warn" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="35px"
+            android:text="@string/after_determining_the_factory_reset"
+            android:textColor="#fff"
+            android:textSize="28px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10px"
+            android:text="@string/data_cannot_be_recovered_please_be_cautious"
+            android:textColor="#fff"
+            android:textSize="28px" />
+
+        <RelativeLayout
+            android:id="@+id/btn_reset"
+            android:layout_width="302px"
+            android:layout_height="76px"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="60px"
+            android:background="@drawable/bg_button_new">
+
+            <com.xiaoma.setting.common.views.MagicTextView
+                android:id="@+id/tv_reset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10px"
+                android:gravity="center"
+                android:text="@string/reset_factory_settings"
+                android:textColor="#edf6fe"
+                android:textSize="22px"
+                app:innerShadowRadius="3px"
+                app:outerShadowColor="#FF2C99F9"
+                app:outerShadowDy="3px"
+                app:outerShadowRadius="10px"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

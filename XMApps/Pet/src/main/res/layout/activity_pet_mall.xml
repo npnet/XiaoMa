@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/mall_layout"
+        android:layout_width="@dimen/width_pet_mall"
+        android:layout_height="@dimen/height_pet_mall"
+        android:background="@drawable/product_bg"
+        app:layout_constraintEnd_toEndOf="@id/iv_mall_top_bar"
+        app:layout_constraintStart_toStartOf="@id/iv_mall_top_bar"
+        app:layout_constraintTop_toTopOf="@id/iv_mall_top_bar" />
+
+
+    <ImageView
+        android:id="@+id/iv_mall_top_bar"
+        android:layout_width="@dimen/width_pet_top_bar"
+        android:layout_height="@dimen/height_pet_top_bar"
+        android:layout_marginTop="@dimen/size_top_bar_margin_top"
+        android:src="@drawable/pet_top_bar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/size_mall_pet_image_margin_start"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/tv_pet_prompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_mall_prompt_margin_start"
+            android:layout_marginTop="@dimen/size_mall_prompt_margin_top"
+            android:background="@drawable/prompt_bg"
+            android:gravity="center"
+            android:paddingBottom="@dimen/size_mall_prompt_text_padding_bottom"
+            android:text="@string/pet_very_hungry"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/pet_font_size_30"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/pet_image_view"
+            android:layout_width="@dimen/width_mall_pet_image"
+            android:layout_height="@dimen/height_mall_pet_image"
+            android:layout_marginTop="@dimen/size_mall_pet_image_icon_margin_top"
+            android:src="@drawable/shop_pet_image"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <include
+            layout="@layout/per_experience_view"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/size_mall_experience_margin_start"
+            android:layout_marginTop="@dimen/size_pet_level_margin_top"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/pet_image_view" />
+
+        <TextView
+            android:id="@+id/tv_mall_timing_text"
+            android:layout_width="@dimen/width_mall_timer_text"
+            android:layout_height="@dimen/height_mall_timer_text"
+            android:layout_marginTop="@dimen/size_mall_timer_text_margin_top"
+            android:background="@drawable/eat_food_timer_bg"
+            android:gravity="center"
+            android:textColor="@color/pet_eat_food_timer_text"
+            android:textSize="@dimen/pet_font_size_20"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/pet_image_view"
+            app:layout_constraintEnd_toEndOf="@id/pet_image_view"
+            app:layout_constraintStart_toStartOf="@id/pet_image_view"
+            app:layout_constraintTop_toTopOf="@id/pet_image_view" />
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

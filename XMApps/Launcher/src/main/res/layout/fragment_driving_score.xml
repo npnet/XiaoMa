@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/icon_img"
+            android:layout_width="@dimen/driving_icon_img_width"
+            android:layout_height="@dimen/driving_icon_img_heigh"
+            android:src="@drawable/temporaryimg" />
+
+        <TextView
+            android:id="@+id/driving_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/driving_icon_score_top"
+            android:text="90"
+            android:textColor="#000"
+            android:textSize="@dimen/driving_icon_score_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/driving_score"
+            android:layout_centerHorizontal="true"
+            android:text="@string/driving_score"
+            android:textColor="#000"
+            android:textSize="@dimen/driving_icon_score_text_size" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/driving_score_text_top"
+        android:text="你的驾驶很出色，请继续保持"
+        android:textSize="@dimen/driving_score_text_size" />
+</LinearLayout>

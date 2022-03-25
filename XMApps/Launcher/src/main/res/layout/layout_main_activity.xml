@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/fl_common"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.xiaoma.launcher.common.views.MenuRelativeLayout
+        android:id="@+id/menuRelativeLayout"
+        android:layout_width="224px"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_left">
+
+        <com.xiaoma.launcher.common.views.MenuButton
+            android:id="@+id/menu_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="92px"
+            android:layout_marginBottom="120px">
+
+            <com.xiaoma.launcher.common.views.CenterRadioButton
+                android:id="@+id/radio_button_navi"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/recommend_00"
+                android:button="@null"
+                android:checked="true"
+                android:textSize="0dp" />
+
+            <com.xiaoma.launcher.common.views.CenterRadioButton
+                android:id="@+id/radio_button_music"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="20px"
+                android:layout_weight="1"
+                android:background="@drawable/music_00"
+                android:button="@null" />
+
+            <com.xiaoma.launcher.common.views.CenterRadioButton
+                android:id="@+id/radio_button_service"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="20px"
+                android:layout_weight="1"
+                android:background="@drawable/service_00"
+                android:button="@null"/>
+
+            <com.xiaoma.launcher.common.views.CenterRadioButton
+                android:id="@+id/radio_button_app"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="20px"
+                android:layout_weight="1"
+                android:background="@drawable/app_00"
+                android:button="@null" />
+
+        </com.xiaoma.launcher.common.views.MenuButton>
+
+        <Button
+            android:id="@+id/btn_pet"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="57px"
+            android:layout_marginRight="57px"
+            android:visibility="invisible"
+            android:background="@drawable/selector_btn_pet" />
+
+    </com.xiaoma.launcher.common.views.MenuRelativeLayout>
+
+
+    <FrameLayout
+        android:id="@+id/fl_controlPanel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</FrameLayout>

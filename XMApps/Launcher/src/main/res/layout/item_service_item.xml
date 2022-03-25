@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="250px"
+    android:layout_height="@dimen/item_service_car_height">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/gl_middle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="1" />
+
+
+    <com.xiaoma.ui.view.ReflectionImageView
+        android:id="@+id/iv_item_service_car_one"
+        android:layout_width="@dimen/fragment_service_card_width"
+        android:layout_height="378px"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/gl_middle"
+        app:layout_constraintTop_toTopOf="parent"
+        app:reflectionHeight="@dimen/fragment_service_card_reflex_height"
+        app:reflectionPadding="@dimen/fragment_service_card_padding" />
+
+
+    <TextView
+        android:id="@+id/tv_item_service_car_one"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/tv_item_service_food_play_service_text_height"
+        android:layout_marginTop="@dimen/tv_item_service_food_play_service_text_margin_top"
+        android:background="@drawable/bg_service_tv"
+        android:gravity="center"
+        android:text="@string/maintenance_time_not_up"
+        android:textColor="@color/white"
+        android:textSize="@dimen/tv_item_service_food_play_one_text_size"
+        app:layout_constraintLeft_toLeftOf="@id/gl_left"
+        app:layout_constraintRight_toRightOf="@id/gl_middle"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_item_service_car_warn"
+        android:layout_width="@dimen/tv_item_service_car_warn_text_width"
+        android:layout_height="@dimen/tv_item_service_car_warn_text_height"
+        android:layout_marginTop="@dimen/tv_item_service_car_warn_margin_top"
+        android:background="@drawable/bg_service_car_warn"
+        android:drawableLeft="@drawable/icon_car_red"
+        android:drawablePadding="8px"
+        android:gravity="center_vertical"
+        android:paddingLeft="24px"
+        android:text="@string/oil_shortage"
+        android:textColor="@color/color_8a919d"
+        android:textSize="@dimen/tv_item_service_car_warn_text_size"
+        android:visibility="invisible"
+        app:layout_constraintRight_toRightOf="@id/gl_middle"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

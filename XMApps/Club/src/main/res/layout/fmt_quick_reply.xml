@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_dim" />
+
+    <LinearLayout
+        android:id="@+id/quick_reply_parent"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_quick_reply_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/quick_reply"
+            android:textColor="#000000" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_reply_list"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tv_quick_reply_title"
+            android:background="@android:color/darker_gray"
+            android:requiresFadingEdge="vertical"
+            android:scrollbars="vertical" />
+    </LinearLayout>
+</FrameLayout>

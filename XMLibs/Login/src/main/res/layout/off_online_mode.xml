@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/include"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="@dimen/system_bar_height" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_not_network_title_margin_top"
+        android:text="@string/not_net_work_offline_tips"
+        android:textSize="@dimen/font_not_bind_pls_select"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/include" />
+
+
+    <TextView
+        android:id="@+id/go_tourists_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_car_key_bind_create_sub_margin_top"
+        android:layout_marginEnd="@dimen/size_car_key_bind_create_sub_margin_end"
+        android:text="@string/go_off_online_mode"
+        android:background="@drawable/selector_offline_button"
+        android:textColor="@color/selector_button_text_color"
+        android:textSize="@dimen/font_go_tourists_mode"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include" />
+
+    <ImageView
+        android:id="@+id/retry"
+        android:layout_width="80px"
+        android:layout_height="80px"
+        android:layout_marginTop="40px"
+        android:src="@drawable/icon_recognize_error"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <TextView
+        android:id="@+id/retry_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16px"
+        android:text="@string/click_icon_to_retry"
+        android:textSize="28px"
+        android:textColor="@color/state_view_retry_text_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/retry" />
+
+    <ImageButton
+        android:id="@+id/setting"
+        android:layout_width="80px"
+        android:layout_height="80px"
+        android:layout_marginStart="32px"
+        android:layout_marginBottom="32px"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/selector_setting"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</android.support.constraint.ConstraintLayout>

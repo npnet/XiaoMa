@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fm_player_list_bg">
+
+    <com.xiaoma.ui.navi.NavigationBar
+        android:id="@+id/naviBar"
+        android:layout_width="@dimen/width_navi_left"
+        android:layout_height="match_parent"
+        android:background="@drawable/navi_bg_left"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </com.xiaoma.ui.navi.NavigationBar>
+
+    <ImageView
+        android:id="@+id/ivNaviHalo"
+        android:layout_width="12px"
+        android:layout_height="match_parent"
+        android:background="@drawable/navi_bg_right"
+        android:clickable="false"
+        app:layout_constraintLeft_toRightOf="@id/naviBar" />
+
+    <ImageView
+        android:id="@+id/ivPlayMode"
+        android:layout_width="@dimen/width_playlist_mode_iv"
+        android:layout_height="@dimen/height_playlist_mode_iv_add_click"
+        android:paddingTop="@dimen/size_add_click_padding"
+        android:paddingBottom="@dimen/size_add_click_padding"
+        android:scaleType="fitXY"
+        android:src="@drawable/play_mode"
+        app:layout_constraintBottom_toBottomOf="@id/tvPlayMode"
+        app:layout_constraintRight_toLeftOf="@id/tvPlayMode"
+        app:layout_constraintTop_toTopOf="@id/tvPlayMode" />
+
+    <TextView
+        android:id="@+id/tvPlayMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_player_list_item_margin_left"
+        android:layout_marginTop="@dimen/size_fm_play_mode_margin_top"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/size_player_list_item_margin_right"
+        android:paddingTop="@dimen/size_add_click_padding"
+        android:paddingRight="@dimen/size_add_click_padding"
+        android:paddingBottom="@dimen/size_add_click_padding"
+        android:textSize="@dimen/font_player_mode"
+        app:layout_constraintLeft_toRightOf="@id/ivNaviHalo"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/test" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvPlayList"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/size_fm_play_mode_margin_top"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/xmScrollBar"
+        app:layout_constraintStart_toStartOf="@id/ivPlayMode"
+        app:layout_constraintTop_toBottomOf="@id/tvPlayMode">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+    <com.xiaoma.ui.view.XmScrollBar
+        android:id="@+id/xmScrollBar"
+        android:layout_width="@dimen/width_vertical_scrollbar"
+        android:layout_height="0dp"
+        android:layout_marginEnd="@dimen/size_player_pop_scrollbar_margin_end"
+        android:layout_marginBottom="@dimen/size_player_pop_scrollbar_margin_bottom"
+        app:layout_constraintBottom_toBottomOf="@+id/rvPlayList"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/rvPlayList"
+        app:layout_constraintTop_toTopOf="@+id/rvPlayList"
+        app:xmdirection="vertical" />
+
+    <com.xiaoma.ui.StateControl.StateView
+        android:id="@+id/viewState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/naviBar"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvPlayMode">
+
+    </com.xiaoma.ui.StateControl.StateView>
+</android.support.constraint.ConstraintLayout>

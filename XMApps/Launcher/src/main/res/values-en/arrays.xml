@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="home_service_info">
+        <item>Car</item>
+        <item>Cuisine</item>
+        <item>Movie</item>
+        <item>Hotel</item>
+        <item>Attractions</item>
+    </string-array>
+
+    <string-array name="home_audio_tab">
+        <item>Music</item>
+        <item>Radio</item>
+        <item>Collection</item>
+    </string-array>
+
+    <string-array name="weatherInfo">
+        <item>晴</item>
+        <item>多云</item>
+        <item>阴</item>
+        <item>阵雨</item>
+        <item>雷阵雨</item>
+        <item>小雨</item>
+        <item>中雨</item>
+        <item>大雨</item>
+        <item>暴雨</item>
+        <item>小雪</item>
+        <item>中雪</item>
+        <item>大雪</item>
+        <item>雨夹雪</item>
+        <item>冰雹</item>
+        <item>沙尘暴</item>
+    </string-array>
+
+    <integer-array name="weatherIcon">
+        <item>@drawable/icon_weather_sunny</item>
+        <item>@drawable/icon_weather_cloudy</item>
+        <item>@drawable/icon_weather_overcast</item>
+        <item>@drawable/icon_weather_shower</item>
+        <item>@drawable/icon_weather_thunderstorms</item>
+        <item>@drawable/icon_weather_light_rain</item>
+        <item>@drawable/icon_weather_moderate_rain</item>
+        <item>@drawable/icon_weather_heavy_rain</item>
+        <item>@drawable/icon_weather_storm_rain</item>
+        <item>@drawable/icon_weather_light_snow</item>
+        <item>@drawable/icon_weather_moderate_snow</item>
+        <item>@drawable/icon_weather_heavy_snow</item>
+        <item>@drawable/icon_weather_sleet</item>
+        <item>@drawable/icon_weather_hail</item>
+        <item>@drawable/icon_weather_sandstorm</item>
+    </integer-array>
+
+    <string-array name="travel_car">
+        <item>Car</item>
+        <item>CAR</item>
+        <item>Nearby gas stations</item>
+        <item>Nearby parking lots</item>
+        <item>Maintenance time not up</item>
+    </string-array>
+
+    <string-array name="travel_food">
+        <item>Cuisine</item>
+        <item>FOOD</item>
+        <item>Nearby cuisine</item>
+        <item>Cuisine classification</item>
+        <item>Collection</item>
+    </string-array>
+
+
+    <string-array name="travel_movie">
+        <item>Movie</item>
+        <item>MOVIE</item>
+        <item>Nearby cinema</item>
+        <item>Hot movie</item>
+        <item>My order</item>
+        <item>Collection</item>
+    </string-array>
+
+    <string-array name="travel_hotel">
+        <item>Hotel</item>
+        <item>HOTEL</item>
+        <item>Nearby hotel</item>
+        <item>My order</item>
+        <item>Collection</item>
+    </string-array>
+
+    <string-array name="travel_attractions">
+        <item>Attractions</item>
+        <item>ATTRACTIONS</item>
+        <item>Nearby attractions</item>
+        <item>Attraction classification</item>
+        <item>Collection</item>
+    </string-array>
+
+    <string-array name="launcher_apps">
+        <item>com.xiaoma.bluetooth.phone</item>
+        <item>com.xiaoma.facerecognize</item>
+        <item>com.xiaoma.shop</item>
+        <item>com.xiaoma.app</item>
+    </string-array>
+
+    <string-array name="power_on_apps">
+        <item>com.xiaoma.dualscreen</item>
+        <item>com.xiaoma.setting</item>
+    </string-array>
+</resources>

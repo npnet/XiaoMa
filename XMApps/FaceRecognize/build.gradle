@@ -1,0 +1,34 @@
+apply plugin: 'com.android.application'
+//apply plugin: 'android-aspectjx'
+apply from: 'sdk.gradle'
+apply from: "$rootDir$Android"
+apply from: "$rootDir$Modules"
+apply from: "$rootDir$Tinker"
+android application('com.xiaoma.facerecognize')
+dependencies dependency(FaceRecognize)
+
+sdk {
+    boolean isCar = BUILD_PLATFORM.equalsIgnoreCase("CAR")
+    face isCar ? 'yq' : 'test'
+}
+
+dependencies {
+    implementation "com.android.support.constraint:constraint-layout:${CONSTRAINT_LAYOUT}"
+    implementation "com.github.CymChad:BaseRecyclerViewAdapterHelper:${BASE_RECYCLERVIEW_ADAPTER_HELPER}"
+    implementation project(path: ':XMLibs:CarLib')
+    implementation project(path: ':XMLibs:Process')
+}
+
+tinker {
+    appClassName 'com.xiaoma.facerecognize.FaceRecognizeApp'
+    buildPatch {
+        baseApkPath ''
+        baseResMapping ''
+        baseMapping ''
+    }
+    patchDesc {
+        baseVersion ''
+        patchVersion 0
+        patchMessage ''
+    }
+}

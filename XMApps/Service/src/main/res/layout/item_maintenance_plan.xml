@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constrain_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteY="25dp">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="20px"
+        android:layout_height="20px"
+        android:background="@drawable/maintenance_plan_dot_normal"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/divide"
+        android:layout_width="@dimen/layout_divide_width"
+        android:layout_height="20px"
+        android:background="@drawable/dotted_line"
+        android:layerType="software"
+        app:layout_constraintLeft_toRightOf="@+id/view"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/no_more_plan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20px"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:text="@string/no_more_plan"
+        android:textColor="#8a9194"
+        android:textSize="24px"
+        android:visibility="gone"
+        app:layout_constraintLeft_toRightOf="@+id/divide"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/maintenance_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30px"
+        android:text="@string/suggest_date"
+        android:textColor="@color/maintenance_plan_line_color"
+        android:textSize="24px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/layout_suggest"
+        android:layout_width="@dimen/layout_suggest_width"
+        android:layout_height="@dimen/layout_suggest_height"
+        android:layout_marginTop="28px"
+        android:background="@drawable/item_order_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/maintenance_count">
+
+        <TextView
+            android:id="@+id/suggest_kilometre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/suggest_kilometre_margin_start"
+            android:layout_marginTop="@dimen/suggest_kilometre_margin_top"
+            android:text="@string/suggest_kilometre"
+            android:textSize="30px"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/kilometre_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30px"
+            android:textStyle="bold"
+            app:layout_constraintBaseline_toBaselineOf="@+id/suggest_kilometre"
+            app:layout_constraintStart_toEndOf="@+id/suggest_kilometre" />
+
+        <TextView
+            android:id="@+id/maintenance_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/suggest_project_margin_top"
+            android:text="@string/suggest_project"
+            android:textSize="30px"
+            app:layout_constraintStart_toStartOf="@+id/suggest_kilometre"
+            app:layout_constraintTop_toBottomOf="@+id/suggest_kilometre" />
+
+        <Button
+            android:id="@+id/leave_to_maintain"
+            android:layout_width="@dimen/item_maintain_button_width"
+            android:layout_height="@dimen/item_maintain_button_height"
+            android:layout_marginEnd="@dimen/item_maintain_button_margin_end"
+            android:background="@drawable/selector_button"
+            android:text="@string/go_maintain"
+            android:textSize="24px"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/suggest_kilometre" />
+
+        <TextView
+            android:id="@+id/suggest_project"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/suggest_project_margin_top"
+            android:text="@string/suggest_project"
+            android:textSize="30px"
+            app:layout_constraintStart_toStartOf="@+id/maintenance_time"
+            app:layout_constraintTop_toBottomOf="@+id/maintenance_time" />
+
+        <ScrollView
+            android:layout_width="600px"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/project_detail_margin_top"
+            app:layout_constraintBottom_toTopOf="@id/tv_4s"
+            app:layout_constraintStart_toStartOf="@+id/suggest_project"
+            app:layout_constraintTop_toBottomOf="@+id/suggest_project">
+
+            <TextView
+                android:id="@+id/option_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="15px"
+                android:textSize="25px" />
+
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/tv_4s"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10px"
+            android:text="@string/maintenance_tip"
+            android:textColor="@color/red"
+            android:textSize="25px"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

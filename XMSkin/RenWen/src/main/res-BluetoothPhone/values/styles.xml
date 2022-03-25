@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="NumberKeyButtonStyle" parent="DialpadKeyButtonStyle">
+        <item name="android:background">@drawable/bg_num_key</item>
+        <item name="android:layout_width">@dimen/width_num_key</item>
+        <item name="android:layout_height">@dimen/height_num_key</item>
+    </style>
+
+
+    <style name="DialpadKeyButtonStyle">
+        <item name="android:clickable">true</item>
+        <item name="android:layout_columnSpan">1</item>
+        <item name="android:layout_rowSpan">1</item>
+        <item name="android:focusable">true</item>
+    </style>
+</resources>

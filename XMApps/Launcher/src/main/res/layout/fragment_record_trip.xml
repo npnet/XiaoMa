@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/bg_common"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/cam_pic"
+        android:scaleType="fitXY"
+        android:layout_width="@dimen/mark_activity_record_trip_cam_pic_width"
+        android:layout_height="@dimen/mark_activity_record_trip_cam_pic_height"
+        android:layout_marginStart="@dimen/mark_activity_record_trip_cam_pic_start"
+        android:layout_marginTop="@dimen/mark_activity_record_trip_cam_pic_top"
+        android:src="@drawable/fm_default_cover" />
+    <LinearLayout
+        android:layout_marginTop="@dimen/mark_activity_record_trip_save_layout_top"
+       android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="@string/mark_take_photo_prompt"
+            android:textSize="@dimen/mark_activity_record_save_text_size"
+            android:textColor="@color/launcher_record_text"
+            android:layout_marginStart="@dimen/mark_activity_record_trip_cam_pic_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/most_prompt"
+            android:text="@string/record_save_most"
+            android:autoLink="all"
+            android:padding="10px"
+            android:textSize="@dimen/mark_activity_record_save_text_size"
+            android:layout_marginLeft="@dimen/mark_activity_record_save_text_left"
+            android:textColor="@color/record_most_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/mark_activity_record_trip_linear_top"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/happy_trip_img"
+                android:layout_width="@dimen/mark_activity_record_trip_happy_tip_img_width"
+                android:layout_height="@dimen/mark_activity_record_trip_happy_tip_img_height"
+                android:layout_marginStart="@dimen/mark_activity_record_trip_happy_tip_img_start"
+                android:src="@drawable/happy_face_select" />
+
+            <ImageView
+                android:id="@+id/dull_trip_img"
+                android:layout_width="@dimen/mark_activity_record_trip_dull_tip_img_width"
+                android:layout_height="@dimen/mark_activity_record_trip_dull_tip_img_height"
+                android:layout_marginStart="@dimen/mark_activity_record_trip_dull_tip_img_start"
+                android:src="@drawable/stupid_face_select" />
+
+            <ImageView
+                android:id="@+id/lose_trip_img"
+                android:layout_width="@dimen/mark_activity_record_trip_lose_tip_img_width"
+                android:layout_height="@dimen/mark_activity_record_trip_lose_tip_img_height"
+                android:layout_marginStart="@dimen/mark_activity_record_trip_lose_tip_img_start"
+                android:src="@drawable/cry_face_select" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/mark_activity_record_trip_linear2_top"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/weather_img"
+                android:layout_width="@dimen/mark_activity_record_trip_weather_img_width"
+                android:layout_height="@dimen/mark_activity_record_trip_weather_img_height"
+                android:layout_marginStart="@dimen/mark_activity_record_trip_weather_img_start"
+                android:src="@drawable/weather_img" />
+
+            <TextView
+                android:id="@+id/photo_time"
+                android:textSize="@dimen/mark_activity_record_trip_photo_time_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/mark_activity_record_trip_photo_time_start"
+                android:text="2018/11/16 12:55 周五" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/mark_activity_record_trip_linear3_top"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/position_img"
+                android:layout_width="@dimen/mark_activity_record_trip_position_img_width"
+                android:layout_height="@dimen/mark_activity_record_trip_position_img_height"
+                android:layout_marginStart="@dimen/mark_activity_record_trip_position_img_start"
+                android:src="@drawable/position_img" />
+
+            <TextView
+                android:id="@+id/photo_address"
+                android:textSize="@dimen/mark_activity_record_trip_photo_address_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/mark_activity_record_trip_photo_address_start"
+                android:paddingRight="@dimen/mark_activity_record_trip_photo_address_right"
+                android:text="广东省深圳市南山区粤美特大厦" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/mark_activity_record_trip_linear4_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/save_but"
+                android:textSize="@dimen/mark_activity_record_trip_save_but_size"
+                android:gravity="center"
+                android:layout_width="@dimen/mark_activity_record_trip_save_but_width"
+                android:layout_height="@dimen/mark_activity_record_trip_save_but_height"
+                android:layout_marginStart="@dimen/mark_activity_record_trip_save_but_start"
+                android:background="@drawable/selector_button"
+                android:text="保存(10s)" />
+
+            <Button
+                android:id="@+id/clean_but"
+                android:layout_gravity="center"
+                android:background="@drawable/selector_button"
+                android:textSize="@dimen/mark_activity_record_trip_clean_but_size"
+                android:layout_width="@dimen/mark_activity_record_trip_clean_but_width"
+                android:layout_height="@dimen/mark_activity_record_trip_clean_but_height"
+                android:layout_marginStart="@dimen/mark_activity_record_trip_clean_but_start"
+                android:text="@string/dialog_cancel" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,64 @@
+apply plugin: 'com.android.application'
+apply from: "$rootDir$Android"
+apply from: "$rootDir$Modules"
+apply from: "$rootDir$Tinker"
+
+android application('com.xiaoma.assistant')
+dependencies dependency(Assistant)
+
+android {
+
+    defaultConfig {
+        ndk {
+            abiFilters?.clear()
+            abiFilters 'arm64-v8a'
+        }
+
+        multiDexEnabled true
+        compileSdkVersion 27
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/INDEX.LIST'
+    }
+}
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    implementation files("${XMJars}TingPhoneOpenSDK_6.2.16.jar")
+    implementation(name: 'kuwo_sdk_xiaomalixing_2.6.3.6', ext: 'aar')
+    implementation "com.android.support.constraint:constraint-layout:${CONSTRAINT_LAYOUT}"
+    implementation project(':XMLibs:SystemUILib')
+    annotationProcessor "com.github.bumptech.glide:compiler:${GLIDE_VERSION}"
+    implementation(name: 'btext-release', ext: 'aar')
+}
+
+
+tinker {
+    appClassName 'com.xiaoma.assistant.AssistantApp'
+    buildPatch {
+        baseApkPath ''
+        baseResMapping ''
+        baseMapping ''
+    }
+    patchDesc {
+        baseVersion '5.1.1.4'
+        patchVersion 0
+        patchMessage 'base'
+    }
+}

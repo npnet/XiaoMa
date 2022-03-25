@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">猜方言</string>
+
+    <string name="index_question">第%d题</string>
+    <string name="listen_question">第%d题,请仔细听哦~</string>
+    <string name="choose_right_answer">请选择正确的答案~\n提示:点击右侧可重新收听</string>
+    <string name="con_right_answer">恭喜您回答正确~\n正确答案 %s</string>
+    <string name="wrong_answer">回答错误~\n正确答案是 %s</string>
+    <string name="good_job">你简直太棒了~</string>
+    <string name="wait_to_next_question">%1$dS后进入第%2$d题</string>
+    <string name="no_matter">没关系,再接再厉~</string>
+    <string name="left_chance">还剩 %d 次答错机会</string>
+
+    <string name="skip_rank">跳到排行榜</string>
+    <string name="retry">再战一次</string>
+    <string name="right_count">答对</string>
+    <string name="score_count">总分</string>
+    <string name="defeat_percent">击败车主</string>
+
+    <string name="right_answer_count">%d题</string>
+    <string name="right_score_count">%d分</string>
+    <string name="right_defeat_percent">%d %</string>
+    <string name="tip">Prompt</string>
+    <string name="exit_dialog_msg">确认退出游戏?\n(当前得分%d)</string>
+    <string name="sure">OK</string>
+    <string name="cancel">Cancel</string>
+
+
+    <string name="game_over">游戏结束,本次未能进入排名\n相信自己!最大的敌人是你自己!加油</string>
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tv_recall"
+    android:layout_width="@dimen/recall_popup_width"
+    android:layout_height="@dimen/recall_popup_height"
+    android:background="@drawable/chat_msg_recall_popup_bg"
+    android:gravity="center_horizontal"
+    android:text="@string/chat_msg_recall"
+    android:paddingTop="10px"
+    android:textColor="@android:color/white"
+    android:textSize="28px"
+    tools:ignore="PxUsage">
+
+</TextView>

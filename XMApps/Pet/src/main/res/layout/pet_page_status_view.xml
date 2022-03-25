@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/title_prompt_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pet_welcome">
+
+    <TextView
+        android:id="@+id/tv_prompt_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_welcome_title_margin_top"
+        android:background="@drawable/prompt_bg"
+        android:gravity="center"
+        android:paddingStart="@dimen/size_welcome_title_padding"
+        android:paddingEnd="@dimen/size_welcome_title_padding"
+        android:text="准备好开始新的旅行了么？"
+        android:textColor="@color/welcome_page_text"
+        android:textSize="@dimen/pet_font_size_30"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/iv_prompt_pet_icon"
+        android:layout_width="@dimen/width_welcome_page_pet_icon"
+        android:layout_height="@dimen/height_welcome_page_pet_icon"
+        android:layout_marginTop="@dimen/size_welcome_page_pet_icon_margin_top"
+        android:src="@drawable/shop_pet_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_prompt_title" />
+
+
+    <Button
+        android:id="@+id/prompt_bt"
+        android:layout_width="@dimen/width_pay_button"
+        android:layout_height="@dimen/height_pay_button"
+        android:layout_marginTop="@dimen/size_start_travel_margin_top"
+        android:background="@drawable/confirm_pay_selector"
+        android:gravity="center"
+        android:text="@string/start_travel"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/pet_font_size_26"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_prompt_pet_icon" />
+
+
+    <LinearLayout
+        android:id="@+id/pass_chapter_loading_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_start_travel_margin_top"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_prompt_pet_icon">
+
+        <com.xiaoma.pet.ui.view.PetExperienceView
+            android:id="@+id/pass_chapter_loading_progress_view"
+            android:layout_width="@dimen/size_pet_pass_chapter_loading_width"
+            android:layout_height="@dimen/size_pet_pass_chapter_loading_height"
+            android:layout_marginTop="@dimen/size_pet_experience_margin_top"
+            app:bounds_color="@android:color/white"
+            app:content_offset="2"
+            app:grow_color="@color/pet_pass_chapter_loading"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_pet_level_text" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_pet_pass_chapter_loading_text_margin_top"
+            android:text="@string/pass_chapter_loading"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/pet_font_size_30" />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

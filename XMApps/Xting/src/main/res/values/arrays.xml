@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="playMode">
+        <item>顺序播放</item>
+        <item>单曲循环</item>
+        <item>随机播放</item>
+        <item>循环播放</item>
+    </array>
+
+    <array name="onlineFMTab">
+        <item>相似推荐</item>
+        <item>我的收藏</item>
+    </array>
+
+    <array name="localFMTab">
+        <item>电台切换</item>
+        <item>收藏电台</item>
+    </array>
+</resources>

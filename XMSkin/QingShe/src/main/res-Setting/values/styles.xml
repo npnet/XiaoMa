@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="style_setting_seekbar">
+        <item name="android:layout_width">585px</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:thumb">@drawable/seekbar_indicator</item>
+        <item name="android:max">40</item>
+        <item name="android:maxHeight">10px</item>
+        <item name="android:progress">0</item>
+        <item name="android:progressDrawable">@drawable/text_tack_seekbar_style</item>
+        <item name="android:splitTrack">false</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:textSize">32px</item>
+    </style>
+
+
+
+    <style name="radiobutton_text_color">
+        <item name="android:textColor">@color/radio_button_text_color</item>
+    </style>
+
+
+    <style name="tv_color_n">
+        <item name="android:textColor">#72889b</item>
+    </style>
+
+    <style name="tv_color_p">
+        <item name="android:textColor">@color/color_qingshe</item>
+    </style>
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/width_child_category_tab"
+    android:layout_height="@dimen/height_child_category_tab"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/view_tab_tv"
+        android:layout_width="@dimen/width_child_category_tab"
+        android:layout_height="@dimen/height_child_category_tab"
+        android:gravity="center"
+        android:textColor="@color/color_main_selector"
+        android:textSize="@dimen/font_child_tab_text"
+        android:background="@drawable/bg_item_select_child_empty"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Home" />
+
+</android.support.constraint.ConstraintLayout>

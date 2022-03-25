@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#ffffff</color>
+    <color name="menu_text_color">#2b2b2b</color>
+    <color name="menu_line">#2b2b2b</color>
+    <color name="default_ascv_selected_color">#564141</color>
+    <color name="default_ascv_unselected_color">#a99494</color>
+    <color name="setting_tab_def_color">#000000</color>
+    <color name="default_font">#000000</color>
+    <color name="setting_tab_select">#ffffff</color>
+    <color name="setting_tab_unselect">#8a919d</color>
+    <color name="tab_view_selected_color">#ff0000</color>
+    <color name="tab_view_unselected_color">#000000</color>
+    <color name="radio_button_selected_color">#ffc640</color>
+    <color name="radio_button_unselected_color">#72889b</color>
+    <color name="switch_button_selected_color">#FFC640</color>
+    <color name="switch_button_unselected_color">#708598</color>
+    <color name="bg_menu_item">#2c2722</color>
+    <color name="color_menu_normal">#9299a5</color>
+    <color name="text_tack_seekbar_background">#2C2D2F</color>
+    <color name="blt_match_hint">#8a919d</color>
+    <color name="sound_filed_layout_stroke_color">#586676</color>
+    <color name="default_tick_mark_text_color">#8a919d</color>
+    <color name="secondary_color">#8a919d</color>
+    <color name="brightness_color">#a3a3a3</color>
+    <color name="sould_field_text_selected_color">#FBD3A4</color>
+    <color name="sould_field_text_unselected_color">#72889b</color>
+    <color name="connected_wifi_amount_color">#8a919d</color>
+    <color name="transparent_white">#ccffffff</color>
+    <color name="unclickable_gray">#8a919d</color>
+
+    <color name="color_333">#333333</color>
+    <color name="color_999">#999999</color>
+
+    <color name="tv_reply_g">#72889b</color>
+    <color name="tv_reply_y">#ffc640</color>
+
+    <color name="timepicker_textcolor_out">#ccedf6fe</color>
+</resources>
+

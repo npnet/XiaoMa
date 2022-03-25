@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_bg_middle"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30px" />
+
+    <TextView
+        android:id="@+id/test_iccid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="wqqwrqwrwqrqwrrrrrrrrrrrrrrrrrrrrrrrrr"
+        android:textColor="@color/white"
+        android:textSize="25px" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30px" />
+
+    <TextView
+        android:id="@+id/test_uuid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="wqqwrqwrwqrqwrrrrrrrrrrrrrrrrrrrrrrrrr"
+        android:textColor="@color/white"
+        android:textSize="25px" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30px" />
+
+    <TextView
+        android:id="@+id/test_imei"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="wqqwrqwrwqrqwrrrrrrrrrrrrrrrrrrrrrrrrr"
+        android:textColor="@color/white"
+        android:textSize="25px" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30px" />
+
+    <TextView
+        android:id="@+id/test_vin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="wqqwrqwrwqrqwrrrrrrrrrrrrrrrrrrrrrrrrr"
+        android:textColor="@color/white"
+        android:textSize="25px" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30px" />
+
+    <TextView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="返回"
+        android:textSize="30px" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30px" />
+</LinearLayout>

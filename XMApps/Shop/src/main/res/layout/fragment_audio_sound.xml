@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_reversing_radar_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_os_them_main_title_margin_left"
+        android:padding="@dimen/size_add_to_click_padding"
+        android:text="@string/reversing_radar_distance"
+        android:textColor="@color/selector_home_menus_text"
+        android:textSize="@dimen/font_of_shop_32"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_lane_change_aid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_title_voice_type_margin_left"
+        android:padding="@dimen/size_add_to_click_padding"
+        android:text="@string/lane_change_aid"
+        android:textColor="@color/selector_home_menus_text"
+        android:textSize="@dimen/font_of_shop_32"
+        app:layout_constraintStart_toEndOf="@+id/tv_reversing_radar_distance"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_bluetooth_phone_button_tone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_title_voice_type_margin_left"
+        android:padding="@dimen/size_add_to_click_padding"
+        android:text="@string/bluetooth_phone_button_tone"
+        android:textColor="@color/selector_home_menus_text"
+        android:textSize="@dimen/font_of_shop_32"
+        app:layout_constraintStart_toEndOf="@+id/tv_lane_change_aid"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/fl_contain"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/size_theme_sub_margin_top"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_bluetooth_phone_button_tone" />
+
+    <android.support.constraint.Group
+        android:id="@+id/group_center"
+        android:layout_width="wrap_content"
+        app:constraint_referenced_ids="pbBtnCenter,tv_total"
+        android:layout_height="wrap_content" />
+
+    <com.xiaoma.shop.business.ui.view.ProgressButton
+        android:id="@+id/pbBtnCenter"
+        android:layout_width="150px"
+        android:layout_height="74px"
+        android:layout_marginBottom="30px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:progressBg="@drawable/selector_btn_middle_purchase"
+        app:progressingBg="@drawable/btn_download_progress"
+        app:text="购买"
+        app:textPaddingBottom="18px"
+        app:textSize="24px" />
+
+    <TextView
+        android:id="@+id/tv_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10px"
+        android:text="@string/total"
+        app:layout_constraintBottom_toBottomOf="@id/pbBtnCenter"
+        app:layout_constraintLeft_toRightOf="@id/pbBtnCenter"
+        android:paddingBottom="18px"
+        android:textSize="24px"
+        app:layout_constraintTop_toTopOf="@id/pbBtnCenter" />
+</android.support.constraint.ConstraintLayout>

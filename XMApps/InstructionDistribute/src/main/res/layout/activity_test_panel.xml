@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_list"
+        android:layout_width="450px"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:paddingLeft="20px"
+        android:paddingRight="20px"/>
+
+    <TextView
+        android:id="@+id/tv_player_status"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_marginTop="20px"
+        android:layout_marginRight="20px"
+        android:layout_marginBottom="10px"
+        android:layout_toRightOf="@+id/rv_list"
+        android:background="@android:color/darker_gray"
+        android:gravity="center_vertical"
+        android:paddingLeft="20px"
+        android:textSize="50px"
+        android:textStyle="bold"
+        android:onClick="exitApp"
+        android:text="ExitApp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv_player_status"
+        android:layout_toRightOf="@+id/rv_list"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="36px"/>
+
+    </ScrollView>
+
+</RelativeLayout>

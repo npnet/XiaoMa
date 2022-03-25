@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cl_total_layout"
+        android:layout_width="@dimen/width_car_coin"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_car_coin_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_car_coin_title_margin_start"
+            android:layout_marginTop="@dimen/size_car_coin_title_margin_top"
+            android:text="@string/my_car_coin"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_car_coin_text"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/iv_car_coin_number"
+            android:layout_width="@dimen/width_car_coin_left_pic"
+            android:layout_height="@dimen/height_car_coin_left_pic"
+            android:layout_marginTop="@dimen/size_car_coin_left_margin_top"
+            android:src="@drawable/total_car_coin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tv_car_coin_title"
+            app:layout_constraintTop_toBottomOf="@+id/tv_car_coin_title" />
+
+
+        <TextView
+            android:id="@+id/tv_car_coin_total_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/size_car_coin_left_total_tip_margin_bottom"
+            android:text="@string/total_car_coin"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_car_coin_text"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tv_total_car_coin"
+            app:layout_constraintHorizontal_bias="0.46"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="@+id/iv_car_coin_number"
+            app:layout_constraintTop_toBottomOf="@id/iv_car_coin_number" />
+
+        <TextView
+            android:id="@+id/tv_total_car_coin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_car_coin_left_total_count_margin_start"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_car_coin_text"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tv_car_coin_total_tips"
+            app:layout_constraintEnd_toEndOf="@+id/iv_car_coin_number"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tv_car_coin_total_tips"
+            tools:text="500" />
+    </android.support.constraint.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/vertical_divide"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/size_vertical_divide_margin_top"
+        android:layout_marginBottom="@dimen/size_vertical_divide_margin_bottom"
+        android:src="@drawable/vertical_light_line"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/cl_total_layout"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cl_car_coin_record_layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/size_car_coin_list_margin_start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/vertical_divide"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_car_coin_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_car_coin_right_padding_start"
+            android:layout_marginTop="@dimen/size_car_coin_right_title_margin_top"
+            android:text="@string/car_coin_record"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_car_coin_text"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.xiaoma.ui.StateControl.StateView
+            android:id="@+id/state_view"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/size_car_coin_right_padding_start"
+            android:layout_marginTop="@dimen/size_car_coin_right_divide_line_margin_top"
+            android:layout_marginBottom="@dimen/size_car_coin_right_divide_line_margin_bottom"
+            app:emptyView="@layout/include_no_car_coin_record"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/scroll_bar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_car_coin_record">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/car_coin_record_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </com.xiaoma.ui.StateControl.StateView>
+
+        <com.xiaoma.ui.view.XmScrollBar
+            android:id="@+id/scroll_bar"
+            android:layout_width="@dimen/width_vertical_scrollbar"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/size_car_coin_right_padding_end"
+            android:layout_marginEnd="@dimen/size_car_coin_right_padding_end"
+            app:xmdirection="vertical"
+            app:layout_constraintBottom_toBottomOf="@+id/state_view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/state_view"
+            app:layout_constraintTop_toTopOf="@+id/state_view" />
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/cancle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="45px"
+        android:layout_marginLeft="82px"
+        android:text="X"/>
+
+    <Button
+        android:id="@+id/record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="250px"
+        android:layout_marginLeft="100px"
+        android:text="我的记录"
+        android:textSize="24px"/>
+
+    <Button
+        android:id="@+id/rule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="410px"
+        android:layout_marginLeft="100px"
+        android:text="比赛规则"
+        android:textSize="24px"/>
+
+    <com.discretescrollview.DiscreteScrollView
+        android:id="@+id/games"
+        android:layout_width="840px"
+        android:layout_height="360px"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="100px"
+        android:layout_marginLeft="433px"
+        android:orientation="horizontal"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="530px"
+        android:layout_marginLeft="500px"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/apply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="预约报名"
+                android:textSize="30px"
+                android:textColor="#ffffff"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="有可能获得比赛奖金"
+                android:textSize="20px"
+                android:textColor="#99ffff"/>
+        </LinearLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px">
+
+            <TextView
+                android:id="@+id/game"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="下一期挑战赛"
+                android:textColor="#ffffff"
+                android:textSize="24px"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="明天开赛"
+                android:textColor="#a1a7b3"
+                android:textSize="24px"
+                app:layout_constraintTop_toBottomOf="@id/game"
+                app:layout_constraintLeft_toLeftOf="@id/game"/>
+
+            <View
+                android:layout_width="2px"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/game"
+                android:layout_marginLeft="20px"/>
+
+            <TextView
+                android:id="@+id/money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2000"
+                android:textColor="#ffcc66"
+                android:textSize="30px"
+                app:layout_constraintTop_toTopOf="@id/game"
+                app:layout_constraintLeft_toRightOf="@id/game"
+                android:layout_marginLeft="40px"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="比赛奖金"
+                android:textColor="#a1a7b3"
+                android:textSize="24px"
+                app:layout_constraintTop_toBottomOf="@id/money"
+                app:layout_constraintLeft_toLeftOf="@id/money" />
+
+            <TextView
+                android:id="@+id/number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="300"
+                android:textColor="#ffcc66"
+                android:textSize="30px"
+                app:layout_constraintTop_toTopOf="@id/money"
+                app:layout_constraintLeft_toRightOf="@id/money"
+                android:layout_marginLeft="50px"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="报名人数"
+                android:textColor="#a1a7b3"
+                android:textSize="24px"
+                app:layout_constraintTop_toBottomOf="@id/number"
+                app:layout_constraintLeft_toLeftOf="@id/number" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

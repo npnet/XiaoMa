@@ -1,0 +1,14 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xiaoma.update">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <application>
+        <activity
+            android:name=".views.UpdateActivity"
+            android:process="com.xiaoma.update.service"
+            android:theme="@style/XiaoMaTheme.Transparent" />
+    </application>
+
+</manifest>

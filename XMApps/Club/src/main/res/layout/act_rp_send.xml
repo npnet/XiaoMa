@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:ignore="PxUsage">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="240px"
+        android:paddingEnd="20px"
+        android:scaleType="fitXY"
+        android:src="@drawable/divider" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44px"
+        android:text="@string/rp_send_act_title"
+        android:textColor="@android:color/white"
+        android:textSize="32px" />
+
+    <LinearLayout
+        style="@style/rp_send_edit_container"
+        android:layout_marginTop="40px">
+
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rp_send_act_money_per"
+            android:textColor="@android:color/white"
+            android:textSize="28px" />
+
+        <EditText
+            android:id="@+id/et_money"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50px"
+            android:background="@null"
+            android:drawableEnd="@drawable/rp_send_money_icon_small"
+            android:drawablePadding="15px"
+            android:gravity="end"
+            android:inputType="number"
+            android:textColor="@color/rp_msg_item_text_weak"
+            android:textSize="28px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container_count"
+        style="@style/rp_send_edit_container"
+        android:layout_marginTop="20px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rp_send_act_count"
+            android:textSize="28px" />
+
+        <EditText
+            android:id="@+id/et_count"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50px"
+            android:layout_marginEnd="15px"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="end"
+            android:hint="@string/input_the_count"
+            android:inputType="number"
+            android:textColor="@color/rp_msg_item_text_weak"
+            android:textColorHint="@color/rp_msg_item_text_weak"
+            android:textSize="28px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/count"
+            android:textColor="@android:color/white"
+            android:textSize="28px" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_greeting"
+        style="@style/rp_send_edit_container"
+        android:layout_marginTop="20px"
+        android:gravity="center_vertical"
+        android:hint="@string/rp_send_act_default_greeting"
+        android:inputType="text"
+        android:textColor="@color/rp_msg_item_text_weak"
+        android:textColorHint="@color/rp_msg_item_text_weak"
+        android:textSize="28px" />
+
+    <TextView
+        android:id="@+id/tv_total_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44px"
+        android:drawableEnd="@drawable/rp_send_money_icon_middle"
+        android:drawablePadding="20px"
+        android:gravity="center"
+        android:text="0"
+        android:textSize="40px" />
+
+    <Button
+        android:id="@+id/btn_send"
+        android:layout_width="302px"
+        android:layout_height="75px"
+        android:layout_marginTop="55px"
+        android:background="@drawable/btn_add_friend"
+        android:gravity="center_horizontal"
+        android:paddingTop="16px"
+        android:text="@string/rp_send_act_btn_send"
+        android:textSize="26px" />
+</LinearLayout>

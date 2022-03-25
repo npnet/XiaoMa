@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:id="@+id/rl_hotel"
+        android:layout_width="@dimen/view_hotel_rl_width"
+        android:layout_height="@dimen/view_hotel_rl_height"
+        android:layout_gravity="center">
+
+
+        <ImageView
+            android:id="@+id/iv_hotel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_hotel_iv_height"
+            android:src="@drawable/icon_default_icon" />
+
+        <TextView
+            android:id="@+id/tv_hotel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_hotel"
+            android:layout_marginTop="@dimen/view_hotel_tv_top"
+            android:gravity="center"
+            android:textSize="@dimen/view_hotel_tv_size" />
+
+
+        <!--<com.xiaoma.ui.view.MarqueeTextView-->
+        <!--android:id="@+id/tv_hotel_tip"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/tv_hotel"-->
+        <!--android:layout_marginTop="@dimen/dimen_20"-->
+        <!--android:gravity="center"-->
+        <!--android:singleLine="true"-->
+        <!--android:text="距离深南大道还有500m"-->
+        <!--android:textSize="@dimen/dimen_28" />-->
+
+        <Button
+            android:id="@+id/btn_hotel_left"
+            android:layout_width="@dimen/view_hotel_btn_left_width"
+            android:layout_height="@dimen/view_hotel_btn_left_height"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/circle_shape"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/view_hotel_btn_left_size" />
+
+        <Button
+            android:id="@+id/btn_hotel_right"
+            android:layout_width="@dimen/view_hotel_btn_right_width"
+            android:layout_height="@dimen/view_hotel_btn_right_height"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/circle_shape"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/view_hotel_btn_rixght_size" />
+
+
+    </RelativeLayout>
+
+</merge>

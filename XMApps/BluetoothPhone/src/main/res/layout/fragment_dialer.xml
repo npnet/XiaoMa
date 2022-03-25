@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="734px"
+    android:background="@drawable/bg_layout_without_left_light"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/layout_dialpad"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dialer_margin_left"
+        android:paddingTop="@dimen/dialer_margin_top">
+
+        <RelativeLayout
+            android:layout_width="677px"
+            android:layout_height="65px"
+            android:background="@drawable/bg_num_textview">
+
+            <EditText
+                android:id="@+id/tv_number"
+                android:layout_width="@dimen/phone_num_exittext_width"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@null"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/edit_num_size" />
+
+        </RelativeLayout>
+
+        <include
+            layout="@layout/dialpad"
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/layout_disconnect_bluetooth"
+        layout="@layout/layout_disconnect_bluetooth"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+</FrameLayout>

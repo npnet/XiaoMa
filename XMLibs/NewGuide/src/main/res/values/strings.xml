@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">NewGuide</string>
+    <string name="guide_skip">跳过</string>
+    <string name="guide_finish">新手引导结束</string>
+    <string name="guide_net_error">网络异常，请稍后于个人中心新手模式重新查看。</string>
+    <string name="guide_ok">好的</string>
+    <string name="guide_reopen">如需再次播放可于个人中心新手模式重新查看。</string>
+</resources>

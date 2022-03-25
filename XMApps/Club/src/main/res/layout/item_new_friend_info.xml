@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="172px"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <com.xiaoma.club.common.view.UserHeadView
+            android:id="@+id/new_friend_user"
+            android:layout_width="@dimen/height_newfriend_item_head"
+            android:layout_height="@dimen/height_newfriend_item_head"
+            android:layout_marginTop="20px" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/padding_newfriend_item_left">
+
+            <TextView
+                android:id="@+id/new_friend_name"
+                android:layout_width="290px"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30px"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/club_white"
+                android:textSize="28px" />
+
+            <TextView
+                android:id="@+id/new_friend_msg"
+                android:layout_width="290px"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/new_friend_name"
+                android:layout_marginTop="8px"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="@color/text_sign_number"
+                android:textSize="22px" />
+
+            <TextView
+                android:id="@+id/new_friend_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20px"
+                android:layout_marginRight="15px"
+                android:text=""
+                android:textColor="#868585"
+                android:textSize="24px"
+                android:visibility="gone" />
+
+
+            <Button
+                android:id="@+id/new_friend_approve_btn"
+                android:layout_width="@dimen/width_newfriend_btn"
+                android:layout_height="@dimen/height_newfriend_btn"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="60px"
+                android:background="@drawable/club_btn_selector"
+                android:paddingTop="@dimen/padding_newfriend_btn_top"
+                android:gravity="center_horizontal"
+                android:textColor="@color/club_white"
+                android:textSize="@dimen/font_text_small_plus" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_gravity="bottom"
+        android:background="@drawable/conversation_divider" />
+</FrameLayout>

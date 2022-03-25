@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/notdata_view"
+        android:layout_width="@dimen/delicious_activity_rl_width"
+        android:layout_height="@dimen/delicious_activity_rl_height"
+        android:layout_centerInParent="true"
+        android:background="@drawable/iv_empty"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@id/tv_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/delicious_activity_tv_tips_top"
+            android:layout_marginBottom="75px"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="@string/nearby_delicious_no_data"
+            android:textColor="@color/state_view_text_color"
+            android:textSize="@dimen/delicious_activity_tv_tips_size" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/delicious_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/delicious_activity_delicious_title_left"
+            android:layout_marginTop="@dimen/delicious_activity_delicious_title_top"
+            android:text="@string/recom_delicious"
+            android:textSize="@dimen/delicious_activity_delicious_title_size" />
+
+        <com.discretescrollview.DiscreteScrollView
+            android:id="@+id/delicious_rv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/delicious_activity_delicious_rv_height"
+            android:layout_marginTop="@dimen/delicious_activity_delicious_rv_top" />
+
+        <LinearLayout
+            android:id="@+id/delicious_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/delicious_activity_delicious_ly_top"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35px"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/delicious_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="店铺名称"
+                        android:textSize="@dimen/delicious_activity_delicious_name_size" />
+
+                    <LinearLayout
+                        android:id="@+id/comfort_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="14px"
+                        android:gravity="center"
+                        android:orientation="horizontal" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/delicious_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/delicious_layout_top"
+                    android:textColor="@color/color_8a919d"
+                    android:textSize="@dimen/delicious_activity_delicious_position_size" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/delicious_layout2_top"
+                android:gravity="center_horizontal">
+
+                <Button
+                    android:id="@+id/delicious_navigation"
+                    android:layout_width="@dimen/delicious_activity_navigation_width"
+                    android:layout_height="@dimen/delicious_activity_navigation_height"
+                    android:background="@drawable/selector_button"
+                    android:text="@string/btn_navi"
+                    android:textSize="@dimen/delicious_activity_navigation_size" />
+
+                <Button
+                    android:id="@+id/delicious_phone"
+                    android:layout_width="@dimen/attraction_phone_width"
+                    android:layout_height="@dimen/delicious_activity_navigation_height"
+                    android:layout_marginLeft="@dimen/attraction_ml"
+                    android:background="@drawable/selector_button"
+                    android:text="@string/btn_phone"
+                    android:textSize="@dimen/delicious_activity_phone_size" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

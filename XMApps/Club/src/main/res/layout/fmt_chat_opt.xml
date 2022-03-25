@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/chat_opt_fmt"
+    tools:ignore="PxUsage,ContentDescription,RelativeOverlap">
+
+    <RelativeLayout
+        android:id="@+id/chat_opt_title_bar"
+        style="@style/chat_opt_title_bar">
+
+        <Button
+            android:id="@+id/btn_back"
+            style="@style/chat_opt_back_btn" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/chat_opt_title" />
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/btn_speak"
+        style="@style/chat_opt_btn_speak" />
+
+    <LinearLayout style="@style/chat_opt_btn_container">
+
+        <Button
+            android:id="@+id/btn_send_face"
+            style="@style/chat_opt_send_btn"
+            android:background="@drawable/btn_chat_face" />
+
+        <Button
+            android:id="@+id/btn_send_location"
+            style="@style/chat_opt_send_btn"
+            android:background="@drawable/btn_chat_location" />
+
+        <Button
+            android:id="@+id/btn_send_red_packet"
+            style="@style/chat_opt_send_btn"
+            android:background="@drawable/btn_chat_red_packet" />
+    </LinearLayout>
+</LinearLayout>

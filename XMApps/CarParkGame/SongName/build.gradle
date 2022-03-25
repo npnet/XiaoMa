@@ -1,0 +1,20 @@
+apply plugin: 'com.android.application'
+apply plugin: 'replugin-plugin-gradle'
+apply from: "$rootDir$Android"
+apply from: "$rootDir$Modules"
+
+android application('com.xiaoma.songname')
+dependencies dependency(SongName)
+
+android {
+    defaultConfig {
+        compileSdkVersion 28
+        multiDexEnabled true
+    }
+}
+
+dependencies {
+    implementation "org.simple:androideventbus:$EVENT_BUS_VERSION"
+    implementation "com.qihoo360.replugin:replugin-plugin-lib:$REPLUGIN_VERSION"
+    implementation "com.android.support.constraint:constraint-layout:${CONSTRAINT_LAYOUT}"
+}

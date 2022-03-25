@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/width_big_dialog"
+    android:layout_height="@dimen/height_clean_cache"
+    android:background="@drawable/bg_dialog_middle">
+
+    <TextView
+        android:id="@+id/tv_title_prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_dialog_title_margin_top"
+        android:gravity="center"
+        android:text="@string/prompt_title"
+        android:textSize="@dimen/font_of_shop_28"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/iv_clean_cache"
+        android:layout_width="@dimen/size_clean_cache_animation_image"
+        android:layout_height="@dimen/size_clean_cache_animation_image"
+        android:layout_marginTop="@dimen/size_price_text_margin_top"
+        android:src="@drawable/clean_cache_animation"
+        app:layout_constraintBottom_toTopOf="@id/linear_clean_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title_prompt" />
+
+
+    <LinearLayout
+        android:id="@+id/linear_clean_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_price_text_margin_top"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/linear_layout_confirm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_clean_cache">
+
+        <ImageView
+            android:id="@+id/iv_clean_cache_success"
+            android:layout_width="@dimen/size_image_clean_cache_success"
+            android:layout_height="@dimen/size_image_clean_cache_success"
+            android:src="@drawable/toast_success"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_clean_cache_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10px"
+            android:gravity="center"
+            android:text="@string/executing_clean_cache"
+            android:textSize="@dimen/font_of_shop_30" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linear_layout_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_i_known"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/horizontal_divider_line" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/dialog_button_select"
+            android:gravity="center"
+            android:text="@string/i_known"
+            android:textSize="@dimen/font_of_shop_30" />
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

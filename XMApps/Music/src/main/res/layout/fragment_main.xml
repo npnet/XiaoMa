@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <fragment
+            android:id="@+id/fragment_left_table"
+            android:name="com.xiaoma.music.common.ui.LeftTableFragment"
+            android:layout_width="243px"
+            android:layout_height="match_parent"
+            tools:layout="@layout/fragment_left_table" />
+
+        <FrameLayout
+            android:id="@+id/child_fragment_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/thumb_player"
+        android:layout_width="488px"
+        android:layout_height="143px"
+        android:layout_gravity="bottom|start"
+        tools:layout="@layout/fragment_thumb_player" />
+
+</FrameLayout>

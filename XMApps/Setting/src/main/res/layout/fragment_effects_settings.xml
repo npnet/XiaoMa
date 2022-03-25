@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/size_volume_linearlayout_padding_bottom"
+        android:paddingLeft="@dimen/size_volume_linearlayout_padding_left"
+        android:paddingTop="24px">
+
+        <com.xiaoma.setting.common.views.SettingSwitch
+            android:id="@+id/switch_Arkamys_3D"
+            style="@style/style_setting_item_v2"
+            app:marginLeft="0px"
+            app:titleTexts="@string/Arkamys_3D_sound_effect"
+            app:titleWidth="294px"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="41px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="74px"
+                android:gravity="center_vertical"
+                android:text="@string/Arkamys_3D_sound_effect"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/font_title" />
+
+            <com.xiaoma.setting.common.views.RadioButtonLayout
+                android:id="@+id/radioGroup_Arkamys_3D"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:buttonNames="@string/arkamys_3d_options" />
+
+        </LinearLayout>
+
+        <com.xiaoma.setting.common.views.SettingSwitch
+            android:id="@+id/switch_subwoofer"
+            style="@style/style_setting_item_v2"
+            android:layout_marginBottom="10px"
+            android:layout_marginTop="59px"
+            app:marginLeft="0px"
+            app:titleTexts="@string/subwoofer_settings"
+            app:titleWidth="294px" />
+
+        <LinearLayout
+            android:id="@+id/layout_sound_effects_mode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="41px">
+
+            <TextView
+                android:id="@+id/tv_sound_effects_mode"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="174px"
+                android:gravity="center_vertical"
+                android:text="@string/sound_effects_mode"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/font_title" />
+
+            <com.xiaoma.setting.common.views.RadioButtonLayout
+                android:id="@+id/sound_effects_mode_radioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:buttonNames="@string/sound_effects_mode_options" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/image_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/image_margin_left"
+            android:layout_marginTop="@dimen/size_arkamys_3D_image_layout_margin_top"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bg_arkamys_3d" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bg_arkamys_3d_reflection" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_settings"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/size_effects_settings_layout_margin_top"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_tickmark_seekbarbar_layout_margin_left">
+
+                <com.xiaoma.setting.common.views.TickMarkSeekBar
+                    android:id="@+id/seekBar_50Hz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/size_tickmark_seekbarbar01_margin_right"
+                    app:bottomText="@string/section_50Hz" />
+
+                <com.xiaoma.setting.common.views.TickMarkSeekBar
+                    android:id="@+id/seekBar_200Hz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/size_tickmark_seekbarbar02_margin_right"
+                    app:bottomText="@string/section_200Hz" />
+
+                <com.xiaoma.setting.common.views.TickMarkSeekBar
+                    android:id="@+id/seekBar_800Hz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/size_tickmark_seekbarbar03_margin_right"
+                    app:bottomText="@string/section_800Hz" />
+
+                <com.xiaoma.setting.common.views.TickMarkSeekBar
+                    android:id="@+id/seekBar_3200Hz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/size_tickmark_seekbarbar04_margin_right"
+                    app:bottomText="@string/section_3200Hz" />
+
+                <com.xiaoma.setting.common.views.TickMarkSeekBar
+                    android:id="@+id/seekBar_10000Hz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:bottomText="@string/section_10000Hz" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="79px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/size_sound_field_title_textview_margin_right"
+                    android:gravity="center_vertical"
+                    android:text="@string/sound_field_mode"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/font_title" />
+
+                <com.xiaoma.setting.sound.ui.SoundFieldLayout
+                    android:id="@+id/layout_sound_field"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="15px">
+
+    <RelativeLayout
+        android:layout_width="@dimen/width_view_content_song_name_tv"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_fragment_play_content_rl_margin_s"
+        android:layout_marginTop="@dimen/size_view_content_usb_rl_margin_t"
+        android:layout_marginEnd="@dimen/size_fragment_play_content_rl_margin_e">
+
+        <com.xiaoma.ui.view.AutoScrollTextView
+            android:id="@+id/usb_content_song_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:ellipsize="marquee"
+            android:includeFontPadding="false"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:textSize="@dimen/font_play_content_song_name" />
+
+        <TextView
+            android:id="@+id/play_content_album_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/usb_content_song_tv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/size_play_content_album_name_margin_t"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:textSize="@dimen/font_play_content_album_name" />
+
+    </RelativeLayout>
+
+    <com.xiaoma.music.player.view.player.ProgressView
+        android:id="@+id/usb_content_progress_view"
+        android:layout_width="@dimen/width_fragment_content_progess"
+        android:layout_height="@dimen/height_fragment_content_progess"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/size_fragment_content_progess_margin_b" />
+
+</RelativeLayout>

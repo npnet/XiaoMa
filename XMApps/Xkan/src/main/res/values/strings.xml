@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">媒体</string>
+    <string name="all_function">全部</string>
+    <string name="video">视频</string>
+    <string name="picture">图片</string>
+
+    <string name="filter_atoz">A->Z</string>
+    <string name="filter_ztoa">Z->A</string>
+    <string name="filter_fartoclose">远->近</string>
+    <string name="filter_closetofar">近->远</string>
+    <string name="filter_bigtosmall">大->小</string>
+    <string name="filter_smalltobig">小->大</string>
+    <string name="wait">正在努力加载中,请稍等</string>
+    <string name="usb_conn_state_error">移动存储设备连接中断</string>
+    <string name="usb_mount_state_error">移动存储设备连接失败</string>
+    <string name="usb_conn_state_remove">USB未连接,请重新连接</string>
+    <string name="usb_conn_state_mounted_error">USB不可用</string>
+    <string name="read_usb_media_content">正在检测U盘状态，请稍侯</string>
+    <string name="complete_fetch_usb_media_data">U盘信息扫描完毕</string>
+    <string name="space_str">&#160;&#160;&#160;&#160;</string>
+    <string name="ready_video">正在准备…</string>
+    <string name="buffer_video">正在缓冲…</string>
+    <string name="empty_no_file">内容为空</string>
+    <string name="empty_no_video_file">未找到可播放的视频</string>
+    <string name="empty_no_photo_file">未找到可浏览的图片</string>
+    <string name="gif_no_rotate">动图不支持旋转</string>
+    <string name="image_loading">图片正在加载中</string>
+    <string name="file_size">&#160;&#160;&#160;&#160;%s</string>
+    <string name="dec_path">%1$s /…/ %2$s</string>
+    <string name="driving_forbid_watch_video">行车过程中不可观看视频</string>
+    <string name="driving_watch_video_message">驾驶中观看视频属于危险行为，\n是否继续播放</string>
+    <string name="driving_watch_video_tip">(在设置中可关闭该提醒)</string>
+    <string name="driving_watch_video_replay">继续播放</string>
+    <string name="driving_watch_video_stop_close">停止并关闭</string>
+    <string name="driving_watch_video_message_vf">驾驶中观看视频属于危险行为，\n是否继续观看</string>
+    <string name="driving_watch_video_replayo_vf">继续观看</string>
+    <string name="driving_watch_video_stop_close_vf">停止并关闭</string>
+    <string name="play_error_retry">播放错误，请重试。</string>
+    <string name="current_file_play_failed">当前文件无法播放</string>
+
+    <string name="no_usb_mounted">未挂载usb设备</string>
+    <string name="ok">好嘞</string>
+    <string name="x1_speed">X1\n倍速</string>
+    <string name="x125_speed">X1.25\n倍速</string>
+    <string name="x15_speed">X1.5\n倍速</string>
+    <string name="x2_speed">X2.0\n倍速</string>
+    <string name="x05_speed">X0.5\n倍速</string>
+    <string name="player_speed_format">X%1$s\n倍速</string>
+    <string name="no_pre_tips">已经是第一个了</string>
+    <string name="no_next_tips">已经是最后一个了</string>
+    <string name="filter_size">大小</string>
+    <string name="filter_date">日期</string>
+    <string name="filter_name">名称</string>
+
+    <string name="tip_audio_fosuc_fail">当前音频通道已被占用，暂不可播放</string>
+</resources>

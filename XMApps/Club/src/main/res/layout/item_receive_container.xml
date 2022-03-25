@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/chat_msg_item_horizontal_padding"
+    android:paddingEnd="@dimen/chat_msg_item_horizontal_padding"
+    tools:ignore="ContentDescription,PxUsage">
+
+    <LinearLayout
+        android:id="@+id/avatar_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/msg_user_img"
+            style="@style/chat_msg_avatar" />
+
+        <TextView
+            android:id="@+id/tv_occupy"
+            style="@style/chat_msg_occupy" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/avatar_container"
+        android:layout_toEndOf="@+id/avatar_container"
+        android:orientation="vertical"
+        android:paddingStart="42px"
+        android:paddingEnd="0px">
+
+        <TextView
+            android:id="@+id/msg_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@android:color/white"
+            android:textSize="26px"
+            tools:ignore="PxUsage" />
+
+        <FrameLayout
+            android:id="@+id/msg_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14px" />
+    </LinearLayout>
+</RelativeLayout>

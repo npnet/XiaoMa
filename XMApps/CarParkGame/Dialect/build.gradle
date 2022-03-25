@@ -1,0 +1,14 @@
+apply plugin: 'com.android.application'
+apply from: "$rootDir$Android"
+apply from: "$rootDir$Modules"
+
+android application('com.xiaoma.dialect')
+dependencies dependency(Dialect)
+
+apply plugin: 'replugin-plugin-gradle'
+
+dependencies {
+    implementation "com.qihoo360.replugin:replugin-plugin-lib:$REPLUGIN_VERSION"
+}
+
+

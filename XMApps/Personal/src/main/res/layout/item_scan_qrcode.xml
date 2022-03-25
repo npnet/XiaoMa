@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scan_qr_code_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_order_qr_code"
+        android:layout_width="@dimen/size_order_detail_scan_qr_code"
+        android:layout_height="@dimen/size_order_detail_scan_qr_code"
+        android:src="@drawable/test"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tv_scan_code_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_order_detail_scan_qr_text_margin"
+        android:text="@string/use_alipay_wechat"
+        android:textSize="@dimen/font_mine_order_size_24px"
+        app:layout_constraintStart_toEndOf="@id/iv_order_qr_code"
+        app:layout_constraintTop_toTopOf="@id/iv_order_qr_code" />
+
+
+    <TextView
+        android:id="@+id/tv_scan_code_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_order_detail_scan_qr_price_top"
+        android:text="￥400.0"
+        android:textColor="@color/wait_pay_color"
+        android:textSize="@dimen/font_mine_order_size_42px"
+        app:layout_constraintStart_toStartOf="@id/tv_scan_code_desc"
+        app:layout_constraintTop_toBottomOf="@id/tv_scan_code_desc" />
+
+
+    <ImageView
+        android:id="@+id/iv_scan_wen_xin"
+        android:layout_width="@dimen/size_order_detail_pay_typ_image"
+        android:layout_height="@dimen/size_order_detail_pay_typ_image"
+        android:src="@drawable/pay_wen_xin"
+        app:layout_constraintBottom_toBottomOf="@id/iv_order_qr_code"
+        app:layout_constraintStart_toStartOf="@id/tv_scan_code_desc" />
+
+    <ImageView
+        android:id="@+id/iv_scan_a_li"
+        android:layout_width="@dimen/size_order_detail_pay_typ_image"
+        android:layout_height="@dimen/size_order_detail_pay_typ_image"
+        android:layout_marginStart="@dimen/size_order_detail_scan_qr_text_margin"
+        android:src="@drawable/pay_a_li"
+        app:layout_constraintBottom_toBottomOf="@id/iv_order_qr_code"
+        app:layout_constraintStart_toEndOf="@id/iv_scan_wen_xin" />
+
+</android.support.constraint.ConstraintLayout>

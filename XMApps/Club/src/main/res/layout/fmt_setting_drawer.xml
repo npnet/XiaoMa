@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/setting_outside"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_dim" />
+
+    <LinearLayout
+        android:id="@+id/setting_parent"
+        android:layout_width="@dimen/width_personal_drawer"
+        android:layout_height="match_parent"
+        android:background="@drawable/drawer_bg"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/padding_setting_drawer_left"
+        android:paddingRight="@dimen/padding_setting_drawer_right"
+        android:paddingTop="@dimen/padding_setting_drawer_top">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/setting_text"
+            android:textColor="@color/club_white"
+            android:textSize="@dimen/font_text_middle" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_setting_drawer_item"
+            android:layout_marginTop="@dimen/margin_setting_drawer_top">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/chat_msg_push_text"
+                android:textColor="@color/club_white"
+                android:textSize="@dimen/font_text_middle" />
+
+            <Switch
+                android:id="@+id/setting_chat_push_switch"
+                android:layout_width="@dimen/width_setting_switch"
+                android:layout_height="@dimen/height_setting_switch"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin_setting_switch"
+                android:thumb="@drawable/switch_thumb"
+                android:track="@drawable/switch_track" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/divider" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_setting_drawer_item"
+            android:layout_marginTop="@dimen/margin_setting_drawer_top"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/like_comment_push_text"
+                android:textColor="@color/club_white"
+                android:textSize="@dimen/font_text_middle" />
+
+            <Switch
+                android:layout_width="@dimen/width_setting_switch"
+                android:layout_height="@dimen/height_setting_switch"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin_setting_switch"
+                android:thumb="@drawable/switch_thumb"
+                android:track="@drawable/switch_track" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/divider" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_setting_drawer_item"
+            android:layout_marginTop="@dimen/margin_setting_drawer_top">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/chat_voice_auto_play_text"
+                android:textColor="@color/club_white"
+                android:textSize="@dimen/font_text_middle" />
+
+            <Switch
+                android:id="@+id/setting_auto_play_switch"
+                android:layout_width="@dimen/width_setting_switch"
+                android:layout_height="@dimen/height_setting_switch"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin_setting_switch"
+                android:thumb="@drawable/switch_thumb"
+                android:track="@drawable/switch_track" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/divider" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</FrameLayout>

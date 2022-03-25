@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_view"
+    android:layout_width="@dimen/card_normal_width"
+    android:layout_height="@dimen/card_normal_height">
+
+    <View
+        android:id="@+id/v_logo"
+        android:background="@drawable/activity_logo"
+        android:visibility="gone"
+        android:layout_width="98px"
+        android:layout_height="24px"
+        android:layout_gravity="left|top"
+        android:layout_marginTop="10px"
+        android:layout_marginLeft="10px"/>
+
+    <com.xiaoma.ui.view.ReflectionImageView
+        android:id="@+id/audio_iv"
+        android:layout_width="@dimen/card_normal_width"
+        android:layout_height="@dimen/card_normal_height"
+        android:layout_centerInParent="true"
+        android:scaleType="fitXY"
+        app:reflectionHeight="40px"
+        app:reflectionPadding="6px" />
+
+    <TextView
+        android:id="@+id/audio_tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="70px"
+        android:background="@drawable/music_card_word_n"
+        android:gravity="center"
+        android:padding="20px"
+        android:textColor="@color/white"
+        android:textSize="26px" />
+
+    <ImageView
+        android:id="@+id/playing_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+</RelativeLayout>

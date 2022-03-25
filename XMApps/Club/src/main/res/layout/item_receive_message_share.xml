@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/msg_share_contain"
+        android:layout_width="@dimen/width_share_msg_bg"
+        android:layout_height="@dimen/height_share_msg_bg"
+        android:background="@drawable/share_msg_bg">
+
+        <ImageView
+            android:id="@+id/msg_share_img"
+            android:layout_width="@dimen/height_share_msg_img"
+            android:layout_height="@dimen/height_share_msg_img"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_share_msg_img"
+            android:background="@drawable/headphoto_pic_n"/>
+
+        <TextView
+            android:id="@+id/msg_share_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_share_msg_img"
+            android:layout_marginRight="@dimen/margin_share_msg_img"
+            android:layout_marginTop="@dimen/margin_share_msg_img"
+            android:layout_toRightOf="@id/msg_share_img"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:maxLines="2"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_text_small_plus" />
+
+        <TextView
+            android:id="@+id/msg_share_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/margin_share_msg_img"
+            android:layout_marginLeft="@dimen/margin_share_msg_img"
+            android:layout_toRightOf="@id/msg_share_img"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_text_red_dot" />
+
+
+    </RelativeLayout>
+</FrameLayout>

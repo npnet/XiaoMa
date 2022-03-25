@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="1000px"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_cloudmi_login">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="61px"
+        android:layout_marginTop="98px"
+        android:textColor="@color/white"
+        android:textSize="30px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="场景设置" />
+
+    <TextView
+        android:id="@+id/tv_auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="123px"
+        android:layout_marginTop="183px"
+        android:text="@string/auto_excute"
+        android:textColor="@color/white"
+        android:textSize="30px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/iv_auto"
+        android:layout_width="65px"
+        android:layout_height="30px"
+        android:thumb="@drawable/switch_thumb"
+        android:track="@drawable/switch_track"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_auto"
+        app:layout_constraintEnd_toEndOf="@id/et_condition"
+        app:layout_constraintTop_toTopOf="@+id/tv_auto" />
+
+    <EditText
+        android:id="@+id/et_condition"
+        android:layout_width="750px"
+        android:layout_height="100px"
+        android:layout_marginStart="123px"
+        android:layout_marginTop="250px"
+        android:background="@drawable/bg_inputbox"
+        android:drawableEnd="@drawable/icon_next"
+        android:ellipsize="end"
+        android:focusable="false"
+        android:hint="@string/condition_setting"
+        android:paddingStart="34px"
+        android:paddingEnd="25px"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textColorHint="#8a919b"
+        android:textSize="30px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="80px"
+        android:text="@string/please_select"
+        android:textColor="#8a919b"
+        android:textSize="30px"
+        app:layout_constraintBottom_toBottomOf="@+id/et_condition"
+        app:layout_constraintEnd_toEndOf="@+id/et_condition"
+        app:layout_constraintTop_toTopOf="@+id/et_condition" />
+
+
+</android.support.constraint.ConstraintLayout>

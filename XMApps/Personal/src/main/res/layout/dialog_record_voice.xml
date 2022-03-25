@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_bg_middle">
+
+    <TextView
+        android:id="@+id/tv_record_voice_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_dialog_voice_title_top"
+        android:text="@string/please_say_question"
+        android:textSize="@dimen/font_size_feedback_28px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/iv_voice_line_left"
+            android:layout_width="@dimen/width_dialog_wheat_voice_line"
+            android:layout_height="@dimen/height_dialog_wheat_voice_line"
+            android:layout_marginEnd="@dimen/size_dialog_wheat_margin"
+            android:background="@drawable/wheat_voice_left"
+            android:visibility="gone" />
+
+
+        <ImageView
+            android:id="@+id/iv_record_voice_image"
+            android:layout_width="@dimen/width_dialog_wheat"
+            android:layout_height="@dimen/height_dialog_wheat"
+            android:src="@drawable/icon_dialog_voice_input" />
+
+
+        <ImageView
+            android:id="@+id/iv_voice_line_right"
+            android:layout_width="@dimen/width_dialog_wheat_voice_line"
+            android:layout_height="@dimen/height_dialog_wheat_voice_line"
+            android:layout_marginStart="@dimen/size_dialog_wheat_margin"
+            android:background="@drawable/wheat_voice_right"
+            android:visibility="gone" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30px"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/tv_confirm_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="188px"
+            android:text="@string/confirm"
+            android:textColor="@drawable/selector_bg_button"
+            android:textSize="@dimen/font_size_feedback_30px"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/tv_cancel_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="164px"
+            android:text="@string/cancel"
+            android:textColor="@drawable/selector_bg_button"
+            android:textSize="@dimen/font_size_feedback_30px"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

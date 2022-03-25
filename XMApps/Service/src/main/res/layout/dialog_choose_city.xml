@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:layout_marginLeft="@dimen/choose_city_linear_left"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_marginTop="30px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/dialog"
+            android:layout_width="@dimen/choose_city_linear_dialog_width"
+            android:layout_height="@dimen/choose_city_linear_height"
+            android:layout_centerInParent="true"
+            android:background="@drawable/positioning_popup"
+            android:gravity="center"
+            android:textColor="#ffffffff"
+            android:textSize="@dimen/choose_city_linear_size"
+            android:visibility="invisible" />
+
+        <com.xiaoma.service.order.view.SideBar
+            android:id="@+id/sideBar"
+            android:layout_width="@dimen/choose_city_sidebar_width"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/choose_city_sidebar_right"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+
+</LinearLayout>

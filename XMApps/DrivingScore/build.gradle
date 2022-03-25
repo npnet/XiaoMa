@@ -1,0 +1,33 @@
+apply plugin: 'com.android.application'
+apply plugin: 'android-aspectjx'
+apply from: 'sdk.gradle'
+apply from: "$rootDir$Android"
+apply from: "$rootDir$Modules"
+apply from: "$rootDir$Tinker"
+android application('com.xiaoma.drivingscore')
+dependencies dependency(DrivingScore)
+
+sdk {
+    boolean isCar = BUILD_PLATFORM.equalsIgnoreCase("CAR")
+    isCar ? 'yq' : 'test'
+}
+
+dependencies {
+    implementation "com.android.support.constraint:constraint-layout:${CONSTRAINT_LAYOUT}"
+    implementation "com.github.CymChad:BaseRecyclerViewAdapterHelper:${BASE_RECYCLERVIEW_ADAPTER_HELPER}"
+
+}
+
+tinker {
+    appClassName 'com.xiaoma.drivingscore.DrivingScoreApp'
+    buildPatch {
+        baseApkPath ''
+        baseResMapping ''
+        baseMapping ''
+    }
+    patchDesc {
+        baseVersion ''
+        patchVersion 0
+        patchMessage ''
+    }
+}

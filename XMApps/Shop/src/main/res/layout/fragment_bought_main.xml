@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/bought_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_buy_pay_title_margin_left"
+        android:layout_marginTop="@dimen/size_buy_pay_title_margin_top"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tabGravity="center"
+        app:tabIndicatorHeight="0dp"
+        app:tabMode="scrollable"
+        app:tabPaddingEnd="@dimen/size_buy_pay_title_margin"
+        app:tabSelectedTextColor="@color/white"
+        app:tabTextAppearance="@style/TabLayoutTextStyle"
+        app:tabTextColor="@color/color_flow_tv_tip" />
+
+
+    <RelativeLayout
+        android:id="@+id/clean_cache_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/size_bind_account_margin_end"
+        android:gravity="center_vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/bought_tab">
+
+        <TextView
+            android:id="@+id/tv_cache_text_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/height_tv_cache_text_margin_top"
+            android:textColor="@color/color_flow_tv_tip"
+            android:textSize="@dimen/font_of_shop_26" />
+
+        <CheckBox
+            android:id="@+id/ck_select_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_cache_text_desc"
+            android:layout_alignStart="@id/tv_cache_text_desc"
+            android:layout_marginTop="@dimen/size_all_select_margin"
+            android:button="@drawable/all_select_bg"
+            android:paddingLeft="@dimen/size_all_select_margin"
+            android:text="@string/all_select"
+            android:textColor="@color/color_flow_tv_tip"
+            android:textSize="@dimen/font_of_shop_20"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/bt_cache_operation"
+            android:layout_width="@dimen/width_use_button"
+            android:layout_height="@dimen/height_use_button"
+            android:layout_marginStart="@dimen/size_clean_cache_margin_start"
+            android:layout_toEndOf="@id/tv_cache_text_desc"
+            android:background="@drawable/selector_btn_clear_cache"
+            android:gravity="center"
+            android:paddingBottom="@dimen/size_clean_cache_margin_bottom"
+            android:text="@string/clean_cache"
+            android:textSize="@dimen/font_of_shop_24" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/account_bind_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/size_bind_account_margin_end"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/bought_tab">
+
+        <ImageView
+            android:id="@+id/iv_account_bind"
+            android:layout_width="@dimen/width_bind_account"
+            android:layout_height="@dimen/height_bind_account"
+            android:src="@drawable/bind_hologram_account_icon" />
+
+        <TextView
+            android:id="@+id/tv_account_bind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_bind_account_margin_start"
+            android:text="账号绑定"
+            android:textColor="@color/color_flow_tv_tip"
+            android:visibility="gone"
+            android:textSize="@dimen/font_of_shop_26" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_audio_sound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/width_tv_audio_margin_left"
+        android:padding="@dimen/size_add_to_click_padding"
+        android:text="@string/audio_sound"
+        android:textColor="@color/selector_home_menus_text"
+        android:textSize="@dimen/font_of_shop_28"
+        app:layout_constraintTop_toBottomOf="@id/bought_tab"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_instrument_sound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_title_voice_type_margin_left"
+        android:padding="@dimen/size_add_to_click_padding"
+        android:text="@string/instrument_sound"
+        android:textColor="@color/selector_home_menus_text"
+        android:textSize="@dimen/font_of_shop_28"
+        app:layout_constraintStart_toEndOf="@+id/tv_audio_sound"
+        app:layout_constraintTop_toTopOf="@id/tv_audio_sound" />
+
+    <com.xiaoma.shop.business.ui.view.DisableSwipeViewPager
+        android:id="@+id/bought_view_pager"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/size_buy_main_content_margin_top"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bought_tab" />
+
+</android.support.constraint.ConstraintLayout>

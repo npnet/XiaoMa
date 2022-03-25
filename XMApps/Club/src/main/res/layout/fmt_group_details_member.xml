@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="@dimen/width_member_rl"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_member_left"
+                android:text="@string/group_details_member"
+                android:textColor="@color/club_white"
+                android:textSize="@dimen/font_text_small_plus" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="@dimen/width_member_name_rl"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/friend_name"
+                android:textColor="@color/club_white"
+                android:textSize="@dimen/font_text_small_plus" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="@dimen/width_member_name_rl"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/gender"
+                android:textColor="@color/club_white"
+                android:textSize="@dimen/font_text_small_plus" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="@dimen/width_member_name_rl"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/age"
+                android:textColor="@color/club_white"
+                android:textSize="@dimen/font_text_small_plus" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20px"
+            android:text="@string/level"
+            android:textColor="#000000"
+            android:textSize="24px"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/margin_member_rv_top">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/group_details_member_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/margin_member_rv_right" />
+
+
+        <com.xiaoma.ui.view.XmScrollBar
+            android:id="@+id/club_member_scroll_bar"
+            android:layout_width="@dimen/height_xmscroll_bar"
+            android:layout_height="@dimen/width_xmscroll_bar"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_member_rv_scroll_right"
+            android:visibility="gone"
+            app:xmdirection="vertical" />
+    </RelativeLayout>
+</LinearLayout>

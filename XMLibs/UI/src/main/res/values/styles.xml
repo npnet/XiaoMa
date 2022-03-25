@@ -1,0 +1,134 @@
+<resources>
+
+    <style name="custom_dialog" parent="@style/Theme.AppCompat.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:animationDuration">0</item>
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+
+    <style name="custom_dialog2" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- Dialog的windowFrame框为无 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否漂现在activity上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 是否半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 去除黑色边框的关键设置项 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 屏幕背景是否变暗 -->
+        <item name="android:backgroundDimAmount">0.3</item>
+    </style>
+
+    <style name="picker_view_scale_anim" mce_bogus="1" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/pickerview_dialog_scale_in</item>
+        <item name="android:windowExitAnimation">@anim/pickerview_dialog_scale_out</item>
+    </style>
+
+    <style name="picker_view_slide_anim" mce_bogus="1" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/pickerview_slide_in_bottom</item>
+        <item name="android:windowExitAnimation">@anim/pickerview_slide_out_bottom</item>
+    </style>
+
+
+    <style name="text_view_search_voice">
+        <item name="android:shadowRadius">10</item>
+        <item name="android:shadowColor">#3358a4</item>
+        <item name="android:shadowDy">0.5</item>
+        <item name="android:shadowDx">0.5</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_view_light_blue">
+        <item name="android:shadowRadius">10</item>
+        <item name="android:shadowColor">#3358a4</item>
+        <item name="android:shadowDy">0.5</item>
+        <item name="android:shadowDx">0.5</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textColor">@color/color_main_selector</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="text_view_light_white">
+        <item name="android:shadowRadius">10</item>
+        <item name="android:shadowColor">#3358a4</item>
+        <item name="android:shadowDy">0.5</item>
+        <item name="android:shadowDx">0.5</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="text_view_normal">
+        <item name="android:shadowRadius">0</item>
+        <item name="android:shadowColor">#8a919d</item>
+        <item name="android:textColor">@color/color_main_selector</item>
+        <item name="android:shadowDy">0</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="text_view_light_blue_service">
+        <item name="android:shadowRadius">10</item>
+        <item name="android:shadowColor">#3358a4</item>
+        <item name="android:shadowDy">0.5</item>
+        <item name="android:shadowDx">0.5</item>
+        <item name="android:textColor">@color/color_main_selector</item>
+        <item name="android:textSize">30px</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_view_normal_service">
+        <item name="android:shadowRadius">0</item>
+        <item name="android:shadowColor">#8a919d</item>
+        <item name="android:textColor">@color/color_main_selector</item>
+        <item name="android:shadowDy">0</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:textSize">26px</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+
+    <style name="common_button">
+        <item name="android:layout_width">@dimen/width_normal_button</item>
+        <item name="android:layout_height">@dimen/height_normal_button</item>
+        <item name="android:background">@drawable/selector_button</item>
+        <item name="android:textSize">@dimen/font_button_text</item>
+        <item name="android:textColor">@color/selector_button_text_color</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="LoadingIndicatorView">
+        <item name="minWidth">48dip</item>
+        <item name="maxWidth">48dip</item>
+        <item name="minHeight">48dip</item>
+        <item name="maxHeight">48dip</item>
+        <item name="indicatorName">BallPulseIndicator</item>
+    </style>
+
+    <style name="vp_record_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- Dialog的windowFrame框为无 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否漂现在activity上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 是否半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 去除黑色边框的关键设置项 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 屏幕背景是否变暗 -->
+        <item name="android:backgroundDimAmount">0.3</item>
+    </style>
+</resources>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Driving Score</string>
+    <string name="travel_time">Irregular driving with ，parents two lines of tears</string>
+    <string name="start_time">Driving time：</string>
+    <string name="avg_speed">Average speed（Km/h）</string>
+    <string name="avg_fuel_consumer">Averag`e fuel consumption（L/100Km）</string>
+    <string name="current_score">This driving score</string>
+    <string name="last_score">Last driving score</string>
+    <string name="default_score">100</string>
+    <string name="default_num">0times</string>
+    <string name="rapid_accelerate">acceleration</string>
+    <string name="rapid_deceleration">deceleration</string>
+    <string name="sharp_turn">Sharp turn</string>
+    <string name="history">history record</string>
+    <string name="loading_again">重新加载</string>
+    <string name="loading_common">网络不给力</string>
+    <string name="loading_fail">网络连接不可用</string>
+    <string name="system_error">系统异常啦，请联系管理员或拨打客服热线</string>
+    <string name="network_error">网络出错啦，请点击按钮重新加载</string>
+    <string name="loading_timeout">当前处于熄火状态，没有驾驶数据，请点火!!!</string>
+    <string name="pop_score_hi">Hi，master</string>
+    <string name="pop_score">100分</string>
+    <string name="pop_score_text">driving score</string>
+    <string name="dialog">dialog</string>
+    <!--<string name="history_acc_num">急加速</string>-->
+    <!--<string name="history_dec_num">急减速</string>-->
+    <!--<string name="history_turn_num">急转弯</string>-->
+    <string name="history_record">history record</string>
+    <string name="history_yellow_dot">黄色圆点</string>
+    <string name="history_delete_item">删除</string>
+    <string name="pop_score_100">Great, you have a strong sense of security!</string>
+    <string name="pop_score_99">您的驾驶很出色，请继续保持</string>
+    <string name="pop_score_89">安全万里行</string>
+    <string name="pop_score_79">您需要保持良好的驾驶习惯</string>
+    <string name="pop_score_69">需注意行车规范</string>
+    <string name="pop_score_59">Irregular driving with ，parents two lines of tears!</string>
+    <string name="count">times</string>
+    <string name="history_score">分</string>
+    <string name="drived">Already driven：</string>
+    <string name="drive_unit">minutes</string>
+    <string name="last_week_drive_score">您上周的驾驶评分</string>
+</resources>

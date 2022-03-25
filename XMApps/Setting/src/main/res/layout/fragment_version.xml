@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="730px"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="350px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="75px"
+            android:text="@string/version_number"
+            android:textColor="#fff"
+            android:visibility="invisible"
+            android:textSize="32px" />
+
+        <TextView
+            android:id="@+id/version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="55px"
+            android:textColor="#fff"
+            android:textSize="28px" />
+
+        <TextView
+            android:id="@+id/iccid_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="55px"
+            android:textColor="#fff"
+            android:textSize="28px" />
+
+
+        <TextView
+            android:id="@+id/imei_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="55px"
+            android:textColor="#fff"
+            android:textSize="28px" />
+
+        <RelativeLayout
+            android:layout_width="700px"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="65px"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/rl_version_left"
+                android:layout_width="302px"
+                android:layout_height="76px"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/bg_button_new"
+                android:visibility="gone">
+
+                <com.xiaoma.setting.common.views.MagicTextView
+                    android:id="@+id/tv_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10px"
+                    android:gravity="center"
+                    android:text="@string/version_update_query"
+                    android:textColor="#edf6fe"
+                    android:textSize="22px"
+                    app:innerShadowRadius="3px"
+                    app:outerShadowColor="#FF2C99F9"
+                    app:outerShadowDy="3px"
+                    app:outerShadowRadius="10px" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_version_right"
+                android:layout_width="302px"
+                android:layout_height="76px"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/bg_button_new"
+                android:visibility="gone">
+
+                <com.xiaoma.setting.common.views.MagicTextView
+                    android:id="@+id/tv_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10px"
+                    android:gravity="center"
+                    android:text="@string/new_version_update"
+                    android:textColor="#edf6fe"
+                    android:textSize="22px"
+                    app:innerShadowRadius="3px"
+                    app:outerShadowColor="#FF2C99F9"
+                    app:outerShadowDy="3px"
+                    app:outerShadowRadius="10px"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

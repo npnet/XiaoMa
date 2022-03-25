@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/start_bar"
+        android:layout_width="@dimen/width_main_left"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_main_left_tab"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.xiaoma.club.common.view.UserHeadView
+            android:id="@+id/iv_head"
+            android:layout_width="@dimen/width_head_bg"
+            android:layout_height="@dimen/width_head_bg"
+            android:layout_gravity="center_horizontal"
+            tools:ignore="ContentDescription" />
+
+        <RelativeLayout
+            android:id="@+id/tv_discovery_rl"
+            android:layout_width="@dimen/tab_width"
+            android:layout_height="@dimen/height_main_left_item"
+            android:background="@drawable/main_left_tab_bg"
+            android:layout_marginTop="@dimen/margin_main_left_top">
+
+            <TextView
+                android:id="@+id/tv_discovery"
+                style="@style/main_tab_text"
+                android:text="@string/tab_title_discovery" />
+
+            <TextView
+                style="@style/main_tab_red_dot"
+                android:layout_toRightOf="@id/tv_discovery"
+                android:layout_marginBottom="-40px"
+                android:layout_above="@id/tv_discovery" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tv_msg_rl"
+            android:layout_width="@dimen/tab_width"
+            android:background="@drawable/main_left_tab_bg"
+            android:layout_height="@dimen/height_main_left_item">
+
+            <TextView
+                android:id="@+id/tv_msg"
+                style="@style/main_tab_text"
+                android:text="@string/tab_title_msg" />
+
+            <TextView
+                android:id="@+id/tv_msg_red_pot"
+                style="@style/main_tab_red_dot"
+                android:layout_toRightOf="@id/tv_msg"
+                android:layout_marginBottom="-40px"
+                android:layout_above="@id/tv_msg" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tv_contact_rl"
+            android:layout_width="@dimen/tab_width"
+            android:background="@drawable/main_left_tab_bg"
+            android:layout_height="@dimen/height_main_left_item">
+
+            <TextView
+                android:id="@+id/tv_contact"
+                style="@style/main_tab_text"
+                android:text="@string/tab_title_contact" />
+
+            <TextView
+                android:id="@+id/tv_contact_red_pot"
+                style="@style/main_tab_contact_red_dot"
+                android:layout_toRightOf="@id/tv_contact"
+                android:layout_marginBottom="-40px"
+                android:layout_above="@id/tv_contact"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/main_setting_btn"
+            android:layout_width="@dimen/width_main_setting"
+            android:layout_height="@dimen/width_main_setting"
+            android:layout_gravity="left"
+            android:layout_marginLeft="@dimen/margin_main_setting_left"
+            android:layout_marginTop="@dimen/margin_main_setting_top"
+            android:background="@drawable/club_setting" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fmt_child_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toEndOf="@+id/start_bar"
+        android:paddingTop="@dimen/status_bar_height" />
+
+    <FrameLayout
+        android:id="@+id/fmt_child_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:width="187px"
+        android:height="130px"
+        android:gravity="bottom|center_horizontal">
+        <bitmap android:src="@drawable/location_icon_light_2" />
+    </item>
+    <item
+        android:width="151px"
+        android:height="102px"
+        android:gravity="bottom|center_horizontal">
+        <bitmap android:src="@drawable/location_icon_light_1" />
+    </item>
+    <item
+        android:width="37px"
+        android:height="60px"
+        android:gravity="bottom|center_horizontal">
+        <bitmap android:src="@drawable/location_icon" />
+    </item>
+</layer-list>

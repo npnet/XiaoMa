@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/mall_left_layout"
+        android:layout_width="@dimen/width_mall_product_navigation"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/size_mall_left_bar_margin_start"
+        android:layout_marginTop="@dimen/size_mall_left_bar_margin_top"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/pet_radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/size_mall_left_bar_margin_start"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@id/coin_total_linear"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.xiaoma.pet.ui.view.DrawStrokeTextView
+                android:id="@+id/store_radio_bt"
+                android:layout_width="@dimen/width_mall_left_bar"
+                android:layout_height="@dimen/height_mall_left_bar"
+                android:background="@drawable/mall_left_bar"
+                android:clickable="true"
+                android:enabled="true"
+                android:focusable="true"
+                app:gradient="true"
+                app:letter_spacing="0.2"
+                app:stroke_text_size="@dimen/pet_font_size_36"
+                app:text_content="@string/mall_product" />
+
+
+            <com.xiaoma.pet.ui.view.DrawStrokeTextView
+                android:id="@+id/repository_radio_bt"
+                android:layout_width="@dimen/width_mall_left_bar"
+                android:layout_height="@dimen/height_mall_left_bar"
+                android:layout_marginTop="@dimen/size_mall_left_bar_margin"
+                android:alpha="0.5"
+                android:background="@drawable/mall_left_bar"
+                android:clickable="true"
+                android:enabled="true"
+                android:focusable="true"
+                app:gradient="true"
+                app:letter_spacing="0.2"
+                app:stroke_text_size="@dimen/pet_font_size_36"
+                app:text_content="@string/mall_repository" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/coin_total_linear"
+            android:layout_width="@dimen/width_pet_coin"
+            android:layout_height="@dimen/height_pet_coin"
+            android:layout_marginBottom="@dimen/size_mall_product_margin_bottom"
+            android:background="@drawable/mall_coin_bg"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/pet_radio_group">
+
+            <ImageView
+                android:id="@+id/iv_coin_total_tag"
+                android:layout_width="@dimen/size_pet_mall_coin_icon"
+                android:layout_height="@dimen/size_pet_mall_coin_icon"
+                android:src="@drawable/pet_coin" />
+
+            <TextView
+                android:id="@+id/tv_coin_total_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10px"
+                android:maxLength="6"
+                android:singleLine="true"
+                android:text="0"
+                android:textColor="@color/mall_coin_text"
+                android:textSize="@dimen/pet_font_size_30"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
+
+    <FrameLayout
+        android:id="@+id/mall_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="@dimen/size_mall_product_margin_end"
+        android:layout_marginBottom="@dimen/size_mall_product_margin_bottom"
+        android:background="@drawable/mall_product_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/mall_left_layout"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

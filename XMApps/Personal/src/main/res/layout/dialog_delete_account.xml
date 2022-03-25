@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_bg_middle">
+
+    <TextView
+        android:id="@+id/tv_delete_account_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30px"
+        android:text="是否删除该账户"
+        android:textSize="30px"
+        app:layout_constraintBottom_toTopOf="@id/tv_delete_account_desc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tv_delete_account_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="删除后将与该账户绑定钥匙同步进行解绑"
+        android:textSize="26px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5"
+        app:layout_constraintTop_toBottomOf="@id/tv_delete_account_desc" />
+
+
+    <Button
+        android:id="@+id/delete_account_bt"
+        android:layout_width="150px"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20px"
+        android:background="@null"
+        android:text="@string/delete_text"
+        android:textSize="30px"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/guideline"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <Button
+        android:id="@+id/cancel_del_account_bt"
+        android:layout_width="150px"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20px"
+        android:background="@null"
+        android:text="@string/cancel"
+        android:textSize="30px"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/guideline" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/whole_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="@dimen/width_home_menus"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_main_left_tab"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <com.xiaoma.shop.business.ui.view.TabMenuGroup
+            android:id="@+id/rg_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_tab_top_margin_top"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.xiaoma.shop.business.ui.view.TabMenu
+                android:id="@+id/rb_theme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:title="@string/theme" />
+
+
+            <com.xiaoma.shop.business.ui.view.TabMenu
+                android:id="@+id/rb_hologram"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_tab_span_margin_top"
+                app:title="@string/Hologram" />
+
+            <!-- 在低配中不开启，只有高配才打开 -->
+            <com.xiaoma.shop.business.ui.view.TabMenu
+                android:id="@+id/rb_vehicle_sound"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_tab_span_margin_top"
+                android:visibility="visible"
+                app:title="@string/VehicleSound" />
+
+            <com.xiaoma.shop.business.ui.view.TabMenu
+                android:id="@+id/rb_flow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_tab_span_margin_top"
+                app:title="@string/flow" />
+
+        </com.xiaoma.shop.business.ui.view.TabMenuGroup>
+
+        <LinearLayout
+            android:id="@+id/layout_purchase"
+            android:layout_width="match_parent"
+            android:layout_height="38px"
+            android:layout_marginBottom="58px"
+            android:gravity="center"
+            android:onClick="mineBuy"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_purchase" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8px"
+                android:text="@string/bt_buyed"
+                android:textColor="@color/selector_home_menus_text"
+                android:textSize="@dimen/font_of_shop_24" />
+        </LinearLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+    <FrameLayout
+        android:id="@+id/fragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

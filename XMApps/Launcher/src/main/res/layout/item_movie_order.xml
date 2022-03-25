@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="445px"
+    android:layout_height="450px"
+    android:layout_marginTop="45px"
+    android:layout_marginBottom="30px"
+    android:background="@drawable/bg_order_frame"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_hotel_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44px"
+        android:layout_marginTop="58px"
+        android:layout_marginEnd="20px"
+        android:maxLines="1"
+        android:textSize="28px"
+        android:textStyle="bold"
+        tools:text="蜘蛛侠:平行世界" />
+
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44px"
+        android:layout_marginTop="16px"
+        android:layout_marginEnd="20px"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textSize="24px"
+        tools:text="百老汇影院"
+        android:textColor="@color/color_8a919d"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44px"
+        android:layout_marginTop="29px"
+        android:layout_marginEnd="20px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="55px"
+            android:layout_height="35px"
+            android:background="@drawable/bg_order_but_icon"
+            android:gravity="center"
+            android:text="@string/play_time"
+            android:textSize="20px" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="22px"
+            android:gravity="center_vertical"
+            android:textSize="24px"
+            tools:text="2月1日 " />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44px"
+        android:layout_marginTop="20px"
+        android:layout_marginEnd="20px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="55px"
+            android:layout_height="35px"
+            android:gravity="center"
+            android:background="@drawable/bg_order_but_icon"
+            android:textSize="20px"
+            android:text="@string/ticket_count" />
+
+        <TextView
+            android:id="@+id/tv_count"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20px"
+            android:gravity="center_vertical"
+            android:textSize="24px"
+            tools:text="2间"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_guide"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="50px"
+        android:paddingTop="8px"
+        android:layout_width="286px"
+        android:layout_height="70px"
+        android:background="@drawable/selector_button"
+        android:text="@string/im_guide"
+        android:textSize="24px" />
+</LinearLayout>

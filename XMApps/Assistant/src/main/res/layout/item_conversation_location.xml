@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="1024px"
+    android:layout_height="236px"
+    android:background="@drawable/single_item_msg_bg"
+    android:paddingLeft="30px"
+    android:paddingRight="30px"
+    android:paddingTop="30px">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="30px"
+        android:layout_height="36px"
+        android:layout_marginLeft="30px"
+        android:src="@drawable/icon_location_white" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10px"
+        android:layout_toRightOf="@id/imageView"
+        android:gravity="center"
+        android:text="@string/the_location_result_query_is_as_follows"
+        android:textColor="#ffffff"
+        android:textSize="28px" />
+
+    <ImageView
+        android:id="@+id/iv_assistant_diver"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/imageView"
+        android:layout_marginTop="13px"
+        android:background="#ffffff" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/iv_assistant_diver"
+        android:gravity="center">
+
+
+        <ImageView
+            android:layout_width="30px"
+            android:layout_height="36px"
+            android:src="@drawable/icon_location" />
+
+        <TextView
+            android:id="@+id/tv_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:text="AAAAAAA"
+            android:textColor="#ffffff"
+            android:textSize="30px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/view_location"
+            android:textColor="#ffffff"
+            android:textSize="30px" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+
+

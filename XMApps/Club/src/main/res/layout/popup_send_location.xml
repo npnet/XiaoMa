@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/btn_popup_send_location"
+        style="@style/chat_popup_send_btn"
+        android:text="@string/send_position" />
+
+    <Button
+        android:id="@+id/btn_popup_share_location"
+        style="@style/chat_popup_send_btn"
+        android:text="@string/share_position" />
+</LinearLayout>

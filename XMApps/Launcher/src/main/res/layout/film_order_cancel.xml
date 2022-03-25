@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/taplayout"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/film_order_tap_height"
+            android:layout_marginStart="100px"
+
+            android:gravity="center_vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="@dimen/film_order_tap_text1_width"
+                    android:layout_height="@dimen/film_order_tap_text1_height"
+                    android:background="@drawable/list_icon_wrong"
+                    android:gravity="center"
+                    android:textColor="@color/color_black"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/film_order_cancel_text_left"
+                    android:text="@string/order_out_date"
+                    android:textSize="@dimen/film_order_tap_text1_size" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/film_order_content_height"
+            app:layout_constraintTop_toBottomOf="@+id/taplayout">
+
+            <TextView
+                android:id="@+id/film_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/film_order_name_start"
+                android:layout_marginTop="@dimen/film_order_name_top"
+                android:textSize="32px"
+                android:text="无双"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/film_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/film_order_type_start"
+                android:textSize="32px"
+                android:text="动作/惊险/犯罪"
+                app:layout_constraintBaseline_toBaselineOf="@+id/film_name"
+                app:layout_constraintStart_toEndOf="@+id/film_name" />
+
+            <TextView
+                android:id="@+id/film_unit_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/film_order_unit_price_start"
+                android:textSize="32px"
+                android:text="￥45/人"
+                android:textColor="@color/color_fbd3a4"
+                app:layout_constraintBaseline_toBaselineOf="@+id/film_type"
+                app:layout_constraintStart_toEndOf="@+id/film_type" />
+
+            <TextView
+                android:id="@+id/cinema_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/film_cinema_top"
+                android:textSize="24px"
+                android:text="中影国际影城"
+                android:textColor="@color/color_8a919d"
+                app:layout_constraintStart_toStartOf="@+id/film_name"
+                app:layout_constraintTop_toBottomOf="@+id/film_name" />
+
+            <TextView
+                android:id="@+id/cinema_seat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/film_order_cinema_seat_top"
+                android:text="1排1座 49元  1排1座 49元  1排1座 49元  1排1座 49元"
+                android:textSize="24px"
+                app:layout_constraintStart_toStartOf="@+id/cinema_name"
+                app:layout_constraintTop_toBottomOf="@+id/cinema_name" />
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/film_order_user_info_layout_height"
+                android:layout_marginTop="@dimen/film_order_user_info_layout_top"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cinema_seat">
+
+                <TextView
+                    android:id="@+id/phone_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/film_order_phone_text_start"
+                    android:layout_marginTop="@dimen/film_order_phone_text_top"
+                    android:textSize="24px"
+                    android:text="@string/phone_certificate"
+                    android:textColor="@color/color_8a919d"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/user_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/film_order_user_phone_top"
+                    android:textSize="28px"
+                    android:text="17688856666"
+                    app:layout_constraintStart_toStartOf="@+id/phone_text"
+                    app:layout_constraintTop_toBottomOf="@+id/phone_text" />
+
+                <View
+                    android:id="@+id/view3"
+                    android:layout_width="@dimen/film_order_view_width"
+                    android:layout_height="@dimen/film_order_view_height"
+                    android:layout_marginStart="@dimen/film_order_view_start"
+                    android:background="@color/color_8a919d"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/phone_text"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/ticket_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/film_order_ticket_text_start"
+                    android:layout_marginTop="@dimen/film_order_ticket_text_top"
+                    android:textSize="24px"
+                    android:text="@string/total_amount"
+                    android:textColor="@color/color_8a919d"
+                    app:layout_constraintStart_toEndOf="@+id/view3"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/ticket_total_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/film_order_ticket_total_price_top"
+                    android:textSize="28px"
+                    android:text="￥147.0"
+                    app:layout_constraintStart_toStartOf="@+id/ticket_text"
+                    app:layout_constraintTop_toBottomOf="@+id/ticket_text" />
+
+                <View
+                    android:id="@+id/view4"
+                    android:layout_width="@dimen/film_order_view2_width"
+                    android:layout_height="@dimen/film_order_view2_height"
+                    android:layout_marginStart="@dimen/film_order_view2_start"
+                    android:background="@color/color_8a919d"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/ticket_text"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <TextView
+                    android:id="@+id/film_time_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/film_order_film_time_text_start"
+                    android:layout_marginTop="@dimen/film_order_film_time_text_top"
+                    android:textSize="24px"
+                    android:text="@string/watch_movie_time"
+                    android:textColor="@color/color_8a919d"
+                    app:layout_constraintStart_toEndOf="@+id/view4"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/film_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/film_order_film_time_top"
+                    android:textSize="28px"
+                    android:text="10月18日 23:00"
+                    app:layout_constraintStart_toStartOf="@+id/film_time_text"
+                    app:layout_constraintTop_toBottomOf="@+id/film_time_text" />
+            </android.support.constraint.ConstraintLayout>
+        </android.support.constraint.ConstraintLayout>
+
+        <Button
+            android:id="@+id/again_set"
+            android:layout_width="324px"
+            android:layout_height="78px"
+            android:layout_marginStart="@dimen/film_order_again_set_start"
+            android:layout_marginBottom="@dimen/film_order_again_set_bottom"
+            android:textSize="30px"
+            android:text="@string/re_booking"
+            android:paddingBottom="24px"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:background="@drawable/bg_button_selector"/>
+
+        <Button
+            android:id="@+id/film_navigation"
+            android:layout_width="324px"
+            android:layout_height="78px"
+            android:layout_marginStart="@dimen/film_order_film_navigation_start"
+            android:textSize="30px"
+            android:text="@string/btn_navi"
+            android:paddingBottom="24px"
+            app:layout_constraintBaseline_toBaselineOf="@+id/again_set"
+            app:layout_constraintStart_toEndOf="@+id/again_set"
+            android:background="@drawable/bg_button_selector"/>
+
+        <Button
+            android:id="@+id/film_phone"
+            android:layout_width="324px"
+            android:layout_height="78px"
+            android:layout_marginStart="@dimen/film_order_film_phone_start"
+            android:textSize="30px"
+            android:text="@string/btn_phone"
+            android:paddingBottom="24px"
+            app:layout_constraintBaseline_toBaselineOf="@+id/film_navigation"
+            app:layout_constraintStart_toEndOf="@+id/film_navigation"
+            android:background="@drawable/bg_button_selector"/>
+    </android.support.constraint.ConstraintLayout>
+
+</LinearLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:id="@+id/rl_music"
+        android:layout_width="@dimen/rl_music_width"
+        android:layout_height="@dimen/rl_music_height"
+        android:layout_gravity="center">
+
+
+        <ImageView
+            android:id="@+id/iv_music"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/iv_music_height"
+            android:src="@drawable/icon_default_icon" />
+
+        <TextView
+            android:id="@+id/tv_music"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_music"
+            android:layout_marginTop="@dimen/view_tv_music_top"
+            android:gravity="center"
+            android:text="在线音乐"
+            android:textSize="@dimen/view_tv_music_size" />
+
+
+        <com.xiaoma.ui.view.MarqueeTextView
+            android:id="@+id/tv_music_tip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_music"
+            android:layout_marginTop="@dimen/tv_music_tip_top"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textSize="@dimen/tv_music_tip_size" />
+
+        <ImageView
+            android:id="@+id/iv_music_previous"
+            android:layout_width="@dimen/iv_music_previous_width"
+            android:layout_height="@dimen/iv_music_previous_height"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/icon_default_icon" />
+
+
+        <ImageView
+            android:id="@+id/iv_music_play_pause"
+            android:layout_width="@dimen/iv_music_play_pause_width"
+            android:layout_height="@dimen/iv_music_play_pause_height"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/icon_default_icon" />
+
+        <ImageView
+            android:id="@+id/iv_music_next"
+            android:layout_width="@dimen/iv_music_next_width"
+            android:layout_height="@dimen/iv_music_next_height"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/icon_default_icon" />
+
+
+    </RelativeLayout>
+
+</merge>

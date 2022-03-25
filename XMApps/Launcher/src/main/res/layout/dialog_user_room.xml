@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180px"
+    android:background="@drawable/bg_input"
+    android:orientation="horizontal">
+
+
+    <Button
+        android:id="@+id/tv_cancel"
+        android:layout_width="214px"
+        android:layout_height="86px"
+        android:layout_marginLeft="462px"
+        android:layout_marginTop="56px"
+        android:background="@drawable/selector_btn_cancel"
+        android:text="@string/cancel"
+        android:gravity="center_horizontal"
+        android:paddingTop="18px"
+        android:textColor="@color/white"
+        android:textSize="30px" />
+
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="611px"
+        android:layout_height="76px"
+        android:layout_marginTop="56px"
+        android:background="@drawable/bg_input_edit"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:paddingLeft="50px"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textColorHint="@color/color_8a919d"
+        android:textSize="26px" />
+
+    <Button
+        android:id="@+id/btn_sure"
+        android:layout_width="214px"
+        android:layout_height="86px"
+        android:layout_marginTop="56px"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/selector_btn_sure"
+        android:text="@string/sure"
+        android:gravity="center_horizontal"
+        android:paddingTop="18px"
+        android:textSize="30px" />
+
+
+</LinearLayout>

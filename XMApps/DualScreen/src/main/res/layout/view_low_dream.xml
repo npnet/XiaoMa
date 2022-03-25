@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible">
+
+    <FrameLayout
+        android:id="@+id/fl_fullscreen"
+        android:layout_width="532px"
+        android:layout_height="542px"
+        android:visibility="invisible"
+        android:layout_marginTop="104px"
+        android:layout_marginLeft="370px"
+        android:paddingTop="45px"
+        android:background="@drawable/bg_center_low_dream"/>
+
+    <FrameLayout
+        android:id="@+id/fl_center"
+        android:layout_width="450px"
+        android:layout_height="453px"
+        android:visibility="invisible"
+        android:layout_marginTop="149px"
+        android:layout_marginLeft="411px"
+        android:background="@drawable/bg_center_low_dream"/>
+
+    <!--低配下面这些都是没有用的-->
+    <FrameLayout
+        android:id="@+id/fl_left_navi"
+        android:layout_width="414px"
+        android:layout_height="414px"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="249px"
+        android:layout_marginTop="166px"
+        android:background="@drawable/bg_left_navi_high_wisdom"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:layout_width="525px"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="698px"
+        android:layout_marginTop="168px"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <FrameLayout
+            android:id="@+id/fl_simple"
+            android:layout_width="524px"
+            android:layout_height="28px"
+            />
+    </LinearLayout>
+</RelativeLayout>

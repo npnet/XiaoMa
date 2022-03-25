@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/wifi_hotspot_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/hot_spot_name_margin_top">
+
+        <TextView
+            android:id="@+id/wifi_hotspot_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/wifi_hot_spot"
+            android:textSize="@dimen/bluetooth_title_text_size" />
+
+        <CheckBox
+            android:id="@+id/wifi_hotspot_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/checkbox_margin_left"
+            android:layout_toRightOf="@+id/wifi_hotspot_tv"
+            android:button="@null"
+            android:background="@drawable/bg_switch" />
+
+        <TextView
+            android:id="@+id/connected_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="@string/connected_amount"
+            android:textColor="@color/connected_wifi_amount_color"
+            android:textSize="@dimen/bluetooth_fragment_text_size" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/hotspot_close_bg_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/switch_disable_bg_margin"
+        android:layout_marginLeft="@dimen/wifi_hostpot_margin_left"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/blt_close_bg_width"
+            android:layout_height="@dimen/blt_close_bg_height"
+            android:background="@drawable/hotspot_close_bg" />
+
+        <ImageView
+            android:layout_width="@dimen/blt_close_bg_width"
+            android:layout_height="@dimen/blt_bg_shadow_height"
+            android:background="@drawable/hotspot_close_shadow"
+            android:scaleType="fitXY" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/name_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/matched_hint_margin_top"
+        android:paddingTop="@dimen/chessview_default_shadow_radius"
+        android:paddingBottom="@dimen/chessview_default_shadow_radius"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/hotspot_name"
+            android:textSize="@dimen/bluetooth_title_text_size" />
+
+        <ImageView
+            android:layout_width="@dimen/right_icon_width"
+            android:layout_height="@dimen/right_icon_height"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/icon_right" />
+
+        <TextView
+            android:id="@+id/hotspot_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/hotspot_text_margin"
+            android:textSize="@dimen/bluetooth_fragment_text_size" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/psw_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/hot_spot_psw_margin_top"
+        android:paddingTop="@dimen/chessview_default_shadow_radius"
+        android:paddingBottom="@dimen/chessview_default_shadow_radius"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/hotspot_psw"
+            android:textSize="@dimen/bluetooth_title_text_size" />
+
+        <ImageView
+            android:layout_width="@dimen/right_icon_width"
+            android:layout_height="@dimen/right_icon_height"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/icon_right" />
+
+        <TextView
+            android:id="@+id/hotspot_psw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/hotspot_text_margin"
+            android:textSize="@dimen/bluetooth_fragment_text_size" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

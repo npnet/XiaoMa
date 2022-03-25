@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="560px"
+    android:layout_height="420px">
+
+    <TextView
+        android:id="@+id/result"
+        android:text="比赛结果"
+        android:textSize="36px"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="20px"/>
+    <TextView
+        android:id="@+id/date"
+        android:text="0700期"
+        android:textSize="24px"
+        android:textColor="#a1a7b3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/result"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="10px"/>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="1px"
+        android:layout_height="1px"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/date"
+        android:layout_marginTop="30px"/>
+
+    <TextView
+        android:id="@+id/money"
+        android:text="$400"
+        android:textSize="60px"
+        android:textColor="#ffcc66"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/view"
+        app:layout_constraintRight_toLeftOf="@id/view"
+        android:layout_marginRight="50px"/>
+
+    <TextView
+        android:text="奖金"
+        android:textSize="30px"
+        android:textColor="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/money"
+        app:layout_constraintLeft_toLeftOf="@id/money"/>
+
+    <TextView
+        android:id="@+id/oil_100km"
+        android:text="9.5"
+        android:textSize="60px"
+        android:textColor="#00e6bf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/view"
+        app:layout_constraintLeft_toRightOf="@id/view"
+        android:layout_marginLeft="50px"/>
+
+    <TextView
+        android:text="百公里油耗"
+        android:textSize="30px"
+        android:textColor="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/oil_100km"
+        app:layout_constraintLeft_toLeftOf="@id/oil_100km"/>
+
+
+    <Button
+        android:id="@+id/result_ok"
+        android:text="比赛结果"
+        android:textSize="28px"
+        android:textColor="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginBottom="20px"/>
+
+</android.support.constraint.ConstraintLayout>

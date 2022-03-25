@@ -1,0 +1,41 @@
+apply plugin: 'com.android.library'
+apply from: "$rootDir$Android"
+
+android library()
+android {
+    defaultConfig {
+        multiDexEnabled true
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+}
+
+dependencies {
+    implementation project(path: ':XMLibs:Model')
+    implementation project(path: ':XMLibs:Utils')
+    implementation project(path: ':XMLibs:Component')
+    implementation project(path: ':XMLibs:UI')
+    implementation project(path: ':XMLibs:Image')
+    implementation project(path: ':XMLibs:Map:GDMap')
+    implementation project(path: ':XMLibs:SystemUILib')
+    implementation project(path: ':XMLibs:AutoTracker')
+    implementation project(path: ':XMLibs:VR:Vr')
+    implementation "org.simple:androideventbus:$EVENT_BUS_VERSION"
+    implementation "com.android.support.constraint:constraint-layout:${CONSTRAINT_LAYOUT}"
+
+    //狗尾草相关jar
+    api files('libs/gowild_app_sdk_release_v3_0.jar')
+    implementation files('libs/netty-all-4.1.0.jar')
+    implementation files('libs/viewer_sdk_v4.3.3.jar')
+
+    implementation files("${XMJars}core-3.3.3.jar") //zxing
+
+    //云米
+    implementation "com.viomi.devicelib:viomi-device-lib:${CLOUD_MI_VERSION}"
+
+
+}
+

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <View
+        android:layout_width="50px"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_month_left" />
+
+    <LinearLayout
+        android:layout_width="250px"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="38px"
+            android:maxLines="1"
+            android:textColor="#ffffff"
+            android:textSize="44px"
+            tools:text="2019" />
+
+
+        <com.xiaoma.launcher.schedule.view.NumberPickerView
+            android:id="@+id/calender_month_picker"
+            android:layout_width="220px"
+            android:layout_height="500px"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50px"
+            android:contentDescription="test_number_picker_view"
+            app:npv_ItemPaddingHorizontal="5dp"
+            app:npv_ItemPaddingVertical="5dp"
+            app:npv_ShowCount="5"
+            app:npv_ShowDivider="false"
+            app:npv_TextColorNormal="#8a919d"
+            app:npv_TextColorSelected="#ffffff"
+            app:npv_TextSizeNormal="30px"
+            app:npv_TextSelectedBackground="@drawable/bg_month_select"
+            app:npv_TextSizeSelected="40px"
+            app:npv_WrapSelectorWheel="true" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="50px"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_month_right" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.xiaoma.launcher.schedule.view.WeekView
+            android:layout_width="match_parent"
+            android:layout_height="125px" />
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/calender_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10px"
+            android:layout_marginTop="20px"
+            android:overScrollMode="never" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/notdata_view"
+        android:layout_width="@dimen/attraction_activity_iv_layout_width"
+        android:layout_height="@dimen/attraction_activity_iv_layout_height"
+        android:layout_centerInParent="true"
+        android:background="@drawable/iv_empty"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@id/tv_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/attraction_activity_tv_tips_top"
+            android:layout_marginBottom="75px"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="@string/nearby_attractions_no_data"
+            android:textColor="@color/state_view_text_color"
+            android:textSize="@dimen/attraction_activity_tv_tips_size" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/attraction_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/attraction_title_left"
+            android:layout_marginTop="@dimen/attraction_title_top"
+            android:text="@string/recommend_attractions"
+            android:textSize="30px" />
+
+        <com.discretescrollview.DiscreteScrollView
+            android:id="@+id/attraction_rv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/attraction_title_rv_width"
+            android:layout_marginTop="@dimen/attraction_title_rv_top" />
+
+        <LinearLayout
+            android:id="@+id/attraction_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/attraction_layout_rv_top"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/attraction_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="店铺名称"
+                    android:textSize="@dimen/attraction_name_size" />
+
+                <TextView
+                    android:id="@+id/attractions_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/attartion_layout2_top"
+                    android:textColor="@color/color_8a919d"
+                    android:textSize="@dimen/attraction_delicious_size" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/attartion_layout3_top"
+                android:gravity="center_horizontal">
+
+                <Button
+                    android:id="@+id/attraction_navigation"
+                    android:layout_width="@dimen/attraction_navigation_width"
+                    android:layout_height="@dimen/attraction_navigation_height"
+                    android:background="@drawable/selector_button"
+                    android:text="@string/btn_navi"
+                    android:textSize="@dimen/attraction_navigation_size" />
+
+                <Button
+                    android:id="@+id/attraction_phone"
+                    android:layout_width="@dimen/attraction_phone_width"
+                    android:layout_height="@dimen/attraction_phone_height"
+                    android:layout_marginLeft="@dimen/attraction_ml"
+                    android:background="@drawable/selector_button"
+                    android:text="@string/btn_phone"
+                    android:textSize="@dimen/attraction_phone_size" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

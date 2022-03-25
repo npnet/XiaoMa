@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/program_layout"
+    android:layout_width="@dimen/choose_program_dialog_item_program_width"
+    android:layout_height="@dimen/choose_program_dialog_item_program_height"
+    android:background="@drawable/item_program_selector">
+
+
+    <ImageView
+        android:id="@+id/icon_program"
+        android:layout_width="@dimen/choose_program_dialog_item_program_iv_width"
+        android:layout_height="@dimen/choose_program_dialog_item_program_iv_height"
+        android:layout_marginLeft="@dimen/choose_program_dialog_item_program_iv_margin_left"
+        android:layout_marginTop="@dimen/choose_program_dialog_item_program_iv_margin_top"
+        android:src="@drawable/default_pic"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/choose_program_dialog_item_program_tv_margin_left"
+        android:gravity="center"
+        android:paddingBottom="@dimen/choose_program_dialog_item_program_tv_padding_bottom"
+        app:layout_constraintLeft_toRightOf="@+id/icon_program"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@color/white"
+        android:textSize="@dimen/choose_program_dialog_item_program_tv_text_size" />
+
+
+</android.support.constraint.ConstraintLayout>

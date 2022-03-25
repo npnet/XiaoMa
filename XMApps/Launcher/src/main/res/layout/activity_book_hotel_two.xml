@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/tv_step"
+        layout="@layout/select_tap_hotel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/book_hotel_two_table_margin_left"
+        android:layout_marginTop="@dimen/book_hotel_two_table_margin_top" />
+
+    <include
+        android:id="@+id/vs_step_second"
+        layout="@layout/view_booking_hotel_two"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv_step"
+        android:layout_marginLeft="@dimen/book_hotel_two_info_margin_left"
+        android:layout_marginTop="@dimen/book_hotel_two_info_margin_top" />
+
+</RelativeLayout>

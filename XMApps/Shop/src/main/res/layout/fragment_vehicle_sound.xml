@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/cl_container"
+    android:layout_marginTop="@dimen/size_os_theme_main_margin_top">
+
+    <TextView
+        android:id="@+id/tv_audio_sound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_os_them_main_title_margin_left"
+        android:padding="@dimen/size_add_to_click_padding"
+        android:text="@string/audio_sound"
+        android:textColor="@color/selector_home_menus_text"
+        android:textSize="@dimen/font_of_shop_32"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_instrument_sound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_title_voice_type_margin_left"
+        android:padding="@dimen/size_add_to_click_padding"
+        android:text="@string/instrument_sound"
+        android:textColor="@color/selector_home_menus_text"
+        android:textSize="@dimen/font_of_shop_32"
+        app:layout_constraintStart_toEndOf="@+id/tv_audio_sound"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <FrameLayout
+        android:id="@+id/fl_contain"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/size_theme_sub_margin_top"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_audio_sound" />
+
+
+</android.support.constraint.ConstraintLayout>

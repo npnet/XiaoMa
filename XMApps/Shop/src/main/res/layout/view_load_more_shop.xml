@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="260px"
+    android:layout_height="260px"
+    android:layout_gravity="center">
+
+    <android.support.constraint.Group
+        android:id="@+id/groupLoading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:constraint_referenced_ids="pgLoading,tvLoading" />
+
+    <ProgressBar
+        android:id="@+id/pgLoading"
+        android:layout_width="36px"
+        android:layout_height="0dp"
+        android:indeterminateBehavior="repeat"
+        android:indeterminateDrawable="@drawable/loading_more_progress"
+        android:indeterminateOnly="true"
+        android:indeterminateTintMode="src_atop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/tvLoading"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvLoading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20px"
+        android:text="@string/content_loading"
+        android:textColor="#bababb"
+        android:textSize="28px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/pgLoading"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@tools:sample/last_names" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvFailed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/download_state_fail"
+        android:drawablePadding="20px"
+        android:gravity="center"
+        android:text="@string/load_failed"
+        android:textColor="#bababb"
+        android:textSize="28px"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/download_state_end"
+        android:drawablePadding="20px"
+        android:gravity="center"
+        android:text="@string/no_more"
+        android:textColor="#bababb"
+        android:textSize="28px"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

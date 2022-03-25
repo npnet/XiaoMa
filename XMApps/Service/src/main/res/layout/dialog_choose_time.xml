@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/dialog_choose_time_padding_left"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dialog_choose_time_tv_margin_top_83"
+        android:text="@string/date"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dialog_choose_time_tv_text_size" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="@dimen/dialog_choose_time_date_width"
+        android:layout_height="@dimen/dialog_choose_time_date_height"
+        android:background="@drawable/bg_date"
+        android:layout_marginTop="@dimen/dialog_choose_time_date_margin_top"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dialog_choose_time_date_text_size" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dialog_choose_time_tv_margin_top_40"
+        android:text="@string/order_time_point"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dialog_choose_time_tv_text_size" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/choose_time_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/dialog_choose_time_recycler_margin_top"
+        android:layout_marginRight="@dimen/dialog_choose_time_recycler_margin_right"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/time_submit"
+        android:layout_width="@dimen/dialog_choose_time_submit_width"
+        android:layout_height="@dimen/dialog_choose_time_submit_height"
+        android:layout_marginBottom="@dimen/dialog_choose_time_submit_margin_bottom"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/selector_button"
+        android:textColor="@color/white"
+        android:text="@string/dialog_choose_time_sure"
+        android:textSize="@dimen/dialog_choose_time_submit_text_size"
+        android:visibility="gone" />
+
+
+</LinearLayout>

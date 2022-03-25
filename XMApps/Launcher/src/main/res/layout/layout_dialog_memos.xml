@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_dialog_date">
+
+
+    <ImageView
+        android:id="@+id/iv_msg"
+        android:layout_width="40px"
+        android:layout_height="40px"
+        android:layout_marginStart="83px"
+        android:layout_marginTop="73px"
+        android:src="@drawable/ic_message"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_message"
+        android:layout_width="0px"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="80px"
+        android:layout_marginStart="52px"
+        android:layout_marginTop="81px"
+        android:ellipsize="end"
+        android:lineSpacingExtra="10px"
+        android:maxLines="2"
+        android:textColor="#ffffff"
+        android:textSize="26px"
+        app:layout_constraintLeft_toRightOf="@+id/iv_msg"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="标题标题标题标标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题题标题标题标题标题标题标题标题标题标题标题" />
+
+    <ImageView
+        android:id="@+id/iv_location"
+        android:layout_width="40px"
+        android:layout_height="40px"
+        android:layout_marginStart="83px"
+        android:layout_marginTop="72px"
+        android:src="@drawable/icon_sch_location"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_msg" />
+
+    <TextView
+        android:id="@+id/tv_location"
+        android:layout_width="350px"
+        android:layout_height="70px"
+        android:layout_marginStart="52px"
+        android:background="@drawable/btn_selector"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:paddingBottom="10px"
+        android:singleLine="true"
+        android:text="@string/add_location_msg"
+        android:textColor="#ffffff"
+        android:textSize="20px"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_location"
+        app:layout_constraintLeft_toRightOf="@+id/iv_location"
+        app:layout_constraintTop_toTopOf="@+id/iv_location" />
+
+    <ImageView
+        android:id="@+id/iv_time"
+        android:layout_width="40px"
+        android:layout_height="40px"
+        android:layout_marginStart="83px"
+        android:layout_marginTop="30px"
+        android:src="@drawable/icon_sch_time"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_location" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_location"
+        android:layout_marginStart="52px"
+        android:ellipsize="end"
+        android:maxLines="1"
+        tools:text="2月14 18:00"
+        android:textColor="#ffffff"
+        android:textSize="28px"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_time"
+        app:layout_constraintStart_toEndOf="@+id/iv_time"
+        app:layout_constraintTop_toTopOf="@+id/iv_time" />
+
+
+    <Button
+        android:id="@+id/btn_create"
+        android:layout_width="300dp"
+        android:layout_height="70px"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="50px"
+        android:layout_marginStart="100px"
+        android:layout_marginTop="50px"
+        android:background="@drawable/btn_selector"
+        android:paddingBottom="10px"
+        android:text="@string/sure_to_create_with_3s"
+        android:textSize="24px"
+        app:layout_constraintEnd_toStartOf="@id/btn_recreate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_time" />
+
+
+    <Button
+        android:id="@+id/btn_recreate"
+        android:layout_width="100dp"
+        android:layout_height="70px"
+        android:layout_marginEnd="100px"
+        android:layout_marginTop="50px"
+        android:background="@drawable/btn_selector"
+        android:paddingBottom="10px"
+        android:text="@string/cancel"
+        android:textSize="24px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_create"
+        app:layout_constraintTop_toBottomOf="@+id/iv_time" />
+
+    <ImageView
+        android:id="@+id/iv_done"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:layout_marginEnd="30px"
+        android:src="@drawable/icon_sch_ok"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tv_done"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/found_succeed"
+        android:textSize="36px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_done"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.constraint.Group
+        android:id="@+id/group_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:constraint_referenced_ids="iv_msg,tv_message,iv_location,tv_location,iv_time,tv_time,btn_create,btn_recreate" />
+
+    <android.support.constraint.Group
+        android:id="@+id/group_done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:constraint_referenced_ids="iv_done,tv_done" />
+
+</android.support.constraint.ConstraintLayout>

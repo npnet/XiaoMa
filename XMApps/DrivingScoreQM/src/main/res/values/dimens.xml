@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="px_30">30px</dimen>
+    <dimen name="px_48">48px</dimen>
+    <dimen name="px_72">72px</dimen>
+    <dimen name="px_50">50px</dimen>
+    <dimen name="px_34">34px</dimen>
+    <dimen name="px_26">26px</dimen>
+    <dimen name="px_15">15px</dimen>
+</resources>

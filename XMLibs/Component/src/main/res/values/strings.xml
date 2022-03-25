@@ -1,0 +1,12 @@
+<resources>
+    <string name="module_desc">Component</string>
+    <string name="base_loading">正在努力加载中…</string>
+    <string name="base_data_empty">.*(is empty|为空|数据解析错误).*</string>
+    <string name="Permission_note">提示</string>
+    <string name="Permission_msg">缺少必须权限，需要授权才能使用,请重新授权！</string>
+    <string name="Permission_retry">重新授权</string>
+    <string name="scheme" translatable="false">xiaoma</string>
+    <string name="launcher_host" translatable="false">com.xiaoma.launcher</string>
+    <string name="fragment_not_found">页面未找到</string>
+    <string name="chains_error">页面跳转有误</string>
+</resources>

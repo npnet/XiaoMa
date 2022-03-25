@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/fragment_category_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:paddingTop="41px"
+        android:paddingBottom="144px"/>
+
+    <com.xiaoma.ui.view.XmScrollBar
+        android:id="@+id/scroll_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_scroll_bar"
+        android:layout_marginStart="@dimen/size_scroll_bar_margin_start"
+        android:layout_marginEnd="@dimen/size_scroll_bar_margin_end"
+        android:layout_marginBottom="@dimen/size_scroll_bar_margin_bottom"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone" />
+</RelativeLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/movie_code_number_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MissingDefaultResource">
+
+
+    <LinearLayout
+        android:id="@+id/ll_ticket_first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="40px"
+        android:layout_marginTop="30px"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/ticket_first_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/serial_no"
+            android:textSize="24px" />
+
+        <TextView
+            android:id="@+id/ticket_first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24px"
+            android:text="12431232312"
+            android:textSize="28px" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_ticket_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="40px"
+        android:layout_marginTop="30px"
+        android:layout_toEndOf="@+id/ll_ticket_third"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/ticket_second_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/ll_ticket_second"
+            android:text="@string/get_ticket_code"
+            android:textSize="24px" />
+
+        <TextView
+            android:id="@+id/ticket_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24px"
+            android:text="E1231241243"
+            android:textSize="28px" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_ticket_third"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_ticket_first"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="40px"
+        android:layout_marginTop="30px"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/ticket_third_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/enter_code"
+            android:textSize="24px" />
+
+        <TextView
+            android:id="@+id/ticket_third"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24px"
+            android:text="Q54756756767"
+            android:textSize="28px" />
+    </LinearLayout>
+
+
+</RelativeLayout>

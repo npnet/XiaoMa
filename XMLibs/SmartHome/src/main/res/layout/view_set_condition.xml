@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#000"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_distance"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50px"
+            android:text="@string/set_excute_condition"
+            android:textSize="35px"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50px"
+            android:text="@string/when_distance_excute"
+            android:textSize="30px" />
+
+        <GridView
+            android:id="@+id/gv_distance"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50px"
+            android:numColumns="3" />
+    </LinearLayout>
+
+    <ViewStub
+        android:id="@+id/vs_time"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout="@layout/view_excute_time" />
+
+</FrameLayout>

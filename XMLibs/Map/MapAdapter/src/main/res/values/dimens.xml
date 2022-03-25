@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--MapActivity-->
+    <dimen name="divider_height">30px</dimen>
+    <dimen name="map_search_voice_view_height">100px</dimen>
+    <dimen name="map_search_voice_view_margin_left">30px</dimen>
+    <dimen name="map_search_voice_view_margin_right">30px</dimen>
+    <dimen name="map_search_voice_view_margin_top">62px</dimen>
+
+    <dimen name="map_center_image_margin_left">10px</dimen>
+    <dimen name="map_center_image_margin_top">10px</dimen>
+    <dimen name="map_center_image_margin_bottom">28px</dimen>
+
+    <dimen name="map_btn_location_margin_left">50px</dimen>
+    <dimen name="map_btn_location_margin_bottom">45px</dimen>
+
+    <!--item_map-->
+    <dimen name="map_item_height">200px</dimen>
+    <dimen name="map_item_margin_left">30px</dimen>
+    <dimen name="map_item_margin_right">30px</dimen>
+
+
+    <dimen name="map_item_iv_location_margin_left">20px</dimen>
+    <dimen name="map_item_tv_name_margin_left">10px</dimen>
+    <dimen name="map_item_tv_name_margin_top">40px</dimen>
+    <dimen name="map_item_tv_name_text_size">30px</dimen>
+
+    <dimen name="map_item_tv_address_width">600px</dimen>
+    <dimen name="map_item_tv_address_margin_top">17px</dimen>
+    <dimen name="map_item_tv_address_margin_left">10px</dimen>
+    <dimen name="map_item_tv_address_text_size">24px</dimen>
+    <dimen name="map_item_tv_address_text_size2">87px</dimen>
+
+    <dimen name="map_item_btn_sure_location_margin_right">30px</dimen>
+    <dimen name="map_item_btn_sure_location_text_size">35px</dimen>
+
+
+</resources>

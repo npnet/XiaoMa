@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="500px"
+    android:layout_height="300px"
+    android:background="@drawable/popup_window_background"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30px"
+        android:text="提示"
+        android:textColor="@color/white"
+        android:textSize="30px" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="30px"
+        android:text="@string/login_out_tips"
+        android:textColor="@color/white"
+        android:textSize="30px" />
+
+    <TextView
+        android:id="@+id/tv_sure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/re_login"
+        android:textColor="@color/white"
+        android:textSize="30px" />
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?><!--调试用的字符串-->
+<resources>
+    <string name="data_empty_club">data is empty</string>
+    <string name="send_voice">发送语音消息</string>
+    <string name="send_share_location">共享位置</string>
+    <string name="conversation_arg_error">会话参数错误!</string>
+    <string name="recall_msg">撤回消息</string>
+    <string name="record_permission_req_fail">录音权限申请失败</string>
+    <string name="recorder_init_fail">录音器初始化失败</string>
+    <string name="recorder_failed">录音失败</string>
+    <string name="recording">正在录音…</string>
+    <string name="speak_tips">请说话~</string>
+    <string name="send">发送</string>
+    <string name="cancel">取消</string>
+    <string name="record_fail_format">录音失败: %1$s</string>
+    <string name="permission_req_location">请打开定位权限</string>
+    <string name="voice_msg_playing">\t播放中…</string>
+    <string name="voice_msg_not_listened">\t(未听)</string>
+    <string name="unsupport_tips">暂不支持</string>
+</resources>

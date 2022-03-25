@@ -1,0 +1,14 @@
+<resources>
+    <string name="module_desc">Update</string>
+    <string name="wait_update">以后再说</string>
+    <string name="quit_app">退出应用</string>
+    <string name="immediately_update">去更新</string>
+    <string name="force_update_content_null">您需要更新后才可使用</string>
+    <string name="normal_update_content_null">新版本上线了，有更多功能等着你</string>
+    <string name="update_downloading">下载中…</string>
+    <string name="update_error">下载失败</string>
+    <string name="tips">提示</string>
+    <string name="install_app_store_tips">请安装应用中心进行下载</string>
+    <string name="in_updating">正在下载更新</string>
+    <string name="download_file_error">下载安装文件异常，请重新下载</string>
+</resources>

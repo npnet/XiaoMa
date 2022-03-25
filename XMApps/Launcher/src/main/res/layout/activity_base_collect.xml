@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/collect_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/attractions_collect_tv_text_size"
+        android:text="@string/myself_collect"
+        android:layout_marginTop="@dimen/attractions_collect_tv_margin_top"
+        android:layout_marginLeft="@dimen/attractions_collect_tv_margin_left" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_collect"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/attractions_collect_rv_height"
+        android:visibility="invisible"
+        android:scrollbars="none" />
+
+    <com.xiaoma.ui.view.XmScrollBar
+        android:id="@+id/scroll_bar"
+        android:layout_width="@dimen/width_scrollbar"
+        android:layout_height="@dimen/height_scrollbar"
+        android:layout_gravity="center_horizontal"
+        android:visibility="invisible" />
+
+</LinearLayout>

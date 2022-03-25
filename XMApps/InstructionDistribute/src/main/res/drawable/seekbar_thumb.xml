@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <size
+                android:width="@dimen/dimen_30"
+                android:height="@dimen/dimen_30" />
+            <solid android:color="#ffffff" />
+        </shape>
+    </item>
+    <!--<item android:drawable="@drawable/seek_drag_point"/>-->
+</layer-list>

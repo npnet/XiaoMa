@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="home_service_info">
+        <item>车辆</item>
+        <item>美食</item>
+        <item>电影</item>
+        <item>酒店</item>
+        <item>景点</item>
+    </string-array>
+
+    <string-array name="home_audio_tab">
+        <item>音乐</item>
+        <item>电台</item>
+        <item>我的收藏</item>
+    </string-array>
+
+    <string-array name="weatherInfo">
+        <item>晴</item>
+        <item>多云</item>
+        <item>阴</item>
+        <item>阵雨</item>
+        <item>雷阵雨</item>
+        <item>小雨</item>
+        <item>中雨</item>
+        <item>大雨</item>
+        <item>暴雨</item>
+        <item>小雪</item>
+        <item>中雪</item>
+        <item>大雪</item>
+        <item>雨夹雪</item>
+        <item>冰雹</item>
+        <item>沙尘暴</item>
+    </string-array>
+
+    <integer-array name="weatherIcon">
+        <item>@drawable/icon_weather_sunny</item>
+        <item>@drawable/icon_weather_cloudy</item>
+        <item>@drawable/icon_weather_overcast</item>
+        <item>@drawable/icon_weather_shower</item>
+        <item>@drawable/icon_weather_thunderstorms</item>
+        <item>@drawable/icon_weather_light_rain</item>
+        <item>@drawable/icon_weather_moderate_rain</item>
+        <item>@drawable/icon_weather_heavy_rain</item>
+        <item>@drawable/icon_weather_storm_rain</item>
+        <item>@drawable/icon_weather_light_snow</item>
+        <item>@drawable/icon_weather_moderate_snow</item>
+        <item>@drawable/icon_weather_heavy_snow</item>
+        <item>@drawable/icon_weather_sleet</item>
+        <item>@drawable/icon_weather_hail</item>
+        <item>@drawable/icon_weather_sandstorm</item>
+    </integer-array>
+
+    <string-array name="travel_car">
+        <item>车辆</item>
+        <item>CAR</item>
+        <item>附近加油站</item>
+        <item>附近停车场</item>
+        <item>未达保养期</item>
+    </string-array>
+
+    <string-array name="travel_food">
+        <item>美食</item>
+        <item>FOOD</item>
+        <item>附近美食</item>
+        <item>美食分类</item>
+        <item>我的收藏</item>
+    </string-array>
+
+
+    <string-array name="travel_movie">
+        <item>电影</item>
+        <item>MOVIE</item>
+        <item>附近影院</item>
+        <item>热门影片</item>
+        <item>我的订单</item>
+        <item>我的收藏</item>
+    </string-array>
+
+    <string-array name="travel_hotel">
+        <item>酒店</item>
+        <item>HOTEL</item>
+        <item>附近酒店</item>
+        <item>我的订单</item>
+        <item>我的收藏</item>
+    </string-array>
+
+    <string-array name="travel_attractions">
+        <item>景点</item>
+        <item>ATTRACTIONS</item>
+        <item>附近景点</item>
+        <item>景点分类</item>
+        <item>我的收藏</item>
+    </string-array>
+
+    <string-array name="launcher_apps">
+        <item>com.xiaoma.bluetooth.phone</item>
+        <item>com.xiaoma.facerecognize</item>
+        <item>com.xiaoma.shop</item>
+        <item>com.xiaoma.app</item>
+    </string-array>
+
+    <string-array name="power_on_apps">
+        <item>com.xiaoma.dualscreen</item>
+        <item>com.xiaoma.setting</item>
+    </string-array>
+
+    <integer-array name="actions">
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>17</item>
+        <item>38</item>
+    </integer-array>
+</resources>

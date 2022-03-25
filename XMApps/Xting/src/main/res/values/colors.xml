@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffff</color>
+    <color name="gallery_hint_text_color">#B59D82</color>
+    <color name="gallery_text_color">#B0B1B3</color>
+    <color name="fm_am_text_select">#ffee6f</color>
+    <color name="fm_am_text_unSelect">#ffffff</color>
+    <!--顶部tab字体颜色-->
+    <color name="color_category_header">#ffd52d</color>
+    <!--scrollbar颜色-->
+    <color name="color_scroll_bar">#ff0000</color>
+    <!--gallery item footer background-->
+    <color name="gallery_item_footer_background">#7b000000</color>
+    <color name="search_title">#fbd3a4</color>
+    <!--首页侧边未选中文字颜色-->
+    <color name="color_home_menus_unchecked">#8a919d</color>
+    <color name="color_shadow_checked">#3780ff</color>
+    <color name="mine_item_time">#B59D82</color>
+    <color name="mine_item_update">#B0B1B3</color>
+    <color name="color_tune_mark">#ffb455</color>
+    <color name="color_tune_text">#ffc973</color>
+    <color name="no_network_tips_text_color">#8a919d</color>
+    <color name="no_network_reason_text_color">#edf6fe</color>
+    <color name="color_preference_skip">#8a919d</color>
+
+    <color name="color_fm_add">#edf6fe</color>
+    <color name="color_play_control_hint_text">#99ffffff</color>
+</resources>

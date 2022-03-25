@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RadioGroup
+        android:id="@+id/rg_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                style="@style/color_select_style"
+                android:background="@drawable/color_check_1"
+                android:button="@null" />
+
+            <RadioButton
+                style="@style/color_select_style"
+                android:background="@drawable/color_check_2"
+                android:button="@null" />
+
+            <RadioButton
+
+                style="@style/color_select_style"
+                android:button="@drawable/color_check_3" />
+
+            <RadioButton
+
+                style="@style/color_select_style"
+                android:button="@drawable/color_check_4" />
+
+            <RadioButton
+
+                style="@style/color_select_style"
+                android:button="@drawable/color_check_5" />
+
+            <RadioButton
+
+                style="@style/color_select_style"
+                android:button="@drawable/color_check_6" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <RadioButton
+                style="@style/color_select_style"
+                android:button="@drawable/color_check_7" />
+
+            <RadioButton
+                style="@style/color_select_style"
+                android:button="@drawable/color_check_8" />
+
+            <RadioButton
+                style="@style/color_select_style"
+                android:button="@drawable/color_check_9" />
+
+            <RadioButton
+
+                style="@style/color_select_style"
+                android:button="@drawable/color_check_10" />
+
+            <RadioButton
+
+                style="@style/color_select_style"
+                android:button="@drawable/color_check_11" />
+
+            <RadioButton
+
+                style="@style/color_select_style"
+                android:button="@drawable/color_check_12" />
+
+        </LinearLayout>
+    </RadioGroup>
+
+</merge>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/size_hologram_width_preview"
+    android:layout_height="@dimen/size_hologram_detail_preview"
+    android:background="@drawable/selector_state_select_cloth_bg"
+    android:layerType="software"
+    android:scaleType="fitXY">
+
+    <ImageView
+        android:id="@+id/iv_clothing_icon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10px"
+        android:scaleType="centerInside" />
+
+    <ImageView
+        android:id="@+id/iv_clothing_icon_prev"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/selector_state_select_cloth" />
+
+    <TextView
+        android:id="@+id/tv_clothing_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:text="草裙"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/font_of_shop_26" />
+
+</RelativeLayout>

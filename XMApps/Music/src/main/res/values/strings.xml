@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="host">com.xiaoma.music</string>
+    <string name="path_player_detail">/playerDetail</string>
+
+    <string name="module_desc">音乐</string>
+    <string name="app_name">音乐</string>
+    <string name="start_xting">开启音乐之旅</string>
+    <string name="design_xting">你都喜欢听些什么音乐？</string>
+    <string name="please_select">请选择至少一个类目</string>
+    <string name="save">保存</string>
+    <string name="skip">跳过</string>
+    <string name="preference_setting">正在为您配置优质内容…</string>
+    <string name="setting_success">配置成功</string>
+    <string name="settting_failed">配置失败</string>
+    <string name="hint_skip_music">您已选择 %1$d 个特性,\n是否放弃?</string>
+    <string name="please_login">请登录</string>
+    <string name="confim_background_play">是否后台播放？</string>
+    <string name="exit">退出</string>
+    <string name="background_play">后台播放</string>
+    <string name="data_empty_music">data is empty</string>
+
+    <string name="recommend">个性推荐</string>
+    <string name="ranking">排行榜</string>
+    <string name="category">分类歌单</string>
+    <string name="music">单曲</string>
+    <string name="singer">歌手</string>
+    <string name="song_list">歌单</string>
+    <string name="string_bt">蓝牙</string>
+    <string name="string_usb">USB</string>
+    <string name="not_connect_bluetooth">当前未连接蓝牙设备</string>
+    <string name="connect_bluetooth">蓝牙设备已连接</string>
+    <string name="go_to_setting">前往设置</string>
+    <string name="unsupported_usb_devices">不支持的USB设备</string>
+    <string name="support_devices">可支持设备：USB 2.0/3.0 | FAT32 / NTFS系统 | 不大于128GB</string>
+    <string name="devices_no_responses">设备无响应</string>
+    <string name="please_try_again">请移除设备后重试</string>
+    <string name="devices_connect_interrupt">移动存储设备连接中断</string>
+    <string name="please_insert_usb">请插入USB设备</string>
+    <string name="please_open_bt_media">请在手机端，设置-蓝牙中找到当前连接并开启音频</string>
+    <string name="play_btmusic">播放蓝牙音乐</string>
+    <string name="play_btmusic_failed_empty">音乐数据为空，请检查手机音乐</string>
+    <string name="unknow_song">未知歌曲</string>
+    <string name="unknow_artist">未知歌手</string>
+    <string name="have_no_song">当前无歌曲</string>
+    <string name="unknow_bt"><u>&lt;unknown&gt;</u></string>
+
+    <string name="mine_collector">我的收藏</string>
+    <string name="mine_history">播放历史</string>
+    <string name="vip_center">会员中心</string>
+    <string name="purchased_music">已购音乐</string>
+    <string name="lrc_label">暂无歌词</string>
+    <string name="about_search_result">关于 %1$s 的搜索结果</string>
+    <string name="setting_pkg">com.xiaoma.setting</string>
+    <string name="setting_main_cls">com.xiaoma.setting.main.ui.MainActivity</string>
+
+    <!--history-->
+    <string name="clear_all_history">清除历史记录</string>
+    <string name="confirm_clear_all_history">是否要清除全部播放历史?</string>
+    <string name="confirm_clear_collection">是否要清空我的收藏?</string>
+    <string name="clear_all_collect">清空我的收藏</string>
+    <string name="search_need_help">请说出你想要的搜索内容</string>
+    <string name="sure">确定</string>
+    <string name="cancel">取消</string>
+    <string name="unknow">未知</string>
+
+    <!--player-->
+    <string name="similar_playlist">相似歌曲</string>
+    <string name="jump_to_bt">跳转到蓝牙设置页面</string>
+    <string name="item_playlist_duration">%1$s/%2$s</string>
+    <string name="view_player_tv_tips">向上滑动查看更多</string>
+    <string name="back_to_player">返回播放器</string>
+    <string name="play_mode_list_order">顺序播放</string>
+    <string name="play_mode_list_loop">循环播放</string>
+    <string name="play_mode_single_loop">单曲循环</string>
+    <string name="play_mode_random">随机播放</string>
+    <string name="already_first">已经是第一首了</string>
+    <string name="already_last">已经是最后一首了</string>
+
+    <!--search-->
+    <string name="search_history">搜索历史</string>
+    <string name="search_history_clean">清除</string>
+    <string name="search_everyone_search">大家都在搜</string>
+    <string name="network_setting">设置网络</string>
+    <string name="loading_retry">重新加载</string>
+    <string name="play_failed">播放失败,请重新选择</string>
+    <string name="key_recommend">华语</string>
+    <string name="cancel_favorite">已取消收藏</string>
+    <string name="favorite_success">收藏成功</string>
+    <string name="search_content_empty">搜索内容不能为空</string>
+    <string name="search_voice_hint">搜索音乐、歌单、歌手</string>
+
+    <!--usb-->
+    <string name="read_usb_media_content">正在加载中......</string>
+    <string name="complete_fetch_usb_media_data">U盘信息扫描完毕</string>
+    <string name="net_error">网络异常，请稍后再试</string>
+    <string name="music_play_error">播放失败</string>
+    <string name="have_not_music">没有歌曲正在播放</string>
+    <string name="no_copy_right">没有版权，无法播放</string>
+    <string name="current_play_radio">正在播放</string>
+    <string name="function_not_complete">功能未完成</string>
+    <string name="super_music">音乐</string>
+    <string name="loading">正在加载中</string>
+    <string name="unknown_media_provider_name">未识别</string>
+    <string name="sort_by_default">默认排序</string>
+    <string name="sort_by_artist">艺术家排序</string>
+    <string name="sort_by_genre">流派排序</string>
+    <string name="changed_to_online_music">已切换至在线音乐</string>
+    <string name="changed_to_bt_music">已切换至蓝牙音乐</string>
+    <string name="changed_to_usb_music">已切换至USB音乐</string>
+    <string name="usb_device_disconnected">移动存储设备连接中断</string>
+
+    <!--load more-->
+    <string name="load_more_loading">正\n在\n加\n载\n中</string>
+    <string name="load_complete">加\n载\n完\n成</string>
+    <string name="load_no_more">没\n有\n更\n多\n了</string>
+    <string name="load_error">加\n载\n失\n败\n,\n点\n击\n重\n试</string>
+    <string name="file_loss_play_error">文件损坏无法播放</string>
+    <string name="tips_content">提示</string>
+    <string name="copyright_songs_cannot_be_played">【版权歌曲无法播放】</string>
+    <string name="need_me_to_do">需要我帮您找些什么</string>
+    <string name="is_listener">正在聆听...</string>
+    <string name="search_voice_tip">有需要随时找我哦</string>
+    <string name="search_search_now">立即搜索</string>
+    <string name="guide_category">音乐分类列表</string>
+    <string name="guide_category_description">点击不同分类跳转查看\n各个分类内的音乐播放\n列表。</string>
+    <string name="guide_category_list">音乐分类列表</string>
+    <string name="guide_category_list_description">点击列表内音乐专辑即\n可开始播放。</string>
+    <string name="guide_music_play_list">播放列表</string>
+    <string name="guide_music_play_list_description">开始播放后，您可以点击左下角的缩略\n播放器打开播放器页面，查看正在播放\n的音频信息。</string>
+    <string name="guide_play_list_home">播放列表</string>
+    <string name="guide_play_list_home_description"><Data><![CDATA[
+        <font color="#8a919d">点击顶部导航</font>
+        <font color="#fbd3a4">切换推荐<br/>、排行榜、音乐分类</font>
+        <font color="#8a919d">等<br/>各模块。<br/><br/>点击播放列表内的资源<br/>即可跳转并播放该音乐<br/>专辑。</font>
+    ]]></Data></string>
+    <string name="guide_rank_list">排行榜列表</string>
+    <string name="guide_rank_list_description">点击不同排行榜跳转查\n看榜单内的播放列表。\n\n点击列表内的榜单即可\n开始播放该榜单内的歌\n曲。</string>
+    <string name="music_refresh">刷新</string>
+    <string name="kw_login_wait">请在手机上扫码登录</string>
+    <string name="kw_login_success">登录成功</string>
+    <string name="kw_login_failed">登录失败</string>
+    <string name="kw_login_failed_scan_retry">登录失败,请重新扫码登录</string>
+    <string name="get_login_code_failed">获取登录码失败</string>
+    <string name="need_vip">优享</string>
+    <string name="need_buy">付费</string>
+    <string name="from_kw">*本音频来自酷我音乐</string>
+    <string name="quality_default">默认</string>
+    <string name="quality_fluent">流畅</string>
+    <string name="quality_high">高品</string>
+    <string name="quality_perfect">超品</string>
+    <string name="quality_loss">无损</string>
+    <string name="select_quality_failed">切换音质失败</string>
+    <string name="kw_login_out">退出</string>
+    <string name="loading_data">数据获取中</string>
+
+
+    <string name="search">搜索</string>
+    <string name="del">删除</string>
+    <string name="search_empty_music">搜索不到该音乐哦！</string>
+    <string name="search_empty_music_history">暂无搜索历史</string>
+    <string name="song_name_search">歌名搜索</string>
+    <string name="select_music">选择音乐</string>
+    <string name="search_empty_radio">搜索不到该专辑/节目哦！</string>
+    <string name="radio_search">专辑/节目搜索</string>
+    <string name="search_result">搜索结果</string>
+    <string name="network_error">网络异常请稍候再试</string>
+    <string name="you_no_speaking">你还没有说话哦！</string>
+    <string name="vip_privilege">优享特权</string>
+    <string name="vip_month_format">%1$d个月</string>
+    <string name="vip_price_format">￥%1$s元</string>
+    <string name="renewal_success">续费成功</string>
+    <string name="bought_failed">购买失败，请稍后再试</string>
+    <string name="create_order_timeout">订单请求超时，请稍后重试</string>
+    <string name="pay_surplus_timer">剩余时间: %1$s:%2$s</string>
+    <string name="pay_timeout">支付超时，请重新下单</string>
+    <string name="jump_online_music_prompt">提示</string>
+    <string name="vip_open_success_desc">恭喜您成功开通%1$d个月会员</string>
+    <string name="jump_online_music">去听歌</string>
+    <string name="open_vip_bt">立即开通</string>
+    <string name="renewal_vip_bt">立即续费</string>
+    <string name="vip_privilege_title_first">畅想百万付费曲库</string>
+    <string name="vip_privilege_title_second">原汁原味黑胶音质</string>
+    <string name="vip_privilege_title_three">专业汽车音效</string>
+    <string name="vip_privilege_title_four">车载专属内容</string>
+    <string name="vip_privilege_title_five">赠手机音乐包</string>
+    <string name="vip_renewal_text">续费</string>
+    <string name="login_desc_content">手机打开酷我音乐app扫一扫</string>
+    <string name="obtain_qr_code_failed">获取二维码失败，请再次刷新~</string>
+    <string name="pay_dialog_title_prompt">请使用微信或支付宝扫码支付</string>
+    <string name="vip_validity_date">会员有效期: %1$s-%2s</string>
+    <string name="login_failed_refresh_qr_code">二维码失效，请刷新重新获取二维码</string>
+
+    <string name="play_failed_next">该歌曲暂不支持播放，试试收听其他的歌曲吧</string>
+    <string name="go_buy_vip_text">去开通会员</string>
+    <string name="go_buy_vip">开通</string>
+    <string name="please_login_first">开通会员请先登录酷我音乐</string>
+    <string name="go_login">去登录</string>
+    <string name="cancel_login">取消</string>
+    <string name="music_quality">音质</string>
+    <string name="buy_vip">开通会员</string>
+    <string name="usb_empty_music">您连接的设备上没有可播放的音乐</string>
+    <string name="please_input_search_content">请输入搜索内容</string>
+    <string name="confirm_login_out">您确定退出登录吗？</string>
+    <string name="can_not_find_lrc">找不到歌词</string>
+    <string name="play_failed_for_audio_focus">当前音频通道已被占用，暂不可播放</string>
+
+    <string name="have_to_pre">已切到上一个</string>
+    <string name="have_to_next">已切到下一个</string>
+    <string name="voice_search_is_not_available">无网络连接，语音搜索不可用</string>
+    <string name="mic_dismiss">当前录音通道已被占用，暂不可使用</string>
+</resources>

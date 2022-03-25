@@ -1,0 +1,17 @@
+apply plugin: 'com.android.library'
+apply from: "$rootDir$Android"
+
+android library()
+
+
+dependencies {
+    implementation project(':XMLibs:Utils')
+    implementation project(':XMLibs:Network')
+    implementation project(':XMLibs:Config')
+    implementation project(':XMLibs:Thread')
+    implementation project(':XMLibs:Model')
+    implementation project(':XMLibs:UI')
+    implementation project(':XMLibs:Center')
+    implementation files("${XMJars}commons-lang3-3.4.jar")
+
+}

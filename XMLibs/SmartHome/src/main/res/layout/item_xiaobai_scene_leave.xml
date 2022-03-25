@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="342px"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/iv_scene"
+        android:layout_width="250px"
+        android:layout_height="250px"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/pic_goout" />
+
+    <LinearLayout
+        android:id="@+id/auto_state_ll"
+        android:layout_width="250px"
+        android:layout_height="60px"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/top_shadow"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_auto_state"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableLeft="@drawable/off"
+            android:drawablePadding="12px"
+            android:gravity="center"
+            android:text="@string/unused"
+            android:textColor="@color/white"
+            android:textSize="20px" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_scene_logo"
+        android:layout_width="72px"
+        android:layout_height="72px"
+        android:layout_below="@id/auto_state_ll"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25px"
+        android:src="@drawable/icon_awayfromhome" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_scene_logo"
+        android:layout_centerHorizontal="true"
+        android:padding="5px"
+        android:textColor="@color/white"
+        android:textSize="24px"
+        tools:text="离家" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_name"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="10px"
+        android:text="@string/support_auto_excute"
+        android:textColor="#8a919d"
+        android:textSize="18px" />
+
+    <Button
+        android:id="@+id/btn_excute"
+        android:layout_width="230px"
+        android:layout_height="80px"
+        android:layout_below="@+id/iv_scene"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40px"
+        android:background="@drawable/btn_selector"
+        android:enabled="true"
+        android:paddingBottom="10px"
+        android:text="@string/order_setting"
+        android:textColor="@color/white"
+        android:textSize="22px" />
+</RelativeLayout>

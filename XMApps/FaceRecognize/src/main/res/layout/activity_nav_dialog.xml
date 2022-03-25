@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/translucent_pop_window_bg">
+
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="@dimen/width_nav_dialog_close"
+        android:layout_height="@dimen/height_nav_dialog_close"
+        android:layout_marginStart="@dimen/size_nav_dialog_close_margin_start"
+        android:layout_marginTop="@dimen/size_nav_dialog_close_margin_top"
+        android:src="@drawable/ic_close"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/rest_area"
+        android:layout_width="@dimen/width_nav_dialog_img"
+        android:layout_height="@dimen/height_nav_dialog_img"
+        android:layout_marginEnd="@dimen/size_nav_dialog_img_margin_end"
+        android:scaleType="fitXY"
+        android:src="@drawable/pic_rest"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/coffee_shop"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_bg"
+        android:gravity="center"
+        android:text="@string/rest_area"
+        android:textSize="@dimen/font_nav_dialog_top"
+        app:layout_constraintEnd_toEndOf="@+id/rest_area"
+        app:layout_constraintStart_toStartOf="@+id/rest_area"
+        app:layout_constraintTop_toTopOf="@+id/rest_area" />
+
+    <ImageView
+        android:id="@+id/coffee_shop"
+        android:layout_width="@dimen/width_nav_dialog_img"
+        android:layout_height="@dimen/height_nav_dialog_img"
+        android:layout_marginEnd="@dimen/size_nav_dialog_img_margin_end"
+        android:scaleType="fitXY"
+        android:src="@drawable/pic_coffee"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/service_area"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_bg"
+        android:gravity="center"
+        android:text="@string/coffee_shop"
+        android:textSize="@dimen/font_nav_dialog_top"
+        app:layout_constraintEnd_toEndOf="@+id/coffee_shop"
+        app:layout_constraintStart_toStartOf="@+id/coffee_shop"
+        app:layout_constraintTop_toTopOf="@+id/coffee_shop" />
+
+
+    <ImageView
+        android:id="@+id/service_area"
+        android:layout_width="@dimen/width_nav_dialog_img"
+        android:layout_height="@dimen/height_nav_dialog_img"
+        android:layout_marginEnd="@dimen/size_nav_dialog_img_margin_end"
+        android:scaleType="fitXY"
+        android:src="@drawable/pic_service"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/parking_lot"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_bg"
+        android:gravity="center"
+        android:text="@string/service_area"
+        android:textSize="@dimen/font_nav_dialog_top"
+        app:layout_constraintEnd_toEndOf="@+id/service_area"
+        app:layout_constraintStart_toStartOf="@+id/service_area"
+        app:layout_constraintTop_toTopOf="@+id/service_area" />
+
+
+    <ImageView
+        android:id="@+id/parking_lot"
+        android:layout_width="@dimen/width_nav_dialog_img"
+        android:layout_height="@dimen/height_nav_dialog_img"
+        android:layout_marginEnd="@dimen/size_nav_dialog_img_margin_end"
+        android:scaleType="fitXY"
+        android:src="@drawable/pic_parking"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_bg"
+        android:gravity="center"
+        android:text="@string/parking_lot"
+        android:textSize="@dimen/font_nav_dialog_top"
+        app:layout_constraintEnd_toEndOf="@+id/parking_lot"
+        app:layout_constraintStart_toStartOf="@+id/parking_lot"
+        app:layout_constraintTop_toTopOf="@+id/parking_lot" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/heavy_fatigue_driving_tip"
+        android:textSize="30px"
+        app:layout_constraintBottom_toTopOf="@+id/textView1"
+        app:layout_constraintEnd_toEndOf="@+id/parking_lot"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/count_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24px"
+        android:text="@string/ten_seconds_to_close"
+        android:textSize="36px"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/close"
+        app:layout_constraintStart_toEndOf="@+id/close"
+        app:layout_constraintTop_toTopOf="@+id/close"
+        tools:visibility="visible" />
+
+</android.support.constraint.ConstraintLayout>

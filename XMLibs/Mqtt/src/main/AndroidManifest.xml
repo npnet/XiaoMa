@@ -1,0 +1,29 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xiaoma.mqtt" >
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <permission android:name = "com.xiaoma.permission.RECEIVE_MQTT"/>
+
+    <application>
+        <service
+            android:process=":XmPush"
+            android:name="org.eclipse.paho.android.service.MqttService">
+        </service>
+        <service
+            android:name=".service.XmPushService"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":XmPush">
+            <intent-filter>
+                <action android:name="com.xiaoma.mqtt.service.XmPushService" />
+            </intent-filter>
+        </service>
+
+    </application>
+
+</manifest>

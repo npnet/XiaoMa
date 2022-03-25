@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="600px"
+    android:layout_height="400px"
+    android:background="@drawable/dialog_bg_middle">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:text="@string/vehicle_temperatur_epreset"
+        android:textSize="30px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.xiaoma.setting.practice.view.NumberPickerView
+        android:id="@+id/wheel_temp"
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:layout_marginTop="32px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title"
+        app:npv_ItemPaddingHorizontal="5dp"
+        app:npv_ItemPaddingVertical="5dp"
+        app:npv_ShowDivider="false"
+        app:npv_TextColorNormal="#ffffff"
+        app:npv_TextColorSelected="#ffffff"
+        app:npv_TextSelectedBackground="@drawable/position_frame"
+        app:npv_TextSizeNormal="28px"
+        app:npv_TextSizeSelected="32px"
+        app:npv_WrapSelectorWheel="false" />
+
+    <TextView
+        android:id="@+id/tv_sure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="35px"
+        android:text="@string/confirm"
+        android:textColor="@color/white"
+        android:textSize="30px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tv_cancel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="35px"
+        android:text="@string/cancel"
+        android:textColor="@color/white"
+        android:textSize="30px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_sure" />
+
+</android.support.constraint.ConstraintLayout>

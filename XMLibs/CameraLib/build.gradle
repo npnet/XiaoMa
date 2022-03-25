@@ -1,0 +1,19 @@
+apply plugin: 'com.android.library'
+apply from: "$rootDir$Android"
+android library()
+android {
+    sourceSets {
+        main.java.srcDirs += 'src/main/base'
+        main.java.srcDirs += 'src/main/api14'
+        main.java.srcDirs += 'src/main/api21'
+        main.java.srcDirs += 'src/main/api23'
+    }
+}
+dependencies {
+    implementation "com.android.support:support-annotations:${SUPPORT_LIBRARY_VERSION}"
+    implementation "com.android.support:support-v4:${SUPPORT_LIBRARY_VERSION}"
+    // Tests
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation('com.android.support.test:runner:1.0.0')
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:3.0.0')
+}

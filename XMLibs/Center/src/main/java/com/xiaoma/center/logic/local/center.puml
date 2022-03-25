@@ -1,0 +1,9 @@
+@startuml
+Center -> CenterService: 1.bindService
+CenterService -> Center: 2.onServiceConnected得到CenterService代理对象
+CenterService -> CenterService: 3.addServerListener(IServerListener)
+CenterService -> CenterService: 4.IServerListener#onClientIn#onClientOut
+CenterService -> Client: 5.register(Client)
+
+Client -> Client:
+@enduml

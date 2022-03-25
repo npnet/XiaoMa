@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/ll_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/iv_pet_food_bg"
+            android:layout_width="@dimen/width_pet_product_list_image"
+            android:layout_height="@dimen/height_pet_product_list_image"
+            android:background="@drawable/product_item_image"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/iv_pet_food"
+                android:layout_width="@dimen/size_pet_goods_image"
+                android:layout_height="@dimen/size_pet_goods_image"
+                android:src="@drawable/big_food" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/desc_linear"
+            android:layout_width="@dimen/width_product_item_desc"
+            android:layout_height="@dimen/height_product_item_desc"
+            android:background="@drawable/product_item_desc"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_pet_food_bg">
+
+            <ImageView
+                android:id="@+id/iv_desc_image"
+                android:layout_width="@dimen/size_product_item_coin"
+                android:layout_height="@dimen/size_product_item_coin"
+                android:layout_marginEnd="8px"
+                android:src="@drawable/pet_coin" />
+
+            <TextView
+                android:id="@+id/tv_desc_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLength="6"
+                android:singleLine="true"
+                android:text="100"
+                android:textColor="@color/product_item_desc_text"
+                android:textSize="@dimen/pet_font_size_26"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_product_item_title_margin_top"
+        android:gravity="center"
+        android:maxLength="8"
+        android:singleLine="true"
+        android:text="@string/big_food"
+        android:textColor="@color/product_item_title"
+        android:textSize="@dimen/pet_font_size_30"
+        app:layout_constraintEnd_toEndOf="@id/ll_top"
+        app:layout_constraintStart_toStartOf="@id/ll_top"
+        app:layout_constraintTop_toBottomOf="@id/ll_top" />
+</android.support.constraint.ConstraintLayout>

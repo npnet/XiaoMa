@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginRight="@dimen/px_130">
+    <ImageView
+        android:id="@+id/iv_app_icon"
+        android:layout_width="@dimen/px_186"
+        android:layout_height="@dimen/px_186"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="@dimen/px_28"
+        app:layout_constraintTop_toBottomOf="@+id/iv_app_icon"
+        app:layout_constraintLeft_toLeftOf="@+id/iv_app_icon"
+        app:layout_constraintRight_toRightOf="@+id/iv_app_icon"
+        android:layout_marginTop="@dimen/px_46"/>
+
+</android.support.constraint.ConstraintLayout>

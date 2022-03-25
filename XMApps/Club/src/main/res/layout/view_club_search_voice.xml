@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/discovery_ll_recording"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_search_normal"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/padding_record_bottom"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/discovery_tv_recording_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_cancle_left"
+            android:text="@string/search_voice_view_cancel"
+            android:textColor="@color/club_white"
+            android:textSize="@dimen/font_text_middle" />
+
+
+        <LinearLayout
+            android:id="@+id/discovery_ll_recording_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/discovery_iv_recording_left"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/anim_search_voice" />
+
+            <TextView
+                android:id="@+id/discovery_tv_recording_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/search_margin_30"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/font_text_middle" />
+
+            <ImageView
+                android:id="@+id/discovery_iv_recording_right"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/anim_search_voice" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/discovery_search_open_btn"
+        android:layout_width="@dimen/height_discovery_search_voice_view"
+        android:layout_height="@dimen/height_discovery_search_voice_view"
+        android:padding="@dimen/padding_search_icon"
+        android:src="@drawable/icon_search"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/discovery_search_ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_discovery_search_voice_view">
+
+        <Button
+            android:id="@+id/discovery_search_voice_btn"
+            android:layout_width="@dimen/width_voice_search"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:background="@drawable/discovery_voice_search_btn"
+            android:gravity="center_horizontal|top"
+            android:includeFontPadding="false"
+            android:paddingLeft="@dimen/padding_text_left"
+            android:text="@string/club_voice_search"
+            android:textSize="28px" />
+
+        <RelativeLayout
+            android:layout_width="@dimen/width_input_search"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_input_left"
+            android:layout_marginBottom="@dimen/margin_input_bottom"
+            android:background="@drawable/search_input_bg">
+
+            <EditText
+                android:id="@+id/discovery_search_et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/margin_input_edit_left"
+                android:layout_marginRight="@dimen/margin_input_edit_left"
+                android:background="@null"
+                android:ellipsize="end"
+                android:imeOptions="actionSearch"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/club_white"
+                android:textColorHint="@color/text_sign_number"
+                android:textSize="@dimen/font_text_middle" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/discovery_search_now_btn"
+            android:layout_width="@dimen/width_voice_search"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/margin_search_now_bottom"
+            android:background="@drawable/discovery_search_now_btn"
+            android:paddingBottom="@dimen/padding_search_text_bottom"
+            android:text="@string/search_now"
+            android:textSize="@dimen/font_text_middle" />
+
+    </RelativeLayout>
+
+</FrameLayout>

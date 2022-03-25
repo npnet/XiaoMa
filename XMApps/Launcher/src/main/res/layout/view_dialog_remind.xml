@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="660px"
+        android:layout_height="425px"
+        android:background="@drawable/bg_remind">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25px"
+            android:text="日程提醒"
+            android:textColor="@color/white"
+            android:textSize="28px"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_time"
+            android:layout_width="40px"
+            android:layout_height="40px"
+            android:layout_marginStart="140px"
+            android:layout_marginTop="40px"
+            android:src="@drawable/icon_sch_time"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_title"
+            android:layout_marginStart="40px"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="#ffffff"
+            android:textSize="28px"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_time"
+            app:layout_constraintStart_toEndOf="@+id/iv_time"
+            app:layout_constraintTop_toTopOf="@+id/iv_time"
+            tools:text="2月14 18:00" />
+
+        <ImageView
+            android:id="@+id/iv_msg"
+            android:layout_width="40px"
+            android:layout_height="40px"
+            android:layout_marginStart="140px"
+            android:layout_marginTop="35px"
+            android:src="@drawable/ic_message"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_time" />
+
+        <TextView
+            android:id="@+id/tv_message"
+            android:layout_width="370px"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40px"
+            android:ellipsize="end"
+            android:lineSpacingExtra="10px"
+            android:maxLines="1"
+            android:textColor="#ffffff"
+            android:textSize="28px"
+            app:layout_constraintBottom_toBottomOf="@id/iv_msg"
+            app:layout_constraintStart_toEndOf="@id/iv_msg"
+            app:layout_constraintTop_toTopOf="@id/iv_msg"
+            tools:text="标题标题标题标标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题题标题标题标题标题标题标题标题标题标题标题" />
+
+        <ImageView
+            android:id="@+id/iv_location"
+            android:layout_width="40px"
+            android:layout_height="40px"
+            android:layout_marginStart="140px"
+            android:layout_marginTop="35px"
+            android:src="@drawable/icon_sch_location"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_msg" />
+
+        <TextView
+            android:id="@+id/tv_location"
+            android:layout_width="370px"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40px"
+            android:ellipsize="start"
+            android:singleLine="true"
+            android:textColor="#ffffff"
+            android:textSize="28px"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_location"
+            app:layout_constraintLeft_toRightOf="@+id/iv_location"
+            app:layout_constraintTop_toTopOf="@+id/iv_location" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10px"
+            android:layout_marginEnd="10px"
+            android:src="@drawable/divide_line"
+            app:layout_constraintBottom_toTopOf="@+id/btn_sure"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="80px"
+            android:layout_marginStart="10px"
+            android:layout_marginEnd="10px"
+            android:src="@drawable/divide_vertical"
+            app:layout_constraintBottom_toBottomOf="@id/btn_sure"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/btn_sure" />
+
+        <Button
+            android:id="@+id/btn_sure"
+            android:layout_width="0px"
+            android:layout_height="75px"
+            android:layout_marginStart="100px"
+            android:layout_marginEnd="50px"
+            android:background="@drawable/dialog_bg_button"
+            android:gravity="center"
+            android:text="@string/btn_sure"
+            android:textColor="@color/white"
+            android:textSize="30px"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btn_cancle"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+        <Button
+            android:id="@+id/btn_cancle"
+            android:layout_width="0px"
+            android:layout_height="75px"
+            android:layout_marginEnd="100px"
+            android:background="#00000000"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textColor="@color/white"
+            android:textSize="30px"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toEndOf="@+id/btn_sure" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</LinearLayout>

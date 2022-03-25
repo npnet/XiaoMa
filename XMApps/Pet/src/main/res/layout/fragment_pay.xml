@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="@dimen/size_buy_page_margin"
+    android:layout_marginEnd="@dimen/size_buy_page_margin"
+    android:layout_marginBottom="@dimen/size_buy_page_margin"
+    android:background="@drawable/mall_product_bg"
+    android:clickable="true"
+    android:focusable="true"
+    android:paddingStart="@dimen/size_buy_page_padding_start"
+    android:paddingTop="@dimen/size_buy_page_padding_top"
+    android:paddingEnd="@dimen/size_buy_page_padding_start">
+
+    <ImageView
+        android:id="@+id/iv_pay_food_icon"
+        android:layout_width="@dimen/size_buy_product_detail_image"
+        android:layout_height="@dimen/height_buy_product_detail_image"
+        android:layout_marginTop="@dimen/size_buy_detail_icon_top"
+        android:src="@drawable/big_food_detail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_pay_food_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_buy_detail_title_start"
+        android:layout_marginTop="@dimen/size_buy_detail_title_top"
+        android:maxLength="8"
+        android:singleLine="true"
+        android:text="@string/big_food"
+        android:textColor="@color/product_item_title"
+        android:textSize="@dimen/pet_font_size_36"
+        app:layout_constraintStart_toEndOf="@id/iv_pay_food_icon"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_pay_food_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_buy_detail_desc_top"
+        android:text="帮助宠物补充140能量，让宠物早点升级"
+        android:textColor="@color/buy_goods_desc"
+        android:textSize="@dimen/pet_font_size_30"
+        app:layout_constraintStart_toStartOf="@id/tv_pay_food_name"
+        app:layout_constraintTop_toBottomOf="@id/tv_pay_food_name" />
+
+
+    <ImageView
+        android:id="@+id/iv_pay_price_image"
+        android:layout_width="@dimen/size_pet_mall_coin_icon"
+        android:layout_height="@dimen/size_pet_mall_coin_icon"
+        android:layout_marginTop="@dimen/size_buy_detail_pet_coin_top"
+        android:src="@drawable/pet_coin"
+        app:layout_constraintBottom_toBottomOf="@id/iv_pay_food_icon"
+        app:layout_constraintStart_toStartOf="@id/tv_pay_food_name" />
+
+    <TextView
+        android:id="@+id/tv_pay_price_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10px"
+        android:text="200"
+        android:textColor="@color/product_item_desc_text"
+        android:textSize="@dimen/pet_font_size_26"
+        app:layout_constraintBottom_toBottomOf="@id/iv_pay_price_image"
+        app:layout_constraintStart_toEndOf="@id/iv_pay_price_image"
+        app:layout_constraintTop_toTopOf="@id/iv_pay_price_image" />
+
+
+    <LinearLayout
+        android:id="@+id/pay_counter_linear"
+        android:layout_width="@dimen/width_add_product"
+        android:layout_height="@dimen/height_add_product"
+        android:background="@drawable/pay_counter_shape"
+        android:orientation="horizontal"
+        android:padding="1px"
+        android:weightSum="7"
+        app:layout_constraintBottom_toBottomOf="@id/iv_pay_price_image"
+        app:layout_constraintEnd_toEndOf="parent">
+
+
+        <TextView
+            android:id="@+id/tv_less_text"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@drawable/add_product_shape"
+            android:clickable="true"
+            android:enabled="false"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="—"
+            android:textColor="@color/add_product_left_text"
+            android:textSize="@dimen/pet_font_size_30" />
+
+        <TextView
+            android:id="@+id/tv_pay_counter"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:enabled="false"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="1"
+            android:textColor="@color/add_product_counter"
+            android:textSize="@dimen/pet_font_size_30" />
+
+        <TextView
+            android:id="@+id/tv_add_text"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@drawable/remove_product_shape"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="+"
+            android:textColor="@color/add_product_counter"
+            android:textSize="@dimen/pet_font_size_30" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/pay_title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_buy_with_car_coin_text_top"
+        android:text="@string/buy_car_coin"
+        android:textColor="@color/product_item_title"
+        android:textSize="@dimen/pet_font_size_36"
+        app:layout_constraintStart_toStartOf="@id/iv_pay_food_icon"
+        app:layout_constraintTop_toBottomOf="@id/iv_pay_price_image" />
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/mine_coin_layout"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/height_car_coin_type"
+        android:layout_marginTop="@dimen/size_car_coin_type_margin_top"
+        android:background="@drawable/car_coin_type_shape"
+        app:layout_constraintEnd_toEndOf="@id/pay_counter_linear"
+        app:layout_constraintStart_toStartOf="@id/pay_title_text"
+        app:layout_constraintTop_toBottomOf="@id/pay_title_text">
+
+        <ImageView
+            android:id="@+id/pay_mine_coin_icon"
+            android:layout_width="@dimen/size_pet_mall_coin_icon"
+            android:layout_height="@dimen/size_pet_mall_coin_icon"
+            android:layout_marginStart="@dimen/size_buy_with_car_coin_text_start"
+            android:src="@drawable/pet_coin"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/pay_mine_coin_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_buy_with_car_coin_text_margin"
+            android:text="@string/mine_car_coin"
+            android:textColor="@color/car_coin_type"
+            android:textSize="@dimen/pet_font_size_26"
+            app:layout_constraintBottom_toBottomOf="@id/pay_mine_coin_icon"
+            app:layout_constraintStart_toEndOf="@id/pay_mine_coin_icon"
+            app:layout_constraintTop_toTopOf="@id/pay_mine_coin_icon" />
+
+
+        <!--<TextView-->
+        <!--android:id="@+id/tv_not_pay"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginStart="50px"-->
+        <!--android:text="@string/not_pay"-->
+        <!--android:textColor="@color/not_pay"-->
+        <!--android:textSize="@dimen/pet_font_size_26"-->
+        <!--android:visibility="gone"-->
+        <!--app:layout_constraintBottom_toBottomOf="@id/pay_mine_coin_icon"-->
+        <!--app:layout_constraintStart_toEndOf="@id/pay_mine_coin_text"-->
+        <!--app:layout_constraintTop_toTopOf="@id/pay_mine_coin_icon" />-->
+
+
+        <TextView
+            android:id="@+id/mine_coin_total_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/size_car_coin_text_desc_margin_end"
+            android:text="500"
+            android:textColor="@color/car_coin_type"
+            android:textSize="@dimen/pet_font_size_26"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/need_pay_coin_layout"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/height_car_coin_type"
+        android:layout_marginTop="@dimen/size_car_coin_type_margin_top"
+        android:background="@drawable/car_coin_type_shape"
+        app:layout_constraintEnd_toEndOf="@id/pay_counter_linear"
+        app:layout_constraintStart_toStartOf="@id/pay_title_text"
+        app:layout_constraintTop_toBottomOf="@id/mine_coin_layout">
+
+        <ImageView
+            android:id="@+id/need_pay_mine_coin_icon"
+            android:layout_width="@dimen/size_pet_mall_coin_icon"
+            android:layout_height="@dimen/size_pet_mall_coin_icon"
+            android:layout_marginStart="@dimen/size_buy_with_car_coin_text_start"
+            android:src="@drawable/pet_coin"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/need_pay_mine_coin_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_buy_with_car_coin_text_margin"
+            android:text="@string/need_pay_text"
+            android:textColor="@color/car_coin_type"
+            android:textSize="@dimen/pet_font_size_26"
+            app:layout_constraintBottom_toBottomOf="@id/need_pay_mine_coin_icon"
+            app:layout_constraintStart_toEndOf="@id/need_pay_mine_coin_icon"
+            app:layout_constraintTop_toTopOf="@id/need_pay_mine_coin_icon" />
+
+
+        <TextView
+            android:id="@+id/need_pay_coin_total_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/size_car_coin_text_desc_margin_end"
+            android:text="-200"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="@dimen/pet_font_size_26"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+
+    <Button
+        android:id="@+id/confirm_pay_bt"
+        android:layout_width="@dimen/width_pay_button"
+        android:layout_height="@dimen/height_pay_button"
+        android:layout_marginBottom="@dimen/size_pay_button_margin_bottom"
+        android:background="@drawable/confirm_pay_selector"
+        android:gravity="center"
+        android:text="@string/confirm_pay"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/pet_font_size_26"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

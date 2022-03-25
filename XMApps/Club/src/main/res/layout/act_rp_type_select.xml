@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container_rp_type"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/edit_sign_bg"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="horizontal"
+    tools:ignore="PxUsage">
+
+    <com.xiaoma.ui.navi.NavigationBar
+        android:id="@+id/rp_navi_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/bg_navigation_bar"
+        android:foreground="@drawable/navi_bg_left" />
+
+    <ImageView
+        android:layout_width="14px"
+        android:layout_height="match_parent"
+        android:background="@drawable/navi_bg_right"
+        android:clickable="false" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@drawable/rp_type_btn_divider"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:showDividers="middle">
+
+        <TextView
+            android:id="@+id/btn_normal_rp"
+            style="@style/rp_type_select_btn"
+            android:drawableTop="@drawable/rp_type_normal"
+            android:text="@string/rp_type_normal" />
+
+        <TextView
+            android:id="@+id/btn_location_rp"
+            style="@style/rp_type_select_btn"
+            android:drawableTop="@drawable/rp_type_location"
+            android:text="@string/rp_type_location" />
+
+        <TextView
+            android:id="@+id/btn_rp_map"
+            style="@style/rp_type_select_btn"
+            android:drawableTop="@drawable/rp_type_map"
+            android:text="@string/rp_type_map" />
+    </LinearLayout>
+</LinearLayout>

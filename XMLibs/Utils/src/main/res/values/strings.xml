@@ -1,0 +1,18 @@
+<resources>
+    <string name="module_desc">Utils</string>
+
+    <string name="sunday">(星期日)</string>
+    <string name="monday">(星期一)</string>
+    <string name="tuseday">(星期二)</string>
+    <string name="wednesday">(星期三)</string>
+    <string name="thursday">(星期四)</string>
+    <string name="friday">（星期五)</string>
+    <string name="saturday">(星期六)</string>
+
+    <string name="club_is_not_installed">请先安装车友圈</string>
+    <string name="share_failed">分享失败</string>
+    <string name="jump_failed">跳转失败</string>
+    <string name="is_not_installed">应用未安装</string>
+    <string name="account_permission_prompt">该账号无法使用该功能</string>
+    <string name="account_permission_prompt_user_invalid">暂不可用,请前往4s店进行实名认证</string>
+</resources>

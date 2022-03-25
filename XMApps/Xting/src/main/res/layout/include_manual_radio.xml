@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/include_native">
+
+    <RadioGroup
+        android:id="@+id/rg_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="181px"
+        android:layout_marginLeft="115px"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent">
+
+        <RadioButton
+            android:id="@+id/rb_fm"
+            android:layout_width="165px"
+            android:layout_height="73px"
+            android:background="@drawable/selector_local_fm_switch"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:textSize="22px"
+            android:textColor="@color/selector_text_check"
+            android:text="@string/fm" />
+
+        <RadioButton
+            android:id="@+id/rb_am"
+            android:layout_width="165px"
+            android:layout_height="73px"
+            android:layout_marginStart="-20px"
+            android:background="@drawable/selector_local_am_switch"
+            android:button="@null"
+            android:gravity="center"
+            android:textSize="22px"
+            android:textColor="@color/selector_text_check"
+            android:text="@string/am" />
+    </RadioGroup>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="263px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/bt_skip_previous"
+            android:layout_width="84px"
+            android:layout_height="84px"
+            android:background="@drawable/selector_local_fm_manual_pre"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tv_channel_frequency"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_channel_frequency"
+            android:layout_width="270px"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="104px"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textSize="48px"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/bt_skip_next"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/bt_skip_previous"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="1035.3 MHZ" />
+
+        <Button
+            android:id="@+id/bt_skip_next"
+            android:layout_width="84px"
+            android:layout_height="84px"
+            android:layout_marginStart="104px"
+            android:background="@drawable/selector_local_fm_manual_next"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tv_channel_frequency"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <Button
+        android:id="@+id/bt_reduce"
+        android:layout_width="84px"
+        android:layout_height="84px"
+        android:layout_marginStart="220px"
+        android:layout_marginTop="54px"
+        android:background="@drawable/selector_local_fm_reduce"
+        app:layout_constraintBottom_toBottomOf="@+id/tune_ruler"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tune_ruler"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.xiaoma.xting.local.view.tuneruler.TuneRuler
+        android:id="@+id/tune_ruler"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24px"
+        android:layout_marginEnd="24px"
+        android:layout_marginTop="16px"
+        app:layout_constraintEnd_toStartOf="@+id/bt_add"
+        app:layout_constraintStart_toEndOf="@+id/bt_reduce"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+
+    <Button
+        android:id="@+id/bt_add"
+        android:layout_width="84px"
+        android:layout_height="84px"
+        android:layout_marginEnd="220px"
+        android:layout_marginTop="54px"
+        android:background="@drawable/selector_local_fm_add"
+        app:layout_constraintBottom_toBottomOf="@+id/tune_ruler"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tune_ruler"
+        app:layout_constraintVertical_bias="0.0" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cl_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/size_os_theme_main_margin_top">
+
+    <TextView
+        android:id="@+id/tv_theme"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/size_os_them_main_title_margin_left"
+        android:padding="@dimen/size_add_to_click_padding"
+        android:text="@string/tab_system_theme"
+        android:textColor="@color/selector_home_menus_text"
+        android:textSize="@dimen/font_of_shop_32"
+        app:layout_constraintEnd_toStartOf="@+id/tv_sound"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_sound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_title_voice_type_margin_left"
+        android:padding="@dimen/size_add_to_click_padding"
+        android:text="@string/tab_theme_sound"
+        android:textColor="@color/selector_home_menus_text"
+        android:textSize="@dimen/font_of_shop_32"
+        app:layout_constraintStart_toEndOf="@+id/tv_theme"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/fl_contain"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/size_theme_sub_margin_top"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_sound" />
+
+</android.support.constraint.ConstraintLayout>

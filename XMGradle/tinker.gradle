@@ -1,0 +1,382 @@
+/**
+ * 使用 'gradlew assembleRelease' 构建基础包
+ * 基础包输出路径: ./output/tinker/${packageName}/base/${date}/xxx.apk
+ */
+
+ext {
+    tinker = this.&tinker
+    tinkerBuildFlavorDirectory = ""
+}
+
+def gitSha() {
+    try {
+        String gitRev = 'git rev-parse --short HEAD'.execute(null, project.rootDir).text.trim()
+        if (gitRev == null) {
+            throw new GradleException("can't get git rev, you should add git to system path or just input test value, such as 'testTinkerId'")
+        }
+        return gitRev
+    } catch (Exception ignored) {
+        throw new GradleException("can't get git rev, you should add git to system path or just input test value, such as 'testTinkerId'")
+    }
+}
+
+def gitGitUser() {
+    String user = "unknown"
+    try {
+        user = 'git config user.email'.execute(null, project.rootDir).text.trim()
+        if (gitRev == null) {
+            throw new GradleException("can't get git rev, you should add git to system path or just input test value, such as 'testTinkerId'")
+        }
+    } catch (Exception ignored) {
+    }
+    return user
+}
+
+def getTinkerIdValue() {
+    return gitSha()
+}
+
+def static isWindows() {
+    return org.gradle.internal.os.OperatingSystem.current().isWindows()
+}
+
+def getTinkerBuildFlavorDirectory() {
+    return ext.tinkerBuildFlavorDirectory
+}
+
+def copyTinkerPatch(String suffix) {
+    suffix = suffix.substring(0, 1).toLowerCase() + suffix.substring(1, suffix.length())
+    def patchDir = file("${project.buildDir}/outputs/apk/tinkerPatch/${suffix}")
+
+    def patch = file("${patchDir}/patch_signed.apk")
+    def patch7z = file("${patchDir}/patch_signed_7zip.apk")
+    def copyPatch = null
+
+    if (patch.exists() && patch7z.exists()) {
+        if (patch7z.size() > patch.size()) {
+            copyPatch = patch
+        } else {
+            copyPatch = patch7z
+        }
+
+    } else if (patch.exists()) {
+        copyPatch = patch
+    } else if (patch7z.exists()) {
+        copyPatch = patch7z
+    }
+
+    if (copyPatch != null) {
+        def date = new Date().format("yyyy_MM_dd-HH_mm_ss")
+        def appName = project.name
+        def baseVersion = "${tinker.baseVersion}"
+        def patchVersion = "[" + "${tinker.patchVersion}" + "]"
+        def channelId = "${APP_CHANNEL_ID}"
+        def outputName = "${appName}-${baseVersion}${patchVersion}-${channelId}.xmpatch"
+        def outputPath = file("${output}/tinker/${appName}/patch/${date}")
+        copy {
+            from copyPatch
+            into outputPath
+            rename { name ->
+                name.replace(name, outputName)
+            }
+        }
+    }
+}
+
+def startTinkerPatch() {
+    def date = new Date().format("yyyy_MM_dd-HH_mm_ss")
+    def tinkerOutput = "${output}/tinker/${project.name}/base/${date}"
+
+    tinkerPatch {
+        ignoreWarning = false
+        useSign = true
+        tinkerEnable = TINKER_ENABLE as boolean
+        buildConfig {
+            tinkerId = getTinkerIdValue()
+            keepDexApply = false
+            isProtectedApp = false
+            supportHotplugComponent = false
+        }
+
+        dex {
+            dexMode = "jar"
+            pattern = [
+                    "classes*.dex",
+                    "assets/secondary-dex-?.jar"
+            ]
+            // loader = [
+            // ]
+        }
+
+        lib {
+            pattern = [
+                    "lib/*/*.so"
+            ]
+        }
+
+        res {
+            largeModSize = 100
+            pattern = [
+                    "res/*",
+                    "assets/*",
+                    "resources.arsc",
+                    "AndroidManifest.xml"
+            ]
+            ignoreChange = [
+
+            ]
+        }
+
+        sevenZip {
+            if (isWindows()) {
+                zipArtifact = "com.tencent.mm:SevenZip:1.1.10"
+            } else {
+                path = "/usr/local/bin/7za"
+            }
+        }
+    }
+    List<String> flavors = new ArrayList<>()
+    project.android.productFlavors.each { flavor ->
+        flavors.add(flavor.name)
+    }
+    boolean hasFlavors = flavors.size() > 0
+
+    android.applicationVariants.all { variant ->
+        def taskName = variant.name
+        tasks.all {
+            if ("assemble${taskName.capitalize()}".equalsIgnoreCase(it.name)) {
+
+                it.doLast {
+                    copy {
+                        def fileNamePrefix = "${project.name}-${variant.baseName}"
+                        def flavorsFileNamePrefix = hasFlavors ? "${fileNamePrefix}" : "${fileNamePrefix}"
+                        def destFolder = hasFlavors ? file("${tinkerOutput}/${variant.flavorName}") : tinkerOutput
+
+                        from variant.outputs.first().outputFile
+                        into destFolder
+                        rename { String fileName ->
+                            fileName.replace("${fileNamePrefix}.apk", "${flavorsFileNamePrefix}.apk")
+                        }
+
+                        from "${buildDir}/outputs/mapping/${variant.dirName}/mapping.txt"
+                        into destFolder
+                        rename { String fileName ->
+                            fileName.replace("mapping.txt", "${flavorsFileNamePrefix}-mapping.txt")
+                        }
+
+                        from "${buildDir}/intermediates/symbols/${variant.dirName}/R.txt"
+                        into destFolder
+                        rename { String fileName ->
+                            fileName.replace("R.txt", "${flavorsFileNamePrefix}-R.txt")
+                        }
+                    }
+                }
+            }
+        }
+    }
+    project.afterEvaluate {
+        if (hasFlavors) {
+            task(tinkerPatchAllFlavorRelease) {
+                group = 'tinker'
+                def originOldPath = getTinkerBuildFlavorDirectory()
+                for (String flavor : flavors) {
+                    def tinkerTask = tasks.getByName("tinkerPatch${flavor.capitalize()}Release")
+                    dependsOn tinkerTask
+                    def preAssembleTask = tasks.getByName("process${flavor.capitalize()}ReleaseManifest")
+                    preAssembleTask.doFirst {
+                        String flavorName = preAssembleTask.name.substring(7, 8).toLowerCase() + preAssembleTask.name.substring(8, preAssembleTask.name.length() - 15)
+                        project.tinkerPatch.oldApk = "${originOldPath}/${flavorName}/${project.name}-${flavorName}-release.apk"
+                        project.tinkerPatch.buildConfig.applyMapping = "${originOldPath}/${flavorName}/${project.name}-${flavorName}-release-mapping.txt"
+                        project.tinkerPatch.buildConfig.applyResourceMapping = "${originOldPath}/${flavorName}/${project.name}-${flavorName}-release-R.txt"
+                    }
+                }
+            }
+
+            task(tinkerPatchAllFlavorDebug) {
+                group = 'tinker'
+                def originOldPath = getTinkerBuildFlavorDirectory()
+                for (String flavor : flavors) {
+                    def tinkerTask = tasks.getByName("tinkerPatch${flavor.capitalize()}Debug")
+                    dependsOn tinkerTask
+                    def preAssembleTask = tasks.getByName("process${flavor.capitalize()}DebugManifest")
+                    preAssembleTask.doFirst {
+                        String flavorName = preAssembleTask.name.substring(7, 8).toLowerCase() + preAssembleTask.name.substring(8, preAssembleTask.name.length() - 13)
+                        project.tinkerPatch.oldApk = "${originOldPath}/${flavorName}/${project.name}-${flavorName}-debug.apk"
+                        project.tinkerPatch.buildConfig.applyMapping = "${originOldPath}/${flavorName}/${project.name}-${flavorName}-debug-mapping.txt"
+                        project.tinkerPatch.buildConfig.applyResourceMapping = "${originOldPath}/${flavorName}/${project.name}-${flavorName}-debug-R.txt"
+                    }
+
+                }
+            }
+        }
+
+        tasks.each {
+            if (it.name.startsWith("tinkerPatch")) {
+                it.doLast {
+                    copyTinkerPatch(it.name.replace("tinkerPatch", ""))
+                }
+            }
+        }
+    }
+}
+
+class TinkerInfo {
+    private String appClassName
+
+    private String baseApkPath
+    private String baseResMapping
+    private String baseMapping
+    private String baseVersion
+    private int patchVersion
+    private String patchMessage
+
+    void appClassName(String appClassName) {
+        this.appClassName = appClassName
+    }
+
+    void buildPatch(Closure closure) {
+        def buildPatchInfo = new BuildPatchInfo()
+        closure.delegate = buildPatchInfo
+        closure.call()
+    }
+
+    void patchDesc(Closure closure) {
+        def patchDesc = new TinkerPatchDesc()
+        closure.delegate = patchDesc
+        closure.call()
+    }
+
+    class BuildPatchInfo {
+        void baseApkPath(String baseApkPath) {
+            TinkerInfo.this.baseApkPath = baseApkPath
+        }
+
+        void baseResMapping(String baseResMapping) {
+            TinkerInfo.this.baseResMapping = baseResMapping
+        }
+
+        void baseMapping(String baseMapping) {
+            TinkerInfo.this.baseMapping = baseMapping
+        }
+    }
+
+    class TinkerPatchDesc {
+        void baseVersion(String baseVersion) {
+            TinkerInfo.this.baseVersion = baseVersion
+        }
+
+        void patchVersion(int patchVersion) {
+            TinkerInfo.this.patchVersion = patchVersion
+        }
+
+        void patchMessage(String patchMessage) {
+            TinkerInfo.this.patchMessage = patchMessage
+        }
+
+    }
+}
+
+def tinker(Closure closure) {
+    boolean tinkerEnable = "${TINKER_ENABLE}" == "true"
+    if (!tinkerEnable) {
+        project.android {
+            defaultConfig {
+                buildConfigField "String", "TINKER_BASE_VERSION", "\"disable\""
+                buildConfigField "int", "TINKER_PATCH_VERSION", "-1"
+                buildConfigField "String", "TINKER_PATCH_MESSAGE", "\"disable\""
+            }
+            dexOptions {
+                jumboMode = true
+            }
+            dependencies {
+                implementation project(path: ':XMLibs:Hotfix')
+                dependencies.annotationProcessor("com.tencent.tinker:tinker-android-anno:${TINKER_VERSION}") {
+                    changing = true
+                }
+                dependencies.compileOnly("com.tencent.tinker:tinker-android-anno:${TINKER_VERSION}") {
+                    changing = true
+                }
+            }
+        }
+        return
+    }
+    tinker = new TinkerInfo()
+    closure.delegate = tinker
+    closure.call()
+
+    String appClassName = tinker.appClassName
+    def baseApkPath = tinker.baseApkPath
+    def baseResMapping = tinker.baseResMapping
+    def baseMapping = tinker.baseMapping
+    def baseVersion = tinker.baseVersion
+    def patchVersion = tinker.patchVersion
+    def patchMessage = tinker.patchMessage
+
+    def channelId = "${APP_CHANNEL_ID}"
+    def packageName = project.android.defaultConfig.applicationId
+    def creator = gitGitUser()
+
+    project.android {
+        defaultConfig {
+            buildConfigField "String", "TINKER_BASE_VERSION", "\"${baseVersion}\""
+            buildConfigField "int", "TINKER_PATCH_VERSION", "${patchVersion}"
+            buildConfigField "String", "TINKER_PATCH_MESSAGE", "\"${patchMessage}\""
+            multiDexEnabled true
+        }
+        dexOptions {
+            jumboMode = true
+        }
+        dependencies {
+            implementation project(path: ':XMLibs:Hotfix')
+            dependencies.annotationProcessor("com.tencent.tinker:tinker-android-anno:${TINKER_VERSION}") {
+                changing = true
+            }
+            dependencies.compileOnly("com.tencent.tinker:tinker-android-anno:${TINKER_VERSION}") {
+                changing = true
+            }
+        }
+    }
+
+    apply plugin: 'com.tencent.tinker.patch'
+
+    tinkerPatch {
+        oldApk = baseApkPath
+        buildConfig {
+            applyResourceMapping = baseResMapping
+            applyMapping = baseMapping
+        }
+        packageConfig {
+            configField("channelId", channelId)
+            configField("packageName", packageName)
+            configField("packageVersion", baseVersion)
+            configField("patchVersion", "${patchVersion}")
+            configField("patchDescription", patchMessage)
+            configField("patchType", '1') // [ 0:手机端(tob) 1:车机端(car) ]
+            configField("patchCreator", creator)
+        }
+        dex {
+            loader = [
+                    appClassName,
+                    'com.xiaoma.hotfix.*',
+                    'com.tencent.tinker.loader.*'
+            ]
+        }
+    }
+    startTinkerPatch()
+}
+
+task sortPublicTxt() {
+    doLast {
+        File originalFile = project.file("public.txt")
+        File sortedFile = project.file("public_sort.txt")
+        List<String> sortedLines = new ArrayList<>()
+        originalFile.eachLine {
+            sortedLines.add(it)
+        }
+        Collections.sort(sortedLines)
+        sortedFile.delete()
+        sortedLines.each {
+            sortedFile.append("${it}\n")
+        }
+    }
+}

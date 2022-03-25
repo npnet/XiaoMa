@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/per_experience_linear"
+    android:layout_width="wrap_content"
+    android:layout_height="70px"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_pet_level_text"
+        android:layout_width="@dimen/width_level_flag"
+        android:layout_height="@dimen/height_level_flag"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20px"
+        android:background="@drawable/level_flag_icon"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/pet_font_size_20"
+        app:layout_constraintEnd_toEndOf="@id/pet_experience_view"
+        app:layout_constraintStart_toStartOf="@id/pet_experience_view"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.xiaoma.pet.ui.view.PetExperienceView
+        android:id="@+id/pet_experience_view"
+        android:layout_width="@dimen/width_pet_experience"
+        android:layout_height="@dimen/height_pet_experience"
+        android:layout_marginStart="20px"
+        android:layout_marginTop="@dimen/size_pet_experience_margin_top"
+        app:bounds_color="@color/default_experience_bg"
+        app:content_offset="1"
+        app:grow_color="@color/color_mall_product"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_pet_level_text" />
+
+
+    <TextView
+        android:id="@+id/tv_pet_experience_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5px"
+        android:text="0%"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/pet_font_size_24"
+        app:layout_constraintStart_toEndOf="@id/pet_experience_view"
+        app:layout_constraintTop_toBottomOf="@id/tv_pet_level_text" />
+</android.support.constraint.ConstraintLayout>

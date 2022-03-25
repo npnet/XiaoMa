@@ -1,0 +1,99 @@
+String[] buildListCAR = [
+        "AppStore",         // 车应用
+        "Assistant",        // 语音助理
+        "BluetoothPhone",   // 蓝牙电话
+//        "CarPark",          // 车乐园
+        "Club",             // 车信(车友圈)
+        "DualScreen",       // 双屏互动
+        "FaceRecognize",    // 人脸识别
+        "Launcher",         // 桌面
+        "Motorcade",        // 车队
+        "Music",            // 音乐(超级音乐)
+        "Personal",         // 个人中心
+        "Service",          // 车服务
+        "Setting",          // 设置
+        "Shop",             // 奔腾商城
+        "SystemUI",         // SystemUI
+        "Xkan",             // 媒体
+        "Xting",            // 电台(想听/超级想听)
+//        "Pet",              // 宠物
+        "Instruction",      //使用手册
+        "DrivingScoreQM" ,   // 驾驶评分(启明)
+//        "InstructionDistribute", //指令分发
+]
+String[] buildListPAD = [
+        "AppStore",         // 车应用
+        "Assistant",        // 语音助理
+//        "CarPark",          // 车乐园
+        "Club",             // 车信(车友圈)
+        "Launcher",         // 桌面
+        "Motorcade",        // 车队
+        "Music",            // 音乐(超级音乐)
+        "Personal",         // 个人中心
+        "Service",          // 车服务
+        "Setting",          // 设置
+        "Shop",             // 奔腾商城
+        "Xkan",             // 媒体
+        "Xting",            // 电台(想听/超级想听)
+        "Instruction",      //使用手册
+]
+gradle.afterProject {
+    allprojects.each { project ->
+        String[] buildList
+        def projectName = project.name.toString()
+        if (BUILD_PLATFORM.equalsIgnoreCase("PAD")) {
+            buildList = buildListPAD
+        } else {
+            buildList = buildListCAR
+        }
+        if (buildList.contains(projectName)) {
+            project.tasks.each { task ->
+                if (task.name == "assembleDebug") {
+                    buildDebugApk.dependsOn task
+                }
+                if (task.name == "assembleRelease") {
+                    buildReleaseApk.dependsOn task
+                }
+            }
+        }
+    }
+}
+
+task cleanOutput {
+    group = 'compiler'
+    doLast {
+        delete project.output
+        allprojects.each { project ->
+            def buildFolder = project.getBuildDir()
+            if (buildFolder.exists()) {
+                delete buildFolder
+            }
+        }
+    }
+}
+
+task cleanIML {
+    group = 'compiler'
+    doLast {
+        allprojects.each { project ->
+            def buildDir = project.getBuildDir()
+            if (buildDir.exists() && buildDir.isDirectory()) {
+                delete(buildDir)
+            }
+            def projectName = project.getName()
+            def projectDir = project.getProjectDir()
+            def imlFile = new File(projectDir, projectName + ".iml")
+            if (imlFile.exists()) {
+                delete(imlFile)
+            }
+        }
+    }
+}
+
+task buildDebugApk {
+    group = 'compiler'
+}
+
+task buildReleaseApk {
+    group = 'compiler'
+}

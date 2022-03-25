@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_wheel"
+        android:layout_width="250px"
+        android:layout_height="100px"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="#30ffffff">
+
+        <Button
+            android:id="@+id/wheel_previous"
+            android:layout_width="98px"
+            android:layout_height="98px"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="1px"
+            android:background="@drawable/bg_wheel"
+            android:gravity="center"
+            android:text="◀"
+            android:textColor="@android:color/black"
+            android:textSize="50px"/>
+
+        <Button
+            android:id="@+id/wheel_next"
+            android:layout_width="98px"
+            android:layout_height="98px"
+            android:layout_alignParentRight="true"
+            android:layout_margin="1px"
+            android:background="@drawable/bg_wheel"
+            android:gravity="center"
+            android:text="▶"
+            android:textColor="@android:color/black"
+            android:textSize="50px"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

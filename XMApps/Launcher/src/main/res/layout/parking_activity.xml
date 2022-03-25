@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/parking_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40px"
+        android:layout_marginTop="@dimen/parking_activity_recommend_top"
+        android:text="@string/nearby_parking_lots"
+        android:textSize="@dimen/parking_activity_recommend_size"
+        android:visibility="invisible" />
+
+    <com.discretescrollview.DiscreteScrollView
+        android:id="@+id/parking_rv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/parking_activity_rv_height" />
+
+    <LinearLayout
+        android:id="@+id/parking_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/parking_activity_layout_top"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/parking_position"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="位置"
+                android:textSize="30px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="|"
+                android:textSize="30px" />
+
+            <TextView
+                android:id="@+id/remaining_parking_space"
+                android:layout_width="@dimen/parking_remaining_space_width"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="剩余车位"
+                android:textSize="30px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="|"
+                android:textSize="30px" />
+
+            <TextView
+                android:id="@+id/parking_distance"
+                android:layout_width="@dimen/parking_distance_width"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="距离"
+                android:textSize="30px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="|"
+                android:textSize="30px" />
+
+            <TextView
+                android:id="@+id/parking_open_type"
+                android:layout_width="@dimen/parking_open_type_width"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="夜间开放"
+                android:textSize="30px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/parking_activity_layout2_top"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/parking_navigation"
+                android:layout_width="@dimen/parking_navigation_width"
+                android:layout_height="80px"
+                android:text="@string/btn_navi"
+                android:textSize="40px" />
+
+            <Button
+                android:id="@+id/parking_details"
+                android:layout_width="@dimen/parking_details_margub_width"
+                android:layout_height="80px"
+                android:layout_marginLeft="@dimen/parking_details_margub_left"
+                android:text="@string/look_details"
+                android:textSize="40px" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

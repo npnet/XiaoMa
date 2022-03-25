@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layerType="software">
+
+    <ImageView
+        android:id="@+id/iv_user_head"
+        android:layout_width="@dimen/fragment_app_iv_head_user_width"
+        android:layout_height="@dimen/fragment_app_iv_head_user_height"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/fragment_app_iv_head_user_margin_left"
+        android:layout_marginTop="140px"
+        android:src="@drawable/icon_default_user"
+        android:background="@drawable/iv_cover_bg"
+        android:padding="13px" />
+
+    <TextView
+        android:id="@+id/tv_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/iv_user_head"
+        android:layout_alignBottom="@+id/iv_user_head"
+        android:layout_marginLeft="@dimen/fragment_app_tv_user_name_margin_left"
+        android:layout_toRightOf="@+id/iv_user_head"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="#fefefe"
+        android:textSize="@dimen/fragment_app_tv_user_name_text_size" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_main_app"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_app_list_app_icon_height"
+        android:layout_below="@+id/iv_user_head"
+        android:layout_marginLeft="@dimen/fragment_app_rv_main_app_margin_left"
+        android:layout_marginTop="@dimen/fragment_app_rv_main_app_margin_top"
+        android:layout_marginRight="130px" />
+
+    <com.xiaoma.ui.view.XmScrollBar
+        android:id="@+id/scroll_bar"
+        android:layout_width="@dimen/width_scrollbar"
+        android:layout_height="@dimen/height_scrollbar"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30px"
+        app:staticAlpha="0.75" />
+
+</RelativeLayout>

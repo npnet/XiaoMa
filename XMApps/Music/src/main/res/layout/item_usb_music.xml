@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/item_usb_music_iv"
+        android:layout_width="@dimen/width_item_recommend_iv"
+        android:layout_height="@dimen/width_item_recommend_iv"
+        android:scaleType="center"/>
+
+    <TextView
+        android:id="@+id/item_usb_music_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16px"
+        android:text="心情"
+        android:textSize="30px"/>
+
+</LinearLayout>

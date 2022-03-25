@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="344px"
+    android:layout_height="350px"
+    android:background="@drawable/location_detail_bg_poi"
+    android:orientation="vertical"
+    android:paddingStart="36px"
+    android:paddingEnd="36px"
+    tools:ignore="PxUsage,HardcodedText">
+
+    <TextView
+        android:id="@+id/tv_poi_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40px"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="粤美特大厦"
+        android:textColor="@android:color/white"
+        android:textSize="30px" />
+
+    <TextView
+        android:id="@+id/tv_poi_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:drawableStart="@drawable/location_detail_icon_navi"
+        android:drawablePadding="16px"
+        android:ellipsize="end"
+        android:lineSpacingExtra="20px"
+        android:maxLines="2"
+        android:text="详细地址"
+        android:textColor="@android:color/white"
+        android:textSize="20px" />
+
+    <TextView
+        android:id="@+id/tv_poi_distance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:drawableStart="@drawable/location_detail_icon_navi_distance"
+        android:drawablePadding="16px"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="100m"
+        android:textColor="@android:color/white"
+        android:textSize="20px" />
+
+    <Button
+        android:id="@+id/btn_navi"
+        android:layout_width="142px"
+        android:layout_height="60px"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="65px"
+        android:background="@drawable/location_detail_btn_navi"
+        android:gravity="center_horizontal"
+        android:paddingTop="9px"
+        android:text="@string/navigation"
+        android:textSize="20px" />
+</LinearLayout>

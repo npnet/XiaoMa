@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="240px"
+    android:layout_height="70px"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/view_tab_tv"
+        android:layout_width="240px"
+        android:layout_height="70px"
+        android:gravity="center"
+        android:text="Home"
+        android:textColor="@color/color_main_selector" />
+
+</LinearLayout>

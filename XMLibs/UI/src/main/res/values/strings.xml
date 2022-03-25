@@ -1,0 +1,38 @@
+<resources>
+    <string name="module_desc">UI</string>
+    <string name="state_view_retry_text">点击重试</string>
+    <string name="state_view_no_network_text">无网络连接，请检查你的网络</string>
+    <string name="state_view_empty_text">暂无数据</string>
+    <string name="state_view_loading_error_text">加载失败，请稍后重试</string>
+    <string name="search_voice_view_cancel">取消</string>
+    <string name="search_view_searching">节目搜索中，请稍候</string>
+    <string name="search_view_no_network">网络不给力 -  -  点击重试</string>
+    <string name="no_network">网络异常，请稍后再试</string>
+    <string name="state_no_network_tip">网络不给力</string>
+    <string name="refresh">别紧张，试试刷新一下页面</string>
+    <string name="state_view_set_net">设置网络</string>
+    <string name="no_net_loading_retry">重新加载</string>
+
+    <string name="pickerview_cancel">取消</string>
+    <string name="pickerview_submit">确定</string>
+    <string name="pickerview_year">年</string>
+    <string name="pickerview_month">月</string>
+    <string name="pickerview_day">日</string>
+    <string name="pickerview_hours">时</string>
+    <string name="pickerview_minutes">分</string>
+    <string name="pickerview_seconds">秒</string>
+    <string name="voice_search">语音搜索</string>
+    <string name="over_max_search_text">最多输入16个字符!</string>
+
+    <string name="dsv_ex_msg_dont_set_lm">You should not set LayoutManager on DiscreteScrollView.class instance. Library uses a special one. Just don\'t call the method.</string>
+    <string name="dsv_ex_msg_adapter_wrong_recycler">InfiniteScrollAdapter is supposed to work only with DiscreteScrollView</string>
+    <string name="network_error_in_visitor">请在WIFI环境下使用该功能</string>
+    <string name="network">网络</string>
+    <string name="please_speak_you_want_search">请说出你想要搜索内容</string>
+    <string name="you_no_speaking">你还没有说话哦！</string>
+    <string name="network_error">当前无网络，请稍后再试</string>
+    <string name="dialog_cancel">取消</string>
+    <string name="dialog_confirm">确定</string>
+    <string name="dialog_tips">提示</string>
+    <string name="loading">正在努力加载中...</string>
+</resources>

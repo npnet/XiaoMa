@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120px"
+        android:text="@string/disclaimer"
+        android:textSize="40px" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.xiaoma.launcher.main.view.ObservableScrollView
+            android:id="@+id/sisclamer_scrollview"
+            android:layout_width="1550px"
+            android:layout_height="446px"
+            android:overScrollMode="never"
+            android:paddingTop="50px"
+            android:scrollbars="none">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="10px"
+                android:text="@string/disclaimer_str"
+                android:textSize="30px" />
+
+        </com.xiaoma.launcher.main.view.ObservableScrollView>
+
+        <com.xiaoma.launcher.main.view.VerticalScrollBar
+            android:id="@+id/sisclamer_scrollbar"
+            android:layout_width="10px"
+            android:layout_height="486px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="37px"
+            android:layout_toRightOf="@+id/sisclamer_scrollview" />
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,60 @@
+[
+  {
+    "itemName": "蓝牙电话",
+    "itemNameEng": "Bluetooth phone",
+    "iconUrl":"android.resource://com.xiaoma.launcher/drawable/btn_bluetooth_phone_n",
+    "packageName": "com.xiaoma.bluetooth.phone",
+    "className": "com.xiaoma.bluetooth.phone.main.ui.MainActivity",
+    "tabName": "",
+    "isInstalled": "true"
+  },{
+  "itemName": "车家互联",
+  "itemNameEng": "Smart home",
+  "iconUrl":"android.resource://com.xiaoma.launcher/drawable/btn_smarthome_n",
+  "packageName": "com.xiaoma.launcher",
+  "className": "com.xiaoma.smarthome.login.ui.MainActivity",
+  "tabName": "",
+  "isInstalled": "true"
+},{
+  "itemName": "车队",
+  "itemNameEng": "Team",
+  "iconUrl":"android.resource://com.xiaoma.launcher/drawable/btn_motorcade_n",
+  "packageName": "com.xiaoma.motorcade",
+  "className": "com.xiaoma.motorcade.MainActivity",
+  "tabName": "",
+  "isInstalled": "true"
+},{
+  "itemName": "日程管理",
+  "itemNameEng": "Calendar",
+  "iconUrl":"android.resource://com.xiaoma.launcher/drawable/btn_calendar_n",
+  "packageName": "com.xiaoma.launcher",
+  "className": "com.xiaoma.launcher.main.ui.CalendarActivity",
+  "tabName": "",
+  "isInstalled": "true"
+},{
+  "itemName": "听歌识曲",
+  "itemNameEng": "Melody recognition",
+  "iconUrl":"android.resource://com.xiaoma.launcher/drawable/btn_listen_n",
+  "packageName": "com.xiaoma.launcher",
+  "className": "com.xiaoma.launcher.recmusic.ui.MusicRecDialogActivity",
+  "tabName": "",
+  "isInstalled": "true"
+},{
+  "itemName": "途记",
+  "itemNameEng": "Trip record",
+  "iconUrl":"android.resource://com.xiaoma.launcher/drawable/btn_mark_n",
+  "packageName": "com.xiaoma.launcher",
+  "className": "com.xiaoma.launcher.mark.ui.activity.MarkMainActivity",
+  "tabName": "",
+  "isInstalled": "true"
+},
+  {
+    "itemName": "驾驶评分",
+    "itemNameEng": "Drive Score",
+    "iconUrl":"android.resource://com.xiaoma.launcher/drawable/btn_drive_score_n",
+    "packageName": "com.qiming.fawcard.synthesize",
+    "className": "com.qiming.fawcard.synthesize.core.drivescore.DriveScoreHomeActivity",
+    "tabName": "",
+    "isInstalled": "true"
+  }
+]

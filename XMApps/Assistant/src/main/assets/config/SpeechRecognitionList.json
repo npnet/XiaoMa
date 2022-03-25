@@ -1,0 +1,664 @@
+{
+  "wordList": [
+    {
+      "word": "车服务",
+      "packageName": "com.xiaoma.service",
+      "className": "",
+      "tabName": "",
+      "replyWord": "正在为您进入车服务",
+      "isLauncher": true,
+      "ttsContent": "好的",
+      "sceneActionCode": 31
+    },
+    {
+      "word": "车应用",
+      "packageName": "com.xiaoma.app",
+      "className": "",
+      "tabName": "",
+      "replyWord": "正在为您打开车应用",
+      "isLauncher": true,
+      "ttsContent": "好的",
+      "sceneActionCode": 31
+    },
+    {
+      "word": "厂家活动",
+      "packageName": "com.xiaoma.factoryactivities",
+      "className": "",
+      "tabName": "",
+      "replyWord": "正在为您打开厂家活动",
+      "isLauncher": true,
+      "ttsContent": "好的",
+      "sceneActionCode": 31
+    },
+    {
+      "word": "广告",
+      "packageName": "com.xiaoma.factoryactivities",
+      "className": "com.xiaoma.factoryactivities.ui.AdvActivity",
+      "tabName": "",
+      "replyWord": "正在为您打开广告",
+      "isLauncher": true,
+      "ttsContent": "好的",
+      "sceneActionCode": 31
+    },
+    {
+      "word": "通知",
+      "packageName": "com.xiaoma.factoryactivities",
+      "className": "com.xiaoma.factoryactivities.ui.NotifyActivity",
+      "tabName": "",
+      "replyWord": "正在为您打开通知",
+      "isLauncher": true,
+      "ttsContent": "好的",
+      "sceneActionCode": 31
+    },
+    {
+      "word": "问卷调查",
+      "packageName": "com.xiaoma.factoryactivities",
+      "className": "com.xiaoma.factoryactivities.ui.QuestionSurveyActivity",
+      "tabName": "",
+      "replyWord": "正在为您打开问卷调查",
+      "isLauncher": true,
+      "ttsContent": "好的",
+      "sceneActionCode": 31
+    },
+    {
+      "word": "通讯录|打开通讯录",
+      "packageName": "com.xiaoma.club",
+      "className": "",
+      "tabName": "contacts",
+      "replyWord": "正在为您打开通讯录",
+      "isLauncher": true,
+      "ttsContent": "好的",
+      "sceneActionCode": 31
+    },
+    {
+      "word": "个人信息",
+      "packageName": "com.xiaoma.personalcenter",
+      "className": "com.xiaoma.personal.ui.personalinfo.activity.PersonalInformationActivity",
+      "tabName": "",
+      "replyWord": "正在为您打开个人信息",
+      "isLauncher": true,
+      "ttsContent": "好的",
+      "sceneActionCode": 14
+    },
+    {
+      "word": "我的红包",
+      "packageName": "com.xiaoma.club",
+      "className": "com.yunzhanghu.redpacketui.ui.activity.RPRecordActivity",
+      "tabName": "",
+      "replyWord": "正在为您打开我的红包",
+      "isLauncher": true,
+      "ttsContent": "好的",
+      "sceneActionCode": 14
+    },
+    {
+      "word": "账号积分",
+      "packageName": "com.xiaoma.personalcenter",
+      "className": "com.xiaoma.credits.ui.CreditsActivity",
+      "tabName": "",
+      "replyWord": "正在为您打开我的积分",
+      "isLauncher": true,
+      "ttsContent": "好的",
+      "sceneActionCode": 14
+    },
+    {
+      "word": "兑换流量",
+      "packageName": "com.xiaoma.personalcenter",
+      "className": "com.xiaoma.credits.ui.ProductExchangeActivity",
+      "tabName": "",
+      "replyWord": "",
+      "isLauncher": true,
+      "ttsContent": "好的",
+      "sceneActionCode": 14
+    },
+    {
+      "word": "购买流量",
+      "packageName": "com.cusc.store",
+      "className": "com.cusc.store.market.list.MarketListActivity",
+      "tabName": "",
+      "replyWord": "",
+      "isLauncher": true,
+      "ttsContent": "好的",
+      "sceneActionCode": 14
+    },
+    {
+      "word": "活动消息",
+      "packageName": "com.xiaoma.personalcenter",
+      "className": "com.xiaoma.personalcenter.active.ui.ActiveMessageActivity",
+      "tabName": "",
+      "replyWord": "正在为您打开活动消息",
+      "isLauncher": true,
+      "ttsContent": "好的",
+      "sceneActionCode": 14
+    },
+    {
+      "word": "日程管理",
+      "packageName": "com.xiaoma.personalcenter",
+      "className": "com.xiaoma.schedule.ui.ScheduleMainV2Activity",
+      "tabName": "",
+      "replyWord": "正在为您打开日程管理",
+      "isLauncher": true,
+      "ttsContent": "好的",
+      "sceneActionCode": 14
+    },
+    {
+      "word": "搜索",
+      "packageName": "com.xiaoma.club",
+      "className": "com.xiaoma.club.ui.search.SearchActivity",
+      "tabName": "discovery",
+      "replyWord": "正在为您打开搜索",
+      "isLauncher": true,
+      "ttsContent": "好的",
+      "sceneActionCode": 31
+    },
+    {
+      "word": "附近的车",
+      "packageName": "com.xiaoma.club",
+      "className": "com.xiaoma.club.ui.nearby.car.NearbyCarActivity",
+      "tabName": "discovery",
+      "replyWord": "正在为您打开附近的车",
+      "isLauncher": true,
+      "ttsContent": "好的",
+      "sceneActionCode": 31
+    },
+    {
+      "word": "附近的群",
+      "packageName": "com.xiaoma.club",
+      "className": "com.xiaoma.club.ui.nearby.group.NearbyGroupActivity",
+      "tabName": "discovery",
+      "replyWord": "正在为您打开附近的群",
+      "isLauncher": true,
+      "ttsContent": "好的",
+      "sceneActionCode": 31
+    },
+    {
+      "word": "发现|打开发现",
+      "packageName": "com.xiaoma.club",
+      "className": "",
+      "tabName": "discovery",
+      "replyWord": "正在为您打开发现",
+      "isLauncher": true,
+      "ttsContent": "好的",
+      "sceneActionCode": 31
+    },
+    {
+      "word": "排行榜|打开排行",
+      "packageName": "com.xiaoma.club",
+      "className": "",
+      "tabName": "rank",
+      "replyWord": "正在为您打开排行榜",
+      "isLauncher": true,
+      "ttsContent": "好的",
+      "sceneActionCode": 31
+    },
+    {
+      "word": "直播",
+      "packageName": "com.xiaoma.club",
+      "className": "",
+      "tabName": "liveshow",
+      "replyWord": "正在为您打开直播",
+      "isLauncher": true,
+      "ttsContent": "好的",
+      "sceneActionCode": 10
+    },
+    {
+      "word": "车友圈",
+      "packageName": "com.xiaoma.club",
+      "className": "",
+      "tabName": "liveshow",
+      "replyWord": "正在为您打开车友圈",
+      "isLauncher": true,
+      "ttsContent": "好的",
+      "sceneActionCode": 31
+    },
+    {
+      "word": "会话|打开会话",
+      "packageName": "com.xiaoma.club",
+      "className": "",
+      "tabName": "conversation",
+      "replyWord": "正在为您打开会话",
+      "isLauncher": true,
+      "ttsContent": "好的",
+      "sceneActionCode": 31
+    },
+    {
+      "word": "预约详情",
+      "packageName": "com.xiaoma.service",
+      "className": "com.xiaoma.service.ui.AppointmentListActivity",
+      "tabName": "",
+      "replyWord": "正在为您打开预约详情",
+      "isLauncher": true,
+      "ttsContent": "好的",
+      "sceneActionCode": 24
+    },
+    {
+      "word": "救援记录",
+      "packageName": "com.xiaoma.service",
+      "className": "com.xiaoma.service.ui.SosHistoryListActivity",
+      "tabName": "",
+      "replyWord": "正在为您打开救援记录",
+      "isLauncher": true,
+      "ttsContent": "好的",
+      "sceneActionCode": 24
+    },
+    {
+      "word": "车辆维修",
+      "packageName": "com.xiaoma.service",
+      "className": "com.xiaoma.service.ui.FourStoreListActivity",
+      "tabName": "REPAIR",
+      "replyWord": "正在为您打开车辆维修",
+      "isLauncher": true,
+      "ttsContent": "好的",
+      "sceneActionCode": 24
+    },
+    {
+      "word": "救援|车辆救援",
+      "packageName": "com.xiaoma.service",
+      "className": "com.xiaoma.service.ui.FourStoreListActivity",
+      "tabName": "SOS",
+      "replyWord": "正在为您打开车辆救援",
+      "isLauncher": true,
+      "ttsContent": "好的",
+      "sceneActionCode": 24
+    },
+    {
+      "word": "服务咨询",
+      "packageName": "com.xiaoma.service",
+      "className": "com.xiaoma.service.ui.FourStoreListActivity",
+      "tabName": "TROUBLE_COUNSEL",
+      "replyWord": "正在为您打开服务咨询",
+      "isLauncher": true,
+      "ttsContent": "好的",
+      "sceneActionCode": 24
+    },
+    {
+      "word": "服务记录|救援记录|维修记录",
+      "packageName": "com.xiaoma.service",
+      "className": "com.xiaoma.service.ui.ServiceRecordActivity",
+      "tabName": "",
+      "replyWord": "正在为您打开服务记录",
+      "isLauncher": true,
+      "ttsContent": "好的",
+      "sceneActionCode": 28
+    },
+    {
+      "word": "声纹",
+      "packageName": "com.xiaoma.launcher",
+      "className": "com.xiaoma.launcher.carpartner.ui.voiceprint.VoicePrintManagerActivity",
+      "tabName": "",
+      "replyWord": "正在为您打开声纹",
+      "isLauncher": true,
+      "ttsContent": "好的",
+      "sceneActionCode": 31
+    },
+    {
+      "word": "流量查询",
+      "packageName": "com.hangshengiov.hsiov_yunka",
+      "className": "com.hangshengiov.hsiov_yunka.activity.ActivityDeviceActivity",
+      "tabName": "",
+      "replyWord": "正在为您打开流量咨询",
+      "isLauncher": true,
+      "ttsContent": "好的",
+      "sceneActionCode": 31
+    },
+    {
+      "word": "修车|维修",
+      "packageName": "com.xiaoma.service",
+      "className": "com.xiaoma.service.ui.repair.RepairActivity",
+      "tabName": "",
+      "replyWord": "正在为您打开修车",
+      "isLauncher": true,
+      "ttsContent": "好的",
+      "sceneActionCode": 31
+    },
+    {
+      "word": "主界面",
+      "packageName": "com.xiaoma.launcher",
+      "className": "",
+      "tabName": "",
+      "replyWord": "正在回到主界面",
+      "isLauncher": true,
+      "ttsContent": "好的",
+      "sceneActionCode": 31
+    },
+    {
+      "word": "导航|地图",
+      "packageName": "com.autonavi.amapauto",
+      "className": "",
+      "tabName": "",
+      "replyWord": "正在为您打开导航",
+      "isLauncher": true,
+      "ttsContent": "好的",
+      "sceneActionCode": 31
+    },
+    {
+      "word": "音乐|酷我音乐|酷我",
+      "packageName": "cn.kuwo.kwmusiccar|com.tencent.qqmusiccar",
+      "className": "",
+      "tabName": "",
+      "replyWord": "正在为您打开音乐",
+      "isLauncher": true,
+      "ttsContent": "好的",
+      "sceneActionCode": 31
+    },
+    {
+      "word": "在线电台|在线广播电台|在线广播|在线收音机|网络电台|网络广播电台|网络广播|网络收音机",
+      "packageName": "com.xiaoma.xting",
+      "className": "",
+      "tabName": "",
+      "replyWord": "正在为您打开在线电台",
+      "isLauncher": true,
+      "ttsContent": "好的",
+      "sceneActionCode": 31
+    },
+    {
+      "word": "节目分类",
+      "packageName": "com.xiaoma.xting",
+      "className": "com.xiaoma.xting.ui.main.MainActivity",
+      "tabName": "Category",
+      "replyWord": "正在为您打开想听",
+      "isLauncher": true,
+      "ttsContent": "好的",
+      "sceneActionCode": 14
+    },
+    {
+      "word": "收藏|订阅|我的收藏",
+      "packageName": "com.xiaoma.xting",
+      "className": "com.xiaoma.xting.ui.main.MainActivity",
+      "tabName": "Favorite",
+      "replyWord": "正在为您打开收藏",
+      "isLauncher": true,
+      "ttsContent": "好的",
+      "sceneActionCode": 14
+    },
+    {
+      "word": "说明书|使用手册",
+      "packageName": "com.xiaoma.instruction",
+      "className": "",
+      "tabName": "",
+      "replyWord": "正在为您打开使用手册",
+      "isLauncher": true,
+      "ttsContent": "好的",
+      "sceneActionCode": 31
+    },
+    {
+      "word": "音乐|酷我音乐|酷我",
+      "packageName": "cn.kuwo.kwmusiccar|com.tencent.qqmusiccar",
+      "className": "",
+      "tabName": "exitMusic",
+      "replyWord": "正在为您关闭音乐",
+      "isLauncher": false,
+      "ttsContent": "已关闭",
+      "sceneActionCode": 36
+    },
+    {
+      "word": "导航|地图",
+      "packageName": "com.autonavi.amapauto",
+      "className": "",
+      "tabName": "exitNavi",
+      "replyWord": "正在为您关闭导航",
+      "isLauncher": false,
+      "ttsContent": "已关闭",
+      "sceneActionCode": 36
+    },
+    {
+      "word": "车服务",
+      "packageName": "com.xiaoma.service",
+      "className": "",
+      "tabName": "exit",
+      "replyWord": "正在为您关闭车服务",
+      "isLauncher": false,
+      "ttsContent": "已关闭",
+      "sceneActionCode": 36
+    },
+    {
+      "word": "车应用",
+      "packageName": "com.xiaoma.app",
+      "className": "",
+      "tabName": "exit",
+      "replyWord": "正在为您关闭车应用",
+      "isLauncher": false,
+      "ttsContent": "已关闭",
+      "sceneActionCode": 36
+    },
+    {
+      "word": "厂家活动",
+      "packageName": "com.xiaoma.factoryactivities",
+      "className": "",
+      "tabName": "exit",
+      "replyWord": "正在为您关闭厂家活动",
+      "isLauncher": false,
+      "ttsContent": "已关闭",
+      "sceneActionCode": 36
+    },
+    {
+      "word": "在线电台|在线广播电台|在线广播|在线收音机|网络电台|网络广播电台|网络广播|网络收音机",
+      "packageName": "com.xiaoma.xting",
+      "className": "",
+      "tabName": "exitXT",
+      "replyWord": "正在为您关闭在线电台",
+      "isLauncher": false,
+      "ttsContent": "已关闭",
+      "sceneActionCode": 36
+    },
+    {
+      "word": "直播",
+      "packageName": "com.xiaoma.club",
+      "className": "",
+      "tabName": "exitClub",
+      "replyWord": "正在为您关闭直播",
+      "isLauncher": false,
+      "ttsContent": "已关闭",
+      "sceneActionCode": 36
+    },
+    {
+      "word": "排行榜",
+      "packageName": "com.xiaoma.club",
+      "className": "",
+      "tabName": "exitClub",
+      "replyWord": "正在为您关闭排行榜",
+      "isLauncher": false,
+      "ttsContent": "已关闭",
+      "sceneActionCode": 36
+    },
+    {
+      "word": "车友圈",
+      "packageName": "com.xiaoma.club",
+      "className": "",
+      "tabName": "exitClub",
+      "replyWord": "正在为您关闭车友圈",
+      "isLauncher": false,
+      "ttsContent": "已关闭",
+      "sceneActionCode": 36
+    },
+    {
+      "word": "搜索",
+      "packageName": "com.xiaoma.club",
+      "className": "",
+      "tabName": "exitClub",
+      "replyWord": "正在为您关闭搜索",
+      "isLauncher": false,
+      "ttsContent": "已关闭",
+      "sceneActionCode": 36
+    },
+    {
+      "word": "通讯录",
+      "packageName": "com.xiaoma.club",
+      "className": "",
+      "tabName": "exitClub",
+      "replyWord": "正在为您关闭通讯录",
+      "isLauncher": false,
+      "ttsContent": "已关闭",
+      "sceneActionCode": 36
+    },
+    {
+      "word": "附近的车",
+      "packageName": "com.xiaoma.club",
+      "className": "",
+      "tabName": "exitClub",
+      "replyWord": "正在为您关闭附近的车",
+      "isLauncher": false,
+      "ttsContent": "已关闭",
+      "sceneActionCode": 36
+    },
+    {
+      "word": "附近的人",
+      "packageName": "com.xiaoma.club",
+      "className": "",
+      "tabName": "exitClub",
+      "replyWord": "正在为您关闭附近的人",
+      "isLauncher": false,
+      "ttsContent": "已关闭",
+      "sceneActionCode": 36
+    },
+    {
+      "word": "会话",
+      "packageName": "com.xiaoma.club",
+      "className": "",
+      "tabName": "exitClub",
+      "replyWord": "正在为您关闭会话",
+      "isLauncher": false,
+      "ttsContent": "已关闭",
+      "sceneActionCode": 36
+    },
+    {
+      "word": "使用手册|说明书",
+      "packageName": "com.xiaoma.instruction",
+      "className": "",
+      "tabName": "exit",
+      "replyWord": "正在为您关闭使用手册",
+      "isLauncher": false,
+      "ttsContent": "已关闭",
+      "sceneActionCode": 36
+    },
+    {
+      "word": "个人中心",
+      "packageName": "com.xiaoma.personalcenter",
+      "className": "com.xiaoma.personalcenter.ui.MainActivity",
+      "tabName": "",
+      "replyWord": "正在为您打开个人中心",
+      "isLauncher": true,
+      "ttsContent": "好的",
+      "sceneActionCode": 31
+    },
+    {
+      "word": "个人中心",
+      "packageName": "com.xiaoma.personalcenter",
+      "className": "",
+      "tabName": "exit",
+      "replyWord": "关闭个人中心",
+      "isLauncher": false,
+      "ttsContent": "已关闭",
+      "sceneActionCode": 36
+    },
+    {
+      "word": "车智慧",
+      "packageName": "com.xiaoma.smarthome",
+      "className": "",
+      "tabName": "",
+      "replyWord": "正在为您打开车智慧",
+      "isLauncher": true,
+      "ttsContent": "好的",
+      "sceneActionCode": 31
+    },
+    {
+      "word": "车智慧",
+      "packageName": "com.xiaoma.smarthome",
+      "className": "",
+      "tabName": "exit",
+      "replyWord": "关闭车智慧",
+      "isLauncher": false,
+      "ttsContent": "已关闭",
+      "sceneActionCode": 36
+    },
+    {
+      "word": "车伙伴",
+      "packageName": "com.xiaoma.launcher",
+      "className": "",
+      "tabName": "backToLauncher",
+      "replyWord": "打开车伙伴",
+      "isLauncher": true,
+      "ttsContent": "好的",
+      "sceneActionCode": 31
+    },
+    {
+      "word": "车伙伴",
+      "packageName": "com.xiaoma.launcher",
+      "className": "",
+      "tabName": "exit",
+      "replyWord": "关闭车伙伴",
+      "isLauncher": false,
+      "ttsContent": "已关闭",
+      "sceneActionCode": 36
+    },
+    {
+      "word": "主题商城",
+      "packageName": "com.xiaoma.launcher",
+      "className": "",
+      "tabName": "backToLauncher",
+      "replyWord": "关闭主题商城",
+      "isLauncher": false,
+      "ttsContent": "好的",
+      "sceneActionCode": 31
+    },
+    {
+      "word": "积分账户",
+      "packageName": "com.xiaoma.launcher",
+      "className": "",
+      "tabName": "backToLauncher",
+      "replyWord": "关闭积分账户",
+      "isLauncher": false,
+      "ttsContent": "好的",
+      "sceneActionCode": 36
+    },
+    {
+      "word": "听歌识曲",
+      "packageName": "com.xiaoma.launcher",
+      "className": "",
+      "tabName": "openMusicRecognition",
+      "replyWord": "正在为您打开听歌识曲",
+      "isLauncher": true,
+      "ttsContent": "好的",
+      "sceneActionCode": 31
+    },
+    {
+      "word": "智网商城",
+      "packageName": "com.cusc.store",
+      "className": "",
+      "tabName": "",
+      "replyWord": "正在为您打开智网商城",
+      "isLauncher": true,
+      "ttsContent": "好的",
+      "sceneActionCode": 31
+    },
+    {
+      "word": "智网商城",
+      "packageName": "com.cusc.store",
+      "className": "",
+      "tabName": "exit",
+      "replyWord": "关闭智网商城",
+      "isLauncher": false,
+      "ttsContent": "已关闭",
+      "sceneActionCode": 36
+    },
+    {
+      "word": "回家场景",
+      "packageName": "com.xiaoma.smarthome",
+      "className": "com.xiaoma.smarthome.ui.MainActivity",
+      "tabName": "arrive",
+      "replyWord": "",
+      "isLauncher": true,
+      "ttsContent": "已切换到回家场景",
+      "sceneActionCode": 11
+    },
+    {
+      "word": "离家场景",
+      "packageName": "com.xiaoma.smarthome",
+      "className": "com.xiaoma.smarthome.ui.MainActivity",
+      "tabName": "leave",
+      "replyWord": "",
+      "isLauncher": true,
+      "ttsContent": "已切换到离家场景",
+      "sceneActionCode": 8
+    }
+  ]
+}

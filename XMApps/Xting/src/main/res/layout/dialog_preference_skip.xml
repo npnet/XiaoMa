@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="#666666">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvHint"
+        android:layout_width="wrap_content"
+        android:layout_height="300px"
+        android:gravity="center"
+        android:textSize="36px"
+        app:layout_constraintBottom_toTopOf="@id/btnLeft"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/test" />
+
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btnLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40px"
+        android:paddingLeft="80px"
+        android:paddingRight="80px"
+        android:textSize="24px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/btnRight"
+        tools:text="@string/test" />
+
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btnRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="80px"
+        android:paddingRight="80px"
+        android:textSize="24px"
+        app:layout_constraintBottom_toBottomOf="@id/btnLeft"
+        app:layout_constraintLeft_toRightOf="@id/btnLeft"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/btnLeft"
+        tools:text="@string/test" />
+
+</android.support.constraint.ConstraintLayout>

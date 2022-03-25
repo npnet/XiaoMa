@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/iv_thank_feedback_success"
+        android:layout_width="@dimen/size_feedback_success_image"
+        android:layout_height="@dimen/size_feedback_success_image"
+        android:layout_marginTop="@dimen/size_feedback_success_image_top"
+        android:src="@drawable/icon_feedback_success"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tv_thank_feedback_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_thank_feedback_desc_top"
+        android:text="@string/thank_feedback_desc"
+        android:textSize="@dimen/font_size_feedback_32px"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_thank_feedback_success" />
+
+
+    <Button
+        android:id="@+id/back_feedback_home"
+        android:layout_width="@dimen/width_home_btn"
+        android:layout_height="@dimen/height_home_btn"
+        android:layout_marginTop="@dimen/size_go_to_feedback_home_top"
+        android:background="@drawable/selector_button"
+        android:text="@string/go_to_feedback_home"
+        android:textSize="@dimen/font_size_feedback_24px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_thank_feedback_desc" />
+
+</android.support.constraint.ConstraintLayout>

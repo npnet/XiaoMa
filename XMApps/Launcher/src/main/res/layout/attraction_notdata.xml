@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:src="@drawable/attractions_not_data"
+        android:scaleType="centerCrop"
+        android:layout_width="500px"
+        android:layout_height="300px" />
+
+    <TextView
+        android:text="@string/no_attraction_resources"
+        android:textSize="@dimen/cinema_nodata_text_size"
+        android:layout_marginTop="@dimen/cinema_nodata_text_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

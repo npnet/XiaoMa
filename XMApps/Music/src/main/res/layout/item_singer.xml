@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/item_singer_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="@dimen/width_search_singer_icon"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_search_text_big" />
+
+    <com.xiaoma.ui.view.ReflectionImageView
+        android:id="@+id/item_singer_iv"
+        android:layout_width="@dimen/width_item_music_iv"
+        android:layout_height="@dimen/height_search_singer_icon"
+        android:layout_marginTop="@dimen/size_search_result_image_top"
+        android:scaleType="fitXY"
+        app:reflectionHeight="64px"
+        app:reflectionPadding="16px" />
+
+</LinearLayout>

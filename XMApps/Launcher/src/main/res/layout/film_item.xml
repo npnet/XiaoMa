@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/film_item_relative_width"
+    android:layout_height="@dimen/film_item_relative_height"
+    android:layout_gravity="center"
+    >
+
+    <ImageView
+        android:id="@+id/film_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/not_film_img" />
+
+    <TextView
+        android:id="@+id/film_score"
+        android:layout_width="@dimen/film_item_score_width"
+        android:layout_height="@dimen/film_item_score_height"
+        android:background="@drawable/bg_collect"
+        android:gravity="center"
+        android:text="5.0"
+        android:textColor="#222222"
+        android:textSize="@dimen/film_item_score_size"
+        android:drawableLeft="@drawable/icon_star_bg"
+        android:paddingLeft="@dimen/film_item_score_left"/>
+
+    <LinearLayout
+        android:id="@+id/film_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/film_item_layout_height"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="#60000000">
+
+        <TextView
+            android:id="@+id/film_type"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/color_fbd3a4"
+            android:textSize="@dimen/film_item_type_size"
+            android:layout_marginLeft="@dimen/film_item_type_left"/>
+
+        <View
+            android:layout_gravity="center"
+            android:background="@color/color_fbd3a4"
+            android:layout_width="@dimen/film_item_view_width"
+            android:layout_height="@dimen/film_item_view_height"
+            android:layout_marginLeft="@dimen/film_item_view_left"/>
+
+        <TextView
+            android:id="@+id/film_time"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/color_fbd3a4"
+            android:textSize="@dimen/film_item_time_size"
+            android:layout_marginLeft="@dimen/film_item_time_left"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

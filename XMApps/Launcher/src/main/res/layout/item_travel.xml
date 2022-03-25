@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/rv_travel_item_width"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/rv_travel_item_height">
+
+        <ImageView
+            android:id="@+id/iv_travel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/icon_default_icon"
+            android:scaleType="fitXY"
+            />
+
+        <TextView
+            android:id="@+id/tv_travel_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/rv_travel_item_tv_height"
+            android:layout_alignParentBottom="true"
+            android:background="#336a6756"
+            android:gravity="center"
+            android:textSize="@dimen/rv_travel_item_text_size"
+            android:textColor="#9ea38b"
+            android:text="@string/delicious" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

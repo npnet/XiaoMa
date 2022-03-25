@@ -1,0 +1,64 @@
+ManifestFileVersion: 0
+CRC: 79824783
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 95bd00a4765ea4c791d819cd936787d7
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 53ea446705d1e943315300ff9c1188ef
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 90
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: e48ff5f766309452fa4f012d1c8946f7, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 589d799e434e4300ac8f163f14e836e3, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 137
+  Script: {instanceID: 0}
+Assets:
+- Assets/AssetBundle/Player/default/Anims/TurnAround.anim
+- Assets/AssetBundle/Player/default/Textures/normal.png
+- Assets/AssetBundle/Player/default/Textures/eating_3.png
+- Assets/AssetBundle/Player/default/Textures/full_1.png
+- Assets/AssetBundle/Player/default/Textures/hungry_1.png
+- Assets/AssetBundle/Player/default/Player.mesh
+- Assets/AssetBundle/Player/default/Player.asset
+- Assets/AssetBundle/Player/default/Anims/Shake.anim
+- Assets/AssetBundle/Player/default/Textures/eating_2.png
+- Assets/AssetBundle/Player/default/Textures/hungry_2.png
+- Assets/AssetBundle/Player/default/Anims/OK.anim
+- Assets/AssetBundle/Player/default/Textures/standby_2.png
+- Assets/AssetBundle/Player/default/Player.controller
+- Assets/AssetBundle/Player/default/Textures/full_3.png
+- Assets/AssetBundle/Player/default/Anims/Music.anim
+- Assets/AssetBundle/Player/default/Textures/standby_1.png
+- Assets/AssetBundle/Player/default/Textures/full_2.png
+- Assets/AssetBundle/Player/default/Player.prefab
+- Assets/AssetBundle/Player/default/Anims/Run.anim
+- Assets/AssetBundle/Player/default/Anims/Lookback.anim
+- Assets/AssetBundle/Player/default/Anims/Breathe.anim
+- Assets/AssetBundle/Player/default/Textures/standby_3.png
+- Assets/AssetBundle/Player/default/Textures/eating_1.png
+Dependencies: []

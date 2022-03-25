@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_category_title"
+        style="@style/text_view_light_blue"
+        android:layout_width="wrap_content"
+        android:layout_height="45px"
+        android:layout_marginStart="104px"
+        android:layout_marginTop="@dimen/size_tab_margin_top"
+        android:textColor="@color/white"
+        android:textSize="32px" />
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/rl_detail_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/fragment_category_detail"
+                android:layout_width="1505px"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:paddingTop="@dimen/size_rv_padding_top" />
+
+            <com.xiaoma.ui.view.XmScrollBar
+                android:id="@+id/scroll_bar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_scroll_bar"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="@dimen/size_scroll_bar_margin_start"
+                android:layout_marginEnd="@dimen/size_scroll_bar_margin_end"
+                android:layout_marginBottom="@dimen/size_scroll_bar_margin_bottom"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <include
+            android:id="@+id/rl_detail_no_network"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            layout="@layout/include_no_network_view" />
+    </FrameLayout>
+</LinearLayout>

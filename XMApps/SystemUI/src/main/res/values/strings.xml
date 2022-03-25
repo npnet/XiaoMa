@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">小马系统UI</string>
+    <string name="main_act_startup_toast">小马SystemUI已启动 !</string>
+    <string name="notification_cannot_remove_tips">当前通知不允许移除</string>
+    <string name="btn_status_bar_test">通知管理器测试</string>
+    <string name="notification_date_format">yyyy年MM月dd日 HH:mm</string>
+    <string name="clear_notification">清除通知</string>
+
+    <string name="status_text_out_out_service">无服务</string>
+
+    <string name="date_format_yesterday">昨天</string>
+    <string name="date_format_same_year">MM-dd</string>
+    <string name="date_format_different_year">yyyy-MM-dd</string>
+
+    <string name="notification_empty_text">暂无消息</string>
+    <string name="notification_item_btn_del">删除</string>
+    <string name="notification_item_btn_del_all">删除全部</string>
+    <string name="notification_expanding">展开</string>
+    <string name="notification_collapsing">收起</string>
+    <string name="timeline_desc_today">今天</string>
+    <string name="timeline_desc_before">以前</string>
+    <string name="timeline_desc_after">未来</string>
+    <string name="timeline_date_display_same_year">M月d日</string>
+    <string name="timeline_date_display_different_year">yyyy年M月d日</string>
+    <string name="tips_launcher_crash">抱歉，桌面好像开了点小差，已为您切换到简易桌面</string>
+</resources>

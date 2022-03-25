@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="200px"
+        android:layout_height="200px"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="80px"
+        android:layout_marginLeft="50px"
+        android:background="@drawable/selector_music_mg"/>
+    <TextView
+        android:id="@+id/fee"
+        android:text="报名费用"
+        android:textSize="36px"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/icon"
+        app:layout_constraintLeft_toRightOf="@id/icon"
+        android:layout_marginLeft="50px"/>
+    <TextView
+        android:id="@+id/periods"
+        android:text="开车奖金赛-0170期"
+        android:textSize="30px"
+        android:textColor="#a1a7b3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@id/fee"
+        app:layout_constraintTop_toTopOf="@id/fee"
+        android:layout_marginTop="50px" />
+
+    <TextView
+        android:id="@+id/date"
+        android:text="开赛时间：7月11日-00:00~23：59"
+        android:textSize="30px"
+        android:textColor="#a1a7b3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@id/periods"
+        app:layout_constraintTop_toTopOf="@id/periods"
+        android:layout_marginTop="50px" />
+
+    <TextView
+        android:id="@+id/apply_money"
+        android:text="200"
+        android:textSize="36px"
+        android:textColor="#ffcc66"
+        android:drawableLeft="@drawable/selector_music_mg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="78px"
+        android:layout_marginLeft="1000px"/>
+
+    <LinearLayout
+        android:id="@+id/car_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@id/icon"
+        app:layout_constraintTop_toBottomOf="@id/icon"
+        android:orientation="horizontal"
+        android:layout_marginTop="50px">
+        <TextView
+            android:text="我的车币"
+            android:textSize="30px"
+            android:textColor="#ffffff"
+            android:drawableLeft="@drawable/selector_music_mg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50px"/>
+        <TextView
+            android:id="@+id/my_money"
+            android:text="530"
+            android:textSize="36px"
+            android:textColor="#ffcc66"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="600px"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@id/car_money"
+        app:layout_constraintTop_toBottomOf="@id/car_money"
+        android:orientation="horizontal"
+        android:layout_marginTop="50px">
+        <TextView
+            android:text="需支付"
+            android:textSize="30px"
+            android:textColor="#ffffff"
+            android:drawableLeft="@drawable/selector_music_mg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50px"/>
+        <TextView
+            android:id="@+id/pay_money"
+            android:text="-200"
+            android:textSize="36px"
+            android:textColor="#ff1966"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="600px"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/ok_pay"
+        android:text="确认支付"
+        android:textSize="28px"
+        android:textColor="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/pay"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="300px"
+        android:layout_marginTop="40px"/>
+
+    <LinearLayout
+        android:layout_width="598px"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/icon"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="75px"
+        android:orientation="vertical">
+        <TextView
+            android:text="报名须知"
+            android:textSize="42px"
+            android:textColor="#ffffff"
+            android:layout_width="598px"
+            android:layout_height="wrap_content"
+            android:gravity="center"/>
+
+        <TextView
+            android:text="1、开启小马os系统"
+            android:textSize="36px"
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px"/>
+
+        <TextView
+            android:text="提示：只有开启了小马OS系统，系统才能检测驾驶行为数据，并进行记录。"
+            android:textSize="30px"
+            android:textColor="#a1a7b2"
+            android:layout_width="598px"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10px"/>
+
+        <TextView
+            android:text="2、获得挑战鼓励金"
+            android:textSize="36px"
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px"/>
+
+        <TextView
+            android:text="比赛结束后，系统自动统计参与车主成绩，排名在总参与人数前1/2的车主平分鼓励金。"
+            android:textSize="30px"
+            android:textColor="#a1a7b2"
+            android:layout_width="598px"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10px"/>
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

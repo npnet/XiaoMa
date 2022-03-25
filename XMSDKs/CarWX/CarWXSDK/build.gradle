@@ -1,0 +1,46 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 26
+
+
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    sourceSets {
+        main {
+            java.srcDirs = ['src/main/java', 'src/main/aidl']
+        }
+    }
+
+}
+
+dependencies {
+    implementation project(':XMSDKs:CarWX:CarWXBase')
+}
+
+task makeJar(type: Copy) {
+    String fileName = "CarWeChatSDK_V6.0_2019_08_16.jar"
+    delete fileName
+    from('build/intermediates/packaged-classes/release')
+    into('src/jar/')
+    include('classes.jar')
+    rename('classes.jar', fileName)
+}
+
+makeJar.dependsOn(build)

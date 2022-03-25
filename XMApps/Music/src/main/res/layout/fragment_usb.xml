@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_usb_music"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/scroll_bar"
+        android:paddingTop="@dimen/size_rv_padding_top"
+        android:requiresFadingEdge="horizontal" />
+
+    <com.xiaoma.ui.view.XmScrollBar
+        android:id="@+id/scroll_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_scroll_bar"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/size_scroll_bar_margin_start"
+        android:layout_marginEnd="@dimen/size_scroll_bar_margin_end"
+        android:layout_marginBottom="@dimen/size_scroll_bar_margin_bottom"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:id="@+id/ll_unsupported_devices"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/iv_usb_unsupport" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_usb_unsupport_margin_t_big"
+            android:includeFontPadding="false"
+            android:text="@string/unsupported_usb_devices"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/font_fragment_usb_unsupport_big_tv" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_usb_unsupport_margin_t_small"
+            android:includeFontPadding="false"
+            android:text="@string/support_devices"
+            android:textColor="@color/fragment_usb_unsupport_small_color"
+            android:textSize="@dimen/font_fragment_usb_unsupport_small_tv" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/rl_empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        layout="@layout/include_empty_view" />
+
+    <LinearLayout
+        android:id="@+id/ll_no_responses_devices"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/iv_usb_no_responce" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_usb_unsupport_margin_t_big"
+            android:includeFontPadding="false"
+            android:text="@string/devices_no_responses"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/font_fragment_usb_unsupport_big_tv" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_usb_unsupport_margin_t_small"
+            android:includeFontPadding="false"
+            android:text="@string/please_try_again"
+            android:textColor="@color/fragment_usb_unsupport_small_color"
+            android:textSize="@dimen/font_fragment_usb_unsupport_small_tv" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_devices_connect_interrupt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/iv_usb_interrupt" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_usb_unsupport_margin_t_big"
+            android:includeFontPadding="false"
+            android:text="@string/devices_connect_interrupt"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/font_fragment_usb_unsupport_big_tv" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_no_devices"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/iv_usb_no_device" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_fragment_usb_nodevice_margin_t"
+            android:includeFontPadding="false"
+            android:text="@string/please_insert_usb"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/font_fragment_usb_unsupport_big_tv" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaoma.pet.ui.view.PetProgressView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/pet_progress_view"
+    android:layout_width="@dimen/size_operation_bt"
+    android:layout_height="@dimen/size_operation_bt"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <ImageView
+        android:id="@+id/iv_pet_avatar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/pet_bt_selector" />
+
+    <TextView
+        android:id="@+id/tv_countdown_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="计时"
+        android:visibility="gone" />
+
+    <com.xiaoma.pet.ui.view.PetStatusProgress
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</com.xiaoma.pet.ui.view.PetProgressView>

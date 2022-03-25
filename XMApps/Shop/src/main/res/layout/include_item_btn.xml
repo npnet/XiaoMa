@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20px">
+
+    <android.support.constraint.Group
+        android:id="@+id/group_purchase_trial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:constraint_referenced_ids="pbBtnLeft,pbBtnRight" />
+
+    <com.xiaoma.shop.business.ui.view.ProgressButton
+        android:id="@+id/pbBtnLeft"
+        android:layout_width="120px"
+        android:layout_height="74px"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/pbBtnRight"
+        app:layout_constraintTop_toTopOf="parent"
+        app:progressBg="@drawable/selector_btn_small_purchase"
+        app:text="购买"
+        app:textColor="@android:color/white"
+        app:textPaddingBottom="22px"
+        app:textSize="24px">
+
+    </com.xiaoma.shop.business.ui.view.ProgressButton>
+
+    <com.xiaoma.shop.business.ui.view.ProgressButton
+        android:id="@+id/pbBtnRight"
+        android:layout_width="120px"
+        android:layout_height="74px"
+        android:layout_marginLeft="18px"
+        android:visibility="visible"
+        app:layout_constraintLeft_toRightOf="@id/pbBtnLeft"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:progressBg="@drawable/selector_btn_small_trial"
+        app:text="试用"
+        app:textColor="@android:color/white"
+        app:textPaddingBottom="22px"
+        app:textSize="24px">
+
+    </com.xiaoma.shop.business.ui.view.ProgressButton>
+
+    <com.xiaoma.shop.business.ui.view.ProgressButton
+        android:id="@+id/pbBtnCenter"
+        android:layout_width="150px"
+        android:layout_height="74px"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:progressBg="@drawable/selector_btn_middle_purchase"
+        app:progressingBg="@drawable/btn_download_progress"
+        app:textPaddingBottom="22px"
+        app:textSize="24px"
+        tool:text="hello">
+
+    </com.xiaoma.shop.business.ui.view.ProgressButton>
+
+</android.support.constraint.ConstraintLayout>

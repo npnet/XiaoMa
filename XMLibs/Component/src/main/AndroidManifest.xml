@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xiaoma.component">
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS" />
+
+    <application
+        android:configChanges="mcc"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".base.PermissionActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.xiaoma.component.base.LauncherActivity"
+            android:exported="true"
+            android:theme="@style/TranslucentTheme" />
+
+        <!--8.0系统后 静态注册的广播接收者不再能接收广播了，仍需要在代码中动态注册,adb 发广播可加 flag -f 0x01000000-->
+        <receiver
+            android:name=".nodejump.NodeJumpReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="ACTION_NODES_JUMP" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.xiaoma.component.base.LauncherAppService"
+            android:exported="true" />
+
+        <!--Android默认为最大的宽高比是1.86,小于车机的宽高比,因此在车机上运行时会留有黑条,这里将其比例改大,则可以解决在车机上的黑条问题-->
+        <!--主要是在TargetVersion小于23的时候,会有这个问题-->
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="3.0" />
+    </application>
+</manifest>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/status_bar_height">
+
+    <FrameLayout
+        android:id="@+id/discovery_search_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_discovery_search_content">
+
+        <com.xiaoma.club.common.view.ClubSearchVoiceView
+            android:id="@+id/discovery_search_voice_view"
+            android:layout_width="@dimen/width_discovery_search_voice_view"
+            android:layout_height="@dimen/height_discovery_search_voice_view"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/size_discovery_search_margin" />
+
+    </RelativeLayout>
+</FrameLayout>

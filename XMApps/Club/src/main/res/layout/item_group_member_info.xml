@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_member_item">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="@dimen/width_member_rl"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/group_member_ismute"
+                android:layout_width="@dimen/width_mute_state"
+                android:layout_height="@dimen/height_mute_state"
+                android:layout_centerVertical="true"
+                android:background="@drawable/mute_state_icon"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:layout_width="@dimen/height_member_head_ring"
+                android:layout_height="@dimen/height_member_head_ring"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/padding_group_details_tab_left"
+                android:background="@drawable/head_bg_ring">
+
+                <ImageView
+                    android:id="@+id/group_member_item_icon"
+                    android:layout_width="@dimen/height_member_head"
+                    android:layout_height="@dimen/height_member_head"
+                    android:layout_centerInParent="true" />
+
+                <ImageView
+                    android:id="@+id/group_member_identity"
+                    android:layout_width="@dimen/height_member_identity"
+                    android:layout_height="@dimen/height_member_identity"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="@dimen/width_member_name_rl"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/group_member_item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:ellipsize="end"
+                android:maxEms="5"
+                android:singleLine="true"
+                android:textColor="@color/club_white"
+                android:textSize="@dimen/font_text_middle" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="@dimen/width_member_name_rl"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/group_member_item_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:ellipsize="end"
+                android:maxEms="5"
+                android:singleLine="true"
+                android:textColor="@color/club_white"
+                android:textSize="@dimen/font_text_middle" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="@dimen/width_member_name_rl"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/group_member_item_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:ellipsize="end"
+                android:maxEms="5"
+                android:singleLine="true"
+                android:textColor="@color/club_white"
+                android:textSize="@dimen/font_text_middle" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/group_member_item_level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20px"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="24px"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/group_member_item_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/group_member_item_private_chat"
+            android:layout_width="@dimen/width_member_chat_btn_rl"
+            android:layout_height="@dimen/height_member_chat_btn"
+            android:paddingLeft="@dimen/padding_member_chat_left"
+            android:paddingRight="@dimen/padding_member_chat_left"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/group_member_item_private_chat_btn"
+                android:layout_width="@dimen/width_member_chat_btn"
+                android:layout_height="@dimen/height_member_chat_btn"
+                android:layout_centerInParent="true"
+                android:background="@drawable/group_member_btn_selector"
+                android:drawableLeft="@drawable/member_chat_icon"
+                android:gravity="center"
+                android:paddingBottom="@dimen/padding_member_chat_btn_bottom"
+                android:paddingLeft="@dimen/padding_member_chat_btn_left"
+                android:text="@string/private_chat"
+                android:textColor="@color/club_white"
+                android:textSize="@dimen/font_text_small_plus" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/group_member_item_forbid_speak"
+            android:layout_width="@dimen/width_member_chat_btn_rl"
+            android:layout_height="@dimen/height_member_chat_btn"
+            android:layout_toRightOf="@id/group_member_item_private_chat"
+            android:paddingLeft="@dimen/padding_member_chat_left"
+            android:paddingRight="@dimen/padding_member_chat_left"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/group_member_item_forbid_speak_btn"
+                android:layout_width="@dimen/width_member_chat_btn"
+                android:layout_height="@dimen/height_member_chat_btn"
+                android:layout_centerInParent="true"
+                android:background="@drawable/group_member_btn_selector"
+                android:drawableLeft="@drawable/member_mute_icon"
+                android:gravity="center"
+                android:paddingBottom="@dimen/padding_member_chat_btn_bottom"
+                android:paddingLeft="@dimen/padding_member_mute_btn_left"
+                android:textColor="@color/club_white"
+                android:textSize="@dimen/font_text_small_plus" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/group_member_item_kick_out"
+            android:layout_width="@dimen/width_member_chat_btn_rl"
+            android:layout_height="@dimen/height_member_chat_btn"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="@dimen/padding_member_chat_left"
+            android:paddingRight="@dimen/padding_member_chat_left"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/group_member_item_kick_out_btn"
+                android:layout_width="@dimen/width_member_chat_btn"
+                android:layout_height="@dimen/height_member_chat_btn"
+                android:layout_centerInParent="true"
+                android:background="@drawable/group_member_btn_selector"
+                android:drawableLeft="@drawable/member_kickout_icon"
+                android:gravity="center"
+                android:paddingBottom="@dimen/padding_member_chat_btn_bottom"
+                android:paddingLeft="@dimen/padding_member_mute_btn_left"
+                android:text="@string/kick_out"
+                android:textColor="@color/club_white"
+                android:textSize="@dimen/font_text_small_plus" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_gravity="bottom"
+        android:background="@drawable/conversation_divider" />
+
+</FrameLayout>

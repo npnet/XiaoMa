@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--音乐识别页面-->
+
+    <dimen name="music_rec_padding_left">90px</dimen>
+    <dimen name="music_rec_padding_right">60px</dimen>
+    <dimen name="music_rec_width">465px</dimen>
+    <dimen name="music_rec_height">568px</dimen>
+    <dimen name="music_rec_close_width">84px</dimen>
+    <dimen name="music_rec_close_height">84px</dimen>
+    <dimen name="music_rec_close_padding">30px</dimen>
+    <dimen name="music_rec_history_height">84px</dimen>
+    <dimen name="music_rec_history_text_size">26px</dimen>
+    <dimen name="music_rec_anim_width">230px</dimen>
+    <dimen name="music_rec_anim_height">230px</dimen>
+    <dimen name="music_rec_anim_top">96px</dimen>
+    <dimen name="music_rec_iat_margin_top">30px</dimen>
+    <dimen name="music_rec_iat_text_size">28px</dimen>
+    <dimen name="music_rev_bottom_height">150px</dimen>
+    <dimen name="music_rec_song_width">95px</dimen>
+    <dimen name="music_rec_song_height">110px</dimen>
+    <dimen name="music_rec_song_margin_left">30px</dimen>
+    <dimen name="music_rec_song_margin_top">30px</dimen>
+    <dimen name="music_rec_song_name_margin_left">30px</dimen>
+    <dimen name="music_rec_song_name_text_size">24px</dimen>
+    <dimen name="music_rec_singer_margin_left">30px</dimen>
+    <dimen name="music_rec_singer_text_size">18px</dimen>
+    <dimen name="error_tip_text_margin_bottom">50px</dimen>
+    <dimen name="tv_error_tip_text_size">24px</dimen>
+    <dimen name="music_rec_rv_height">568px</dimen>
+    <dimen name="music_rev_clear_height">150px</dimen>
+    <dimen name="music_rev_clear_text_size">32px</dimen>
+    <!--音乐识别页面-->
+
+    <!--音乐识别记录适配器-->
+    <dimen name="item_music_rec_rv_width">248px</dimen>
+    <dimen name="item_music_rec_rv_album_height">250px</dimen>
+    <dimen name="item_music_rec_rv_album_width">188px</dimen>
+    <dimen name="item_music_rec_rv_song_margin_top">-40px</dimen>
+    <dimen name="item_music_rec_rv_song_text_size">32px</dimen>
+    <dimen name="item_music_rec_rv_singer_margin_top">10px</dimen>
+    <dimen name="item_music_rec_rv_singer_text_size">22px</dimen>
+    <dimen name="tv_music_rec_song_name_start">30px</dimen>
+    <dimen name="tv_music_rec_song_name_top">20px</dimen>
+    <dimen name="tv_music_rec_song_next_width">20px</dimen>
+    <dimen name="tv_music_rec_song_next_height">30px</dimen>
+    <dimen name="music_rev_clear_right">48px</dimen>
+    <dimen name="tv_music_rec_song_next_end">32px</dimen>
+    <dimen name="music_rl_rv_left">60px</dimen>
+    <dimen name="music_album_width">95px</dimen>
+    <dimen name="music_album_height">95px</dimen>
+    <dimen name="music_loading_width">180px</dimen>
+    <dimen name="music_loading_height">180px</dimen>
+
+    <!--音乐识别记录适配器-->
+
+
+</resources>

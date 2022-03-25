@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_hotel_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/iv_hotel_name"
+            android:layout_width="@dimen/book_hotel_two_icon_width"
+            android:layout_height="@dimen/book_hotel_two_icon_height"
+            android:src="@drawable/icon_house" />
+
+        <TextView
+            android:id="@+id/hotel_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/book_hotel_two_text_margin_left"
+            android:layout_marginTop="@dimen/book_hotel_two_text_margin_top"
+            android:layout_toRightOf="@id/iv_hotel_name"
+            android:drawableRight="@drawable/icon_hotel_lock"
+            android:drawablePadding="@dimen/book_hotel_two_drawable_padding"
+            android:gravity="center_vertical"
+            android:text="@string/hotel_name_str"
+            android:textColor="@color/color_8a919d"
+            android:textSize="@dimen/book_hotel_two_text_size_24" />
+
+        <TextView
+            android:id="@+id/tv_hotel_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hotel_name"
+            android:layout_alignLeft="@id/hotel_name"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="@dimen/book_hotel_two_text_margin_top_22"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/book_hotel_two_text_size_28" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_room_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+
+        <ImageView
+            android:id="@+id/iv_room_type"
+            android:layout_width="@dimen/book_hotel_two_icon_width"
+            android:layout_height="@dimen/book_hotel_two_icon_height"
+            android:src="@drawable/icon_bed" />
+
+        <TextView
+            android:id="@+id/room_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/book_hotel_two_text_margin_left"
+            android:layout_marginTop="@dimen/book_hotel_two_text_margin_top"
+            android:layout_toRightOf="@id/iv_room_type"
+            android:drawableRight="@drawable/icon_hotel_lock"
+            android:drawablePadding="@dimen/book_hotel_two_drawable_padding"
+            android:gravity="center_vertical"
+            android:text="@string/room_type_str"
+            android:textColor="@color/color_8a919d"
+            android:textSize="@dimen/book_hotel_two_text_size_24" />
+
+        <TextView
+            android:id="@+id/tv_room_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/room_type"
+            android:layout_alignLeft="@id/room_type"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="@dimen/book_hotel_two_text_margin_top_22"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/book_hotel_two_text_size_28" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_room_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/book_hotel_two_margin_right">
+
+
+        <ImageView
+            android:id="@+id/iv_room_date"
+            android:layout_width="@dimen/book_hotel_two_icon_width"
+            android:layout_height="@dimen/book_hotel_two_icon_height"
+            android:src="@drawable/icon_time" />
+
+        <TextView
+            android:id="@+id/room_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/book_hotel_two_text_margin_left"
+            android:layout_marginTop="@dimen/book_hotel_two_text_margin_top"
+            android:layout_toRightOf="@id/iv_room_date"
+            android:drawableRight="@drawable/icon_hotel_lock"
+            android:drawablePadding="@dimen/book_hotel_two_drawable_padding"
+            android:gravity="center_vertical"
+            android:text="@string/check_in_out_str"
+            android:textColor="@color/color_8a919d"
+            android:textSize="@dimen/book_hotel_two_text_size_24" />
+
+        <TextView
+            android:id="@+id/tv_room_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/room_date"
+            android:layout_alignLeft="@id/room_date"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="@dimen/book_hotel_two_text_margin_top_22"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/book_hotel_two_text_size_28" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_room_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_hotel_name"
+        android:layout_marginTop="@dimen/book_hotel_two_margin_top">
+
+
+        <ImageView
+            android:id="@+id/iv_room_num"
+            android:layout_width="@dimen/book_hotel_two_icon_width"
+            android:layout_height="@dimen/book_hotel_two_icon_height"
+            android:src="@drawable/icon_room" />
+
+        <TextView
+            android:id="@+id/room_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/book_hotel_two_text_margin_left"
+            android:layout_marginTop="@dimen/book_hotel_two_text_margin_top"
+            android:layout_toRightOf="@id/iv_room_num"
+            android:gravity="center_vertical"
+            android:text="@string/book_room_num_str"
+            android:textColor="@color/color_8a919d"
+            android:textSize="@dimen/book_hotel_two_text_size_24" />
+
+        <TextView
+            android:id="@+id/tv_room_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/room_num"
+            android:layout_alignLeft="@id/room_num"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="@dimen/book_hotel_two_text_margin_top_22"
+            android:drawableLeft="@drawable/icon_hotel_edit"
+            android:drawablePadding="@dimen/book_hotel_two_drawable_padding_14"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/book_hotel_two_text_size_28" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_booking_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_room_type"
+        android:layout_alignLeft="@id/rl_room_type"
+        android:layout_marginTop="@dimen/book_hotel_two_margin_top">
+
+
+        <ImageView
+            android:id="@+id/iv_booking_phone"
+            android:layout_width="@dimen/book_hotel_two_icon_width"
+            android:layout_height="@dimen/book_hotel_two_icon_height"
+            android:src="@drawable/icon_phone" />
+
+        <TextView
+            android:id="@+id/booking_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/book_hotel_two_text_margin_left"
+            android:layout_marginTop="@dimen/book_hotel_two_text_margin_top"
+            android:layout_toRightOf="@id/iv_booking_phone"
+            android:gravity="center_vertical"
+            android:text="@string/contact_str"
+            android:textColor="@color/color_8a919d"
+            android:textSize="@dimen/book_hotel_two_text_size_24" />
+
+        <TextView
+            android:id="@+id/tv_booking_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/booking_phone"
+            android:layout_alignLeft="@id/booking_phone"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="@dimen/book_hotel_two_text_margin_top_22"
+            android:drawableLeft="@drawable/icon_hotel_edit"
+            android:drawablePadding="14px"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/book_hotel_two_text_size_28" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_pay"
+        android:layout_width="@dimen/book_hotel_two_btn_width"
+        android:layout_height="@dimen/book_hotel_two_btn_height"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/book_hotel_two_btn_margin_bottom"
+        android:background="@drawable/selector_button_400"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_hotel_pay"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/book_hotel_two_text_padding_left_102"
+            android:paddingTop="@dimen/book_hotel_two_text_padding_top"
+            android:text="@string/pay_str"
+            android:textSize="@dimen/book_hotel_two_text_size_24" />
+
+        <View
+            android:layout_width="@dimen/book_hotel_two_line_width"
+            android:layout_height="@dimen/book_hotel_two_line_height"
+            android:layout_marginTop="@dimen/book_hotel_two_line_margin_top"
+            android:background="@color/color_8a919d" />
+
+        <TextView
+            android:id="@+id/tv_hotel_money"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/book_hotel_two_text_padding_left_24"
+            android:paddingTop="@dimen/book_hotel_two_text_padding_top"
+            android:textColor="@color/color_fbd3a4"
+            android:textSize="@dimen/book_hotel_two_text_size_24" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pet_map_bg">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/map_content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/navigation_linear"
+            android:layout_width="@dimen/width_navigation_bar_left"
+            android:layout_height="match_parent"
+            android:background="@drawable/navi_bg_selector"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/map_navigation_back"
+                android:layout_width="@dimen/size_map_navigation"
+                android:layout_height="@dimen/size_map_navigation"
+                android:src="@drawable/navi_back" />
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/iv_city_icon"
+            android:layout_width="@dimen/size_operation_bt"
+            android:layout_height="@dimen/size_operation_bt"
+            android:layout_marginStart="@dimen/size_map_pet_icon_margin_start"
+            android:layout_marginTop="@dimen/size_map_pet_icon_margin_top"
+            android:src="@drawable/city_icon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/tv_city_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_city_name_margin_top"
+            android:textColor="@color/mall_tab_color"
+            android:textSize="@dimen/pet_font_size_26"
+            app:layout_constraintEnd_toEndOf="@id/iv_city_icon"
+            app:layout_constraintStart_toStartOf="@id/iv_city_icon"
+            app:layout_constraintTop_toBottomOf="@id/iv_city_icon" />
+
+
+        <TextView
+            android:id="@+id/tv_map_prompt"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_map_prompt_margin"
+            android:layout_marginStart="@dimen/size_map_prompt_margin_start"
+            android:background="@drawable/map_travel_prompt"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/pet_font_size_30"
+            app:layout_constraintBottom_toBottomOf="@id/iv_city_icon"
+            app:layout_constraintStart_toEndOf="@id/iv_city_icon"
+            app:layout_constraintTop_toTopOf="@id/iv_city_icon" />
+
+
+        <com.xiaoma.pet.ui.view.MapTrackView
+            android:id="@+id/map_track_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:circle_bg="@color/product_item_desc_bg"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:track_color="@color/mall_tab_color"
+            app:track_text_color="@color/mall_tab_color"
+            app:track_text_size="@dimen/pet_font_size_26"
+            app:track_width="@dimen/size_map_track_view" />
+
+
+        <!-- 在实际计算坐标位置，Y轴需减去自身所占高度30（包含margin和padding） ，目的是与轨迹贴合-->
+        <ImageView
+            android:id="@+id/iv_map_car_icon"
+            android:layout_width="@dimen/width_map_travel_car"
+            android:layout_height="@dimen/height_map_travel_car"
+            android:layout_marginStart="@dimen/size_map_travel_view_margin_start"
+            android:layout_marginTop="@dimen/size_map_travel_view_margin_top"
+            android:src="@drawable/car_level_resource"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/tv_map_travel_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/map_progress"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/pet_font_size_30"
+            app:layout_constraintBottom_toTopOf="@id/iv_map_car_icon"
+            app:layout_constraintEnd_toEndOf="@id/iv_map_car_icon"
+            app:layout_constraintStart_toStartOf="@id/iv_map_car_icon" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+    <include
+        layout="@layout/pet_page_status_view"
+        android:visibility="gone" />
+
+
+</android.support.constraint.ConstraintLayout>

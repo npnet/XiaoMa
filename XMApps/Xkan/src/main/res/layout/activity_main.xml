@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/main_menu"
+        android:layout_width="@dimen/dimen_245"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_main_left_tab"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_main_all"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_100"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dimen_198"
+            android:background="@drawable/menu_bg_selector"
+            android:gravity="center_horizontal"
+            android:text="@string/all_function"
+            android:textColor="@color/menu_color_selector"
+            android:textSize="@dimen/dimen_30" />
+
+        <TextView
+            android:id="@+id/tv_main_video"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_100"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dimen_12"
+            android:background="@drawable/menu_bg_selector"
+            android:gravity="center_horizontal"
+            android:text="@string/video"
+            android:textColor="@color/menu_color_selector"
+            android:textSize="@dimen/dimen_30" />
+
+        <TextView
+
+            android:id="@+id/tv_main_picture"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_100"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dimen_12"
+            android:background="@drawable/menu_bg_selector"
+            android:gravity="center_horizontal"
+            android:text="@string/picture"
+            android:textColor="@color/menu_color_selector"
+            android:textSize="@dimen/dimen_30" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>

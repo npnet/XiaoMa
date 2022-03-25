@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.ShareAndInviteActivity">
+
+    <TextView
+        android:id="@+id/share_and_invite"
+        android:text="请选择分享的对象"
+        android:textSize="36px"
+        android:textColor="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="97px"
+        android:layout_marginLeft="60px"/>
+
+    <Button
+        android:id="@+id/clan"
+        android:text="部落"
+        android:textSize="28px"
+        android:textColor="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="80px"
+        android:layout_marginLeft="430px"/>
+
+    <TextView
+        android:id="@+id/or"
+        android:text="or"
+        android:textSize="36px"
+        android:textColor="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="104px"
+        android:layout_marginLeft="640px"/>
+
+    <Button
+        android:id="@+id/friend"
+        android:text="车友"
+        android:textSize="28px"
+        android:textColor="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="80px"
+        android:layout_marginLeft="720px"/>
+
+    <FrameLayout
+        android:id="@+id/frame_clan_or_friends"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/share_and_invite"
+        android:layout_marginTop="230px">
+
+    </FrameLayout>
+
+</android.support.constraint.ConstraintLayout>

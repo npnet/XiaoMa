@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/login_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/verify_phone"
+        android:textSize="56px"
+        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72px"
+        android:text="@string/login_phone_number"
+        android:textSize="30px"
+        app:layout_constraintBottom_toTopOf="@+id/textView7"
+        app:layout_constraintEnd_toStartOf="@+id/phone"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_title" />
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="480px"
+        android:layout_height="60px"
+        android:layout_marginStart="16px"
+        android:gravity="center_vertical"
+        android:ems="10"
+        android:hint="@string/input_phone_hint"
+        android:inputType="phone"
+        android:digits="0123456789"
+        android:maxLength="11"
+        android:textSize="24px"
+        android:paddingLeft="16px"
+        android:background="@drawable/icon_phone_box"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72px"
+        android:text="@string/verify_code"
+        android:textSize="30px"
+        app:layout_constraintBottom_toTopOf="@+id/login"
+        app:layout_constraintEnd_toStartOf="@+id/verify_code"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <EditText
+        android:id="@+id/verify_code"
+        android:layout_width="268px"
+        android:layout_height="60px"
+        android:layout_marginStart="16px"
+        android:ems="10"
+        android:hint="@string/pls_input_verify_code"
+        android:inputType="number"
+        android:maxLength="6"
+        android:textSize="24px"
+        android:paddingLeft="16px"
+        android:background="@drawable/icon_verify_code_box"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView7" />
+
+    <Button
+        android:id="@+id/login"
+        style="@style/common_button"
+        android:layout_marginTop="128px"
+        android:text="@string/next_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <Button
+        android:id="@+id/get_verify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16px"
+        android:background="@drawable/selector_get_verify_code"
+        android:textColor="@color/selector_get_verify_text_color"
+        android:text="@string/get_verify"
+        android:textSize="20px"
+        app:layout_constraintBaseline_toBaselineOf="@+id/verify_code"
+        app:layout_constraintStart_toEndOf="@+id/verify_code" />
+
+    <TextView
+        android:id="@+id/count_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:visibility="gone"
+        android:text="@string/verify_count_text"
+        android:textSize="18px"
+        app:layout_constraintEnd_toEndOf="@+id/get_verify"
+        app:layout_constraintStart_toStartOf="@+id/get_verify"
+        app:layout_constraintTop_toBottomOf="@+id/get_verify" />
+
+</android.support.constraint.ConstraintLayout>

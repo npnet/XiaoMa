@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="phoneTextColor_noSelect">
+        <item name="android:textColor">@color/dark_gray_text</item>
+    </style>
+    <style name="phoneTextColor_Select">
+        <item name="android:textColor">@color/color_qingshe</item>
+    </style>
+</resources>

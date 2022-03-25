@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="@dimen/width_main_left"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_join_motorcade_num_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_top_main_text"
+                android:text="@string/current_joined_number"
+                android:textSize="@dimen/font_text_middle" />
+
+            <TextView
+                android:id="@+id/tv_join_motorcade_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_join_motorcade_num_text"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_top_teamnum_text"
+                android:gravity="center"
+                android:text="@string/number_zero"
+                android:textSize="@dimen/font_main_number_text" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_join_motorcade_num"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:paddingTop="@dimen/padding_top_left_ll">
+
+                <LinearLayout
+                    android:id="@+id/ll_join_motorcade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/size_motorcade_icon"
+                        android:layout_height="@dimen/size_motorcade_icon"
+                        android:background="@drawable/main_join_bg" />
+
+                    <TextView
+                        android:id="@+id/tv_join_motorcade"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_top_join_tv"
+                        android:text="@string/join_motorcade"
+                        android:textSize="@dimen/font_motorcade_tv" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_create_motorcade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/margin_divider"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/size_motorcade_icon"
+                        android:layout_height="@dimen/size_motorcade_icon"
+                        android:background="@drawable/main_create_bg" />
+
+                    <TextView
+                        android:id="@+id/tv_create_motorcade"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_top_join_tv"
+                        android:text="@string/create_motorcade"
+                        android:textSize="@dimen/font_motorcade_tv" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <com.xiaoma.ui.StateControl.StateView
+            android:id="@+id/main_state_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_motorcade_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="@dimen/padding_top_main_list"
+                    android:paddingBottom="@dimen/padding_bottom_main_list"
+                    android:paddingLeft="@dimen/padding_left_main_list">
+                </android.support.v7.widget.RecyclerView>
+
+                <com.xiaoma.ui.view.XmScrollBar
+                    android:id="@+id/motorcade_scroll_bar"
+                    android:layout_width="@dimen/width_xmscroll_bar"
+                    android:layout_height="@dimen/height_xmscroll_bar"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/bottom_xmscroll_bar"
+                    android:layout_marginLeft="22px"/>
+            </RelativeLayout>
+
+        </com.xiaoma.ui.StateControl.StateView>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/view_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</FrameLayout>

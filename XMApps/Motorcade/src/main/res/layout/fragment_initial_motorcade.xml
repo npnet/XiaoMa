@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="@dimen/width_icon_launch"
+        android:layout_height="@dimen/height_icon_launch"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/margin_top_launch_icon"
+        android:background="@drawable/icon_car" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:includeFontPadding="false"
+        android:layout_gravity="center"
+        android:text="@string/not_joined_motorcade"
+        android:textSize="@dimen/font_text_big"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top_with_tip"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_join_motorcade"
+            android:layout_width="@dimen/width_launch_button"
+            android:layout_height="@dimen/height_launch_button"
+            android:gravity="top|center_horizontal"
+            android:text="@string/join_motorcade"
+            android:textSize="@dimen/font_launch_button"
+            android:paddingTop="@dimen/padding_top_launch_bt"
+            android:background="@drawable/launch_button_bg"/>
+
+        <Space
+            android:layout_width="@dimen/space_between_buttons"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/btn_create_motorcade"
+            android:layout_width="@dimen/width_launch_button"
+            android:layout_height="@dimen/height_launch_button"
+            android:paddingTop="@dimen/padding_top_launch_bt"
+            android:gravity="top|center_horizontal"
+            android:text="@string/create_motorcade"
+            android:textSize="@dimen/font_launch_button"
+            android:background="@drawable/launch_button_bg"/>
+
+    </LinearLayout>
+</LinearLayout>

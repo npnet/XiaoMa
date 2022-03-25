@@ -1,0 +1,249 @@
+[
+  {
+    "itemName": "音乐",
+    "itemNameEn": "Music",
+    "iconUrl": "",
+    "packageName": "com.xiaoma.music",
+    "type": "1",
+    "list": [
+      {
+        "appName": "音乐",
+        "appNameEn": "Music",
+        "packageName": "com.xiaoma.music",
+        "className": "",
+        "tabName": "",
+        "iconUrl": "",
+        "type": "1",
+        "isInstalled": "true"
+      }
+    ]
+  },
+  {
+    "itemName": "电台",
+    "itemNameEn": "Radio",
+    "iconUrl": "",
+    "packageName": "com.xiaoma.xting",
+    "type": "1",
+    "list": [
+      {
+        "appName": "电台",
+        "appNameEn": "Radio",
+        "packageName": "com.xiaoma.xting",
+        "className": "",
+        "tabName": "",
+        "iconUrl": "",
+        "type": "1",
+        "isInstalled": "true"
+      }
+    ]
+  },
+  {
+    "itemName": "设置",
+    "itemNameEn": "Setting",
+    "iconUrl": "",
+    "packageName": "com.xiaoma.setting",
+    "type": "1",
+    "list": [
+      {
+        "appName": "设置",
+        "appNameEn": "Setting",
+        "packageName": "com.xiaoma.setting",
+        "className": "",
+        "tabName": "",
+        "iconUrl": "",
+        "type": "1",
+        "isInstalled": "true"
+      }
+    ]
+  },
+  {
+    "itemName": "车信",
+    "itemNameEn": "Vehicle Wechat",
+    "iconUrl": "",
+    "packageName": "com.xylink.mc.faw.bab2019",
+    "type": "1",
+    "list": [
+      {
+        "appName": "车信",
+        "appNameEn": "Vehicle Wechat",
+        "packageName": "com.xylink.mc.faw.bab2019",
+        "className": "",
+        "tabName": "",
+        "iconUrl": "",
+        "type": "1",
+        "isInstalled": "false"
+      }
+    ]
+  },
+  {
+    "itemName": "车服务",
+    "itemNameEn": "Service",
+    "iconUrl": "",
+    "packageName": "com.xiaoma.service",
+    "type": "1",
+    "list": [
+      {
+        "appName": "车服务",
+        "appNameEn": "Service",
+        "packageName": "com.xiaoma.service",
+        "className": "",
+        "tabName": "",
+        "iconUrl": "",
+        "type": "1",
+        "isInstalled": "true"
+      }
+    ]
+  },
+  {
+    "itemName": "媒体",
+    "itemNameEn": "Media",
+    "iconUrl": "",
+    "packageName": "com.xiaoma.xkan",
+    "type": "1",
+    "list": [
+      {
+        "appName": "媒体",
+        "appNameEn": "Media",
+        "packageName": "com.xiaoma.xkan",
+        "className": "",
+        "tabName": "",
+        "iconUrl": "",
+        "type": "1",
+        "isInstalled": "true"
+      }
+    ]
+  },
+  {
+    "itemName": "车应用",
+    "itemNameEn": "Application market",
+    "iconUrl": "",
+    "packageName": "com.xiaoma.app",
+    "type": "1",
+    "list": [
+      {
+        "appName": "车应用",
+        "appNameEn": "Application market",
+        "packageName": "com.xiaoma.app",
+        "className": "",
+        "tabName": "",
+        "iconUrl": "",
+        "type": "1",
+        "isInstalled": "true"
+      }
+    ]
+  },
+  {
+    "itemName": "全景影像",
+    "itemNameEn": "Panoramic Image",
+    "iconUrl": "",
+    "packageName": "com.android.settings",
+    "type": "1",
+    "list": [
+      {
+        "appName": "全景影像",
+        "appNameEn": "Panoramic Image",
+        "packageName": "com.android.settings",
+        "className": "",
+        "tabName": "",
+        "iconUrl": "",
+        "type": "1",
+        "isInstalled": "true"
+      }
+    ]
+  },
+  {
+    "itemName": "奔腾商城",
+    "itemNameEn": "Shop",
+    "iconUrl": "",
+    "packageName": "com.xiaoma.shop",
+    "type": "1",
+    "list": [
+      {
+        "appName": "奔腾商城",
+        "appNameEn": "Shop",
+        "packageName": "com.xiaoma.shop",
+        "className": "",
+        "tabName": "",
+        "iconUrl": "",
+        "type": "1",
+        "isInstalled": "true"
+      }
+    ]
+  },
+  {
+    "itemName": "个人中心",
+    "itemNameEn": "Personal Center",
+    "iconUrl": "",
+    "packageName": "com.xiaoma.personal",
+    "type": "1",
+    "list": [
+      {
+        "appName": "个人中心",
+        "appNameEn": "Personal Center",
+        "packageName": "com.xiaoma.personal",
+        "className": "",
+        "tabName": "",
+        "iconUrl": "",
+        "type": "1",
+        "isInstalled": "true"
+      }
+    ]
+  },
+  {
+    "itemName": "语音助手",
+    "itemNameEn": "Assistant",
+    "iconUrl": "",
+    "packageName": "com.xiaoma.assistant",
+    "type": "1",
+    "list": [
+      {
+        "appName": "语音助手",
+        "appNameEn": "Assistant",
+        "packageName": "com.xiaoma.assistant",
+        "className": "",
+        "tabName": "",
+        "iconUrl": "",
+        "type": "1",
+        "isInstalled": "true"
+      }
+    ]
+  },
+  {
+    "itemName": "语音训练",
+    "itemNameEn": "VrPractice",
+    "iconUrl": "",
+    "packageName": "com.xiaoma.launcher",
+    "type": "1",
+    "list": [
+      {
+        "appName": "语音训练",
+        "appNameEn": "VrPractice",
+        "packageName": "com.xiaoma.launcher",
+        "className": "",
+        "tabName": "",
+        "iconUrl": "",
+        "type": "1",
+        "isInstalled": "true"
+      }
+    ]
+  },
+  {
+    "itemName": "使用手册",
+    "itemNameEn": "Instruction",
+    "iconUrl": "",
+    "packageName": "com.xiaoma.instruction",
+    "type": "1",
+    "list": [
+      {
+        "appName": "使用手册",
+        "appNameEn": "Instruction",
+        "packageName": "com.xiaoma.instruction",
+        "className": "",
+        "tabName": "",
+        "iconUrl": "",
+        "type": "1",
+        "isInstalled": "true"
+      }
+    ]
+  }
+]

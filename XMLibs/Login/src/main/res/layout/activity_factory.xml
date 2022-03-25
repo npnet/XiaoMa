@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/login_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/factory_mode"
+        android:textSize="@dimen/font_factory_title"
+        app:layout_constraintBottom_toTopOf="@+id/input_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <!--手机号-->
+    <ImageView
+        android:id="@+id/input_bg"
+        android:layout_width="@dimen/width_factory_edit_bg"
+        android:layout_height="@dimen/height_factory_edit_bg"
+        android:layout_marginTop="@dimen/size_factory_phone_margin_top"
+        android:src="@drawable/input_box_normal"
+        app:layout_constraintBottom_toTopOf="@+id/input_bg2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_title" />
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/size_factory_edit_margin_start"
+        android:background="@null"
+        android:digits="0123456789"
+        android:ems="10"
+        android:hint="@string/input_phone_hint"
+        android:inputType="phone"
+        android:textSize="@dimen/font_factory_verify_code"
+        app:layout_constraintBottom_toBottomOf="@+id/input_bg"
+        app:layout_constraintEnd_toEndOf="@+id/input_bg"
+        app:layout_constraintStart_toStartOf="@+id/input_bg"
+        app:layout_constraintTop_toTopOf="@+id/input_bg" />
+
+    <ImageView
+        android:id="@+id/user"
+        android:layout_width="@dimen/size_factory_icon"
+        android:layout_height="@dimen/size_factory_icon"
+        android:layout_marginStart="@dimen/size_factory_passwd_margin_start"
+        android:src="@drawable/icon_user"
+        app:layout_constraintBottom_toBottomOf="@+id/input_bg"
+        app:layout_constraintStart_toStartOf="@+id/input_bg"
+        app:layout_constraintTop_toTopOf="@+id/input_bg" />
+
+    <ImageView
+        android:id="@+id/phone_error_border"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/input_box_error"
+        android:visibility="gone"
+        tools:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/input_bg"
+        app:layout_constraintEnd_toEndOf="@+id/input_bg"
+        app:layout_constraintStart_toStartOf="@+id/input_bg"
+        app:layout_constraintTop_toTopOf="@+id/input_bg" />
+
+    <!--密码-->
+    <ImageView
+        android:id="@+id/input_bg2"
+        android:layout_width="@dimen/width_factory_edit_bg"
+        android:layout_height="@dimen/height_factory_edit_bg"
+        android:layout_marginTop="@dimen/size_factory_passwd_margin_top"
+        android:src="@drawable/input_box_normal"
+        app:layout_constraintBottom_toTopOf="@+id/login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_bg" />
+
+    <EditText
+        android:id="@+id/verify_code"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/size_factory_edit_margin_start"
+        android:background="@null"
+        android:ems="10"
+        android:hint="@string/pls_input_verify_code"
+        android:inputType="numberPassword"
+        android:maxLength="20"
+        android:textSize="@dimen/font_factory_verify_code"
+        app:layout_constraintBottom_toBottomOf="@+id/input_bg2"
+        app:layout_constraintEnd_toEndOf="@+id/input_bg2"
+        app:layout_constraintStart_toStartOf="@+id/input_bg2"
+        app:layout_constraintTop_toTopOf="@+id/input_bg2" />
+
+    <ImageView
+        android:id="@+id/clock"
+        android:layout_width="@dimen/size_factory_icon"
+        android:layout_height="@dimen/size_factory_icon"
+        android:layout_marginStart="@dimen/size_factory_passwd_margin_start"
+        android:src="@drawable/icon_clock"
+        app:layout_constraintBottom_toBottomOf="@+id/input_bg2"
+        app:layout_constraintStart_toStartOf="@+id/input_bg2"
+        app:layout_constraintTop_toTopOf="@+id/input_bg2" />
+
+    <ImageView
+        android:id="@+id/verify_error_border"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/input_box_error"
+        android:visibility="gone"
+        tools:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/input_bg2"
+        app:layout_constraintEnd_toEndOf="@+id/input_bg2"
+        app:layout_constraintStart_toStartOf="@+id/input_bg2"
+        app:layout_constraintTop_toTopOf="@+id/input_bg2" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="@dimen/width_normal_button"
+        android:layout_height="@dimen/height_normal_button"
+        android:layout_marginTop="@dimen/size_factory_btn_margin_top"
+        android:background="@drawable/selector_button"
+        android:text="@string/login"
+        android:textColor="@color/selector_button_text_color"
+        android:textSize="@dimen/font_button_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_bg2" />
+
+    <TextView
+        android:id="@+id/phone_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_factory_tip_margin_top"
+        android:text="@string/account_not_exist"
+        android:textSize="@dimen/font_factory_tip"
+        android:textColor="@color/color_factory_error_tip"
+        android:visibility="gone"
+        tools:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/phone"
+        app:layout_constraintTop_toBottomOf="@+id/input_bg" />
+
+    <TextView
+        android:id="@+id/verify_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_factory_tip_margin_top"
+        android:text="@string/passwd_error"
+        android:textSize="@dimen/font_factory_tip"
+        android:textColor="@color/color_factory_error_tip"
+        android:visibility="gone"
+        tools:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/verify_code"
+        app:layout_constraintTop_toBottomOf="@+id/input_bg2" />
+
+</android.support.constraint.ConstraintLayout>

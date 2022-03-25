@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="textSize" format="dimension|reference" />
+    <attr name="titleColor" format="color|reference" />
+    <attr name="titleTexts" format="string" />
+    <attr name="titleSize" format="dimension|reference" />
+
+    <declare-styleable name="SettingRadioGroup">
+        <attr name="radioCount" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="MagicTextView">
+        <attr name="innerShadowColor" format="color"/>
+        <attr name="innerShadowRadius" format="dimension"/>
+        <attr name="innerShadowDx" format="dimension"/>
+        <attr name="innerShadowDy" format="dimension"/>
+
+        <attr name="outerShadowColor" format="color"/>
+        <attr name="outerShadowRadius" format="dimension"/>
+        <attr name="outerShadowDx" format="dimension"/>
+        <attr name="outerShadowDy" format="dimension"/>
+
+        <attr name="typeface" format="string" />
+
+        <attr name="foreground" format="reference|color"/>
+        <attr name="background"/>
+
+        <attr name="strokeWidth" format="dimension" />
+        <attr name="strokeMiter" format="dimension" />
+        <attr name="strokeColor" format="color" />
+        <attr name="strokeJoinStyle">
+            <enum name="miter" value="0" />
+            <enum name="bevel" value="1" />
+            <enum name="round" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="SegmentCheckView">
+        <attr name="controlTextColor" format="color|reference" />
+        <attr name="controlTextSize" format="dimension|reference" />
+        <attr name="titleText" format="string" />
+        <attr name="segmentText" format="string" />
+        <attr name="showLine" format="boolean" />
+        <attr name="defOnOff" format="boolean" />
+
+    </declare-styleable>
+
+    <declare-styleable name="SettingCheckView">
+        <attr name="text" format="string|reference" />
+        <attr name="textColor" format="color|reference" />
+        <attr name="textSize" />
+        <attr name="desc" format="string" />
+        <attr name="line" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="SwitchAnimation">
+        <attr name="switchText" format="string|reference" />
+        <attr name="anim" format="boolean|reference" />
+        <attr name="checkBoxBg" format="reference" />
+        <attr name="textColor" />
+        <attr name="textSize" />
+    </declare-styleable>
+
+    <declare-styleable name="SettingItemView">
+        <!--分段选择文本-->
+        <attr name="segmentTexts" format="string|reference" />
+        <attr name="segmentSize" format="dimension|reference" />
+        <attr name="segmentColor" format="color|reference" />
+        <attr name="segmentWidth" format="dimension|reference" />
+        <attr name="segmentHeight" format="dimension|reference" />
+        <attr name="segmentGravity">
+            <enum name="left" value="3" />
+            <enum name="center" value="17" />
+        </attr>
+        <attr name="showLines" format="boolean" />
+        <attr name="showSegmentControl" format="boolean" />
+        <attr name="checkBox" format="boolean" />
+        <attr name="showTitle" format="boolean" />
+        <attr name="contentLayout" format="reference" />
+        <attr name="titleColor" />
+        <attr name="titleTexts" />
+        <attr name="titleSize" />
+        <attr name="titleWidth" />
+        <attr name="itemType" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="SegmentControl">
+        <attr name="cornerRadius" format="dimension|reference" />
+        <attr name="normalColor" format="color|reference" />
+        <attr name="selectedColor" format="color|reference" />
+        <attr name="backgroundColors" format="color|reference" />
+        <attr name="textColors" format="color|reference" />
+        <attr name="texts" format="string|reference" />
+        <attr name="android:textSize" />
+        <attr name="android:orientation" />
+        <!-- 外部边框的width -->
+        <attr name="boundWidth" format="dimension|reference" />
+        <!-- 内部边框的width -->
+        <attr name="separatorWidth" format="dimension|reference" />
+        <attr name="gaps" format="dimension|reference" />
+        <attr name="horizonGap" format="dimension|reference" />
+        <attr name="verticalGap" format="dimension|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="ChessView">
+        <attr name="rows" format="integer" />
+        <attr name="cols" format="integer" />
+        <attr name="edgeEnabled" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="TickMarkSeekBar">
+        <attr name="bottomText" format="string|reference" />
+        <attr name="bottomTextGap" format="dimension|reference" />
+        <attr name="bottomTextColor" format="color|reference" />
+        <attr name="bottomTextSize" format="dimension|reference" />
+        <attr name="tickMarkTextGap" format="dimension|reference" />
+        <attr name="tickMarkTextColor" format="color|reference" />
+        <attr name="tickMarkTextSize" format="dimension|reference" />
+        <attr name="seekBarWidth" format="dimension|reference" />
+        <attr name="sensitivity" format="dimension|reference" />
+        <attr name="tickMarkLength" format="dimension|reference" />
+        <attr name="scrollDuration" format="integer" />
+        <attr name="max" format="integer" />
+        <attr name="progress" format="integer" />
+        <attr name="cursorIndex" format="integer" />
+        <attr name="scrollToTickMark" format="boolean" />
+    </declare-styleable>
+
+
+    <declare-styleable name="TextTackSeekBar">
+        <attr name="textsize" format="dimension" />
+        <attr name="textcolor" format="color" />
+        <attr name="img" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="RadioButtonLayout">
+        <attr name="buttonNames" format="string|reference" />
+        <attr name="buttonMarginRight" format="dimension|reference" />
+        <attr name="textSize" />
+        <attr name="buttonPaddingBottom" format="dimension|reference" />
+        <attr name="buttonWidth" format="dimension|reference" />
+        <attr name="buttonHeight" format="dimension|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="SettingSwitch">
+        <attr name="titleColor" />
+        <attr name="titleTexts" />
+        <attr name="titleSize" />
+        <attr name="titleWidth" format="dimension|reference" />
+        <attr name="marginLeft" format="dimension|reference" />
+    </declare-styleable>
+
+    <!--<declare-styleable name="settingCheck">-->
+    <!--<attr name="desc" format="string"/>-->
+    <!--</declare-styleable>-->
+
+    <declare-styleable name="NumberPickerView">
+        <!--set number of item displayed, default is 3-->
+        <attr name="npv_ShowCount" format="reference|integer" />
+        <!--set if show divider, default is true-->
+        <attr name="npv_ShowDivider" format="reference|boolean" />
+        <attr name="npv_DividerColor" format="reference|color" />
+        <attr name="npv_DividerMarginLeft" format="reference|dimension" />
+        <attr name="npv_DividerMarginRight" format="reference|dimension" />
+        <attr name="npv_DividerHeight" format="reference|dimension" />
+        <attr name="npv_TextColorNormal" format="reference|color" />
+        <attr name="npv_TextColorSelected" format="reference|color" />
+        <attr name="npv_TextSelectedBackground" format="reference|color" />
+        <attr name="npv_TextColorHint" format="reference|color" />
+        <attr name="npv_TextSizeNormal" format="reference|dimension" />
+        <attr name="npv_TextSizeSelected" format="reference|dimension" />
+        <attr name="npv_TextSizeHint" format="reference|dimension" />
+        <attr name="npv_TextArray" format="reference" />
+        <attr name="npv_MinValue" format="reference|integer" />
+        <attr name="npv_MaxValue" format="reference|integer" />
+        <attr name="npv_WrapSelectorWheel" format="reference|boolean" />
+        <attr name="npv_RespondChangeOnDetached" format="reference|boolean" />
+        <attr name="npv_HintText" format="reference|string" />
+        <attr name="npv_EmptyItemHint" format="reference|string" />
+        <attr name="npv_MarginStartOfHint" format="reference|dimension" />
+        <attr name="npv_MarginEndOfHint" format="reference|dimension" />
+        <attr name="npv_ItemPaddingHorizontal" format="reference|dimension" />
+        <attr name="npv_ItemPaddingVertical" format="reference|dimension" />
+        <attr name="npv_RespondChangeInMainThread" format="reference|boolean" />
+        <attr name="npv_TextEllipsize" format="reference|string" />
+
+        <!--just used to measure maxWidth for wrap_content without hint,
+            the string array will never be displayed.
+            you can set this attr if you want to keep the wraped numberpickerview
+            width unchanged when alter the content list-->
+        <attr name="npv_AlternativeTextArrayWithMeasureHint" format="reference" />
+        <attr name="npv_AlternativeTextArrayWithoutMeasureHint" format="reference" />
+        <!--the max length of hint content-->
+        <attr name="npv_AlternativeHint" format="reference|string" />
+    </declare-styleable>
+</resources>

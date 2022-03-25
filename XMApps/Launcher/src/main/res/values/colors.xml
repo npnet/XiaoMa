@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffff</color>
+    <color name="blue">#0000ff</color>
+    <color name="color_white">#fff</color>
+    <color name="color_black">#000000</color>
+    <color name="yellow">#ffcc33</color>
+    <color name="gray">#d7d7d7</color>
+    <color name="house_tip_color">#085c7e</color>
+    <color name="color_9e">#999e9e9e</color>
+    <color name="color_de">#55dedede</color>
+    <color name="color_ffcc33">#ffcc33</color>
+    <color name="color_262626">#262626</color>
+    <color name="launcher_record_text">#8a919d</color>
+    <color name="color_008cdc">#008cdc</color>
+    <color name="color_fbd3a4">#fbd3a4</color>
+    <color name="color_222222">#222222</color>
+    <color name="color_fc3838">#fc3838</color>
+    <color name="color_594226">#594226</color>
+    <color name="status_bar_text_color">#fff</color>
+    <color name="record_most_color">#fbd3a4</color>
+</resources>

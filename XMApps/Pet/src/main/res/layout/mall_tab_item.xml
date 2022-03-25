@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.xiaoma.pet.ui.view.DrawStrokeTextView
+        android:id="@+id/tv_mall_tab_item"
+        android:layout_width="@dimen/width_mall_tab_item"
+        android:layout_height="@dimen/height_mall_tab_item"
+        android:background="@drawable/mall_tab_item_unselect"
+        android:gravity="center"
+        app:gradient="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:stroke_text_size="@dimen/pet_font_size_26"
+        app:text_content="食物"
+        app:text_normal_color="@color/mall_tab_color" />
+
+</android.support.constraint.ConstraintLayout>

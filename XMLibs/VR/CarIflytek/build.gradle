@@ -1,0 +1,17 @@
+apply plugin: 'com.android.library'
+apply from: "$rootDir$Android"
+
+android library()
+
+
+dependencies {
+    implementation project(':XMLibs:Utils')
+    implementation project(':XMLibs:Network')
+    implementation project(':XMLibs:Config')
+    implementation project(':XMLibs:Thread')
+    implementation project(':XMLibs:Model')
+    implementation project(path: ':XMLibs:VR:Vr')
+    //implementation files("${XMJars}speechsuitepack.jar")
+    implementation files("${XMJars}commons-lang3-3.4.jar")
+
+}

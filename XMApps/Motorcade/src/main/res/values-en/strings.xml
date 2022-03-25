@@ -1,0 +1,98 @@
+<resources>
+    <!--launch页面-->
+    <string name="not_joined_motorcade">You have not joined any team yet.</string>
+    <string name="request_error">Network error, please check</string>
+    <!--主页面-->
+    <string name="app_name">Team</string>
+    <string name="create_motorcade">Create a team</string>
+    <string name="create_motorcade_failed">Failed to create team</string>
+    <string name="join_motorcade_failed">Failed to join the team</string>
+    <string name="find_motorcade_failed">Not looking for a team</string>
+    <string name="sure">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="join_motorcade">Join the team</string>
+    <string name="net_work">Network exception, please try again later</string>
+    <string name="no_network_check">The network is abnormal, please try again later</string>
+    <string name="joined_success">Has joined the team</string>
+    <string name="quit_success">Out of the convoy</string>
+    <string name="quit_failed">Failed to exit team</string>
+    <string name="find_team_failed">Not looking for a team</string>
+    <string name="create_team_success">Successfully build a fleet</string>
+    <string name="change_success">Successfully modified</string>
+    <string name="change_failed">Modify the failure</string>
+    <string name="motorcade_unit">&#160;</string>
+    <string name="current_joined_number">You have joined the team number:</string>
+    <string name="number_zero">0个</string>
+    <string name="default_command">Password:000000</string>
+    <string name="default_online_text">0/0</string>
+    <string name="command_digits">qwertyuiopasdfghjklzxcvbnm0123456789</string>
+    <string name="command">Password:</string>
+
+    <!--setting-->
+    <string name="setting_motorcade_name">Team name</string>
+    <string name="setting_motorcade_nickname">Display nickname</string>
+    <string name="setting_motorcade_exit_tips">Prompt</string>
+    <string name="setting_no_permission">You do not have this permission</string>
+    <string name="online_display_null">Online users：0/0</string>
+    <string name="info_setting">Setting</string>
+    <string name="motorcade_command">Match password</string>
+    <string name="exit_motorcade">Leave the team</string>
+    <string name="eric">Eric</string>
+    <string name="offline">offline</string>
+    <string name="online">online</string>
+    <string name="your_command">Your password</string>
+    <string name="share_command">Share the password</string>
+    <string name="goto_main">Enter the team home page</string>
+    <string name="group_details_msg_notice">Notification</string>
+    <string name="personal_sui">&#160;years old</string>
+    <string name="add_friend">Add friend</string>
+    <string name="is_receive_others">Whether to listen to others\&#39; voices</string>
+    <string name="request_add_friend_failed">Failed to send a friend request</string>
+    <string name="request_add_friend">The request has been sent, please wait</string>
+    <string name="request_is_friend">You are already good friends</string>
+    <string name="current_online_number">Online users: %s/%s</string>
+
+    <!--地图页面-->
+    <string name="start_rob_microphone">Click to grab the mic</string>
+    <string name="robbing_microphone">Grab the microphone...</string>
+    <string name="online_numbers">Online users:\n</string>
+    <string name="input_null_motorcade">Please enter the team name</string>
+    <string name="please_input_motorcade">You haven\&#39;t entered anything yet</string>
+    <string name="input_null_command">You did not enter a password</string>
+    <string name="input_null_content">You did not enter anything</string>
+    <string name="error_motorcade_msg">Incorrect team information</string>
+    <string name="please_input_numbers">Please enter the number</string>
+    <string name="other_has_mic">Your car buddy is talking. Hold on, please</string>
+    <string name="no_permission">You do not have this permission</string>
+    <string name="join_failed">Failure to enter the convoy</string>
+    <string name="join_failed_error">Incorrect team information, entry failed</string>
+    <string name="join_loading">Entering the convoy...</string>
+    <string name="rob_mic_failed">Failed to get the mic, please try again</string>
+    <string name="click_to_rob_mic">Click to grab the mic</string>
+    <string name="rob_mic_retry">The mic failed to recapture the mic</string>
+    <string name="rob_mic_loading">Grabbing the mic...</string>
+    <string name="rob_mic_lineup_count">In the queue:%1$s</string>
+    <string name="start_speak">Start speaking</string>
+    <string name="click_to_hang_out">Call over after 60s</string>
+    <string name="hang_out">The end</string>
+    <string name="count_down_second">Countdown: %1$s s</string>
+    <string name="locate_failed">The current location is not available, please try again later</string>
+    <string name="not_attach_network">Unable to connect to the network</string>
+    <string name="get_mic_failed">Microphone acquisition failed</string>
+    <string name="get_audio_focus_failed">Unable to obtain source focus</string>
+
+    <!--dialog-->
+    <string name="exit_motorcade_sure">Are you sure to leave the team?</string>
+    <string name="dialog_et_hint">Please enter the team password and join the team</string>
+    <string name="diaplay_nick">Display nickname</string>
+    <string name="motorcade_name">Team name</string>
+    <string name="share_to">Share with</string>
+    <string name="str_chexin">Friends</string>
+    <string name="enter_motorcade">Please enter the team name</string>
+    <string name="motor_name">Team password sharing:%1$s</string>
+    <string name="motor_command">Join the team</string>
+    <string name="add_loading">Joining the motorcade...</string>
+    <string name="team_dismissed">Convoy disbanded</string>
+    <string name="frequnsy_too_many">Sending requests is too frequent, Please retry</string>
+
+</resources>

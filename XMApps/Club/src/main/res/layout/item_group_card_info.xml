@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/width_group_card_parent"
+    android:layout_height="@dimen/height_group_card"
+    android:orientation="horizontal">
+
+    <Space
+        android:layout_width="@dimen/margin_search_btn_left"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="@dimen/width_group_card"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/group_main_icon"
+            android:layout_width="@dimen/width_group_card"
+            android:layout_height="@dimen/width_group_card" />
+
+        <TextView
+            android:id="@+id/group_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_group_card_top"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/club_white"
+            android:textSize="@dimen/font_text_middle" />
+
+        <TextView
+            android:id="@+id/group_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_group_card_text_top"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/club_text_gray"
+            android:textSize="@dimen/font_text_small_plus" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/margin_group_star_top">
+
+            <RelativeLayout
+                android:id="@+id/group_bottom_rl"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical">
+
+                <com.xiaoma.club.common.view.ActiveStarsView
+                    android:id="@+id/group_liveness"
+                    android:layout_width="@dimen/width_group_star"
+                    android:layout_height="@dimen/height_group_star" />
+
+                <com.xiaoma.club.common.view.MemberHeadsView
+                    android:id="@+id/group_members"
+                    android:layout_width="@dimen/width_group_heads"
+                    android:layout_height="@dimen/height_group_star"
+                    android:layout_alignParentRight="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/group_exit_ll"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_delete_friend_btn"
+                android:layout_marginTop="@dimen/margin_delete_group_top"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/group_exit_btn"
+                    android:layout_width="@dimen/width_delete_friend_btn"
+                    android:layout_height="@dimen/height_delete_friend_btn"
+                    android:background="@drawable/delete_friend_bg"
+                    android:paddingBottom="@dimen/padding_delete_friend_bottom"
+                    android:text="@string/group_exit"
+                    android:textColor="@color/club_white"
+                    android:textSize="@dimen/font_text_small_plus" />
+
+                <Button
+                    android:id="@+id/group_exit_cancle"
+                    android:layout_width="@dimen/width_delete_friend_btn"
+                    android:layout_height="@dimen/height_delete_friend_btn"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/cancel_delete_bg"
+                    android:paddingBottom="@dimen/padding_delete_friend_bottom"
+                    android:text="@string/club_cancel"
+                    android:textColor="@color/club_white"
+                    android:textSize="@dimen/font_text_small_plus" />
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Space
+        android:layout_width="@dimen/margin_group_card_right"
+        android:layout_height="match_parent" />
+</LinearLayout>

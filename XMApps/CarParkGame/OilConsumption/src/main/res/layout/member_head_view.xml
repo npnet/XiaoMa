@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="@dimen/width_group_heads"
+        android:layout_height="@dimen/height_group_star">
+
+        <ImageView
+            android:id="@+id/member_image_1"
+            android:layout_width="@dimen/height_group_star"
+            android:layout_height="@dimen/height_group_star"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/members_head_bg"
+            android:padding="@dimen/padding_group_heads"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/member_image_2"
+            android:layout_width="@dimen/height_group_star"
+            android:layout_height="@dimen/height_group_star"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin_group_head_2"
+            android:background="@drawable/members_head_bg"
+            android:padding="@dimen/padding_group_heads"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/member_image_3"
+            android:layout_width="@dimen/height_group_star"
+            android:layout_height="@dimen/height_group_star"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin_group_head_3"
+            android:background="@drawable/members_head_bg"
+            android:padding="@dimen/padding_group_heads"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/member_image_4"
+            android:layout_width="@dimen/height_group_star"
+            android:layout_height="@dimen/height_group_star"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin_group_head_4"
+            android:background="@drawable/members_head_bg"
+            android:padding="@dimen/padding_group_heads"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/member_image_5"
+            android:layout_width="@dimen/height_group_star"
+            android:layout_height="@dimen/height_group_star"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin_group_head_5"
+            android:background="@drawable/members_head_bg"
+            android:padding="@dimen/padding_group_heads"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+
+</FrameLayout>

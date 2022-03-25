@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="dialog_width">654px</dimen>
+    <dimen name="dialog_height">420px</dimen>
+    <dimen name="width_dialog_icon">128px</dimen>
+    <dimen name="height_dialog_icon">128px</dimen>
+    <dimen name="size_dialog_icon_margin_top">36px</dimen>
+    <dimen name="size_dialog_title_margin_top">28px</dimen>
+    <dimen name="font_dialog_title">28px</dimen>
+    <dimen name="width_dialog_btn">220px</dimen>
+    <dimen name="height_dialog_btn">81px</dimen>
+    <dimen name="size_dialog_btn_margin_bottom">12px</dimen>
+    <dimen name="font_dialog_btn_text">24px</dimen>
+    <dimen name="width_nav_dialog_close">50px</dimen>
+    <dimen name="height_nav_dialog_close">50px</dimen>
+    <dimen name="size_nav_dialog_close_margin_start">50px</dimen>
+    <dimen name="size_nav_dialog_close_margin_top">50px</dimen>
+    <dimen name="width_nav_dialog_img">330px</dimen>
+    <dimen name="height_nav_dialog_img">406px</dimen>
+    <dimen name="size_nav_dialog_img_margin_end">90px</dimen>
+    <dimen name="font_nav_dialog_top">30px</dimen>
+</resources>

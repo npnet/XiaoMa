@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100px"
+        android:layout_marginTop="30px"
+        android:text="@string/go_home_con_set"
+        android:textSize="30px" />
+
+    <TextView
+        android:id="@+id/tv_auto_excute"
+        android:layout_width="wrap_content"
+        android:layout_height="80px"
+        android:layout_below="@+id/tv_title"
+        android:layout_marginStart="100px"
+        android:layout_marginTop="50px"
+        android:gravity="center"
+        android:text="@string/auto_excute"
+        android:textSize="25px" />
+
+    <com.xiaoma.smarthome.scene.view.SwitchButton
+        android:id="@+id/sb_auto_excute"
+        android:layout_width="150px"
+        android:layout_height="80px"
+        android:layout_below="@+id/tv_title"
+        android:layout_marginStart="30px"
+        android:layout_marginTop="50px"
+        android:layout_toRightOf="@+id/tv_auto_excute" />
+
+    <TextView
+        android:id="@+id/tv_set_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_auto_excute"
+        android:layout_marginStart="100px"
+        android:layout_marginTop="50px"
+        android:text="@string/set_home_address"
+        android:textSize="30px" />
+
+    <EditText
+        android:id="@+id/et_set_address"
+        android:layout_width="800px"
+        android:layout_height="80px"
+        android:layout_below="@+id/tv_set_address"
+        android:layout_marginStart="100px"
+        android:layout_marginTop="30px"
+        android:focusable="false"
+        android:hint="@string/input_home_address"
+        android:maxLines="1"
+        android:textSize="30px" />
+
+    <TextView
+        android:id="@+id/tv_set_condition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_set_address"
+        android:layout_marginStart="100px"
+        android:layout_marginTop="50px"
+        android:text="@string/set_excute_condition"
+        android:textSize="30px" />
+
+    <TextView
+        android:id="@+id/tv_condition"
+        android:layout_width="800px"
+        android:layout_height="80px"
+        android:layout_below="@+id/tv_set_condition"
+        android:layout_marginStart="100px"
+        android:layout_marginTop="30px"
+        android:background="#dedede"
+        android:gravity="center_vertical"
+        android:paddingStart="20px"
+        android:textColor="#000"
+        android:textSize="30px" />
+
+    <!--<ImageView-->
+    <!--android:layout_width="500px"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:src="@drawable/icon_default_icon" />-->
+
+    <fragment
+        android:id="@+id/map"
+        class="com.amap.api.maps2d.SupportMapFragment"
+        android:layout_width="600px"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

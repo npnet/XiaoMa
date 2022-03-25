@@ -1,0 +1,26 @@
+apply plugin: 'com.android.library'
+apply from: "$rootDir$Android"
+
+android library()
+
+dependencies {
+    implementation "com.android.support:appcompat-v7:$SUPPORT_LIBRARY_VERSION"
+    api "com.android.support:cardview-v7:$SUPPORT_LIBRARY_VERSION"
+    api "com.android.support:recyclerview-v7:$SUPPORT_LIBRARY_VERSION"
+    api('skin.support:skin-support:3.1.1', {
+        exclude group: 'com.android.support', module: 'appcompat-v7'
+    })
+    api('skin.support:skin-support-design:3.1.1', {
+        exclude group: 'com.android.support', module: 'appcompat-v7'
+    })
+    api('skin.support:skin-support-cardview:3.1.1', {
+        exclude group: 'com.android.support', module: 'appcompat-v7'
+    })
+    api('skin.support:skin-support-constraint-layout:3.1.1', {
+        exclude group: 'com.android.support', module: 'appcompat-v7'
+    })
+    implementation project(':XMLibs:Config')
+    implementation project(':XMLibs:Utils')
+    implementation project(':XMLibs:Thread')
+}
+

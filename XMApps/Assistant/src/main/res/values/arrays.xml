@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="voice_name">
+        <item>普通话</item>
+        <item>男普通话</item>
+        <item>粤语</item>
+        <item>四川话</item>
+        <item>东北话</item>
+        <item>河南话</item>
+        <item>湖南话</item>
+        <item>陕西话</item>
+    </string-array>
+
+    <string-array name="weeks_start_one">
+        <item>周一</item>
+        <item>周二</item>
+        <item>周三</item>
+        <item>周四</item>
+        <item>周五</item>
+        <item>周六</item>
+        <item>周日</item>
+    </string-array>
+
+    <string-array name="new_type">
+        <item>国内焦点</item>
+        <item>国际焦点</item>
+        <item>军事焦点</item>
+        <item>财经焦点</item>
+        <item>互联网焦点</item>
+        <item>房产焦点</item>
+        <item>汽车焦点</item>
+        <item>体育焦点</item>
+        <item>娱乐焦点</item>
+        <item>游戏焦点</item>
+        <item>教育焦点</item>
+        <item>女人焦点</item>
+        <item>科技焦点</item>
+        <item>社会焦点</item>
+        <item>国内最新</item>
+        <item>台湾最新</item>
+        <item>港澳最新</item>
+        <item>国际最新</item>
+        <item>军事最新</item>
+        <item>财经最新</item>
+        <item>理财最新</item>
+        <item>宏观经济最新</item>
+        <item>互联网最新</item>
+        <item>房产最新</item>
+        <item>汽车最新</item>
+        <item>体育最新</item>
+        <item>国际足球最新</item>
+        <item>国内足球最新</item>
+        <item>CBA最新</item>
+        <item>综合体育最新</item>
+        <item>娱乐最新</item>
+        <item>电影最新</item>
+        <item>电视最新</item>
+        <item>游戏最新</item>
+        <item>教育最新</item>
+        <item>女人最新</item>
+        <item>美容护肤最新</item>
+        <item>情感两性最新</item>
+        <item>健康养生最新</item>
+        <item>科技最新</item>
+        <item>数码最新</item>
+        <item>电脑最新</item>
+        <item>科普最新</item>
+        <item>社会最新</item>
+        <item>旅游最新</item>
+        <item>电商最新</item>
+        <item>物流最新</item>
+        <item>创业最新</item>
+    </string-array>
+
+    <string-array name="weeks2_start_one">
+        <item>星期一</item>
+        <item>星期二</item>
+        <item>星期三</item>
+        <item>星期四</item>
+        <item>星期五</item>
+        <item>星期六</item>
+        <item>星期日</item>
+    </string-array>
+
+
+    <!--{"下一页,下一夜,下页", "112"}-->
+    <string-array name="next_page">
+        <item>下一页,下一夜,下页</item>
+        <item>112</item>
+    </string-array>
+
+
+    <!--{"上一页,上一夜,上页", "111"}-->
+    <string-array name="previous_page">
+        <item>上一页,上一夜,上页</item>
+        <item>111</item>
+    </string-array>
+
+
+    <!--{"取消,关闭,退出", "102"}-->
+    <string-array name="cancel_action">
+        <item>取消,关闭,退出</item>
+        <item>102</item>
+    </string-array>
+
+
+    <string-array name="horscope_name">
+        <item>白羊</item>
+        <item>金牛</item>
+        <item>双子</item>
+        <item>巨蟹</item>
+        <item>狮子</item>
+        <item>处女</item>
+        <item>天秤</item>
+        <item>天蝎</item>
+        <item>射手</item>
+        <item>摩羯</item>
+        <item>水瓶</item>
+        <item>双鱼</item>
+    </string-array>
+
+    <!--<integer-array name="horscope_icon">
+        <item>@drawable/icon_aries</item>
+        <item>@drawable/icon_taurus</item>
+        <item>@drawable/icon_gemini</item>
+        <item>@drawable/icon_cancer</item>
+        <item>@drawable/icon_leo</item>
+        <item>@drawable/icon_virgo</item>
+        <item>@drawable/icon_libra</item>
+        <item>@drawable/icon_scorpio</item>
+        <item>@drawable/icon_sagittarius</item>
+        <item>@drawable/icon_capricorn</item>
+        <item>@drawable/icon_aquarius</item>
+        <item>@drawable/icon_pisces</item>
+    </integer-array>-->
+
+    <string-array name="app_name">
+        <item>设置</item>
+        <item>蓝牙电话</item>
+        <item>车应用</item>
+        <item>车乐汇</item>
+        <item>车友圈</item>
+        <item>驾驶评分</item>
+        <item>桌面</item>
+        <item>车队</item>
+        <item>音乐</item>
+        <item>个人中心</item>
+        <item>车服务</item>
+        <item>奔腾商城</item>
+        <item>媒体</item>
+        <item>电台</item>
+        <item>车信</item>
+        <item>微信</item>
+        <item>央视影音</item>
+        <item>全景影像</item>
+    </string-array>
+
+    <string-array name="app_package">
+        <item>com.xiaoma.setting</item>
+        <item>com.xiaoma.bluetooth.phone</item>
+        <item>com.xiaoma.app</item>
+        <item>com.xiaoma.carpark</item>
+        <item>com.xiaoma.club</item>
+        <item>com.qiming.fawcard.synthesize</item>
+        <item>com.xiaoma.launcher</item>
+        <item>com.xiaoma.motorcade</item>
+        <item>com.xiaoma.music</item>
+        <item>com.xiaoma.personal</item>
+        <item>com.xiaoma.service</item>
+        <item>com.xiaoma.shop</item>
+        <item>com.xiaoma.xkan</item>
+        <item>com.xiaoma.xting</item>
+        <item>com.xylink.mc.faw.bab2019</item>
+        <item>com.xylink.mc.faw.bab2019</item>
+        <item>tv.newtv.cboxcar</item>
+        <item>com.android.settings</item>
+        <!--<item>com.xylink.mc.leopaard.bab2018</item>-->
+    </string-array>
+
+    <string-array name="stock_market_name">
+        <item>上证指数</item>
+        <item>深证指数</item>
+    </string-array>
+
+    <string-array name="star_level">
+        <item>准一星级</item>
+        <item>一星级</item>
+        <item>准二星级</item>
+        <item>二星级</item>
+        <item>准三星级</item>
+        <item>三星级</item>
+        <item>准四星级</item>
+        <item>四星级</item>
+        <item>准五星级</item>
+        <item>五星级</item>
+    </string-array>
+
+    <integer-array name="mic_icon_normal">
+        <item>@drawable/mic_normal_00</item>
+        <item>@drawable/mic_normal_01</item>
+        <item>@drawable/mic_normal_02</item>
+        <item>@drawable/mic_normal_03</item>
+        <item>@drawable/mic_normal_04</item>
+        <item>@drawable/mic_normal_05</item>
+        <item>@drawable/mic_normal_06</item>
+        <item>@drawable/mic_normal_07</item>
+        <item>@drawable/mic_normal_08</item>
+        <item>@drawable/mic_normal_09</item>
+        <item>@drawable/mic_normal_10</item>
+        <item>@drawable/mic_normal_11</item>
+        <item>@drawable/mic_normal_12</item>
+        <item>@drawable/mic_normal_13</item>
+        <item>@drawable/mic_normal_14</item>
+        <item>@drawable/mic_normal_15</item>
+        <item>@drawable/mic_normal_16</item>
+        <item>@drawable/mic_normal_17</item>
+        <item>@drawable/mic_normal_18</item>
+        <item>@drawable/mic_normal_19</item>
+        <item>@drawable/mic_normal_20</item>
+        <item>@drawable/mic_normal_21</item>
+        <item>@drawable/mic_normal_22</item>
+        <item>@drawable/mic_normal_23</item>
+        <item>@drawable/mic_normal_24</item>
+        <item>@drawable/mic_normal_25</item>
+        <item>@drawable/mic_normal_26</item>
+        <item>@drawable/mic_normal_27</item>
+        <item>@drawable/mic_normal_28</item>
+        <item>@drawable/mic_normal_29</item>
+        <item>@drawable/mic_normal_30</item>
+        <item>@drawable/mic_normal_31</item>
+        <item>@drawable/mic_normal_32</item>
+        <item>@drawable/mic_normal_33</item>
+        <item>@drawable/mic_normal_34</item>
+        <item>@drawable/mic_normal_35</item>
+        <item>@drawable/mic_normal_36</item>
+        <item>@drawable/mic_normal_37</item>
+        <item>@drawable/mic_normal_38</item>
+        <item>@drawable/mic_normal_39</item>
+        <item>@drawable/mic_normal_40</item>
+        <item>@drawable/mic_normal_41</item>
+        <item>@drawable/mic_normal_42</item>
+        <item>@drawable/mic_normal_43</item>
+        <item>@drawable/mic_normal_44</item>
+        <item>@drawable/mic_normal_45</item>
+        <item>@drawable/mic_normal_46</item>
+        <item>@drawable/mic_normal_47</item>
+        <item>@drawable/mic_normal_48</item>
+        <item>@drawable/mic_normal_49</item>
+        <item>@drawable/mic_normal_50</item>
+        <item>@drawable/mic_normal_51</item>
+        <item>@drawable/mic_normal_52</item>
+        <item>@drawable/mic_normal_53</item>
+        <item>@drawable/mic_normal_54</item>
+        <item>@drawable/mic_normal_55</item>
+        <item>@drawable/mic_normal_56</item>
+        <item>@drawable/mic_normal_57</item>
+        <item>@drawable/mic_normal_58</item>
+        <item>@drawable/mic_normal_59</item>
+    </integer-array>
+    
+    <integer-array name="mic_icon_record">
+        <item>@drawable/mic_record_145</item>
+        <item>@drawable/mic_record_147</item>
+        <item>@drawable/mic_record_149</item>
+        <item>@drawable/mic_record_151</item>
+        <item>@drawable/mic_record_153</item>
+        <item>@drawable/mic_record_155</item>
+        <item>@drawable/mic_record_157</item>
+        <item>@drawable/mic_record_159</item>
+        <item>@drawable/mic_record_161</item>
+        <item>@drawable/mic_record_163</item>
+        <item>@drawable/mic_record_165</item>
+        <item>@drawable/mic_record_167</item>
+        <item>@drawable/mic_record_169</item>
+        <item>@drawable/mic_record_171</item>
+        <item>@drawable/mic_record_173</item>
+        <item>@drawable/mic_record_175</item>
+        <item>@drawable/mic_record_177</item>
+        <item>@drawable/mic_record_179</item>
+        <item>@drawable/mic_record_181</item>
+        <item>@drawable/mic_record_183</item>
+        <item>@drawable/mic_record_185</item>
+        <item>@drawable/mic_record_187</item>
+        <item>@drawable/mic_record_189</item>
+        <item>@drawable/mic_record_191</item>
+        <item>@drawable/mic_record_193</item>
+        <item>@drawable/mic_record_195</item>
+        <item>@drawable/mic_record_197</item>
+        <item>@drawable/mic_record_199</item>
+        <item>@drawable/mic_record_201</item>
+        <item>@drawable/mic_record_203</item>
+        <item>@drawable/mic_record_205</item>
+        <item>@drawable/mic_record_207</item>
+        <item>@drawable/mic_record_209</item>
+        <item>@drawable/mic_record_211</item>
+        <item>@drawable/mic_record_213</item>
+        <item>@drawable/mic_record_215</item>
+        <item>@drawable/mic_record_217</item>
+        <item>@drawable/mic_record_219</item>
+        <item>@drawable/mic_record_221</item>
+        <item>@drawable/mic_record_223</item>
+        <item>@drawable/mic_record_225</item>
+        <item>@drawable/mic_record_227</item>
+        <item>@drawable/mic_record_229</item>
+        <item>@drawable/mic_record_231</item>
+        <item>@drawable/mic_record_233</item>
+        <item>@drawable/mic_record_235</item>
+        <item>@drawable/mic_record_237</item>
+        <item>@drawable/mic_record_239</item>
+        <item>@drawable/mic_record_241</item>
+        <item>@drawable/mic_record_243</item>
+        <item>@drawable/mic_record_245</item>
+        <item>@drawable/mic_record_247</item>
+        <item>@drawable/mic_record_249</item>
+        <item>@drawable/mic_record_251</item>
+        <item>@drawable/mic_record_253</item>
+        <item>@drawable/mic_record_255</item>
+        <item>@drawable/mic_record_257</item>
+        <item>@drawable/mic_record_259</item>
+        <item>@drawable/mic_record_261</item>
+        <item>@drawable/mic_record_263</item>
+        <item>@drawable/mic_record_265</item>
+        <item>@drawable/mic_record_267</item>
+        <item>@drawable/mic_record_269</item>
+        <item>@drawable/mic_record_271</item>
+        <item>@drawable/mic_record_273</item>
+        <item>@drawable/mic_record_275</item>
+        <item>@drawable/mic_record_277</item>
+        <item>@drawable/mic_record_279</item>
+        <item>@drawable/mic_record_281</item>
+        <item>@drawable/mic_record_283</item>
+        <item>@drawable/mic_record_285</item>
+        <item>@drawable/mic_record_287</item>
+        <item>@drawable/mic_record_289</item>
+        <item>@drawable/mic_record_291</item>
+        <item>@drawable/mic_record_293</item>
+        <item>@drawable/mic_record_295</item>
+        <item>@drawable/mic_record_297</item>
+        <item>@drawable/mic_record_299</item>
+        <item>@drawable/mic_record_301</item>
+        <item>@drawable/mic_record_303</item>
+        <item>@drawable/mic_record_305</item>
+    </integer-array>
+
+    <integer-array name="mic_icon_wait">
+        <item>@drawable/mic_wait_0</item>
+        <item>@drawable/mic_wait_1</item>
+        <item>@drawable/mic_wait_2</item>
+        <item>@drawable/mic_wait_3</item>
+        <item>@drawable/mic_wait_4</item>
+        <item>@drawable/mic_wait_5</item>
+        <item>@drawable/mic_wait_6</item>
+        <item>@drawable/mic_wait_7</item>
+        <item>@drawable/mic_wait_8</item>
+        <item>@drawable/mic_wait_9</item>
+        <item>@drawable/mic_wait_10</item>
+        <item>@drawable/mic_wait_11</item>
+        <item>@drawable/mic_wait_12</item>
+        <item>@drawable/mic_wait_13</item>
+        <item>@drawable/mic_wait_14</item>
+    </integer-array>
+
+</resources>

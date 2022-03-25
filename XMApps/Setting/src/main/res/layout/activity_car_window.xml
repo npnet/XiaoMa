@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="115px"
+        android:layout_marginTop="106px"
+        android:text="@string/window_preset"
+        android:textSize="36px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view_left"
+        android:layout_width="761px"
+        android:layout_height="1px"
+        android:background="@drawable/parting_line"
+        android:layout_marginLeft="96px"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_main_seat_window" />
+
+    <TextView
+        android:id="@+id/tv_main_seat_window"
+        style="@style/setting_tv"
+        android:text="@string/main_driving_car_window"
+        android:layout_marginStart="115px"
+        android:layout_marginTop="196px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ToggleButton
+        android:id="@+id/tb_main_seat_window"
+        style="@style/setting_toggle"
+        android:layout_marginEnd="20px"
+        app:layout_constraintBottom_toBottomOf="@id/tv_main_seat_window"
+        app:layout_constraintEnd_toEndOf="@id/view_left"
+        app:layout_constraintTop_toTopOf="@+id/tv_main_seat_window" />
+
+    <View
+        android:id="@+id/view_right"
+        android:layout_width="761px"
+        android:layout_height="1px"
+        android:layout_marginStart="100px"
+        android:background="@drawable/parting_line"
+        app:layout_constraintLeft_toRightOf="@id/view_left"
+        app:layout_constraintTop_toTopOf="@+id/view_left"
+        app:layout_constraintBottom_toBottomOf="@+id/view_left"/>
+
+    <TextView
+        android:id="@+id/tv_second_seat_window"
+        style="@style/setting_tv"
+        android:text="@string/deputy_driving_window"
+        android:layout_marginLeft="20px"
+        app:layout_constraintStart_toStartOf="@id/view_right"
+        app:layout_constraintTop_toBottomOf="@+id/view_right" />
+
+    <ToggleButton
+        android:id="@+id/tb_second_seat_window"
+        style="@style/setting_toggle"
+        android:layout_marginEnd="20px"
+        app:layout_constraintBottom_toBottomOf="@id/tv_second_seat_window"
+        app:layout_constraintEnd_toEndOf="@id/view_right"
+        app:layout_constraintTop_toTopOf="@id/tv_second_seat_window" />
+
+    <View
+        android:layout_width="761px"
+        android:layout_height="1px"
+        android:background="@drawable/parting_line"
+        app:layout_constraintLeft_toLeftOf="@id/view_left"
+        app:layout_constraintTop_toTopOf="@id/rg_main_mode" />
+
+    <RadioGroup
+        android:id="@+id/rg_main_mode"
+        android:layout_width="640px"
+        android:layout_height="138px"
+        android:layout_marginStart="96px"
+        android:visibility="gone"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        app:layout_constraintStart_toStartOf="@id/tv_main_seat_window"
+        app:layout_constraintTop_toBottomOf="@+id/tv_main_seat_window">
+
+        <RadioButton
+            android:id="@+id/rb_all"
+            android:layout_width="161px"
+            android:layout_height="68px"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center_horizontal"
+            android:text="@string/car_fully_open"
+            android:textSize="24px"
+            android:textColor="#72889b"
+            android:paddingTop="10px"/>
+
+        <RadioButton
+            android:id="@+id/rb_half"
+            android:layout_width="161px"
+            android:layout_height="68px"
+            android:button="@null"
+            android:gravity="center_horizontal"
+            android:text="1/2"
+            android:textSize="24px"
+            android:textColor="#72889b"
+            android:layout_marginLeft="-25px"
+            android:paddingTop="10px"/>
+
+        <RadioButton
+            android:id="@+id/rb_one_third"
+            android:layout_width="161px"
+            android:layout_height="68px"
+            android:button="@null"
+            android:gravity="center_horizontal"
+            android:text="1/3"
+            android:textSize="24px"
+            android:textColor="#72889b"
+            android:layout_marginLeft="-25px"
+            android:paddingTop="10px"/>
+
+        <RadioButton
+            android:id="@+id/rb_two_third"
+            android:layout_width="161px"
+            android:layout_height="68px"
+            android:button="@null"
+            android:gravity="center_horizontal"
+            android:text="2/3"
+            android:textSize="24px"
+            android:textColor="#72889b"
+            android:layout_marginLeft="-25px"
+            android:paddingTop="10px"/>
+    </RadioGroup>
+
+    <View
+        android:layout_width="761px"
+        android:layout_height="1px"
+        android:background="@drawable/parting_line"
+        app:layout_constraintLeft_toLeftOf="@id/view_right"
+        app:layout_constraintTop_toTopOf="@id/rg_second_mode" />
+
+    <RadioGroup
+        android:id="@+id/rg_second_mode"
+        android:layout_width="640px"
+        android:layout_height="138px"
+        android:layout_marginStart="96px"
+        android:visibility="gone"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        app:layout_constraintStart_toStartOf="@id/tv_second_seat_window"
+        app:layout_constraintTop_toBottomOf="@+id/tv_second_seat_window">
+
+        <RadioButton
+            android:id="@+id/rb_all2"
+            android:layout_width="161px"
+            android:layout_height="68px"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center_horizontal"
+            android:text="@string/car_fully_open"
+            android:textSize="24px"
+            android:textColor="#72889b"
+            android:paddingTop="10px"/>
+
+        <RadioButton
+            android:id="@+id/rb_half2"
+            android:layout_width="161px"
+            android:layout_height="68px"
+            android:button="@null"
+            android:gravity="center_horizontal"
+            android:text="1/2"
+            android:textSize="24px"
+            android:textColor="#72889b"
+            android:layout_marginLeft="-25px"
+            android:paddingTop="10px"/>
+
+        <RadioButton
+            android:id="@+id/rb_one_third2"
+            android:layout_width="161px"
+            android:layout_height="68px"
+            android:button="@null"
+            android:gravity="center_horizontal"
+            android:text="1/3"
+            android:textSize="24px"
+            android:textColor="#72889b"
+            android:layout_marginLeft="-25px"
+            android:paddingTop="10px"/>
+
+        <RadioButton
+            android:id="@+id/rb_two_third2"
+            android:layout_width="161px"
+            android:layout_height="68px"
+            android:button="@null"
+            android:gravity="center_horizontal"
+            android:text="2/3"
+            android:textSize="24px"
+            android:textColor="#72889b"
+            android:layout_marginLeft="-25px"
+            android:paddingTop="10px"/>
+    </RadioGroup>
+
+    <View
+        android:layout_width="761px"
+        android:layout_height="1px"
+        android:background="@drawable/parting_line"
+        app:layout_constraintLeft_toLeftOf="@id/view_left"
+        app:layout_constraintTop_toTopOf="@id/tv_left_seat_window" />
+
+    <TextView
+        android:id="@+id/tv_left_seat_window"
+        style="@style/setting_tv"
+        android:text="@string/rear_left_window"
+        app:layout_constraintStart_toStartOf="@+id/tv_main_seat_window"
+        app:layout_constraintTop_toBottomOf="@+id/rg_main_mode" />
+
+    <ToggleButton
+        android:id="@+id/tb_left_seat_window"
+        style="@style/setting_toggle"
+        android:layout_marginEnd="25px"
+        app:layout_constraintBottom_toBottomOf="@id/tv_left_seat_window"
+        app:layout_constraintEnd_toEndOf="@id/view_left"
+        app:layout_constraintTop_toTopOf="@+id/tv_left_seat_window" />
+
+    <View
+        android:layout_width="761px"
+        android:layout_height="1px"
+        android:background="@drawable/parting_line"
+        app:layout_constraintLeft_toLeftOf="@id/view_left"
+        app:layout_constraintTop_toBottomOf="@id/tv_left_seat_window" />
+
+    <View
+        android:layout_width="761px"
+        android:layout_height="1px"
+        android:background="@drawable/parting_line"
+        app:layout_constraintLeft_toLeftOf="@id/view_right"
+        app:layout_constraintTop_toTopOf="@id/tv_right_seat_window" />
+
+    <TextView
+        android:id="@+id/tv_right_seat_window"
+        style="@style/setting_tv"
+        android:text="@string/rear_right_window"
+        app:layout_constraintStart_toStartOf="@id/tv_second_seat_window"
+        app:layout_constraintTop_toBottomOf="@+id/rg_second_mode" />
+
+    <ToggleButton
+        android:id="@+id/tb_right_window_heat"
+        style="@style/setting_toggle"
+        android:layout_marginEnd="20px"
+        app:layout_constraintBottom_toBottomOf="@id/tv_right_seat_window"
+        app:layout_constraintEnd_toEndOf="@id/view_right"
+        app:layout_constraintTop_toTopOf="@id/tv_right_seat_window" />
+    <View
+        android:layout_width="761px"
+        android:layout_height="1px"
+        android:background="@drawable/parting_line"
+        app:layout_constraintLeft_toLeftOf="@id/view_right"
+        app:layout_constraintTop_toBottomOf="@id/tv_right_seat_window" />
+
+</android.support.constraint.ConstraintLayout>

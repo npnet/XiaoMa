@@ -1,0 +1,21 @@
+apply plugin: 'com.android.library'
+apply from: "$rootDir$Android"
+apply from: 'sdk.gradle'
+
+sdk {
+    boolean isCar = BUILD_PLATFORM.equalsIgnoreCase("CAR")
+    reminder isCar ? 'yq' : 'test'
+}
+
+android library()
+
+dependencies {
+    implementation project(':XMLibs:Utils')
+    implementation project(':XMLibs:Thread')
+    if (BUILD_PLATFORM.equalsIgnoreCase("CAR")) {
+        api files("${XMJars}otaserver_1.11.aar")
+        api files("${XMJars}carlib_v5.1_2019_08_17.jar")
+    }
+    implementation "com.android.support:support-v4:${SUPPORT_LIBRARY_VERSION}"
+    implementation project(':XMLibs:Config')
+}

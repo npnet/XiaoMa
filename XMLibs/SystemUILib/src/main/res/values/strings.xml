@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="notification_headsup_time_display_just">刚刚</string>
+    <string name="notification_headsup_time_display_minute">分钟前</string>
+    <string name="notification_headsup_time_display_hour">小时前</string>
+    <string name="notification_headsup_time_display_day">天前</string>
+</resources>

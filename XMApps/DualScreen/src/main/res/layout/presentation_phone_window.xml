@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="300px"
+    android:orientation="vertical"
+    android:background="#fff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10px"
+            android:singleLine="true"
+            android:text="李小明"
+            android:textColor="#000"
+            android:textSize="32px" />
+
+        <TextView
+            android:id="@+id/tv_phone_number"
+            android:layout_width="320px"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="20px"
+            android:gravity="center"
+            android:text="13632634091"
+            android:textColor="#000"
+            android:textSize="30px" />
+
+        <RelativeLayout
+            android:layout_width="300px"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="60px">
+
+            <TextView
+                android:id="@+id/tv_left_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:gravity="center"
+                android:text="@string/hand_on"
+                android:textColor="#000"
+                android:textSize="32px" />
+
+            <TextView
+                android:id="@+id/tv_right_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:text="@string/hand_up"
+                android:textColor="#000"
+                android:textSize="32px" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

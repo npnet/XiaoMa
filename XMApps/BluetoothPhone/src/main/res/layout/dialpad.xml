@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dialpad_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:columnCount="7">
+
+    <Space
+        android:layout_width="0px"
+        android:layout_height="@dimen/dialpad_vertical_spacing"
+        android:layout_columnSpan="7" />
+
+    <!-- Row 1 -->
+    <com.xiaoma.bluetooth.phone.common.views.DialpadButton
+        android:id="@+id/one"
+        style="@style/NumberKeyButtonStyle"
+        app:numberText="@string/one" />
+
+    <Space
+        android:layout_width="@dimen/dialpad_horizontal_spacing"
+        android:layout_height="0px" />
+
+    <com.xiaoma.bluetooth.phone.common.views.DialpadButton
+        android:id="@+id/two"
+        style="@style/NumberKeyButtonStyle"
+        app:letterText="@string/two_letters"
+        app:numberText="@string/two" />
+
+    <Space
+        android:layout_width="@dimen/dialpad_horizontal_spacing"
+        android:layout_height="0px" />
+
+    <com.xiaoma.bluetooth.phone.common.views.DialpadButton
+        android:id="@+id/three"
+        style="@style/NumberKeyButtonStyle"
+        app:letterText="@string/three_letters"
+        app:numberText="@string/three" />
+
+    <Space
+        android:layout_width="@dimen/dialpad_horizontal_spacing"
+        android:layout_height="0px" />
+
+    <com.xiaoma.bluetooth.phone.common.views.DialpadButton
+        android:id="@+id/delete"
+        style="@style/BigDialpadKeyButtonStyle"
+        android:layout_rowSpan="3"
+        android:background="@drawable/bg_delete_key"
+        app:image="@drawable/icon_delete" />
+
+
+    <Space
+        android:layout_width="0px"
+        android:layout_height="@dimen/dialpad_vertical_spacing"
+        android:layout_columnSpan="6" />
+
+
+    <!-- Row 2 -->
+    <com.xiaoma.bluetooth.phone.common.views.DialpadButton
+        android:id="@+id/four"
+        style="@style/NumberKeyButtonStyle"
+        app:letterText="@string/four_letters"
+        app:numberText="@string/four" />
+
+    <Space
+        android:layout_width="@dimen/dialpad_horizontal_spacing"
+        android:layout_height="0px" />
+
+    <com.xiaoma.bluetooth.phone.common.views.DialpadButton
+        android:id="@+id/five"
+        style="@style/NumberKeyButtonStyle"
+        app:letterText="@string/five_letters"
+        app:numberText="@string/five" />
+
+    <Space
+        android:layout_width="@dimen/dialpad_horizontal_spacing"
+        android:layout_height="0px" />
+
+    <com.xiaoma.bluetooth.phone.common.views.DialpadButton
+        android:id="@+id/six"
+        style="@style/NumberKeyButtonStyle"
+        app:letterText="@string/six_letters"
+        app:numberText="@string/six" />
+
+    <Space
+        android:layout_width="@dimen/dialpad_horizontal_spacing"
+        android:layout_height="0px" />
+
+    <Space
+        android:layout_width="0px"
+        android:layout_height="@dimen/dialpad_vertical_spacing"
+        android:layout_columnSpan="7" />
+
+    <!-- Row 3 -->
+    <com.xiaoma.bluetooth.phone.common.views.DialpadButton
+        android:id="@+id/seven"
+        style="@style/NumberKeyButtonStyle"
+        app:letterText="@string/seven_letters"
+        app:numberText="@string/seven" />
+
+    <Space
+        android:layout_width="@dimen/dialpad_horizontal_spacing"
+        android:layout_height="0px" />
+
+    <com.xiaoma.bluetooth.phone.common.views.DialpadButton
+        android:id="@+id/eight"
+        style="@style/NumberKeyButtonStyle"
+        app:letterText="@string/eight_letters"
+        app:numberText="@string/eight" />
+
+    <Space
+        android:layout_width="@dimen/dialpad_horizontal_spacing"
+        android:layout_height="0px" />
+
+    <com.xiaoma.bluetooth.phone.common.views.DialpadButton
+        android:id="@+id/nine"
+        style="@style/NumberKeyButtonStyle"
+        app:letterText="@string/nine_letters"
+        app:numberText="@string/nine" />
+
+    <Space
+        android:layout_width="@dimen/dialpad_horizontal_spacing"
+        android:layout_height="0px" />
+
+    <com.xiaoma.bluetooth.phone.common.views.DialpadButton
+        android:id="@+id/call"
+        style="@style/BigDialpadKeyButtonStyle"
+        android:layout_rowSpan="3"
+        android:background="@drawable/bg_call_key"
+        app:numberText="@string/dial"
+        app:textColor="#fff"
+        app:textSize="32px" />
+
+    <Space
+        android:layout_width="0px"
+        android:layout_height="@dimen/dialpad_vertical_spacing"
+        android:layout_columnSpan="6" />
+
+
+    <!-- Row 4 -->
+    <com.xiaoma.bluetooth.phone.common.views.DialpadButton
+        android:id="@+id/star"
+        style="@style/NumberKeyButtonStyle"
+        app:numberText="@string/star" />
+
+    <Space
+        android:layout_width="@dimen/dialpad_horizontal_spacing"
+        android:layout_height="0px" />
+
+    <com.xiaoma.bluetooth.phone.common.views.DialpadButton
+        android:id="@+id/zero"
+        style="@style/NumberKeyButtonStyle"
+        app:letterText="@string/zero_letters"
+        app:numberText="@string/zero" />
+
+    <Space
+        android:layout_width="@dimen/dialpad_horizontal_spacing"
+        android:layout_height="0px" />
+
+    <com.xiaoma.bluetooth.phone.common.views.DialpadButton
+        android:id="@+id/pound"
+        style="@style/NumberKeyButtonStyle"
+        app:numberText="@string/pound" />
+
+    <Space
+        android:layout_width="@dimen/dialpad_horizontal_spacing"
+        android:layout_height="0px" />
+
+</GridLayout>

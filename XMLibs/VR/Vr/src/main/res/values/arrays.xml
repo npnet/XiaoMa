@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="voice_name">
+        <item>普通话</item>
+        <item>男普通话</item>
+        <item>粤语</item>
+        <item>四川话</item>
+        <item>东北话</item>
+        <item>河南话</item>
+        <item>湖南话</item>
+        <item>陕西话</item>
+    </string-array>
+
+</resources>

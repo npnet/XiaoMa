@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    >
+        <com.xiaoma.ui.StateControl.StateView
+            android:id="@+id/music_rec_sv"
+            android:layout_width="@dimen/music_rec_width"
+            android:layout_height="@dimen/music_rec_height">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/rec_bg_frame_right">
+
+                <ImageView
+                    android:id="@+id/iv_music_loading"
+                    android:layout_width="@dimen/music_loading_width"
+                    android:layout_height="@dimen/music_loading_height"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/music_rec_anim_top"
+                    android:src="@drawable/icon_rec_loading" />
+
+                <TextView
+                    android:id="@+id/tv_music_rec_iat"
+                    android:text="@string/in_loading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_music_loading"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/music_rec_iat_margin_top"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/music_rec_iat_text_size" />
+
+            </RelativeLayout>
+        </com.xiaoma.ui.StateControl.StateView>
+</LinearLayout>

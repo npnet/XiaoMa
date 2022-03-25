@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/width_item_recommend"
+    android:layout_height="400px"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/item_similar_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_online_mar_top"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:maxEms="7"
+        android:singleLine="true"
+        android:textSize="@dimen/font_online_title" />
+
+    <com.xiaoma.ui.view.ReflectionImageView
+        android:id="@+id/item_similar_iv"
+        android:layout_width="@dimen/width_item_recommend_iv"
+        android:layout_height="@dimen/height_item_recommend_iv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/size_online_iv_margin_top"
+        android:layout_below="@+id/item_similar_tv"
+        android:scaleType="fitXY"
+        app:reflectionHeight="64px"
+        app:reflectionPadding="16px" />
+
+    <TextView
+        android:id="@+id/similar_tv_singer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+       android:layout_marginBottom="26px"
+        android:layout_alignParentBottom="true"
+        android:ellipsize="end"
+        android:maxEms="7"
+        android:singleLine="true"
+        android:textColor="@color/search_key_word"
+        android:textSize="@dimen/font_search_text_small_plus" />
+</RelativeLayout>

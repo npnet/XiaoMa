@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="setting_menu">
+        <item>Bluetooth</item>
+        <item>WIFI </item>
+        <item>Sound</item>
+        <item>Vehicle</item>
+        <item>General</item>
+        <item>Voice</item>
+    </string-array>
+    <string-array name="setting_drive_menu">
+        <item>Safety Setting</item>
+        <item>Cozy set</item>
+        <item>Light Setting</item>
+        <item>State monitoring</item>
+    </string-array>
+    <string-array name="setting_other_menu">
+        <item>Display Setting </item>
+        <item>Theme </item>
+        <item>Language &#038; Time </item>
+        <item>Version Info</item>
+        <item>Factory Reset</item>
+    </string-array>
+    <string-array name="sound_settings_menu">
+        <item>Volume</item>
+        <item>Sound Effects</item>
+    </string-array>
+    <string-array name="wifi_settings_menu">
+        <item>WiFi Network</item>
+        <item>WiFi Hotspot</item>
+    </string-array>
+
+    <string-array name="app_package">
+        <item>com.xiaoma.bluetooth.phone</item>
+        <item>com.xiaoma.app</item>
+        <item>com.xiaoma.carpark</item>
+        <item>com.xiaoma.club</item>
+        <item>com.qiming.fawcard.synthesize</item>
+        <item>com.xiaoma.launcher</item>
+        <item>com.xiaoma.motorcade</item>
+        <item>com.xiaoma.music</item>
+        <item>com.xiaoma.personal</item>
+        <item>com.xiaoma.service</item>
+        <item>com.xiaoma.shop</item>
+        <item>com.xiaoma.xkan</item>
+        <item>com.xiaoma.xting</item>
+        <item>com.xylink.mc.leopaard.bab2018</item>
+    </string-array>
+</resources>

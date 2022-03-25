@@ -1,0 +1,26 @@
+# StateView
+    - 页面多状态切换控制(加载中，空数据，网络错误，点击重试等)
+## 使用方式
+    - 方式一，布局添加(推荐)
+        - app:emptyView="@layout/status_empty_view"
+        - app:errorView="@layout/status_error_view"
+        - app:loadingView="@layout/status_loading_view"
+        - app:noNetworkView="@layout/status_no_network_view"
+    - 方式二，代码添加
+        - StateView.wrap(ContentView)
+## 主要API
+    - StateView.showEmpty();
+    - StateView.showError();
+    - StateView.showLoading();
+    - StateView.showNoNetwork();
+    - StateView.showContent();
+    - StateView.setOnRetryClickListener(OnRetryClickListener onRetryClickListener)
+- 自定义(XXX可为Empty|Error|NoNetWork)
+    - StateView.setTextColor();
+    - StateView.setTextSize();
+    - StateView.set(XXX)View();
+    - StateView.set(XXX)Text();
+    - StateView.set(XXX)Image();
+    - StateView.set(XXX)RetryText();
+    - StateView.setRetryTextColor();
+    - StateView.setRetryTextSize();

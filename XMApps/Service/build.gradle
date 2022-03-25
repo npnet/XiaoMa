@@ -1,0 +1,37 @@
+apply plugin: 'com.android.application'
+apply plugin: 'android-aspectjx'
+apply from: "$rootDir$Android"
+apply from: "$rootDir$Modules"
+apply from: "$rootDir$Tinker"
+
+android application('com.xiaoma.service')
+dependencies dependency(Service)
+
+android {
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+}
+
+dependencies {
+    implementation "com.android.support.constraint:constraint-layout:${CONSTRAINT_LAYOUT}"
+    implementation "com.github.CymChad:BaseRecyclerViewAdapterHelper:${BASE_RECYCLERVIEW_ADAPTER_HELPER}"
+    implementation "org.simple:androideventbus:$EVENT_BUS_VERSION"
+
+}
+
+tinker {
+    appClassName 'com.xiaoma.service.ServiceApp'
+    buildPatch {
+        baseApkPath ''
+        baseResMapping ''
+        baseMapping ''
+    }
+    patchDesc {
+        baseVersion ''
+        patchVersion 0
+        patchMessage ''
+    }
+}

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/store_bg">
+
+
+    <FrameLayout
+        android:id="@+id/pet_base_layout"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/navigation_linear"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <include layout="@layout/pet_page_status_view" />
+
+
+    <LinearLayout
+        android:id="@+id/iv_close_layout"
+        android:layout_width="@dimen/size_pet_page_close_image"
+        android:layout_height="@dimen/size_pet_page_close_image"
+        android:layout_marginStart="@dimen/size_close_icon_margin_start"
+        android:layout_marginTop="@dimen/size_close_icon_margin_top"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_pet_base_close"
+            android:layout_width="@dimen/size_close_icon"
+            android:layout_height="@dimen/size_close_icon"
+            android:src="@drawable/pet_scale_icon" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/navigation_linear"
+        android:layout_width="@dimen/width_navigation_bar_left"
+        android:layout_height="match_parent"
+        android:background="@drawable/navi_bg_selector"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/pet_navigation_back"
+            android:layout_width="@dimen/size_navigation_image"
+            android:layout_height="@dimen/size_navigation_image"
+            android:padding="@dimen/size_navigation_image_padding"
+            android:src="@drawable/navi_back" />
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

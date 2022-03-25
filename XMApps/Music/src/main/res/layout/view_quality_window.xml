@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_playlist"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/view_quality_window_back"
+        android:layout_width="172px"
+        android:layout_height="match_parent"
+        android:background="@drawable/navi_bg_left">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/icon_playlist_back" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="10px"
+        android:layout_height="match_parent"
+        android:background="@drawable/navi_bg_right" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/size_view_playlist_margin"
+        android:layout_marginTop="@dimen/size_view_playlist_margin"
+        android:layout_marginEnd="@dimen/size_view_playlist_margin">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/music_quality"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_search_text_big" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/quality_window_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="100px"/>
+
+        <!--<ImageView-->
+            <!--android:layout_width="150px"-->
+            <!--android:layout_height="150px"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:background=""/>-->
+
+    </RelativeLayout>
+</LinearLayout>

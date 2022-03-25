@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:drawable="@drawable/clean_cache1"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/clean_cache2"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/clean_cache3"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/clean_cache4"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/clean_cache5"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/clean_cache6"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/clean_cache7"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/clean_cache8"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/clean_cache9"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/clean_cache10"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/clean_cache11"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/clean_cache12"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/clean_cache13"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/clean_cache14"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/clean_cache15"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/clean_cache16"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/clean_cache17"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/clean_cache18"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/clean_cache19"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/clean_cache20"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/clean_cache21"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/clean_cache22"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/clean_cache23"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/clean_cache24"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/clean_cache25"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/clean_cache26"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/clean_cache27"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/clean_cache28"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/clean_cache29"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/clean_cache30"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/clean_cache31"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/clean_cache32"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/clean_cache33"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/clean_cache34"
+        android:duration="50" />
+
+</animation-list>

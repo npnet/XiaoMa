@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/map_item_height"
+    android:layout_marginLeft="@dimen/map_item_margin_left"
+    android:layout_marginRight="@dimen/map_item_margin_right"
+    android:background="@drawable/bg_item_location">
+
+    <ImageView
+        android:id="@+id/iv_location"
+        android:layout_width="30px"
+        android:layout_height="30px"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/map_item_iv_location_margin_left"
+        android:layout_marginTop="@dimen/map_item_tv_address_text_size2"
+        android:src="@drawable/icon_location_sign" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/map_item_tv_name_margin_left"
+        android:layout_marginTop="@dimen/map_item_tv_name_margin_top"
+        android:layout_toRightOf="@+id/iv_location"
+        android:textColor="@color/white"
+        android:textSize="@dimen/map_item_tv_name_text_size"
+        tools:text="粤美特大厦" />
+
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_width="600px"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/iv_location"
+        android:layout_below="@+id/tv_name"
+        android:layout_marginLeft="@dimen/map_item_tv_address_margin_left"
+        android:layout_toRightOf="@+id/iv_location"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="@color/map_color_gray"
+        android:textSize="@dimen/map_item_tv_address_text_size"
+        tools:text="深圳市南山区粤海街道高新技术产业园高新南七道1号" />
+
+
+
+</RelativeLayout>

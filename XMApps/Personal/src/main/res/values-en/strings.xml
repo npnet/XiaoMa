@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="module_desc">Personal</string>
+    <string name="app_name">个人中心</string>
+    <string name="cancel">cancel</string>
+    <string name="confirm">confirm</string>
+    <string name="memory_first_time_title">还未进行车辆记忆</string>
+    <string name="memory_not_first_time_title">已添加记忆项</string>
+    <string name="memory_rentry">重新记忆</string>
+    <string name="memory_begain">开始记忆</string>
+    <string name="loading_error">Abnormal condition, loading failed</string>
+    <string name="progress_loading">Loading...</string>
+
+
+    <string name="car_coin_title">My coin</string>
+    <string name="task_center_title">Task</string>
+    <string name="mine_order_title">My order</string>
+    <string name="car_info_title">Car details</string>
+    <string name="account_setup_title">Account</string>
+    <string name="feedback_title">Feedback</string>
+    <string name="new_mode_title">Beginner</string>
+    <string name="qr_code_manager_title">QR code</string>
+
+
+    <!-- personal info-->
+    <string name="personal_name_tip">name: </string>
+    <string name="personal_sex_tip">sex: </string>
+    <string name="personal_age_tip">age: </string>
+    <string name="personal_name">please enter your name</string>
+    <string name="personal_sex">sex</string>
+    <string name="personal_age">出生日期</string>
+    <string name="mine_car_coin">My coin</string>
+
+    <!--feature category-->
+    <string name="voice_manager">声纹管理</string>
+    <string name="task_center">Mission Center</string>
+    <string name="car_info">Vehicle Information</string>
+    <string name="car_memory">车辆记忆</string>
+    <string name="feed_back">Feedback</string>
+    <string name="account_edit_status">Edit</string>
+    <string name="account_edit_finish">完成</string>
+
+
+    <!-- feedback -->
+    <string name="feedback_title_content">Welcome to the feedback center, we will solve the problem as soon as possible.</string>
+    <string name="feedback_mine_message">My message</string>
+    <string name="feedback_please_desc_question">Please describe your problem</string>
+    <string name="feedback_select_question_category">Please select a question category</string>
+    <string name="please_say_question">请说出您的问题~</string>
+    <string name="please_say_question_voice">请说出您的问题</string>
+    <string name="thank_feedback_desc">Thank you for your feedback, we have received</string>
+    <string name="go_to_feedback_home">Confirm</string>
+    <string name="solution_question"> The issue you submitted has been resolved</string>
+    <string name="non_message">No message yet</string>
+    <string name="say_you_advice">Tell us about your feelings~</string>
+    <string name="feedback_content_limit_hint">Problem description is greater than or equal to 5 and less than 200 words</string>
+    <string name="test">测试数据</string>
+    <string name="task_count">%1$d/%2$d次</string>
+    <string name="sign_in_day">打卡%1$d/%2$d次</string>
+    <string name="content_format_error">不可发送无内容消息</string>
+    <string name="satisfaction">Yes</string>
+    <string name="non_satisfaction">No</string>
+
+
+    <!--car info-->
+    <string name="car_number_province">京,津,冀,晋,蒙,辽,吉,黑,沪,苏,浙,皖,闽,赣,鲁,豫,鄂,湘,粤,桂,琼,渝,川,贵,云,藏,陕,甘,青,宁,新</string>
+    <string name="car_number_area">A,B,C,D,E,F,G,H,J,K,L,M,N,P,Q,R,S,T,U,V,W,X,Y,Z</string>
+    <string name="car_number_hint">enter letters or numbers</string>
+    <string name="network_error_retry">Network exception, please try again later</string>
+    <string name="modifying">modifying</string>
+    <string name="modify_success">Successfully modified</string>
+    <string name="modify_failed">modify failed</string>
+    <string name="man">male</string>
+    <string name="woman">female</string>
+    <string name="change_car_plate">plate number</string>
+    <string name="car_model">Model: </string>
+    <string name="car_frame_number">Frame number: </string>
+    <string name="car_plate_number">License plate number: </string>
+    <string name="engine_number">Engine number: </string>
+    <string name="sex">sex</string>
+    <string name="nameEmpty">姓名不能为空！</string>
+    <string name="user_not_exist">用户不存在</string>
+    <string name="birth_day">date of birth</string>
+    <string name="dialog_personal_age_year">Y</string>
+    <string name="dialog_personal_age_month">M</string>
+    <string name="dialog_personal_age_day">D</string>
+
+    <!-- 账户设置 -->
+    <string name="password_manager">Password Management</string>
+    <string name="key_manager">Key Management</string>
+    <string name="account_manager">Account Management</string>
+    <string name="modify_password">Change Password</string>
+    <string name="enter_manager">management</string>
+    <string name="next_text">Next step</string>
+    <string name="bluetooth_key">BluetoothKey</string>
+    <string name="normal_key">NormalKey</string>
+    <string name="unbind">Unbind</string>
+    <string name="login_text">Login</string>
+    <string name="delete_text">delete</string>
+    <string name="not_create_child_account">暂未创建子账户</string>
+    <string name="password_manager_desc">For the security of your account, please update your password frequently.</string>
+    <string name="key_manager_key_desc">Bind Key for quick login to your account</string>
+    <string name="account_manager_desc">Manage operations on accounts</string>
+    <string name="plate_number_invalid">The license plate is invalid, please re-enter</string>
+    <string name="user_name_exist">username already exists</string>
+    <string name="car_plate_exist">license plate number already exists</string>
+    <string name="input_password_then_modify">You need to enter a password before you can modify it.</string>
+    <string name="input_four_passwords">Need to enter a 4-digit new password</string>
+    <string name="input_four_passwords_again">Please enter the new 4-digit password again.</string>
+    <string name="setup_new_password">Set Password</string>
+    <string name="deleted_account">Account has been logged out</string>
+    <string name="one_again_input">ReEnter</string>
+    <string name="two_password_not_same">The password is different twice, please reset it</string>
+
+    <string name="input_password_enter_account_manager">need to enter a password to manage your account</string>
+
+
+    <string name="login_success_by_key">钥匙登录成功</string>
+    <string name="login_fail_by_key">钥匙登录失败</string>
+    <string name="not_phone_number">未找到商家电话号码</string>
+
+    <!--car_coin-->
+    <string name="total_car_coin">Balance:</string>
+    <string name="no_car_coin_record">No record yet!</string>
+    <string name="car_coin_record">transactions</string>
+    <string name="my_car_coin">My coin</string>
+
+    <!--task center-->
+    <string name="pls_continue_sign">Please insist on punching in.</string>
+    <string name="sign_success_tomorrow_get">You have already punched in. You will get %1$d tomorrow.</string>
+    <string name="continue_to_get_more_coin">Continuous punching can get more rewards!</string>
+    <string name="finish_state">%1$d/%2$d次</string>
+    <string name="daily_task">Daily mission</string>
+    <string name="grow_up_task">Newbie Task</string>
+    <string name="activity_task">Activity task</string>
+    <string name="task_record">Task record</string>
+    <string name="signing">打卡中…</string>
+    <string name="app_not_install">应用未安装</string>
+    <string name="qr_change_avatar">微信扫描二维码，自定义头像</string>
+
+
+    <!-- 二维码管理 -->
+    <string name="prompt_title">Prompt</string>
+    <string name="bind_hologram_title">全息奔腾APP账号绑定</string>
+    <string name="bind_hologram_step_one">下载手机APP</string>
+    <string name="bind_hologram_step_two">使用手机APP扫码</string>
+    <string name="bind_hologram_step_three">绑定完成</string>
+    <string name="load_install_after">下载安装后进入\n“我的-绑定车机账号”页面</string>
+    <string name="scan_qr_code_bind_hologram">扫描此二维码\n进行账号绑定</string>
+    <string name="in_phone_click_confirm_bind">手机APP内\n点击 “确认绑定” 后完成</string>
+    <string name="cancel_bound_account">解绑</string>
+    <string name="confirm_cancel_bound">确认解绑</string>
+    <string name="cancel_bound_account_desc">解除与全息奔腾APP账号绑定后，将清空已\n上传的自定义3D形象数据</string>
+    <string name="number_key">数字钥匙</string>
+    <string name="remote_controller">远程控制</string>
+    <string name="hologram_text">全息奔腾</string>
+    <string name="hologram_bind_success">绑定成功</string>
+    <string name="hologram_bind_failed">绑定失败，请稍后再试</string>
+    <string name="hologram_unbind_success">解绑成功</string>
+    <string name="hologram_unbind_failed">解绑失败,请稍后再试</string>
+    <string name="hologram_binding">正在绑定</string>
+    <string name="hologram_bound_phone_text">已绑定账号:%1$s</string>
+
+    <!-- 我的订单 -->
+    <string name="order_status_wait_pay">Order not paid,please scan the code</string>
+    <string name="order_status_expired">The order has expired,please reschedule...</string>
+    <string name="order_status_wait_feedback">Submitted reservation information for business feedback</string>
+    <string name="order_status_failed">Reserve failed,not enough room,the deposit will be returned later</string>
+    <string name="order_status_predestine_success">Successful reservation</string>
+    <string name="order_status_predestine_cancel">Reservation cancelled</string>
+    <string name="order_status_non_room">Reserve failed,not enough room,the deposit will be returned later</string>
+    <string name="order_status_film_pay_success">预订成功，入场凭证已发送至您手机~</string>
+    <string name="order_wait_pay">To be paid</string>
+    <string name="order_wait_use">to be confirmed</string>
+    <string name="order_completed">finished</string>
+    <string name="order_closed">closed</string>
+    <string name="pay_immediately">pay now</string>
+    <string name="call_phone">dial</string>
+    <string name="navigation_go">Nav</string>
+    <string name="ticket_number">Purchase number of votes</string>
+    <string name="watch_movie_time">观影时间</string>
+    <string name="phone_certificate">Celphone number(ticket accepting)</string>
+    <string name="total_amount">总金额</string>
+    <string name="predestine_hotel_room">预定房间</string>
+    <string name="check_in_check_out_room">入住-退房日期</string>
+    <string name="after_scan_code">扫码支付后</string>
+    <string name="contact_way">联系方式</string>
+    <string name="not_can_cancel">不可取消</string>
+    <string name="not_can_cancel_toast">该订单无法取消</string>
+    <string name="phone">电话</string>
+    <string name="navigation">导航</string>
+    <string name="re_predestine">重新预定</string>
+    <string name="cancel_predestine">Cancel the reservation</string>
+    <string name="hotel_policy_title_desc">Hotel information may be adjusted, please refer to the actual occupancy</string>
+    <string name="hotel_policy">Hotel policy：</string>
+    <string name="in_out_hotel_desc">入离时间</string>
+    <string name="cancel_hotel_policy">取消政策</string>
+    <string name="hotel_child_policy">儿童及加床政策</string>
+    <string name="hotel_pet_title">pet</string>
+    <string name="order_dialog_prompt">prompt</string>
+    <string name="order_dialog_cancel_predestine_desc">确认取消订单？</string>
+    <string name="order_dialog_cancel_predestine_content">取消预订后，预订金额会返回原账户</string>
+    <string name="order_dialog_call_phone_desc">确认拨打电话？</string>
+    <string name="order_dialog_call_phone">拨打电话</string>
+    <string name="order_type_skin">系统皮肤</string>
+    <string name="order_type_sku">语音音色</string>
+    <string name="order_type_traffic">流量商城</string>
+    <string name="order_type_vehicle">整车音效</string>
+    <string name="order_type_hologram">全息形象-角色名称-服饰/技能名称</string>
+
+
+    <!-- 我的订单列表item string format -->
+    <string name="item_pay_amount"><Data><![CDATA[Payment amount：<font color="#ffd676" size="28">%1$s" "</font>yuan]]></Data></string>
+    <string name="item_car_coin_pay_amount"><Data><![CDATA[支付金额：<font color="#ffd676" size="28">%1$s" "</font>车币]]></Data></string>
+    <string name="item_order_create_date">Creation time：%1$s</string>
+    <string name="item_hotel_date">入住时间：%1$s  共%2$d天 %3$s间</string>
+    <string name="item_Film_date">%1$s月%2$s日</string>
+    <string name="movie_ticket_number">%1$s张</string>
+    <string name="movie_ticket_unit_price">￥%1$s/人</string>
+    <string name="hotel_room_unit_price">￥%1$s/间</string>
+    <string name="hotel_room">%1$s间</string>
+    <string name="preview_amount">￥%1s</string>
+    <string name="pay_timer_interval">%1$s:%2$s</string>
+    <string name="item_pay_remain_time">Please complete payment within %1$s minutes</string>
+    <string name="can_cancel_predestine">%1$s 18:00前都可取消预定</string>
+    <string name="mall_product_category">商品分类：%1$s</string>
+    <string name="order_number_text">Order number：%1$s</string>
+    <string name="not_pay_finish">未发现支付完成，请稍后重试</string>
+
+    <string name="bind">bind</string>
+    <string name="unbind_key_error">Unbind the key, please try again</string>
+    <string name="unbind_success">Unbind successfully</string>
+    <string name="change_passwd_success">Password reset complete</string>
+    <string name="name">name</string>
+    <string name="unknow">未知</string>
+    <string name="no_task">No task yet.</string>
+    <string name="face_title">Face recognition</string>
+    <string name="face_desc">Bind face recognition for quick login to your account</string>
+    <string name="state_loading">正在获取&#8230;</string>
+    <string name="state_loading_fail">获取失败</string>
+    <string name="hard_to_loading">Loading &#8230;</string>
+    <string name="personal_info">Modify</string>
+    <string name="query_delete_order">是否确定删除该订单</string>
+    <string name="fail_to_delete">删除失败</string>
+    <string name="hint_shop_order_not_found">商城订单暂未开通</string>
+    <string name="action_submit">submit</string>
+
+    <string name="question_by_function">Function use</string>
+    <string name="question_by_suggestion">Suggestions</string>
+    <string name="question_by_other">Others</string>
+
+    <string name="item_new_guider">Beginner</string>
+
+    <string name="unit_year">年</string>
+
+    <string name="hint_voice_print_not_add">还未添加声纹</string>
+    <string name="hint_voice_print_added">已添加声纹</string>
+    <string name="hint_add_voice_print">添加声纹</string>
+    <string name="hint_record_voice_print">重新录制声纹</string>
+    <string name="hint_retry_for_register_fail">注册失败，请重试</string>
+    <string name="query_add_voice_print">是否已添加声纹</string>
+
+    <string name="hint_not_select_comments">未选择评论</string>
+    <string name="hint_submit_success">提交成功</string>
+    <string name="feedback_response">关于您在当天下午3:20发送的【体验问题】，我们已经解决，感谢您的反馈.关于您在当天下午3:20发送的【体验问题】，我们已经解决，感谢您的反馈.</string>
+    <string name="query_satisfy_to_service">Are you satisfied with the service of the product?</string>
+    <string name="reload">Reloading</string>
+
+    <string name="feedback_mic_dismiss">当前录音通道已被占用，暂不可使用</string>
+    <string name="hint_fail_receive_voice">转译异常，请稍后重试</string>
+    <string name="hint_receiving_voice">正在收音</string>
+
+    <string name="query_delete_account">Whether to cancel the account</string>
+    <string name="hint_delete_account_result">After cancellation, the key bound to the account will be unbounded synchronously</string>
+    <string name="hint_not_record_car">还未进行车辆记忆</string>
+    <string name="start_record_car_info">开始记忆</string>
+    <string name="hint_guide_record_car">请手动设置您需要记忆的车辆功能， 选中后下次登录将自动为您调节至选中的功能状态（可多选）</string>
+    <string name="hint_record_items">以下功能将自动记录</string>
+    <string name="delete_record">删除记录</string>
+    <string name="hotel_name">Hotel name</string>
+    <string name="house_type_good_air_condition">雅致房（空气清晰房专享）</string>
+    <string name="pls_pay_inside_15_minute">Please complete payment within 15 minutes</string>
+
+    <string name="unit_row">排</string>
+    <string name="unit_seat">座</string>
+    <string name="unit_yuan">元</string>
+
+    <string name="select_negative_cancel">算了</string>
+    <string name="hint_fail_to_cancel_booked">取消预定失败</string>
+    <string name="hint_pls_pay_for_unhandle_order">Order not paid,please scan the code</string>
+    <string name="preference_house">特惠大床房</string>
+    <string name="order_room_service">不含早餐 | 无窗 | 有WiFi</string>
+    <string name="oer_content_author">维美娜国际公寓酒店（世界之窗店）</string>
+    <string name="hint_in_out_time">入住时间 14:00以后 离店时间12:00以前</string>
+    <string name="hint_policy_cancel">不同类型的客房附带不用的取消预定和预先付费政策选择上述客房时，请参“阅客房政策</string>
+    <string name="hint_policy_forbid">不接受18岁以下的客人单独入住，不接受18岁以下客人在无监护人陪同的情况下住</string>
+    <string name="state_have_paid">Paid already</string>
+    <string name="serial_no">序列号</string>
+    <string name="ticket_code">12431232312</string>
+    <string name="get_ticket_code">取票码</string>
+    <string name="sample_ticket_code">E1231241243</string>
+    <string name="enter_code">入场码</string>
+    <string name="sample_enter_code">Q54756756767</string>
+    <string name="guide_app_name">Personal Center</string>
+    <string name="guide_pensonal_description">Personal Center is the agg-\nregation of user information\nLand,including car currency\naccounts,task center, order\ncenter,vehicle information,\naccount setting and feedb-\nack functions,these are all\nreflected in the Personal\nCenter.</string>
+    <string name="guide_task">Task Center </string>
+    <string name="guide_task_description">Complete punching in task center to get points quickly. \n\nAfter punching the card,it will show that the card has been punched\nsuccessfully and give the corresponding prompt. </string>
+    <string name="guide_sign">Punch</string>
+    <string name="guide_task_record">Task Record</string>
+    <string name="guide_task_record_description">The list shows what tasks have been com-\npleted before.\n\nIt also includes the completion time and\nthe corresponding obtained score.</string>
+    <string name="guide_task_list">Task list </string>
+    <string name="guide_task_list_description">Tasks are divided into daily tasks, growth tasks and activity tasks,\ndaily tasks are updated daily, users can only complete growth task\none time.Activity Tasks are issued during the activity period at the\nTask Center.</string>
+    <string name="delete_fail_pls_retry">User Cancellation failed, please try again</string>
+    <string name="jump_error">Jump task failed</string>
+    <string name="iccid_number">ICCID：</string>
+    <string name="choose_other_account">Other accounts</string>
+    <string name="cancellation">Cancellation</string>
+    <string name="key_bind_success">Key binding success</string>
+    <string name="confirm_bind_key">Whether to bind the key used to open the door to the login account</string>
+    <string name="no_that_key">No key information detected</string>
+    <string name="already_bind_key">The current account was bound to the key</string>
+    <string name="other_user_bound">The current key is already bound to another account</string>
+    <string name="bind_success">Binding success</string>
+    <string name="car_brand">一汽奔腾-T99</string>
+    <string name="go_to_finish">Go to finish</string>
+    <string name="has_finish">finished</string>
+
+    <string name="use_alipay_wechat">Use Alipay, WeChat scan to pay</string>
+    <string name="welcome_to_my_msg">You have %d unread message at present</string>
+</resources>

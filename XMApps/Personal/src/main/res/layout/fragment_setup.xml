@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="508px"
+        android:layout_height="wrap_content"
+        android:paddingStart="40px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_user_avatar_board"
+            android:layout_width="@dimen/width_account_avatar"
+            android:layout_height="@dimen/height_account_avatar"
+            android:src="@drawable/avatar_board_pro"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_user_avatar"
+            app:layout_constraintEnd_toEndOf="@+id/iv_user_avatar"
+            app:layout_constraintStart_toStartOf="@+id/iv_user_avatar"
+            app:layout_constraintTop_toTopOf="@+id/iv_user_avatar" />
+
+        <ImageView
+            android:id="@+id/iv_user_avatar"
+            android:layout_width="@dimen/width_account_avatar"
+            android:layout_height="@dimen/height_account_avatar"
+            android:padding="@dimen/size_user_avatar_padding"
+            android:src="@drawable/icon_man_pro"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/iv_user_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_user_avatar_board"
+            app:layout_constraintEnd_toEndOf="@+id/iv_user_avatar_board"
+            tools:src="@drawable/man" />
+
+
+        <TextView
+            android:id="@+id/tv_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_sub_manager_text_margin_top"
+            android:textSize="@dimen/font_sub_manager_name"
+            app:layout_constraintEnd_toEndOf="@+id/iv_user_avatar"
+            app:layout_constraintStart_toStartOf="@+id/iv_user_avatar"
+            app:layout_constraintTop_toBottomOf="@+id/iv_user_avatar_board"
+            tools:text="杨子枫" />
+
+        <Button
+            android:id="@+id/enter_account_manager_bt"
+            style="@style/common_button"
+            android:layout_marginTop="@dimen/size_sub_manager_delete_margin_top"
+            android:text="@string/choose_other_account"
+            app:layout_constraintEnd_toEndOf="@+id/iv_user_avatar"
+            app:layout_constraintStart_toStartOf="@+id/iv_user_avatar"
+            app:layout_constraintTop_toBottomOf="@+id/tv_user_name" />
+
+
+        <Button
+            android:id="@+id/bt_delete_user"
+            style="@style/common_button"
+            android:background="@drawable/selector_delete_user_button"
+            android:layout_marginTop="@dimen/size_sub_manager_delete_margin_top"
+            android:text="@string/cancellation"
+            app:layout_constraintEnd_toEndOf="@id/iv_user_avatar"
+            app:layout_constraintStart_toStartOf="@id/iv_user_avatar"
+            app:layout_constraintTop_toBottomOf="@id/enter_account_manager_bt" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <View
+        android:id="@+id/view12"
+        android:layout_width="@dimen/width_lighting_vertical_divider"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/size_vertical_divide_margin_top"
+        android:layout_marginBottom="@dimen/size_vertical_divide_margin_bottom"
+        android:background="@drawable/lighting_vertical_divider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/constraintLayout"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/password_manager_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="54px"
+        android:layout_marginEnd="100px"
+        app:layout_constraintBottom_toTopOf="@+id/key_manager_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/view12"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread">
+
+        <TextView
+            android:id="@+id/tv_password_manager_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/password_manager"
+            android:textSize="@dimen/font_setup_title" />
+
+        <TextView
+            android:id="@+id/tv_password_manager_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px"
+            android:layout_below="@+id/tv_password_manager_text"
+            android:layout_alignParentStart="true"
+            android:layout_marginEnd="100px"
+            android:layout_toStartOf="@+id/modify_password_bt"
+            android:lineSpacingMultiplier="1.3"
+            android:maxLines="3"
+            android:text="@string/password_manager_desc"
+            android:textSize="@dimen/font_setup_desc" />
+
+        <Button
+            android:id="@+id/modify_password_bt"
+            android:layout_width="@dimen/width_font_setup_btn"
+            android:layout_height="@dimen/height_font_setup_btn"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/selector_button"
+            android:text="@string/enter_manager"
+            android:textSize="@dimen/font_font_setup_btn" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1px"
+        android:background="@drawable/horizontal_divider"
+        app:layout_constraintBottom_toTopOf="@+id/key_manager_layout"
+        app:layout_constraintEnd_toEndOf="@+id/key_manager_layout"
+        app:layout_constraintStart_toStartOf="@+id/key_manager_layout"
+        app:layout_constraintTop_toBottomOf="@+id/password_manager_layout" />
+
+    <RelativeLayout
+        android:id="@+id/key_manager_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="54px"
+        android:layout_marginEnd="100px"
+        app:layout_constraintBottom_toTopOf="@+id/face_manager_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/view12"
+        app:layout_constraintTop_toBottomOf="@+id/password_manager_layout">
+
+        <TextView
+            android:id="@+id/tv_key_manager_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/key_manager"
+            android:textSize="@dimen/font_setup_title" />
+
+        <TextView
+            android:id="@+id/tv_key_manager_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px"
+            android:layout_below="@+id/tv_key_manager_text"
+            android:layout_alignParentStart="true"
+            android:layout_marginEnd="100px"
+            android:layout_toStartOf="@+id/enter_key_manger_bt"
+            android:lineSpacingMultiplier="1.3"
+            android:maxLines="3"
+            android:text="@string/key_manager_key_desc"
+            android:textSize="@dimen/font_setup_desc" />
+
+        <Button
+            android:id="@+id/enter_key_manger_bt"
+            android:layout_width="@dimen/width_font_setup_btn"
+            android:layout_height="@dimen/height_font_setup_btn"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/selector_button"
+            android:text="@string/enter_manager"
+            android:textSize="@dimen/font_font_setup_btn" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="0dp"
+        android:layout_height="1px"
+        android:background="@drawable/horizontal_divider"
+        app:layout_constraintBottom_toTopOf="@+id/face_manager_layout"
+        app:layout_constraintEnd_toEndOf="@+id/face_manager_layout"
+        app:layout_constraintStart_toStartOf="@+id/face_manager_layout"
+        app:layout_constraintTop_toBottomOf="@+id/key_manager_layout" />
+
+    <RelativeLayout
+        android:id="@+id/face_manager_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="54px"
+        android:layout_marginEnd="100px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/view12"
+        app:layout_constraintTop_toBottomOf="@+id/key_manager_layout">
+
+        <TextView
+            android:id="@+id/tv_face_manager_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/face_title"
+            android:textSize="@dimen/font_setup_title" />
+
+        <TextView
+            android:id="@+id/tv_face_manger_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px"
+            android:layout_below="@+id/tv_face_manager_text"
+            android:layout_alignParentStart="true"
+            android:layout_marginEnd="100px"
+            android:layout_toStartOf="@+id/enter_face_manager_bt"
+            android:lineSpacingMultiplier="1.3"
+            android:maxLines="3"
+            android:text="@string/face_desc"
+            android:textSize="@dimen/font_setup_desc" />
+
+        <Button
+            android:id="@+id/enter_face_manager_bt"
+            android:layout_width="@dimen/width_font_setup_btn"
+            android:layout_height="@dimen/height_font_setup_btn"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/selector_button"
+            android:text="@string/enter_manager"
+            android:textSize="@dimen/font_font_setup_btn" />
+    </RelativeLayout>
+
+    <android.support.constraint.Group
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="view3,face_manager_layout"
+        tools:visibility="visible" />
+
+</android.support.constraint.ConstraintLayout>

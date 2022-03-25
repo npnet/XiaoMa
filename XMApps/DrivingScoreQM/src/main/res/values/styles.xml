@@ -1,0 +1,85 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColor">@color/common_text_color</item>
+        <item name="android:textSize">24dp</item>
+    </style>
+
+    <style name="LoadingDialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="NormalText">
+        <item name="android:textColor">@color/custom_white</item>
+        <item name="android:textSize">26px</item>
+    </style>
+
+    <style name="HighlightText">
+        <item name="android:textColor">@color/highlight_white</item>
+        <item name="android:textSize">34px</item>
+    </style>
+
+    <style name="DialogText">
+        <item name="android:textColor">@color/highlight_white</item>
+        <item name="android:textSize">30sp</item>
+    </style>
+
+    <style name="HistoryListScore">
+        <item name="android:textSize">48px</item>
+        <item name="android:textColor">@color/highlight_white</item>
+    </style>
+
+    <style name="CircularView">
+        <item name="android:layout_width">120px</item>
+        <item name="android:layout_height">120px</item>
+    </style>
+
+    <style name="layoutWidthHeightWrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="HistoryListXNumValue" parent="layoutWidthHeightWrap">
+        <item name="android:textSize">34px</item>
+        <item name="android:textColor">@color/highlight_white</item>
+    </style>
+
+    <style name="HistoryListLinearLayoutXNumValue" parent="layoutWidthHeightWrap">
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <style name="HistoryListXNumText" parent="layoutWidthHeightWrap">
+        <item name="android:textSize">26px</item>
+        <item name="android:textColor">@color/custom_white</item>
+    </style>
+
+    <style name="HistoryListDate">
+        <item name="android:textSize">34px</item>
+        <item name="android:textColor">@color/highlight_white</item>
+    </style>
+
+    <style name="HistoryListTime">
+        <item name="android:textSize">26px</item>
+        <item name="android:textColor">@color/custom_white</item>
+    </style>
+
+    <style name="HistoryListDelete">
+        <item name="android:textSize">30px</item>
+        <item name="android:textColor">@color/highlight_white</item>
+    </style>
+
+    <style name="DialogShield" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+</resources>

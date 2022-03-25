@@ -1,0 +1,7 @@
+<resources>
+    <string name="notification_headsup_time_display_after">tomorrow</string>
+    <string name="notification_headsup_time_display_just">just now</string>
+    <string name="notification_headsup_time_display_minute">Minutes ago</string>
+    <string name="notification_headsup_time_display_hour">Hours before</string>
+    <string name="notification_headsup_time_display_day">Days ago</string>
+</resources>

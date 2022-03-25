@@ -1,0 +1,835 @@
+// 新增 AppModule 步骤:
+// 1、在 ${rootDir}/XMApps 中新建 AppModule ;
+// 2、为 AppModule 配置依赖项;
+// 3、在本文件中添加一个与 AppModule 同名的方法,返回一个数组, 数组中包含:
+//    - 该 AppModule 的 ${projectPath} ;
+//    - 该 AppModule 依赖的 LibModule 的 ${projectPath} ;
+//    - 该 AppModule 依赖的 LibModule 依赖的 ${projectPath} ;
+// 4、在本文件的 ext 中添加一项公开字段,格式为:
+//    - ${AppModuleName} = ${AppModuleName}()
+// 5、在 AppModule 级别的 build.gradle 文件中添加以下内容:
+//    : apply from: "$rootDir$Modules"
+//    : dependencies dependency(${AppModuleName})
+
+ext {
+    All = All()
+    AppStore = AppStore()
+    Instruction = Instruction()
+    BluetoothPhone = BluetoothPhone()
+    CarPark = CarPark()
+    Club = Club()
+    Launcher = Launcher()
+    Music = Music()
+    Personal = Personal()
+    Service = Service()
+    Setting = Setting()
+    SystemUI = SystemUI()
+    Travel = Travel()
+    Xkan = Xkan()
+    Xting = Xting()
+    Dialect = Dialect()
+    SongName = SongName()
+    OilConsumption = OilConsumption()
+    Assistant = Assistant()
+    DualScreen = DualScreen()
+    FaultReminder = FaultReminder()
+    DrivingScore = DrivingScore()
+    Motorcade = Motorcade()
+    Shop = Shop()
+    FaceRecognize = FaceRecognize()
+    Pet = Pet()
+    InstructionDistribute = InstructionDistribute()
+    DrivingScoreQM = DrivingScoreQM()
+}
+
+def static AppStore() {
+    return [
+            ':XMApps:AppStore',
+            ':XMLibs:Utils',
+            ':XMLibs:Config',
+            ':XMLibs:VoicePrint',
+            ':XMLibs:Center',
+            ':XMLibs:Login',
+            ':XMLibs:UI',
+            ':XMLibs:Component',
+            ':XMLibs:Network',
+            ':XMLibs:Thread',
+            ':XMLibs:Image',
+            ':XMLibs:Model',
+            ':XMLibs:Update',
+            ':XMLibs:Hotfix',
+            ':XMLibs:DB',
+            ':XMLibs:AutoTracker',
+            ':XMLibs:Skin',
+            ':XMLibs:SystemUILib',
+            ':XMLibs:NewGuide',
+            ':XMLibs:CarLib'
+    ]
+}
+
+def static Instruction() {
+    return [
+            ':XMApps:Instruction',
+            ':XMLibs:Utils',
+            ':XMLibs:Config',
+            ':XMLibs:VoicePrint',
+            ':XMLibs:Center',
+            ':XMLibs:Login',
+            ':XMLibs:UI',
+            ':XMLibs:Component',
+            ':XMLibs:Network',
+            ':XMLibs:Thread',
+            ':XMLibs:Image',
+            ':XMLibs:Model',
+            ':XMLibs:Update',
+            ':XMLibs:Hotfix',
+            ':XMLibs:DB',
+            ':XMLibs:AutoTracker',
+            ':XMLibs:Skin',
+            ':XMLibs:NewGuide'
+    ]
+}
+
+def static Assistant() {
+    return [
+            ':XMApps:Assistant',
+            ':XMLibs:Utils',
+            ':XMLibs:Config',
+            ':XMLibs:Login',
+            ':XMLibs:UI',
+            ':XMLibs:Component',
+            ':XMLibs:KeepAlive',
+            ':XMLibs:Network',
+            ':XMLibs:Thread',
+            ':XMLibs:Image',
+            ':XMLibs:Model',
+            ':XMLibs:Update',
+            ':XMLibs:Hotfix',
+            ':XMLibs:VR:Vr',
+            ':XMLibs:VR:OpenIflytek',
+            ':XMLibs:VR:CarIflytek',
+            ':XMLibs:VR:VrFactory',
+            ':XMLibs:DB',
+            ':XMLibs:Map:MapAdapter',
+            ':XMLibs:Map:GDMap',
+            ':XMLibs:VoicePrint',
+            ':XMLibs:Mqtt',
+            ':XMLibs:Center',
+            ':XMLibs:Process',
+            ':XMLibs:Player',
+            ':XMLibs:Adapter',
+            ':XMLibs:VR:Dispatch',
+            ':XMLibs:Navi:XmNaviLib',
+            ':XMLibs:Navi:XmNaviLibAidl',
+            ':XMLibs:NewGuide',
+            ':XMLibs:SmartHome',
+            ':XMLibs:WeChat',
+            ':XMLibs:Skin',
+            ':XMLibs:AutoTracker',
+            ':XMLibs:VR:Skill'
+    ]
+}
+
+def static BluetoothPhone() {
+    return [
+            ':XMApps:BluetoothPhone',
+            ':XMLibs:Utils',
+            ':XMLibs:UI',
+            ':XMLibs:Model',
+            ':XMLibs:Component',
+            ':XMLibs:Thread',
+            ':XMLibs:Image',
+            ':XMLibs:Hotfix',
+            ':XMLibs:Config',
+            ':XMLibs:Login',
+            ':XMLibs:Network',
+            ':XMLibs:DB',
+            ':XMLibs:Update',
+            ':XMLibs:Process',
+            ':XMLibs:AutoTracker',
+            ':XMLibs:Center',
+            ':XMLibs:VoicePrint',
+            ':XMLibs:VR:Vr',
+            ':XMLibs:CarLib',
+            ':XMLibs:Skin',
+            ':XMLibs:VR:Dispatch'
+    ]
+}
+
+def static CarPark() {
+    return [
+            ':XMApps:CarParkGame:CarPark',
+            ':XMLibs:Utils',
+            ':XMLibs:Config',
+            ':XMLibs:Login',
+            ':XMLibs:Center',
+            ':XMLibs:VoicePrint',
+            ':XMLibs:UI',
+            ':XMLibs:DB',
+            ':XMLibs:Component',
+            ':XMLibs:Network',
+            ':XMLibs:Thread',
+            ':XMLibs:Image',
+            ':XMLibs:Model',
+            ':XMLibs:Update',
+            ':XMLibs:Hotfix',
+            ':XMLibs:NewGuide',
+            ':XMLibs:Skin',
+            ':XMLibs:AutoTracker'
+    ]
+}
+
+def static Club() {
+    return [
+            ':XMApps:Club',
+            ':XMLibs:Center',
+            ':XMLibs:Utils',
+            ':XMLibs:Thread',
+            ':XMLibs:Network',
+            ':XMLibs:Image',
+            ':XMLibs:DB',
+            ':XMLibs:Config',
+            ':XMLibs:VoicePrint',
+            ':XMLibs:Login',
+            ':XMLibs:Component',
+            ':XMLibs:KeepAlive',
+            ':XMLibs:VR:Dispatch',
+            ':XMLibs:VR:Vr',
+            ':XMLibs:UI',
+            ':XMLibs:Hotfix',
+            ':XMLibs:Model',
+            ':XMLibs:AutoTracker',
+            ':XMLibs:Adapter',
+            ':XMLibs:Update',
+            ':XMLibs:SystemUILib',
+            ':XMLibs:CarLib',
+            ':XMLibs:NewGuide',
+            ':XMLibs:Skin'
+
+    ]
+}
+
+def static Launcher() {
+    return [
+            ':XMApps:Launcher',
+            ':XMLibs:Ad',
+            ':XMLibs:Utils',
+            ':XMLibs:Network',
+            ':XMLibs:Thread',
+            ':XMLibs:Image',
+            ':XMLibs:Config',
+            ':XMLibs:Login',
+            ':XMLibs:UI',
+            ':XMLibs:Component',
+            ':XMLibs:Model',
+            ':XMLibs:Update',
+            ':XMLibs:Hotfix',
+            ':XMLibs:Scene',
+            ':XMLibs:Process',
+            ':XMLibs:Map:MapAdapter',
+            ':XMLibs:Map:GDMap',
+            ':XMLibs:AutoTracker',
+            ':XMLibs:DB',
+            ':XMLibs:Trip',
+            ':XMLibs:MusicRec',
+            ':XMLibs:Center',
+            ':XMLibs:Mqtt',
+            ':XMLibs:Player',
+            ':XMLibs:CarLib',
+            ':XMLibs:VoicePrint',
+            ':XMLibs:SmartHome',
+            ':XMLibs:VR:Vr',
+            ':XMLibs:SystemUILib',
+            ':XMLibs:KeepAlive',
+            ':XMLibs:Navi:XmNaviLib',
+            ':XMLibs:VR:Dispatch',
+            ':XMLibs:Navi:limpidj_annotation',
+            ':XMLibs:Navi:limpidj_compiler',
+            ':XMLibs:Skin',
+            ':XMLibs:NewGuide',
+            ':XMSDKs:CarWX:CarWXSDKImpl',
+            ':XMLibs:VR:Skill',
+            ':XMLibs:CameraLib',               
+            ':XMLibs:VrPractice'
+
+    ]
+}
+
+def static Music() {
+    return [
+            ':XMApps:Music',
+            ':XMLibs:Utils',
+            ':XMLibs:DB',
+            ':XMLibs:Network',
+            ':XMLibs:Thread',
+            ':XMLibs:Image',
+            ':XMLibs:Update',
+            ':XMLibs:Config',
+            ':XMLibs:VoicePrint',
+            ':XMLibs:Login',
+            ':XMLibs:Center',
+            ':XMLibs:UI',
+            ':XMLibs:Component',
+            ':XMLibs:KeepAlive',
+            ':XMLibs:Model',
+            ':XMLibs:Player',
+            ':XMLibs:Adapter',
+            ':XMLibs:Hotfix',
+            ':XMLibs:Map:MapAdapter',
+            ':XMLibs:AutoTracker',
+            ':XMLibs:CarLib',
+            ':XMLibs:VR:Vr',
+            ':XMLibs:VR:Dispatch',
+            ':XMLibs:NewGuide',
+            ':XMLibs:Skin',
+            ':XMLibs:VR:Skill'
+    ]
+}
+
+def static Personal() {
+    return [
+            ':XMApps:Personal',
+            ':XMLibs:Utils',
+            ':XMLibs:Network',
+            ':XMLibs:Thread',
+            ':XMLibs:Image',
+            ':XMLibs:Config',
+            ':XMLibs:Login',
+            ':XMLibs:Center',
+            ':XMLibs:UI',
+            ':XMLibs:Component',
+            ':XMLibs:Model',
+            ':XMLibs:Update',
+            ':XMLibs:Hotfix',
+            ':XMLibs:VoicePrint',
+            ':XMLibs:AutoTracker',
+            ':XMLibs:DB',
+            ':XMLibs:VR:Vr',
+            ':XMLibs:KeepAlive',
+            ':XMLibs:VR:Dispatch',
+            ':XMLibs:CarLib',
+            ':XMLibs:Skin',
+            ':XMLibs:NewGuide',
+            ':XMLibs:Navi:XmNaviLib',
+            ':XMLibs:Navi:XmNaviLibAidl'
+    ]
+}
+
+def static Service() {
+    return [
+            ':XMApps:Service',
+            ':XMLibs:Utils',
+            ':XMLibs:Network',
+            ':XMLibs:Thread',
+            ':XMLibs:Image',
+            ':XMLibs:Config',
+            ':XMLibs:Login',
+            ':XMLibs:Center',
+            ':XMLibs:UI',
+            ':XMLibs:Component',
+            ':XMLibs:Model',
+            ':XMLibs:Update',
+            ':XMLibs:Hotfix',
+            ':XMLibs:Map:GDMap',
+            ':XMLibs:AutoTracker',
+            ':XMLibs:Process',
+            ':XMLibs:VoicePrint',
+            ':XMLibs:Map:MapAdapter',
+            ':XMLibs:DB',
+            ':XMLibs:CarLib',
+            ':XMLibs:SystemUILib',
+            ':XMLibs:VR:Dispatch',
+            ':XMLibs:Navi:XmNaviLib',
+            ':XMLibs:Navi:XmNaviLibAidl',
+            ':XMLibs:Skin',
+            ':XMLibs:NewGuide'
+    ]
+}
+
+def static Setting() {
+    return [
+            ':XMApps:Setting',
+            ':XMLibs:Utils',
+            ':XMLibs:Network',
+            ':XMLibs:Thread',
+            ':XMLibs:Image',
+            ':XMLibs:Update',
+            ':XMLibs:Config',
+            ':XMLibs:UI',
+            ':XMLibs:Component',
+            ':XMLibs:Login',
+            ':XMLibs:Model',
+            ':XMLibs:Hotfix',
+            ':XMLibs:Process',
+            ':XMLibs:AutoTracker',
+            ':XMLibs:CarLib',
+            ':XMLibs:Center',
+            ':XMLibs:DB',
+            ':XMLibs:VoicePrint',
+            ':XMLibs:VR:Vr',
+            ':XMLibs:Component',
+            ':XMLibs:KeepAlive',
+            ':XMLibs:Skin',
+            ':XMLibs:VR:Dispatch',
+            ':XMLibs:VR:Skill',
+            ':XMLibs:SystemUILib',
+    ]
+}
+
+def static DualScreen() {
+    return [
+            ':XMApps:DualScreen',
+            ':XMLibs:Utils',
+            ':XMLibs:Network',
+            ':XMLibs:Thread',
+            ':XMLibs:Image',
+            ':XMLibs:Update',
+            ':XMLibs:Config',
+            ':XMLibs:UI',
+            ':XMLibs:Component',
+            ':XMLibs:Login',
+            ':XMLibs:Model',
+            ':XMLibs:Hotfix',
+            ':XMLibs:Process',
+            ':XMLibs:AutoTracker',
+            ':XMLibs:Center',
+            ':XMLibs:Player',
+            ':XMLibs:Navi:XmNaviLib',
+            ':XMLibs:Navi:XmNaviLibAidl',
+            ':XMLibs:Skin',
+            ':XMLibs:CarLib'
+    ]
+}
+
+def static SystemUI() {
+    return [
+            ':XMApps:SystemUI',
+            ':XMLibs:SystemUILib',
+            ':XMLibs:Utils',
+            ':XMLibs:Skin',
+            ':XMLibs:CarLib',
+            ':XMLibs:Config'
+    ]
+}
+
+def static Travel() {
+    return [
+            ':XMApps:Travel',
+            ':XMLibs:Utils',
+            ':XMLibs:Network',
+            ':XMLibs:Thread',
+            ':XMLibs:Image',
+            ':XMLibs:Config',
+            ':XMLibs:Login',
+            ':XMLibs:UI',
+            ':XMLibs:Component',
+            ':XMLibs:Model',
+            ':XMLibs:Update',
+            ':XMLibs:Hotfix',
+            ':XMLibs:Trip',
+            ':XMLibs:Center',
+            ':XMLibs:DB',
+            ':XMLibs:Skin',
+            ':XMLibs:VoicePrint',
+    ]
+}
+
+def static Xkan() {
+    return [
+            ':XMApps:Xkan',
+            ':XMLibs:Utils',
+            ':XMLibs:Network',
+            ':XMLibs:Thread',
+            ':XMLibs:Image',
+            ':XMLibs:Config',
+            ':XMLibs:Login',
+            ':XMLibs:UI',
+            ':XMLibs:Component',
+            ':XMLibs:Model',
+            ':XMLibs:Update',
+            ':XMLibs:Hotfix',
+            ':XMLibs:AutoTracker',
+            ':XMLibs:DB',
+            ':XMLibs:Center',
+            ':XMLibs:VoicePrint',
+            ':XMLibs:CarLib',
+            ':XMLibs:VR:Dispatch',
+            ':XMLibs:Skin',
+            ':XMLibs:VR:Vr'
+    ]
+}
+
+def static Xting() {
+    return [
+            ':XMApps:Xting',
+            ':XMLibs:Utils',
+            ':XMLibs:DB',
+            ':XMLibs:Network',
+            ':XMLibs:Thread',
+            ':XMLibs:Image',
+            ':XMLibs:Component',
+            ':XMLibs:UI',
+            ':XMLibs:Login',
+            ':XMLibs:Update',
+            ':XMLibs:Model',
+            ':XMLibs:Config',
+            ':XMLibs:Adapter',
+            ':XMLibs:Hotfix',
+            ':XMLibs:AutoTracker',
+            ':XMLibs:Map:GDMap',
+            ':XMLibs:VoicePrint',
+            ':XMLibs:Map:MapAdapter',
+            ':XMLibs:Center',
+            ':XMLibs:Player',
+            ':XMLibs:VR:Dispatch',
+            ':XMLibs:NewGuide',
+            ':XMLibs:CarLib',
+            ':XMLibs:Skin',
+            ':XMLibs:VR:Skill'
+    ]
+}
+
+def static FaultReminder() {
+    return [
+            ':XMApps:FaultReminder',
+            ':XMLibs:Utils',
+            ':XMLibs:Network',
+            ':XMLibs:Thread',
+            ':XMLibs:Image',
+            ':XMLibs:Config',
+            ':XMLibs:Login',
+            ':XMLibs:UI',
+            ':XMLibs:Component',
+            ':XMLibs:Model',
+            ':XMLibs:Update',
+            ':XMLibs:Hotfix',
+            ':XMLibs:Skin',
+            ':XMLibs:AutoTracker',
+    ]
+}
+
+def static FaceRecognize() {
+    return [
+            ':XMApps:FaceRecognize',
+            ':XMLibs:Utils',
+            ':XMLibs:Network',
+            ':XMLibs:Thread',
+            ':XMLibs:Image',
+            ':XMLibs:Config',
+            ':XMLibs:Login',
+            ':XMLibs:UI',
+            ':XMLibs:DB',
+            ':XMLibs:Component',
+            ':XMLibs:Model',
+            ':XMLibs:Update',
+            ':XMLibs:Hotfix',
+            ':XMLibs:AutoTracker',
+            ':XMLibs:VR:Vr',
+            ':XMLibs:Skin',
+            ':XMLibs:Center',
+    ]
+}
+
+def static Shop() {
+    return [
+            ':XMApps:Shop',
+            ':XMLibs:Utils',
+            ':XMLibs:Network',
+            ':XMLibs:Thread',
+            ':XMLibs:Image',
+            ':XMLibs:Config',
+            ':XMLibs:Login',
+            ':XMLibs:UI',
+            ':XMLibs:VR:Dispatch',
+            ':XMLibs:VR:CarIflytek',
+            ':XMLibs:KeepAlive',
+            ':XMLibs:Component',
+            ':XMLibs:Model',
+            ':XMLibs:Update',
+            ':XMLibs:Hotfix',
+            ':XMLibs:AutoTracker',
+            ':XMLibs:DB',
+            ':XMLibs:Center',
+            ':XMLibs:Skin',
+            ':XMLibs:VoicePrint',
+            ':XMLibs:VR:Vr',
+            ':XMLibs:NewGuide',
+            ':XMLibs:CarLib'
+    ]
+}
+
+def static DrivingScore() {
+    return [
+            ':XMApps:DrivingScore',
+            ':XMLibs:Utils',
+            ':XMLibs:Network',
+            ':XMLibs:Thread',
+            ':XMLibs:Image',
+            ':XMLibs:Config',
+            ':XMLibs:Login',
+            ':XMLibs:UI',
+            ':XMLibs:Component',
+            ':XMLibs:Model',
+            ':XMLibs:Update',
+            ':XMLibs:Hotfix',
+            ':XMLibs:Skin',
+            ':XMLibs:AutoTracker',
+    ]
+}
+
+def static DrivingScoreQM(){
+    return [
+            ':XMApps:DrivingScoreQM',
+            ':XMLibs:Utils',
+            ':XMLibs:UI',
+            ':XMLibs:Component',
+            ':XMLibs:Hotfix',
+            ':XMLibs:Network',
+            ':XMLibs:Login',
+            ':XMLibs:Model',
+    ]
+}
+
+def static OilConsumption() {
+    return [
+            ':XMApps:CarParkGame:OilConsumption',
+            ':XMLibs:Utils',
+            ':XMLibs:Network',
+            ':XMLibs:Thread',
+            ':XMLibs:Image',
+            ':XMLibs:Config',
+            ':XMLibs:UI',
+            ':XMLibs:Component',
+            ':XMLibs:Model',
+            ':XMLibs:Skin',
+            ':XMLibs:DB',
+    ]
+}
+
+def static Dialect() {
+    return [
+            ':XMApps:CarParkGame:Dialect',
+            ':XMLibs:Utils',
+            ':XMLibs:Network',
+            ':XMLibs:Thread',
+            ':XMLibs:Image',
+            ':XMLibs:Config',
+            ':XMLibs:UI',
+            ':XMLibs:Component',
+            ':XMLibs:Model',
+            ':XMLibs:DB',
+            ':XMLibs:Skin',
+            ':XMLibs:VR:Vr',
+    ]
+}
+
+def static SongName() {
+    return [
+            ':XMApps:CarParkGame:SongName',
+            ':XMLibs:Utils',
+            ':XMLibs:Network',
+            ':XMLibs:Thread',
+            ':XMLibs:Image',
+            ':XMLibs:Config',
+            ':XMLibs:UI',
+            ':XMLibs:Component',
+            ':XMLibs:Model',
+            ':XMLibs:Hotfix',
+            ':XMLibs:Skin',
+            ':XMLibs:VR:Vr',
+    ]
+}
+
+def static Motorcade() {
+    return [
+            ':XMApps:Motorcade',
+            ':XMLibs:Center',
+            ':XMLibs:Utils',
+            ':XMLibs:Thread',
+            ':XMLibs:Network',
+            ':XMLibs:Image',
+            ':XMLibs:DB',
+            ':XMLibs:Config',
+            ':XMLibs:VoicePrint',
+            ':XMLibs:Login',
+            ':XMLibs:Component',
+            ':XMLibs:UI',
+            ':XMLibs:Hotfix',
+            ':XMLibs:Model',
+            // ':XMLibs:RedPacket',
+            ':XMLibs:AutoTracker',
+            ':XMLibs:Update',
+            ':XMLibs:Skin',
+            ':XMLibs:CarLib'
+
+    ]
+}
+
+def static Pet() {
+    return [
+            ':XMApps:Pet',
+            ':XMLibs:Utils',
+            ':XMLibs:Network',
+            ':XMLibs:Thread',
+            ':XMLibs:Image',
+            ':XMLibs:Config',
+            ':XMLibs:Login',
+            ':XMLibs:Center',
+            ':XMLibs:UI',
+            ':XMLibs:Component',
+            ':XMLibs:Model',
+            ':XMLibs:Update',
+            ':XMLibs:Hotfix',
+            ':XMLibs:VoicePrint',
+            ':XMLibs:AutoTracker',
+            ':XMLibs:DB',
+            ':XMLibs:CarLib',
+            ':XMLibs:Skin',
+            ':XMLibs:NewGuide'
+    ]
+}
+
+def static InstructionDistribute(){
+    return [
+            ':XMLibs:CarLib',
+            ':XMLibs:Center',
+            ':XMLibs:Process',
+            ':XMLibs:UI',
+            ':XMLibs:Model',
+            ':XMLibs:Image',
+            ':XMLibs:Component',
+            ':XMLibs:Utils',
+            ':XMLibs:Thread',
+            ':XMLibs:Config',
+            ':XMLibs:Player'
+    ]
+}
+
+def static All() {
+    return [
+            // App
+            ':XMApps:Launcher',                  // 桌面
+            ':XMApps:BluetoothPhone',            // 蓝牙电话
+            ':XMApps:Xting',                     // 电台
+            ':XMApps:Personal',                  // 个人中心
+            //':XMApps:Travel',                    // 出行
+            ':XMApps:Music',                     // 超级音乐
+            ':XMApps:AppStore',                  // 车应用
+            ':XMApps:Club',                      // 车信
+            ':XMApps:Setting',                   // 设置
+            ':XMApps:SystemUI',                  // 系统UI
+            ':XMApps:Xkan',                      // 媒体
+            ':XMApps:Service',                   // 车服务
+            ':XMApps:CarParkGame:CarPark',       // 车乐园
+            ':XMApps:CarParkGame:SongName',      // 猜歌名
+            ':XMApps:CarParkGame:Dialect',       // 猜方言
+            ':XMApps:CarParkGame:OilConsumption',// 百公里油耗比赛
+            ':XMApps:DualScreen',                // 双屏互动
+            ':XMApps:Assistant',                 // 语音助手
+            // ':XMApps:FaultReminder',            // 故障提醒
+            // ':XMApps:DrivingScore',             // 驾驶评分
+            ':XMApps:Shop',                      // 奔腾商城
+            ':XMApps:Motorcade',                 // 车队
+            ':XMApps:FaceRecognize',             // 人脸识别
+//            ':XMApps:Pet',                       // 宠物
+            ':XMApps:Instruction',               // 使用手册
+            ':XMApps:DrivingScoreQM',            // 驾驶评分启明
+
+            //皮肤包
+            ':XMSkin:RenWen',                   // 人文皮肤
+            ':XMSkin:QingShe',                   // 轻奢皮肤
+
+            // 底层库
+            ':XMLibs:Utils',                    // 通用工具集
+            ':XMLibs:Thread',                   // 基础线程调度
+            ':XMLibs:Network',                  // 基础网络
+            ':XMLibs:DB',                       // 基础数据库
+            ':XMLibs:Image',                    // 基础图片加载
+
+            // 功能依赖
+            ':XMLibs:Config',                   // App本地配置
+            ':XMLibs:Component',                // 底层组件封装
+            ':XMLibs:Audio',                    // 音频焦点管理
+            ':XMLibs:Player',                   // 主播放器业务
+            ':XMLibs:Login',                    // 登录&用户管理
+            ':XMLibs:Event',                    // 事件上报
+            ':XMLibs:UI',                       // 通用UI
+            ':XMLibs:Process',                  // 进程通讯
+            ':XMLibs:Center',                   // 服务中枢
+            ':XMLibs:Hotfix',                   // 热修复
+            ':XMLibs:Push',                     // 推送
+            ':XMLibs:Model',                    // 数据模型
+            ':XMLibs:Skin',                     // 皮肤
+            ':XMLibs:Plugin',                   // 插件
+            ':XMLibs:Update',                   // App升级
+            ':XMLibs:Api',                      // App对外接口
+            ':XMLibs:Adapter',                  // 底层接口适配层
+            ':XMLibs:VoicePrint',               // 声纹识别
+            ':XMLibs:AutoTracker',              // 全自动追踪全埋点
+            ':XMLibs:MusicRec',                 // 听歌识曲
+            ':XMLibs:CarLib',                   // 车身控制
+            ':XMLibs:Mqtt',                     // Mqtt长连接
+            ':XMLibs:SystemUILib',              // 系统UI
+            ':XMLibs:KeepAlive',                // 进程存活监听
+            ':XMLibs:NewGuide',                 // 新手引导
+            ':XMLibs:WeChat',                   // 车载微信
+
+            // 业务依赖
+            ':XMLibs:Map:MapAdapter',           // 地图适配层
+            ':XMLibs:Map:GDMap',                // 高德地图
+            ':XMLibs:Map:BDMap',                // 百度地图
+            ':XMLibs:Ad',                       // 广告业务
+            //':XMLibs:RedPacket',              // 环信红包支付宝版
+            ':XMLibs:Scene',                    // 场景管理器
+            ':XMLibs:Trip',                     // 奔腾出行
+            ':XMLibs:Recommend',                // 推荐业务
+            ':XMLibs:CameraLib',                // mark相机
+
+            ':XMLibs:VR:Vr',                    // 语音base类
+            ':XMLibs:VR:Speech',                // 思必驰
+            ':XMLibs:VR:OpenIflytek',           // 讯飞开放版
+            ':XMLibs:VR:CarIflytek',            // 讯飞车载版
+            ':XMLibs:VR:VrFactory',             // 语音工厂模块
+            ':XMLibs:VR:Dispatch',              // 语音助理指令分发
+            ':XMLibs:VR:Skill',                 // 语音训练技能分发
+            ':XMLibs:SmartHome',                // 智能家居
+            ':XMLibs:Navi:limpidj_annotation',  // 四维地图导航依赖注解
+            ':XMLibs:Navi:limpidj_compiler',    // 四维地图导航依赖库
+            ':XMLibs:Navi:Favorites',           // 四维地图收藏夹接口依赖库
+            ':XMLibs:Navi:XmNaviLib',           // 四维地图操作依赖库
+            ':XMLibs:Navi:XmNaviLibAidl',       // 四维地图XmNaviLibAidl依赖库
+
+            // 车载微信 sdk
+            ':XMSDKs:CarWX:CarWXBase',       // 车载微信接口实现
+            ':XMSDKs:CarWX:CarWXSDKImpl',       // 车载微信接口实现
+            ':XMSDKs:CarWX:CarWXSDK',           // 车载微信sdk
+//            ':XMSDKs:CarWX:CarWXSDKDemo',       // 车载微信测试sdk的demo
+
+            // 指令分发 测试
+            ':XMApps:InstructionDistribute',    // 指令分发
+
+            ':XMLibs:VrPractice'                 //语音训练
+
+    ]
+}
+
+ext {
+    include = this.&include
+    dependency = this.&dependency
+}
+
+def include(List<String> paths) {
+    paths.each {
+        settings.include it
+    }
+}
+
+def dependency(List<String> paths) {
+    return {
+        paths.each {
+            if (project.path != it) {
+                implementation project(path: it)
+            }
+        }
+    }
+}

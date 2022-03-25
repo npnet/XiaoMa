@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:background="#1c202a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/wechat_relative_left"
+        android:paddingLeft="@dimen/wechat_relative_left"
+        android:paddingRight="@dimen/wechat_relative_right">
+
+        <ImageView
+            android:id="@+id/clean"
+            android:layout_width="@dimen/wechat_clean_img_width"
+            android:layout_height="@dimen/wechat_clean_img_height"
+            android:padding="@dimen/wechat_clean_img_padding"
+            android:src="@android:drawable/ic_menu_close_clear_cancel" />
+
+        <com.xiaoma.ui.StateControl.StateView
+            android:id="@+id/wechat_bind_qr"
+            android:layout_width="@dimen/wechat_bind_qr_width"
+            android:layout_height="@dimen/wechat_bind_qr_height"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_bind_wechat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/wechat_bind_tv_margintop"
+                    android:text="@string/wechat_connect"
+                    android:textColor="#ccffffff"
+                    android:textSize="@dimen/wechat_bind_qr_tv_size" />
+
+                <ImageView
+                    android:id="@+id/image_qr_code"
+                    android:layout_width="@dimen/wechat_bind_qr_img_width"
+                    android:layout_height="@dimen/wechat_bind_qr_img_height"
+                    android:layout_below="@+id/tv_bind_wechat"
+                    android:layout_marginTop="@dimen/wechat_bind_qr_img_margintop" />
+
+                <TextView
+                    android:id="@+id/tv_bind_wechat_tip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/tv_bind_wechat_tip_margintop"
+                    android:text="@string/bind_wechat_tip"
+                    android:textColor="#ccffffff"
+                    android:textSize="@dimen/tv_bind_wechat_tip_size" />
+            </LinearLayout>
+        </com.xiaoma.ui.StateControl.StateView>
+
+        <com.xiaoma.ui.StateControl.StateView
+            android:id="@+id/wechat_loding"
+            android:layout_width="@dimen/wechat_loding_width"
+            android:layout_height="@dimen/wechat_loding_height"
+            android:visibility="invisible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ProgressBar
+                    android:id="@+id/get_qr_progress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:indeterminateBehavior="repeat"
+                    android:indeterminateOnly="true"
+                    android:progressDrawable="@drawable/fetch_qr_code_progressbar_anim" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/wechat_loding_text_top"
+                    android:text="@string/fetching_qr_code"
+                    android:textColor="#ccffffff"
+                    android:textSize="@dimen/wechat_loding_text_size" />
+            </LinearLayout>
+        </com.xiaoma.ui.StateControl.StateView>
+
+        <com.xiaoma.ui.StateControl.StateView
+            android:id="@+id/wechat_update"
+            android:layout_width="@dimen/wechat_update_width"
+            android:layout_height="@dimen/wechat_update_height"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/ll_retry_qr_code"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/wechat_update_img_width"
+                    android:layout_height="@dimen/wechat_update_img_height"
+                    android:layout_marginTop="@dimen/wechat_update_img_top"
+                    android:src="@drawable/image_retry_qr_code" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/wechat_update_text1_top"
+                    android:text="@string/retry_qr_code"
+                    android:textColor="#ccffffff"
+                    android:textSize="@dimen/wechat_update_text1_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/wechat_update_text2_top"
+                    android:text="@string/retry_qr_click_img"
+                    android:textColor="#ccffffff"
+                    android:textSize="@dimen/wechat_update_text2_size" />
+
+            </LinearLayout>
+        </com.xiaoma.ui.StateControl.StateView>
+
+        <com.xiaoma.ui.StateControl.StateView
+            android:id="@+id/wechat_bind_succer"
+            android:layout_width="@dimen/wechat_bind_succer_width"
+            android:layout_height="@dimen/wechat_bind_succer_height"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/wechat_bind_succer_text_top"
+                    android:text="@string/bound"
+                    android:textColor="#ccffffff"
+                    android:textSize="@dimen/wechat_bind_succer_text_size" />
+
+                <ImageView
+                    android:src="@drawable/check_mark"
+                    android:layout_width="@dimen/wechat_bind_succer_img_width"
+                    android:layout_height="@dimen/wechat_bind_succer_img_height"
+                    android:layout_below="@+id/tv_bind_wechat"
+                    android:layout_marginTop="@dimen/wechat_bind_succer_img_top" />
+
+                <TextView
+                    android:id="@+id/tv_bind_wechat_success"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/tv_bind_wechat_success_top"
+                    android:text="@string/bind_wechat_success"
+                    android:textColor="#ccffffff"
+                    android:textSize="@dimen/tv_bind_wechat_success_size" />
+
+                <TextView
+                    android:id="@+id/btn_unbind_wechat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="20px"
+                    android:layout_marginTop="@dimen/btn_unbind_wechat_top"
+                    android:text="@string/unbind_wechat"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/btn_unbind_wechat_size" />
+            </LinearLayout>
+        </com.xiaoma.ui.StateControl.StateView>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="pushPhone"
+            android:text="@string/push_message_phone"
+            android:visibility="gone" />
+    </RelativeLayout>
+</LinearLayout>

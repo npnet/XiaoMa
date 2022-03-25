@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="NumberPickerView">
+        <!--set number of item displayed, default is 3-->
+        <attr name="npv_ShowCount" format="reference|integer" />
+        <!--set if show divider, default is true-->
+        <attr name="npv_ShowDivider" format="reference|boolean" />
+        <attr name="npv_DividerColor" format="reference|color" />
+        <attr name="npv_DividerMarginLeft" format="reference|dimension" />
+        <attr name="npv_DividerMarginRight" format="reference|dimension" />
+        <attr name="npv_DividerHeight" format="reference|dimension" />
+        <attr name="npv_TextColorNormal" format="reference|color" />
+        <attr name="npv_TextColorSelected" format="reference|color" />
+        <attr name="npv_TextSelectedBackground" format="reference|color" />
+        <attr name="npv_TextColorHint" format="reference|color" />
+        <attr name="npv_TextSizeNormal" format="reference|dimension" />
+        <attr name="npv_TextSizeSelected" format="reference|dimension" />
+        <attr name="npv_TextSizeHint" format="reference|dimension" />
+        <attr name="npv_TextArray" format="reference" />
+        <attr name="npv_MinValue" format="reference|integer" />
+        <attr name="npv_MaxValue" format="reference|integer" />
+        <attr name="npv_WrapSelectorWheel" format="reference|boolean" />
+        <attr name="npv_RespondChangeOnDetached" format="reference|boolean" />
+        <attr name="npv_HintText" format="reference|string" />
+        <attr name="npv_EmptyItemHint" format="reference|string" />
+        <attr name="npv_MarginStartOfHint" format="reference|dimension" />
+        <attr name="npv_MarginEndOfHint" format="reference|dimension" />
+        <attr name="npv_ItemPaddingHorizontal" format="reference|dimension" />
+        <attr name="npv_ItemPaddingVertical" format="reference|dimension" />
+        <attr name="npv_RespondChangeInMainThread" format="reference|boolean" />
+        <attr name="npv_TextEllipsize" format="reference|string" />
+
+        <!--just used to measure maxWidth for wrap_content without hint,
+            the string array will never be displayed.
+            you can set this attr if you want to keep the wraped numberpickerview
+            width unchanged when alter the content list-->
+        <attr name="npv_AlternativeTextArrayWithMeasureHint" format="reference" />
+        <attr name="npv_AlternativeTextArrayWithoutMeasureHint" format="reference" />
+        <!--the max length of hint content-->
+        <attr name="npv_AlternativeHint" format="reference|string" />
+    </declare-styleable>
+
+    <declare-styleable name="SeatTableView">
+        <attr name="seat_checked" format="reference" />
+        <attr name="seat_sold" format="reference" />
+        <attr name="seat_available" format="reference" />
+        <attr name="overview_checked" format="color" />
+        <attr name="overview_sold" format="color" />
+        <attr name="txt_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="CalendarView">
+        <!--是否显示农历-->
+        <attr name="show_lunar" format="boolean" />
+        <!--是否显示上月和下月-->
+        <attr name="show_last_next" format="boolean" />
+        <!--是否显示节假日-->
+        <attr name="show_holiday" format="boolean" />
+        <!--是否显示节气-->
+        <attr name="show_term" format="boolean" />
+        <!--阳历的日期颜色-->
+        <attr name="solar_color" format="color" />
+        <!--阳历的日期尺寸-->
+        <attr name="solar_size" format="integer" />
+        <!--农历的日期颜色-->
+        <attr name="lunar_color" format="color" />
+        <!--农历的日期尺寸-->
+        <attr name="lunar_size" format="integer" />
+        <!--节日文字颜色-->
+        <attr name="holiday_color" format="color" />
+        <!--选中的日期文字颜色-->
+        <attr name="choose_color" format="color" />
+        <!--选中的日期背景-->
+        <attr name="day_bg" format="reference" />
+        <!--单选时切换月份，是否选中上次的日期-->
+        <attr name="switch_choose" format="boolean" />
+        <!--设置单选、多选-->
+        <attr name="choose_type" format="enum">
+            <enum name="single" value="0" />
+            <enum name="multi" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="WeekView">
+        <!--周的表示形式（x.x.x.x.x.x.x）-->
+        <attr name="week_str" format="string" />
+        <!--周的文字颜色-->
+        <attr name="week_color" format="color" />
+        <!--周的文字大小-->
+        <attr name="week_size" format="integer" />
+    </declare-styleable>
+
+    <!--<attr name="xmdirection">-->
+        <!--<enum name="rightToLeft" value="0" />-->
+        <!--<enum name="bottomToTop" value="1" />-->
+        <!--<enum name="leftToRight" value="2" />-->
+        <!--<enum name="topToBottom" value="3" />-->
+    <!--</attr>-->
+
+    <declare-styleable name="FocusImageView">
+        <attr name="focus_focusing_id" format="integer" />
+        <attr name="focus_success_id" format="integer" />
+        <attr name="focus_fail_id" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="XmSeekBar">
+        <attr name="max" format="integer" />
+        <attr name="xmprogress" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="WidthProgressBar">
+        <attr name="progressValue" format="integer" />
+        <attr name="progressMax" format="integer" />
+        <attr name="progressMin" format="integer" />
+        <attr name="bgColor" format="color" />
+        <attr name="rectRadius" format="dimension" />
+        <attr name="iconPadding" format="dimension" />
+        <attr name="progressColor" format="color" />
+        <attr name="iconSrc" format="reference" />
+        <attr name="progressOrientation">
+            <enum name="vertical" value="1" />
+            <enum name="horizontal" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="VoiceTextView">
+        <attr name="imageWidth" format="dimension|reference" />
+        <attr name="ellipsisLine" format="integer|reference" />
+        <attr name="lineSpace" format="dimension|reference" />
+        <attr name="ellipsisSign" format="string|reference" />
+        <attr name="imageList" format="reference"/>
+        <attr name="animSwitch" format="boolean"/>
+    </declare-styleable>
+
+</resources>

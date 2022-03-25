@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/width_mine_message_item"
+    android:layout_height="@dimen/height_mine_message_item"
+    android:background="@drawable/bg_mine_message_item">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_mine_message_avatar"
+            android:layout_width="@dimen/size_mine_message_item_avatar"
+            android:layout_height="@dimen/size_mine_message_item_avatar"
+            android:layout_marginStart="@dimen/size_mine_message_item_avatar_start"
+            android:layout_marginTop="@dimen/size_mine_message_item_avatar_top"
+            android:src="@drawable/xm_avatar" />
+
+
+        <TextView
+            android:id="@+id/tv_solve_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/height_mine_message_item_title_start"
+            android:layout_marginTop="@dimen/size_mine_message_item_title_top"
+            android:layout_toEndOf="@id/iv_mine_message_avatar"
+            android:text="@string/solution_question"
+            android:textSize="@dimen/font_size_feedback_28px" />
+
+
+        <TextView
+            android:id="@+id/tv_message_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_solve_question"
+            android:layout_alignStart="@id/tv_solve_question"
+            android:layout_marginTop="@dimen/size_mine_message_item_desc_top"
+            android:layout_toEndOf="@id/iv_mine_message_avatar"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="关于您在当天下午3:20发送的【体验问题】，我们最短会决并联我们最短会我们最会决并联决并联"
+            android:textSize="@dimen/font_size_feedback_24px" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_message_point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/mine_message_red"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

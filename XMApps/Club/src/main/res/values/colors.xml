@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="bg_dim">#80000000</color>
+    <color name="bg_navigation_bar">#f0000000</color>
+    <color name="discovery_search_btn_normal">#e1e6e7</color>
+    <color name="discovery_search_btn_pressed">#7e8384</color>
+    <color name="group_name_text">#000000</color>
+    <color name="group_sign_text">#5e5b5b</color>
+    <color name="club_white">#FFFFFF</color>
+    <color name="club_black">#000000</color>
+    <color name="club_gray">#878686</color>
+    <color name="search_key_word">#ffcd91</color>
+    <color name="club_text_gray">#e6979da7</color>
+    <color name="text_sign_number">#e68a919d</color>
+    <color name="bg_red_dot">#FF0000</color>
+    <color name="add_friend_headsup_text">#fefeff</color>
+    <color name="search_text_gray">#6c7881</color>
+    <color name="group_heads_bg">#9DB9E9</color>
+    <color name="chat_msg_time_text">#f5dff1</color>
+    <color name="chat_msg_system_notify_text">#d5dff1</color>
+    <color name="chat_msg_lighting_text">#edf6fe</color>
+    <color name="text_msg_item">#e6979da7</color>
+    <color name="text_activity_state_item">#e6ffcd91</color>
+    <color name="dialog_btn_pressed">#33ffffff</color>
+    <color name="switch_check_color">#E1C474</color>
+    <color name="switch_notcheck_color">#626976</color>
+    <color name="chat_send_voice_recorder_duration_too_short">#fff</color>
+    <color name="chat_send_voice_recorder_countdown">#ffca89</color>
+    <color name="rp_msg_item_text_weak">#8a919d</color>
+    <color name="rp_view_gain_detail">#e8e3c9</color>
+</resources>

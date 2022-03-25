@@ -1,0 +1,11 @@
+apply plugin: 'com.android.library'
+apply from: "$rootDir$Android"
+
+android library()
+
+dependencies {
+    implementation project(':XMLibs:Config')
+    api files("${XMJars}lite-orm-1.9.1.jar")
+    implementation "android.arch.persistence.room:runtime:$ROOM_VERSION"
+    annotationProcessor "android.arch.persistence.room:compiler:$ROOM_VERSION"
+}

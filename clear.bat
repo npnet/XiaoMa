@@ -1,0 +1,6 @@
+@echo on 
+@REM 
+@echo 正在结束Java进程，请稍候......
+@taskkill -f -t -im java.exe
+@echo 正在清理build文件，请稍候......
+@for /r . %%a in (.) do @if exist "%%a\build" rd /s /q "%%a\build" 

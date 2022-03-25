@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="665px"
+    android:layout_height="375px"
+    android:background="@drawable/bg_ai_recom"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:text="@string/select_mode"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dialog_title_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <!--android:text="@string/select_mode"-->
+
+    <LinearLayout
+        android:id="@+id/ll_work"
+        android:layout_width="150px"
+        android:layout_height="130px"
+        android:layout_marginTop="20px"
+        android:layout_marginEnd="12px"
+        android:background="@drawable/bg_model_selector"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toStartOf="@+id/ll_life"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_title">
+
+        <ImageView
+            android:id="@+id/iv_work"
+            android:layout_width="80px"
+            android:layout_height="80px"
+            android:src="@drawable/rb_work_selector" />
+
+        <TextView
+            android:id="@+id/tv_work"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8px"
+            android:text="@string/work_mode"
+            android:textColor="@color/white_black_selector"
+            android:textSize="20px" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_life"
+        android:layout_width="150px"
+        android:layout_height="130px"
+        android:layout_marginTop="20px"
+        android:layout_marginEnd="12px"
+        android:background="@drawable/bg_model_selector"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ll_work"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_title">
+
+        <ImageView
+            android:id="@+id/iv_life"
+            android:layout_width="80px"
+            android:layout_height="80px"
+            android:src="@drawable/rb_work_selector" />
+
+        <TextView
+            android:id="@+id/tv_life"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8px"
+            android:text="@string/life_mode"
+            android:textColor="@color/white_black_selector"
+            android:textSize="20px" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_travel"
+        android:layout_width="150px"
+        android:layout_height="130px"
+        android:layout_marginTop="12px"
+        android:layout_marginEnd="12px"
+        android:background="@drawable/bg_model_selector"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toStartOf="@+id/ll_quiet"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_life">
+
+        <ImageView
+            android:id="@+id/iv_travel"
+            android:layout_width="80px"
+            android:layout_height="80px"
+            android:src="@drawable/rb_travel_selector" />
+
+        <TextView
+            android:id="@+id/tv_travel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8px"
+            android:text="@string/travel_mode"
+            android:textColor="@color/white_black_selector"
+            android:textSize="20px" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_quiet"
+        android:layout_width="150px"
+        android:layout_height="130px"
+        android:layout_marginTop="12px"
+        android:layout_marginEnd="12px"
+        android:background="@drawable/bg_model_selector"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ll_travel"
+        app:layout_constraintTop_toBottomOf="@+id/ll_life">
+
+        <ImageView
+            android:id="@+id/iv_quiet"
+            android:layout_width="80px"
+            android:layout_height="80px"
+            android:src="@drawable/rb_quiet_selector" />
+
+        <TextView
+            android:id="@+id/tv_quiet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8px"
+            android:text="@string/need_quiet"
+            android:textColor="@color/white_black_selector"
+            android:textSize="20px" />
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

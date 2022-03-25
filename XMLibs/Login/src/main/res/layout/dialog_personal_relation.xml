@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.xiaoma.ui.view.WheelPickView
+        android:id="@+id/relation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:text_diff_size="true"
+        app:selected_text_size="@dimen/font_dialog_plate_wheel_selected_text"
+        app:unselected_text_size="@dimen/font_dialog_plate_wheel_unselected_text"
+        app:divide_color="@color/car_plate_divide_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

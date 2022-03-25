@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaoma.skin.views.XmViewSwitcher xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/face_switch"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.xiaoma.login.business.ui.verify.view.FaceScanView
+            android:id="@+id/icon"
+            android:layout_width="@dimen/width_face_recognize"
+            android:layout_height="@dimen/height_face_recognize"
+            android:layout_marginTop="174px"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="76px"
+            android:background="@drawable/selector_button"
+            android:text="@string/cancel_face_recognize"
+            android:textColor="@color/selector_button_text_color"
+            android:textSize="@dimen/font_button_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/icon" />
+
+        <TextView
+            android:id="@+id/tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/recognizing"
+            android:textSize="28px"
+            app:layout_constraintBottom_toTopOf="@+id/cancel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/icon" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/right"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="@dimen/width_account_avatar"
+                android:layout_height="@dimen/height_account_avatar"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/avatar_board_pro"
+                app:layout_constraintBottom_toTopOf="@+id/left_user_name"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/iv_left_pic"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:padding="16px"
+                android:src="@drawable/icon_man_pro"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView1"
+                app:layout_constraintEnd_toEndOf="@+id/imageView1"
+                app:layout_constraintStart_toStartOf="@+id/imageView1"
+                app:layout_constraintTop_toTopOf="@+id/imageView1" />
+
+            <ImageView
+                android:id="@+id/left_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView1"
+                app:layout_constraintEnd_toEndOf="@+id/imageView1"
+                tools:src="@drawable/gender_man" />
+
+            <TextView
+                android:id="@+id/left_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_bluetooth_key_margin_top"
+                android:textSize="@dimen/font_account_bind_face_name_text"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/imageView1"
+                app:layout_constraintStart_toStartOf="@+id/imageView1"
+                app:layout_constraintTop_toBottomOf="@+id/imageView1"
+                tools:text="张三" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/left"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="@dimen/width_account_avatar"
+                android:layout_height="@dimen/height_account_avatar"
+                android:src="@drawable/avatar_board_pro"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/iv_right_pic"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:padding="16px"
+                android:src="@drawable/icon_man_pro"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+                app:layout_constraintEnd_toEndOf="@+id/imageView2"
+                app:layout_constraintStart_toStartOf="@+id/imageView2"
+                app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+            <ImageView
+                android:id="@+id/right_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+                app:layout_constraintEnd_toEndOf="@+id/imageView2"
+                tools:src="@drawable/gender_man" />
+
+            <TextView
+                android:id="@+id/right_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_bluetooth_key_margin_top"
+                android:textSize="@dimen/font_account_bind_face_name_text"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/imageView2"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="@+id/imageView2"
+                app:layout_constraintTop_toBottomOf="@+id/imageView2"
+                tools:text="张三" />
+        </android.support.constraint.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_select_user_margin_top"
+            android:textSize="@dimen/font_not_bind_pls_select"
+            android:text="@string/multiple_bind_user_pls_select"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+</com.xiaoma.skin.views.XmViewSwitcher>

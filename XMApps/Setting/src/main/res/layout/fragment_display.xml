@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15px"
+            android:layout_marginBottom="30px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.xiaoma.setting.common.views.SettingItemView
+                android:id="@+id/siv_display_mode"
+                style="@style/style_setting_item_v2"
+                app:segmentTexts="@string/brightness_control_type"
+                app:titleTexts="@string/brightness_control" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="60px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="480px"
+                android:gravity="left"
+                android:paddingTop="@dimen/size_volume_title_textview_padding_top"
+                android:text="@string/brightness"
+                android:textColor="#abacb0"
+                android:textSize="26px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35px"
+                android:gravity="center"
+                android:paddingTop="@dimen/size_volume_title_textview_padding_top"
+                android:text="1"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/font_number" />
+
+            <com.xiaoma.setting.common.views.TextTackSeekBar
+                android:id="@+id/display_brightness_seekbar"
+                style="@style/style_setting_seekbar"
+                android:layout_width="540px"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15px"
+                android:max="10"
+                android:min="1"/>
+
+            <TextView
+                android:id="@+id/brightness_value"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/size_seekbar_margin_left"
+                android:gravity="center"
+                android:paddingTop="@dimen/size_volume_title_textview_padding_top"
+                android:text="10"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/font_title" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="55px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="105px"
+                android:paddingTop="@dimen/size_volume_title_textview_padding_top"
+                android:text="@string/key_brightness_control"
+                android:textColor="#fff"
+                android:textSize="30px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="195px"
+                android:paddingTop="@dimen/size_volume_title_textview_padding_top"
+                android:text="@string/brightness"
+                android:textColor="#abacb0"
+                android:textSize="26px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35px"
+                android:gravity="center"
+                android:paddingTop="@dimen/size_volume_title_textview_padding_top"
+                android:text="1"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/font_number" />
+
+            <com.xiaoma.setting.common.views.TextTackSeekBar
+                android:id="@+id/key_brightness_seekbar"
+                style="@style/style_setting_seekbar"
+                android:layout_width="540px"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15px"
+                android:max="10"
+                android:min="1"/>
+
+            <TextView
+                android:id="@+id/key_brightness_value"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/size_seekbar_margin_left"
+                android:gravity="center"
+                android:paddingTop="@dimen/size_volume_title_textview_padding_top"
+                android:text="10"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/font_title" />
+
+        </LinearLayout>
+
+        <com.xiaoma.setting.common.views.SettingItemView
+            android:id="@+id/siv_ban_video"
+            style="@style/style_setting_item_v2"
+            app:segmentTexts="@string/ban_video_type"
+            app:titleTexts="@string/driving_video" />
+
+        <LinearLayout
+            android:id="@+id/light_3d_parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30px"
+            android:layout_marginBottom="30px">
+
+            <TextView
+                style="@style/radio_group_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bright_set_3D"
+                android:textColor="@color/white"
+                android:textSize="30px" />
+
+                <RadioButton
+                    android:id="@+id/rb_subtract"
+                    android:layout_width="161px"
+                    android:layout_height="68px"
+                    android:layout_marginLeft="75px"
+                    android:background="@drawable/bg_background_left"
+                    android:button="@null"
+                    android:checked="true"
+                    android:gravity="center_horizontal"
+                    android:text="－"
+                    android:textColor="@color/white"
+                    android:textSize="42px" />
+
+                <RadioButton
+                    android:id="@+id/rb_add"
+                    android:layout_width="161px"
+                    android:layout_height="68px"
+                    android:layout_marginLeft="-19px"
+                    android:background="@drawable/bg_background_right"
+                    android:button="@null"
+                    android:gravity="center_horizontal"
+                    android:text="+"
+                    android:textColor="@color/white"
+                    android:textSize="42px" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

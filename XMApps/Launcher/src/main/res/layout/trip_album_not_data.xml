@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingRight="@dimen/trip_album_not_data_right"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:src="@drawable/mark_icon_nothing"
+        android:layout_width="@dimen/trip_album_not_data_mark_icon_nothing_width"
+        android:layout_height="@dimen/trip_album_not_data_mark_icon_nothing_height" />
+    <TextView
+        android:textSize="@dimen/trip_album_not_data_mark_text_nothing_size"
+        android:text="@string/nothing"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

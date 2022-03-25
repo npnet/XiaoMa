@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/contact_group_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/contact_group_rv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.xiaoma.ui.view.XmScrollBar
+            android:id="@+id/club_scroll_bar"
+            android:layout_width="@dimen/width_xmscroll_bar"
+            android:layout_height="@dimen/height_xmscroll_bar"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/height_xmscroll_bar"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/contact_group_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="@dimen/width_empty_iv"
+            android:layout_height="@dimen/height_empty_iv"
+            android:background="@drawable/empty_bg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/empty_group_text"
+            android:textColor="@color/club_white"
+            android:textSize="@dimen/font_text_middle" />
+
+        <Button
+            android:id="@+id/contact_to_find_group"
+            android:layout_width="@dimen/width_find_group_btn"
+            android:layout_height="@dimen/height_find_group_btn"
+            android:layout_marginTop="@dimen/margin_find_group_btn_top"
+            android:background="@drawable/club_btn_selector"
+            android:gravity="center_horizontal"
+            android:paddingTop="@dimen/padding_find_group_btn_top"
+            android:text="@string/empty_to_find_group_text"
+            android:textColor="@color/club_white"
+            android:textSize="@dimen/font_text_middle" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/contact_group_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        layout="@layout/include_no_network_view" />
+</FrameLayout>

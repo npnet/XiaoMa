@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/plugin_entry_bg">
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="40px"
+        android:padding="20px"
+        android:src="@drawable/icon_close" />
+
+    <TextView
+        android:id="@+id/tv_plugin_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_close"
+        android:layout_marginTop="20px"
+        android:gravity="center"
+        android:padding="30px"
+        android:textColor="@color/white"
+        android:textSize="70px"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_plugin_sub_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_plugin_title"
+        android:layout_marginBottom="20px"
+        android:gravity="center"
+        android:padding="30px"
+        android:textColor="@color/plugin_sub_title_color"
+        android:textSize="34px" />
+
+    <Button
+        android:id="@+id/btn_plugin"
+        android:layout_width="340px"
+        android:layout_height="74px"
+        android:layout_below="@id/tv_plugin_sub_title"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20px"
+        android:background="@drawable/selector_btn_plugin"
+        android:gravity="center"
+        android:textSize="30px" />
+
+    <RelativeLayout
+        android:id="@+id/progress_layout"
+        android:layout_width="500px"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_plugin_sub_title"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="40px"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/tv_plugin_log"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:textSize="24px" />
+
+        <TextView
+            android:id="@+id/tv_plugin_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textSize="24px" />
+
+        <ProgressBar
+            android:id="@+id/plugin_progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="14px"
+            android:layout_below="@id/tv_plugin_log"
+            android:layout_marginTop="16px"
+            android:progressDrawable="@drawable/layer_list_progressbar" />
+
+        <ProgressBar
+            android:id="@+id/plugin_shadow"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="20px"
+            android:layout_below="@id/plugin_progress"
+            android:progressDrawable="@drawable/layer_list_shadow_bar" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_sort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_plugin"
+        android:layout_centerHorizontal="true"
+        android:padding="20px"
+        android:text="@string/enter_sort_page"
+        android:textColor="@color/plugin_sub_title_color"
+        android:textSize="24px"
+        android:visibility="gone" />
+
+</RelativeLayout>

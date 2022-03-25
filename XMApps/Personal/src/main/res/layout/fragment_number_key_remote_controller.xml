@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/iv_key_and_remote"
+        android:layout_width="@dimen/size_bind_hologram_qr_code"
+        android:layout_height="@dimen/size_bind_hologram_qr_code"
+        android:layout_marginStart="@dimen/size_mine_order_list_margin_left"
+        android:layout_marginTop="@dimen/size_qr_code_margin_top"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_key_and_remote"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/px_60"
+        android:layout_marginEnd="@dimen/size_code_desc_text_margin_end"
+        android:gravity="start"
+        android:lineSpacingMultiplier="1.2"
+        android:textSize="@dimen/font_size_feedback_32px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/iv_key_and_remote"
+        app:layout_constraintTop_toTopOf="@id/iv_key_and_remote" />
+
+</android.support.constraint.ConstraintLayout>

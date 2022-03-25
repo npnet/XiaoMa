@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/session_item_linear_left"
+   >
+    <RelativeLayout
+        android:background="@drawable/bg_frame"
+        android:layout_width="@dimen/session_item_relative_width"
+        android:layout_height="@dimen/session_item_relative_height"
+        android:gravity="center_horizontal">
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/session_item_relative2_top"
+        android:layout_width="@dimen/session_item_relative2_width"
+        android:layout_height="@dimen/session_item_relative2_height">
+
+        <ImageView
+            android:id="@+id/session_img"
+            android:layout_width="@dimen/session_item_relative2_session_img_width"
+            android:layout_height="@dimen/session_item_relative2_session_img_height"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg_pic"/>
+
+        <TextView
+            android:id="@+id/session_price"
+            android:layout_width="@dimen/session_item_price_width"
+            android:layout_height="@dimen/session_item_price_height"
+            android:textSize="@dimen/session_item_relative2_session_item_price_size"
+            android:background="@drawable/bg_price"
+            android:gravity="center"
+            android:textColor="#000000"/>
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/film_language"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="国语2D"
+                android:layout_marginTop="@dimen/session_item_relative2_session_film_language_top"
+                android:textSize="@dimen/session_item_relative2_session_film_language_size"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/go_in"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/session_item_relative2_session_go_in_end"
+                android:text="@string/film_start"
+                android:textSize="@dimen/session_item_relative2_session_go_in_size"
+                app:layout_constraintBaseline_toBaselineOf="@+id/line"
+                app:layout_constraintEnd_toStartOf="@+id/line"
+
+                android:textColor="#8a919d"/>
+
+            <TextView
+                android:id="@+id/line"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/session_item_line_top"
+                android:text="_______"
+                android:textColor="#8a919d"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.506"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/go_out"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/session_item_relative2_session_go_out_start"
+                android:text="@string/film_end"
+                android:textSize="@dimen/session_item_relative2_session_go_out_size"
+                app:layout_constraintBaseline_toBaselineOf="@+id/line"
+
+                app:layout_constraintStart_toEndOf="@+id/line"
+                android:textColor="#8a919d"/>
+
+            <TextView
+                android:id="@+id/go_in_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/session_item_go_int_time_top"
+                android:text="10:30"
+                android:textSize="@dimen/session_item_relative2_session_go_in_time_size"
+                app:layout_constraintEnd_toEndOf="@+id/go_in"
+                app:layout_constraintStart_toStartOf="@+id/go_in"
+                app:layout_constraintTop_toBottomOf="@+id/go_in" />
+
+            <TextView
+                android:id="@+id/go_out_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="11:30"
+                android:textSize="@dimen/session_item_relative2_session_go_out_time_szie"
+                app:layout_constraintBaseline_toBaselineOf="@+id/go_in_time"
+                app:layout_constraintEnd_toEndOf="@+id/go_out"
+                app:layout_constraintStart_toStartOf="@+id/go_out" />
+
+        </android.support.constraint.ConstraintLayout>
+    </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/session_name"
+        android:textSize="@dimen/session_item_relative2_session_name_size"
+        android:layout_marginTop="@dimen/session_item_relative2_session_name_top"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:layout_width="@dimen/session_item_relative2_session_name_width"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"/>
+
+</LinearLayout>

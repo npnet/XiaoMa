@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xiaoma.pet">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+        android:name=".PetApp"
+        android:allowBackup="true"
+        android:icon="@drawable/icon_pet"
+        android:label="@string/pet_app"
+        android:supportsRtl="true"
+        android:theme="@style/XiaoMaTheme">
+
+        <meta-data
+            android:name="CarType"
+            android:value="XMLX"/>
+
+        <meta-data
+            android:name="CarChannelId"
+            android:value="${CAR_CHANNEL_ID}"/>
+
+        <meta-data
+            android:name="XmGitRev"
+            android:value="${XM_GIT_REV}"/>
+
+        <activity
+            android:name=".ui.PetSplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.PetHomeActivity"/>
+        <activity android:name=".ui.mall.PetMallActivity"/>
+
+    </application>
+
+</manifest>

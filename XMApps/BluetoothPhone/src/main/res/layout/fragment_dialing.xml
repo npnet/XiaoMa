@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dialing_fragment_width"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_layout">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/title_parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/minimum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/minimum_margin_left"
+                android:layout_marginTop="@dimen/minimum_margin_top"
+                android:src="@drawable/minimize" />
+
+            <TextView
+                android:id="@+id/current_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/call_state_margin_top"
+                android:text="@string/dialing"
+                android:textColor="@color/dark_gray_text"
+                android:textSize="@dimen/call_state_text_size" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/title_parent"
+            android:orientation="vertical">
+
+            <com.xiaoma.bluetooth.phone.common.views.CircleCharAvatarView
+                android:id="@+id/icon"
+                android:layout_width="@dimen/call_contact_icon_size"
+                android:layout_height="@dimen/call_contact_icon_size"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/call_icon_margin_top" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/call_contact_name_margin_top"
+                android:singleLine="true"
+                android:textSize="@dimen/contact_name_text_size" />
+
+            <TextView
+                android:id="@+id/phone_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/call_phone_num"
+                android:singleLine="true"
+                android:textColor="@color/dark_gray_text"
+                android:textSize="@dimen/call_phone_num_size" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="@dimen/height_dial_icon_margin_bottom">
+
+            <LinearLayout
+                android:id="@+id/hang_up_and_listen_parent"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/hang_up_and_listen"
+                    android:layout_width="@dimen/call_operate_button_size"
+                    android:layout_height="@dimen/call_operate_button_size"
+                    android:layout_marginBottom="@dimen/size_icon_margin_bottom"
+                    android:src="@drawable/hangup_and_answer_selector" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/hangup_and_listen"
+                    android:textSize="@dimen/call_operate_button_text_size" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/hang_up"
+                    android:layout_width="@dimen/call_operate_button_size"
+                    android:layout_height="@dimen/call_operate_button_size"
+                    android:layout_marginBottom="@dimen/size_icon_margin_bottom"
+                    android:src="@drawable/hangup_selector" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/hangup"
+                    android:textSize="@dimen/call_operate_button_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/keep_and_listen_parent"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/keep_and_listen"
+                    android:layout_width="@dimen/call_operate_button_size"
+                    android:layout_height="@dimen/call_operate_button_size"
+                    android:layout_marginBottom="@dimen/size_icon_margin_bottom"
+                    android:src="@drawable/keep_and_answer_selector" />
+
+                <TextView
+                    android:id="@+id/listener_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/keep_and_listen"
+                    android:textSize="@dimen/call_operate_button_text_size" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/hang_up_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/hang_up_cover_color"
+        android:layout_marginRight="@dimen/width_bg_padding_right"
+        android:visibility="gone" />
+</RelativeLayout>

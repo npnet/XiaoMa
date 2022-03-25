@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/group_details_outside"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_dim" />
+
+    <LinearLayout
+        android:id="@+id/group_details_parent"
+        android:layout_width="@dimen/width_group_details"
+        android:layout_height="match_parent"
+        android:background="@drawable/drawer_bg"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/padding_group_details_top"
+        android:paddingTop="@dimen/padding_group_details_tab_left">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_group_details_tab"
+            android:paddingLeft="@dimen/padding_group_details_tab_left">
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/group_details_tab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="left"
+                app:tabBackground="@null"
+                app:tabIndicatorHeight="0dp"
+                app:tabPaddingEnd="@dimen/padding_group_details_tab_end" />
+
+            <TextView
+                android:id="@+id/group_details_msg_top_btn"
+                android:layout_width="@dimen/width_msg_top_btn"
+                android:layout_height="@dimen/height_msg_top_btn"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/padding_group_details_main_right"
+                android:layout_marginTop="@dimen/padding_msg_top_btn"
+                android:background="@drawable/club_btn_selector"
+                android:gravity="center_horizontal"
+                android:paddingTop="@dimen/padding_msg_top_btn_top"
+                android:text="@string/group_details_msg_top"
+                android:textColor="@color/club_white"
+                android:textSize="@dimen/font_text_middle" />
+
+        </RelativeLayout>
+
+        <com.xiaoma.ui.view.ControllableViewPager
+            android:id="@+id/group_details_pager"
+            android:layout_width="match_parent"
+            android:layout_marginEnd="35px"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/padding_group_details_tab" />
+
+    </LinearLayout>
+</FrameLayout>

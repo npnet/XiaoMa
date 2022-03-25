@@ -1,0 +1,110 @@
+ext {
+    sdk = this.&sdk
+}
+
+class OnlineFMSDK {
+    private static final String TYPE_TEST = "TEST"
+    private static final String TYPE_KL = "KL"
+    private static final String TYPE_XMLY = "XMLY"
+
+    private static String pick(String sdkType) {
+        if (TYPE_XMLY.equalsIgnoreCase(sdkType)) {
+            return TYPE_XMLY
+        }
+        if (TYPE_KL.equalsIgnoreCase(sdkType)) {
+            return TYPE_KL
+        }
+        return TYPE_TEST
+    }
+}
+
+class LocalFMSDK {
+    private static final String TYPE_TEST = "TEST"
+    private static final String TYPE_YQ = "YQ"
+
+    private static String pick(String sdkType) {
+        if (TYPE_YQ.equalsIgnoreCase(sdkType)) {
+            return TYPE_YQ
+        }
+        return TYPE_TEST
+    }
+}
+
+class AcrCloudSDK {
+    private static final String TYPE_TEST = "TEST"
+    private static final String TYPE_ACR = "ACR"
+
+    private static String pick(String sdkType) {
+        if (TYPE_ACR.equalsIgnoreCase(sdkType)) {
+            return TYPE_ACR
+        }
+        return TYPE_TEST
+    }
+
+}
+
+class SDK {
+    private onlineFMSDKType = OnlineFMSDK.TYPE_TEST
+    private localFMSDKType = LocalFMSDK.TYPE_TEST
+    private acrCloudSDKType = AcrCloudSDK.TYPE_TEST
+
+    void onlineFM(String sdk) {
+        this.onlineFMSDKType = sdk
+    }
+
+    void localFM(String sdk) {
+        this.localFMSDKType = sdk
+    }
+
+    void acrCloud(String sdk) {
+        this.acrCloudSDKType = sdk
+    }
+}
+
+def sdk(Closure closure) {
+    def sdk = new SDK()
+    closure.delegate = sdk
+    closure.call()
+
+    def onlineSDKType = OnlineFMSDK.pick(sdk.onlineFMSDKType)
+    setupOnlineFMSourceSet(onlineSDKType)
+
+    def localFMSDKType = LocalFMSDK.pick(sdk.localFMSDKType)
+    setupLocalFMSourceSet(localFMSDKType)
+
+    def acrCloudSDKType = AcrCloudSDK.pick(sdk.acrCloudSDKType)
+    setupAcrCloudSourceSet(acrCloudSDKType)
+}
+
+def setupOnlineFMSourceSet(String sdk) {
+    project.android.sourceSets.main.java {
+        if (OnlineFMSDK.TYPE_TEST.equalsIgnoreCase(sdk)) {
+            srcDir 'src/main/sdk/online/test'
+        } else if (OnlineFMSDK.TYPE_KL.equalsIgnoreCase(sdk)) {
+            srcDir 'src/main/sdk/online/kl'
+        } else if (OnlineFMSDK.TYPE_XMLY.equalsIgnoreCase(sdk)) {
+            srcDir 'src/main/sdk/online/xmly'
+            srcDir 'src/main/sdk/online/kl'
+        }
+    }
+}
+
+def setupLocalFMSourceSet(String sdk) {
+    project.android.sourceSets.main.java {
+        if (LocalFMSDK.TYPE_TEST.equalsIgnoreCase(sdk)) {
+            srcDir 'src/main/sdk/local/test'
+        } else if (LocalFMSDK.TYPE_YQ.equalsIgnoreCase(sdk)) {
+            srcDir 'src/main/sdk/local/yq'
+        }
+    }
+}
+
+def setupAcrCloudSourceSet(String sdk) {
+    project.android.sourceSets.main.java {
+        if (AcrCloudSDK.TYPE_TEST.equalsIgnoreCase(sdk)) {
+            srcDir 'src/main/sdk/acr/test'
+        } else if (AcrCloudSDK.TYPE_ACR.equalsIgnoreCase(sdk)) {
+            srcDir 'src/main/sdk/acr/acr'
+        }
+    }
+}

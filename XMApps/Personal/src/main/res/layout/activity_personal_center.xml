@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true">
+
+    <!-- 个人头像+手机号 -->
+    <LinearLayout
+        android:id="@+id/personal_info_linear_layout"
+        android:layout_width="@dimen/width_home_left"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/status_bar_height"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <FrameLayout
+            android:layout_width="@dimen/personal_icon_image_size"
+            android:layout_height="@dimen/personal_icon_image_size">
+
+            <ImageView
+                android:id="@+id/personal_icon"
+                android:layout_width="@dimen/personal_icon_image_size"
+                android:layout_height="@dimen/personal_icon_image_size"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_avater" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_avater_circle" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_home_phone_number_margin_top"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_home"
+            tools:text="张三" />
+
+        <TextView
+            android:id="@+id/phone_number_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_home_phone_number_margin_top"
+            android:text="150***9563"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_home" />
+
+
+        <Button
+            android:id="@+id/personal_info_bt"
+            android:layout_width="@dimen/width_home_btn"
+            android:layout_height="@dimen/height_home_btn"
+            android:layout_marginTop="@dimen/size_home_btn_margin_top"
+            android:background="@drawable/selector_button"
+            android:gravity="center"
+            android:text="@string/personal_info"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_home" />
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/divider_line"
+        android:layout_width="@dimen/width_lighting_vertical_divider"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/size_lighting_vertical_divide_margin_top"
+        android:layout_marginBottom="@dimen/size_lighting_vertical_divide_margin_bottom"
+        android:layout_toRightOf="@id/personal_info_linear_layout"
+        android:background="@drawable/lighting_vertical_divider"/>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/personal_center_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/size_home_recyclerview_margin_left_right"
+        android:layout_marginRight="@dimen/size_home_recyclerview_margin_left_right"
+        android:layout_marginTop="@dimen/size_center_icon_margin_top"
+        android:layout_marginBottom="@dimen/size_center_icon_margin_bottom"
+        android:layout_toRightOf="@id/divider_line"/>
+
+    <com.xiaoma.ui.view.XmScrollBar
+        android:id="@+id/xsb_personal_center"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/width_vertical_scrollbar"
+        android:layout_alignStart="@+id/personal_center_recycler_view"
+        android:layout_alignEnd="@+id/personal_center_recycler_view"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/size_center_icon_bar_margin_start"
+        android:layout_marginEnd="@dimen/size_center_icon_bar_margin_end"
+        android:layout_marginBottom="48px"
+        app:xmdirection="horizontal" />
+
+    <View
+        android:id="@+id/personal_center_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"
+        android:visibility="gone"/>
+</RelativeLayout>

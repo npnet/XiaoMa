@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cl_message_home_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible">
+
+
+        <ImageView
+            android:id="@+id/iv_mine_message_title_voice"
+            android:layout_width="@dimen/size_feedback_home_icon"
+            android:layout_height="@dimen/size_feedback_home_icon"
+            android:layout_marginStart="@dimen/size_feedback_title_icon_start"
+            android:layout_marginTop="@dimen/size_feedback_title_icon_top"
+            android:src="@drawable/feedback_title_icon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/tv_mine_message_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_mine_message_title_start"
+            android:layout_marginTop="@dimen/size_feedback_title_top"
+            android:text="@string/feedback_title_content"
+            android:textSize="@dimen/font_size_feedback_32px"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/iv_mine_message_title_voice"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_mine_message"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="40px"
+            android:overScrollMode="never"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/mine_message_scroll_bar"
+            app:layout_constraintStart_toStartOf="@id/tv_mine_message_title"
+            app:layout_constraintTop_toBottomOf="@id/tv_mine_message_title" />
+
+        <com.xiaoma.ui.view.XmScrollBar
+            android:id="@+id/mine_message_scroll_bar"
+            android:layout_width="@dimen/height_scrollbar"
+            android:layout_height="@dimen/width_scrollbar"
+            android:layout_marginEnd="@dimen/search_margin_30"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/rv_mine_message"
+            app:layout_constraintTop_toBottomOf="@id/tv_mine_message_title"
+            app:xmdirection="vertical" />
+    </android.support.constraint.ConstraintLayout>
+
+    <!-- 异常页处理 -->
+    <include
+        layout="@layout/exception_situation_layout"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/message_translucent_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.7"
+        android:background="#000000"
+        android:visibility="gone" />
+
+</FrameLayout>

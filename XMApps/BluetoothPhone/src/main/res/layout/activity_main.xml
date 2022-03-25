@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/window_height"
+    android:layout_marginLeft="@dimen/margin_menu"
+    android:layout_marginTop="@dimen/margin_top"
+    android:orientation="horizontal"
+    tools:context=".main.ui.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/refresh_and_close_parent"
+        android:layout_width="@dimen/menu_width"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_left_side">
+
+        <ImageView
+            android:id="@+id/close"
+            android:layout_width="86px"
+            android:layout_height="86px"
+            android:padding="@dimen/refresh_close_icon_margin"
+            android:src="@drawable/icon_close" />
+
+        <ImageView
+            android:id="@+id/refresh"
+            android:layout_width="86px"
+            android:layout_height="86px"
+            android:layout_alignParentBottom="true"
+            android:padding="@dimen/refresh_close_icon_margin"
+            android:src="@drawable/icon_refresh" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/group"
+            android:layout_width="wrap_content"
+            android:paddingLeft="@dimen/menu_padding_left"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/main_tab_margin_top" />
+    </RelativeLayout>
+
+
+    <!--<RadioButton
+        android:id="@+id/rb_history"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/font_window_text"
+        android:button="@null"
+        android:gravity="center"
+        android:background="@drawable/call_history_selector"
+        android:textColor="@android:color/white" />
+
+    <RadioButton
+        android:id="@+id/rb_keyboard"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textSize="@dimen/font_window_text"
+        android:layout_weight="1"
+        android:button="@null"
+        android:gravity="center"
+        android:text="拨号键盘"
+        android:textColor="@android:color/white" />
+
+    <RadioButton
+        android:id="@+id/rb_contacts"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textSize="@dimen/font_window_text"
+        android:button="@null"
+        android:gravity="center"
+        android:text="联系人"
+        android:textColor="@android:color/white" />-->
+
+    <FrameLayout
+        android:id="@+id/fl_left"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_marginLeft="@dimen/width_right_layout_margin_left"
+        android:id="@+id/fl_right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+    </FrameLayout>
+
+</LinearLayout>

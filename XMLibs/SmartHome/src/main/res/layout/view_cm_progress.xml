@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="556px"
+    android:layout_height="180px"
+    android:background="@drawable/bg_dialog_small"
+    android:gravity="center">
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:indeterminateBehavior="repeat"
+        android:indeterminateDrawable="@drawable/rotate_progress"
+        android:layout_marginRight="30px"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize= "36px"
+        android:text="@string/excuting" />
+</LinearLayout>

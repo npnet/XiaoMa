@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/width_left_draw"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:background="@drawable/bg_popup_floating"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_center_task_draw_title_margin_start"
+        android:layout_marginTop="@dimen/size_center_task_draw_title_margin_top"
+        android:text="@string/task_record"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_left_draw_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <com.xiaoma.ui.StateControl.StateView
+        android:id="@+id/task_note_state_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/size_center_task_draw_container_margin_start"
+        android:layout_marginTop="@dimen/size_center_task_draw_container_margin_top"
+        android:layout_marginEnd="@dimen/size_center_task_draw_container_margin_end"
+        android:layout_marginBottom="@dimen/size_center_task_draw_container_margin_bottom"
+        app:emptyView="@layout/include_no_car_coin_record"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/scroll_bar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/draw_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </com.xiaoma.ui.StateControl.StateView>
+
+    <com.xiaoma.ui.view.XmScrollBar
+        android:id="@+id/scroll_bar"
+        android:layout_width="@dimen/width_vertical_scrollbar"
+        android:layout_height="0dp"
+        android:layout_marginEnd="@dimen/size_center_task_draw_bar_margin_end"
+        app:layout_constraintBottom_toBottomOf="@+id/task_note_state_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/task_note_state_view"
+        app:xmdirection="vertical"
+        tools:visibility="visible"/>
+</android.support.constraint.ConstraintLayout>

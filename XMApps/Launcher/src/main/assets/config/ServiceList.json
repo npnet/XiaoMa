@@ -1,0 +1,279 @@
+﻿ {
+   "data": [
+     {
+       "id": 1,
+       "categoryName": "CAR",
+       "name": "车辆",
+       "imgUrl": "http:\/\/www.carbuyin.net\/by2\/filePath\/4855a0f5-2978-4cac-acdc-b89489bd1f54.png",
+       "parentId": 0,
+       "createDate": "2019-07-09 17:16:12",
+       "modifyDate": "2019-07-09 17:16:14",
+       "channelId": "AA1090",
+       "enableStatus": 1,
+       "items": [
+         {
+           "id": 6,
+           "categoryName": "Nearby Gas Stations",
+           "name": "附近加油站",
+           "imgUrl": "http:\/\/www.carbuyin.net\/by3\/filePath\/0db2c165-5d9c-45c0-926e-7a13bbf54147.png",
+           "type": "NearbyGasStation",
+           "pageType": "NearbyGasStationPage",
+           "parentId": 1,
+           "createDate": "2019-07-09 17:26:36",
+           "modifyDate": "2019-07-09 17:26:38",
+           "channelId": "AA1090",
+           "enableStatus": 1
+         },
+         {
+           "id": 7,
+           "categoryName": "Nearby Parking Lots",
+           "name": "附近停车场",
+           "imgUrl": "http:\/\/www.carbuyin.net\/by3\/filePath\/b8a8039a-0bde-4d25-ad58-f2eafaacc266.png",
+           "type": "NearbyParkingLot",
+           "pageType": "NearbyParkingLotPage",
+           "parentId": 1,
+           "createDate": "2019-07-09 17:26:40",
+           "modifyDate": "2019-07-09 17:26:43",
+           "channelId": "AA1090",
+           "enableStatus": 1
+         },
+         {
+           "id": 8,
+           "categoryName": "Maintenance Time",
+           "name": "保养期",
+           "imgUrl": "http:\/\/www.carbuyin.net\/by3\/filePath\/9f830bc3-8d35-4328-98f7-2e4d93bb9773.png",
+           "type": "MaintenancePeriod",
+           "pageType": "MaintenancePeriodPage",
+           "parentId": 1,
+           "createDate": "2019-07-09 17:26:47",
+           "modifyDate": "2019-07-09 17:26:45",
+           "channelId": "AA1090",
+           "enableStatus": 1
+         }
+       ]
+     },
+     {
+       "id": 2,
+       "categoryName": "CUISINE",
+       "name": "美食",
+       "imgUrl": "http:\/\/www.carbuyin.net\/by2\/filePath\/e421e5a3-56d3-483d-9ada-6a24d1b25a23.png",
+       "parentId": 0,
+       "createDate": "2019-07-09 17:19:24",
+       "modifyDate": "2019-07-09 17:19:33",
+       "channelId": "AA1090",
+       "enableStatus": 1,
+       "items": [
+         {
+           "id": 9,
+           "categoryName": "Nearby Cuisine",
+           "name": "附近美食",
+           "imgUrl": "http:\/\/www.carbuyin.net\/by3\/filePath\/b61aa5d2-b492-4df1-bbc0-f1410de237e0.png",
+           "type": "NearbyFood",
+           "pageType": "NearbyFoodPage",
+           "parentId": 2,
+           "createDate": "2019-07-09 17:26:49",
+           "modifyDate": "2019-07-09 17:26:55",
+           "channelId": "AA1090",
+           "enableStatus": 1
+         },
+         {
+           "id": 10,
+           "categoryName": "Cuisine Classification",
+           "name": "美食分类",
+           "imgUrl": "http:\/\/www.carbuyin.net\/by3\/filePath\/8b93a454-c13b-4b0a-af04-cf753f02ef3c.png",
+           "type": "FoodCategory",
+           "pageType": "FoodCategoryPage",
+           "parentId": 2,
+           "createDate": "2019-07-09 17:26:51",
+           "modifyDate": "2019-07-09 17:26:57",
+           "channelId": "AA1090",
+           "enableStatus": 1
+         },
+         {
+           "id": 11,
+           "categoryName": "Collection",
+           "name": "我的收藏",
+           "imgUrl": "http:\/\/www.carbuyin.net\/by3\/filePath\/e2c56ea9-7fbf-4b6f-87a7-b1b4f1acc2fe.png",
+           "type": "FoodCollection",
+           "pageType": "FoodCollectionPage",
+           "parentId": 2,
+           "createDate": "2019-07-09 17:26:53",
+           "modifyDate": "2019-07-09 17:26:59",
+           "channelId": "AA1090",
+           "enableStatus": 1
+         }
+       ]
+     },
+     {
+       "id": 3,
+       "categoryName": "MOVIE",
+       "name": "电影",
+       "imgUrl": "http:\/\/www.carbuyin.net\/by2\/filePath\/99e20390-8ade-44ec-9b4e-dddccd3e78e5.png",
+       "parentId": 0,
+       "createDate": "2019-07-09 17:19:27",
+       "modifyDate": "2019-07-09 17:19:36",
+       "channelId": "AA1090",
+       "enableStatus": 1,
+       "items": [
+         {
+           "id": 12,
+           "categoryName": "Nearby Cinema",
+           "name": "附近影院",
+           "imgUrl": "http:\/\/www.carbuyin.net\/by3\/filePath\/de1a164f-901d-490c-a295-81ff04358b01.png",
+           "type": "NearbyCinema",
+           "pageType": "NearbyCinemaPage",
+           "parentId": 3,
+           "createDate": "2019-07-09 17:33:11",
+           "modifyDate": "2019-07-09 17:33:16",
+           "channelId": "AA1090",
+           "enableStatus": 1
+         },
+         {
+           "id": 13,
+           "categoryName": "Hot Movie",
+           "name": "热门影片",
+           "imgUrl": "http:\/\/www.carbuyin.net\/by3\/filePath\/0eaed74c-b787-4b9b-a586-65d809a55c16.png",
+           "type": "PopularCinema",
+           "pageType": "PopularCinemaPage",
+           "parentId": 3,
+           "createDate": "2019-07-09 17:33:12",
+           "modifyDate": "2019-07-09 17:33:18",
+           "channelId": "AA1090",
+           "enableStatus": 1
+         },
+         {
+           "id": 14,
+           "categoryName": "My Order",
+           "name": "我的购买",
+           "imgUrl": "http:\/\/www.carbuyin.net\/by3\/filePath\/4bccf230-2cca-4c66-899d-448e72f2d9e3.png",
+           "type": "FilmOrder",
+           "pageType": "FilmOrderPage",
+           "parentId": 3,
+           "createDate": "2019-07-09 17:33:14",
+           "modifyDate": "2019-07-09 17:33:20",
+           "channelId": "AA1090",
+           "enableStatus": 1
+         },
+         {
+           "id": 15,
+           "categoryName": "My Collection",
+           "name": "我的收藏",
+           "imgUrl": "http:\/\/www.carbuyin.net\/by3\/filePath\/6f15d8d1-24c6-41ab-bcec-0b34b2824c42.png",
+           "type": "FilmCollection",
+           "pageType": "FilmCollectionPage",
+           "parentId": 3,
+           "createDate": "2019-07-09 17:33:24",
+           "modifyDate": "2019-07-09 17:33:22",
+           "channelId": "AA1090",
+           "enableStatus": 1
+         }
+       ]
+     },
+     {
+       "id": 4,
+       "categoryName": "HOTEL",
+       "name": "酒店",
+       "imgUrl": "http:\/\/www.carbuyin.net\/by2\/filePath\/9b54bd3f-1f36-4198-ae2a-1faff95de394.png",
+       "parentId": 0,
+       "createDate": "2019-07-09 17:19:29",
+       "modifyDate": "2019-07-09 17:19:38",
+       "channelId": "AA1090",
+       "enableStatus": 1,
+       "items": [
+         {
+           "id": 16,
+           "categoryName": "Nearby Hotel",
+           "name": "附近酒店",
+           "imgUrl": "http:\/\/www.carbuyin.net\/by3\/filePath\/9cdf2a4d-67f6-40f8-9558-3f8cc1ffbc32.png",
+           "type": "NearbyHotel",
+           "pageType": "NearbyHotelPage",
+           "parentId": 4,
+           "createDate": "2019-07-09 17:33:26",
+           "modifyDate": "2019-07-09 17:33:27",
+           "channelId": "AA1090",
+           "enableStatus": 1
+         },
+         {
+           "id": 17,
+           "categoryName": "My Order",
+           "name": "我的购买",
+           "imgUrl": "http:\/\/www.carbuyin.net\/by3\/filePath\/f6a09719-2ec6-438d-95b5-e3f764ea5c31.png",
+           "type": "HotelOrder",
+           "pageType": "HotelOrderPage",
+           "parentId": 4,
+           "createDate": "2019-07-09 17:33:29",
+           "modifyDate": "2019-07-09 17:33:31",
+           "channelId": "AA1090",
+           "enableStatus": 1
+         },
+         {
+           "id": 19,
+           "categoryName": "My Collection",
+           "name": "我的收藏",
+           "imgUrl": "http:\/\/www.carbuyin.net\/by3\/filePath\/cd4d421a-95d5-4183-b994-1182fc239d32.png",
+           "type": "HotelCollection",
+           "pageType": "HotelCollectionPage",
+           "parentId": 4,
+           "createDate": "2019-07-09 17:33:34",
+           "modifyDate": "2019-07-09 17:33:36",
+           "channelId": "AA1090",
+           "enableStatus": 1
+         }
+       ]
+     },
+     {
+       "id": 5,
+       "categoryName": "ATTRACTIONS",
+       "name": "景点",
+       "imgUrl": "http:\/\/www.carbuyin.net\/by2\/filePath\/b8e4db09-3232-4880-a98c-44e32d4caa61.png",
+       "parentId": 0,
+       "createDate": "2019-07-09 17:19:31",
+       "modifyDate": "2019-07-09 17:19:40",
+       "channelId": "AA1090",
+       "enableStatus": 1,
+       "items": [
+         {
+           "id": 20,
+           "categoryName": "Nearby Attractions",
+           "name": "附近景点",
+           "imgUrl": "http:\/\/www.carbuyin.net\/by3\/filePath\/f43fca57-6fab-444d-844d-8b1ab5452215.png",
+           "type": "NearbyAttraction",
+           "pageType": "NearbyAttractionPage",
+           "parentId": 5,
+           "createDate": "2019-07-09 17:33:38",
+           "modifyDate": "2019-07-09 17:33:40",
+           "channelId": "AA1090",
+           "enableStatus": 1
+         },
+         {
+           "id": 21,
+           "categoryName": "Attraction Classification",
+           "name": "景点分类",
+           "imgUrl": "http:\/\/www.carbuyin.net\/by3\/filePath\/4c5cf22c-e7de-42d4-9048-a2d300b78e79.png",
+           "type": "AttractionCategory",
+           "pageType": "AttractionCategoryPage",
+           "parentId": 5,
+           "createDate": "2019-07-09 17:33:42",
+           "modifyDate": "2019-07-09 17:33:44",
+           "channelId": "AA1090",
+           "enableStatus": 1
+         },
+         {
+           "id": 22,
+           "categoryName": "My Collection",
+           "name": "我的收藏",
+           "imgUrl": "http:\/\/www.carbuyin.net\/by3\/filePath\/6d063014-89fe-4041-a38f-5737b74c914b.png",
+           "type": "AttractionCollection",
+           "pageType": "AttractionCollectionPage",
+           "parentId": 5,
+           "createDate": "2019-07-09 17:33:46",
+           "modifyDate": "2019-07-09 17:33:48",
+           "channelId": "AA1090",
+           "enableStatus": 1
+         }
+       ]
+     }
+   ],
+   "resultCode": "1",
+   "resultMessage": "操作成功"
+ }

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#44ffffff">
+
+    <android.support.constraint.Group
+        android:id="@+id/group_mode_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="btnPre,btnNext,btnList,btnFullScreen,btnZoomIn,btnZoomOut" />
+
+    <Button
+        android:id="@+id/btnPre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onPre"
+        android:text="pre"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onNext"
+        android:text="next"
+        app:layout_constraintLeft_toRightOf="@id/btnPre"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="list"
+        android:text="list"
+        app:layout_constraintLeft_toRightOf="@id/btnNext"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnFullScreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="fullScreen"
+        android:text="fullScreen"
+        app:layout_constraintLeft_toRightOf="@id/btnList"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnZoomIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="zoomIn"
+        android:text="zoomIn"
+        app:layout_constraintLeft_toRightOf="@id/btnFullScreen"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnZoomOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="zoomOut"
+        android:text="zoomOut"
+        app:layout_constraintLeft_toRightOf="@id/btnZoomIn"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnRotate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="rotate"
+        android:text="rotate"
+        app:layout_constraintLeft_toRightOf="@id/btnZoomOut"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnShowType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="showType"
+        android:text="showType"
+        app:layout_constraintLeft_toRightOf="@id/btnRotate"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.constraint.Group
+        android:id="@+id/group_pic_operate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="tvOrigin,ivOriginal,tvOperate,ivOperate,guide_half_horizontal" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guide_half_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <TextView
+        android:id="@+id/tvOrigin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="原图"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="36sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/guide_half_horizontal"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivOriginal"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/guide_half_horizontal"
+        app:layout_constraintTop_toBottomOf="@id/tvOrigin"
+        app:layout_constraintWidth_percent="0.5"
+        tools:src="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/tvOperate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="操作名"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="36sp"
+        app:layout_constraintLeft_toLeftOf="@id/guide_half_horizontal"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivOperate"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="0.5"
+        app:layout_constraintLeft_toLeftOf="@id/guide_half_horizontal"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvOrigin"
+        app:layout_constraintWidth_percent="0.5"
+        tools:src="@drawable/ic_launcher_background" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvFullScreen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+    </android.support.v7.widget.RecyclerView>
+
+</android.support.constraint.ConstraintLayout>

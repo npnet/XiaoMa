@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_bg_middle">
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_dialog_personal_sex_title_top"
+        android:text="@string/sex"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_home"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/content_container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/tv_sure"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/divide_line"
+        app:layout_constraintTop_toBottomOf="@+id/content_container"
+        app:layout_constraintBottom_toTopOf="@+id/tv_sure" />
+
+    <TextView
+        android:id="@+id/tv_sure"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dialog_button_height"
+        android:layout_marginStart="20dp"
+        android:gravity="center"
+        android:text="@string/confirm"
+        android:textSize="@dimen/font_size_home"
+        android:textColor="@drawable/selector_bg_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tv_cancel"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/image_divide_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/divide_vertical"
+        app:layout_constraintTop_toTopOf="@+id/tv_sure"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_sure"
+        app:layout_constraintStart_toEndOf="@+id/tv_sure"
+        app:layout_constraintEnd_toStartOf="@+id/tv_cancel" />
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dialog_button_height"
+        android:layout_marginEnd="20dp"
+        android:textColor="@drawable/selector_bg_button"
+        android:gravity="center"
+        android:textSize="@dimen/font_size_home"
+        android:text="@string/cancel_info"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tv_sure" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,16 @@
+apply plugin: 'com.android.library'
+apply from: "$rootDir$Android"
+
+android library()
+
+dependencies {
+    implementation project(':XMLibs:Utils')
+    implementation project(':XMLibs:Config')
+    implementation project(':XMLibs:Network')
+    //信鸽依赖，不包含厂商通道，另外三个是他的其他依赖
+    api 'com.tencent.xinge:xinge:3.2.6-release'
+    api 'com.tencent.jg:jg:1.1'
+    api 'com.tencent.wup:wup:1.0.0.E-release'
+    //noinspection GradleDependency
+    api 'com.tencent.mid:mid:4.0.6-release'
+}

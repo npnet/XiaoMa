@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="1270px"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/iv_cover"
+        android:layout_width="@dimen/food_scenic_collect_item_width"
+        android:layout_height="@dimen/food_scenic_collect_item_height"
+        android:paddingLeft="31px"
+        android:paddingTop="31px"
+        android:paddingRight="31px"
+        android:paddingBottom="95px"
+        android:background="@drawable/bg_collect_frame"
+        android:layout_centerVertical="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/not_hotel_img" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/food_scenic_collect_item_score_height"
+        android:layout_alignLeft="@+id/iv_cover"
+        android:layout_alignTop="@+id/iv_cover"
+        android:layout_marginLeft="31px"
+        android:layout_marginTop="31px"
+        android:background="@drawable/collect_item_type_back"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="25px"
+            android:layout_height="25px"
+            android:src="@drawable/fraction_icon" />
+        <TextView
+            android:id="@+id/tv_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10px"
+            android:text="5.0"
+            android:textColor="#2c2c2c"
+            android:textSize="@dimen/food_scenic_collect_item_score_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/collection_linear"
+        android:layout_alignTop="@+id/iv_cover"
+        android:layout_alignRight="@+id/iv_cover"
+        android:layout_marginTop="31px"
+        android:layout_marginRight="31px"
+        android:gravity="center"
+        android:background="@drawable/collect_item_type_back"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/food_scenic_collect_item_collection_height">
+        <ImageView
+            android:id="@+id/iv_collection"
+            android:src="@drawable/collect_star_select"
+            android:layout_width="20px"
+            android:layout_height="20px" />
+        <TextView
+            android:id="@+id/tv_collection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7px"
+            android:text="@string/already_collect"
+            android:textColor="#2c2c2c"
+            android:textSize="20px" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/iv_cover"
+        android:layout_marginLeft="84px"
+        android:layout_marginTop="48px"
+        android:layout_toRightOf="@id/iv_cover"
+        android:textSize="28px"
+        android:text="店铺名称" />
+
+
+    <TextView
+        android:id="@+id/tv_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_name"
+        android:layout_marginLeft="84px"
+        android:layout_marginTop="36px"
+        android:layout_toRightOf="@+id/iv_cover"
+        android:textColor="@color/color_8a919d"
+        android:textSize="24px"
+        android:text="@string/details" />
+
+
+    <Button
+        android:id="@+id/tv_guide"
+        android:layout_width="176px"
+        android:layout_height="78px"
+        android:layout_below="@+id/tv_detail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="84px"
+        android:layout_marginTop="70px"
+        android:layout_toRightOf="@+id/iv_cover"
+        android:background="@drawable/selector_button"
+        android:gravity="center_horizontal"
+        android:paddingTop="9px"
+        android:textSize="26px"
+        android:text="@string/btn_navi" />
+
+    <Button
+        android:id="@+id/tv_book"
+        android:layout_width="176px"
+        android:layout_height="78px"
+        android:layout_alignTop="@+id/tv_guide"
+        android:layout_marginLeft="45px"
+        android:layout_toRightOf="@+id/tv_guide"
+        android:background="@drawable/selector_button"
+        android:gravity="center_horizontal"
+        android:paddingTop="9px"
+        android:textSize="26px"
+        android:text="@string/book_order" />
+
+    <Button
+        android:id="@+id/tv_call"
+        android:layout_width="176px"
+        android:layout_height="78px"
+        android:layout_alignTop="@+id/tv_book"
+        android:layout_marginLeft="45px"
+        android:layout_toRightOf="@+id/tv_book"
+        android:background="@drawable/selector_button"
+        android:gravity="center_horizontal"
+        android:paddingTop="9px"
+        android:textSize="26px"
+        android:text="@string/btn_phone" />
+
+
+</RelativeLayout>

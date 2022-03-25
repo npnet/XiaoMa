@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/layout_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/height_contacts_fragment_margin_top">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv"
+            android:layout_width="100px"
+            android:layout_height="500px"
+            android:layout_weight="1"
+            android:splitMotionEvents="false" />
+
+        <RelativeLayout
+            android:layout_width="@dimen/scroll_bar_parent_width"
+            android:layout_height="match_parent">
+
+            <com.xiaoma.bluetooth.phone.common.views.VerticalScrollBar
+                android:id="@+id/scroll_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/scroll_bar_height"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="@dimen/contact_head_margin_left"
+                android:layout_marginRight="@dimen/contact_collect_icon_width"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/no_contact_layout"
+        layout="@layout/no_contact_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible" />
+
+</RelativeLayout>

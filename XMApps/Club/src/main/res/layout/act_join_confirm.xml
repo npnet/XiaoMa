@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <com.xiaoma.club.common.view.UserHeadView
+        android:id="@+id/motorcade_head"
+        android:layout_width="@dimen/size_share_confirm_icon"
+        android:layout_height="@dimen/size_share_confirm_icon"
+        android:layout_marginTop="@dimen/margin_top_share__icon" />
+
+    <TextView
+        android:id="@+id/motorcade_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top_team_name"
+        android:text="--"
+        android:textSize="@dimen/text_size_36"/>
+
+    <TextView
+        android:id="@+id/command"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top_command"
+        android:text="@string/command_default"
+        android:textColor="@color/rp_msg_item_text_weak"
+        android:textSize="@dimen/text_size_28" />
+
+    <TextView
+        android:id="@+id/members_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top_count"
+        android:text="@string/members_count_default"
+        android:textColor="@color/rp_msg_item_text_weak"
+        android:textSize="@dimen/text_size_28" />
+
+    <Button
+        android:id="@+id/join_right_now"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top_join"
+        android:paddingBottom="@dimen/padding_top_confirm_btn"
+        android:background="@drawable/confirm_btn_bg"
+        android:text="@string/confirm_join"
+        android:textSize="@dimen/text_size_22" />
+
+</LinearLayout>

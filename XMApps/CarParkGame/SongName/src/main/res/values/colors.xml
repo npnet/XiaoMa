@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="play_title_bg_color">#3a4790</color>
+    <color name="right_color">#e659ff75</color>
+    <color name="wrong_color">#e0ff5959</color>
+    <color name="tip_color">#e6a1a7b3</color>
+    <color name="sort_item_head_my_color">#fde0b7</color>
+    <color name="sort_item_head_other_color">#5db1ff</color>
+</resources>

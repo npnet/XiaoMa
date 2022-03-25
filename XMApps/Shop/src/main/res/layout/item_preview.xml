@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_preview_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:layout_gravity="center">
+
+    <ImageView
+        android:id="@+id/iv_preview_image"
+        android:layout_width="@dimen/width_shop_item"
+        android:layout_height="0dp"
+        android:background="@drawable/bg_cover_bottom"
+        android:scaleType="fitXY"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- 角标 -->
+    <ImageView
+        android:id="@+id/iv_subscript_icon"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@id/iv_preview_image"
+        app:layout_constraintEnd_toEndOf="@id/iv_preview_image"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="@id/iv_preview_image"
+        app:layout_constraintTop_toTopOf="@id/iv_preview_image" />
+
+
+    <!-- 试听 -->
+    <ImageView
+        android:id="@+id/iv_test_play"
+        android:layout_width="@dimen/size_play_button"
+        android:layout_height="@dimen/size_play_button"
+        android:src="@drawable/level_btn_play_pause"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/iv_preview_image"
+        app:layout_constraintEnd_toEndOf="@id/iv_preview_image"
+        app:layout_constraintStart_toStartOf="@id/iv_preview_image"
+        app:layout_constraintTop_toTopOf="@id/iv_preview_image" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/preview_tag_layout"
+        android:layout_width="@dimen/width_shop_item"
+        android:layout_height="0px"
+        android:background="@drawable/bg_cover_bottom"
+        app:layout_constraintBottom_toBottomOf="@id/iv_preview_image"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="@id/iv_preview_image"
+        app:layout_constraintStart_toStartOf="@id/iv_preview_image"
+        app:layout_constraintTop_toTopOf="@id/iv_preview_image">
+
+        <TextView
+            android:id="@+id/tv_preview_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_item_title_margin_left"
+            android:layout_marginBottom="@dimen/size_item_title_margin_bottom"
+            android:ellipsize="end"
+            android:maxEms="6"
+            android:maxLines="1"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/font_of_shop_20"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            tools:text="@tools:sample/last_names" />
+
+
+        <TextView
+            android:id="@+id/tv_preview_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/size_item_use_count_margin_right"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/font_of_shop_20"
+            app:layout_constraintBottom_toBottomOf="@id/tv_preview_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_preview_name"
+            tools:text="1000次" />
+
+        <TextView
+            android:id="@+id/tv_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/size_item_title_margin_bottom"
+            android:text="@string/default_3d_self"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/font_of_shop_20"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:text="1000次" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/layout_rmb"
+        android:layout_width="wrap_content"
+        android:layout_height="30px"
+        android:layout_marginTop="@dimen/size_item_rmb_margin_top"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintLeft_toLeftOf="@id/iv_preview_image"
+        app:layout_constraintRight_toLeftOf="@id/layout_coin"
+        app:layout_constraintTop_toBottomOf="@id/iv_preview_image">
+
+        <TextView
+            android:id="@+id/tvDiscountRMB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:textColor="@color/color_number_yellow"
+            android:textSize="@dimen/font_of_shop_24"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/tvOriginalRMB"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="￥24" />
+
+        <com.xiaoma.shop.business.ui.view.SlopeDeleteTextView
+            android:id="@+id/tvOriginalRMB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_item_rmb_origin_price_margin_left"
+            android:includeFontPadding="false"
+            android:paddingLeft="1px"
+            android:paddingRight="1px"
+            android:textColor="@color/color_flow_tv_origin_price"
+            android:textSize="@dimen/font_of_shop_20"
+            app:layout_constraintBottom_toBottomOf="@id/tvDiscountRMB"
+            app:layout_constraintLeft_toRightOf="@id/tvDiscountRMB"
+            app:layout_constraintTop_toTopOf="@id/tvDiscountRMB"
+            app:slope_line_color="@android:color/holo_red_dark"
+            tools:text="230" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/layout_coin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_item_group_score_margin_top"
+        app:layout_constraintLeft_toRightOf="@id/layout_rmb"
+        app:layout_constraintRight_toRightOf="@id/iv_preview_image"
+        app:layout_constraintTop_toBottomOf="@id/iv_preview_image">
+
+        <ImageView
+            android:id="@+id/ivYellowCoin"
+            android:layout_width="@dimen/width_shop_item_yellow_coin"
+            android:layout_height="0dp"
+            android:src="@drawable/coin_yellow_middle"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/tvScoreDiscount"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvScoreDiscount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_item_score_icon_text_span"
+            android:includeFontPadding="false"
+            android:textColor="@color/color_number_yellow"
+            android:textSize="@dimen/font_of_shop_24"
+            app:layout_constraintBottom_toBottomOf="@id/ivYellowCoin"
+            app:layout_constraintLeft_toRightOf="@id/ivYellowCoin"
+            app:layout_constraintRight_toLeftOf="@id/tvScoreOriginal"
+            app:layout_constraintTop_toTopOf="@id/ivYellowCoin"
+            tools:text="1000" />
+
+        <com.xiaoma.shop.business.ui.view.SlopeDeleteTextView
+            android:id="@+id/tvScoreOriginal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5px"
+            android:includeFontPadding="false"
+            android:paddingLeft="1px"
+            android:paddingRight="2px"
+            android:textColor="@color/color_flow_tv_origin_price"
+            android:textSize="@dimen/font_of_shop_20"
+            app:layout_constraintBottom_toBottomOf="@id/ivYellowCoin"
+            app:layout_constraintLeft_toRightOf="@id/tvScoreDiscount"
+            app:layout_constraintTop_toTopOf="@id/ivYellowCoin"
+            app:slope_line_color="@android:color/holo_red_dark"
+            tools:text="200" />
+
+        <!--<com.xiaoma.shop.business.ui.view.SlashView-->
+        <!--android:id="@+id/layout_gray_coin"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginStart="@dimen/size_item_score_group_origin_margin_left"-->
+        <!--android:layout_toRightOf="@+id/ll_current_price"-->
+        <!--android:paddingStart="@dimen/size_item_score_group_origin_padding_left"-->
+        <!--android:paddingEnd="@dimen/size_item_score_group_origin_padding_right"-->
+        <!--android:visibility="visible"-->
+        <!--app:layout_constraintBottom_toBottomOf="@id/ivYellowCoin"-->
+        <!--app:layout_constraintLeft_toRightOf="@id/tvYellowCoin"-->
+        <!--app:layout_constraintRight_toRightOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="@id/ivYellowCoin">-->
+
+        <!--<ImageView-->
+        <!--android:id="@+id/ivGrayCoin"-->
+        <!--android:layout_width="@dimen/width_item_score_origin_icon"-->
+        <!--android:layout_height="@dimen/height_item_score_origin_icon"-->
+        <!--android:layout_marginStart="@dimen/size_item_score_origin_icon_margin_left"-->
+        <!--android:src="@drawable/coin_gray_small"-->
+        <!--android:visibility="gone"-->
+        <!--app:layout_constraintRight_toLeftOf="@id/tvGrayCoin" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/tvGrayCoin"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginStart="@dimen/size_item_score_origin_txt_margin_left"-->
+        <!--android:textColor="#bcbcbd"-->
+        <!--android:textSize="@dimen/font_of_shop_18"-->
+        <!--app:layout_constraintBottom_toBottomOf="@id/ivGrayCoin"-->
+        <!--app:layout_constraintLeft_toRightOf="@id/ivGrayCoin"-->
+        <!--app:layout_constraintTop_toTopOf="@id/ivGrayCoin"-->
+        <!--tools:text="1000" />-->
+
+        <!--</com.xiaoma.shop.business.ui.view.SlashView>-->
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

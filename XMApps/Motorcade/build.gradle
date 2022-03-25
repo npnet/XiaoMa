@@ -1,0 +1,34 @@
+apply plugin: 'com.android.application'
+apply plugin: 'android-aspectjx'
+apply from: "$rootDir$Android"
+apply from: "$rootDir$Modules"
+apply from: "$rootDir$Tinker"
+
+android application('com.xiaoma.motorcade')
+dependencies dependency(Motorcade)
+
+
+dependencies {
+    //由于和车信使用的是同一个jar包，为了不影响车信，先使用这个
+    implementation files("${XMJars}hyphenatechat_3.5.3_test.jar")
+    implementation files("${XMJars}AMap3DMap_6.8.0_AMapSearch_6.5.0_AMapLocation_4.6.0_20190423.jar")
+    implementation "org.simple:androideventbus:$EVENT_BUS_VERSION"
+    implementation "com.android.support.constraint:constraint-layout:${CONSTRAINT_LAYOUT}"
+    implementation "com.github.CymChad:BaseRecyclerViewAdapterHelper:${BASE_RECYCLERVIEW_ADAPTER_HELPER}"
+    implementation "android.arch.persistence.room:runtime:$ROOM_VERSION"
+    annotationProcessor "android.arch.persistence.room:compiler:$ROOM_VERSION"
+}
+
+tinker {
+    appClassName 'com.xiaoma.motorcade.MotorcadeApp'
+    buildPatch {
+        baseApkPath ''
+        baseResMapping ''
+        baseMapping ''
+    }
+    patchDesc {
+        baseVersion ''
+        patchVersion 0
+        patchMessage ''
+    }
+}

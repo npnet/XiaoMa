@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/dialog_bg_middle">
+
+    <LinearLayout
+        android:layout_width="@dimen/width_dialog"
+        android:layout_height="@dimen/height_dialog"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_dialog_title">
+
+            <TextView
+                android:id="@+id/tv_tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                tools:text="@string/confirm_to_clear_history"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_dialog_title" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <Button
+                android:id="@+id/btn_sure"
+                android:layout_width="@dimen/width_dialog_btn"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/size_dialog_btn_margin"
+                android:background="#00000000"
+                android:text="@string/confirm"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_dialog_option_title" />
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="@dimen/width_dialog_btn"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/size_dialog_btn_margin"
+                android:background="#00000000"
+                android:text="@string/cancel"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_dialog_option_title" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

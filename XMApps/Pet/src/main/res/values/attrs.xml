@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PetStatusProgress">
+        <attr name="progress_color" format="color" />
+        <attr name="progress_size" format="dimension" />
+        <attr name="progress_offset" format="dimension" />
+    </declare-styleable>
+
+
+    <declare-styleable name="PetExperienceView">
+        <attr name="bounds_color" format="color" />
+        <attr name="grow_color" format="color" />
+        <attr name="circle_radius" format="dimension" />
+        <attr name="content_offset" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="CommonResourceLoadingView">
+        <attr name="loading_type" format="integer" />
+        <attr name="scene_type" format="integer" />
+        <attr name="desc_text" format="string" />
+        <attr name="page_bg" format="reference" />
+        <attr name="pb_indeterminate_drawable" format="reference" />
+        <attr name="pb_progress_drawable" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="DrawStrokeTextView">
+        <!-- 描边宽 -->
+        <attr name="stroke_width" format="float" />
+        <!-- 字体size -->
+        <attr name="stroke_text_size" format="dimension|reference" />
+        <!-- 字体内容 -->
+        <attr name="text_content" format="string" />
+        <!-- 默认状态字体颜色-->
+        <attr name="text_normal_color" format="color|reference" />
+        <!-- 字体间距 -->
+        <attr name="letter_spacing" format="float" />
+        <!-- 开启渐变 -->
+        <attr name="gradient" format="boolean" />
+        <!-- 提示点颜色 -->
+        <attr name="badge_color" format="color|reference" />
+        <!-- 提示点大小 -->
+        <attr name="badge_size" format="dimension" />
+    </declare-styleable>
+
+
+    <declare-styleable name="PetScrollBar">
+        <attr name="scroll_bar_width" format="dimension" />
+        <attr name="scroll_bar_height" format="dimension" />
+        <attr name="margin_top_bottom" format="dimension" />
+        <attr name="foreground_bar_width" format="dimension" />
+        <attr name="foreground_bar_color" format="color|dimension" />
+        <attr name="background_bar_color" format="color|dimension" />
+    </declare-styleable>
+
+
+    <declare-styleable name="MapTrackView">
+        <attr name="track_width" format="dimension" />
+        <attr name="track_color" format="color|reference" />
+        <attr name="start_end_radius" format="dimension" />
+        <attr name="circle_bg" format="color|reference" />
+        <attr name="track_text_size" format="dimension" />
+        <attr name="track_text_color" format="color|reference" />
+    </declare-styleable>
+</resources>

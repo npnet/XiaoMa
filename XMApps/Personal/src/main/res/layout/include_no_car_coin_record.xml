@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/non_car_coin_record_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_non_car_coin_image"
+        android:layout_width="@dimen/width_car_coin_no_record"
+        android:layout_height="@dimen/height_car_coin_no_record"
+        android:src="@drawable/no_record" />
+
+    <TextView
+        android:id="@+id/tv_non_car_coin_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_car_coin_no_record_text_margin_top"
+        android:text="@string/no_car_coin_record"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_no_car_coin_record" />
+
+</LinearLayout>

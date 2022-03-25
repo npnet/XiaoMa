@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="search_voice_str">Search location</string>
+    <string name="searching_str">In the search...</string>
+    <string name="btn_search">Search now</string>
+    <string name="is_listener">Listening...</string>
+    <string name="search_content_empty_str">Search content is empty</string>
+    <string name="speak_search_content_str">Please say what you want to search for.</string>
+    <string name="btn_sure">OK</string>
+    <string name="need_me_to_do">Need me to find something for you</string>
+    <string name="search_voice_tip">Call me whenever you need</string>
+</resources>

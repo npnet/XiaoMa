@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="730px"
+    android:layout_height="457px"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_dialog_result_small"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="15px"
+            android:singleLine="true"
+            android:textColor="#fff"
+            android:textSize="36px" />
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="300px">
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="match_parent"
+                android:layout_height="260px"
+                android:layout_marginLeft="75px"
+                android:layout_marginRight="75px"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:textSize="30px"
+                android:lineSpacingExtra="15px" />
+
+            <TextView
+                android:id="@+id/tv_tip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="75px"
+                android:layout_marginRight="75px"
+                android:gravity="center"
+                android:textColor="#8a919d"
+                android:textSize="22px"
+                android:lineSpacingExtra="15px"
+                android:layout_marginTop="30px"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="30px"
+                android:visibility="gone"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/one_button"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:layout_gravity="center_horizontal">
+            <TextView
+                android:id="@+id/tv_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/close"
+                android:textColor="@drawable/text_button_color"
+                android:textSize="28px"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

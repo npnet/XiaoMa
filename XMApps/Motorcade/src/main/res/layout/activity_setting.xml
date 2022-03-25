@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="@dimen/width_setting_left"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/padding_left_setting"
+        android:paddingTop="@dimen/padding_top_setting"
+        android:paddingEnd="@dimen/padding_right_setting"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/vertical_divider"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/setting_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_bottom_infosetting"
+                android:text="@string/info_setting"
+                android:textSize="@dimen/font_setting"
+                app:layout_constraintBottom_toTopOf="@id/motorcade_command_cl"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/motorcade_command_cl"
+                style="@style/setting_item_style"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_setting_frame"
+                app:layout_constraintBottom_toTopOf="@id/motorcade_name_cl"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/setting_title_tv">
+
+                <TextView
+                    android:id="@+id/title_command_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/motorcade_command"
+                    android:textSize="@dimen/item_setting_title"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/command_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_end_name_display"
+                    android:maxLines="2"
+                    android:text="--"
+                    android:textColor="@color/motorcade_info_color"
+                    android:textSize="@dimen/item_setting_title"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/iv1"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@id/title_command_tv"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/iv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_next"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/motorcade_name_cl"
+                style="@style/setting_item_style"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_setting_frame"
+                app:layout_constraintBottom_toTopOf="@id/motorcade_nickname_cl"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/motorcade_command_cl">
+
+                <TextView
+                    android:id="@+id/title_name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/setting_motorcade_name"
+                    android:textSize="@dimen/item_setting_title"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_end_name_display"
+                    android:ellipsize="end"
+                    android:gravity="left"
+                    android:maxWidth="215px"
+                    android:maxLines="2"
+                    android:text="--"
+                    android:textColor="@color/motorcade_info_color"
+                    android:textSize="@dimen/item_setting_title"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/iv2"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@id/title_name_tv"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/iv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_next"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/motorcade_nickname_cl"
+                style="@style/setting_item_style"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_setting_frame"
+                app:layout_constraintBottom_toTopOf="@id/listen_voice_cl"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/motorcade_name_cl">
+
+                <TextView
+                    android:id="@+id/title_nickname_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/diaplay_nick"
+                    android:textSize="@dimen/item_setting_title"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/nickname_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_end_name_display"
+                    android:gravity="left"
+                    android:maxWidth="215px"
+                    android:maxLines="2"
+                    android:text="--"
+                    android:textColor="@color/motorcade_info_color"
+                    android:textSize="@dimen/item_setting_title"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/iv3"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@id/title_nickname_tv"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/iv3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_next"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <LinearLayout
+                android:id="@+id/listen_voice_cl"
+                android:layout_width="match_parent"
+                android:layout_height="40px"
+                android:layout_marginTop="@dimen/margin_top_voice_setting"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/padding_left_voice_setting"
+                app:layout_constraintBottom_toTopOf="@id/exit_motorcade"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/motorcade_nickname_cl">
+
+                <TextView
+                    android:id="@+id/title_listen_voice_tv"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/is_receive_others"
+                    android:textSize="@dimen/font_setting" />
+
+                <Switch
+                    android:id="@+id/listen_voice_switch"
+                    android:layout_width="@dimen/width_setting_switch"
+                    android:layout_height="@dimen/height_setting_switch"
+                    android:thumb="@drawable/switch_thumb"
+                    android:track="@drawable/switch_track" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/exit_motorcade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_setting_exit"
+                android:background="@drawable/setting_exit_bg"
+                android:gravity="center"
+                android:paddingBottom="25px"
+                android:text="@string/exit_motorcade"
+                android:textSize="@dimen/font_launch_button"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/listen_voice_cl" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </ScrollView>
+
+    <View
+        android:id="@+id/vertical_divider"
+        android:layout_width="@dimen/width_setting_divider"
+        android:layout_height="match_parent"
+        android:background="@drawable/divider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <FrameLayout
+        android:id="@+id/status_fl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

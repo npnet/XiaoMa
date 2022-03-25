@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">猜歌名</string>
+    <string name="next_song">%1$dS后进入第%2$d题</string>
+    <string name="listen_song">第%d首歌,请仔细听哦~</string>
+    <string name="current_song">第%d首歌</string>
+    <string name="con_right_answer">恭喜您回答正确~</string>
+    <string name="wrong_answer">回答错误,请重新回答</string>
+    <string name="good_job">你简直太棒了~</string>
+    <string name="subject_num_listen">第%d首歌,请仔细听哦~</string>
+    <string name="subject_tip">提示: %s</string>
+    <string name="answer_tip">例如: “晴天” “一个像夏天”</string>
+    <string name="replay_tip">提示: 点击右侧可重新播放</string>
+    <string name="say_your_answer">请说出你的答案~</string>
+    <string name="play_num">第%d题</string>
+    <string name="right_answer">正确答案:%s</string>
+    <string name="dialog_exit_msg">确认退出游戏,当前得分(%d)</string>
+    <string name="game_total_point">%d分</string>
+    <string name="sort_total_point">%d&#160;&#160;分</string>
+    <string name="sort_rank_num">%d&#160;&#160;名</string>
+    <string name="count_down_next_question">%ds后进入第%d题</string>
+    <string name="do_you_know">你听出了是什么歌曲吗?</string>
+    <string name="tip_can_replay">提示: 点击右侧可重新收听</string>
+    <string name="wrong_answer_reanwser">回答有误,请重新回答~</string>
+    <string name="good_game">游戏结束,期待您下一次的精彩表现~</string>
+    <string name="no_data">暂无数据</string>
+    <string name="user_age">%d岁</string>
+    <string name="beat_percent">%s%</string>
+    <string name="toast_network_exception">网络异常,请稍后再试</string>
+    <string name="retry_network_exception">网络异常,请点击重试</string>
+    <string name="btn_retry">重新加载</string>
+    <string name="sting_me">我</string>
+    <string name="not_sort">未上榜</string>
+    <string name="get_user_sign_error">获取用户签名信息失败%s</string>
+    <string name="add_friend_ok">发送好友申请成功</string>
+    <string name="add_friend_fail">发送好友申请失败%s</string>
+    <string name="record_error">我好像没听见，请您再说一遍</string>
+</resources>

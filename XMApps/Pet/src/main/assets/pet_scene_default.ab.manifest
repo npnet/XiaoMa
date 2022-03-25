@@ -1,0 +1,115 @@
+ManifestFileVersion: 0
+CRC: 1543103247
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 4405ebe46c6cefddb995fb7e8bb849ac
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 42bc02741d93cb6dac2f3f0b70186806
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+Assets:
+- Assets/AssetBundle/Scene/default/Textures/right_building_3_car.png
+- Assets/AssetBundle/Scene/default/Textures/right_building_4_01.png
+- Assets/Prefabs/Scene/gen/default/left_building_4.prefab
+- Assets/AssetBundle/Scene/default/Textures/Props_firehydrant.png
+- Assets/AssetBundle/Scene/default/Textures/prop_tree_2.png
+- Assets/AssetBundle/Scene/default/Textures/prop_suv_01.png
+- Assets/Prefabs/Scene/gen/default/left_prop_streetlamp.prefab
+- Assets/Prefabs/Scene/gen/default/left_building_1.prefab
+- Assets/Prefabs/Scene/gen/default/left_prop_bench.prefab
+- Assets/AssetBundle/Scene/default/Textures/prop_car_01.png
+- Assets/AssetBundle/Scene/default/Textures/right_building_3_01.png
+- Assets/Prefabs/Scene/gen/default/left_prop_busstation.prefab
+- Assets/AssetBundle/Scene/default/Textures/right_building_1_01.png
+- Assets/Prefabs/Scene/gen/default/right_building_2.prefab
+- Assets/AssetBundle/Scene/default/Textures/left_building_2_02.png
+- Assets/AssetBundle/Scene/default/Textures/prop_streetlamp.png
+- Assets/AssetBundle/Scene/default/Textures/ground_2.png
+- Assets/AssetBundle/Scene/default/Textures/right_building_4_03.png
+- Assets/AssetBundle/Scene/default/Textures/prop_bus_03.png
+- Assets/Prefabs/Scene/gen/default/left_prop_taxi.prefab
+- Assets/Prefabs/Scene/gen/default/left_prop_tree_2.prefab
+- Assets/Prefabs/Scene/gen/default/ground.prefab
+- Assets/Prefabs/Scene/gen/default/right_prop_bench.prefab
+- Assets/Prefabs/Scene/gen/default/left_prop_bus.prefab
+- Assets/AssetBundle/Scene/default/Textures/prop_potculture.png
+- Assets/AssetBundle/Scene/default/Textures/right_building_4_Truck01.png
+- Assets/AssetBundle/Scene/default/Textures/prop_car_02.png
+- Assets/AssetBundle/Scene/default/Textures/left_building_3_01.png
+- Assets/AssetBundle/Scene/default/Textures/prop_suv_02.png
+- Assets/Prefabs/Scene/gen/default/right_prop_streetlamp.prefab
+- Assets/AssetBundle/Scene/default/Textures/prop_busstarion_04.png
+- Assets/AssetBundle/Scene/default/Textures/right_building_1_03.png
+- Assets/Prefabs/Scene/gen/default/right_building_3.prefab
+- Assets/AssetBundle/Scene/default/Textures/left_building_3_02.png
+- Assets/AssetBundle/Scene/default/Textures/prop_car_03.png
+- Assets/AssetBundle/Scene/default/Textures/right_building_3_03.png
+- Assets/Prefabs/Scene/gen/default/left_prop_tree_3.prefab
+- Assets/AssetBundle/Scene/default/Textures/left_building_2_01.png
+- Assets/AssetBundle/Scene/default/Textures/prop_taxi.png
+- Assets/AssetBundle/Scene/default/Textures/right_building_3_02.png
+- Assets/AssetBundle/Scene/default/Textures/left_building_2_03.png
+- Assets/AssetBundle/Scene/default/Textures/right_building_1_02.png
+- Assets/AssetBundle/Scene/default/Textures/prop_tree_1.png
+- Assets/Prefabs/Scene/gen/default/right_prop_tree_1.prefab
+- Assets/AssetBundle/Scene/default/Textures/right_building_4_Truck02.png
+- Assets/AssetBundle/Scene/default/Textures/crossing_1.png
+- Assets/Prefabs/Scene/gen/default/right_prop_firehydrant.prefab
+- Assets/Prefabs/Scene/gen/default/right_prop_potculture.prefab
+- Assets/AssetBundle/Scene/default/Textures/right_building_4_02.png
+- Assets/Prefabs/Scene/gen/default/left_prop_potculture.prefab
+- Assets/AssetBundle/Scene/default/Textures/prop_bus_01.png
+- Assets/Prefabs/Scene/gen/default/left_prop_car.prefab
+- Assets/AssetBundle/Scene/default/Textures/prop_busstarion_03.png
+- Assets/AssetBundle/Scene/default/Textures/right_building_2_02.png
+- Assets/Prefabs/Scene/gen/default/left_prop_tree_1.prefab
+- Assets/AssetBundle/Scene/default/Textures/left_building_4_03.png
+- Assets/AssetBundle/Scene/default/Textures/left_building_4_02.png
+- Assets/Prefabs/Scene/gen/default/right_prop_bus.prefab
+- Assets/Prefabs/Scene/gen/default/right_prop_suv.prefab
+- Assets/AssetBundle/Scene/default/Textures/prop_busstarion_06.png
+- Assets/Prefabs/Scene/gen/default/right_prop_tree_2.prefab
+- Assets/AssetBundle/Scene/default/Textures/left_building_1_01.png
+- Assets/AssetBundle/Scene/default/Textures/prop_busstarion_02.png
+- Assets/AssetBundle/Scene/default/Textures/ground_3.png
+- Assets/Prefabs/Scene/gen/default/crossing.prefab
+- Assets/Prefabs/Scene/gen/default/left_building_2.prefab
+- Assets/AssetBundle/Scene/default/Textures/prop_busstarion_05.png
+- Assets/AssetBundle/Scene/default/Textures/right_building_2_03.png
+- Assets/AssetBundle/Scene/default/Textures/ground_1.png
+- Assets/AssetBundle/Scene/default/Textures/right_building_2_01.png
+- Assets/AssetBundle/Scene/default/Textures/left_building_1_03.png
+- Assets/AssetBundle/Scene/default/Textures/prop_tree_3.png
+- Assets/AssetBundle/Scene/default/Textures/left_building_3_03.png
+- Assets/AssetBundle/Scene/default/Textures/prop_busstarion_01.png
+- Assets/AssetBundle/Scene/default/Textures/crossing_2.png
+- Assets/AssetBundle/Scene/default/Textures/left_building_4_01.png
+- Assets/AssetBundle/Scene/default/Textures/prop_suv_03.png
+- Assets/Prefabs/Scene/gen/default/left_prop_firehydrant.prefab
+- Assets/Prefabs/Scene/gen/default/right_prop_taxi.prefab
+- Assets/Prefabs/Scene/gen/default/left_building_3.prefab
+- Assets/Prefabs/Scene/gen/default/right_prop_car.prefab
+- Assets/Prefabs/Scene/gen/default/right_building_1.prefab
+- Assets/Prefabs/Scene/gen/default/right_prop_busstation.prefab
+- Assets/AssetBundle/Scene/default/Textures/prop_bus_02.png
+- Assets/Prefabs/Scene/gen/default/right_building_4.prefab
+- Assets/Prefabs/Scene/gen/default/left_prop_suv.prefab
+- Assets/Prefabs/Scene/gen/default/right_prop_tree_3.prefab
+- Assets/AssetBundle/Scene/default/Textures/Props_bench.png
+- Assets/AssetBundle/Scene/default/Textures/right_building_4_Truck03.png
+- Assets/AssetBundle/Scene/default/Textures/left_building_1_02.png
+Dependencies: []

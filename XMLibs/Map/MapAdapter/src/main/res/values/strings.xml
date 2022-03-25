@@ -1,0 +1,13 @@
+<resources>
+    <string name="module_desc">MapAdapter</string>
+    <string name="poi_type_str">汽车服务|汽车销售|汽车维修|摩托车服务|餐饮服务|购物服务|生活服务|体育休闲服务|医疗保健服务|住宿服务|风景名胜|商务住宅|政府机构及社会团体|科教文化服务|交通设施服务|金融保险服务|公司企业|道路附属设施|地名地址信息|公共设施</string>
+    <string name="search_voice_str">搜索地点</string>
+    <string name="search_content_empty_str">搜索内容为空</string>
+    <string name="speak_search_content_str">请说出你想要搜索得内容</string>
+    <string name="searching_str">正在搜索...</string>
+    <string name="btn_sure">确认</string>
+    <string name="need_me_to_do">需要我帮您找些什么</string>
+    <string name="is_listener">正在聆听...</string>
+    <string name="search_voice_tip">有需要随时找我哦</string>
+    <string name="btn_search">立即搜索</string>
+</resources>

@@ -1,0 +1,42 @@
+ext {
+    sdk = this.&sdk
+}
+
+class XmInstallType {
+    private static final String TYPE_PAD = "PAD"
+    private static final String TYPE_CAR = "CAR"
+
+    private static String pick(String sdkType) {
+        if (TYPE_CAR.equalsIgnoreCase(sdkType)) {
+            return TYPE_CAR
+        }
+        return TYPE_PAD
+    }
+}
+
+class SDK {
+    private xmInstallType = XmInstallType.TYPE_PAD
+
+    void xmInstall(String type) {
+        this.xmInstallType = type
+    }
+}
+
+def sdk(Closure closure) {
+    def sdk = new SDK()
+    closure.delegate = sdk
+    closure.call()
+
+    def reminderSDKType = XmInstallType.pick(sdk.xmInstallType)
+    setupInstallSourceSet(reminderSDKType)
+}
+
+def setupInstallSourceSet(String sdk) {
+    project.android.sourceSets.main.java {
+        if (XmInstallType.TYPE_PAD.equalsIgnoreCase(sdk)) {
+            srcDir 'src/main/pad'
+        } else if (XmInstallType.TYPE_CAR.equalsIgnoreCase(sdk)) {
+            srcDir 'src/main/car'
+        }
+    }
+}

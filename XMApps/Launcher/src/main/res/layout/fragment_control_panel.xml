@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_navi_window">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:paddingLeft="70px"
+        android:paddingTop="86px">
+
+        <LinearLayout
+            android:layout_width="550px"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10px"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50px"
+                android:text="@string/fast_setting"
+                android:textColor="#ffffff"
+                android:textSize="35px" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="50px">
+
+                <com.xiaoma.launcher.common.views.WidthProgressBar
+                    android:id="@+id/brightness"
+                    android:padding="5px"
+                    android:layout_width="130px"
+                    android:layout_height="284px"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    app:bgColor="#080815"
+                    app:iconPadding="30px"
+                    app:iconSrc="@drawable/icon_light"
+                    app:progressColor="#d0d0d2"
+                    app:progressMax="10"
+                    app:progressMin="1"
+                    app:progressOrientation="vertical"
+                    app:progressValue="0"
+                    app:rectRadius="60px" />
+
+                <com.xiaoma.launcher.common.views.WidthProgressBar
+                    android:id="@+id/volume"
+                    android:padding="5px"
+                    android:layout_width="130px"
+                    android:layout_height="284px"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    app:bgColor="#080815"
+                    app:iconPadding="30px"
+                    app:iconSrc="@drawable/icon_voice"
+                    app:progressColor="#d0d0d2"
+                    app:progressMax="40"
+                    app:progressOrientation="vertical"
+                    app:progressValue="0"
+                    app:rectRadius="60px" />
+
+                <ImageView
+                    android:id="@+id/iv_bluetooth"
+                    android:layout_width="120px"
+                    android:layout_height="120px"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/bg_bluetooth_selector" />
+
+                <ImageView
+                    android:id="@+id/iv_internet"
+                    android:layout_width="120px"
+                    android:layout_height="120px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/bg_reset_selector" />
+
+                <ImageView
+                    android:id="@+id/iv_hotspot"
+                    android:layout_width="120px"
+                    android:layout_height="120px"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:src="@drawable/bg_hotspot_off" />
+
+                <ImageView
+                    android:id="@+id/iv_power"
+                    android:layout_width="120px"
+                    android:layout_height="120px"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
+                    android:src="@drawable/bg_offon_selector" />
+
+                <ImageView
+                    android:id="@+id/iv_wifi"
+                    android:layout_width="120px"
+                    android:layout_height="120px"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/bg_wifi_off" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_plugin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50px"
+                android:text="@string/app_plugin"
+                android:textColor="#ffffff"
+                android:textSize="35px" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv"
+                android:layout_marginLeft="50px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/turnOn"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</FrameLayout>

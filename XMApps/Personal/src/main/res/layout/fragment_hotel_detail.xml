@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/hotel_detail_root"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_order_status_icon"
+        android:layout_width="@dimen/size_order_detail_top_image"
+        android:layout_height="@dimen/size_order_detail_top_image"
+        android:layout_marginStart="@dimen/size_mine_order_detail_top_bar_left"
+        android:layout_marginTop="@dimen/size_order_detail_top_image_top"
+        android:src="@drawable/order_exception"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tv_order_status_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_order_detail_top_image_end"
+        android:layout_marginTop="@dimen/size_mine_order_detail_top_bar_top"
+        android:text="@string/hint_pls_pay_for_unhandle_order"
+        android:textSize="@dimen/font_mine_order_size_42px"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/iv_order_status_icon"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tv_order_content_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_order_detail_title_margin_top"
+        android:text="@string/preference_house"
+        android:textSize="@dimen/font_mine_order_size_30px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tv_order_content_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="￥450/间"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="@dimen/font_mine_order_size_30px"
+        app:layout_constraintStart_toEndOf="@id/tv_order_content_name"
+        app:layout_constraintTop_toTopOf="@id/tv_order_content_name" />
+
+
+    <TextView
+        android:id="@+id/tv_order_room_service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_hotel_type_margin_left"
+        android:text="@string/order_room_service"
+        android:textSize="@dimen/font_mine_order_size_30px"
+        app:layout_constraintStart_toEndOf="@id/tv_order_content_price"
+        app:layout_constraintTop_toTopOf="@id/tv_order_content_price" />
+
+
+    <TextView
+        android:id="@+id/tv_order_content_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_hotel_desc_margin_left"
+        android:text="@string/oer_content_author"
+        android:textSize="@dimen/font_mine_order_size_28px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_order_content_name" />
+
+
+    <include
+        layout="@layout/item_order_detail_info_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/height_order_detail_info"
+        android:layout_marginTop="@dimen/size_order_info_desc_margin_top"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <include
+        layout="@layout/item_scan_qrcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_order_detail_scan_qr_code_margin_left"
+        android:layout_marginTop="@dimen/size_order_detail_scan_qr_code_margin_top"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <include
+        layout="@layout/item_order_pay_operation"
+        android:layout_width="@dimen/width_order_detail_pay"
+        android:layout_height="@dimen/height_order_detail_pay"
+        android:layout_marginStart="@dimen/size_order_wait_pay_margin_left"
+        android:layout_marginTop="@dimen/size_order_wait_pay_margin_top"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--已付款底部按钮-->
+    <include
+        layout="@layout/order_detail_paid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_order_detail_operation_button_top"
+        android:visibility="gone"
+        android:layout_marginStart="@dimen/size_order_detail_operation_button_left_short"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

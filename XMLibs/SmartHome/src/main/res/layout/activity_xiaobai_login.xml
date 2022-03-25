@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_common"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50px"
+        android:layout_marginTop="100px"
+        android:text="@string/xiaobai_account_login"
+        android:textColor="@color/white"
+        android:textSize="30px"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/et_account"
+        android:layout_width="580px"
+        android:layout_height="70px"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="240px"
+        android:background="@drawable/inputbox_n"
+        android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        android:drawableStart="@drawable/icon_user"
+        android:drawablePadding="40px"
+        android:hint="@string/xiaobai_account"
+        android:imeOptions="actionDone"
+        android:maxLength="25"
+        android:paddingStart="25px"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textColorHint="#B5B8C6"
+        android:textSize="28px" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="580px"
+        android:layout_height="70px"
+        android:layout_below="@+id/et_account"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="47px"
+        android:background="@drawable/inputbox_n"
+        android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        android:drawableStart="@drawable/smarthome_icon_clock"
+        android:drawablePadding="40px"
+        android:hint="@string/password"
+        android:imeOptions="actionDone"
+        android:inputType="textPassword"
+        android:maxLength="25"
+        android:paddingStart="20px"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textColorHint="#B5B8C6"
+        android:textSize="28px" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="300px"
+        android:layout_height="80px"
+        android:layout_below="@+id/et_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45px"
+        android:background="@drawable/btn_login_selector"
+        android:paddingBottom="25px"
+        android:text="@string/login2"
+        android:textColor="@color/white"
+        android:textSize="30px" />
+
+</RelativeLayout>

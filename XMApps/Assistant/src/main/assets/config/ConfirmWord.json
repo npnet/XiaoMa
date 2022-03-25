@@ -1,0 +1,80 @@
+{
+  "options": [
+    {
+      "keyWord": "好的",
+      "agree": "0"
+    },
+    {
+      "keyWord": "要",
+      "agree": "0"
+    },
+    {
+      "keyWord": "确定",
+      "agree": "0"
+    },
+    {
+      "keyWord": "确认",
+      "agree": "0"
+    },
+    {
+      "keyWord": "可以",
+      "agree": "0"
+    },
+    {
+      "keyWord": "是的",
+      "agree": "0"
+    },
+    {
+      "keyWord": "好",
+      "agree": "0"
+    },
+    {
+      "keyWord": "ok",
+      "agree": "0"
+    },
+    {
+      "keyWord": "是",
+      "agree": "0"
+    },
+    {
+      "keyWord": "不用",
+      "agree": "1"
+    },
+    {
+      "keyWord": "算了",
+      "agree": "1"
+    },
+    {
+      "keyWord": "不",
+      "agree": "1"
+    },
+    {
+      "keyWord": "否",
+      "agree": "1"
+    },
+    {
+      "keyWord": "不行",
+      "agree": "1"
+    },
+    {
+      "keyWord": "不要",
+      "agree": "1"
+    },
+    {
+      "keyWord": "拒绝",
+      "agree": "1"
+    },
+    {
+      "keyWord": "取消",
+      "agree": "1"
+    },
+    {
+      "keyWord": "退出",
+      "agree": "1"
+    },
+    {
+      "keyWord": "No",
+      "agree": "1"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.xiaoma.launcher.common.views.CustomVideoView
+        android:id="@+id/welcome_video"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="82px"
+        android:layout_marginTop="82px"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/loading_img"
+            android:layout_width="72px"
+            android:layout_height="72px"
+            android:src="@drawable/welcome_key" />
+
+        <TextView
+            android:id="@+id/loading_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15px"
+            android:text="@string/password_login"
+            android:textSize="@dimen/welcome_text_size" />
+
+    </LinearLayout>
+
+    <com.xiaoma.ui.view.ReflectionImageView
+        android:id="@+id/iv_welcome"
+        android:layout_width="@dimen/welcome_img_width"
+        android:layout_height="@dimen/welcome_img_height"
+        android:layout_centerInParent="true"
+        android:scaleType="fitXY"
+        app:reflectionHeight="60px"
+        app:reflectionPadding="14px" />
+
+    <com.xiaoma.ui.view.ReflectionImageView
+        android:id="@+id/iv_welcome_bg"
+        android:layout_width="@dimen/welcome_img_width"
+        android:layout_height="@dimen/welcome_img_height"
+        android:layout_centerInParent="true"
+        android:scaleType="fitXY"
+        app:reflectionHeight="60px"
+        app:reflectionPadding="14px" />
+
+    <TextView
+        android:id="@+id/tv_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_welcome"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/welcome_text_top"
+        android:textSize="@dimen/welcome_name_text_size"
+        tools:text="Hello XiaoMa" />
+
+    <TextView
+        android:id="@+id/schedule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_welcome"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/welcome_text_top"
+        android:textSize="@dimen/welcome_text_size"
+        tools:text="你今日有1个提醒事项" />
+
+</RelativeLayout>

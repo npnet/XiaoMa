@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--未加载的进度区域-->
+    <item android:id="@android:id/background">
+        <shape>
+            <!--&lt;!&ndash;进度条的圆角&ndash;&gt;-->
+            <!--<corners android:radius="8dip" />-->
+            <!--&lt;!&ndash;未加载的进度区域颜色&ndash;&gt;-->
+            <!--<solid android:color="#FFDBDBDB" />-->
+            <bitmap android:src="@drawable/btn_download_progress" />
+        </shape>
+    </item>
+    <!--缓冲的进度的颜色，一般视频播放的缓冲区域-->
+    <item android:id="@android:id/secondaryProgress">
+        <clip>
+            <bitmap android:src="@drawable/btn_download_progress" />
+        </clip>
+    </item>
+    <!--已经加载完的进度的区域-->
+    <item android:id="@android:id/progress">
+        <clip>
+            <bitmap android:src="@drawable/btn_download_progress" />
+        </clip>
+    </item>
+</layer-list>

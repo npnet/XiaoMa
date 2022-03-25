@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/personal_outside"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_dim" />
+
+    <LinearLayout
+        android:id="@+id/panel_parent"
+        android:layout_width="@dimen/width_personal_drawer"
+        android:layout_height="match_parent"
+        android:background="@drawable/drawer_bg"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/padding_personal_drawer"
+        android:paddingTop="@dimen/padding_personal_drawer"
+        android:paddingRight="@dimen/padding_personal_drawer"
+        android:paddingBottom="@dimen/padding_personal_drawer_bottom">
+
+        <com.xiaoma.club.common.view.UserHeadView
+            android:id="@+id/personal_head_view"
+            android:layout_width="168px"
+            android:layout_height="168px"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/padding_personal_head_top" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="90px">
+
+            <TextView
+                android:id="@+id/personal_user_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxEms="5"
+                android:singleLine="true"
+                android:text="哈哈"
+                android:textColor="@color/club_white"
+                android:textSize="@dimen/font_text_big_plus" />
+
+            <TextView
+                android:id="@+id/personal_user_age_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:ellipsize="end"
+                android:maxEms="5"
+                android:singleLine="true"
+                android:text="27岁"
+                android:textColor="@color/club_text_gray"
+                android:textSize="@dimen/font_text_small_plus" />
+
+            <TextView
+                android:id="@+id/personal_user_sign_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/personal_user_name_tv"
+                android:layout_marginTop="36px"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:text="烦到死的粉丝点击搜房"
+                android:textColor="@color/club_white"
+                android:textSize="@dimen/font_text_small_plus" />
+
+            <Button
+                android:id="@+id/personal_edit_sign_btn"
+                android:layout_width="@dimen/width_personal_edit_btn"
+                android:layout_height="@dimen/height_personal_edit_btn"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/club_btn_selector"
+                android:gravity="center_horizontal"
+                android:paddingTop="@dimen/padding_personal_edit_btn"
+                android:text="@string/edit_personal_sign"
+                android:textColor="@color/club_white"
+                android:textSize="@dimen/font_text_middle" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

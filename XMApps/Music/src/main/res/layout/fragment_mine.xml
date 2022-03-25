@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.xiaoma.ui.view.ControllableViewPager
+        android:id="@+id/fragment_mine_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="163px"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/fragment_mine_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_tab_layout"
+            android:layout_marginStart="@dimen/size_tab_margin_left"
+            android:layout_marginTop="@dimen/size_tab_margin_top"
+            app:tabBackground="@null"
+            app:tabIndicatorHeight="@null"
+            app:tabMode="scrollable"
+            app:tabPaddingBottom="0px"
+            app:tabPaddingTop="0px" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true">
+
+            <TextView
+                android:id="@+id/tv_clear_all_history"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_tab_margin_top"
+                android:layout_marginRight="@dimen/size_clear_history_margin_right"
+                android:text="@string/clear_all_history"
+                android:textColor="@color/selector_text_check"
+                android:textSize="@dimen/font_clear_all_history"
+                android:visibility="invisible" />
+
+
+            <TextView
+                android:id="@+id/tv_clear_collection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_tab_margin_top"
+                android:layout_marginRight="@dimen/size_clear_history_margin_right"
+                android:text="@string/clear_all_collect"
+                android:textColor="@color/selector_text_check"
+                android:textSize="@dimen/font_clear_all_history"
+                android:visibility="invisible" />
+
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/kw_user_ll"
+                android:layout_width="@dimen/width_login_out_layout"
+                android:layout_height="@dimen/height_login_out_layout"
+                android:layout_marginTop="@dimen/size_kwuser_margin_top"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/kw_user_iv"
+                    android:layout_width="@dimen/size_login_icon"
+                    android:layout_height="@dimen/size_login_icon"
+                    android:src="@drawable/avator_icon_bg"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/kw_user_vip_tv"
+                    android:layout_width="@dimen/width_login_icon_flag"
+                    android:layout_height="@dimen/height_login_icon_flag"
+                    android:layout_marginStart="@dimen/size_login_icon_margin_start"
+                    android:src="@drawable/login_icon_flag"
+                    android:textColor="@color/white"
+                    android:visibility="invisible"
+                    app:layout_constraintBottom_toBottomOf="@id/kw_user_iv"
+                    app:layout_constraintStart_toStartOf="@+id/kw_user_iv" />
+
+                <TextView
+                    android:id="@+id/kw_user_btn"
+                    android:layout_width="@dimen/size_login_icon"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/size_login_icon_margin"
+                    android:text="@string/kw_login_out"
+                    android:textColor="@color/color_8a919d"
+                    android:textSize="@dimen/font_size_px32"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </android.support.constraint.ConstraintLayout>
+
+        </FrameLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

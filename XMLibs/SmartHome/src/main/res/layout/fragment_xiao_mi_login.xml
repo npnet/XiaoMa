@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_common"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50px"
+        android:layout_marginTop="100px"
+        android:text="@string/xiao_mi_login_lable_1"
+        android:textColor="@color/white"
+        android:textSize="30px"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/iv_code"
+        android:layout_width="382px"
+        android:layout_height="382px"
+        android:layout_below="@id/tv_title"
+        android:layout_marginLeft="174px"
+        android:layout_marginTop="44px"
+        android:padding="20px" />
+
+    <ImageView
+        android:id="@+id/iv_error_code"
+        android:layout_width="382px"
+        android:layout_height="382px"
+        android:layout_below="@id/tv_title"
+        android:layout_marginLeft="174px"
+        android:layout_marginTop="44px"
+        android:src="@drawable/bg_error_code"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_error"
+        android:layout_width="382px"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/iv_error_code"
+        android:layout_marginLeft="174px"
+        android:layout_marginBottom="50px"
+        android:gravity="center"
+        android:text="@string/load_code_error_retry"
+        android:textColor="@color/white"
+        android:textSize="20px"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tv_lable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_code"
+        android:layout_marginLeft="180px"
+        android:layout_marginTop="34px"
+        android:text="@string/xiao_mi_login_lable_6"
+        android:textColor="@color/white"
+        android:textSize="26px" />
+
+    <LinearLayout
+        android:id="@+id/lable_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:layout_marginLeft="270px"
+        android:layout_marginTop="44px"
+        android:layout_toRightOf="@id/iv_code"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="5px"
+            android:paddingBottom="60px"
+            android:text="@string/xiao_mi_login_lable_2"
+            android:textColor="#c8c8c8"
+            android:textSize="26px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20px"
+            android:text="@string/xiao_mi_login_lable_3"
+            android:textColor="@color/white"
+            android:textSize="36px"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20px"
+            android:text="@string/xiao_mi_login_lable_4"
+            android:textColor="@color/white"
+            android:textSize="30px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="5px"
+            android:paddingBottom="20px"
+            android:text="@string/xiao_mi_login_lable_5"
+            android:textColor="@color/white"
+            android:textSize="20px" />
+    </LinearLayout>
+</RelativeLayout>

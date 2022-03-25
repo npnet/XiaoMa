@@ -1,0 +1,73 @@
+<resources>
+    <dimen name="size_state_view_spacing">10px</dimen>
+    <dimen name="size_state_button_radius">6px</dimen>
+    <dimen name="font_state_view_text_size">20px</dimen>
+    <dimen name="font_state_view_setnet_size">22px</dimen>
+    <dimen name="font_state_view_refresh_size">24px</dimen>
+    <dimen name="font_state_view_retry_text_size">36px</dimen>
+    <dimen name="size_state_view_retry_button_padding">5px</dimen>
+    <dimen name="width_search_voice_view_margin_left">40px</dimen>
+    <dimen name="font_search">24px</dimen>
+    <dimen name="search_edit_text_margin_left">30px</dimen>
+    <dimen name="search_margin_30">30px</dimen>
+    <dimen name="width_empty_view_image">200px</dimen>
+    <dimen name="height_empty_view_image">280px</dimen>
+    <!-- 顶部按钮栏高度 -->
+    <dimen name="pickerview_topbar_height">44dp</dimen>
+    <!-- 顶部按钮padding -->
+    <dimen name="pickerview_topbar_padding">20dp</dimen>
+    <!-- 顶部按钮文字大小 -->
+    <dimen name="pickerview_topbar_btn_textsize">17sp</dimen>
+    <dimen name="pickerview_topbar_title_textsize">18sp</dimen>
+    <!-- 选项文字大小 -->
+    <dimen name="pickerview_textsize">20sp</dimen>
+    <!--状态栏高度-->
+    <dimen name="system_bar_height">60px</dimen>
+    <!--导航栏-->
+    <dimen name="size_navi_margin">100px</dimen>
+    <dimen name="size_navi_padding">175px</dimen>
+    <!--ScrollBar-->
+    <dimen name="width_scrollbar">489px</dimen>
+    <dimen name="height_scrollbar">32px</dimen>
+    <dimen name="width_vertical_scrollbar">12px</dimen>
+    <dimen name="nav_button_padding">60px</dimen>
+    <!--UnderLineTextView-->
+    <dimen name="height_underline">2px</dimen>
+    <dimen name="size_state_empty_text_margin_bottom">16px</dimen>
+
+    <dimen name="wheel_view_text_size">36px</dimen>
+    <dimen name="font_dialog_plate_wheel_selected_text">36px</dimen>
+    <dimen name="font_dialog_plate_wheel_unselected_text">28px</dimen>
+
+    <dimen name="width_dialog">560px</dimen>
+    <dimen name="height_dialog_middle">242px</dimen>
+    <dimen name="height_dialog_small">186px</dimen>
+    <dimen name="font_txt_dialog_msg">36px</dimen>
+    <dimen name="width_icon_in_small_dialog">60px</dimen>
+    <dimen name="size_text_icon_space_in_small_dialog">30px</dimen>
+    <dimen name="font_text_middle_title">30px</dimen>
+    <dimen name="font_text_middle_choice">32px</dimen>
+    <dimen name="size_text_middle_add_click_padding">32px</dimen>
+    <dimen name="size_middle_dialog_title_margin_top">30px</dimen>
+    <dimen name="width_lighting_vertical_divider">72px</dimen>
+
+    <dimen name="width_normal_button">302px</dimen>
+    <dimen name="height_normal_button">76px</dimen>
+    <dimen name="font_button_text">26px</dimen>
+
+    <!--弹窗相关-->
+    <dimen name="dialog_width">564px</dimen>
+    <dimen name="dialog_padding">26px</dimen>
+    <dimen name="dialog_text_size">28px</dimen>
+    <dimen name="dialog_title_size">214px</dimen>
+    <dimen name="dialog_button_height">72px</dimen>
+
+    <dimen name="dialog_edit_width">450px</dimen>
+    <dimen name="setting_tab_margin">50px</dimen>
+
+    <!--VerticalScrollBar-->
+    <dimen name="width_new_vertical_scrollbar">12px</dimen>
+    <dimen name="height_new_vertical_scrollbar">440px</dimen>
+    <dimen name="font_net_error">30px</dimen>
+    <dimen name="font_dialog_button">32px</dimen>
+</resources>

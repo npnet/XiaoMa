@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible">
+
+    <FrameLayout
+        android:id="@+id/fl_fullscreen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible" />
+
+    <FrameLayout
+        android:id="@+id/fl_left_navi"
+        android:layout_width="534px"
+        android:layout_height="534px"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="60px"
+        android:layout_marginTop="134px"
+        android:background="@drawable/bg_left_navi_high_dream"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:layout_width="540px"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="690px"
+        android:layout_marginTop="165px"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/fl_simple"
+            android:layout_width="match_parent"
+            android:layout_height="34px"
+          />
+
+        <FrameLayout
+            android:id="@+id/fl_center"
+            android:layout_width="match_parent"
+            android:layout_height="416px"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="12px"
+            android:background="@drawable/bg_center_high_dream"
+            android:visibility="invisible" />
+    </LinearLayout>
+</RelativeLayout>

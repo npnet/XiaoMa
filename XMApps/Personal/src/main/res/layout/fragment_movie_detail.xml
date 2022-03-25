@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/movie_detail_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_order_status_icon"
+        android:layout_width="@dimen/size_order_detail_top_image"
+        android:layout_height="@dimen/size_order_detail_top_image"
+        android:layout_marginStart="@dimen/size_mine_order_detail_top_bar_left"
+        android:layout_marginTop="@dimen/size_order_detail_top_image_top"
+        android:src="@drawable/order_exception"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tv_order_status_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_order_detail_top_image_end"
+        android:layout_marginTop="@dimen/size_mine_order_detail_top_bar_top"
+        android:text="@string/hint_pls_pay_for_unhandle_order"
+        android:textSize="@dimen/font_mine_order_size_42px"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/iv_order_status_icon"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tv_movie_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_order_detail_title_margin_top"
+        android:textSize="@dimen/font_mine_order_size_32px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tv_movie_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_movie_name_margin_start"
+        android:textSize="@dimen/font_mine_order_size_32px"
+        app:layout_constraintStart_toEndOf="@id/tv_movie_name"
+        app:layout_constraintTop_toTopOf="@id/tv_movie_name" />
+
+
+    <TextView
+        android:id="@+id/tv_order_content_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_movie_name_margin_start"
+        android:textColor="@color/wait_pay_color"
+        android:textSize="@dimen/font_mine_order_size_32px"
+        app:layout_constraintStart_toEndOf="@id/tv_movie_type"
+        app:layout_constraintTop_toTopOf="@id/tv_movie_name" />
+
+
+    <TextView
+        android:id="@+id/tv_order_content_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_cinema_name_top"
+        android:textSize="@dimen/font_mine_order_size_24px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_movie_name" />
+
+
+    <TextView
+        android:id="@+id/movie_seat_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_cinema_name_top"
+        android:orientation="horizontal"
+        android:textSize="@dimen/font_mine_order_size_24px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_order_content_author" />
+
+
+    <!-- 多项栏 -->
+    <include
+        layout="@layout/item_order_detail_info_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/height_order_detail_info"
+        android:layout_marginTop="@dimen/size_detail_info_desc_margin_top"
+        app:layout_constraintTop_toBottomOf="@id/movie_seat_text" />
+
+    <!-- 扫码支付 -->
+    <include
+        layout="@layout/item_scan_qrcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_order_detail_scan_qr_code_margin_left"
+        android:layout_marginTop="@dimen/size_order_detail_scan_qr_code_margin_top"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <!-- 加载电影票序列码 -->
+    <include
+        layout="@layout/attach_movie_serial_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginStart="@dimen/size_order_detail_scan_qr_code_margin_left"
+        android:layout_marginTop="@dimen/size_order_detail_scan_qr_code_margin_top"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <!-- 付款底部按钮 -->
+    <include
+        layout="@layout/item_order_pay_operation"
+        android:layout_width="@dimen/width_order_detail_pay"
+        android:layout_height="@dimen/height_order_detail_pay"
+        android:layout_marginStart="@dimen/size_order_wait_pay_margin_left"
+        android:layout_marginTop="@dimen/size_order_wait_pay_margin_top"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/order_detail_info_layout"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <!--已付款底部按钮-->
+    <include
+        layout="@layout/order_detail_paid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_order_detail_operation_button_left_short"
+        android:layout_marginTop="@dimen/size_order_wait_pay_margin_top"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/order_detail_info_layout"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

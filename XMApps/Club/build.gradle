@@ -1,0 +1,56 @@
+apply plugin: 'com.android.application'
+apply plugin: 'android-aspectjx'
+apply from: "$rootDir$Android"
+apply from: "$rootDir$Modules"
+apply from: "$rootDir$Tinker"
+
+android application('com.xiaoma.club')
+dependencies dependency(Club)
+
+android {
+    packagingOptions {
+        //jni包重复编译，那么在这里配置包包含 或者不包含
+        exclude 'lib/mips/librsjni.so'
+        exclude 'lib/armeabi-v7a/libRSSupport.so'
+        exclude 'lib/arm64-v8a/librsjni.so'
+        exclude 'lib/arm64-v8a/libRSSupport.so'
+        exclude 'lib/x86_64/libRSSupport.so'
+        exclude 'lib/mips/libRSSupport.so'
+        exclude 'lib/x86/librsjni.so'
+        exclude 'lib/x86_64/librsjni.so'
+        exclude 'lib/armeabi-v7a/librsjni.so'
+        exclude 'lib/x86/libRSSupport.so'
+    }
+
+}
+
+dependencies {
+    implementation files("${XMJars}hyphenatechat_3.5.3.jar")
+    implementation files("${XMJars}AMap3DMap_6.8.0_AMapSearch_6.5.0_AMapLocation_4.6.0_20190423.jar")
+    implementation "org.simple:androideventbus:$EVENT_BUS_VERSION"
+    implementation "android.arch.persistence.room:runtime:$ROOM_VERSION"
+    annotationProcessor "android.arch.persistence.room:compiler:$ROOM_VERSION"
+    implementation project(':XMLibs:VR:Vr')
+    implementation project(':XMLibs:Navi:XmNaviLib')
+    implementation project(':XMLibs:Navi:XmNaviLibAidl')
+}
+
+tinker {
+    appClassName 'com.xiaoma.club.ClubApp'
+    buildPatch {
+        baseApkPath ''
+        baseResMapping ''
+        baseMapping ''
+    }
+    patchDesc {
+        baseVersion '5.1.6'
+        patchVersion 1
+        patchMessage 'fajlkdafjladjklfa'
+    }
+}
+
+//repositories {
+//    maven {
+//        url "https://raw.githubusercontent.com/YunzhanghuOpen/redpacket-maven-repo/master/release"
+//    }
+//}

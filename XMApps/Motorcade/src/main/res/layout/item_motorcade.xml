@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/width_main_item"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_list_bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/motorcade_info_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <com.xiaoma.motorcade.common.view.UserHeadView
+                android:id="@+id/img_motorcade_icon"
+                android:layout_width="@dimen/size_icon"
+                android:layout_height="@dimen/size_icon"
+                android:layout_marginTop="@dimen/margin_top_icon" />
+
+            <TextView
+                android:id="@+id/tv_motorcade_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_title"
+                android:text="@string/app_name"
+                android:maxLines="2"
+                android:maxWidth="300px"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:textSize="@dimen/font_motorcade_tv" />
+
+            <TextView
+                android:id="@+id/tv_motorcade_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_command"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/default_command"
+                android:textSize="@dimen/font_motorcade_tv" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/padding_top_handle_layout"
+            android:paddingBottom="32px"
+            android:layout_alignParentBottom="true">
+
+            <Button
+                android:id="@+id/btn_motorcade_setting"
+                android:layout_width="@dimen/width_handle_button"
+                android:layout_height="@dimen/height_handle_button"
+                android:background="@drawable/motor_list_bg"
+                android:paddingBottom="@dimen/padding_bottom_item_button"
+                android:text="@string/info_setting"
+                android:textSize="@dimen/font_item_button" />
+
+            <Space
+                android:layout_width="@dimen/main_item_button_divider"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/btn_exit_motorcade"
+                android:layout_width="@dimen/width_handle_button"
+                android:layout_height="@dimen/height_handle_button"
+                android:background="@drawable/motor_list_bg"
+                android:paddingBottom="@dimen/padding_bottom_item_button"
+                android:text="@string/exit_motorcade"
+                android:textSize="@dimen/font_item_button" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="@dimen/width_online_count"
+        android:layout_height="@dimen/height_online_count"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/margin_top_count"
+        android:background="@drawable/bg_number"
+        android:paddingLeft="@dimen/padding_left_online_tv">
+
+        <TextView
+            android:id="@+id/tv_online_num"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/default_online_text"
+            android:textSize="@dimen/font_online_count" />
+    </LinearLayout>
+
+</RelativeLayout>

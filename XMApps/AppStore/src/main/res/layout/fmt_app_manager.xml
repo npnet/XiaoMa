@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/fmt_app_manager_margin_top">
+
+    <ImageView
+        android:id="@+id/iv_divide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/fmt_app_manager_divider_margin_left"
+        android:layout_marginRight="@dimen/fmt_app_manager_divider_margin_right"
+        android:background="@drawable/divide"
+        android:visibility="invisible" />
+
+    <!-- 顶部布局-->
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="60px" />
+
+    <TextView
+        android:id="@+id/text_install"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/fmt_app_manager_installed_margin_start"
+        android:text="@string/already_install"
+        android:textSize="@dimen/fmt_app_manager_installed_text_size"
+        app:layout_constraintBottom_toBottomOf="@+id/guideline"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+    <ImageView
+        android:id="@+id/download_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/fmt_app_manager_icon_download_list_margin_end"
+        android:padding="@dimen/fmt_app_manager_icon_download_list_padding"
+        android:src="@drawable/icon_download_normal"
+        app:layout_constraintBottom_toBottomOf="@+id/guideline"
+        app:layout_constraintRight_toLeftOf="@+id/btn_all_update"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+    <Button
+        android:id="@+id/btn_all_update"
+        android:layout_width="@dimen/fmt_app_manager_button_all_update_width"
+        android:layout_height="@dimen/fmt_app_manager_button_all_update_height"
+        android:layout_marginTop="@dimen/fmt_app_manager_button_all_update_margin_top"
+        android:layout_marginEnd="@dimen/fmt_app_manager_button_all_update_margin_end"
+        android:background="@drawable/selector_button"
+        android:enabled="false"
+        android:text="@string/all_update"
+        android:textSize="@dimen/fmt_app_manager_all_update_text_size"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_app_manager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fmt_app_manager_recycler_margin_top"
+        app:layout_constraintTop_toBottomOf="@+id/guideline" />
+
+    <com.xiaoma.ui.view.XmScrollBar
+        android:id="@+id/scroll_bar"
+        android:layout_width="@dimen/fmt_app_manager_scrollbar_width"
+        android:layout_height="@dimen/fmt_app_manager_scrollbar_height"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

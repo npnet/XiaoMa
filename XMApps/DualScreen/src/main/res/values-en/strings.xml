@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">双屏互动</string>
+    <string name="audio_first">no more</string>
+    <string name="audio_last">no more</string>
+    <string name="music_info_loading">Loading…</string>
+    <string name="unknow_song">Unknow song</string>
+    <string name="no_call_record">No call record</string>
+    <string name="usb_music">USB Music</string>
+    <string name="bt_music">Bluetooth Music</string>
+    <string name="online_music">Online Music</string>
+    <string name="fm_radio">FM Radio</string>
+    <string name="am_radio">AM Radio</string>
+    <string name="online_radio">On-line Radio</string>
+    <string name="usb_disconnected">Disconnected</string>
+    <string name="bt_disconnected">Disconnected</string>
+    <string name="net_error">lose network</string>
+    <string name="no_music">No music</string>
+    <string name="busg_calling">Busy</string>
+    <string name="recent_calls">Recent calls</string>
+    <string name="busy_now">Busy</string>
+    <string name="caller_id">Caller ID</string>
+    <string name="new_caller">New calls</string>
+    <string name="calling_now">Call in</string>
+    <string name="calling">Call in</string>
+    <string name="hand_up">Hang up</string>
+    <string name="unknow_caller">Unknown contact</string>
+    <string name="keeping">Keeping</string>
+    <string name="no_net_please_check">lose network</string>
+    <string name="hand_on">Answer</string>
+    <string name="major_navi">Professional Navigation</string>
+    <string name="ar_navi">AR Navigation</string>
+    <string name="contacts">contact list</string>
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/view_empty"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/iv_empty"
+        android:layout_width="@dimen/dimen_561"
+        android:layout_height="@dimen/dimen_514"
+        android:layout_centerInParent="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/icon_usb_no_connect" />
+
+    <TextView
+        android:id="@+id/tv_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/iv_empty"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_50"
+        android:textSize="@dimen/dimen_34"
+        tools:text="@string/usb_conn_state_remove" />
+
+</RelativeLayout>

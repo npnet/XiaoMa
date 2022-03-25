@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_common"
+    android:orientation="vertical"
+    android:paddingTop="87px">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:layout_marginLeft="58px"
+        android:layout_marginRight="53px"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_user_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_user" />
+
+        <TextView
+            android:id="@+id/tv_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20px"
+            android:layout_toRightOf="@id/iv_user_icon"
+            android:ellipsize="end"
+            android:maxWidth="300px"
+            android:maxLines="1"
+            android:textColor="@color/white"
+            android:textSize="30px" />
+
+        <Button
+            android:id="@+id/btn_login_out"
+            android:layout_width="175px"
+            android:layout_height="80px"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/btn_selector"
+            android:paddingBottom="10px"
+            android:text="@string/login_out"
+            android:textColor="@color/white"
+            android:textSize="22px" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_scene"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="100px"
+        android:layout_weight="1"
+        android:scrollbars="none" />
+
+    <com.xiaoma.ui.view.XmScrollBar
+        android:id="@+id/scroll_bar"
+        android:layout_width="@dimen/width_scrollbar"
+        android:layout_height="@dimen/height_scrollbar"
+        android:layout_gravity="center_horizontal"
+        android:visibility="invisible" />
+</LinearLayout>
+

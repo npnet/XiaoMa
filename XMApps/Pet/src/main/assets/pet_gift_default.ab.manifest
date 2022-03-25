@@ -1,0 +1,27 @@
+ManifestFileVersion: 0
+CRC: 1810166061
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 2304ede1ced9a86e8c2335d1e4fff505
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 42bc02741d93cb6dac2f3f0b70186806
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+Assets:
+- Assets/AssetBundle/Gift/default/Textures/gift.png
+- Assets/Prefabs/Gift/gen/default/gift.prefab
+Dependencies: []

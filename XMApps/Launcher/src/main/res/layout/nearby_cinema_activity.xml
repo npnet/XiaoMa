@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/notdata_view"
+        android:layout_width="@dimen/nearby_cinema_activity_iv_layout_width"
+        android:layout_height="@dimen/nearby_cinema_activity_iv_layout_height"
+        android:layout_centerInParent="true"
+        android:background="@drawable/iv_empty"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@id/tv_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/nearby_cinema_activity_tv_tips_top"
+            android:layout_marginBottom="75px"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="@string/nearby_no_cinema_data"
+            android:textColor="@color/state_view_text_color"
+            android:textSize="@dimen/nearby_cinema_activity_tv_tips_size" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/nearby_cinema"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/nearby_cinema_activity_neatby_cinema_left"
+            android:layout_marginTop="@dimen/nearby_cinema_activity_nearby_cinema_top"
+            android:text="@string/nearby_cinema"
+            android:textSize="@dimen/nearby_cinema_activity_nearby_cinema_size" />
+
+        <com.discretescrollview.DiscreteScrollView
+            android:id="@+id/nearby_cinema_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/nearby_cinema_activity_nearby_cinema_rv_top" />
+
+        <LinearLayout
+            android:id="@+id/nearby_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/nearby_cinema_activity_nearby_layout_top"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/nearby_cinema_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cinema_name"
+                    android:textSize="@dimen/nearby_cinema_activity_nearby_cinema_name_size" />
+
+                <TextView
+                    android:id="@+id/nearby_cinema_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/position"
+                    android:textColor="@color/color_8a919d"
+                    android:textSize="@dimen/nearby_cinema_activity_delition_size" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/attartion_layout3_top"
+                android:gravity="center_horizontal">
+
+                <Button
+                    android:id="@+id/nearby_cinema_buy"
+                    android:layout_width="@dimen/attraction_navigation_width"
+                    android:layout_height="@dimen/attraction_navigation_cimema_buy_height"
+                    android:background="@drawable/selector_button"
+                    android:text="@string/right_now_buy_film_ticket"
+                    android:textSize="@dimen/attraction_navigation_cimema_buy_size" />
+
+                <Button
+                    android:id="@+id/nearby_cinema_navigation"
+                    android:layout_width="@dimen/attraction_phone_width"
+                    android:layout_height="@dimen/attraction_navigation_cimema_navigation_height"
+                    android:layout_marginLeft="@dimen/attraction_navigation_cimema_navigation_left"
+                    android:background="@drawable/selector_button"
+                    android:text="@string/btn_navi"
+                    android:textSize="@dimen/attraction_navigation_cimema_navigation_size" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

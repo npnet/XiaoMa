@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/padding_left_setting_list"
+    android:paddingTop="@dimen/padding_top_setting">
+
+
+    <TextView
+        android:id="@+id/online_count_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/padding_bottom_online_tv"
+        android:text="@string/online_display_null"
+        android:textSize="@dimen/font_setting" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/fragment_status_rv"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@id/online_count_tv"
+        android:clipToPadding="false" />
+
+    <com.xiaoma.ui.view.XmScrollBar
+        android:id="@+id/setting_scroll"
+        android:layout_width="@dimen/height_motorcade_scrollbar"
+        android:layout_height="@dimen/width_motorcade_scrollbar"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/margin_top_scrollbar"
+        android:layout_marginRight="@dimen/margin_right_scrollbar" />
+
+</RelativeLayout>

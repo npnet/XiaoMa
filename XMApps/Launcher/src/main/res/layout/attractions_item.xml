@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="380px"
+    android:layout_height="272px"
+    android:layout_gravity="center"
+   >
+
+    <ImageView
+        android:id="@+id/gallery_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/not_scenic_img" />
+
+    <LinearLayout
+        android:id="@+id/socer_linear"
+        android:layout_width="@dimen/attraction_socer_width"
+        android:layout_height="@dimen/attraction_socer_height"
+        android:background="@drawable/collect_item_type_back"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="@dimen/attraction_item_socer_img_widith"
+            android:layout_height="@dimen/attraction_item_socer_img_height"
+            android:src="@drawable/fraction_icon" />
+        <TextView
+            android:id="@+id/attraction_socer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/attraction_item_socer_img_left"
+            android:gravity="center"
+            android:text="5.0"
+            android:textColor="#222222"
+            android:textSize="@dimen/attraction_socer_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/attractions_linear"
+        android:gravity="center"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/collect_item_type_back"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/attraction_collection_height">
+        <ImageView
+            android:id="@+id/iv_attractions"
+            android:src="@drawable/collect_star_select"
+            android:layout_width="@dimen/attraction_item_attractions_width"
+            android:layout_height="@dimen/attraction_item_attractions_height" />
+
+        <TextView
+            android:id="@+id/attraction_collection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/attraction_item_attractions_collection_left"
+            android:gravity="center"
+            android:text="@string/already_collect"
+            android:textColor="#222222"
+            android:textSize="@dimen/attraction_collection_size" />
+    </LinearLayout>
+</RelativeLayout>

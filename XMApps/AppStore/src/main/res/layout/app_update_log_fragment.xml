@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/app_update_log_fragment_divide_margin_left"
+        android:layout_marginTop="@dimen/app_update_log_fragment_divide_margin_top"
+        android:layout_marginRight="@dimen/app_update_log_fragment_divide_margin_right"
+        android:layout_marginBottom="@dimen/app_update_log_fragment_divide_margin_bottom"
+        android:background="@drawable/divide"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tv_app_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line"
+        android:layout_marginLeft="@dimen/app_update_log_fragment_app_detail_text_margin_left"
+        android:drawableLeft="@drawable/icon_app_detail"
+        android:drawablePadding="@dimen/app_update_log_fragment_app_detail_text_drawable_padding"
+        android:paddingTop="@dimen/app_update_log_fragment_app_detail_text_padding_top"
+        android:paddingBottom="@dimen/app_update_log_fragment_app_detail_text_padding_bottom"
+        android:text="@string/app_content_detail"
+        android:textColor="@color/color_8a919d"
+        android:textSize="@dimen/app_update_log_fragment_app_detail_text_size" />
+
+    <TextView
+        android:id="@+id/tv_log"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_app_detail"
+        android:layout_marginLeft="@dimen/app_update_log_fragment_log_text_margin_left"
+        android:text="@string/update_log"
+        android:textColor="@color/white"
+        android:textSize="@dimen/app_update_log_fragment_log_text_size" />
+
+    <TextView
+        android:id="@+id/tv_version_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_app_detail"
+        android:layout_marginLeft="@dimen/app_update_log_fragment_version_info_margin_left"
+        android:layout_marginTop="@dimen/app_update_log_fragment_version_info_margin_top"
+        android:layout_toRightOf="@id/tv_log"
+        android:background="@drawable/bg_version"
+        android:gravity="center"
+        android:paddingLeft="@dimen/app_update_log_fragment_version_info_padding_left"
+        android:paddingTop="@dimen/app_update_log_fragment_version_info_padding_top"
+        android:paddingRight="@dimen/app_update_log_fragment_version_info_padding_right"
+        android:paddingBottom="@dimen/app_update_log_fragment_version_info_padding_bottom"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/app_update_log_fragment_version_info_text_size" />
+
+    <LinearLayout
+        android:id="@+id/ll_update_log"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv_log"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/app_update_log_fragment_ll_update_log_padding_left"
+        android:paddingTop="@dimen/app_update_log_fragment_ll_update_log_padding_top" />
+</RelativeLayout>

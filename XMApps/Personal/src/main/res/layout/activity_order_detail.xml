@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/order_detail_back"
+        android:layout_width="@dimen/size_order_detail_navigation"
+        android:layout_height="@dimen/size_order_detail_navigation"
+        android:layout_marginStart="@dimen/size_order_detail_navigation_left"
+        android:layout_marginTop="@dimen/size_order_detail_navigation_top"
+        android:scaleType="centerCrop"
+        android:src="@drawable/order_detail_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/order_detail_prompt"
+        android:layout_width="@dimen/size_order_detail_navigation"
+        android:layout_height="@dimen/size_order_detail_navigation"
+        android:layout_marginTop="@dimen/size_order_detail_navigation_margin"
+        android:scaleType="centerCrop"
+        android:src="@drawable/predestine_prompt"
+        app:layout_constraintStart_toStartOf="@id/order_detail_back"
+        app:layout_constraintTop_toBottomOf="@id/order_detail_back" />
+
+    <ImageView
+        android:id="@+id/order_detail_home"
+        android:layout_width="@dimen/size_order_detail_navigation"
+        android:layout_height="@dimen/size_order_detail_navigation"
+        android:layout_marginTop="@dimen/size_order_detail_navigation_margin"
+        android:scaleType="centerCrop"
+        android:src="@drawable/order_detail_home"
+        app:layout_constraintStart_toStartOf="@id/order_detail_back"
+        app:layout_constraintTop_toBottomOf="@id/order_detail_prompt" />
+
+
+    <FrameLayout
+        android:id="@+id/order_detail_content"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/size_order_detail_content_margin_left"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/order_detail_back" />
+
+
+</android.support.constraint.ConstraintLayout>

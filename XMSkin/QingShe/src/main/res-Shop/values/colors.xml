@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_home_menus_unchecked">#8a919d</color>
+    <color name="button_pressed">#ccffffff</color>
+    <color name="button_unable">#8a919d</color>
+    <!--流量商城-->
+    <color name="color_flow_item_left_top_tag">#A40928</color>
+    <color name="color_flow_item_tag">#F2E3E5</color>
+    <color name="color_flow_tv_tip">#8A919D</color>
+    <color name="color_flow_tv_refresh">#C3D0E1</color>
+    <color name="color_flow_tv_origin_price">#A2A5A9</color>
+    <color name="color_cash">#CFAF8A</color>
+
+
+    <color name="color_transparent">#00000000</color>
+    <color name="white">#FFFFFF</color>
+</resources>

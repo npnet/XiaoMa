@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="chat_msg_occupy">
+        <item name="android:layout_width">90px</item>
+        <item name="android:layout_height">30px</item>
+        <item name="android:layout_marginTop">5px</item>
+        <item name="android:background">@drawable/chat_msg_user_occupy_bg</item>
+        <item name="android:textSize">20px</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:gravity">center</item>
+    </style>
+</resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dialog_uninstall_error_width"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_bg_middle"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/dialog_uninstall_error_padding_top"
+    android:paddingBottom="@dimen/dialog_uninstall_error_padding_bottom">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="@dimen/dialog_uninstall_error_title_padding_bottom"
+        android:text="@string/tips"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/dialog_uninstall_error_title_size" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingBottom="@dimen/dialog_uninstall_error_content_padding_bottom"
+        android:text="@string/tips_install_error"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/dialog_uninstall_error_content_text_size" />
+
+    <TextView
+        android:id="@+id/sure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/i_down"
+        android:textColor="@color/selector_dialog_sure_cancel"
+        android:textSize="@dimen/dialog_uninstall_error_sure_text_size" />
+</LinearLayout>

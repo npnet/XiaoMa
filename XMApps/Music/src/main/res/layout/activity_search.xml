@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".search.ui.SearchActivity">
+
+    <com.xiaoma.ui.view.SearchVoiceView
+        android:id="@+id/search_voice_view"
+        android:layout_marginLeft="@dimen/size_search_main_margin"
+        android:layout_width="@dimen/width_search_voice_view"
+        android:layout_marginTop="@dimen/size_search_voice_view_top"
+        android:layout_height="@dimen/height_search_voice_view" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/ll_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_search_history"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/size_search_main_margin"
+                android:paddingRight="@dimen/size_search_main_margin"
+                android:paddingTop="@dimen/size_search_history_top"
+                android:paddingBottom="@dimen/size_search_history_bottom">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_search_text_big"
+                    android:text="@string/search_history" />
+
+                <TextView
+                    android:id="@+id/tv_clear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/dirty_white"
+                    android:textSize="@dimen/font_search_text_small"
+                    android:text="@string/search_history_clean" />
+            </RelativeLayout>
+
+
+            <com.xiaoma.ui.view.FlowLayout
+                android:id="@+id/ll_search_history"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/size_search_main_margin"
+                android:paddingRight="@dimen/size_search_main_margin"
+                android:paddingTop="@dimen/size_search_flowlayout_top"
+                android:paddingBottom="@dimen/size_search_flowlayout_top"
+                app:horizontalSpacing="@dimen/size_search_history_item_space"
+                app:itemColor="@color/white"
+                app:itemSize="@dimen/font_search_text_small_plus"
+                app:singleLine="true"
+                app:textPaddingH="@dimen/size_search_history_item_padingh"
+                app:textPaddingV="@dimen/size_search_history_item_padingv"
+                app:verticalSpacing="@dimen/size_search_history_item_padingv" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/size_search_main_margin"
+                android:paddingRight="@dimen/size_search_main_margin"
+                android:paddingTop="@dimen/size_search_history_top"
+                android:paddingBottom="@dimen/size_search_history_bottom">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_search_text_big"
+                    android:text="@string/search_everyone_search" />
+
+
+            </RelativeLayout>
+
+
+            <com.xiaoma.ui.view.FlowLayout
+                android:id="@+id/ll_recommend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/size_search_main_margin"
+                android:paddingRight="@dimen/size_search_main_margin"
+                android:paddingTop="@dimen/size_search_flowlayout_top"
+                android:paddingBottom="@dimen/size_search_flowlayout_top"
+                app:horizontalSpacing="@dimen/size_search_history_item_space"
+                app:itemColor="@color/white"
+                app:itemSize="@dimen/font_search_text_small_plus"
+                app:singleLine="true"
+                app:textPaddingH="@dimen/size_search_history_item_padingh"
+                app:textPaddingV="@dimen/size_search_history_item_padingv"
+                app:verticalSpacing="@dimen/size_search_history_item_padingv" />
+        </LinearLayout>
+
+        <include
+            android:id="@+id/rl_search_no_network"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone"
+            layout="@layout/include_no_network_view" />
+
+    </FrameLayout>
+
+</LinearLayout>

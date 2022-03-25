@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35px"
+        android:orientation="horizontal"
+        android:paddingLeft="100px"
+        android:paddingRight="100px">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.xiaoma.setting.common.views.MagicTextView
+                android:id="@+id/tv_theme_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/theme_one"
+                android:textColor="@color/setting_tab_unselect"
+                android:textSize="@dimen/setting_tab_font"
+                app:innerShadowRadius="3px"
+                app:outerShadowColor="#FF2C99F9"
+                app:outerShadowDy="3px"
+                app:outerShadowRadius="10px" />
+
+            <ImageView
+                android:id="@+id/bg_cover_one"
+                android:layout_width="127px"
+                android:layout_height="45px"
+                android:layout_marginTop="8px"
+                android:background="@drawable/icon_sub_tab_selected_new"
+                android:scaleType="fitXY" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.xiaoma.setting.common.views.MagicTextView
+                android:id="@+id/tv_theme_two"
+                android:layout_width="130px"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/theme_two"
+                android:textColor="@color/setting_tab_unselect"
+                android:textSize="@dimen/setting_tab_font"
+                app:innerShadowRadius="3px"
+                app:outerShadowColor="#FF2C99F9"
+                app:outerShadowDy="3px"
+                app:outerShadowRadius="10px" />
+
+            <ImageView
+                android:id="@+id/bg_cover_two"
+                android:layout_width="127px"
+                android:layout_height="45px"
+                android:layout_marginTop="8px"
+                android:background="@drawable/icon_sub_tab_selected_new"
+                android:scaleType="fitXY"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.xiaoma.setting.common.views.MagicTextView
+                android:id="@+id/tv_theme_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/theme_three"
+                android:textColor="@color/setting_tab_unselect"
+                android:textSize="@dimen/setting_tab_font"
+                app:innerShadowRadius="3px"
+                app:outerShadowColor="#FF2C99F9"
+                app:outerShadowDy="3px"
+                app:outerShadowRadius="10px" />
+
+            <ImageView
+                android:id="@+id/bg_cover_three"
+                android:layout_width="127px"
+                android:layout_height="45px"
+                android:layout_marginTop="8px"
+                android:background="@drawable/icon_sub_tab_selected_new"
+                android:scaleType="fitXY"
+                android:visibility="gone"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15px">
+
+        <RelativeLayout
+            android:id="@+id/rl_theme_image_container"
+            android:layout_width="880px"
+            android:layout_height="340px"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/bg_theme"
+            android:padding="10px">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_sample" />
+        </RelativeLayout>
+        
+        <ImageView
+            android:layout_width="898px"
+            android:layout_height="57px"
+            android:layout_below="@+id/rl_theme_image_container"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5px"
+            android:src="@drawable/bg_theme_inverted"
+            android:scaleType="fitXY"/>
+    </RelativeLayout>
+
+</LinearLayout>

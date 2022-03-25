@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/collect_adapter_v1_width"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/iv_cover"
+        android:layout_width="@dimen/collect_adapter_v1_cover_width"
+        android:layout_height="@dimen/collect_adapter_v1_cover_height"
+        android:layout_centerVertical="true"
+        android:background="@drawable/bg_collect_frame"
+        android:paddingLeft="@dimen/collect_adapter_v1_cover_left"
+        android:paddingTop="@dimen/collect_adapter_v1_cover_top"
+        android:paddingRight="@dimen/collect_adapter_v1_cover_right"
+        android:paddingBottom="@dimen/collect_adapter_v1_cover_bottom"
+        android:scaleType="fitXY"
+        android:src="@drawable/emotional_food_not_data" />
+
+    <ImageView
+        android:id="@+id/iv_start"
+        android:layout_width="90px"
+        android:layout_height="40px"
+        android:layout_alignLeft="@+id/iv_cover"
+        android:layout_alignTop="@+id/iv_cover"
+        android:layout_marginLeft="@dimen/collect_adapter_v1_socer_linear_left"
+        android:layout_marginTop="@dimen/collect_adapter_v1_socer_linear_top"
+        android:scaleType="fitXY"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/socer_linear"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/food_scenic_collect_item_score_height"
+        android:layout_alignLeft="@+id/iv_cover"
+        android:layout_alignTop="@+id/iv_cover"
+        android:layout_marginLeft="@dimen/collect_adapter_v1_socer_linear_left"
+        android:layout_marginTop="@dimen/collect_adapter_v1_socer_linear_top"
+        android:background="@drawable/collect_item_type_back"
+        android:gravity="center"
+        android:visibility="visible">
+
+        <ImageView
+            android:layout_width="17px"
+            android:layout_height="17px"
+            android:src="@drawable/fraction_icon" />
+
+        <TextView
+            android:id="@+id/tv_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/collect_adapter_v1_socer_tv_left"
+            android:text="5.0"
+            android:textColor="#2c2c2c"
+            android:textSize="@dimen/food_scenic_collect_item_score_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/collection_linear"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/food_scenic_collect_item_collection_height"
+        android:layout_alignTop="@+id/iv_cover"
+        android:layout_alignRight="@+id/iv_cover"
+        android:layout_marginTop="@dimen/collect_adapter_v1_collection_linear_top"
+        android:layout_marginRight="@dimen/collect_adapter_v1_collection_linear_right"
+        android:background="@drawable/collect_item_type_back"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/iv_collection"
+            android:layout_width="@dimen/collect_adapter_v1_iv__collection_width"
+            android:layout_height="@dimen/collect_adapter_v1_iv__collection_height"
+            android:src="@drawable/collect_star_select" />
+
+        <TextView
+            android:id="@+id/tv_collection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/collect_adapter_v1_tv__collection_left"
+            android:text="@string/already_collect"
+            android:textColor="#2c2c2c"
+            android:textSize="@dimen/collect_adapter_v1_tv__collection_size" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/iv_cover"
+        android:layout_marginLeft="@dimen/collect_adapter_v1_collection_name_left"
+        android:layout_marginTop="@dimen/collect_adapter_v1_collection_name_top"
+        android:layout_marginRight="18px"
+        android:layout_toRightOf="@id/iv_cover"
+        android:textSize="@dimen/collect_adapter_v1_collection_name_size"
+        tools:text="店铺名称" />
+
+    <LinearLayout
+        android:id="@+id/ll_comfort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/iv_cover"
+        android:layout_marginTop="50px"
+        android:layout_toRightOf="@id/tv_name"
+        android:orientation="horizontal" />
+
+    <TextView
+        android:id="@+id/tv_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_name"
+        android:layout_marginLeft="@dimen/collect_adapter_v1_collection_detail_left"
+        android:layout_marginTop="@dimen/collect_adapter_v1_collection_detail_top"
+        android:layout_toRightOf="@+id/iv_cover"
+        android:textColor="#50ffffff"
+        android:textSize="@dimen/collect_adapter_v1_collection_detail_size"
+        tools:text="@string/details" />
+
+    <Button
+        android:id="@+id/tv_action1"
+        android:layout_width="@dimen/collect_adapter_v1_tv_action_width"
+        android:layout_height="@dimen/collect_adapter_v1_tv_action_height"
+        android:layout_below="@+id/tv_detail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/collect_adapter_v1_tv_action_left"
+        android:layout_marginTop="@dimen/collect_adapter_v1_tv_action_top"
+        android:layout_toRightOf="@+id/iv_cover"
+        android:background="@drawable/selector_button"
+        android:gravity="center_horizontal"
+        android:paddingTop="@dimen/collect_adapter_v1_tv_action_padding_top"
+        android:textSize="@dimen/collect_adapter_v1_tv_action_size"
+        tools:text="@string/btn_navi" />
+
+    <Button
+        android:id="@+id/tv_action2"
+        android:layout_width="@dimen/collect_adapter_v1_tv_action2_width"
+        android:layout_height="@dimen/collect_adapter_v1_tv_action2_height"
+        android:layout_alignTop="@+id/tv_action1"
+        android:layout_marginLeft="@dimen/collect_adapter_v1_tv_action2_left"
+        android:layout_toRightOf="@+id/tv_action1"
+        android:background="@drawable/selector_button"
+        android:gravity="center_horizontal"
+        android:paddingTop="@dimen/collect_adapter_v1_tv_action2_padding_top"
+        android:textSize="@dimen/collect_adapter_v1_tv_action2_size"
+        tools:text="@string/btn_phone" />
+
+</RelativeLayout>

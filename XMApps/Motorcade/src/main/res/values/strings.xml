@@ -1,0 +1,98 @@
+<resources>
+    <!--launch页面-->
+    <string name="not_joined_motorcade">您当前还未加入车队</string>
+    <string name="request_error">网络错误，请检查网络</string>
+    <!--主页面-->
+    <string name="app_name">车队</string>
+    <string name="create_motorcade">创建车队</string>
+    <string name="create_motorcade_failed">创建车队失败</string>
+    <string name="join_motorcade_failed">加入车队失败</string>
+    <string name="find_motorcade_failed">未找到对应的车队</string>
+    <string name="sure">确定</string>
+    <string name="cancel">取消</string>
+    <string name="join_motorcade">加入车队</string>
+    <string name="net_work">网络异常，请稍后再试</string>
+    <string name="no_network_check">网络异常，请检查网络</string>
+    <string name="joined_success">已加入该车队</string>
+    <string name="quit_success">已退出车队</string>
+    <string name="quit_failed">退出车队失败</string>
+    <string name="find_team_failed">未找到对应的车队</string>
+    <string name="create_team_success">成功创建车队</string>
+    <string name="change_success">修改成功</string>
+    <string name="change_failed">修改失败</string>
+    <string name="motorcade_unit">个</string>
+    <string name="current_joined_number">您当前已加入车队数:</string>
+    <string name="number_zero">0个</string>
+    <string name="default_command">口令:000000</string>
+    <string name="default_online_text">0/0</string>
+    <string name="command_digits">qwertyuiopasdfghjklzxcvbnm0123456789</string>
+    <string name="command">口令:</string>
+
+    <!--setting-->
+    <string name="setting_motorcade_name">车队名称</string>
+    <string name="setting_motorcade_nickname">显示昵称</string>
+    <string name="setting_motorcade_exit_tips">提示</string>
+    <string name="setting_no_permission">您没有该权限</string>
+    <string name="online_display_null">当前在线人数：0/0 人</string>
+    <string name="info_setting">信息设置</string>
+    <string name="motorcade_command">分享口令</string>
+    <string name="exit_motorcade">退出车队</string>
+    <string name="eric">Eric</string>
+    <string name="offline">离线</string>
+    <string name="online">在线</string>
+    <string name="your_command">您的车队口令</string>
+    <string name="share_command">分享口令给车友</string>
+    <string name="goto_main">进入车队首页</string>
+    <string name="group_details_msg_notice">消息通知</string>
+    <string name="personal_sui">岁</string>
+    <string name="add_friend">加为车友</string>
+    <string name="is_receive_others">是否收听其他车主语音</string>
+    <string name="request_add_friend_failed">发送好友请求失败</string>
+    <string name="request_add_friend">请求已发送成功，等待对方确认</string>
+    <string name="request_is_friend">对方已经是您的车友了</string>
+    <string name="current_online_number">当前在线人数: %s/%s人</string>
+
+    <!--地图页面-->
+    <string name="start_rob_microphone">点击开始抢麦</string>
+    <string name="robbing_microphone">抢麦中...</string>
+    <string name="online_numbers">在线人数:\n</string>
+    <string name="input_null_motorcade">请输入车队名称</string>
+    <string name="please_input_motorcade">您还没有输入内容</string>
+    <string name="input_null_command">您没有输入口令</string>
+    <string name="input_null_content">您没有输入任何内容</string>
+    <string name="error_motorcade_msg">车队信息有误</string>
+    <string name="please_input_numbers">请您输入数字</string>
+    <string name="other_has_mic">您的车友正在说话，请稍等</string>
+    <string name="no_permission">您没有该权限</string>
+    <string name="join_failed">进入车队失败</string>
+    <string name="join_failed_error">车队信息有误，进入失败</string>
+    <string name="join_loading">正在进入车队…</string>
+    <string name="rob_mic_failed">抢麦失败，请重试</string>
+    <string name="click_to_rob_mic">点击开始抢麦</string>
+    <string name="rob_mic_retry">抢麦失败重新抢麦</string>
+    <string name="rob_mic_loading">抢麦中...</string>
+    <string name="rob_mic_lineup_count">前面还有:%1$s人</string>
+    <string name="start_speak">开始说话</string>
+    <string name="click_to_hang_out">60s后通话结束</string>
+    <string name="hang_out">结束</string>
+    <string name="count_down_second">倒计时:%1$s秒</string>
+    <string name="locate_failed">暂未获得当前位置，请稍候再试</string>
+    <string name="not_attach_network">无法连接网络</string>
+    <string name="get_mic_failed">获取麦克风失败</string>
+    <string name="get_audio_focus_failed">无法获得音源焦点</string>
+
+    <!--dialog-->
+    <string name="exit_motorcade_sure">是否确定退出车队?</string>
+    <string name="dialog_et_hint">请输入车队口令,加入车队</string>
+    <string name="diaplay_nick">显示昵称</string>
+    <string name="motorcade_name">车队名称</string>
+    <string name="share_to">您要分享至</string>
+    <string name="str_chexin">车友圈</string>
+    <string name="enter_motorcade">请输入车队名称</string>
+    <string name="motor_name">分享的车队口令:%1$s</string>
+    <string name="motor_command">加入车队</string>
+    <string name="add_loading">正在加入车队...</string>
+    <string name="team_dismissed">车队已解散</string>
+    <string name="frequnsy_too_many">发送请求过于频繁，请稍后再试</string>
+
+</resources>

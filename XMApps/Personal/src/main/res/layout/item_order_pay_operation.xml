@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_order_pay_operation_layout"
+    android:layout_width="@dimen/width_order_detail_pay"
+    android:layout_height="@dimen/height_order_detail_pay"
+    android:background="@drawable/selector_button"
+    android:gravity="center">
+
+
+    <TextView
+        android:id="@+id/tv_pay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="@string/state_have_paid"
+        android:textSize="@dimen/font_mine_order_size_24px" />
+
+
+    <View
+        android:layout_width="@dimen/size_order_detail_info_divider_line"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/size_order_time_margin"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@android:color/white" />
+
+
+    <ImageView
+        android:layout_width="@dimen/size_order_time_image"
+        android:layout_height="@dimen/size_order_time_image"
+        android:layout_marginStart="@dimen/size_order_time_margin"
+        android:src="@drawable/order_timer" />
+
+    <TextView
+        android:id="@+id/tv_pay_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="@dimen/size_order_time_margin_left"
+        android:text="29:30"
+        android:textColor="@color/wait_pay_color"
+        android:textSize="@dimen/font_mine_order_size_24px" />
+
+</LinearLayout>

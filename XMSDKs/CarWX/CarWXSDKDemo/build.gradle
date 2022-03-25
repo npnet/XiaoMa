@@ -1,0 +1,37 @@
+apply plugin: 'com.android.application'
+apply from: "$rootDir$Android"
+apply from: "$rootDir$Modules"
+
+android application('com.xiaoma.carwxsdkdemo')
+//dependencies dependency(CarWXSDKDemo)
+
+//android {
+//    compileSdkVersion 28
+//
+//    defaultConfig {
+//        applicationId "com.xiaoma.carwxsdkdemo"
+//        minSdkVersion 15
+//        targetSdkVersion 28
+//        versionCode 1
+//        versionName "1.0"
+//
+//        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+//
+//    }
+//
+//    buildTypes {
+//        release {
+//            minifyEnabled false
+//            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+//        }
+//    }
+//
+//}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+//    implementation project(':XMSDKs:CarWX:CarWXSDK')
+    implementation "com.android.support:appcompat-v7:${SUPPORT_LIBRARY_VERSION}"
+    implementation "com.android.support.constraint:constraint-layout:${CONSTRAINT_LAYOUT}"
+//    implementation project(':XMSDKs:CarWX:CarWXBase')
+}

@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.xiaoma.club">
+    <!-- android:sharedUserId="android.uid.system" -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission
+        android:name="android.permission.CHANGE_CONFIGURATION"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" /> <!-- call permission -->
+    <uses-permission android:name="android.permission.USE_SIP" />
+    <uses-permission android:name="android.permission.CONFIGURE_SIP" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" /> <!-- call permission end -->
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.FORCE_STOP_PACKAGES"/>
+    <permission
+        android:name="com.xiaoma.club.permission.INCOMING_CALL"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.xiaoma.club.permission.INCOMING_CALL" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <!--<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />-->
+
+    <application
+        android:name=".ClubApp"
+        android:icon="@drawable/app_icon_club"
+        android:label="@string/app_name"
+        android:theme="@style/XiaoMaTheme">
+
+        <meta-data
+            android:name="CarType"
+            android:value="XMLX" />
+
+        <meta-data
+            android:name="CarChannelId"
+            android:value="${CAR_CHANNEL_ID}" />
+
+        <meta-data
+            android:name="XmGitRev"
+            android:value="${XM_GIT_REV}"/>
+
+        <activity
+            android:name=".common.ui.MainActivity"
+            android:theme="@style/XiaoMaTheme_Main"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="@string/host"
+                    android:path="@string/path_discover"
+                    android:scheme="@string/scheme" />
+                <data
+                    android:host="@string/host"
+                    android:path="@string/path_msg"
+                    android:scheme="@string/scheme" />
+                <data
+                    android:host="@string/host"
+                    android:path="@string/path_contacts"
+                    android:scheme="@string/scheme" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".msg.chat.ui.ChatActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/XiaoMaTheme.FullScreen">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".personal.ui.PersonalEditSignActivity"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".msg.chat.ui.GroupEditSignActivity"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".discovery.ui.DiscoverySearchActivity"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="adjustResize|stateHidden">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".msg.chat.ui.SendLocationActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/XiaoMaTheme.FullScreen">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".msg.chat.ui.LocationDetailActivity"
+            android:theme="@style/XiaoMaTheme.FullScreen">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!--
+<activity
+            android:name=".msg.chat.ui.SearchLocationActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/XiaoMaTheme.Transparent">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        -->
+        <activity android:name=".common.ui.FlickerActivity">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".msg.chat.ui.GroupActivityWeb">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".msg.redpacket.ui.RPLocationActivity"
+            android:theme="@style/XiaoMaTheme.FullScreen">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".share.ui.ShareActivity"
+            android:exported="true">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+                <action android:name="com.xiama.club.share.action" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".msg.redpacket.ui.RPDetailActivity">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".msg.redpacket.ui.RPSendActivity">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".share.ui.JoinConfirmActivity">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".msg.chat.controller.ChatReceiver"
+            android:exported="true"
+            tools:ignore="ExportedReceiver">
+            <intent-filter>
+                <action android:name="com.xiaoma.club.CHAT" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 环信 begin -->
+        <service
+            android:name="com.hyphenate.chat.EMChatService"
+            android:exported="true"
+            tools:ignore="ExportedService" /> <!-- 声明sdk所需的receiver -->
+        <receiver android:name="com.hyphenate.chat.EMMonitorReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+            <!-- 可选filter -->
+            <intent-filter>
+                <!--<action android:name="android.intent.action.BOOT_COMPLETED" />-->
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver> <!-- 环信 end -->
+        <!-- 高德地图 begin -->
+
+        <!--小马签名Key-->
+        <!--<meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="d1098f9e1c74df2d36744a3100c1b239" />-->
+
+        <!--系统签名Key-->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="520e890cec5ec6fb0ce74ba260bea677" />
+
+        <!-- 高德地图定位需要的服务 -->
+        <service android:name="com.amap.api.location.APSService" />
+        <!-- 高德地图 end -->
+        <service android:name=".common.service.ClubService" />
+        <service android:name=".common.service.ClubNotificationService" />
+    </application>
+
+</manifest>

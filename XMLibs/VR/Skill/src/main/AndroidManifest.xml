@@ -1,0 +1,10 @@
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xiaoma.vr.skill">
+
+    <application>
+        <service android:name=".client.WakeupService"
+                 android:exported="true"/>
+    </application>
+
+</manifest>

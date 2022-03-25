@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_common"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:paddingStart="46px"
+    android:paddingEnd="46px">
+
+    <TextView
+        android:id="@+id/tv_scene_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="98px"
+        android:textColor="@color/white"
+        android:textSize="30px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="回家场景" />
+
+    <Button
+        android:id="@+id/btn_condition"
+        android:layout_width="175px"
+        android:layout_height="80px"
+        android:layout_marginTop="10px"
+        android:layout_marginEnd="80px"
+        android:background="@drawable/btn_selector"
+        android:paddingBottom="10px"
+        android:text="@string/condition_setting"
+        android:textColor="@color/white"
+        android:textSize="24px"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_scene_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_scene_name" />
+
+    <Button
+        android:id="@+id/btn_excute"
+        android:layout_width="175px"
+        android:layout_height="80px"
+        android:layout_marginTop="10px"
+        android:layout_marginEnd="22px"
+        android:background="@drawable/btn_selector"
+        android:paddingBottom="10px"
+        android:text="@string/excute"
+        android:textColor="@color/white"
+        android:textSize="24px"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_scene_name"
+        app:layout_constraintEnd_toStartOf="@id/btn_condition"
+        app:layout_constraintTop_toTopOf="@+id/tv_scene_name" />
+
+    <ImageView
+        android:id="@+id/iv_attention"
+        android:layout_width="25px"
+        android:layout_height="25px"
+        android:layout_marginTop="210px"
+        android:src="@drawable/icon_attention"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24px"
+        android:text="@string/ruguo"
+        android:textColor="#8a919d"
+        android:textSize="26px"
+        app:layout_constraintBottom_toBottomOf="@id/iv_attention"
+        app:layout_constraintStart_toEndOf="@id/iv_attention"
+        app:layout_constraintTop_toTopOf="@id/iv_attention" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="53px"
+        android:layout_marginTop="270px"
+        android:text="@string/hand_excute"
+        android:textColor="@color/white"
+        android:textSize="30px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="329px"
+        android:background="@drawable/bg_line"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_excute"
+        android:layout_width="25px"
+        android:layout_height="25px"
+        android:layout_marginTop="370px"
+        android:src="@drawable/icon_excute"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24px"
+        android:text="@string/jiu_excute"
+        android:textColor="#8a919d"
+        android:textSize="26px"
+        app:layout_constraintBottom_toBottomOf="@id/iv_excute"
+        app:layout_constraintStart_toEndOf="@id/iv_excute"
+        app:layout_constraintTop_toTopOf="@id/iv_excute" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_actions"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_marginTop="20px"
+        android:overScrollMode="never"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_excute" />
+
+</android.support.constraint.ConstraintLayout>

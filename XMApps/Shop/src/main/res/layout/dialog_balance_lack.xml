@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_dialog_big">
+
+
+    <TextView
+        android:id="@+id/tv_prompt_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_dialog_title_margin_top"
+        android:gravity="center"
+        android:text="@string/prompt_title"
+        android:textSize="@dimen/font_of_shop_28"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tv_lack_prompt_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80px"
+        android:text="@string/balance_lack"
+        android:textSize="@dimen/font_of_shop_34"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_prompt_title" />
+
+    <TextView
+        android:id="@+id/tv_cur_car_coin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:textSize="@dimen/font_of_shop_34"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_lack_prompt_title" />
+
+    <ImageView
+        android:id="@+id/divider_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/horizontal_divider_line"
+        app:layout_constraintBottom_toTopOf="@id/item_pay_operation_button_layout" />
+
+    <include
+        layout="@layout/item_pay_operation_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_dialog_bottom_button"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

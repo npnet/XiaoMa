@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.xiaoma.setting.common.views.SettingItemView
+            android:id="@+id/siv_language_type"
+            style="@style/style_setting_item_v2"
+            app:segmentTexts="@string/language_type"
+            app:titleTexts="@string/language"
+            android:layout_marginTop="10px"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="105px"
+            android:layout_marginTop="50px"
+            android:text="@string/date_and_time"
+            android:textColor="#fff"
+            android:textSize="30px" />
+
+        <com.xiaoma.setting.common.views.SwitchAnimation
+            android:id="@+id/switch_sync_time"
+            style="@style/style_switch_animation_car"
+            android:layout_width="495px"
+            app:textSize="@dimen/secondary_font"
+            app:textColor="@color/secondary_color"
+            android:layout_marginLeft="110px"
+            android:layout_marginTop="18px"
+            android:layout_marginBottom="15px"
+            app:switchText="@string/syc_time" />
+
+        <RelativeLayout
+            android:id="@+id/rl_show_date"
+            android:layout_width="780px"
+            android:layout_height="wrap_content"
+            android:paddingLeft="110px"
+            android:paddingRight="110px"
+            android:visibility="gone"
+            android:layout_marginTop="15px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/date"
+                android:textColor="#80ffffff"
+                android:textSize="24px" />
+
+            <RelativeLayout
+                android:layout_width="200px"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true">
+
+                <com.xiaoma.setting.common.views.MagicTextView
+                    android:id="@+id/tv_show_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:textSize="24px"
+                    app:innerShadowRadius="3px"
+                    app:outerShadowDy="3px"
+                    app:outerShadowColor="#FF2C99F9"
+                    app:outerShadowRadius="10px"
+                    android:textColor="@color/setting_tab_select"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/icon_more"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_show_time"
+            android:layout_width="780px"
+            android:layout_height="wrap_content"
+            android:paddingLeft="110px"
+            android:paddingRight="110px"
+            android:visibility="gone"
+            android:layout_marginTop="15px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/time"
+                android:textColor="#80ffffff"
+                android:textSize="24px" />
+
+            <RelativeLayout
+                android:layout_width="230px"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true">
+
+                <com.xiaoma.setting.common.views.MagicTextView
+                    android:id="@+id/tv_show_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="24px"
+                    android:layout_centerVertical="true"
+                    app:innerShadowRadius="3px"
+                    app:outerShadowDy="3px"
+                    app:outerShadowColor="#FF2C99F9"
+                    app:outerShadowRadius="10px"
+                    android:textColor="@color/setting_tab_select"
+                    android:layout_toLeftOf="@+id/icon_more"
+                    android:layout_marginRight="15px"/>
+
+                <ImageView
+                    android:id="@+id/icon_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_more" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_date_time_line"
+            android:layout_width="565px"
+            android:layout_height="1px"
+            android:src="@drawable/line_language"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="110px"
+            android:layout_marginTop="15px"
+            android:layout_marginBottom="25px"
+            android:visibility="gone"/>
+
+        <!--<com.xiaoma.setting.common.views.SettingSwitch-->
+            <!--android:id="@+id/switch_sync_zone"-->
+            <!--style="@style/style_setting_item_v2"-->
+            <!--android:layout_marginBottom="25px"-->
+            <!--android:layout_marginLeft="110px"-->
+            <!--android:visibility="gone"-->
+            <!--app:marginLeft="0px"-->
+            <!--app:titleTexts="@string/auto_zone"-->
+            <!--app:titleWidth="360px"-->
+            <!--app:titleColor="#80ffffff"-->
+            <!--app:titleSize="26px"/>-->
+
+        <RelativeLayout
+            android:id="@+id/rl_show_zone"
+            android:layout_width="780px"
+            android:layout_height="wrap_content"
+            android:paddingLeft="110px"
+            android:paddingRight="110px"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/current_time_zone"
+                android:textColor="#80ffffff"
+                android:textSize="24px" />
+
+            <RelativeLayout
+                android:layout_width="200px"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true">
+
+                <com.xiaoma.setting.common.views.MagicTextView
+                    android:id="@+id/tv_show_zone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxWidth="180px"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="@string/beijing_text"
+                    android:textSize="24px"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    app:innerShadowRadius="3px"
+                    app:outerShadowDy="3px"
+                    app:outerShadowColor="#FF2C99F9"
+                    app:outerShadowRadius="10px"
+                    android:textColor="@color/setting_tab_select"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_more" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_zone_line"
+            android:layout_width="565px"
+            android:layout_height="1px"
+            android:src="@drawable/line_language"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="110px"
+            android:layout_marginTop="15px"
+            android:layout_marginBottom="15px"
+            android:visibility="gone"/>
+
+        <!--<com.xiaoma.setting.common.views.SettingItemView-->
+            <!--android:id="@+id/siv_time_type"-->
+            <!--style="@style/style_setting_item_v2"-->
+            <!--app:segmentTexts="@string/time_type"-->
+            <!--app:titleTexts="@string/hour_system"-->
+            <!--android:layout_marginTop="35px"/>-->
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:id="@+id/rl_navi"
+        android:layout_width="300px"
+        android:layout_height="450px"
+        android:layout_gravity="center">
+
+
+        <ImageView
+            android:id="@+id/iv_navi"
+            android:layout_width="match_parent"
+            android:layout_height="200px"
+            android:src="@drawable/icon_default_icon" />
+
+        <TextView
+            android:id="@+id/tv_navi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_navi"
+            android:layout_marginTop="30px"
+            android:gravity="center"
+            android:text="@string/btn_navi"
+            android:textSize="35px" />
+
+
+        <com.xiaoma.ui.view.MarqueeTextView
+            android:id="@+id/tv_navi_tip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_navi"
+            android:layout_marginTop="20px"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="距离深南大道还有500m"
+            android:textSize="28px" />
+
+        <ImageView
+            android:id="@+id/iv_map"
+            android:layout_width="80px"
+            android:layout_height="80px"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/icon_default_icon" />
+
+        <ImageView
+            android:id="@+id/iv_search"
+            android:layout_width="80px"
+            android:layout_height="80px"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/icon_default_icon" />
+
+
+    </RelativeLayout>
+
+</merge>

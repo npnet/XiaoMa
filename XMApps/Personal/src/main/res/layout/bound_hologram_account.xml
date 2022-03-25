@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bound_hologram_account_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_bound_hologram_icon"
+        android:layout_width="@dimen/size_bind_hologram_icon"
+        android:layout_height="@dimen/size_bind_hologram_icon"
+        android:background="@drawable/bind_hologram_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tv_bound_account_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40px"
+        android:text="已绑定账号:137****5476"
+        android:textSize="@dimen/font_mine_order_size_28px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_bound_hologram_icon" />
+
+
+    <Button
+        android:id="@+id/bt_cancel_bound"
+        android:layout_width="@dimen/width_unbind_hologram_bt"
+        android:layout_height="@dimen/height_unbind_hologram_bt"
+        android:layout_marginTop="30px"
+        android:background="@drawable/unbind_hologram_select"
+        android:gravity="center"
+        android:paddingBottom="15px"
+        android:text="@string/cancel_bound_account"
+        android:textSize="@dimen/font_mine_order_size_28px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_bound_account_content" />
+</android.support.constraint.ConstraintLayout>

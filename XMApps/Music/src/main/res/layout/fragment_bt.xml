@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.xiaoma.ui.view.MusicWaveView
+        android:id="@+id/img_bt_des"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="100px"
+        android:layout_marginLeft="300px"
+        android:layout_marginRight="300px"
+        android:layout_marginTop="78px"
+        android:background="#00000000"
+        android:visibility="visible"
+        app:cellWidth="24px"
+        app:rate="0.5"
+        app:waveSpace="6px" />
+
+    <Button
+        android:id="@+id/btn_start_bt_music"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="100px"
+        android:background="@drawable/bg_btn"
+        android:gravity="center_horizontal"
+        android:paddingTop="10px"
+        android:text="@string/play_btmusic"
+        android:textSize="22px"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/bt_not_connect_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="148px"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="90px"
+            android:layout_height="94px"
+            android:background="@drawable/bluetooth_not_connect" />
+
+        <TextView
+            android:id="@+id/connect_bluetooth_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="55px"
+            android:text="@string/not_connect_bluetooth"
+            android:textColor="@color/white"
+            android:textSize="30px" />
+
+        <Button
+            android:id="@+id/btn_go_to_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26px"
+            android:background="@drawable/bg_btn"
+            android:gravity="center_horizontal"
+            android:paddingTop="10px"
+            android:text="@string/go_to_setting"
+            android:textSize="22px" />
+
+        <TextView
+            android:id="@+id/open_bt_media_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26px"
+            android:gravity="center_horizontal"
+            android:text="@string/please_open_bt_media"
+            android:textColor="@color/white"
+            android:textSize="26px" />
+
+    </LinearLayout>
+
+</FrameLayout>

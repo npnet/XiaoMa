@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/width_item_recommend"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <com.xiaoma.ui.view.AutoScrollTextView
+        android:id="@+id/footer"
+        android:layout_width="@dimen/width_item_recommend"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_online_mar_top"
+        android:ellipsize="marquee"
+        android:gravity="center"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:maxEms="7"
+        android:singleLine="true"
+        android:textSize="@dimen/font_online_title" />
+
+    <FrameLayout
+        android:layout_width="@dimen/width_history_music_wrapper"
+        android:layout_height="@dimen/height_history_music_wrapper"
+        android:layout_marginTop="@dimen/size_history_music_wrapper">
+
+        <com.xiaoma.ui.view.ReflectionImageView
+            android:id="@+id/cover"
+            android:layout_width="@dimen/width_item_recommend_iv"
+            android:layout_height="@dimen/height_item_recommend_iv"
+            android:layout_gravity="bottom|center_horizontal"
+            android:scaleType="fitXY"
+            app:reflectionHeight="64px"
+            app:reflectionPadding="16px" />
+
+        <FrameLayout
+            android:id="@+id/delete"
+            android:layout_width="@dimen/width_history_music_delete_wrapper"
+            android:layout_height="@dimen/height_history_music_delete_wrapper"
+            android:layout_gravity="right|top"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="@dimen/width_mine_delete"
+                android:layout_height="@dimen/height_mine_delete"
+                android:layout_gravity="center"
+                android:background="@drawable/icon_delete" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/collect_tv_album"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="40px"
+            android:ellipsize="end"
+            android:maxEms="7"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_search_text_small_plus" />
+
+        <TextView
+            android:id="@+id/collect_tv_singer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="22px"
+            android:ellipsize="end"
+            android:maxEms="7"
+            android:singleLine="true"
+            android:textColor="@color/search_key_word"
+            android:textSize="@dimen/font_search_text_small_plus" />
+
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+apply plugin: 'com.android.application'
+apply plugin: 'android-aspectjx'
+apply from: 'sdk.gradle'
+apply from: "$rootDir$Android"
+apply from: "$rootDir$Modules"
+apply from: "$rootDir$Tinker"
+
+android application('com.xiaoma.bluetooth.phone')
+dependencies dependency(BluetoothPhone)
+
+android {
+    defaultConfig {
+        compileSdkVersion 27
+    }
+}
+
+sdk {
+    boolean isCar = BUILD_PLATFORM.equalsIgnoreCase("CAR")
+    bluetoothPhone isCar ? 'yq' : 'test'
+}
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation "com.github.CymChad:BaseRecyclerViewAdapterHelper:${BASE_RECYCLERVIEW_ADAPTER_HELPER}"
+    implementation "org.simple:androideventbus:$EVENT_BUS_VERSION"
+    implementation "com.belerweb:pinyin4j:$PINYIN_4J_VERSION"
+    implementation(name: 'btext-release', ext: 'aar')
+}
+
+tinker {
+    appClassName 'com.xiaoma.bluetooth.phone.BlueToothPhoneApp'
+    buildPatch {
+        baseApkPath ''
+        baseResMapping ''
+        baseMapping ''
+    }
+    patchDesc {
+        baseVersion ''
+        patchVersion 0
+        patchMessage ''
+    }
+}

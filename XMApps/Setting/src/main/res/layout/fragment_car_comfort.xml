@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_setting_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"/>
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="@dimen/px_80"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/px_105"
+            android:orientation="vertical">
+
+
+            <com.xiaoma.setting.common.views.SettingItemView
+                android:id="@+id/siv_door_unlock"
+                style="@style/style_setting_item_v2_car"
+                android:layout_height="wrap_content"
+                app:segmentTexts="@string/scl_door_unlock"
+                app:titleTexts="@string/door_unlock"
+                app:itemType="2"/>
+
+            <View style="@style/line_car" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px_30"
+                android:text="@string/lock_control"
+                android:textSize="@dimen/lock_control_font" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.xiaoma.setting.common.views.SwitchAnimation
+                    android:id="@+id/speed_lock_control"
+                    style="@style/style_switch_animation_car"
+                    android:layout_width="@dimen/px_323"
+                    app:switchText="@string/spv_lock_control"
+                    app:textColor="@color/secondary_color"
+                    app:textSize="@dimen/secondary_font" />
+
+                <com.xiaoma.setting.common.views.SwitchAnimation
+                    android:id="@+id/leave_car_lock_control"
+                    style="@style/style_switch_animation_car"
+                    android:layout_width="@dimen/px_305"
+                    android:layout_marginLeft="@dimen/px_19"
+                    app:switchText="@string/spv_unlock_control"
+                    app:textColor="@color/secondary_color"
+                    app:textSize="@dimen/secondary_font" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.xiaoma.setting.common.views.SwitchAnimation
+                    android:id="@+id/approach_unlock_view"
+                    style="@style/style_switch_animation_car"
+                    android:layout_width="@dimen/px_323"
+                    app:switchText="@string/approaching_automatic_unlocking"
+                    android:visibility="gone"
+                    app:textColor="@color/secondary_color"
+                    app:textSize="@dimen/secondary_font"
+                    />
+
+                <com.xiaoma.setting.common.views.SwitchAnimation
+                    android:id="@+id/far_lock_view"
+                    style="@style/style_switch_animation_car"
+                    android:layout_width="@dimen/px_305"
+                    android:layout_marginLeft="@dimen/px_19"
+                    app:switchText="@string/remote_locking"
+                    android:visibility="gone"
+                    app:textColor="@color/secondary_color"
+                    app:textSize="@dimen/secondary_font" />
+            </LinearLayout>
+
+            <View style="@style/line_car" android:visibility="gone"/>
+
+            <com.xiaoma.setting.common.views.SwitchAnimation
+                android:id="@+id/car_windows"
+                style="@style/style_switch_animation_car"
+                android:layout_width="@dimen/px_323"
+                android:layout_marginTop="@dimen/auto_close_window_margin_top"
+                android:visibility="gone"
+                app:switchText="@string/spv_car_windows" />
+
+            <View style="@style/line_car" />
+
+
+            <com.xiaoma.setting.common.views.SwitchAnimation
+                android:id="@+id/trunk"
+                style="@style/style_switch_animation_car"
+                app:switchText="@string/spv_trunk" />
+
+            <View
+                android:id="@+id/trunk_line"
+                style="@style/line_car" />
+
+
+            <com.xiaoma.setting.common.views.SwitchAnimation
+                android:id="@+id/rearview"
+                style="@style/style_switch_animation_car"
+                app:switchText="@string/spv_rearview" />
+
+            <View
+                android:id="@+id/seat_line"
+                style="@style/line_car" />
+
+
+            <com.xiaoma.setting.common.views.SwitchAnimation
+                android:id="@+id/seat"
+                style="@style/style_switch_animation_car"
+                app:switchText="@string/spv_seat" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

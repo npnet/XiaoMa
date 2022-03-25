@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    tools:ignore="PxUsage,ContentDescription,RelativeOverlap">
+
+    <LinearLayout
+        style="@style/chat_opt_fmt"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/chat_opt_title_bar"
+            style="@style/chat_opt_title_bar">
+
+            <Button
+                android:id="@+id/btn_back"
+                style="@style/chat_opt_back_btn" />
+
+            <View
+                android:id="@+id/iv_group_icon"
+                android:layout_width="30px"
+                android:layout_height="30px"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="12px"
+                android:layout_toStartOf="@+id/tv_title"
+                android:background="@drawable/chat_group_icon"
+                android:scaleType="centerInside" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                style="@style/chat_opt_title" />
+
+            <!--<com.xiaoma.club.common.view.MemberHeadsView
+                android:id="@+id/iv_group_heads"
+                android:layout_width="110px"
+                android:layout_height="30px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15px" />-->
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_speak"
+            style="@style/chat_opt_btn_speak" />
+
+        <LinearLayout
+            android:id="@+id/replay_container"
+            style="@style/chat_opt_btn_container">
+
+            <Button
+                android:id="@+id/btn_send_face"
+                style="@style/chat_opt_send_btn"
+                android:background="@drawable/btn_chat_face" />
+
+            <Button
+                android:id="@+id/btn_send_location"
+                style="@style/chat_opt_send_btn"
+                android:background="@drawable/btn_chat_location" />
+
+            <Button
+                android:id="@+id/btn_send_red_packet"
+                style="@style/chat_opt_send_btn"
+                android:background="@drawable/btn_chat_red_packet" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_mute_tips"
+        android:layout_width="match_parent"
+        android:layout_height="32px"
+        android:layout_marginTop="156px"
+        android:gravity="center"
+        android:text="@string/curr_user_was_mute"
+        android:textColor="#d5dff1"
+        android:textSize="18px"
+        android:visibility="gone" />
+</FrameLayout>

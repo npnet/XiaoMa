@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/choose_shop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/choose_shop_text_start"
+        android:layout_marginTop="@dimen/choose_shop_text_top"
+        android:gravity="center"
+        android:padding="@dimen/choose_shop_text_padding"
+        android:text="@string/choose_shop"
+        android:textSize="@dimen/choose_shop_text_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/city_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="@dimen/city_name_tv_start"
+        android:padding="@dimen/city_name_tv_padding"
+        android:textSize="@dimen/city_name_tv_size"
+        android:textColor="@color/color_ffc682"
+        app:layout_constraintBottom_toBottomOf="@+id/choose_shop"
+        app:layout_constraintStart_toEndOf="@+id/choose_shop" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/shop_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/shop_recycler_height"
+        android:layout_below="@id/choose_shop"
+        android:layout_marginTop="@dimen/shop_recycler_top"
+        android:paddingLeft="@dimen/shop_recycler_left"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/choose_shop" />
+
+    <com.xiaoma.ui.view.XmScrollBar
+        android:id="@+id/scroll_bar"
+        android:layout_width="@dimen/width_scrollbar"
+        android:layout_height="@dimen/height_scrollbar"
+        android:layout_marginTop="@dimen/scrollbar_top"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shop_recycler"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="@dimen/choose_shop_button_width"
+        android:layout_height="@dimen/choose_shop_button_height"
+        android:layout_marginTop="@dimen/choose_shop_button_top"
+        android:background="@drawable/selector_button"
+        android:text="@string/sure"
+        android:textSize="@dimen/choose_shop_button_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shop_recycler" />
+</android.support.constraint.ConstraintLayout>

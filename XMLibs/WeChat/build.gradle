@@ -1,0 +1,12 @@
+apply plugin: 'com.android.library'
+apply from: "$rootDir$Android"
+
+android library()
+
+dependencies {
+    api files("${XMJars}wechat_lib.aar")
+    implementation project(':XMLibs:VR:Vr')
+    implementation project(':XMLibs:Utils')
+    implementation project(':XMLibs:CarLib')
+    implementation project(':XMLibs:Thread')
+}

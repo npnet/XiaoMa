@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_bg_middle">
+
+    <TextView
+        android:id="@+id/tv_jump_online_prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_pay_dialog_title_margin"
+        android:background="@drawable/dialog_bg_title"
+        android:gravity="center"
+        android:text="@string/jump_online_music_prompt"
+        android:textSize="@dimen/font_size_px30"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tv_vip_open_success_desc_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="恭喜您成功开通1个月会员"
+        android:textSize="@dimen/font_size_px30"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <View
+        android:id="@+id/pay_dialog_divider_line"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/size_pay_dialog_divider_line"
+        android:layout_marginBottom="@dimen/size_pay_dialog_divider_line_margin_bottom"
+        android:background="@drawable/divide_line"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tv_jump_online_music"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="@string/jump_online_music"
+        android:textSize="@dimen/px_28"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/pay_dialog_divider_line" />
+
+
+</android.support.constraint.ConstraintLayout>

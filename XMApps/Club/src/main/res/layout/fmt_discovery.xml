@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/discovery_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/discovery_search_btn"
+            android:layout_width="@dimen/width_search_btn"
+            android:layout_height="@dimen/height_search_btn"
+            android:layout_marginLeft="@dimen/margin_search_btn_left"
+            android:layout_marginTop="@dimen/margin_search_btn_top"
+            android:background="@drawable/discovery_search_btn_bg"
+            android:paddingLeft="@dimen/padding_search_btn_left">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_search_icon_top"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/width_search_icon"
+                    android:layout_height="@dimen/width_search_icon"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/icon_search" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_search_text_left"
+                    android:text="@string/discovery_search_text"
+                    android:textColor="@color/search_text_gray"
+                    android:textSize="@dimen/font_text_middle" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/discovery_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/discovery_search_btn"
+            android:layout_marginTop="@dimen/margin_discovery_rv_top" />
+
+        <com.xiaoma.ui.view.XmScrollBar
+            android:id="@+id/club_scroll_bar"
+            android:layout_width="@dimen/width_xmscroll_bar"
+            android:layout_height="@dimen/height_xmscroll_bar"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/height_xmscroll_bar"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/discovery_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            layout="@layout/include_empty_view" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/discovery_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/discovery_loading_iv"
+            android:layout_width="@dimen/width_loading_view"
+            android:layout_height="@dimen/width_loading_view"
+            android:layout_centerInParent="true"
+            android:background="@drawable/state_loading_large" />
+
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/discovery_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible"
+        layout="@layout/include_no_network_view" />
+</FrameLayout>

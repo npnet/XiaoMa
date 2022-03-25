@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:layout_width="800px"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+
+        <com.xiaoma.ui.view.SearchVoiceView
+            android:id="@+id/search_voice_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/map_search_voice_view_height"
+            android:layout_marginLeft="@dimen/map_search_voice_view_margin_left"
+            android:layout_marginTop="@dimen/map_search_voice_view_margin_top"
+            android:layout_marginRight="@dimen/map_search_voice_view_margin_right"/>
+
+        <!--<EditText-->
+            <!--android:id="@+id/search_voice_view"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/map_search_voice_view_height"-->
+            <!--android:layout_marginLeft="@dimen/map_search_voice_view_margin_left"-->
+            <!--android:layout_marginRight="@dimen/map_search_voice_view_margin_right"-->
+            <!--android:background="@drawable/bg_location_search"-->
+            <!--android:drawableStart="@drawable/icon_search"-->
+            <!--android:gravity="center"-->
+            <!--android:hint="@string/search_voice_str"-->
+            <!--android:imeOptions="actionDone"-->
+            <!--android:maxLength="15"-->
+            <!--android:paddingBottom="10px"-->
+            <!--android:singleLine="true"-->
+            <!--android:textColorHint="#6c7881"-->
+            <!--android:textSize="28px" />-->
+
+
+        <com.xiaoma.ui.StateControl.StateView
+            android:id="@+id/state_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_poi"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <com.xiaoma.ui.view.XmScrollBar
+                    android:id="@+id/scrollbar"
+                    android:layout_width="42px"
+                    android:layout_marginBottom="20px"
+                    android:layout_height="match_parent"
+                    android:visibility="invisible" />
+
+            </LinearLayout>
+
+            <!--<ProgressBar-->
+            <!--android:visibility="gone"-->
+            <!--android:id="@+id/pb"-->
+            <!--android:indeterminateDrawable="@drawable/icon_pb_loading"-->
+            <!--android:layout_width="150px"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_height="150px" />-->
+
+        </com.xiaoma.ui.StateControl.StateView>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="10px"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_line" />
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <com.xiaoma.mapadapter.view.MapView
+            android:id="@+id/map_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/center_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/map_center_image_margin_left"
+            android:layout_marginTop="@dimen/map_center_image_margin_top"
+            android:paddingBottom="@dimen/map_center_image_margin_bottom"
+            android:src="@drawable/map_view_curr_location_icon" />
+
+        <ImageButton
+            android:id="@+id/btn_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="@dimen/map_btn_location_margin_bottom"
+            android:layout_marginLeft="@dimen/map_btn_location_margin_left"
+            android:background="@drawable/bg_location"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="82px"
+            android:layout_marginBottom="60px">
+
+            <CheckBox
+                android:id="@+id/btn_scale_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="50sp"
+                android:button="@drawable/reduce_button_bg"
+                android:alpha="1"/>
+
+            <CheckBox
+                android:id="@+id/btn_scale_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="50sp"
+                android:button="@drawable/amplify_button_bg"
+                android:layout_marginLeft="-15px"
+                android:alpha="1"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

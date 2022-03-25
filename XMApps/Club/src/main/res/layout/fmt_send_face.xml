@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="PxUsage">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_dim" />
+
+    <FrameLayout
+        android:id="@+id/face_list_parent"
+        android:layout_width="1181px"
+        android:layout_height="match_parent"
+        android:background="@drawable/drawer_bg">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="80px"
+                android:layout_marginTop="15px"
+                android:text="@string/send_face_title"
+                android:textColor="@android:color/white"
+                android:textSize="32px" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_face_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="50px"
+                android:layout_marginTop="50px"
+                android:layout_marginEnd="118px"
+                android:scrollbars="none" />
+        </LinearLayout>
+
+        <com.xiaoma.ui.view.XmScrollBar
+            android:id="@+id/scroll_bar"
+            android:layout_width="@dimen/vertical_scroll_bar_width"
+            android:layout_height="@dimen/vertical_scroll_bar_height"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginEnd="40px"
+            app:xmdirection="vertical" />
+    </FrameLayout>
+</FrameLayout>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/iv_bought_icon"
+        android:layout_width="@dimen/width_shop_item"
+        android:layout_height="@dimen/width_shop_item"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <!-- 角标 -->
+    <ImageView
+        android:id="@+id/iv_bought_subscript_icon"
+        android:layout_width="@dimen/width_shop_item"
+        android:layout_height="@dimen/width_shop_item"
+        android:src="@drawable/bg_tag_default"
+        app:layout_constraintStart_toStartOf="@id/iv_bought_icon"
+        app:layout_constraintTop_toTopOf="@id/iv_bought_icon" />
+
+
+    <ImageView
+        android:id="@+id/iv_select_cache"
+        android:layout_width="@dimen/size_select_cache"
+        android:layout_height="@dimen/size_select_cache"
+        android:layout_marginTop="@dimen/size_select_cache_margin"
+        android:layout_marginEnd="@dimen/size_select_cache_margin"
+        android:src="@drawable/bg_select_cache"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@id/iv_bought_icon"
+        app:layout_constraintTop_toTopOf="@id/iv_bought_icon" />
+
+
+    <!-- 试听 -->
+    <ImageView
+        android:id="@+id/iv_bought_test_play"
+        android:layout_width="@dimen/size_play_button"
+        android:layout_height="@dimen/size_play_button"
+        android:src="@drawable/level_btn_play_pause"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/iv_bought_icon"
+        app:layout_constraintEnd_toEndOf="@id/iv_bought_icon"
+        app:layout_constraintStart_toStartOf="@id/iv_bought_icon"
+        app:layout_constraintTop_toTopOf="@id/iv_bought_icon" />
+
+
+    <TextView
+        android:id="@+id/tv_preview_size"
+        android:layout_width="wrap_content"
+        android:layout_height="50px"
+        android:alpha="0.5"
+        android:background="@drawable/bought_download_size_gb"
+        android:gravity="center"
+        android:text="下载 25M"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/font_of_shop_20"
+        app:layout_constraintBottom_toBottomOf="@id/iv_bought_icon"
+        app:layout_constraintEnd_toEndOf="@id/iv_bought_icon" />
+
+    <TextView
+        android:id="@+id/tvSelfDefine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12px"
+        android:text="@string/default_3d_self"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/font_of_shop_20"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/iv_bought_icon"
+        app:layout_constraintLeft_toLeftOf="@id/iv_bought_icon"
+        app:layout_constraintRight_toRightOf="@id/iv_bought_icon" />
+
+    <TextView
+        android:id="@+id/tv_bought_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_item_desc_margin_top"
+        android:ellipsize="end"
+        android:maxEms="6"
+        android:singleLine="true"
+        android:text="人物1"
+        android:textSize="@dimen/font_of_shop_26"
+        app:layout_constraintStart_toStartOf="@id/iv_bought_icon"
+        app:layout_constraintTop_toBottomOf="@id/iv_bought_icon" />
+
+
+    <TextView
+        android:id="@+id/tv_bought_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="999次"
+        android:textSize="@dimen/font_of_shop_26"
+        app:layout_constraintEnd_toEndOf="@id/iv_bought_icon"
+        app:layout_constraintTop_toTopOf="@id/tv_bought_name" />
+
+
+    <TextView
+        android:id="@+id/tv_bought_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_item_desc_margin_top"
+        android:text="默认"
+        android:textSize="24sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@id/iv_bought_icon"
+        app:layout_constraintStart_toStartOf="@id/iv_bought_icon"
+        app:layout_constraintTop_toBottomOf="@id/iv_bought_icon" />
+
+
+    <com.xiaoma.shop.business.ui.view.ProgressButton
+        android:id="@+id/bought_operation_bt"
+        android:layout_width="@dimen/width_use_button"
+        android:layout_height="@dimen/height_use_button"
+        android:layout_marginTop="@dimen/size_item_desc_margin_top"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/iv_bought_icon"
+        app:layout_constraintTop_toBottomOf="@id/tv_bought_name"
+        app:progressBg="@drawable/selector_btn_middle_purchase"
+        app:progressingBg="@drawable/btn_download_progress"
+        app:text="@string/state_use"
+        app:textPaddingBottom="@dimen/size_progress_button_margin_bottom" />
+
+</android.support.constraint.ConstraintLayout>

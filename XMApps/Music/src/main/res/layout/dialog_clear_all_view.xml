@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_bg_middle">
+
+    <LinearLayout
+        android:layout_width="@dimen/width_dialog_background_play"
+        android:layout_height="@dimen/height_dialog_background_play"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_dialog_background_title">
+
+            <TextView
+                android:id="@+id/tv_tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/confirm_clear_all_history"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_search_text_big" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/divide_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60px"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/btn_sure"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:gravity="center"
+                android:text="@string/sure"
+                android:textColor="@color/dialog_btn_selector"
+                android:textSize="28px" />
+
+            <ImageView
+                android:id="@+id/image_divide_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/divide_vertical" />
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:gravity="center"
+                android:text="@string/cancel"
+                android:textColor="@color/dialog_btn_selector"
+                android:textSize="28px" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</FrameLayout>

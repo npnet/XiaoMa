@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/draw"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".taskcenter.ui.TaskCenterActivity"
+    tools:ignore="MissingDefaultResource">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cl_task_left"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:visibility="invisible">
+
+        <com.xiaoma.personal.common.view.StepView
+            android:id="@+id/signin_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_task_center_step_margin_start"
+            android:layout_marginTop="@dimen/size_task_center_step_margin_top"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:size="7" />
+
+        <ImageView
+            android:id="@+id/iv_center"
+            android:layout_width="@dimen/width_task_center_big_coin"
+            android:layout_height="@dimen/height_task_center_big_coin"
+            android:layout_marginTop="@dimen/size_task_center_big_coin_margin_top"
+            android:src="@drawable/big_coin"
+            app:layout_constraintLeft_toLeftOf="@+id/signin_view"
+            app:layout_constraintRight_toRightOf="@+id/signin_view"
+            app:layout_constraintTop_toBottomOf="@+id/signin_view" />
+
+        <TextView
+            android:id="@+id/tvScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_task_center_coin_count_margin_top"
+            android:textSize="@dimen/font_task_center_coin_count"
+            app:layout_constraintLeft_toLeftOf="@+id/signin_view"
+            app:layout_constraintRight_toRightOf="@+id/signin_view"
+            app:layout_constraintTop_toBottomOf="@+id/iv_center"
+            tools:text="+10" />
+
+        <Button
+            android:id="@+id/bt_submit"
+            android:layout_width="@dimen/width_task_center_sign_btn"
+            android:layout_height="@dimen/height_task_center_sign_btn"
+            android:layout_marginTop="@dimen/size_task_center_sign_btn_margin_top"
+            android:background="@drawable/selector_button"
+            android:textSize="@dimen/font_task_center_sign_btn_text"
+            app:layout_constraintLeft_toLeftOf="@+id/signin_view"
+            app:layout_constraintRight_toRightOf="@+id/signin_view"
+            app:layout_constraintTop_toBottomOf="@+id/tvScore"
+            tools:text="打卡2/7" />
+
+        <LinearLayout
+            android:id="@+id/tv_desc_linear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/size_task_center_sign_tips_margin_top"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="@+id/signin_view"
+            app:layout_constraintRight_toRightOf="@+id/signin_view"
+            app:layout_constraintTop_toBottomOf="@+id/bt_submit"
+            android:gravity="center"
+            app:layout_constraintVertical_bias="0.0">
+
+            <TextView
+                android:id="@+id/tv_tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/continue_to_get_more_coin"
+                android:textColor="@color/bt_unable"
+                android:textSize="@dimen/font_task_center_sign_tips" />
+
+            <ImageView
+                android:id="@+id/iv_small_coin"
+                android:layout_width="@dimen/width_task_center_tips_small_coin"
+                android:layout_height="@dimen/height_task_center_tips_small_coin"
+                android:layout_marginStart="@dimen/size_task_center_tips_small_coin_margin_start"
+                android:src="@drawable/small_coin"
+                android:visibility="gone"
+                tools:visibility="visible" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/divide_line"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="50px"
+            android:layout_marginTop="@dimen/size_vertical_divide_margin_top"
+            android:layout_marginBottom="@dimen/size_vertical_divide_margin_bottom"
+            android:src="@drawable/vertical_light_line"
+            app:layout_constraintStart_toEndOf="@+id/signin_view"
+            tools:layout_editor_absoluteY="62dp" />
+
+        <TextView
+            android:id="@+id/tv_daily"
+            style="@style/Task_Type_Text"
+            android:layout_marginStart="@dimen/size_task_center_right_title_margin_start"
+            android:layout_marginTop="@dimen/size_task_center_right_title_margin_top"
+            android:text="@string/daily_task"
+            app:layout_constraintStart_toEndOf="@+id/divide_line"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_grow"
+            style="@style/Task_Type_Text"
+            android:layout_marginStart="@dimen/size_task_center_right_title_margin_start"
+            android:text="@string/grow_up_task"
+            app:layout_constraintStart_toEndOf="@+id/tv_daily"
+            app:layout_constraintTop_toTopOf="@+id/tv_daily" />
+
+        <TextView
+            android:id="@+id/tv_activity"
+            style="@style/Task_Type_Text"
+            android:layout_marginStart="@dimen/size_task_center_right_title_margin_start"
+            android:text="@string/activity_task"
+            app:layout_constraintLeft_toRightOf="@+id/tv_grow"
+            app:layout_constraintStart_toEndOf="@+id/tv_grow"
+            app:layout_constraintTop_toTopOf="@+id/tv_daily" />
+
+        <TextView
+            android:id="@+id/tv_notes"
+            style="@style/Task_Type_Text"
+            android:layout_marginEnd="@dimen/size_task_center_right_title_margin_start"
+            android:text="@string/task_record"
+            android:textColor="@color/color_task_record"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_daily" />
+
+        <FrameLayout
+            android:id="@+id/fl_content"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/size_task_center_right_title_margin_start"
+            android:layout_marginTop="@dimen/size_task_center_right_fragment_container_margin_top"
+            android:layout_marginEnd="@dimen/size_task_center_right_title_margin_end"
+            android:layout_marginBottom="@dimen/size_task_center_right_fragment_container_margin_bottom"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/divide_line"
+            app:layout_constraintTop_toBottomOf="@+id/tv_daily" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <include layout="@layout/layout_darw_task_center" />
+</android.support.v4.widget.DrawerLayout>

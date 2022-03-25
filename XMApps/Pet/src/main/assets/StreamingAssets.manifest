@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 3825210571
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: pet_scene_default.ab
+      Dependencies: {}
+    Info_1:
+      Name: pet_player_default.ab
+      Dependencies: {}
+    Info_2:
+      Name: pet_gift_default.ab
+      Dependencies: {}
+    Info_3:
+      Name: pet_accessory_default.ab
+      Dependencies: {}

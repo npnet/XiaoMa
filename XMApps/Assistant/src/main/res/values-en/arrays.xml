@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="voice_name">
+        <item>普通话</item>
+        <item>男普通话</item>
+        <item>粤语</item>
+        <item>四川话</item>
+        <item>东北话</item>
+        <item>河南话</item>
+        <item>湖南话</item>
+        <item>陕西话</item>
+    </string-array>
+
+    <string-array name="weeks_start_one">
+        <item>周一</item>
+        <item>周二</item>
+        <item>周三</item>
+        <item>周四</item>
+        <item>周五</item>
+        <item>周六</item>
+        <item>周日</item>
+    </string-array>
+
+    <string-array name="new_type">
+        <item>国内焦点</item>
+        <item>国际焦点</item>
+        <item>军事焦点</item>
+        <item>财经焦点</item>
+        <item>互联网焦点</item>
+        <item>房产焦点</item>
+        <item>汽车焦点</item>
+        <item>体育焦点</item>
+        <item>娱乐焦点</item>
+        <item>游戏焦点</item>
+        <item>教育焦点</item>
+        <item>女人焦点</item>
+        <item>科技焦点</item>
+        <item>社会焦点</item>
+        <item>国内最新</item>
+        <item>台湾最新</item>
+        <item>港澳最新</item>
+        <item>国际最新</item>
+        <item>军事最新</item>
+        <item>财经最新</item>
+        <item>理财最新</item>
+        <item>宏观经济最新</item>
+        <item>互联网最新</item>
+        <item>房产最新</item>
+        <item>汽车最新</item>
+        <item>体育最新</item>
+        <item>国际足球最新</item>
+        <item>国内足球最新</item>
+        <item>CBA最新</item>
+        <item>综合体育最新</item>
+        <item>娱乐最新</item>
+        <item>电影最新</item>
+        <item>电视最新</item>
+        <item>游戏最新</item>
+        <item>教育最新</item>
+        <item>女人最新</item>
+        <item>美容护肤最新</item>
+        <item>情感两性最新</item>
+        <item>健康养生最新</item>
+        <item>科技最新</item>
+        <item>数码最新</item>
+        <item>电脑最新</item>
+        <item>科普最新</item>
+        <item>社会最新</item>
+        <item>旅游最新</item>
+        <item>电商最新</item>
+        <item>物流最新</item>
+        <item>创业最新</item>
+    </string-array>
+
+    <string-array name="weeks2_start_one">
+        <item>星期一</item>
+        <item>星期二</item>
+        <item>星期三</item>
+        <item>星期四</item>
+        <item>星期五</item>
+        <item>星期六</item>
+        <item>星期日</item>
+    </string-array>
+
+
+    <!--{"下一页,下一夜,下页", "112"}-->
+    <string-array name="next_page">
+        <item>下一页,下一夜,下页</item>
+        <item>112</item>
+    </string-array>
+
+
+    <!--{"上一页,上一夜,上页", "111"}-->
+    <string-array name="previous_page">
+        <item>上一页,上一夜,上页</item>
+        <item>111</item>
+    </string-array>
+
+
+    <!--{"取消,关闭,退出", "102"}-->
+    <string-array name="cancel_action">
+        <item>取消,关闭,退出</item>
+        <item>102</item>
+    </string-array>
+
+
+    <string-array name="horscope_name">
+        <item>白羊</item>
+        <item>金牛</item>
+        <item>双子</item>
+        <item>巨蟹</item>
+        <item>狮子</item>
+        <item>处女</item>
+        <item>天秤</item>
+        <item>天蝎</item>
+        <item>射手</item>
+        <item>摩羯</item>
+        <item>水瓶</item>
+        <item>双鱼</item>
+    </string-array>
+
+    <!--<integer-array name="horscope_icon">
+        <item>@drawable/icon_aries</item>
+        <item>@drawable/icon_taurus</item>
+        <item>@drawable/icon_gemini</item>
+        <item>@drawable/icon_cancer</item>
+        <item>@drawable/icon_leo</item>
+        <item>@drawable/icon_virgo</item>
+        <item>@drawable/icon_libra</item>
+        <item>@drawable/icon_scorpio</item>
+        <item>@drawable/icon_sagittarius</item>
+        <item>@drawable/icon_capricorn</item>
+        <item>@drawable/icon_aquarius</item>
+        <item>@drawable/icon_pisces</item>
+    </integer-array>-->
+
+    <string-array name="app_name">
+        <item>设置</item>
+        <item>蓝牙电话</item>
+        <item>车应用</item>
+        <item>车乐汇</item>
+        <item>车友圈</item>
+        <item>驾驶评分</item>
+        <item>桌面</item>
+        <item>车队</item>
+        <item>音乐</item>
+        <item>个人中心</item>
+        <item>车服务</item>
+        <item>奔腾商城</item>
+        <item>媒体</item>
+        <item>电台</item>
+        <item>车信</item>
+        <item>微信</item>
+    </string-array>
+
+    <string-array name="app_package">
+        <item>com.xiaoma.setting</item>
+        <item>com.xiaoma.bluetooth.phone</item>
+        <item>com.xiaoma.app</item>
+        <item>com.xiaoma.carpark</item>
+        <item>com.xiaoma.club</item>
+        <item>com.qiming.fawcard.synthesize</item>
+        <item>com.xiaoma.launcher</item>
+        <item>com.xiaoma.motorcade</item>
+        <item>com.xiaoma.music</item>
+        <item>com.xiaoma.personal</item>
+        <item>com.xiaoma.service</item>
+        <item>com.xiaoma.shop</item>
+        <item>com.xiaoma.xkan</item>
+        <item>com.xiaoma.xting</item>
+        <item>com.xylink.mc.faw.bab2019</item>
+        <item>com.xylink.mc.faw.bab2019</item>
+    </string-array>
+
+    <string-array name="stock_market_name">
+        <item>上证指数</item>
+        <item>深证指数</item>
+    </string-array>
+
+    <string-array name="star_level">
+        <item>准一星级</item>
+        <item>一星级</item>
+        <item>准二星级</item>
+        <item>二星级</item>
+        <item>准三星级</item>
+        <item>三星级</item>
+        <item>准四星级</item>
+        <item>四星级</item>
+        <item>准五星级</item>
+        <item>五星级</item>
+    </string-array>
+</resources>

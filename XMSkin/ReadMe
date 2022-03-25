@@ -1,0 +1,111 @@
+皮肤包壳工程说明：
+
+目前有两个工程：
+    1.RenWen（人文皮肤）
+
+皮肤工程下src/main目录下有如res-AppStore的资源文件夹，用于区分各应用的皮肤资源
+src/main目录下文件夹说明：
+     1.res-AppStore：用于存放【车应用】对应的皮肤资源
+     2.res-Club：用于存放【车信】的皮肤资源
+     3.res-Launcher：用于存放【桌面】对应的皮肤资源
+     4.res-PersonalCenter：用于存放【个人中心】对应的皮肤资源
+     5.res-Service：用于存放【车服务】对应的皮肤资源
+     6.res-Xkan：用于存放【媒体】对应的皮肤资源
+     7.res-Xting：用于存放【想听】对应的皮肤资源
+
+打皮肤包流程：
+    1.对应的皮肤工程下的 build.gradle 文件中有个变量 skinType，修改此变量的值即可打对应应用的皮肤包
+    2.生成的皮肤包存放在项目根目录的 output/skins/module name 下，默认的生成名字为：应用名_module name.skin
+    example:output/skins/RenWen/AppStore_RenWen.skin
+
+    PS：可使用AS右上角的 Gradle 选择对应的项目进行打包，
+    如：打个人中心的人文皮肤包：选择 :XMSkin:RenWen/Tasks/build下的assembleDebug or assembleRelease即可
+
+
+    步骤：
+    1.android skin("com.xiaom.skin.renwen", 5)//皮肤包名，主题包对应名称type，传入以下定义type
+    2.android.gradle中def skin(String packageName, int skinType)方法上
+      2.1定义皮肤包type如下：(自己增加)
+                        //皮肤类型，设置需要打包的应用的皮肤包
+                        //打皮肤包时，可更改这里的值，来打不同应用的皮肤包
+                        def APP_STORE = 1//车应用
+                        def CLUB = 2//车信
+                        def LAUNCHER = 3//桌面
+                        def SERVICE = 4//车服务
+                        def XKAN = 5//媒体
+                        def XTING = 6//想听
+                        def PERSONAL_CENTER = 7//个人中心
+
+      2.2增加对应配置：
+                //需要根据应用去配置皮肤映射
+                sourceSets{
+                    main{
+                        if(skinType == APP_STORE){
+                            res.srcDirs =
+                                    [
+                                            'src/main/res-AppStore',
+                                            'src/main/res'
+                                    ]
+                        }else if(skinType == CLUB){
+                            res.srcDirs =
+                                    [
+                                            'src/main/res-Club',
+                                            'src/main/res'
+                                    ]
+                        }else if(skinType == LAUNCHER){
+                            res.srcDirs =
+                                    [
+                                            'src/main/res-Launcher',
+                                            'src/main/res'
+                                    ]
+                        }else if(skinType == SERVICE){
+                            res.srcDirs =
+                                    [
+                                            'src/main/res-Service',
+                                            'src/main/res'
+                                    ]
+                        }else if(skinType == XKAN){
+                            res.srcDirs =
+                                    [
+                                            'src/main/res-XKAN',
+                                            'src/main/res'
+                                    ]
+                        }else if(skinType == XTING){
+                            res.srcDirs =
+                                    [
+                                            'src/main/res-Xting',
+                                            'src/main/res'
+                                    ]
+                        }else if(skinType == PERSONAL_CENTER){
+                            res.srcDirs =
+                                    [
+                                            'src/main/res-PersonalCenter',
+                                            'src/main/res'
+                                    ]
+                        }
+                    }
+                }
+
+       2.3配置映射皮肤名称：
+                        //需要配置应用名称皮肤包
+                        String appName
+                        if(skinType == APP_STORE){
+                            appName = "AppStore"
+                        }else if(skinType == CLUB){
+                            appName = "Club"
+                        }else if(skinType == LAUNCHER){
+                            appName = "Launcher"
+                        }else if(skinType == SERVICE){
+                            appName = "Service"
+                        }else if(skinType == XKAN){
+                            appName = "Xkan"
+                        }else if(skinType == XTING){
+                            appName = "Xting"
+                        }else if(skinType == PERSONAL_CENTER){
+                            appName = "PersonalCenter"
+                        }else {
+                            appName = "Unknown"
+                        }
+
+
+note：以上步骤请实现

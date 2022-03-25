@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".search.ui.SearchInputActivity">
+
+    <ImageView
+        android:id="@+id/iv_mic"
+        android:layout_width="100px"
+        android:layout_height="100px"
+        android:layout_marginLeft="50px"
+        android:layout_marginTop="50px"
+        android:src="@drawable/icon_mic" />
+
+    <EditText
+        android:id="@+id/et"
+        android:imeOptions="actionDone"
+        android:singleLine="true"
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:textColorHint="#d35"
+        android:textColor="#000"
+        android:hint="请输入专辑/节目/电台"
+        android:background="#ff8" />
+
+
+</LinearLayout>

@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/bg_low_wisdom"
+        android:layout_width="460px"
+        android:layout_height="520px"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10px"/>
+
+    <LinearLayout
+        android:id="@+id/ll_music_type"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="25px">
+
+        <TextView
+            android:id="@+id/tv_usb"
+            android:layout_width="match_parent"
+            android:layout_height="55px"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/usb_music"
+            android:textColor="#efd595"
+            android:textSize="40px" />
+
+        <TextView
+            android:id="@+id/tv_bluetooth"
+            android:layout_width="match_parent"
+            android:layout_height="55px"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/bt_music"
+            android:textColor="#ffffff"
+            android:textSize="32px" />
+
+        <TextView
+            android:id="@+id/tv_online_music"
+            android:layout_width="match_parent"
+            android:layout_height="55px"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/online_music"
+            android:textColor="#ffffff"
+            android:textSize="32px" />
+
+        <TextView
+            android:id="@+id/tv_fm"
+            android:layout_width="match_parent"
+            android:layout_height="55px"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/fm_radio"
+            android:textColor="#ffffff"
+            android:textSize="32px" />
+
+        <TextView
+            android:id="@+id/tv_am"
+            android:layout_width="match_parent"
+            android:layout_height="55px"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/am_radio"
+            android:textColor="#ffffff"
+            android:textSize="32px" />
+
+        <TextView
+            android:id="@+id/tv_online_radio"
+            android:layout_width="match_parent"
+            android:layout_height="55px"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/online_radio"
+            android:textColor="#ffffff"
+            android:textSize="32px" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_music_desc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="20px"
+        android:visibility="invisible">
+
+        <com.xiaoma.ui.view.MarqueeTextView
+            android:id="@+id/tv_title"
+            android:layout_width="280px"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="20px"
+            android:gravity="center"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:focusable="true"
+            android:text="@string/music_info_loading"
+            android:textColor="#fefeff"
+            android:textSize="34px" />
+
+        <RelativeLayout
+            android:id="@+id/des_cover_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="35px">
+
+            <ImageView
+                android:id="@+id/iv_cover"
+                android:layout_width="200px"
+                android:layout_height="200px"
+                android:scaleType="fitXY"
+                />
+
+            <ImageView
+                android:layout_width="200px"
+                android:layout_height="200px"
+                android:src="@drawable/bg_cover_on" />
+        </RelativeLayout>
+
+        <ProgressBar
+            android:id="@+id/pb_music"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="327px"
+            android:layout_height="31px"
+            android:layout_gravity="center"
+            android:progressDrawable="@drawable/layer_list_progressbar_bar1"
+            android:progress="0"
+            android:layout_marginTop="35px"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/noUsbContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+        <ImageView
+            android:id="@+id/iv_no_usb"
+            android:layout_width="419px"
+            android:layout_height="356px"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/icon_no_usb_high_wisdom"
+            android:layout_marginTop="55px"/>
+
+        <TextView
+            android:id="@+id/tv_no_usb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/usb_disconnected"
+            android:textColor="#fff"
+            android:textSize="34px"
+            android:layout_marginTop="70px"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/noBlueContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:visibility="gone">
+        <ImageView
+            android:id="@+id/iv_no_blue"
+            android:layout_width="380px"
+            android:layout_height="356px"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/icon_no_blue_high_wisdom"
+            android:layout_marginTop="55px"/>
+
+        <TextView
+            android:id="@+id/tv_no_blue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/bt_disconnected"
+            android:textColor="#fff"
+            android:textSize="34px"
+            android:layout_marginTop="75px"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/noInternetContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+        <ImageView
+            android:id="@+id/iv_no_internet"
+            android:layout_width="380px"
+            android:layout_height="356px"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/icon_no_internet_high_wisdom"
+            android:layout_marginTop="55px"/>
+
+        <TextView
+            android:id="@+id/tv_no_internet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/net_error"
+            android:textColor="#fff"
+            android:textSize="34px"
+            android:layout_marginTop="75px"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/usbBreakContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+        <ImageView
+            android:id="@+id/iv_usb_break"
+            android:layout_width="419px"
+            android:layout_height="356px"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/icon_no_usb_high_wisdom"
+            android:layout_marginTop="55px"/>
+
+        <TextView
+            android:id="@+id/tv_usb_break"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/usb_disconnected"
+            android:textColor="#fff"
+            android:textSize="34px"
+            android:layout_marginTop="70px"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/blueBreakContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_blue_break"
+            android:layout_width="380px"
+            android:layout_height="356px"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="55px"
+            android:src="@drawable/icon_no_blue_high_wisdom" />
+
+        <TextView
+            android:id="@+id/tv_blue_break"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="75px"
+            android:text="@string/bt_disconnected"
+            android:textColor="#fff"
+            android:textSize="34px" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/noMusicContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+        <ImageView
+            android:id="@+id/iv_no_music"
+            android:layout_width="380px"
+            android:layout_height="356px"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/icon_no_contact_high_wisdom"
+            android:layout_marginTop="55px"/>
+
+        <TextView
+            android:id="@+id/tv_no_music"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/no_music"
+            android:textColor="#fff"
+            android:textSize="34px"
+            android:layout_marginTop="75px"/>
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_common"
+    android:clickable="true"
+    android:focusable="true">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/layout_desc"
+        android:layout_width="match_parent"
+        android:layout_height="146px"
+        android:layout_marginLeft="154px"
+        android:layout_marginTop="104px"
+        android:layout_marginRight="146px"
+        android:background="@drawable/theme_details_bg_info"
+        android:paddingBottom="30px"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="1010px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="48px"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@android:color/white"
+            android:textSize="28px"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvDown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40px"
+            android:textColor="@android:color/white"
+            android:textSize="28px"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/tvUseCount"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="下载1.5M" />
+
+        <TextView
+            android:id="@+id/tvUseCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50px"
+            android:textColor="@android:color/white"
+            android:textSize="28px"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="1000次使用" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvThumbnails"
+        android:layout_width="match_parent"
+        android:layout_height="244px"
+        android:layout_marginTop="10px"
+        android:clipToPadding="false"
+        android:paddingLeft="74px"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout_desc" />
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/layout_rmb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:layout_marginBottom="26px"
+        app:layout_constraintBottom_toTopOf="@id/pbBtnLeft"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/layout_coin">
+
+        <TextView
+            android:id="@+id/tvRMBDiscount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fbd3a4"
+            android:textSize="@dimen/font_of_shop_36"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/tvRMBOriginal"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="100" />
+
+        <com.xiaoma.shop.business.ui.view.SlopeDeleteTextView
+            android:id="@+id/tvRMBOriginal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10px"
+            android:paddingLeft="1px"
+            android:paddingRight="1px"
+            android:textColor="@color/color_flow_tv_origin_price"
+            android:textSize="@dimen/font_of_shop_28"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/tvRMBDiscount"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:slope_line_color="@color/color_flow_tv_origin_price"
+            tools:text="100" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/layout_coin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:layout_marginBottom="26px"
+        app:layout_constraintBottom_toTopOf="@id/pbBtnLeft"
+        app:layout_constraintLeft_toRightOf="@id/layout_rmb"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <ImageView
+            android:id="@+id/ivYellowCoin"
+            android:layout_width="40px"
+            android:layout_height="0dp"
+            android:src="@drawable/coin_yellow_big"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/tvScoreDiscount"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvScoreDiscount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10px"
+            android:text="900"
+            android:textColor="#fbd3a4"
+            android:textSize="@dimen/font_of_shop_36"
+            app:layout_constraintBottom_toBottomOf="@id/ivYellowCoin"
+            app:layout_constraintLeft_toRightOf="@id/ivYellowCoin"
+            app:layout_constraintRight_toLeftOf="@id/tvScoreOriginal"
+            app:layout_constraintTop_toTopOf="@id/ivYellowCoin" />
+
+        <com.xiaoma.shop.business.ui.view.SlopeDeleteTextView
+            android:id="@+id/tvScoreOriginal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6px"
+            android:textColor="@color/color_flow_tv_origin_price"
+            android:textSize="@dimen/font_of_shop_28"
+            app:layout_constraintBottom_toBottomOf="@id/ivYellowCoin"
+            app:layout_constraintLeft_toRightOf="@id/tvScoreDiscount"
+            app:layout_constraintTop_toTopOf="@id/ivYellowCoin"
+            app:slope_line_color="@color/color_flow_tv_origin_price"
+            tools:text="100" />
+
+        <!--<com.xiaoma.shop.business.ui.view.SlashView-->
+        <!--android:id="@+id/layout_origin_score"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="10px"-->
+        <!--android:paddingRight="5px"-->
+        <!--app:layout_constraintBottom_toBottomOf="@id/ivYellowCoin"-->
+        <!--app:layout_constraintLeft_toRightOf="@id/tvScoreDiscount"-->
+        <!--app:layout_constraintRight_toRightOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="@id/ivYellowCoin">-->
+
+        <!--<ImageView-->
+        <!--android:id="@+id/ivGrayCoin"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:src="@drawable/coin_gray_small" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/tvCoinOriginal"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="8px"-->
+        <!--android:text="200"-->
+        <!--android:textColor="#fbd3a4"-->
+        <!--android:textSize="@dimen/font_of_shop_28"-->
+        <!--app:layout_constraintBottom_toBottomOf="@id/ivYellowCoin"-->
+        <!--app:layout_constraintLeft_toRightOf="@id/ivGrayCoin"-->
+        <!--app:layout_constraintRight_toRightOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="@id/ivYellowCoin" />-->
+        <!--</com.xiaoma.shop.business.ui.view.SlashView>-->
+    </android.support.constraint.ConstraintLayout>
+
+    <com.xiaoma.ui.view.XmScrollBar
+        android:id="@+id/scroll_bar"
+        android:layout_width="@dimen/width_scrollbar"
+        android:layout_height="@dimen/height_scrollbar"
+        android:layout_marginTop="30px"
+        android:visibility="invisible"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rvThumbnails" />
+
+    <com.xiaoma.shop.business.ui.view.ProgressButton
+        android:id="@+id/pbBtnLeft"
+        android:layout_width="304px"
+        android:layout_height="74px"
+        android:layout_marginBottom="18px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/pbBtnRight"
+        app:progressBg="@drawable/selector_btn_big_purchase"
+        app:progressingBg="@drawable/btn_download_progress_big"
+        app:text="购买"
+        app:textColor="@android:color/white"
+        app:textPaddingBottom="18px"
+        app:textSize="28px">
+
+    </com.xiaoma.shop.business.ui.view.ProgressButton>
+
+    <com.xiaoma.shop.business.ui.view.ProgressButton
+        android:id="@+id/pbBtnRight"
+        android:layout_width="304px"
+        android:layout_height="74px"
+        android:layout_marginLeft="120px"
+        app:layout_constraintBottom_toBottomOf="@id/pbBtnLeft"
+        app:layout_constraintLeft_toRightOf="@id/pbBtnLeft"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/pbBtnLeft"
+        app:progressBg="@drawable/selector_btn_big_trial"
+        app:text="试用"
+        app:textColor="@android:color/white"
+        app:textPaddingBottom="18px"
+        app:textSize="28px">
+
+    </com.xiaoma.shop.business.ui.view.ProgressButton>
+
+</android.support.constraint.ConstraintLayout>

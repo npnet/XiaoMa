@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--缺少图片,暂时用love图片填充-->
+    <item android:drawable="@drawable/fm_player_listen" android:state_pressed="true" />
+    <item android:drawable="@drawable/fm_player_listen" />
+</selector>

@@ -1,0 +1,25 @@
+apply plugin: 'com.android.library'
+apply from: "$rootDir$Android"
+apply from: "$rootDir$Tinker"
+
+android library()
+android {
+    defaultConfig {
+        multiDexEnabled true
+    }
+    dexOptions {
+        jumboMode = true
+    }
+}
+
+dependencies {
+    implementation project(path: ':XMLibs:Utils')
+    implementation project(path: ':XMLibs:Config')
+    implementation project(path: ':XMLibs:Thread')
+    implementation project(path: ':XMLibs:Network')
+    implementation project(path: ':XMLibs:Model')
+    api "com.android.support:multidex:${MULTIDEX_VERSION}"
+    api ("com.tencent.tinker:tinker-android-lib:${TINKER_VERSION}") {
+        changing = true
+    }
+}

@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="font_preference_title">32px</dimen>
+    <dimen name="size_left_margin">20px</dimen>
+    <dimen name="size_right_margin">40px</dimen>
+    <dimen name="height_circle">60px</dimen>
+    <dimen name="width_circle">60px</dimen>
+    <dimen name="size_stroke">2px</dimen>
+    <dimen name="size_preference_top">30px</dimen>
+    <dimen name="size_preference_top_margin">50px</dimen>
+    <dimen name="size_preference_right_margin">190px</dimen>
+    <dimen name="size_preference_top_padding">95px</dimen>
+    <dimen name="size_preference_left_padding">153px</dimen>
+    <dimen name="size_preference_right_padding">220px</dimen>
+    <dimen name="size_preference_bottom_padding">40px</dimen>
+    <dimen name="width_skip_text">150px</dimen>
+    <dimen name="height_skip_text">80px</dimen>
+    <dimen name="height_preference_rv">330px</dimen>
+    <dimen name="size_scroll_top_margin">70px</dimen>
+    <dimen name="width_scroll">500px</dimen>
+    <dimen name="width_preference_savebtn">300px</dimen>
+    <dimen name="height_preference_savebtn">80px</dimen>
+    <dimen name="size_savebtn_top_margin">20px</dimen>
+    <dimen name="size_savebtn_top_padding">15px</dimen>
+    <dimen name="width_dialog_background_play">567px</dimen>
+    <dimen name="height_dialog_background_play">240px</dimen>
+    <dimen name="height_dialog_background_title">180px</dimen>
+    <dimen name="width_dialog_background_btn">180px</dimen>
+    <dimen name="size_dialog_background_btn_margin">100px</dimen>
+
+    <!--recommend-->
+    <dimen name="font_tab_title_big">30px</dimen>
+    <dimen name="font_tab_title_small">20px</dimen>
+    <dimen name="width_item_recommend">282px</dimen>
+    <dimen name="width_item_recommend_iv">186px</dimen>
+    <dimen name="height_item_recommend_iv">266px</dimen>
+    <dimen name="size_item_margin">24px</dimen>
+    <dimen name="size_item_first_margin">56px</dimen>
+
+    <!--category-->
+    <dimen name="width_item_category">237px</dimen>
+    <dimen name="height_item_category">97px</dimen>
+    <dimen name="size_item_category_padding">20px</dimen>
+    <dimen name="font_item_category_name">28px</dimen>
+    <dimen name="size_item_view_margin">24px</dimen>
+    <dimen name="size_gallery_item_padding">24px</dimen>
+    <dimen name="size_gallery_item_radius">24px</dimen>
+    <dimen name="size_item_category_margin">120px</dimen>
+    <dimen name="size_item_category_first_margin">104px</dimen>
+
+    <!--lrc_view-->
+    <dimen name="font_lrc_text_size">16sp</dimen>
+    <dimen name="font_lrc_time_text_size">12sp</dimen>
+    <dimen name="height_lrc_divider">16dp</dimen>
+    <dimen name="height_lrc_timeline">1dp</dimen>
+    <dimen name="width_lrc_drawable">50px</dimen>
+    <dimen name="width_lrc_time">150px</dimen>
+    <dimen name="size_item_tab">30px</dimen>
+    <dimen name="size_item_tab_small">20px</dimen>
+    <dimen name="size_search_key_padding">10px</dimen>
+    <dimen name="width_item_search_key">80px</dimen>
+    <dimen name="height_item_search_key">40px</dimen>
+    <dimen name="font_item_search_key">20px</dimen>
+    <dimen name="size_search_key_margin">5px</dimen>
+    <dimen name="size_item_img_margin">18px</dimen>
+    <dimen name="width_time_line_drawble">490px</dimen>
+    <dimen name="height_time_line_drawble">70px</dimen>
+
+    <!--search-->
+    <dimen name="font_search_text_big">34px</dimen>
+    <dimen name="font_search_text_middle">32px</dimen>
+    <dimen name="font_search_text_small">28px</dimen>
+    <dimen name="font_search_text_small_plus">22px</dimen>
+    <dimen name="size_search_main_margin">104px</dimen>
+    <dimen name="width_search_voice_view">1330px</dimen>
+    <dimen name="height_search_voice_view">80px</dimen>
+    <dimen name="size_search_voice_view_top">70px</dimen>
+    <dimen name="size_search_history_top">60px</dimen>
+    <dimen name="size_search_history_bottom">5px</dimen>
+    <dimen name="size_search_flowlayout_top">35px</dimen>
+    <dimen name="size_search_history_item_space">100px</dimen>
+    <dimen name="size_search_history_item_padingh">60px</dimen>
+    <dimen name="size_search_history_item_padingv">15px</dimen>
+    <dimen name="size_search_result_top">20px</dimen>
+    <dimen name="width_search_result_icon">40px</dimen>
+    <dimen name="size_search_result_text_margin">20px</dimen>
+    <dimen name="size_search_result_tab_margin">60px</dimen>
+    <dimen name="size_search_result_page_margin">90px</dimen>
+    <dimen name="size_search_result_item_space">60px</dimen>
+    <dimen name="size_search_result_singer_space">120px</dimen>
+    <dimen name="size_search_result_image_top">55px</dimen>
+    <dimen name="size_search_result_tab_space">100px</dimen>
+    <dimen name="width_search_singer_icon">185px</dimen>
+    <dimen name="height_search_singer_icon">266px</dimen>
+    <dimen name="width_search_songlist_icon">190px</dimen>
+    <dimen name="height_search_songlist_icon">320px</dimen>
+    <dimen name="height_tab_layout">85px</dimen>
+    <dimen name="size_tab_margin_left">52px</dimen>
+    <dimen name="size_tab_margin_top">98px</dimen>
+    <dimen name="size_kwuser_margin_top">80px</dimen>
+    <dimen name="size_clear_history_margin_right">60px</dimen>
+    <dimen name="size_tab_padding">52px</dimen>
+    <dimen name="width_item_music_iv">186px</dimen>
+    <dimen name="width_item_songlist_tv">240px</dimen>
+    <dimen name="height_item_music_iv">310px</dimen>
+    <dimen name="width_item_music_songlist_iv">200px</dimen>
+    <dimen name="height_item_music_songlist_iv">300px</dimen>
+    <dimen name="width_item_songlist_fl">320px</dimen>
+    <dimen name="width_item_songlist_circle_fl">240px</dimen>
+    <dimen name="height_item_songlist_circle_fl">230px</dimen>
+    <dimen name="height_item_songlist_circle_iv">215px</dimen>
+    <dimen name="size_item_songlist_circle_iv">5px</dimen>
+    <dimen name="width_item_songlist_circle_center">60px</dimen>
+    <dimen name="width_thumb_line">408px</dimen>
+    <dimen name="height_thumb_line">2px</dimen>
+    <dimen name="width_thumb">488px</dimen>
+    <dimen name="height_thumb">143px</dimen>
+    <dimen name="width_thumb_cover">88px</dimen>
+    <dimen name="height_thumb_cover">88px</dimen>
+    <dimen name="size_thumb_cover_margin_top">25px</dimen>
+    <dimen name="size_thumb_cover_margin_start">66px</dimen>
+    <dimen name="width_thumb_status">54px</dimen>
+    <dimen name="height_thumb_status">60px</dimen>
+    <dimen name="size_thumb_status_margin_top">19px</dimen>
+    <dimen name="size_thumb_status_margin_start">19px</dimen>
+    <dimen name="size_thumb_tv">63px</dimen>
+    <dimen name="size_search_tab_padding">80px</dimen>
+
+
+    <!--usb-->
+    <dimen name="font_fragment_usb_unsupport_big_tv">30px</dimen>
+    <dimen name="font_fragment_usb_unsupport_small_tv">24px</dimen>
+    <dimen name="size_usb_unsupport_margin_t_big">-30px</dimen>
+    <dimen name="size_usb_unsupport_margin_t_small">20px</dimen>
+    <dimen name="size_fragment_usb_nodevice_margin_t">-30px</dimen>
+    <dimen name="size_online_padding_left">105px</dimen>
+    <dimen name="height_scroll_bar">20px</dimen>
+    <dimen name="size_scroll_bar_margin_start">436px</dimen>
+    <dimen name="size_scroll_bar_margin_end">586px</dimen>
+    <dimen name="size_scroll_bar_margin_bottom">18px</dimen>
+    <dimen name="size_item_margin_bottom">59px</dimen>
+    <dimen name="size_online_mar_top">35px</dimen>
+    <dimen name="font_online_title">34px</dimen>
+    <dimen name="size_online_iv_margin_top">49px</dimen>
+
+    <!--player-->
+    <dimen name="size_player_iv_back_margin_s">53px</dimen>
+    <dimen name="size_player_iv_back_margin_t">15px</dimen>
+    <dimen name="size_player_iv_back_padding">30px</dimen>
+    <dimen name="width_view_content_song_name_tv">380px</dimen>
+
+    <dimen name="width_view_player">551px</dimen>
+    <dimen name="height_fragment_thumb">100px</dimen>
+    <dimen name="size_fragment_thumb_tv_margin_l">66px</dimen>
+    <dimen name="font_fragment_thumb_tv">32px</dimen>
+    <dimen name="size_fragment_player_playlist_margin_t">165px</dimen>
+    <dimen name="size_fragment_player_collect_margin_t">20px</dimen>
+    <dimen name="size_fragment_rl_margin_s">60px</dimen>
+    <dimen name="size_fragment_rl_margin_e">80px</dimen>
+    <dimen name="size_fragment_iv_padding">20px</dimen>
+    <dimen name="width_player_cover">262px</dimen>
+    <dimen name="width_player_loading_rotate">80px</dimen>
+    <dimen name="size_player_cover_radius">6px</dimen>
+    <dimen name="width_scroll_iv">262px</dimen>
+    <dimen name="height_scroll_iv">360px</dimen>
+    <dimen name="size_scroll_imgview_margin_t">97px</dimen>
+    <dimen name="size_view_player_tips_margin_b">32px</dimen>
+    <dimen name="size_view_player_tips_padding">16px</dimen>
+    <dimen name="font_view_player_tips">24px</dimen>
+    <dimen name="size_player_margin_left">120px</dimen>
+    <dimen name="size_view_player_pre_margin_t">328px</dimen>
+    <dimen name="size_view_player_pre_margin_b">308px</dimen>
+    <dimen name="size_view_player_fl_margin_t">234px</dimen>
+    <dimen name="size_view_player_iv_margin_t">73px</dimen>
+    <dimen name="size_view_player_loading_margin_t">90px</dimen>
+
+    <!--UsbPlayFragment-->
+    <dimen name="size_fragment_play_playlist_margin_t">204px</dimen>
+
+    <dimen name="size_fragment_play_content_rl_margin_s">130px</dimen>
+    <dimen name="size_fragment_play_content_rl_margin_t">310px</dimen>
+    <dimen name="size_fragment_quality_rl_margin_t">320px</dimen>
+    <dimen name="size_fragment_play_content_rl_margin_e">380px</dimen>
+    <dimen name="size_view_content_usb_rl_margin_t">340px</dimen>
+    <dimen name="font_play_content_song_name">48px</dimen>
+    <dimen name="size_play_content_album_name_margin_t">20px</dimen>
+    <dimen name="font_play_content_album_name">34px</dimen>
+    <dimen name="width_fragment_content_progess">650px</dimen>
+    <dimen name="height_fragment_content_progess">85px</dimen>
+    <dimen name="size_fragment_content_progess_margin_b">160px</dimen>
+    <dimen name="size_fragment_album_switch_left">187px</dimen>
+    <dimen name="size_fragment_album_switch_top">138px</dimen>
+    <dimen name="width_fragment_album_switch_backiv">37px</dimen>
+    <dimen name="height_fragment_album_switch_backiv">25px</dimen>
+    <dimen name="height_fragment_album_switch_tv">55px</dimen>
+    <dimen name="size_fragment_album_switch_tvmargin">21px</dimen>
+    <dimen name="size_fragment_album_switch_tabmargin">150px</dimen>
+
+    <!--ProgressView-->
+    <dimen name="size_seek_bar_margin">26px</dimen>
+    <dimen name="height_max_seek_bar">12px</dimen>
+    <dimen name="font_view_progress_time">24px</dimen>
+
+    <!--playlist-->
+    <dimen name="width_view_play_list_window">1012px</dimen>
+    <dimen name="size_view_playlist_margin">80px</dimen>
+    <dimen name="size_play_mode_tv_margin_s">30px</dimen>
+    <dimen name="font_play_mode_tv">30px</dimen>
+    <dimen name="font_tv_sort">28px</dimen>
+    <dimen name="size_playlist_rv_padding_t">40px</dimen>
+    <dimen name="size_list_pop_scrollbar_margin_end">48px</dimen>
+    <dimen name="size_list_pop_scrollbar_margin_bottom">12px</dimen>
+    <dimen name="size_item_playlist_margin_t">28px</dimen>
+    <dimen name="size_item_playlist_song_name_margin_s">30px</dimen>
+    <dimen name="size_item_playlist_song_name_margin_e">10px</dimen>
+    <dimen name="font_item_playlist_song_name">30px</dimen>
+    <dimen name="font_tv_current_pos">30px</dimen>
+    <dimen name="width_mine_delete">32px</dimen>
+    <dimen name="height_mine_delete">32px</dimen>
+    <dimen name="width_history_music_wrapper">236px</dimen>
+    <dimen name="height_history_music_wrapper">291px</dimen>
+    <dimen name="size_history_music_wrapper">24px</dimen>
+    <dimen name="width_history_music_delete_wrapper">50px</dimen>
+    <dimen name="height_history_music_delete_wrapper">50px</dimen>
+    <dimen name="width_play_wave_anim">42px</dimen>
+    <dimen name="height_play_wave_anim">35px</dimen>
+
+    <!--history-->
+    <dimen name="size_item_history_highlight_margin_t">25px</dimen>
+    <dimen name="size_rv_padding_top">0px</dimen>
+    <dimen name="font_preference">30px</dimen>
+    <dimen name="width_cancel_preference">658px</dimen>
+    <dimen name="size_cancel_preference">30px</dimen>
+    <dimen name="size_preference_tip">48px</dimen>
+    <dimen name="font_tip">28px</dimen>
+    <dimen name="size_tip_text">50px</dimen>
+    <dimen name="px_65">65px</dimen>
+    <dimen name="px_95">95px</dimen>
+    <dimen name="px_28">28px</dimen>
+    <dimen name="px_180">180px</dimen>
+    <dimen name="px_60">60px</dimen>
+    <dimen name="px_43">43px</dimen>
+    <dimen name="px_278">278px</dimen>
+    <dimen name="px_32">32px</dimen>
+    <dimen name="px_10">10px</dimen>
+    <dimen name="px_500">500px</dimen>
+    <dimen name="px_46">46px</dimen>
+    <dimen name="px_54">54px</dimen>
+    <dimen name="px_18">18px</dimen>
+    <dimen name="px_53">53px</dimen>
+    <dimen name="px_79">79px</dimen>
+    <dimen name="px_85">85px</dimen>
+    <dimen name="px_400">400px</dimen>
+
+
+    <!-- vip -->
+    <dimen name="font_size_px32">32px</dimen>
+    <dimen name="font_size_px30">30px</dimen>
+    <dimen name="size_privilege_title_margin_top">30px</dimen>
+    <dimen name="size_privilege_title_margin_start">100px</dimen>
+    <dimen name="size_privilege_icon_padding">13px</dimen>
+    <dimen name="size_privilege_margin">20px</dimen>
+    <dimen name="size_privilege_margin_start">15px</dimen>
+    <dimen name="size_open_vip_bt_width">212px</dimen>
+    <dimen name="size_open_vip_bt_height">68px</dimen>
+    <dimen name="size_open_vip_bt_margin_start">140px</dimen>
+    <dimen name="size_open_vip_bt_margin_top">60px</dimen>
+    <dimen name="size_vip_options_width">280px</dimen>
+    <dimen name="size_vip_options_height">253px</dimen>
+    <dimen name="size_vip_options_content_margin">20px</dimen>
+    <dimen name="size_vip_options_content_margin_bottom">50px</dimen>
+    <dimen name="size_vip_validity_date_margin_top">20px</dimen>
+    <dimen name="size_vip_validity_date_margin_end">60px</dimen>
+    <dimen name="size_login_qr_code">213px</dimen>
+    <dimen name="size_non_login_qr_code_margin">20px</dimen>
+    <dimen name="thumb_vip_view_x">448px</dimen>
+    <dimen name="thumb_vip_view_y">109px</dimen>
+    <dimen name="size_pay_dialog_title_margin">30px</dimen>
+    <dimen name="size_pay_dialog_desc_margin_top">30px</dimen>
+    <dimen name="size_pay_dialog_divider_line">2px</dimen>
+    <dimen name="size_pay_dialog_divider_line_margin_bottom">80px</dimen>
+    <dimen name="size_login_icon">68px</dimen>
+    <dimen name="width_login_icon_flag">45px</dimen>
+    <dimen name="height_login_icon_flag">22px</dimen>
+    <dimen name="size_login_icon_margin">50px</dimen>
+    <dimen name="size_login_icon_margin_start">55px</dimen>
+    <dimen name="thumb_vip_tag_width">45px</dimen>
+    <dimen name="thumb_vip_tag_height">25px</dimen>
+    <dimen name="width_login_out_layout">250px</dimen>
+    <dimen name="height_login_out_layout">80px</dimen>
+    <dimen name="font_clear_all_history">28px</dimen>
+</resources>

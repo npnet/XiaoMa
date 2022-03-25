@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_bg_middle">
+
+    <LinearLayout
+        android:layout_width="@dimen/width_dialog_background_play"
+        android:layout_height="@dimen/height_dialog_background_play"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_dialog_background_title">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/confim_background_play"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_search_text_big" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/dialog_bp_play"
+                android:layout_width="@dimen/width_dialog_background_btn"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/size_dialog_background_btn_margin"
+                android:background="#00000000"
+                android:text="@string/background_play"
+                android:textColor="@color/dialog_btn_selector"
+                android:textSize="@dimen/font_search_text_middle" />
+
+            <Button
+                android:id="@+id/dialog_bp_exit"
+                android:layout_width="@dimen/width_dialog_background_btn"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/size_dialog_background_btn_margin"
+                android:background="#00000000"
+                android:text="@string/exit"
+                android:textColor="@color/dialog_btn_selector"
+                android:textSize="@dimen/font_search_text_middle" />
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">车乐汇</string>
+    <string name="recommend">推荐</string>
+    <string name="game">游戏</string>
+    <string name="activity">活动</string>
+    <string name="service_error">服务器数据错误</string>
+    <string name="begin_game">开始游戏</string>
+    <string name="oninstall_please_wait">正在安装，请稍等...</string>
+    <string name="enable_activity_url">无效的活动链接</string>
+
+    <string name="join_count">%d人参加</string>
+    <string name="plugin_update">立即更新(%s)</string>
+    <string name="plugin_start">开始游戏</string>
+    <string name="plugin_download">立即下载(%s)</string>
+    <string name="plugin_downloading">正在下载进度</string>
+    <string name="plugin_updating">正在更新进度</string>
+    <string name="plugin_installing">正在安装</string>
+    <string name="enter_sort_page">查看排行榜</string>
+    <string name="plugin_re_download">重新下载</string>
+    <string name="toast_network_exception">网络异常,请稍后再试</string>
+
+    <!--百公里奖金赛-->
+    <string name="share_title">开车奖金赛</string>
+    <string name="share_content">快来看看我的比赛成绩期待与你一战~</string>
+    <string name="invite_title">开车奖金赛</string>
+    <string name="invite_content">期待与你较量一次，我在这等你</string>
+    <string name="guide_app_name">车乐汇</string>
+    <string name="guide_competition_description">游戏/活动中显示当前可体验的内容，点击即可\n跳转至游戏或活动详情中开始体验。</string>
+    <string name="guide_game_description">您可以在车乐汇中查看推荐、游戏及活动等模块\n点击即可切换不同模块进行查看。</string>
+
+</resources>

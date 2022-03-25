@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/item_order_width"
+    android:layout_height="@dimen/item_order_height"
+    android:background="@drawable/item_order_bg">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/car_shop_name"
+            android:layout_width="@dimen/car_shop_name_width"
+            android:ellipsize="end"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/car_shop_name_margin_left"
+            android:layout_marginTop="@dimen/car_shop_name_margin_top"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:textSize="@dimen/car_shop_name_text_size"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/order_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/order_status_text_size"
+            android:textColor="@color/color_ffcd91"
+            android:layout_marginRight="@dimen/order_status_margin_right"
+            app:layout_constraintBaseline_toBaselineOf="@+id/car_shop_name"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <TextView
+            android:id="@+id/order_numbering"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/order_numbering_margin_top"
+            android:text="@string/order_number"
+            android:textSize="@dimen/order_numbering_text_size"
+            app:layout_constraintStart_toStartOf="@+id/car_shop_name"
+            app:layout_constraintTop_toBottomOf="@+id/car_shop_name" />
+
+        <TextView
+            android:id="@+id/order_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/order_time_margin_top"
+            android:textSize="@dimen/order_time_text_size"
+            android:text="@string/order_time"
+            app:layout_constraintStart_toStartOf="@+id/order_numbering"
+            app:layout_constraintTop_toBottomOf="@+id/order_numbering" />
+
+        <TextView
+            android:id="@+id/select_project"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/select_project_margin_top"
+            android:text="@string/select_project"
+            android:textSize="@dimen/select_project_text_size"
+            app:layout_constraintStart_toStartOf="@+id/order_time"
+            app:layout_constraintTop_toBottomOf="@+id/order_time" />
+
+        <TextView
+            android:id="@+id/project_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/project_status_margin_top"
+            android:textSize="@dimen/project_status_text_size"
+            app:layout_constraintStart_toStartOf="@+id/select_project"
+            app:layout_constraintTop_toBottomOf="@+id/select_project" />
+
+        <TextView
+            android:id="@+id/see_order_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/look_detail"
+            android:layout_marginBottom="@dimen/see_order_detail_margin_bottom"
+            android:textColor="@color/white_60"
+            android:textSize="@dimen/see_order_detail_text_size"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>

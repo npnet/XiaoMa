@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:skin="http://schemas.android.com/android/skin"
+    android:id="@+id/rl_voice_dialog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    skin:enable="true">
+
+    <!-- 返回键 -->
+    <RelativeLayout
+        android:id="@+id/assistant_rl_back"
+        android:layout_width="240px"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/assistant_iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50px"
+            android:padding="50px"
+            android:src="@drawable/icon_last_page" />
+
+    </RelativeLayout>
+
+
+    <!-- 语音按钮和文案 -->
+    <RelativeLayout
+        android:id="@+id/rl_mic_and_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="77px"
+        android:layout_toRightOf="@id/assistant_rl_back">
+
+        <!--麦克风-->
+        <com.xiaoma.ui.view.FrameAnimView
+            android:id="@+id/btn_mic"
+            android:layout_width="@dimen/width_icon_mic"
+            android:layout_height="@dimen/width_icon_mic" />
+
+        <!-- 头部 -->
+        <!--<FrameLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_marginLeft="29px"-->
+        <!--android:layout_marginRight="20px"-->
+        <!--android:layout_marginTop="9px"-->
+        <!--android:layout_toRightOf="@id/btn_mic"-->
+        <!--android:background="@drawable/bg_voice_dialing_box">-->
+
+        <!--语音文本-->
+        <com.xiaoma.assistant.view.VoiceTextView
+            android:id="@+id/tv_show_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="29px"
+            android:layout_marginTop="9px"
+            android:layout_marginRight="20px"
+            android:layout_toRightOf="@id/btn_mic"
+            android:background="@drawable/bg_voice_dialing_box"
+            android:maxWidth="690px"
+            android:textColor="@color/assistant_voice_text_color"
+            android:textSize="@dimen/font_voice_text"
+            app:animSwitch="true"
+            app:ellipsisLine="2"
+            app:imageList="@drawable/voice_input_anim"
+            app:imageWidth="50px" />
+
+        <!--</FrameLayout>-->
+
+        <!-- 主副驾唤醒显示 -->
+        <LinearLayout
+            android:id="@+id/awaken_linear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true">
+
+            <!--二级界面显示内容-->
+            <TextView
+                android:id="@+id/tv_search_result_operate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="90px"
+                android:layout_marginTop="30px"
+                android:textColor="@color/gray"
+                android:textSize="24px"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:id="@+id/awaken_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="70px"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/head_main"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/selector_head_awaken" />
+
+                <ImageView
+                    android:id="@+id/head_not_main"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/selector_head_awaken" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <!-- 会话列表-->
+    <ListView
+        android:id="@+id/lv_chat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_mic_and_text"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="130px"
+        android:layout_marginTop="30px"
+        android:layout_toRightOf="@id/assistant_rl_back"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@color/transparent"
+        android:fadeScrollbars="false"
+        android:gravity="center"
+        android:listSelector="@color/transparent"
+        android:overScrollMode="never"
+        android:paddingRight="20px"
+        android:scrollbarFadeDuration="0" />
+
+
+    <!-- 帮助内容 -->
+    <RelativeLayout
+        android:id="@+id/rl_example"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="24px"
+        android:layout_marginBottom="61px"
+        android:layout_toRightOf="@id/assistant_rl_back">
+
+        <TextView
+            android:id="@+id/tv_help_example_1"
+            style="@style/assistant_help_text"
+            android:text="@string/help_title"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_help_example_2"
+            style="@style/assistant_help_text"
+            android:layout_toRightOf="@id/tv_help_example_1"
+            android:drawableRight="@drawable/icon_more"
+            android:drawablePadding="19px"
+            android:text="@string/help_example_content"
+            android:textColor="@color/gray" />
+
+    </RelativeLayout>
+
+
+    <!--帮助页-->
+    <com.xiaoma.assistant.view.HelpView
+        android:id="@+id/hv_assistant"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_mic_and_text"
+        android:layout_marginTop="@dimen/height_second_level_page_margin_top"
+        android:layout_toRightOf="@id/assistant_rl_back"
+        android:visibility="gone" />
+
+
+    <!--联系人页面-->
+    <com.xiaoma.assistant.view.ContactView
+        android:id="@+id/cv_assistant"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_mic_and_text"
+        android:layout_marginTop="@dimen/height_second_level_page_margin_top"
+        android:layout_toRightOf="@id/assistant_rl_back"
+        android:visibility="gone" />
+
+
+    <!--二级界面-->
+    <com.xiaoma.assistant.view.MultiPageView
+        android:id="@+id/mpv_assistant"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_mic_and_text"
+        android:layout_marginTop="@dimen/height_second_level_page_margin_top"
+        android:layout_toRightOf="@id/assistant_rl_back"
+        android:visibility="gone" />
+
+
+    <!--音乐识别页面-->
+    <com.xiaoma.assistant.view.MusicRecognitionView
+        android:id="@+id/view_music_recognition"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <!--Loading控件-->
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_width="@dimen/width_loading_view"
+        android:layout_height="@dimen/width_loading_view"
+        android:layout_below="@id/rl_mic_and_text"
+        android:layout_marginLeft="@dimen/height_progressbar_margin_left"
+        android:layout_marginTop="@dimen/height_progressbar_margin_top"
+        android:layout_toRightOf="@id/assistant_rl_back"
+        android:indeterminate="false"
+        android:indeterminateDrawable="@drawable/anim_rotate"
+        android:indeterminateDuration="1200"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_assistant_contact_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/contact_query_results_are_as_follows"
+        android:textColor="@color/white_text"
+        android:textSize="30px"
+        android:visibility="gone" />
+
+
+    <TextView
+        android:id="@+id/tv_assistant_contact_search_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_assistant_contact_title"
+        android:gravity="center"
+        android:text="@string/you_can_say"
+        android:textColor="@color/white_text"
+        android:textSize="25px"
+        android:visibility="gone" />
+
+    <android.support.v7.widget.RecyclerView
+        android:overScrollMode="never"
+        android:id="@+id/rlv_assistant_contact"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@color/transparent"
+        android:gravity="center"
+        android:listSelector="@color/transparent" />
+
+    <ImageView
+        android:id="@+id/iv_assistant_contact_voice"
+        android:layout_width="wrap_content"
+        android:layout_height="120px"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/listening_anim0"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30px"
+        android:text="2/6"
+        android:textColor="@color/white"
+        android:textSize="28px" />
+
+</RelativeLayout>

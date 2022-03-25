@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/width_search_root_padding"
+    android:paddingTop="@dimen/size_search_root_padding_top"
+    android:paddingRight="@dimen/width_search_root_padding"
+    tools:context=".search.ui.SearchActivity">
+
+    <com.xiaoma.ui.view.SearchVoiceView
+        android:id="@+id/search_voice_view"
+        android:layout_width="@dimen/width_search_voice_view"
+        android:layout_height="@dimen/height_search_voice_view" />
+
+    <FrameLayout
+        android:id="@+id/state_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/ll_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50px"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_search_history"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/search_history"
+                    android:textSize="@dimen/font_search_title_big" />
+
+                <TextView
+                    android:id="@+id/tv_clear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/clearAllData"
+                    android:textColor="@color/selector_text_white_60_transparent"
+                    android:textSize="@dimen/font_search_title_big" />
+            </RelativeLayout>
+
+            <com.xiaoma.xting.common.view.FlowLayout
+                android:id="@+id/ll_search_history"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40px"
+                android:layout_marginBottom="55px"
+                app:horizontalSpacing="100px"
+                app:itemSize="22px"
+                app:singleLine="true"
+                app:textPaddingH="60px"
+                app:textPaddingV="15px" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/everybody_search"
+                    android:textSize="@dimen/font_search_title_big" />
+
+                <TextView
+                    android:id="@+id/tv_change"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="换一批"
+                    android:textSize="@dimen/font_search_title_big"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <com.xiaoma.xting.common.view.FlowLayout
+                android:id="@+id/ll_recommend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40px"
+                app:horizontalSpacing="100px"
+                app:itemSize="22px"
+                app:singleLine="true"
+                app:textPaddingH="60px"
+                app:textPaddingV="15px" />
+        </LinearLayout>
+
+        <com.xiaoma.ui.StateControl.StateView
+            android:id="@+id/stateView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </com.xiaoma.ui.StateControl.StateView>
+
+    </FrameLayout>
+
+</LinearLayout>

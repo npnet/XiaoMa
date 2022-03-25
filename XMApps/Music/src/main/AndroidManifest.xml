@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.xiaoma.music">
+    <!-- android:sharedUserId="android.uid.system" -->
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MANAGE_USB" />
+    <uses-permission android:name="android.permission.WRITE_MEDIA_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_ROUTING" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!--<uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />-->
+    <!--<uses-permission android:name="android.permission.MEDIA_CONTENT_CONTROL" />-->
+
+    <application
+        android:name=".MusicApp"
+        android:icon="@drawable/app_icon_music"
+        android:label="@string/app_name"
+        android:theme="@style/XiaoMaTheme"
+        tools:replace="android:name">
+
+        <meta-data
+            android:name="CarType"
+            android:value="XMLX" />
+
+        <meta-data
+            android:name="CarChannelId"
+            android:value="${CAR_CHANNEL_ID}" />
+
+        <meta-data
+            android:name="XmGitRev"
+            android:value="${XM_GIT_REV}" />
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:theme="@style/XiaoMaTheme_Main"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".search.ui.SearchActivity"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".search.ui.SearchInputActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".search.ui.SearchResultActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name=".player.ui.PlayerActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="com.xiaoma.music.player" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="@string/host"
+                    android:path="@string/path_player_detail"
+                    android:scheme="@string/scheme" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".search.ui.SingerActivity" />
+
+        <!--<receiver android:name=".player.BootReceiver">-->
+        <!--<intent-filter>-->
+        <!--<action android:name="android.intent.action.BOOT_COMPLETED" />-->
+        <!--</intent-filter>-->
+        <!--</receiver>-->
+
+        <activity
+            android:name=".MusicActivity"
+            android:exported="true"
+            android:launchMode="singleInstance"
+            android:theme="@style/TranslucentTheme" />
+
+        <!--vrpractice-->
+        <activity
+            android:name=".practice.PlayMusicActivity"
+            android:exported="true" />
+        <activity android:name=".common.ui.FlickerActivity" >
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <meta-data
+            android:name="com.xiaoma.skill"
+            android:value="music" />
+
+    </application>
+
+</manifest>

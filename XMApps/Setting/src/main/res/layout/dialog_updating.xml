@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="788px"
+    android:layout_height="548px"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_dialog_progress"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="25px"
+            android:singleLine="true"
+            android:text="@string/installation_result_prompt"
+            android:textColor="#fff"
+            android:textSize="36px" />
+
+        <TextView
+            android:id="@+id/tv_update_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="75px"
+            android:layout_marginLeft="75px"
+            android:layout_marginRight="75px"
+            android:gravity="center"
+            android:text="@string/upgrading_controller"
+            android:textColor="#fff"
+            android:textSize="28px" />
+
+        <ProgressBar
+            android:id="@+id/pb_download"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="525px"
+            android:layout_height="wrap_content"
+            android:progressDrawable="@drawable/layer_list_update_progress"
+            android:progress="70"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20px"
+            android:visibility="gone"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15px"
+            android:layout_marginLeft="75px"
+            android:layout_marginRight="75px"
+            android:gravity="center"
+            android:text="剩余xx分钟"
+            android:textColor="#fff"
+            android:textSize="28px"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tv_tip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="35px"
+            android:layout_marginRight="35px"
+            android:gravity="left"
+            android:textColor="#8a919d"
+            android:textSize="22px"
+            android:layout_marginTop="115px"
+            android:layout_marginBottom="30px"
+            android:text="@string/updating_tip"
+            />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+apply plugin: 'com.android.library'
+apply from: "$rootDir$Android"
+
+android library()
+
+dependencies {
+    implementation project(path: ':XMLibs:Process')
+    implementation project(path: ':XMLibs:Utils')
+    api files("${XMJars}kwmusic-autosdk-v1.9.7.jar")
+}

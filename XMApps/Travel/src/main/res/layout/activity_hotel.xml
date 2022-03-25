@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <Button
+        android:onClick="getHotels"
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="酒店查询" />
+
+    <Button
+        android:onClick="getRoomRatePlans"
+        android:id="@+id/button8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button7"
+        android:text="房间库存查询" />
+
+    <Button
+        android:onClick="book"
+        android:id="@+id/button9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button8"
+        android:text="预定下单" />
+    <Button
+        android:onClick="ordersQuery"
+        android:id="@+id/button10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button9"
+        android:text="订单查询" />
+    <Button
+        android:onClick="ordersCancel"
+        android:id="@+id/button11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button10"
+        android:text="取消订单" />
+    <Button
+        android:onClick="ordersDelete"
+        android:id="@+id/button12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button11"
+        android:text="删除订单" />
+
+    <ImageView
+        android:id="@+id/qr_code"
+        android:layout_width="236dp"
+        android:layout_height="223dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp" />
+</RelativeLayout>

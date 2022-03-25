@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">使用手册</string>
+
+    <string name="super_launcher">超级桌面</string>
+    <string name="voice">语音</string>
+    <string name="quick_entry">快捷入口</string>
+    <string name="media">媒体</string>
+    <string name="communication">通讯</string>
+    <string name="account">个人中心/账户</string>
+    <string name="characteristic">D058特色</string>
+    <string name="instrument">工具</string>
+
+    <string name="map_launcher">地图桌面</string>
+    <string name="voice_launcher">音频桌面</string>
+    <string name="service_launcher">服务桌面</string>
+    <string name="app_launcher">应用桌面</string>
+
+    <string name="voice_assistant">语音助手</string>
+    <string name="one_short">One Short</string>
+    <string name="voice_feature">语音特色</string>
+
+    <string name="hiboard">负一屏</string>
+    <string name="message_center">消息中心</string>
+
+    <string name="music">音乐</string>
+    <string name="listen">想听</string>
+    <string name="look">想看</string>
+    <string name="online_video">在线视频</string>
+
+    <string name="motorcade">车队</string>
+    <string name="chat">想聊</string>
+
+    <string name="personal_center">个人中心</string>
+    <string name="more_account">多账户</string>
+
+    <string name="setting">设置</string>
+    <string name="time_manager">日程提醒</string>
+    <string name="mark">mark</string>
+    <string name="bluetooth_phone">蓝牙电话</string>
+    <string name="car_app">车应用</string>
+
+    <string name="pet_running">宠物跑酷</string>
+    <string name="driving_score">驾驶评分</string>
+    <string name="recommend">推荐</string>
+    <string name="car_park">车乐园</string>
+    <string name="face_recognition">人脸识别</string>
+    <string name="smart_home">智能家居</string>
+    <string name="car_service">车服务</string>
+    <string name="shop">奔腾商城</string>
+    <string name="instruction">使用手册</string>
+
+</resources>

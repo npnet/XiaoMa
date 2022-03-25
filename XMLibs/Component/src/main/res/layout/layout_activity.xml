@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.xiaoma.ui.navi.NavigationBar
+        android:id="@+id/view_root_navi"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true" />
+
+
+    <com.xiaoma.ui.StateControl.StateView
+        android:id="@+id/base_state_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/view_root_navi">
+
+        <FrameLayout
+            android:id="@+id/view_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.xiaoma.ui.StateControl.StateView>
+
+
+    <View
+        android:id="@+id/view_status_bar_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/view_root_navi"
+        android:background="@drawable/status_bar_divider"
+        android:visibility="gone" />
+
+
+    <ImageView
+        android:id="@+id/view_navi_halo"
+        android:layout_width="14px"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/view_root_navi"
+        android:background="@drawable/navi_bg_right"
+        android:clickable="false" />
+
+
+</RelativeLayout>

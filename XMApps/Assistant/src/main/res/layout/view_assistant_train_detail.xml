@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/parent"
+        android:layout_width="1576px"
+        android:layout_height="440px"
+        android:background="@drawable/single_item_msg_bg"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="565px"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50px"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_train_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Z108"
+                android:textColor="@color/white"
+                android:textSize="30px" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20px">
+
+                <TextView
+                    android:id="@+id/tv_train_start_acton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/shenzhen"
+                    android:textColor="@color/white"
+                    android:textSize="28px" />
+
+                <View
+                    android:layout_width="70px"
+                    android:layout_height="1px"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="14px"
+                    android:layout_marginRight="14px"
+                    android:background="@color/white" />
+
+                <TextView
+                    android:id="@+id/tv_train_end_acton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/beijing"
+                    android:textColor="@color/white"
+                    android:textSize="28px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5px"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="36px"
+                    android:layout_height="36px"
+                    android:background="@drawable/start_tag" />
+
+                <ImageView
+                    android:layout_width="36px"
+                    android:layout_height="36px"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="120px"
+                    android:background="@drawable/end_tag" />
+            </LinearLayout>
+
+            <GridLayout
+                android:id="@+id/layout_seat_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100px"
+                android:layout_marginTop="25px"
+                android:layout_marginRight="100px"
+                android:columnCount="3" />
+
+            <!--<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_train_end"
+                android:layout_marginTop="20px"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/advanced_soft_sleeper"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="高级软卧"
+                        android:textColor="@color/white"
+                        android:textSize="24px" />
+
+                    <TextView
+                        android:id="@+id/advanced_soft_sleeper_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15px"
+                        android:text="555.5元"
+                        android:textColor="@color/white"
+                        android:textSize="24px" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="90px"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/soft_sleeper"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="软卧"
+                        android:textColor="@color/white"
+                        android:textSize="24px" />
+
+                    <TextView
+                        android:id="@+id/soft_sleeper_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15px"
+                        android:text="333.33元"
+                        android:textColor="@color/white"
+                        android:textSize="24px" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="90px"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/hard_sleeper"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="硬卧"
+                        android:textColor="@color/white"
+                        android:textSize="24px" />
+
+                    <TextView
+                        android:id="@+id/hard_sleeper_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15px"
+                        android:text="100.00元"
+                        android:textColor="@color/white"
+                        android:textSize="24px" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sleeper_parent"
+                android:layout_marginTop="30px"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/hard_seat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="硬座"
+                        android:textColor="@color/white"
+                        android:textSize="24px" />
+
+                    <TextView
+                        android:id="@+id/hard_seat_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15px"
+                        android:text="50.00元"
+                        android:textColor="@color/white"
+                        android:textSize="24px" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="90px"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/no_seat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="无座"
+                        android:textColor="@color/white"
+                        android:textSize="24px" />
+
+                    <TextView
+                        android:id="@+id/no_seat_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15px"
+                        android:text="50.00元"
+                        android:textColor="@color/white"
+                        android:textSize="24px" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>-->
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginTop="27px"
+            android:layout_marginBottom="27px"
+            android:background="@color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30px"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/layout_list_head"
+                layout="@layout/item_train_station"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rlv_train_detail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cacheColorHint="@color/transparent"
+                android:divider="@drawable/divide"
+                android:gravity="center"
+                android:listSelector="@color/transparent"
+                android:overScrollMode="never" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/parent"
+        android:textSize="24px"
+        android:text="2/5"
+        android:textColor="@color/white"
+        android:layout_marginTop="15px"/>
+
+</RelativeLayout>

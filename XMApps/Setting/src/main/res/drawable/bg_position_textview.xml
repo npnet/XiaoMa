@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    android:shape="rectangle">
+    <stroke
+        android:width="@dimen/position_textview_stroke_width"
+        android:color="@color/position_textview_stroke_color" />
+    <corners
+        android:bottomLeftRadius="@dimen/position_textview_raidus"
+        android:bottomRightRadius="@dimen/position_textview_raidus"
+        android:topLeftRadius="@dimen/position_textview_raidus"
+        android:topRightRadius="@dimen/position_textview_raidus" />
+    <padding
+        android:left="@dimen/position_textview_padding_left_right"
+        android:top="@dimen/position_textview_padding_top_bottom"
+        android:right="@dimen/position_textview_padding_left_right"
+        android:bottom="@dimen/position_textview_padding_top_bottom"/>
+</shape>

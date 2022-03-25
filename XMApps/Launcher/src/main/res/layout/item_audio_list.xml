@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/play_cover"
+    android:layout_width="370px"
+    android:layout_height="425px">
+
+    <com.xiaoma.ui.view.ReflectionImageView
+        android:id="@+id/iv_play_cover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        app:reflectionHeight="55px"
+        app:reflectionPadding="10px" />
+
+    <View
+        android:id="@+id/iv_cover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="65px"
+        android:background="#660A0A0A" />
+
+    <ImageView
+        android:id="@+id/iv_control"
+        android:layout_width="108px"
+        android:layout_height="108px"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130px"
+        android:src="@drawable/selector_btn_play" />
+</RelativeLayout>

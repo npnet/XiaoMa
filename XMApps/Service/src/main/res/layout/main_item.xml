@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/layout_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_order_top"
+        android:paddingBottom="@dimen/layout_order_bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/icon_order"
+            android:layout_width="@dimen/icon_order_width"
+            android:layout_height="@dimen/icon_order_height"
+            android:src="@drawable/order_img"
+            android:layout_marginLeft="@dimen/icon_order_left"
+            android:layout_marginRight="@dimen/icon_order_right"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/check_more_text_top"
+            android:gravity="center"
+            android:text="@string/my_order"
+            android:includeFontPadding="false"
+            android:textSize="@dimen/check_more_text_size"
+            app:layout_constraintEnd_toEndOf="@+id/icon_order"
+            app:layout_constraintStart_toStartOf="@+id/icon_order"
+            app:layout_constraintTop_toBottomOf="@+id/icon_order" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/layout_plan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_plan_top"
+        android:paddingBottom="@dimen/layout_plan_bottom"
+        app:layout_constraintLeft_toRightOf="@+id/layout_order"
+        app:layout_constraintStart_toEndOf="@+id/layout_order"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/icon_plan"
+            android:layout_width="@dimen/icon_plan_width"
+            android:layout_height="@dimen/icon_plan_width"
+            android:layout_marginEnd="@dimen/layout_plan_end"
+            android:layout_marginStart="@dimen/layout_plan_start"
+            android:src="@drawable/car_img"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:layout_marginTop="@dimen/check_more_text_top"
+            android:gravity="center"
+            android:text="@string/keep_car_plan"
+            android:textSize="@dimen/check_more_text_size"
+            app:layout_constraintEnd_toEndOf="@+id/icon_plan"
+            app:layout_constraintStart_toStartOf="@+id/icon_plan"
+            app:layout_constraintTop_toBottomOf="@+id/icon_plan" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/layout_rescue_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/layout_rescue_line_top"
+        android:paddingBottom="@dimen/layout_rescue_line_bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout_order">
+
+        <ImageView
+            android:id="@+id/icon_rescue_line"
+            android:layout_width="@dimen/icon_rescue_line_width"
+            android:layout_height="@dimen/icon_rescue_line_height"
+            android:layout_marginLeft="@dimen/icon_rescue_line_left"
+            android:layout_marginRight="@dimen/icon_rescue_line_right"
+            android:src="@drawable/help_phone_img"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/check_more_text_top"
+            android:gravity="center"
+            android:text="@string/rescue_line"
+            android:includeFontPadding="false"
+            android:textSize="@dimen/check_more_text_size"
+            app:layout_constraintEnd_toEndOf="@+id/icon_rescue_line"
+            app:layout_constraintStart_toStartOf="@+id/icon_rescue_line"
+            app:layout_constraintTop_toBottomOf="@+id/icon_rescue_line" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/layout_service_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/layout_service_line_bottom"
+        android:paddingTop="@dimen/layout_service_line_top"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toRightOf="@+id/layout_rescue_line"
+        app:layout_constraintStart_toEndOf="@+id/layout_rescue_line"
+        app:layout_constraintTop_toBottomOf="@+id/layout_plan">
+
+        <ImageView
+            android:id="@+id/icon_service_line"
+            android:layout_width="@dimen/icon_service_line_width"
+            android:layout_height="@dimen/icon_service_line_width"
+            android:layout_marginEnd="@dimen/layout_service_line_end"
+            android:layout_marginStart="@dimen/layout_service_line_start"
+            android:src="@drawable/phone_img"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/check_more_text_top"
+            android:gravity="center"
+            android:text="@string/service_line"
+            android:includeFontPadding="false"
+            android:textSize="@dimen/check_more_text_size"
+            app:layout_constraintEnd_toEndOf="@+id/icon_service_line"
+            app:layout_constraintStart_toStartOf="@+id/icon_service_line"
+            app:layout_constraintTop_toBottomOf="@+id/icon_service_line" />
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,18 @@
+apply plugin: 'com.android.library'
+apply from: "$rootDir$Android"
+
+android library()
+
+dependencies {
+    api "com.android.support:appcompat-v7:${SUPPORT_LIBRARY_VERSION}"
+    api project(':XMLibs:Thread')
+    api project(':XMLibs:Utils')
+    api project(':XMLibs:DB')
+    api project(':XMLibs:Config')
+    api project(':XMLibs:Network')
+    api project(':XMLibs:Model')
+    implementation project(path: ':XMLibs:Component')
+    implementation project(path: ':XMLibs:UI')
+    implementation "org.simple:androideventbus:$EVENT_BUS_VERSION"
+    implementation project(':XMLibs:VR:Vr')
+}

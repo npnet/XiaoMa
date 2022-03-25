@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/content_margin"
+    android:layout_marginRight="@dimen/content_margin"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/blt_text_margin">
+
+        <TextView
+            android:id="@+id/blt_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/bluetooth_switch"
+            android:textSize="@dimen/bluetooth_title_text_size" />
+
+        <com.xiaoma.setting.common.views.SwitchAnimation
+            android:id="@+id/blt_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/button_margin_title"
+            android:layout_toRightOf="@id/blt_tv" />
+
+        <LinearLayout
+            android:id="@+id/edit_blt_name_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/bluetooth_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/edit_blt_name_margin"
+                android:layout_toLeftOf="@id/edit_blt_name"
+                android:textSize="@dimen/bluetooth_title_text_size" />
+
+            <ImageView
+                android:id="@+id/edit_blt_name"
+                android:layout_width="@dimen/blt_edit_icon_size"
+                android:layout_height="@dimen/blt_edit_icon_size"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/icon_edit" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/blt_disable_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/bluetooth_bg_margin_left">
+
+        <ImageView
+            android:id="@+id/disable_blt_bg"
+            android:layout_width="@dimen/blt_close_bg_width"
+            android:layout_height="@dimen/blt_close_bg_height"
+            android:layout_centerInParent="true"
+            android:background="@drawable/blt_turn_off_bg" />
+
+        <ImageView
+            android:layout_width="@dimen/blt_close_bg_width"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/disable_blt_bg"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/shadow_margin_top"
+            android:background="@drawable/blt_turn_off_shadow" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/blt_devices"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fragment_margin_title">
+
+            <Button
+                android:id="@+id/add_devices"
+                android:layout_width="@dimen/add_blt_bt_width"
+                android:layout_height="@dimen/add_blt_bt_height"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/fragment_margin"
+                android:background="@drawable/icon_blt_match"
+                android:gravity="center"
+                android:paddingBottom="@dimen/bluetooth_fragment_margin_left_right"
+                android:text="@string/add_device"
+                android:textSize="@dimen/bluetooth_fragment_text_size" />
+
+            <TextView
+                android:id="@+id/bluetooth_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/text_margin_match_button"
+                android:layout_toRightOf="@+id/add_devices"
+                android:text="@string/click_and_add_device"
+                android:textColor="@color/blt_match_hint"
+                android:textSize="@dimen/bluetooth_fragment_text_size" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/matched_hint_margin_top"
+            android:layout_marginBottom="@dimen/matched_hint_margin_bottom"
+            android:text="@string/matched_devices"
+            android:textColor="@color/blt_match_hint"
+            android:textSize="@dimen/bluetooth_fragment_text_size" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/bond_devices"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <RelativeLayout
+                android:layout_width="@dimen/total_width_vertical_scrollbar"
+                android:layout_height="match_parent">
+
+                <com.xiaoma.ui.view.VerticalScrollBar
+                    android:id="@+id/scroll_bar"
+                    android:layout_width="@dimen/width_vertical_scrollbar"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="20px"
+                    android:paddingLeft="@dimen/margin_left_vertical_scrollbar"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

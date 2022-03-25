@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.MainActivity"
+        android:id="@+id/fl_parent_layout">
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_key_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5px"
+                android:text="向上" />
+
+            <Button
+                android:id="@+id/btn_key_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5px"
+                android:text="向下" />
+
+            <Button
+                android:id="@+id/btn_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5px"
+                android:text="确认" />
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5px"
+                android:text="取消" />
+
+            <Button
+                android:id="@+id/btn_tab_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5px"
+                android:text="电话" />
+
+            <Button
+                android:id="@+id/btn_tab_media"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5px"
+                android:text="音乐" />
+
+            <Button
+                android:id="@+id/btn_tab_full"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5px"
+                android:text="全屏" />
+
+            <Button
+                android:id="@+id/btn_left_nav"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5px"
+                android:text="左边导航显示" />
+
+            <Button
+                android:id="@+id/btn_left_nav_gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5px"
+                android:text="左边导航隐藏" />
+
+            <Button
+                android:id="@+id/btn_simple"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5px"
+                android:text="概要信息" />
+
+            <Button
+                android:id="@+id/btn_phone_coming"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5px"
+                android:text="来电显示" />
+
+            <Button
+                android:id="@+id/btn_phone_out"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5px"
+                android:text="呼叫联系人" />
+
+            <Button
+                android:id="@+id/btn_phone_other_coming"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5px"
+                android:text="三方通话来电显示" />
+
+            <Button
+                android:id="@+id/btn_phone_other_calling"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5px"
+                android:text="三方通话正在通话" />
+
+            <Button
+                android:id="@+id/btn_phone_contacting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5px"
+                android:text="通话中" />
+
+            <Button
+                android:id="@+id/btn_no_contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5px"
+                android:text="无通话记录" />
+
+            <Button
+                android:id="@+id/btn_get_call_history"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5px"
+                android:text="最近通话记录" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btn_skin_0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5px"
+                android:text="皮肤一" />
+            <Button
+                android:id="@+id/btn_skin_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5px"
+                android:text="皮肤二" />
+            <Button
+                android:id="@+id/btn_skin_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5px"
+                android:text="皮肤三" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</FrameLayout>

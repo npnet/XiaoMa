@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/face_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:openDrawer="start"
+    android:background="@color/color_transparent"
+    tools:context="com.xiaoma.login.business.ui.verify.FaceVerifyActivity"
+    tools:ignore="MissingDefaultResource">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/root"
+        android:layout_width="1170px"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@drawable/bg_popup_floating"
+        android:clickable="true">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="128px"
+            android:text="@string/face_recognize"
+            android:textColor="@color/white"
+            android:textSize="36px"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.xiaoma.login.business.ui.verify.view.FaceScanView
+            android:id="@+id/icon_img"
+            android:layout_width="@dimen/width_face_recognize"
+            android:layout_height="@dimen/height_face_recognize"
+            android:layout_marginTop="36px"
+            android:src="@drawable/icon_face_recognize"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title" />
+
+        <TextView
+            android:id="@+id/tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44px"
+            android:text="@string/recognizing"
+            android:textColor="@color/white"
+            android:textSize="28px"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/icon_img"
+            app:layout_goneMarginTop="48px" />
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="@dimen/width_normal_button"
+            android:layout_height="@dimen/height_normal_button"
+            android:layout_marginTop="18px"
+            android:background="@drawable/selector_button"
+            android:gravity="center"
+            android:text="@string/cancel_face_recognize"
+            android:textColor="@color/selector_button_text_color"
+            android:textSize="@dimen/font_button_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tips" />
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v4.widget.DrawerLayout>

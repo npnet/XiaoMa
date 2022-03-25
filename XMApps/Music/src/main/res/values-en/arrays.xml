@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preferenceType">
+        <item>电影</item>
+        <item>音乐</item>
+        <item>娱乐</item>
+        <item>动漫</item>
+        <item>T台秀</item>
+        <item>摄影</item>
+        <item>游戏</item>
+        <item>电影</item>
+        <item>音乐</item>
+        <item>娱乐</item>
+        <item>动漫</item>
+        <item>T台秀</item>
+        <item>摄影</item>
+        <item>游戏</item>
+    </array>
+    <array name="usbMusicEnd">
+        <item>mp3</item>
+        <item>acc</item>
+        <item>wav</item>
+        <item>wma</item>
+    </array>
+
+    <array name="tableTitle">
+        <item>Online music</item>
+        <item>Local music</item>
+        <item>My music</item>
+    </array>
+
+    <array name="local_music">
+        <item>成都</item>
+        <item>年少有为</item>
+        <item>侧脸</item>
+        <item>拿走了什么</item>
+        <item>去年夏天</item>
+    </array>
+</resources>

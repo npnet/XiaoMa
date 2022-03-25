@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="common_text_color">#B1B1B1</color>
+    <color name="common_white">#FFFFFF</color>
+    <color name="color_score">#FFC107</color>
+    <color name="colorDark">#1A1919</color>
+    <color name="colorDialogBlack">#000000</color>
+    <color name="font_normal">#FFC107</color>
+    <color name="colorBlueBackground">#4D46567E</color>
+    <color name="colorDeleteButton">#D9E63939</color>
+    <color name="custom_white">#8A919D</color>
+    <color name="highlight_white">#EDF6FE</color>
+    <color name="custom_orange">#FFC973</color>
+    <color name="colorLineBlue">#16B8D9</color>
+    <color name="colorLineYellow">#FFB133</color>
+    <color name="transparent">#DB030508</color>
+    <color name="gradient1st">#00141820</color>
+    <color name="gradient2nd">#81141820</color>
+    <color name="gradient3rd">#13181f</color>
+    <color name="gradient4th">#0013181f</color>
+    <color name="gradient5th">#ffe6ac</color>
+</resources>

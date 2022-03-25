@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/friend_details_outside"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_dim" />
+
+    <LinearLayout
+        android:id="@+id/friend_details_parent"
+        android:layout_width="@dimen/width_personal_drawer"
+        android:layout_height="match_parent"
+        android:background="@drawable/drawer_bg"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/padding_personal_drawer"
+        android:paddingRight="@dimen/padding_personal_drawer"
+        android:paddingTop="@dimen/padding_friend_top">
+
+        <RelativeLayout
+            android:layout_width="@dimen/width_friend_switch"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="center_vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/group_details_msg_notice"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_text_middle" />
+
+        </RelativeLayout>
+
+        <com.xiaoma.motorcade.common.view.UserHeadView
+            android:id="@+id/friend_details_icon"
+            android:layout_width="168px"
+            android:layout_height="168px"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="80px" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="@dimen/padding_personal_drawer">
+
+            <TextView
+                android:id="@+id/friend_user_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxEms="5"
+                android:singleLine="true"
+                android:text="--"
+                android:textColor="@color/white"
+                android:textSize="36px" />
+
+            <TextView
+                android:id="@+id/friend_user_age_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:ellipsize="end"
+                android:maxEms="5"
+                android:singleLine="true"
+                android:text="--"
+                android:textColor="@color/club_text_gray"
+                android:textSize="24px" />
+
+            <TextView
+                android:id="@+id/friend_user_sign_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/friend_user_name_tv"
+                android:layout_marginTop="@dimen/padding_personal_sign_top"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:textColor="@color/white"
+                android:textSize="24px" />
+
+
+            <Button
+                android:id="@+id/add_friend"
+                android:layout_width="@dimen/width_add_friend_btn"
+                android:layout_height="@dimen/height_add_friend_btn"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/margin_bottom_detail_btn"
+                android:alpha="8"
+                android:background="@drawable/user_detail_btn_selector"
+                android:enabled="false"
+                android:gravity="center_horizontal"
+                android:paddingTop="@dimen/padding_personal_edit_btn"
+                android:text="@string/add_friend"
+                android:textColor="@color/white"
+                android:clickable="false"
+                android:textSize="@dimen/font_text_small"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

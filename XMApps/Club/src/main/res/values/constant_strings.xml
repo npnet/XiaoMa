@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?><!--此文件下字符串不跟随多语言变化-->
+<resources>
+    <string name="scheme" translatable="false">xiaoma</string>
+    <string name="host" translatable="false">com.xiaoma.club</string>
+    <string name="path_discover" translatable="false">/discovery</string>
+    <string name="path_msg" translatable="false">/conversation</string>
+    <string name="path_contacts" translatable="false">/contacts</string>
+</resources>

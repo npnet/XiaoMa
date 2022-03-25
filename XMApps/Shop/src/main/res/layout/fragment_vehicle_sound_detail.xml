@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg_common"
+    android:clickable="true"
+    android:focusable="true"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_os_them_main_title_margin_left"
+        android:padding="@dimen/size_add_to_click_padding"
+        android:text="音响音效1"
+        android:layout_marginTop="30px"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_of_shop_36"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/bt_center"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="80px"
+        android:layout_marginStart="@dimen/size_os_them_main_title_margin_left"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title" />
+
+
+    <com.xiaoma.shop.business.ui.view.ProgressButton
+        android:id="@+id/bt_center"
+        android:layout_width="304px"
+        android:layout_height="74px"
+        android:layout_marginBottom="@dimen/size_hologram_buy_button_margin_bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:progressBg="@drawable/selector_btn_big_purchase"
+        app:text="更新"
+        app:textColor="@android:color/white"
+        app:textPaddingBottom="18px"
+        app:textSize="28px" />
+
+
+</android.support.constraint.ConstraintLayout>

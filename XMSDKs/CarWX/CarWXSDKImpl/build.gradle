@@ -1,0 +1,37 @@
+apply plugin: 'com.android.library'
+apply from: "$rootDir$Android"
+//apply from: "$rootDir$Modules"
+//apply from: "$rootDir$Tinker"
+
+android library()
+//android application('com.xiaoma.carwxsdkimpl')
+//dependencies dependency(CarWXSDKImpl)
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation project(':XMLibs:Config')
+    implementation project(':XMLibs:VR:Vr')
+    implementation project(':XMLibs:Component')
+    implementation project(':XMLibs:Process')
+    implementation project(':XMLibs:Utils')
+    implementation project(':XMLibs:Thread')
+    implementation project(':XMLibs:Center')
+    implementation project(':XMLibs:Skin')
+    implementation project(':XMSDKs:CarWX:CarWXBase')
+
+    implementation "com.android.support.constraint:constraint-layout:${CONSTRAINT_LAYOUT}"
+}
+
+//tinker {
+//    appClassName 'com.xiaoma.carwxsdkimpl.CarWXApp'
+//    buildPatch {
+//        baseApkPath ''
+//        baseResMapping ''
+//        baseMapping ''
+//    }
+//    patchDesc {
+//        baseVersion ''
+//        patchVersion 0
+//        patchMessage ''
+//    }
+//}

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="713px"
+    android:layout_height="443px"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_dialog_middle"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="15px"
+            android:singleLine="true"
+            android:text="@string/notification"
+            android:textColor="#fff"
+            android:textSize="36px" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="200px"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="80px"
+            android:layout_marginLeft="75px"
+            android:layout_marginRight="75px"
+            android:gravity="top|center_horizontal"
+            android:text=""
+            android:textColor="#fff"
+            android:textSize="30px"
+            android:lineSpacingExtra="15px" />
+
+        <RelativeLayout
+            android:id="@+id/two_button"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/tv_left_button"
+                android:layout_width="345px"
+                android:layout_height="80px"
+                android:layout_alignParentLeft="true"
+                android:gravity="center"
+                android:text="@string/confirm"
+                android:textColor="@drawable/text_button_color"
+                android:textSize="28px"
+                android:background="@drawable/bg_dialog_button"/>
+
+            <TextView
+                android:id="@+id/tv_right_button"
+                android:layout_width="345px"
+                android:layout_height="80px"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:textColor="@drawable/text_button_color"
+                android:text="@string/cancel"
+                android:textSize="28px"
+                android:background="@drawable/bg_dialog_button"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/one_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone">
+            <TextView
+                android:id="@+id/tv_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="@string/close"
+                android:textColor="@drawable/text_button_color"
+                android:textSize="28px"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

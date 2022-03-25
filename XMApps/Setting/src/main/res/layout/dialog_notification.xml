@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="713px"
+    android:layout_height="443px"
+    android:background="@drawable/bg_dialog_big"
+    android:paddingBottom="20px"
+    android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="15px"
+            android:singleLine="true"
+            android:text="@string/notification"
+            android:textColor="#fff"
+            android:textSize="36px" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="20px"
+            android:layout_marginBottom="20px"
+            android:gravity="top"
+            android:textColor="#fff"
+            android:textSize="24px"
+            android:lineSpacingExtra="15px" />
+
+        </ScrollView>
+
+</LinearLayout>

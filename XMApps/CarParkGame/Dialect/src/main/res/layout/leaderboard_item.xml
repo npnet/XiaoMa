@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="500px"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:layout_height="match_parent"
+>
+    <ImageView
+        android:id="@+id/arrow"
+        android:visibility="invisible"
+        android:src="@drawable/rightarrow"
+        android:layout_width="40px"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:background="@drawable/leader_item_line"
+        android:layout_width="match_parent"
+        android:layout_height="100px">
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/ranking"
+                android:layout_width="55px"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:text="1"/>
+
+            <ImageView
+                android:layout_marginLeft="40px"
+                android:id="@+id/user_avatar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_launcher"/>
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:text="用户名"/>
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center_vertical|right"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_marginRight="20px"
+                android:id="@+id/total_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100分"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

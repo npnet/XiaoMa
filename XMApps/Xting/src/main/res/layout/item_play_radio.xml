@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="110px">
+
+
+    <ImageView
+        android:id="@+id/iv_search_sure"
+        android:layout_width="39px"
+        android:layout_height="39px"
+        android:src="@drawable/audio_selected"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_search_icon"
+        android:layout_width="80px"
+        android:layout_height="80px"
+        android:layout_marginStart="60px"
+        android:src="@drawable/audio_search_default_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_search_name"
+        android:layout_width="500px"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20px"
+        android:textColor="#8a919d"
+        android:textSize="30px"
+        android:maxLines="1"
+        android:ellipsize="end"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_search_icon"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="东风破" />
+
+</android.support.constraint.ConstraintLayout>

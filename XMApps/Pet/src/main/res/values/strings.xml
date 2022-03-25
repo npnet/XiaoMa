@@ -1,0 +1,88 @@
+<resources>
+    <string name="no_network">网络异常，请稍后再试</string>
+    <string name="confirm">确定</string>
+
+    <string name="pet_app">宠物</string>
+    <string name="start_trip_prompt">要开始行程了~</string>
+    <string name="pet_init_failed">宠物初始化失败</string>
+    <string name="start_travel">开始旅行</string>
+    <string name="start_new_travel">开始新旅行</string>
+    <string name="ready_start_new_travel">准备好开始新的旅行了么？</string>
+    <string name="pet_food">食物</string>
+    <string name="pet_decoration">饰品</string>
+    <string name="pet_cosplay">角色</string>
+    <string name="go_eat_food">去喂食</string>
+    <string name="treasure_chest">X3\n宝箱</string>
+    <string name="network_connect_failed">网络连接失败，请检查网络</string>
+    <string name="refresh_network">刷新网络</string>
+    <string name="load_exception">网络异常，加载失败</string>
+    <string name="reload_text">重新加载</string>
+    <string name="food_desc">%1$s购买成功,已放入仓库~\n赶快去喂你的宠物吧</string>
+    <string name="mall_product">商城</string>
+    <string name="mall_repository">仓库</string>
+    <string name="big_food">大份食物</string>
+    <string name="middle_food">中份食物</string>
+    <string name="small_food">小份食物</string>
+    <string name="buy_car_coin">车币支付</string>
+    <string name="mine_car_coin">我的车币</string>
+    <string name="need_pay_text">需支付</string>
+    <string name="confirm_pay">确认支付</string>
+    <string name="not_pay">*您的车币不足以支付</string>
+    <string name="eat_food">立即喂食</string>
+    <string name="wait_eat_food">待会再喂</string>
+    <string name="use_goods">使用</string>
+    <string name="cancel_use_goods">取消</string>
+    <string name="not_net">网络连接失败，请检查网络</string>
+    <string name="refresh_net">刷新网络</string>
+    <string name="pet_loading_text">加载中...</string>
+    <string name="pet_downloading_text">下载中...</string>
+    <string name="use_resource_success">使用成功</string>
+    <string name="use_resource_failed">使用失败，请稍后再试</string>
+    <string name="delicious_of_food">真好吃，谢谢主人</string>
+    <string name="pet_very_hungry">主人，我好饿啊</string>
+    <string name="pet_upgrade">主人，我升级了</string>
+    <string name="pet_evolution">主人，我进化了</string>
+    <string name="buy_success">购买成功</string>
+    <string name="buy_failed">购买失败，请重新支付</string>
+    <string name="max_buy_goods_number">已达到最大购买数量</string>
+    <string name="pet_download_failed">下载失败，请稍后再试</string>
+    <string name="upgrade_prompt">您的宠物升级了</string>
+    <string name="upgrade_reward">升级奖励</string>
+    <string name="next_upgrade_reward">下一级奖励</string>
+    <string name="evolution_reward">进化奖励</string>
+    <string name="eat_food_failed">喂食失败，请稍后再试</string>
+    <string name="car_coin_not_enough">车币不足</string>
+    <string name="has_current_resource">已拥有</string>
+    <string name="treasure_box_open_failed">宝箱开启失败</string>
+    <string name="resource_loading">资源加载中...</string>
+    <string name="map_start">起点</string>
+    <string name="map_end">终点</string>
+    <string name="pet_eating_food">主人，我吃不了那么多噢~</string>
+    <string name="goods_empty_text">暂无商品</string>
+    <string name="pass_chapter_loading">正在加载游戏</string>
+    <string name="map_data_exception">数据异常,请稍后再试~</string>
+
+    <!--format-->
+    <string name="help_pet_supply_energy_desc"><Data><![CDATA[帮助宠物补充<font color="#e69513" size="30">%1$s能量</font>，让宠物早点升级。]]></Data></string>
+    <string name="help_pet_upgrade_desc"><Data><![CDATA[帮助宠物补充<font color="#df8c15" size="30">%1$s能量</font>，让宠物早点升级，拥有更多技能和装备。]]></Data></string>
+    <string name="eat_food_time"><Data><![CDATA[进食所需时间 <font color="#df8c15" size="30">%1$s小时</font>]]></Data></string>
+    <string name="repository_goods_number">X%1$d</string>
+    <string name="add_food_number">+%1$d</string>
+    <string name="repository_goods_number_text">库存：%1$d</string>
+    <string name="total_car_coin">%1$d</string>
+    <string name="need_pay_car_coin">-%1$d</string>
+    <string name="pet_level_text">LV%1$d</string>
+    <string name="treasure_number_text">x%1$d</string>
+    <string name="eat_food_timer_text">进食剩余%1$s小时%2$s分钟</string>
+    <string name="use_current_buy_goods">是否直接使用当前%1$s</string>
+    <string name="evolution_prompt">您的宠物长大了</string>
+    <string name="pet_map_prompt_format">你真棒~，还需要行驶%1$d千米，即可通关~</string>
+    <string name="drive_distance_format">已经行驶了%1$d千米</string>
+    <string name="pass_chapter_success_prompt">恭喜完成%1$s~\n准备好开始新的旅行了么？</string>
+    <string name="guide_shop_description">用户可以点击进行宠物喂食\n以及宠物食物购买。</string>
+    <string name="guide_pet_description">宠物会随您一同行驶，\n当宠物达到终点则通过\n当前关卡。</string>
+    <string name="guide_repository_description">点击仓库切换到仓库模块，用户购买的商品\n会在仓库中查看到。</string>
+    <string name="guide_repository_food_description">仓库为您购买商品存储地，您可以在仓库内选择合适的\n物品进行使用。</string>
+    <string name="guide_store_food_description">购买宠物食物，食物会在仓库中展示，当您\n给宠物喂食后，宠物可以通过食物获得对应\n的经验值。</string>
+    <string name="guide_confrim_pay_description">您可以在当前页面进行商品支付，也可以点\n击返回按钮退出购买页面。</string>
+</resources>

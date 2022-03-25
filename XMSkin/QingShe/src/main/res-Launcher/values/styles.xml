@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <style name="style_setting_seekbar">
+        <item name="android:layout_width">400px</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:thumb">@drawable/seekbar_indicator</item>
+        <item name="android:max">40</item>
+        <item name="android:maxHeight">10px</item>
+        <item name="android:progress">0</item>
+        <item name="android:progressDrawable">@drawable/text_tack_seekbar_style</item>
+        <item name="android:splitTrack">false</item>
+
+    </style>
+</resources>

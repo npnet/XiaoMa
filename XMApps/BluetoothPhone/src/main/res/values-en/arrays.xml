@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="contact_and_colelction_menu">
+        <item>Contact</item>
+        <item>Favorites</item>
+    </string-array>
+    <string-array name="bluetooth_menu">
+        <item>@drawable/call_history_selector</item>
+        <item>@drawable/dial_selector</item>
+        <item>@drawable/contact_selector</item>
+    </string-array>
+    <string-array name="bluetooth_menu_string">
+        <item>History</item>
+        <item>Dial</item>
+        <item>Address book</item>
+    </string-array>
+</resources>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/item_app_detail_must_width"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:id="@+id/ctl_left"
+        android:layout_width="@dimen/item_app_detail_width"
+        android:layout_height="match_parent"
+        android:layout_marginRight="@dimen/item_app_detail_right"
+        android:paddingLeft="@dimen/item_app_detail_padding_left"
+        android:paddingRight="@dimen/item_app_detail_padding_right">
+
+        <com.xiaoma.ui.view.ReflectionImageView
+            android:id="@+id/iv_app_icon"
+            android:layout_width="@dimen/item_app_detail_icon_width"
+            android:layout_height="@dimen/item_app_detail_icon_height"
+            android:layout_marginTop="@dimen/item_app_detail_icon_margin_top"
+            android:layout_marginRight="@dimen/item_app_detail_icon_margin_right"
+            android:scaleType="fitXY"
+            app:reflectionHeight="80px"
+            app:reflectionPadding="10px" />
+
+        <!--遮罩层-->
+        <ImageView
+            android:layout_width="@dimen/item_app_detail_icon_width"
+            android:layout_height="@dimen/item_app_detail_icon_width"
+            android:layout_marginTop="@dimen/item_app_detail_icon_margin_top"
+            android:layout_marginRight="@dimen/item_app_detail_icon_margin_right"
+            android:src="@drawable/img_light" />
+
+        <TextView
+            android:id="@+id/tv_update_log"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_app_icon"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="@dimen/item_app_detail_update_log_margin_left"
+            android:layout_marginTop="@dimen/item_app_detail_update_log_margin_top"
+            android:drawableLeft="@drawable/icon_app_update_log"
+            android:drawablePadding="@dimen/item_app_detail_update_log_drawable_padding"
+            android:gravity="center"
+            android:padding="@dimen/item_app_detail_update_log_padding"
+            android:text="@string/update_log"
+            android:textColor="@color/color_8a919d"
+            android:textSize="@dimen/item_app_detail_update_log_text_size" />
+
+        <TextView
+            android:id="@+id/tv_app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iv_app_icon"
+            android:layout_toRightOf="@+id/iv_app_icon"
+            android:includeFontPadding="false"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/item_app_detail_app_name_text_size" />
+
+        <TextView
+            android:id="@+id/tv_app_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_app_name"
+            android:layout_marginLeft="@dimen/item_app_detail_app_size_margin_left"
+            android:layout_toRightOf="@+id/tv_app_name"
+            android:textColor="@color/color_7e838d"
+            android:textSize="@dimen/item_app_detail_app_size_text_size" />
+
+        <TextView
+            android:id="@+id/tv_app_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_app_size"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/color_7e838d"
+            android:textSize="@dimen/item_app_detail_app_version_text_size" />
+
+        <TextView
+            android:id="@+id/tv_app_introduce"
+            android:layout_width="@dimen/item_app_detail_app_introduce_width"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_app_name"
+            android:layout_toRightOf="@+id/iv_app_icon"
+            android:ellipsize="end"
+            android:lineSpacingExtra="@dimen/item_app_detail_app_introduce_line_space"
+            android:lines="3"
+            android:paddingTop="@dimen/item_app_detail_app_introduce_padding_top"
+            android:textColor="@color/color_7e838d"
+            android:textSize="@dimen/item_app_detail_app_introduce_text_size" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_app_introduce"
+            android:layout_marginLeft="@dimen/item_app_detail_margin_left"
+            android:layout_marginTop="@dimen/item_app_detail_margin_top"
+            android:layout_toEndOf="@+id/iv_app_icon"
+            android:gravity="center_vertical">
+
+            <com.xiaoma.app.views.DownloadProgressButton
+                android:id="@+id/btn_download_progress"
+                android:layout_width="@dimen/item_app_list_download_button_width"
+                android:layout_height="@dimen/item_app_list_download_button_height" />
+
+            <TextView
+                android:id="@+id/btn_uninstall"
+                android:layout_width="@dimen/item_app_detail_uninstall_width"
+                android:layout_height="@dimen/item_app_detail_uninstall_height"
+                android:layout_marginLeft="@dimen/item_app_detail_uninstall_margin_left"
+                android:layout_marginBottom="@dimen/item_app_detail_uninstall_margin_bottom"
+                android:gravity="center"
+                android:text="@string/app_uninstall"
+                android:textColor="@color/color_8a919c"
+                android:textSize="@dimen/item_app_detail_uninstall_text_size"
+                android:visibility="visible" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.xiaoma.ui.view.ReflectionImageView
+        android:id="@+id/iv_app_detail"
+        android:layout_width="@dimen/item_app_detail_image_width"
+        android:layout_height="@dimen/item_app_detail_image_height"
+        android:layout_marginTop="@dimen/item_app_detail_image_margin_top"
+        android:layout_marginRight="@dimen/item_app_detail2_image_margin_right"
+        android:scaleType="fitXY"
+        app:reflectionHeight="102px"
+        app:reflectionPadding="10px" />
+
+    <com.xiaoma.ui.view.ReflectionImageView
+        android:id="@+id/iv_app_detai2"
+        android:layout_width="@dimen/item_app_detail_image_width"
+        android:layout_height="@dimen/item_app_detail_image_height"
+        android:layout_marginTop="@dimen/item_app_detail_image_margin_top"
+        android:layout_marginRight="@dimen/item_app_detail_image_margin_right"
+        android:scaleType="fitXY"
+        app:reflectionHeight="102px"
+        app:reflectionPadding="10px" />
+</LinearLayout>

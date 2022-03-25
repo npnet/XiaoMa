@@ -1,0 +1,14 @@
+apply plugin: 'com.android.library'
+apply from: "$rootDir$Android"
+
+android library()
+
+dependencies {
+    implementation "com.android.support:appcompat-v7:${SUPPORT_LIBRARY_VERSION}"
+    implementation "com.qihoo360.replugin:replugin-host-lib:$REPLUGIN_VERSION"
+    implementation project(path: ':XMLibs:Utils')
+    implementation project(path: ':XMLibs:Thread')
+    implementation project(path: ':XMLibs:Config')
+    implementation project(path: ':XMLibs:Network')
+    implementation project(path: ':XMLibs:Model')
+}

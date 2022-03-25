@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/width_item"
+    android:layout_height="@dimen/height_item"
+    android:background="@drawable/bg_item"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/height_bg_padding_bottom"
+    android:paddingLeft="@dimen/height_bg_padding_bottom"
+    android:paddingRight="@dimen/height_bg_padding_bottom"
+    android:paddingTop="@dimen/height_bg_padding_top">
+
+    <ImageView
+        android:id="@+id/iv_photo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/width_item_padding_left"
+        android:paddingRight="@dimen/width_item_padding_left">
+
+        <TextView
+            android:id="@+id/tv_num"
+            android:layout_width="38px"
+            android:layout_height="43px"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/number_tag"
+            android:gravity="center"
+            android:paddingBottom="@dimen/height_tag_view_padding_bottom"
+            android:text="A"
+            android:textColor="@color/white_text"
+            android:textSize="24px" />
+
+        <TextView
+            android:id="@+id/tv_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="9px"
+            android:layout_marginTop="6px"
+            android:background="@drawable/bg_score"
+            android:text="A"
+            android:textColor="@color/gold"
+            android:textSize="20px" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/tv_tab"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:paddingBottom="10px"
+            android:text="A"
+            android:textColor="@color/white_text"
+            android:textSize="28px" />
+
+        <TextView
+            android:id="@+id/tv_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingBottom="19px"
+            android:text="A"
+            android:textColor="@color/gray"
+            android:textSize="24px" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

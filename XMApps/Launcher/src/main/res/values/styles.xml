@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="indexTextViewStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">36dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#8c8c8c</item>
+    </style>
+
+    <!--酒店修改信息对话框样式-->
+    <style name="dialog_fullscreen_hotel">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item><!--是否浮现在activity之上-->
+        <item name="android:windowIsTranslucent">true</item><!--半透明-->
+        <item name="android:windowBackground">@color/color_transparent</item><!--背景透明-->
+        <item name="android:backgroundDimEnabled">true</item><!--模糊-->
+        <item name="android:backgroundDimAmount">0.6</item>
+    </style>
+
+    <style name="recommend_dialog" parent="@android:style/Theme.Holo.Dialog">
+        <!-- 是否有边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!--是否在悬浮Activity之上  -->
+        <item name="android:windowIsFloating">true</item>
+        <!--标题  -->
+        <item name="android:windowNoTitle">true</item>
+        <!--阴影  -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!--透明背景-->
+        <item name="android:background">@android:color/transparent</item>
+        <!--窗口背景透明-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--弹窗背景是否变暗-->
+        <!--<item name="android:backgroundDimEnabled">true</item>-->
+    </style>
+
+    <style name="disclaimer_alertDialog" parent="@android:style/Theme.Holo.Dialog">
+        <!-- 这里设置背景为透明，为了隐藏边框 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <!-- 这里是修改顶部标题背景颜色，具体颜色自己定，可以是图片 -->
+        <item name="android:topDark">@color/white</item>
+        <!-- 这里是修改内容区域背景颜色 -->
+        <item name="android:centerDark">@drawable/bg_dialog_big</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+    </style>
+
+    <style name="audio_tab_text_view_selected">
+        <item name="android:textColor">@color/color_main_selector</item>
+        <item name="android:textSize">30px</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="audio_tab_text_view_normal">
+        <item name="android:textColor">@color/color_main_selector</item>
+        <item name="android:textSize">26px</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="style_setting_seekbar">
+        <item name="android:layout_width">400px</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:thumb">@drawable/seekbar_indicator</item>
+        <item name="android:max">40</item>
+        <item name="android:maxHeight">10px</item>
+        <item name="android:progress">0</item>
+        <item name="android:progressDrawable">@drawable/text_tack_seekbar_style</item>
+        <item name="android:splitTrack">false</item>
+        <item name="com.xiaoma.launcher:textcolor">#fff</item>
+        <item name="com.xiaoma.launcher:textsize">26px</item>
+    </style>
+</resources>

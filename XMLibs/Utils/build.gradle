@@ -1,0 +1,14 @@
+apply plugin: 'com.android.library'
+apply from: "$rootDir$Android"
+
+android library()
+
+dependencies {
+    implementation "com.orhanobut:logger:${LOGGER_VERSION}"
+    implementation "com.android.support:appcompat-v7:${SUPPORT_LIBRARY_VERSION}"
+    api "com.google.code.gson:gson:${GSON_VERSION}"
+    api 'com.tencent:mmkv:1.0.10'
+    api "net.grandcentrix.tray:tray:0.12.0"
+    api 'com.github.promeg:tinypinyin:2.0.3' // TinyPinyin核心包，约80KB
+    implementation project(path: ':XMLibs:Config')
+}

@@ -1,0 +1,228 @@
+ext {
+    skin = this.&skin
+}
+
+def setupDefaultConfig(String packageName) {
+    return {
+        if (!packageName?.isEmpty()) {
+            applicationId "${packageName}"
+        }
+        minSdkVersion project.MIN_SDK_VERSION as int
+        targetSdkVersion project.TARGET_SDK_VERSION as int
+        versionCode project.APP_VERSION_CODE as int
+        versionName "${APP_VERSION_NAME}"
+    }
+}
+
+def skin(String packageName, int skinType) {
+    return {
+        def APP_STORE = 1//车应用
+        def CLUB = 2//车信
+        def LAUNCHER = 3//桌面
+        def SERVICE = 4//车服务
+        def XKAN = 5//媒体
+        def XTING = 6//想听
+        def PERSONAL_CENTER = 7//个人中心
+        def ASSISTANT = 8 //语音助手
+        def MUSIC = 9  //超级音乐
+        def CARPARK = 10   //车乐园
+        def SETTING = 11 //设置
+        def BLUETOOTHPHONE = 12 //蓝牙电话
+        def SHOP = 13  //商城
+        def MOTORCADE = 14 //车队
+        def INSTRUCTION = 15 //使用手册
+        def DrivingScoreQM = 16  //驾驶评分
+
+        compileSdkVersion project.COMPILE_SDK_VERSION as int
+        buildToolsVersion "${BUILD_TOOLS_VERSION}"
+        defaultConfig setupDefaultConfig("${packageName}")
+        signingConfigs {
+            release {
+                storeFile file("${rootDir}/XMKeystore/xm/xiaoma_release_android.keystore")
+                storePassword "dream@XiaoMaLiXing"
+                keyAlias "xiaoma_android.keystore"
+                keyPassword "dream@XiaoMaLiXing"
+            }
+            debug {
+                storeFile file("${rootDir}/XMKeystore/xm/xiaoma_release_android.keystore")
+                storePassword "dream@XiaoMaLiXing"
+                keyAlias "xiaoma_android.keystore"
+                keyPassword "dream@XiaoMaLiXing"
+            }
+        }
+        buildTypes {
+            release {
+                minifyEnabled false
+                proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            }
+        }
+        //需要根据应用去配置皮肤映射
+        sourceSets{
+            main{
+                if(skinType == APP_STORE){
+                    res.srcDirs =
+                            [
+                                    'src/main/res-AppStore',
+                                    'src/main/res'
+                            ]
+                }else if(skinType == CLUB){
+                    res.srcDirs =
+                            [
+                                    'src/main/res-Club',
+                                    'src/main/res'
+                            ]
+                }else if(skinType == LAUNCHER){
+                    res.srcDirs =
+                            [
+                                    'src/main/res-Launcher',
+                                    'src/main/res'
+                            ]
+                }else if(skinType == SERVICE){
+                    res.srcDirs =
+                            [
+                                    'src/main/res-Service',
+                                    'src/main/res'
+                            ]
+                }else if(skinType == XKAN){
+                    res.srcDirs =
+                            [
+                                    'src/main/res-Xkan',
+                                    'src/main/res'
+                            ]
+                }else if(skinType == XTING){
+                    res.srcDirs =
+                            [
+                                    'src/main/res-Xting',
+                                    'src/main/res'
+                            ]
+                }else if(skinType == PERSONAL_CENTER){
+                    res.srcDirs =
+                            [
+                                    'src/main/res-PersonalCenter',
+                                    'src/main/res'
+                            ]
+                }else if(skinType == ASSISTANT){
+                    res.srcDirs =
+                            [
+                                    'src/main/res-Assistant',
+                                    'src/main/res'
+                            ]
+                }else if(skinType == MUSIC){
+                    res.srcDirs =
+                            [
+                                    'src/main/res-Music',
+                                    'src/main/res'
+                            ]
+                }else if(skinType == CARPARK){
+                    res.srcDirs =
+                            [
+                                    'src/main/res-CarPark',
+                                    'src/main/res'
+                            ]
+                }else if(skinType == SETTING){
+                    res.srcDirs =
+                            [
+                                    'src/main/res-Setting',
+                                    'src/main/res'
+                            ]
+                }else if(skinType == BLUETOOTHPHONE){
+                    res.srcDirs =
+                            [
+                                    'src/main/res-BluetoothPhone',
+                                    'src/main/res'
+                            ]
+                }else if(skinType == SHOP){
+                    res.srcDirs =
+                            [
+                                    'src/main/res-Shop',
+                                    'src/main/res'
+                            ]
+                }else if(skinType == MOTORCADE){
+                    res.srcDirs =
+                            [
+                                    'src/main/res-Motorcade',
+                                    'src/main/res'
+                            ]
+                }else if(skinType == INSTRUCTION){
+                    res.srcDirs =
+                            [
+                                    'src/main/res-instruction',
+                                    'src/main/res'
+                            ]
+                }else if(skinType == DrivingScoreQM){
+                    res.srcDirs =
+                            [
+                                    'src/main/res-DrivingScoreQM',
+                                    'src/main/res'
+                            ]
+                }
+            }
+        }
+        project.android.applicationVariants.all { variant ->
+            variant.outputs.each { output ->
+                String variantName = variant.getName().substring(0, 1).toUpperCase() + variant.getName().substring(1)
+                String assembleTask = "assemble" + variantName
+                tasks.getByName(assembleTask).doLast {
+                    //需要配置应用名称皮肤包
+                    String appDir
+                    if(skinType == APP_STORE){
+                        appDir = "AppStore"
+                    }else if(skinType == CLUB){
+                        appDir = "Club"
+                    }else if(skinType == LAUNCHER){
+                        appDir = "Launcher"
+                    }else if(skinType == SERVICE){
+                        appDir = "Service"
+                    }else if(skinType == XKAN){
+                        appDir = "Xkan"
+                    }else if(skinType == XTING){
+                        appDir = "Xting"
+                    }else if(skinType == PERSONAL_CENTER){
+                        appDir = "Personal"
+                    }else if(skinType == ASSISTANT){
+                        appDir = "Assistant"
+                    }else if(skinType == MUSIC){
+                        appDir = "Music"
+                    }else if(skinType == CARPARK){
+                        appDir = "CarParkGame/CarPark"
+                    }else if(skinType == SETTING){
+                        appDir = "Setting"
+                    }else if(skinType == BLUETOOTHPHONE){
+                        appDir = "BluetoothPhone"
+                    }else if(skinType == SHOP){
+                        appDir = "Shop"
+                    }else if(skinType == MOTORCADE){
+                        appDir = "Motorcade"
+                    }else if(skinType == INSTRUCTION){
+                        appDir = "Instruction"
+                    }else if(skinType == DrivingScoreQM){
+                        appDir = "DrivingScoreQM"
+                    } else {
+                        print "Unknown skinType:"+skinType
+                        return
+                    }
+                    // 生成输出目录与文件名
+
+                    String outputPath = "${rootProject.getRootDir()}" + "/XMApps/"+appDir+"/src/main/assets/skins"
+                    String outputName
+                    if("com.xiaom.skin.renwen".equals(packageName)){
+                        outputName = 'DaoMeng' + '.skin'
+                    }else {
+                        outputName = 'QingShe' + '.skin'
+                    }
+                    System.err.println("output: " + outputPath + "/" + outputName)
+                    // 删除已存在的文件
+                    delete new File(outputPath, outputName)
+                    // 复制文件到对应路径
+                    copy {
+                        from output.outputFile
+                        into outputPath
+                        rename { name ->
+                            name.replace(name, outputName)
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

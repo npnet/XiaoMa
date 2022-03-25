@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/hotel_recom_frame_width"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_cover"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hotel_recom_iv_cover_height"
+        android:scaleType="centerCrop"
+        android:src="@drawable/not_hotel_img" />
+
+    <TextView
+        android:id="@+id/tv_star"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/hotel_recom_tv_star_height"
+        android:minWidth="@dimen/hotel_recom_tv_star_width"
+        android:background="@drawable/icon_star_hotel"
+        android:drawableLeft="@drawable/icon_star_bg"
+        android:drawablePadding="5px"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="11px"
+        android:text="5.0"
+        android:textColor="@color/color_222222"
+        android:textSize="18px" />
+
+
+    <TextView
+        android:id="@+id/tv_collect"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/hotel_recom_tv_star_height"
+        android:layout_gravity="right"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="13px"
+        android:drawablePadding="5px"
+        android:text="@string/collect"
+        android:textColor="@color/color_222222"
+        android:textSize="18px" />
+
+
+</FrameLayout>

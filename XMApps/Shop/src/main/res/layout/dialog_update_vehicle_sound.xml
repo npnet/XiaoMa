@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_dialog_big">
+
+    <TextView
+        android:id="@+id/tv_prompt_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_dialog_title_margin_top"
+        android:gravity="center"
+        android:text="@string/prompt_title"
+        android:textSize="@dimen/font_of_shop_30"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tv_content_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/height_tv_content_margin_top"
+        android:paddingRight="10px"
+        android:paddingLeft="@dimen/width_center_text_margin"
+        android:ellipsize="end"
+        android:textSize="@dimen/font_of_shop_30"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/divider_line"
+        app:layout_constraintTop_toBottomOf="@+id/tv_prompt_title" />
+
+    <ImageView
+        android:id="@+id/divider_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/height_divider_line_margin_top"
+        android:src="@drawable/horizontal_divider_line"
+        app:layout_constraintBottom_toTopOf="@id/item_pay_operation_button_layout"
+        app:layout_constraintTop_toBottomOf="@+id/tv_content_message" />
+
+    <include
+        layout="@layout/item_pay_operation_button"
+        android:layout_width="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_height="@dimen/size_dialog_bottom_button"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</android.support.constraint.ConstraintLayout>

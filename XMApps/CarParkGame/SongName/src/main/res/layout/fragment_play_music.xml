@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="68px"
+    android:paddingTop="70px"
+    android:paddingRight="68px">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="180px"
+        android:layout_height="60px"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/play_title_bg"
+        android:gravity="center"
+        android:text="第一题"
+        android:textColor="@color/white"
+        android:textSize="28px" />
+
+    <ImageView
+        android:id="@+id/iv_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80px"
+        android:src="@drawable/bg_play_fragment" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70px">
+
+        <ImageView
+            android:id="@+id/iv_player"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cover_player" />
+
+        <ImageView
+            android:id="@+id/iv_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="20px"
+            android:src="@drawable/icon_play" />
+
+        <TextView
+            android:id="@+id/tv_game_over"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="GAME OVER"
+            android:textColor="@color/white"
+            android:textSize="36px"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_needle_ding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="50px"
+        android:layout_marginRight="90px"
+        android:src="@drawable/icon_ding" />
+
+    <ImageView
+        android:id="@+id/iv_needle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="86px"
+        android:layout_marginRight="62px"
+        android:src="@drawable/needle" />
+</RelativeLayout>

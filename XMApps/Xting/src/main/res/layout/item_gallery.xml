@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/width_gallery_item_wrapper"
+    android:layout_height="wrap_content"
+    android:clipChildren="false">
+
+    <com.xiaoma.ui.view.AutoScrollTextView
+        android:id="@+id/title"
+        android:layout_width="@dimen/width_gallery_item_wrapper"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:maxWidth="@dimen/width_gallery_item_wrapper"
+        android:maxEms="7"
+        android:singleLine="true"
+        android:textSize="@dimen/size_gallery_title_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="title" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cl_cover"
+        android:layout_width="@dimen/width_gallery_item"
+        android:layout_height="@dimen/height_gallery_item"
+        android:layout_marginTop="@dimen/size_gallery_pic_margin_top"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title">
+
+        <com.xiaoma.ui.view.ReflectionImageView
+            android:id="@+id/iv_cover"
+            android:layout_width="@dimen/width_gallery_item"
+            android:layout_height="@dimen/height_gallery_item"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:reflectionHeight="@dimen/size_gallery_item_shadow_height"
+            app:reflectionPadding="@dimen/size_gallery_item_shadow_padding"
+            tools:src="@drawable/fm_default_cover" />
+
+        <TextView
+            android:id="@+id/footer"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/shape_gallery_footer_background"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textAlignment="center"
+            android:textSize="@dimen/size_gallery_footer_text"
+            app:layout_constraintBottom_toTopOf="@+id/guideline2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline3"
+            tools:text="TextView" />
+
+        <com.xiaoma.ui.view.AutoScrollTextView
+            android:id="@+id/bottom"
+            android:layout_width="@dimen/width_gallery_item_bottom"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:maxEms="6"
+            android:singleLine="true"
+            android:textSize="@dimen/size_gallery_bottom_text"
+            app:layout_constraintBottom_toBottomOf="@+id/cl_cover"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline"
+            tools:text="TextView" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_end="70px" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="200px" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="130px" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.widget.Space
+        android:id="@+id/space"
+        android:layout_width="0px"
+        android:layout_height="0px"
+        android:layout_marginTop="@dimen/size_gallery_delete_margin"
+        android:layout_marginEnd="@dimen/size_gallery_delete_margin"
+        app:layout_constraintEnd_toEndOf="@+id/cl_cover"
+        app:layout_constraintTop_toTopOf="@+id/cl_cover" />
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="@dimen/width_gallery_delete"
+        android:layout_height="@dimen/height_gallery_delete"
+        android:padding="@dimen/size_gallery_delete_padding"
+        android:src="@drawable/icon_delete"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/space"
+        app:layout_constraintStart_toEndOf="@+id/space"
+        tools:visibility="visible" />
+
+</android.support.constraint.ConstraintLayout>

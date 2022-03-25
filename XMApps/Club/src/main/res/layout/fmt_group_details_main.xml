@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingRight="@dimen/padding_group_details_main_right">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/width_group_card"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/group_details_icon"
+            android:layout_width="@dimen/width_group_card"
+            android:layout_height="@dimen/width_group_card" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/padding_group_details_main_left">
+
+            <TextView
+                android:id="@+id/group_details_main_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxEms="10"
+                android:singleLine="true"
+                android:textColor="@color/club_white"
+                android:textSize="@dimen/font_text_big_plus" />
+
+            <TextView
+                android:id="@+id/group_details_main_sign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/group_details_main_name"
+                android:layout_marginTop="@dimen/margin_group_sign_top"
+                android:ellipsize="end"
+                android:lineSpacingExtra="@dimen/size_group_sign"
+                android:maxLines="2"
+                android:textColor="@color/club_white"
+                android:textSize="@dimen/font_text_middle" />
+
+            <ImageView
+                android:id="@+id/group_details_sign_edit_btn"
+                android:layout_width="@dimen/width_group_edit_sign"
+                android:layout_height="@dimen/width_group_edit_sign"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/group_details_main_sign"
+                android:background="@drawable/group_details_edit"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/group_details_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:ellipsize="end"
+                android:maxEms="20"
+                android:singleLine="true"
+                android:textColor="@color/text_msg_item"
+                android:textSize="@dimen/font_text_small_plus" />
+
+            <TextView
+                android:id="@+id/group_details_member_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:ellipsize="end"
+                android:maxEms="10"
+                android:singleLine="true"
+                android:textColor="@color/text_msg_item"
+                android:textSize="@dimen/font_text_small_plus" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_group_notice_top"
+        android:text="@string/group_notice"
+        android:textColor="@color/club_white"
+        android:textSize="@dimen/font_text_middle" />
+
+    <TextView
+        android:id="@+id/group_details_notice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_group_notice_content_top"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:textColor="@color/text_msg_item"
+        android:textSize="@dimen/font_text_middle" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/margin_exit_btn_bottom">
+
+        <TextView
+            android:id="@+id/group_details_msg_notice_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/margin_notice_bottom"
+            android:text="@string/group_details_msg_notice"
+            android:textColor="@color/club_white"
+            android:textSize="@dimen/font_text_middle" />
+
+        <Switch
+            android:id="@+id/msg_notice_switch"
+            android:layout_width="@dimen/width_setting_switch"
+            android:layout_height="@dimen/height_setting_switch"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/margin_notice_swtch_bottom"
+            android:layout_marginLeft="@dimen/margin_notice_swtch_left"
+            android:layout_toRightOf="@id/group_details_msg_notice_tv"
+            android:thumb="@drawable/switch_thumb"
+            android:track="@drawable/switch_track" />
+
+        <Button
+            android:id="@+id/group_details_exit_btn"
+            android:layout_width="@dimen/width_exit_group_btn"
+            android:layout_height="@dimen/height_exit_group_btn"
+            android:singleLine="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/club_btn_selector"
+            android:gravity="center_horizontal"
+            android:paddingTop="@dimen/padding_newfriend_btn_top"
+            android:text="@string/group_exit"
+            android:textColor="@color/club_white"
+            android:textSize="@dimen/font_text_small_plus" />
+
+
+    </RelativeLayout>
+</LinearLayout>

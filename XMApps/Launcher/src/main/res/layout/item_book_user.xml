@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="674px"
+    android:layout_height="@dimen/book_user_height"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_room_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/item_tv_room_tv_size"
+        android:layout_marginLeft="10px"
+        tools:text="房间一" />
+
+    <TextView
+        android:id="@+id/tv_user_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tv_user_name_height"
+        android:layout_below="@+id/tv_room_no"
+        android:background="@drawable/bg_book_user"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:layout_marginTop="10px"
+        android:padding="@dimen/user_name_padding"
+        android:textColor="@color/white"
+        android:textSize="30px"
+        tools:text="1212" />
+
+    <ImageView
+        android:id="@+id/iv_edit"
+        android:layout_width="@dimen/iv_edit_width"
+        android:layout_height="@dimen/iv_edit_height"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/tv_room_no"
+        android:layout_marginEnd="@dimen/iv_edit_margin_right"
+        android:layout_marginTop="@dimen/iv_edit_margin_top"
+        android:src="@drawable/icon_edit_user" />
+
+    <ImageView
+        android:id="@+id/iv_delete"
+        android:layout_width="@dimen/iv_delete_width"
+        android:layout_height="@dimen/iv_delete_height"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/tv_room_no"
+        android:layout_marginEnd="@dimen/iv_delete_margin_right"
+        android:layout_marginTop="@dimen/iv_delete_margin_top"
+        android:src="@drawable/icon_close_user" />
+
+
+</RelativeLayout>

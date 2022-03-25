@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="height_scroll_bar">20px</dimen>
+    <dimen name="size_scroll_bar_margin_bottom">18px</dimen>
+    <dimen name="size_scroll_bar_margin_end">586px</dimen>
+    <dimen name="size_scroll_bar_margin_start">436px</dimen>
+</resources>

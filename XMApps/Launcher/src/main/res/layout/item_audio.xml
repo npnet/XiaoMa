@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/item_audio_source_bg_width"
+    android:layout_height="@dimen/item_audio_source_bg_height">
+
+    <ImageView
+        android:id="@+id/cover_bg"
+        android:layout_width="@dimen/item_audio_source_bg_width"
+        android:layout_height="@dimen/item_audio_source_bg_height" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/item_audio_source_title_padding_left"
+        android:paddingTop="@dimen/item_audio_source_title_padding_top"
+        android:text="在线电台"
+        android:textSize="@dimen/item_audio_source_title_text_size"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/play_status"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_audio_source_bottom_play_status_height"
+        android:background="#1Affffff"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_status"
+            android:layout_width="@dimen/item_audio_source_play_status_iv_width"
+            android:layout_height="@dimen/item_audio_source_play_status_iv_height"
+            android:layout_marginRight="@dimen/item_audio_source_play_status_iv_margin_right"
+            android:src="@drawable/fm_player_state_play_normal" />
+
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="开始播放"
+            android:textColor="#999999"
+            android:textSize="@dimen/item_audio_source_play_status_text_size" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

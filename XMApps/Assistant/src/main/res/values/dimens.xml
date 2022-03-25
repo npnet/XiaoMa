@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_size_conversation">30px</dimen>
+    <dimen name="text_size_conversation_v2_big">36px</dimen>
+    <dimen name="text_size_conversation_v2_small">30px</dimen>
+    <dimen name="width_station_textview">150px</dimen>
+    <dimen name="height_bg_padding_top">4px</dimen>
+    <dimen name="height_bg_padding_bottom">5px</dimen>
+    <dimen name="height_bg_score_padding_top">5px</dimen>
+    <dimen name="height_bg_score_padding_left">10px</dimen>
+    <dimen name="height_bg_star_level_padding_top">1px</dimen>
+    <dimen name="height_bg_star_level_padding_left">8px</dimen>
+    <dimen name="height_tv_restaurant_info_padding_bottom">27px</dimen>
+    <dimen name="width_item_padding_left">20px</dimen>
+    <dimen name="width_item">330px</dimen>
+    <dimen name="height_item">406px</dimen>
+    <dimen name="radius_bg_star_level">4px</dimen>
+    <dimen name="height_tag_view_padding_bottom">3px</dimen>
+    <dimen name="width_head">117px</dimen>
+    <dimen name="width_bg_voice_box_padding_left">30px</dimen>
+    <dimen name="height_voice_box_padding_top">26px</dimen>
+    <dimen name="width_vertical_scroll_bar">12px</dimen>
+    <dimen name="height_vertical_scroll_bar">440px</dimen>
+    <dimen name="width_icon_page_indicator_padding">29px</dimen>
+    <dimen name="width_icon_mic">101px</dimen>
+    <dimen name="width_icon_page_indicator">29px</dimen>
+    <dimen name="height_icon_page_indicator">50px</dimen>
+    <dimen name="font_voice_text">28px</dimen>
+    <dimen name="height_dialing_box_padding_top">26px</dimen>
+    <dimen name="width_dialing_box_padding_left">30px</dimen>
+    <dimen name="width_scroll_bar_touch_sensitivity">20px</dimen>
+    <dimen name="height_second_level_page_margin_top">55px</dimen>
+    <dimen name="height_progressbar_margin_top">98px</dimen>
+    <dimen name="height_progressbar_margin_left">190px</dimen>
+    <dimen name="width_loading_view">169px</dimen>
+    <dimen name="px_1045">1045px</dimen>
+    <dimen name="px_32">32px</dimen>
+    <dimen name="px_80">80px</dimen>
+    <dimen name="px_106">106px</dimen>
+    <dimen name="px_681">681px</dimen>
+    <dimen name="px_28">28px</dimen>
+    <dimen name="px_53">53px</dimen>
+    <dimen name="px_79">79px</dimen>
+    <dimen name="px_60">60px</dimen>
+    <dimen name="px_18">18px</dimen>
+
+
+    <!-- 选择城市item-->
+    <dimen name="item_city_location_text_top">50px</dimen>
+    <dimen name="item_city_location_text_size">30px</dimen>
+    <dimen name="item_city_location_layout_top">40px</dimen>
+    <dimen name="item_city_location_layout_height">60px</dimen>
+    <dimen name="item_city_location_img_left">10px</dimen>
+    <dimen name="item_city_location_img_width">38px</dimen>
+    <dimen name="item_city_location_img_height">40px</dimen>
+    <dimen name="item_city_location_tv_left">35px</dimen>
+    <dimen name="item_city_location_tv_right">30px</dimen>
+    <dimen name="item_city_location_tv_size">28px</dimen>
+    <dimen name="item_city_location_tv_top">35px</dimen>
+    <dimen name="item_city_location_tv_bottom">10px</dimen>
+
+    <dimen name="item_city_tag_height">50px</dimen>
+    <dimen name="item_city_tag_size">28px</dimen>
+    <dimen name="item_city_name_height">60px</dimen>
+    <dimen name="item_city_name_size">24px</dimen>
+    <dimen name="city_dividing_line_img_width">613px</dimen>
+    <dimen name="city_dividing_line_img_height">1px</dimen>
+    <!-- 选择城市item-->
+
+    <!-- 新闻-->
+    <dimen name="size_news_channel_item_vertical_margin">30px</dimen>
+    <dimen name="size_news_channel_item_horizontal_margin">60px</dimen>
+    <dimen name="size_news_channel_item_extra_margin">40px</dimen>
+    <!-- 新闻-->
+</resources>

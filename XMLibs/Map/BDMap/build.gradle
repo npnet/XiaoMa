@@ -1,0 +1,17 @@
+apply plugin: 'com.android.library'
+apply from: "$rootDir$Android"
+
+android library()
+android {
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+}
+
+dependencies {
+    api project(':XMLibs:Map:MapAdapter')
+    implementation files("${XMJars}BaiduTraceSDK_v3_0_7.jar")
+    implementation files("${XMJars}BaiduLBS_Android.jar")
+}

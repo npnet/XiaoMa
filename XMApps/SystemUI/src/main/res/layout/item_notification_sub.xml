@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaoma.systemui.topbar.view.SlideLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/notification_item_slide_container"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:ignore="PxUsage">
+
+    <TextView
+        android:id="@+id/tv_del_item"
+        android:layout_width="@dimen/notification_item_del_width"
+        android:layout_height="@dimen/notification_item_del_height"
+        android:background="@drawable/notification_item_btn_bg_del"
+        android:gravity="center"
+        android:text="@string/notification_item_btn_del"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/notification_item_del_text" />
+
+    <FrameLayout
+        android:id="@+id/notification_item_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="@dimen/notification_item_icon_size"
+            android:layout_height="@dimen/notification_item_icon_size"
+            android:layout_marginStart="24px"
+            android:layout_marginTop="30px"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="370px"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="168px"
+            android:layout_marginTop="64px"
+            android:ellipsize="end"
+            android:maxWidth="370px"
+            android:maxLines="1"
+            android:textColor="@color/notification_headsup_title_text"
+            android:textSize="@dimen/notification_headsup_title_text" />
+
+        <TextView
+            android:id="@+id/tv_text"
+            android:layout_width="510px"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="168px"
+            android:layout_marginTop="135px"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/notification_headsup_content_text"
+            android:textSize="@dimen/notification_headsup_content_text" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="110px"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="675px"
+            android:layout_marginTop="64px"
+            android:lineSpacingMultiplier="1.2"
+            android:textColor="@color/notification_headsup_time_text"
+            android:textSize="@dimen/notification_headsup_time_text" />
+    </FrameLayout>
+</com.xiaoma.systemui.topbar.view.SlideLayout>

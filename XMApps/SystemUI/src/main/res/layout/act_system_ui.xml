@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_status_bar_test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_status_bar_test"
+        android:textSize="@dimen/btn_open_notification_text" />
+
+    <Button
+        android:id="@+id/btn_avs_on"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="模拟倒车进入"
+        android:textSize="@dimen/btn_open_notification_text" />
+
+    <Button
+        android:id="@+id/btn_avs_off"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="模拟倒车退出"
+        android:textSize="@dimen/btn_open_notification_text" />
+</LinearLayout>

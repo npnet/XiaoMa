@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/message_voice_text"
+    android:layout_width="480px"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/chat_msg_voice_txt_bg_layerlist"
+    android:ellipsize="end"
+    android:gravity="end|center_vertical"
+    android:paddingStart="28px"
+    android:paddingTop="10px"
+    android:paddingEnd="28px"
+    android:paddingBottom="10px"
+    android:textColor="@color/chat_msg_lighting_text"
+    android:textSize="26px"
+    tools:ignore="PxUsage" />

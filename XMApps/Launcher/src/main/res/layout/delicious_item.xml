@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/delicious_item_width"
+    android:layout_height="@dimen/delicious_item_height">
+
+    <ImageView
+        android:id="@+id/delicious_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/emotional_food_not_data" />
+
+    <ImageView
+        android:id="@+id/iv_start"
+        android:layout_width="80px"
+        android:layout_height="40px"
+        android:scaleType="fitXY"
+        android:src="@drawable/icon_star_1"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/socer_linear"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/attraction_socer_height"
+        android:background="@drawable/collect_item_type_back"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="@dimen/delicious_socer_linear_height"
+            android:layout_height="@dimen/delicious_socer_linear_width"
+            android:src="@drawable/fraction_icon" />
+
+        <TextView
+            android:id="@+id/tv_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/attraction_socer_left"
+            android:gravity="center"
+            android:text="5.0"
+            android:textColor="#222222"
+            android:textSize="@dimen/attraction_socer_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/delicious_linear"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/attraction_collection_height"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/collect_item_type_back"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/iv_delicious"
+            android:layout_width="@dimen/iv_delicious_width"
+            android:layout_height="@dimen/iv_delicious_height"
+            android:src="@drawable/collect_star_select" />
+
+        <TextView
+            android:id="@+id/delicious_collection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/delicious_collection_left"
+            android:gravity="center"
+            android:text="@string/already_collect"
+            android:textColor="#222222"
+            android:textSize="@dimen/attraction_collection_size" />
+    </LinearLayout>
+</RelativeLayout>

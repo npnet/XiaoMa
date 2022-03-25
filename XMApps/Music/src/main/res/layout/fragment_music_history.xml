@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_collect_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.xiaoma.ui.view.XmScrollBar
+        android:id="@+id/scroll_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_scroll_bar"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="@dimen/size_scroll_bar_margin_end"
+        android:layout_marginStart="@dimen/size_scroll_bar_margin_start"
+        android:layout_marginBottom="@dimen/size_scroll_bar_margin_bottom"
+        android:visibility="invisible" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_music_history"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/scroll_bar"
+        android:paddingTop="@dimen/size_rv_padding_top"
+        android:requiresFadingEdge="horizontal" />
+</RelativeLayout>

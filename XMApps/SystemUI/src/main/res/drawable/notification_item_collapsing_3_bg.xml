@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:width="798px"
+        android:height="207px"
+        android:gravity="left|top"
+        android:left="40px"
+        android:top="40px">
+        <bitmap
+            android:gravity="left|top"
+            android:src="@drawable/notification_item_bg" />
+    </item>
+    <item
+        android:width="798px"
+        android:height="207px"
+        android:gravity="left|top"
+        android:left="20px"
+        android:top="20px">
+        <bitmap
+            android:gravity="left|top"
+            android:src="@drawable/notification_item_bg" />
+    </item>
+    <item
+        android:width="798px"
+        android:height="207px"
+        android:gravity="left|top">
+        <bitmap
+            android:gravity="left|top"
+            android:src="@drawable/notification_item_bg" />
+    </item>
+</layer-list>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/contact_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_contact_tab"
+        android:paddingLeft="@dimen/padding_contact_tab_left">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/contact_main_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="left"
+            app:tabBackground="@null"
+            app:tabIndicatorHeight="0dp"
+            app:tabPaddingEnd="@dimen/padding_contact_tab_end" />
+
+        <RelativeLayout
+            android:layout_width="@dimen/width_contact_newfriend_rl"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_contact_newfriend_right">
+
+            <TextView
+                android:id="@+id/contact_new_friend_btn"
+                android:layout_width="@dimen/width_contact_newfriend"
+                android:layout_height="@dimen/height_contact_newfriend"
+                android:layout_marginTop="@dimen/margin_contact_newfriend_top"
+                android:background="@drawable/contact_new_friend_bg"
+                android:gravity="center_horizontal"
+                android:paddingLeft="@dimen/padding_contact_newfriend_left"
+                android:paddingRight="@dimen/padding_contact_newfriend_left"
+                android:paddingTop="@dimen/padding_contact_newfriend_top"
+                android:text="@string/new_friend"
+                android:textColor="@color/club_white"
+                android:textSize="@dimen/font_text_middle" />
+
+            <TextView
+                android:id="@+id/contact_unread_new_friend_count"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/width_main_red_dot"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/conversation_newmsg_count_bg"
+                android:gravity="center"
+                android:minWidth="@dimen/width_main_red_dot"
+                android:paddingLeft="@dimen/padding_red_dot"
+                android:paddingRight="@dimen/padding_red_dot"
+                android:textColor="@color/club_white"
+                android:textSize="@dimen/font_text_red_dot"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <com.xiaoma.ui.view.ControllableViewPager
+        android:id="@+id/contact_main_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/margin_contact_rv_top" />
+
+</LinearLayout>

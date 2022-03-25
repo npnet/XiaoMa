@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="car_card_ripple_background">#BEBFC1</color>
+    <color name="side_bar_select_color">#2e9e3d</color>
+    <color name="side_bar_text">#ffffff</color>
+    <color name="delete_textview_color_pressed">#fd5406</color>
+    <color name="delete_textview_color_normal">#e70d0d</color>
+    <color name="dark_gray_text">#8598b4</color>
+    <color name="history_text_color">#bcc7de</color>
+    <color name="missing_call_color">#ef2c2d</color>
+    <color name="bluetooth_phone_unselected_tab_color">#8a919d</color>
+    <color name="call_selected_text_color">#f5c89a</color>
+    <color name="dialpad_number_default_text_color">#bcc7de</color>
+    <color name="call_last_time_color">#5d6d84</color>
+    <color name="hang_up_cover_color">#4D03121a</color>
+    <color name="gray_side_bar_text">#8a919d</color>
+    <color name="bluetooth_phone_background_color">#CC000000</color>
+</resources>

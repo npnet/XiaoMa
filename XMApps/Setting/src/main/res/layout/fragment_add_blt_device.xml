@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--<ImageView
+        android:id="@+id/blt_img"
+        android:background="@android:drawable/stat_sys_data_bluetooth"
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/fragment_margin_title"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/add_devices"
+            android:layout_width="@dimen/add_blt_bt_width"
+            android:layout_height="@dimen/add_blt_bt_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/fragment_margin"
+            android:gravity="center"
+            android:background="@drawable/icon_blt_match"
+            android:paddingBottom="@dimen/bluetooth_fragment_margin_left_right"
+            android:text="@string/add_device"
+            android:textSize="@dimen/bluetooth_fragment_text_size" />
+
+        <TextView
+            android:id="@+id/bluetooth_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/text_margin_match_button"
+            android:layout_toRightOf="@+id/add_devices"
+            android:text="@string/click_and_add_device"
+            android:textColor="@color/blt_match_hint"
+            android:textSize="@dimen/bluetooth_fragment_text_size" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/matched_hint_margin_top"
+        android:layout_marginBottom="@dimen/matched_hint_margin_bottom"
+        android:text="@string/matched_devices"
+        android:textColor="@color/blt_match_hint"
+        android:textSize="@dimen/bluetooth_fragment_text_size" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/bond_devices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

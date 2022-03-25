@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="types">
+        <item>LightFatigueDriving</item>
+        <item>MiddleFatigueDriving</item>
+        <item>HeavyFatigueDriving</item>
+        <item>Inattention</item>
+        <item>Smoking</item>
+        <item>PhoneCall</item>
+    </string-array>
+    <string-array name="light">
+        <item>困了嘛，休息一下吧</item>
+        <item>是不是累不累，休息会吧</item>
+        <item>感觉疲劳，就休息一下</item>
+    </string-array>
+    <string-array name="middles">
+        <item>你困啦，听首歌吧</item>
+        <item>听听音乐，清醒一下</item>
+        <item>是不是困了？来首歌吧</item>
+    </string-array>
+    <string-array name="smoke">
+        <item>行车过程中请不要吸烟</item>
+        <item>开车吸烟，很危险哦</item>
+        <item>别吸烟了，有害健康哦</item>
+    </string-array>
+    <string-array name="phone">
+        <item>打电话会分神哦</item>
+        <item>开车时请不要打电话哦</item>
+        <item>开车打电话危险哦</item>
+    </string-array>
+    <string-array name="attention">
+        <item>开车要正视前方哦</item>
+        <item>左顾右盼不安全呀</item>
+        <item>注意力要集中啦</item>
+    </string-array>
+    <string-array name="cancel">
+        <item>不</item>
+        <item>不需要</item>
+        <item>不要</item>
+        <item>不用</item>
+        <item>不听</item>
+        <item>关闭</item>
+        <item>取消</item>
+    </string-array>
+    <string-array name="ok">
+        <item>是</item>
+        <item>确定</item>
+        <item>好的</item>
+        <item>OK</item>
+        <item>来一首</item>
+    </string-array>
+</resources>
+

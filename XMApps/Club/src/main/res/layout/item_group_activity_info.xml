@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/width_group_card"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/group_activity_item_icon"
+            android:layout_width="@dimen/width_group_card"
+            android:layout_height="@dimen/width_group_card" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/padding_group_details_main_left">
+
+            <TextView
+                android:id="@+id/group_activity_item_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxEms="10"
+                android:singleLine="true"
+                android:textColor="@color/club_white"
+                android:textSize="@dimen/font_text_big_plus"/>
+
+            <TextView
+                android:id="@+id/group_activity_item_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/group_activity_item_title"
+                android:layout_marginTop="@dimen/margin_group_sign_top"
+                android:ellipsize="end"
+                android:lineSpacingExtra="@dimen/size_group_sign"
+                android:maxLines="2"
+                android:textColor="@color/club_white"
+                android:textSize="@dimen/font_text_middle" />
+
+            <TextView
+                android:id="@+id/group_activity_item_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:ellipsize="end"
+                android:maxEms="30"
+                android:singleLine="true"
+                android:textColor="@color/club_white"
+                android:textSize="@dimen/font_text_middle" />
+
+            <TextView
+                android:id="@+id/group_activity_item_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:ellipsize="end"
+                android:maxEms="5"
+                android:singleLine="true"
+                android:textColor="@color/text_activity_state_item"
+                android:textSize="@dimen/font_text_middle" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_activity_space" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@drawable/conversation_divider" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_activity_space" />
+
+</LinearLayout>

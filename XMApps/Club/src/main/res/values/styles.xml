@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="PxUsage">
+
+    <style name="main_tab_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/main_tab_text</item>
+        <item name="android:textSize">@dimen/font_text_big_plus</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+    <style name="main_tab_red_dot">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:minWidth">@dimen/width_main_red_dot</item>
+        <item name="android:paddingLeft">@dimen/padding_red_dot</item>
+        <item name="android:paddingRight">@dimen/padding_red_dot</item>
+        <item name="android:layout_height">@dimen/width_main_red_dot</item>
+        <item name="android:textColor">@color/club_white</item>
+        <item name="android:textSize">@dimen/font_text_red_dot</item>
+        <item name="android:background">@drawable/conversation_newmsg_count_bg</item>
+        <item name="android:gravity">center</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="main_tab_contact_red_dot">
+        <item name="android:layout_width">@dimen/width_main_contact_red_dot</item>
+        <item name="android:layout_height">@dimen/width_main_contact_red_dot</item>
+        <item name="android:textColor">@color/club_white</item>
+        <item name="android:textSize">@dimen/font_text_red_dot</item>
+        <item name="android:background">@drawable/main_contac_reddot_bg</item>
+        <item name="android:gravity">center</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="chat_opt_send_btn">
+        <item name="android:layout_width">110px</item>
+        <item name="android:layout_height">110px</item>
+        <item name="android:layout_marginLeft">20px</item>
+        <item name="android:layout_marginRight">20px</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="chat_popup_send_btn">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="item_message_location_poi_send">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/chat_msg_lighting_text</item>
+        <item name="android:textSize">28px</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="item_message_location_address_send" parent="@style/item_message_location_poi_send">
+        <item name="android:textSize">24px</item>
+        <item name="android:layout_marginTop">10px</item>
+    </style>
+
+    <style name="item_message_location_poi_receive" parent="@style/item_message_location_poi_send">
+        <item name="android:gravity">end</item>
+    </style>
+
+    <style name="item_message_location_address_receive" parent="@style/item_message_location_poi_receive">
+        <item name="android:textSize">24px</item>
+        <item name="android:layout_marginTop">10px</item>
+    </style>
+
+    <style name="chat_opt_back_btn">
+        <item name="android:layout_width">40px</item>
+        <item name="android:layout_height">40px</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginStart">80px</item>
+        <item name="android:background">@drawable/icon_back</item>
+        <item name="android:padding">10px</item>
+    </style>
+
+    <style name="chat_opt_title_bar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40px</item>
+        <item name="android:layout_marginTop">44px</item>
+    </style>
+
+    <style name="chat_opt_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxWidth">410px</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">32px</item>
+    </style>
+
+    <style name="chat_opt_fmt">
+        <item name="android:layout_width">728px</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/drawer_bg</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="chat_opt_btn_speak">
+        <item name="android:layout_width">183px</item>
+        <item name="android:layout_height">212px</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">130px</item>
+        <item name="android:background">@drawable/btn_chat_speak</item>
+    </style>
+
+    <style name="chat_opt_btn_container">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">100px</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="chat_msg_avatar">
+        <item name="android:layout_width">145px</item>
+        <item name="android:layout_height">145px</item>
+        <item name="android:background">@drawable/head_bg_ring</item>
+        <item name="android:padding">15px</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="chat_msg_location_container">
+        <item name="android:layout_width">520px</item>
+        <item name="android:layout_height">124px</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@drawable/chat_msg_location_bg</item>
+    </style>
+
+    <style name="chat_msg_voice_playing_wave">
+        <item name="android:layout_width">30px</item>
+        <item name="android:layout_height">40px</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+
+    <style name="chat_msg_occupy">
+        <item name="android:layout_width">90px</item>
+        <item name="android:layout_height">30px</item>
+        <item name="android:layout_marginTop">5px</item>
+        <item name="android:background">@drawable/chat_msg_user_occupy_bg</item>
+        <item name="android:textSize">20px</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="rp_type_select_btn">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:drawablePadding">70px</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">38px</item>
+    </style>
+
+    <style name="rp_send_edit_container">
+        <item name="android:layout_width">@dimen/rp_send_edit_width</item>
+        <item name="android:layout_height">@dimen/rp_send_edit_height</item>
+        <item name="android:background">@drawable/rp_send_et_bg</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingStart">25px</item>
+        <item name="android:paddingEnd">25px</item>
+    </style>
+
+    <style name="rp_open_dialog" parent="@style/custom_dialog2">
+        <item name="android:backgroundDimAmount">0.7</item>
+    </style>
+
+    <style name="text_view_light_blue">
+        <item name="android:textColor">@color/color_main_selector</item>
+    </style>
+</resources>

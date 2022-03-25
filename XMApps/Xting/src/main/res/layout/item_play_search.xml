@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_search_sure"
+            android:layout_width="39px"
+            android:layout_height="39px"
+            android:layout_marginLeft="2px"
+            android:src="@drawable/audio_selected"
+            android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/iv_search_icon"
+            android:layout_width="80px"
+            android:layout_height="80px"
+            android:src="@drawable/audio_search_default_bg"
+            android:layout_marginLeft="19px"/>
+
+        <TextView
+            android:id="@+id/tv_search_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#8a919d"
+            android:textSize="30px"
+            android:layout_marginLeft="50px"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_search_delete"
+        android:layout_width="39px"
+        android:layout_height="39px"
+        android:layout_marginLeft="1479px"
+        android:background="@drawable/audio_delete"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>
+

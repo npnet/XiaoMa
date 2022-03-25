@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="XMPopWindow" parent="@style/Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@color/translucent_pop_window_bg</item>
+        <item name="android:windowAnimationStyle">@style/NotAnimation</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:fitsSystemWindows">false</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:selectableItemBackground">@null</item>
+        <item name="android:selectableItemBackgroundBorderless">@null</item>
+        <item name="android:textColor">#ffffff</item>
+
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="Spinner" parent="Widget.AppCompat.Light.DropDownItem.Spinner">
+        <item name="android:paddingStart">0dp</item>
+        <item name="android:paddingEnd">0dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">24px</item>
+    </style>
+</resources>

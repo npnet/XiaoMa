@@ -1,0 +1,104 @@
+ext {
+    sdk = this.&sdk
+}
+
+class OnlineMusicSDK {
+    private static final String TYPE_TEST = "TEST"
+    private static final String TYPE_KW = "KW"
+
+    private static String pick(String sdkType) {
+        if (TYPE_KW.equalsIgnoreCase(sdkType)) {
+            return TYPE_KW
+        }
+        return TYPE_TEST
+    }
+}
+
+class BluetoothMusicSDK {
+    private static final String TYPE_TEST = "TEST"
+    private static final String TYPE_YQ = "YQ"
+
+    private static String pick(String sdkType) {
+        if (TYPE_YQ.equalsIgnoreCase(sdkType)) {
+            return TYPE_YQ
+        }
+        return TYPE_TEST
+    }
+}
+
+class UsbMusicSDK {
+    private static final String TYPE_TEST = "TEST"
+    private static final String TYPE_YQ = "YQ"
+
+    private static String pick(String sdkType) {
+        if (TYPE_YQ.equalsIgnoreCase(sdkType)) {
+            return TYPE_YQ
+        }
+        return TYPE_TEST
+    }
+}
+
+class SDK {
+    String usbMusicSDKType = UsbMusicSDK.TYPE_TEST
+    String onlineMusicSDKType = OnlineMusicSDK.TYPE_TEST
+    String bluetoothMusicSDKType = BluetoothMusicSDK.TYPE_TEST
+
+    void usbMusic(String sdk) {
+        this.usbMusicSDKType = sdk
+    }
+
+    void onlineMusic(String sdk) {
+        this.onlineMusicSDKType = sdk
+    }
+
+    void bluetoothMusic(String sdk) {
+        this.bluetoothMusicSDKType = sdk
+    }
+}
+
+def sdk(Closure closure) {
+    def sdk = new SDK()
+    closure.delegate = sdk
+    closure.call()
+
+    def usbMusicSDKType = UsbMusicSDK.pick(sdk.usbMusicSDKType)
+    setupUsbMusicSourceSet(usbMusicSDKType)
+
+    def onlineMusicSDKType = OnlineMusicSDK.pick(sdk.onlineMusicSDKType)
+    setupOnlineMusicSourceSet(onlineMusicSDKType)
+
+    def bluetoothMusicSDKType = BluetoothMusicSDK.pick(sdk.bluetoothMusicSDKType)
+    setupBluetoothMusicSourceSet(bluetoothMusicSDKType)
+
+}
+
+
+def setupUsbMusicSourceSet(String sdk) {
+    project.android.sourceSets.main.java {
+        if (UsbMusicSDK.TYPE_YQ.equalsIgnoreCase(sdk)) {
+            srcDir 'src/main/sdk/local/usb'
+        } else if(UsbMusicSDK.TYPE_TEST.equalsIgnoreCase(sdk)) {
+
+        }
+    }
+}
+
+def setupBluetoothMusicSourceSet(String sdk) {
+    project.android.sourceSets.main.java {
+        if (BluetoothMusicSDK.TYPE_YQ.equalsIgnoreCase(sdk)) {
+            srcDir 'src/main/sdk/local/bluetooth'
+        } else if(BluetoothMusicSDK.TYPE_TEST.equalsIgnoreCase(sdk)) {
+
+        }
+    }
+}
+
+def setupOnlineMusicSourceSet(String sdk) {
+    project.android.sourceSets.main.java {
+        if (OnlineMusicSDK.TYPE_KW.equalsIgnoreCase(sdk)) {
+            srcDir 'src/main/sdk/online'
+        } else if(OnlineMusicSDK.TYPE_TEST.equalsIgnoreCase(sdk)) {
+
+        }
+    }
+}

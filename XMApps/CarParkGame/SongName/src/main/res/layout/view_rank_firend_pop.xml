@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="800px"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_user_detail">
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="26px"
+        android:layout_height="51px"
+        android:layout_marginStart="68px"
+        android:src="@drawable/icon_back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_head"
+        android:layout_width="140px"
+        android:layout_height="140px"
+        android:layout_marginStart="414px"
+        android:layout_marginTop="100px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_sex"
+        android:layout_width="24px"
+        android:layout_height="24px"
+        android:layout_marginStart="520px"
+        android:layout_marginTop="206px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="260px"
+        android:layout_marginTop="302px"
+        android:ellipsize="end"
+        android:maxWidth="200px"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textSize="34px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="周杰伦周杰伦周杰伦" />
+
+    <TextView
+        android:id="@+id/tv_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="641px"
+        android:layout_marginTop="302px"
+        android:ellipsize="end"
+        android:maxWidth="200px"
+        android:singleLine="true"
+        android:textColor="#a1a7b3"
+        android:textSize="34px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="28岁" />
+
+    <TextView
+        android:id="@+id/tv_sign"
+        android:layout_width="448px"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="260px"
+        android:layout_marginTop="385px"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="@color/white"
+        android:textSize="30px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="偶喜欢偶喜欢偶喜欢偶喜欢偶喜欢偶喜欢偶喜欢偶喜欢偶喜欢偶喜欢偶喜欢" />
+
+    <LinearLayout
+        android:layout_width="635px"
+        android:layout_height="80px"
+        android:layout_marginStart="165px"
+        android:layout_marginTop="560px"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="240px"
+            android:layout_height="70px"
+            android:layout_marginRight="50px"
+            android:background="@drawable/btn_add_selector"
+            android:text="加为好友"
+            android:textColor="@color/white"
+            android:textSize="30px" />
+
+        <Button
+            android:id="@+id/btn_chat"
+            android:layout_width="240px"
+            android:layout_height="70px"
+            android:background="@drawable/btn_chat_selector"
+            android:text="私聊"
+            android:textColor="#4a36b2"
+            android:textSize="30px" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

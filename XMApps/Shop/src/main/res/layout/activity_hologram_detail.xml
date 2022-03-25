@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.xiaoma.ui.view.RoundImageView
+        android:id="@+id/iv_preview_image"
+        android:layout_width="@dimen/size_hologram_detail_preview"
+        android:layout_height="@dimen/size_hologram_detail_preview"
+        android:layout_marginStart="@dimen/size_hologram_preview_margin_start"
+        android:layout_marginTop="@dimen/size_hologram_preview_margin_top"
+        android:background="@drawable/person_bg"
+        android:scaleType="fitXY"
+        android:src="@drawable/test"
+        app:borderRadius="@dimen/size_circle_radius"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:type="round" />
+
+    <!-- 角标 -->
+    <ImageView
+        android:id="@+id/iv_subscript_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/icon_price_des"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@id/iv_preview_image"
+        app:layout_constraintTop_toTopOf="@id/iv_preview_image" />
+
+    <!-- 试听 -->
+    <ImageView
+        android:id="@+id/iv_test_play"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:src="@drawable/play"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/iv_preview_image"
+        app:layout_constraintEnd_toEndOf="@id/iv_preview_image"
+        app:layout_constraintStart_toStartOf="@id/iv_preview_image"
+        app:layout_constraintTop_toTopOf="@id/iv_preview_image" />
+
+    <ImageView
+        android:id="@+id/viewShade"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/height_shop_item_bottom_cover"
+        android:background="@drawable/bg_round_circle"
+        app:layout_constraintBottom_toBottomOf="@id/iv_preview_image"
+        app:layout_constraintEnd_toEndOf="@id/iv_preview_image"
+        app:layout_constraintStart_toStartOf="@id/iv_preview_image" />
+
+    <TextView
+        android:id="@+id/tv_preview_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14px"
+        android:maxLength="7"
+        android:singleLine="true"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/font_of_shop_26"
+        app:layout_constraintBottom_toBottomOf="@id/viewShade"
+        app:layout_constraintStart_toStartOf="@id/iv_preview_image"
+        app:layout_constraintTop_toTopOf="@id/viewShade"
+        tools:text="人物1" />
+
+    <TextView
+        android:id="@+id/tv_preview_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16px"
+        android:singleLine="true"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/font_of_shop_26"
+        app:layout_constraintBottom_toBottomOf="@id/viewShade"
+        app:layout_constraintEnd_toEndOf="@id/viewShade"
+        app:layout_constraintTop_toTopOf="@id/viewShade"
+        tools:text="下载100kb" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/layout_rmb"
+        android:layout_width="wrap_content"
+        android:layout_height="30px"
+        android:layout_marginTop="22px"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintLeft_toLeftOf="@id/iv_preview_image"
+        app:layout_constraintRight_toLeftOf="@id/layout_coin"
+        app:layout_constraintTop_toBottomOf="@id/iv_preview_image">
+
+        <TextView
+            android:id="@+id/tvDiscountRMB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:textColor="@color/color_number_yellow"
+            android:textSize="@dimen/font_of_shop_24"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/tvOriginalRMB"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="￥24" />
+
+        <com.xiaoma.shop.business.ui.view.SlopeDeleteTextView
+            android:id="@+id/tvOriginalRMB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_item_rmb_origin_price_margin_left"
+            android:includeFontPadding="false"
+            android:paddingLeft="1px"
+            android:paddingRight="1px"
+            android:textColor="@color/color_flow_tv_origin_price"
+            android:textSize="@dimen/font_of_shop_20"
+            app:layout_constraintBottom_toBottomOf="@id/tvDiscountRMB"
+            app:layout_constraintLeft_toRightOf="@id/tvDiscountRMB"
+            app:layout_constraintTop_toTopOf="@id/tvDiscountRMB"
+            app:slope_line_color="@color/color_flow_tv_origin_price"
+            tools:text="230" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/layout_coin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22px"
+        app:layout_constraintLeft_toRightOf="@id/layout_rmb"
+        app:layout_constraintRight_toRightOf="@id/iv_preview_image"
+        app:layout_constraintTop_toBottomOf="@id/iv_preview_image">
+
+        <ImageView
+            android:id="@+id/ivYellowCoin"
+            android:layout_width="@dimen/width_shop_item_yellow_coin"
+            android:layout_height="0dp"
+            android:src="@drawable/coin_yellow_middle"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/tvScoreDiscount"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvScoreDiscount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_item_score_icon_text_span"
+            android:includeFontPadding="false"
+            android:textColor="@color/color_number_yellow"
+            android:textSize="@dimen/font_of_shop_24"
+            app:layout_constraintBottom_toBottomOf="@id/ivYellowCoin"
+            app:layout_constraintLeft_toRightOf="@id/ivYellowCoin"
+            app:layout_constraintRight_toLeftOf="@id/tvScoreOriginal"
+            app:layout_constraintTop_toTopOf="@id/ivYellowCoin"
+            tools:text="1000" />
+
+        <com.xiaoma.shop.business.ui.view.SlopeDeleteTextView
+            android:id="@+id/tvScoreOriginal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5px"
+            android:includeFontPadding="false"
+            android:paddingLeft="1px"
+            android:paddingRight="2px"
+            android:textColor="@color/color_flow_tv_origin_price"
+            android:textSize="@dimen/font_of_shop_20"
+            app:layout_constraintBottom_toBottomOf="@id/ivYellowCoin"
+            app:layout_constraintLeft_toRightOf="@id/tvScoreDiscount"
+            app:layout_constraintTop_toTopOf="@id/ivYellowCoin"
+            app:slope_line_color="@color/color_flow_tv_origin_price"
+            tools:text="200" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <View
+        android:id="@+id/divide_line"
+        android:layout_width="@dimen/width_hologram_detail_divider_line"
+        android:layout_height="@dimen/height_hologram_detail_divider_line"
+        android:layout_marginStart="@dimen/size_divider_bg_margin_start"
+        android:background="@drawable/hologram_detial_divider_line"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/hologram_tab_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_hologram_tab_margin_start"
+        android:layout_marginTop="@dimen/size_hologram_tab_margin_top"
+        android:scrollIndicators="none"
+        app:layout_constraintStart_toEndOf="@id/divide_line"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tabIndicatorHeight="0dp"
+        app:tabMode="scrollable"
+        app:tabPaddingEnd="164px"
+        app:tabSelectedTextColor="@color/white"
+        app:tabTextAppearance="@style/TabLayoutTextStyle"
+        app:tabTextColor="@color/bt_unable" />
+
+
+    <com.xiaoma.shop.business.ui.view.DisableSwipeViewPager
+        android:id="@+id/hologram_view_pager"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/size_hologram_view_pager_top"
+        android:layout_marginBottom="@dimen/size_hologram_view_pager_bottom"
+        android:overScrollMode="never"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/hologram_tab_layout"
+        app:layout_constraintTop_toBottomOf="@id/hologram_tab_layout"
+        app:layout_constraintBottom_toTopOf="@id/bt_hologram_buy"/>
+
+    <LinearLayout
+        android:id="@+id/iv_pre_page"
+        android:layout_width="@dimen/size_pre_next_extension"
+        android:layout_height="@dimen/size_pre_next_extension"
+        android:layout_marginStart="@dimen/size_pre_page_margin_start"
+        android:layout_marginTop="@dimen/size_pre_page_margin_top"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="@dimen/width_hologram_detail_pre"
+            android:layout_height="@dimen/height_hologram_detail_pre"
+            android:src="@drawable/pre_page" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/iv_next_page"
+        android:layout_width="@dimen/size_pre_next_extension"
+        android:layout_height="@dimen/size_pre_next_extension"
+        android:layout_marginStart="@dimen/size_next_page_margin_start"
+        android:layout_marginTop="@dimen/size_next_page_margin_top"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="@dimen/width_hologram_detail_pre"
+            android:layout_height="@dimen/height_hologram_detail_pre"
+            android:src="@drawable/nex_page" />
+    </LinearLayout>
+
+    <com.xiaoma.shop.business.ui.view.ProgressButton
+        android:id="@+id/bt_hologram_buy"
+        android:layout_width="304px"
+        android:layout_height="74px"
+        android:layout_marginBottom="@dimen/size_hologram_buy_button_margin_bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:progressBg="@drawable/selector_btn_big_purchase"
+        app:text="@string/state_buy"
+        app:textColor="@android:color/white"
+        app:textPaddingBottom="18px"
+        app:textSize="28px" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,42 @@
+ext {
+    sdk = this.&sdk
+}
+
+class SettingSDK {
+    private static final String TYPE_TEST = "TEST"
+    private static final String TYPE_YQ = "YQ"
+
+    private static String pick(String sdkType) {
+        if (TYPE_YQ.equalsIgnoreCase(sdkType)) {
+            return TYPE_YQ
+        }
+        return TYPE_TEST
+    }
+}
+
+class SDK {
+    private settingSDKType = SettingSDK.TYPE_TEST
+
+    void setting(String sdk) {
+        this.settingSDKType = sdk
+    }
+}
+
+def sdk(Closure closure) {
+    def sdk = new SDK()
+    closure.delegate = sdk
+    closure.call()
+
+    def settingSDKType = SettingSDK.pick(sdk.settingSDKType)
+    setupSettingSourceSet(settingSDKType)
+}
+
+def setupSettingSourceSet(String sdk) {
+    project.android.sourceSets.main.java {
+        if (SettingSDK.TYPE_TEST.equalsIgnoreCase(sdk)) {
+            srcDir 'src/main/sdk/setting/test'
+        } else if (SettingSDK.TYPE_YQ.equalsIgnoreCase(sdk)) {
+            srcDir 'src/main/sdk/setting/yq'
+        }
+    }
+}

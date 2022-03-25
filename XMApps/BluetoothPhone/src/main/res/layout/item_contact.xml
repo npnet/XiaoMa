@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/letter_parent"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/contact_head_height"
+        android:background="@drawable/contact_letter_bg">
+
+        <TextView
+            android:id="@+id/letter"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/width_contact_adapter_margin_left"
+            android:text="A"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/call_phone_num_size" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/contact_item_height"
+        android:layout_marginLeft="@dimen/width_contact_adapter_margin_left"
+        android:layout_marginRight="@dimen/contact_item_margin_right">
+
+        <!--<com.xiaoma.bluetooth.phone.common.views.CircleCharAvatarView
+            android:id="@+id/head"
+            android:layout_width="32px"
+            android:layout_height="34px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5px"`
+            android:layout_toRightOf="@id/image" />-->
+
+        <TextView
+            android:id="@+id/contact_name"
+            android:layout_width="400px"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="@color/history_text_color"
+            android:textSize="@dimen/font_window_text" />
+
+        <!-- <TextView
+             android:id="@+id/phone_num"
+             android:layout_width="120px"
+             android:layout_height="match_parent"
+             android:layout_alignParentRight="true"
+             android:layout_centerVertical="true"
+             android:gravity="center"
+             android:singleLine="true"
+             android:textColor="@android:color/white"
+             android:textSize="@dimen/font_window_text" />-->
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="122px"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="50px"
+            android:paddingRight="@dimen/contact_collect_icon_margin_right"
+            android:src="@drawable/ic_collection" />
+
+        <ImageView
+            android:id="@+id/divide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/divide" />
+
+    </RelativeLayout>
+
+</LinearLayout>

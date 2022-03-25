@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container_packet"
+    android:layout_width="@dimen/rp_msg_item_width"
+    android:layout_height="@dimen/rp_msg_item_height"
+    android:background="@drawable/rp_msg_item_bg"
+    tools:ignore="PxUsage">
+
+    <ImageView
+        android:id="@+id/iv_rp_icon"
+        android:layout_width="59px"
+        android:layout_height="62px"
+        android:layout_marginStart="20px"
+        android:layout_marginTop="18px"
+        android:src="@drawable/rp_msg_item_logo" />
+
+    <TextView
+        android:id="@+id/tv_greeting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10px"
+        android:layout_marginTop="20px"
+        android:layout_marginEnd="10px"
+        android:layout_toEndOf="@+id/iv_rp_icon"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@android:color/white"
+        android:textSize="20px" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_greeting"
+        android:layout_alignStart="@+id/tv_greeting"
+        android:layout_marginTop="10px"
+        android:text="@string/rp_msg_item_click_open"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/tv_rp_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_rp_icon"
+        android:layout_marginStart="25px"
+        android:layout_marginTop="16px"
+        android:text="@string/rp_type_location"
+        android:textColor="@color/rp_msg_item_text_weak"
+        android:textSize="14px" />
+
+    <TextView
+        android:id="@+id/tv_poi_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tv_rp_type"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10px"
+        android:drawableStart="@drawable/rp_msg_item_location_icon"
+        android:drawablePadding="6px"
+        android:ellipsize="end"
+        android:maxWidth="@dimen/rp_msg_item_location_display_max_width"
+        android:maxLines="1"
+        android:textColor="@color/rp_msg_item_text_weak"
+        android:textSize="14px" />
+</RelativeLayout>

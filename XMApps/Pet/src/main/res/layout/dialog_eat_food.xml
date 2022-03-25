@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.8"
+        android:background="@android:color/black" />
+
+
+    <ImageView
+        android:id="@+id/iv_eat_food_icon"
+        android:layout_width="@dimen/size_buy_product_detail_image"
+        android:layout_height="@dimen/size_buy_product_detail_image"
+        android:layout_marginStart="@dimen/size_eat_food_image_margin_start"
+        android:layout_marginTop="@dimen/size_eat_food_image_margin_top"
+        android:src="@drawable/big_food_detail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_eat_food_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_eat_food_title_margin_start"
+        android:layout_marginTop="@dimen/size_eat_food_title_margin_top"
+        android:text="@string/big_food"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/pet_font_size_40"
+        app:layout_constraintStart_toEndOf="@id/iv_eat_food_icon"
+        app:layout_constraintTop_toTopOf="@id/iv_eat_food_icon" />
+
+
+    <TextView
+        android:id="@+id/tv_eat_food_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_eat_food_desc_margin_top"
+        android:text="补充能量"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/pet_font_size_30"
+        app:layout_constraintStart_toStartOf="@id/tv_eat_food_name"
+        app:layout_constraintTop_toBottomOf="@id/tv_eat_food_name" />
+
+
+    <TextView
+        android:id="@+id/tv_eat_food_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_eat_food_time_margin_top"
+        android:text="进食所需时间 12:00"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/pet_font_size_30"
+        app:layout_constraintStart_toStartOf="@id/tv_eat_food_name"
+        app:layout_constraintTop_toBottomOf="@id/tv_eat_food_desc" />
+
+
+    <TextView
+        android:id="@+id/tv_eat_food_inventory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_eat_food_balance_margin_top"
+        android:text="库存：3"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/pet_font_size_30"
+        app:layout_constraintStart_toEndOf="@id/tv_eat_food_time"
+        app:layout_constraintTop_toTopOf="@id/tv_eat_food_time" />
+
+
+    <TextView
+        android:id="@+id/eat_food_bt"
+        android:layout_width="@dimen/width_pay_button"
+        android:layout_height="@dimen/height_pay_button"
+        android:layout_marginTop="@dimen/size_eat_food_bt_margin_top"
+        android:background="@drawable/confirm_pay_selector"
+        android:gravity="center"
+        android:text="@string/eat_food"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/pet_font_size_26"
+        app:layout_constraintStart_toStartOf="@id/tv_eat_food_name"
+        app:layout_constraintTop_toBottomOf="@id/tv_eat_food_time" />
+
+
+    <TextView
+        android:id="@+id/tv_wait_eat_food"
+        android:layout_width="@dimen/width_pay_button"
+        android:layout_height="@dimen/height_pay_button"
+        android:layout_marginStart="@dimen/size_wait_eat_food_bt_margin_start"
+        android:background="@drawable/wait_eat_food_shape"
+        android:gravity="center"
+        android:text="@string/wait_eat_food"
+        android:textColor="#999999"
+        android:textSize="@dimen/pet_font_size_26"
+        app:layout_constraintBottom_toBottomOf="@id/eat_food_bt"
+        app:layout_constraintStart_toEndOf="@id/eat_food_bt"
+        app:layout_constraintTop_toTopOf="@id/eat_food_bt" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,363 @@
+ext.projectBuildPlatform = BUILD_PLATFORM
+ext {
+    application = this.&application
+    library = this.&library
+    buildPlatform = this.&buildPlatform
+}
+
+def setupDefaultConfig(String packageName) {
+    return {
+        if (!packageName?.isEmpty()) {
+            applicationId "${packageName}"
+        }
+        if (projectBuildPlatform.equalsIgnoreCase("PAD")) {
+            minSdkVersion project.MIN_SDK_VERSION as int
+            ndk {
+                // 如果需要在Module中自定义abiFilters
+                // 请先调用一下方法清空现有的abiFilters
+                // abiFilters?.clear()
+                abiFilters 'armeabi-v7a'
+            }
+        }
+        if (projectBuildPlatform.equalsIgnoreCase("CAR")) {
+            minSdkVersion 26
+            ndk {
+                // 如果需要在Module中自定义abiFilters
+                // 请先调用一下方法清空现有的abiFilters
+                // abiFilters?.clear()
+                abiFilters 'arm64-v8a'
+            }
+        }
+        targetSdkVersion project.TARGET_SDK_VERSION as int
+        versionCode project.APP_VERSION_CODE as int
+        versionName "${APP_VERSION_NAME}"
+    }
+}
+
+def releaseBuildConfig() {
+    return {
+        buildConfigField "String", "CAR_CHANNEL_ID", "\"$APP_CHANNEL_ID\""
+        buildConfigField "String", "SERVICE_ENV", "\"$APP_SERVICE_ENV\""
+        buildConfigField "String", "CAR_VERSION", "\"$CAR_VERSION\""
+        buildConfigField "String", "TEST_ICCID", "\"\""
+        buildConfigField "String", "TEST_UUID", "\"\""
+        buildConfigField "String", "TEST_IMEI", "\"\""
+        buildConfigField "String", "TEST_VIN", "\"\""
+        buildConfigField "String", "BUILD_PLATFORM", "\"$projectBuildPlatform\""
+        buildConfigField "String", "GIT_REV", "\"" + getGitRev() + "\""
+    }
+}
+
+def getGitRev() {
+    return 'git rev-parse HEAD'.execute(null, project.rootDir).text.trim()
+}
+
+def debugBuildConfig() {
+    return {
+        buildConfigField "String", "CAR_CHANNEL_ID", "\"$APP_CHANNEL_ID\""
+        buildConfigField "String", "SERVICE_ENV", "\"$APP_SERVICE_ENV\""
+        buildConfigField "String", "CAR_VERSION", "\"$CAR_VERSION\""
+        buildConfigField "String", "TEST_ICCID", "\"$TEST_ICCID\""
+        buildConfigField "String", "TEST_UUID", "\"$TEST_UUID\""
+        buildConfigField "String", "TEST_IMEI", "\"$TEST_IMEI\""
+        buildConfigField "String", "TEST_VIN", "\"$TEST_VIN\""
+        buildConfigField "String", "BUILD_PLATFORM", "\"$projectBuildPlatform\""
+        buildConfigField "String", "GIT_REV", "\"" + getGitRev() + "\""
+    }
+}
+
+def setupOutput() {
+    project.android.applicationVariants.all { variant ->
+        variant.outputs.each { output ->
+            String variantName = variant.getName().substring(0, 1).toUpperCase() + variant.getName().substring(1)
+            String assembleTask = "assemble" + variantName
+            tasks.getByName(assembleTask).doLast {
+                // 生成apk文件信息
+                String appName = project.getName()
+                // 目录名
+                String versionDir = variant.versionName
+                // 版本号
+                String version = variant.versionName/*.replace('.', '-')*/
+                // 运行平台
+                String buildPlatform = projectBuildPlatform
+                // 构建类型
+                String buildType = 'BUILD_TYPE'
+                variant.buildType.each {
+                    buildType = it.name.toUpperCase().trim()
+                }
+                // Git版本号
+                String gitRev = 'git rev-parse --short HEAD'.execute(null, project.rootDir).text.trim()
+                if (gitRev.length() > 8) {
+                    gitRev = gitRev.substring(0, 8)
+                }
+                // 渠道号
+                String channel = "$APP_CHANNEL_ID".trim()
+                // 服务器环境信息
+                String server = "$APP_SERVICE_ENV".trim()
+                // 构建时间
+                def date = new Date().format("MM-dd_HH-mm")
+                // 生成输出目录与文件名
+                String outputPath = "${rootProject.output}${versionDir}" + "/" + "${buildPlatform}_${server}"
+                String outputName = appName +
+                        '_' + version +
+                        '_' + channel +
+                        '_' + server +
+                        '_' + buildPlatform +
+                        '_' + buildType +
+                        '_' + date +
+                        '_' + gitRev +
+                        '.apk'
+                // 删除已存在的文件
+                File[] oldFiles = new File(outputPath).listFiles(new FileFilter() {
+                    @Override
+                    boolean accept(File file) {
+                        return file.name.startsWith(appName)
+                    }
+                })
+                for (File file : oldFiles) {
+                    delete file
+                }
+                // 复制文件到对应路径
+                copy {
+                    from output.outputFile
+                    into outputPath
+                    rename { name ->
+                        name.replace(name, outputName)
+                    }
+                }
+            }
+        }
+    }
+}
+
+def library() {
+    return {
+        if (projectBuildPlatform.equalsIgnoreCase("PAD")) {
+            compileSdkVersion project.COMPILE_SDK_VERSION as int
+        }
+        if (projectBuildPlatform.equalsIgnoreCase("CAR")) {
+            compileSdkVersion project.COMPILE_SDK_VERSION as int
+        }
+        buildToolsVersion "${BUILD_TOOLS_VERSION}"
+        defaultConfig setupDefaultConfig("")
+        buildTypes {
+            release releaseBuildConfig()
+            release {
+                minifyEnabled false
+                proguardFiles(android.getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro')
+            }
+            debug debugBuildConfig()
+        }
+    }
+}
+
+def buildPlatform(String buildPlatform) {
+    projectBuildPlatform = buildPlatform
+}
+
+def application(String packageName) {
+    handleDebuggable()
+    handleBuildPlatform(packageName)
+    return {
+        if (projectBuildPlatform.equalsIgnoreCase("PAD")) {
+            compileSdkVersion project.COMPILE_SDK_VERSION as int
+        }
+        if (projectBuildPlatform.equalsIgnoreCase("CAR")) {
+            compileSdkVersion project.COMPILE_SDK_VERSION as int
+        }
+        buildToolsVersion "${BUILD_TOOLS_VERSION}"
+        defaultConfig setupDefaultConfig("${packageName}")
+        signingConfigs genSigningConfigs(packageName)
+        buildTypes {
+            release releaseBuildConfig()
+            release {
+                signingConfig android.signingConfigs.release
+                manifestPlaceholders.put("CAR_CHANNEL_ID", "$APP_CHANNEL_ID")
+                manifestPlaceholders.put("XM_GIT_REV", getGitRev())
+                minifyEnabled false
+                proguardFiles android.getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
+                debuggable false
+            }
+            debug debugBuildConfig()
+            debug {
+                signingConfig android.signingConfigs.release
+                manifestPlaceholders.put("CAR_CHANNEL_ID", "$APP_CHANNEL_ID")
+                manifestPlaceholders.put("XM_GIT_REV", getGitRev())
+                minifyEnabled false
+                debuggable true
+            }
+        }
+        setupOutput()
+        lintOptions {
+            abortOnError false
+            disable 'GoogleAppIndexingWarning'
+        }
+    }
+}
+
+def genSigningConfigs(String packageName) {
+    return {
+        release {
+            storeFile file("${rootDir}/XMKeystore/yq/NJTCD058.keystore")
+            storePassword "NJTCD058"
+            keyAlias "NJTCD058"
+            keyPassword "NJTCD058"
+        }
+        debug {
+            storeFile file("${rootDir}/XMKeystore/yq/NJTCD058.keystore")
+            storePassword "NJTCD058"
+            keyAlias "NJTCD058"
+            keyPassword "NJTCD058"
+        }
+    }
+}
+
+def handleDebuggable() {
+    tasks.all {
+        if (it.name.matches("process.*Manifest")) {
+            it.doLast {
+                def android = new groovy.xml.Namespace('http://schemas.android.com/apk/res/android', 'android')
+                def manifestFile = file("${it.manifestOutputDirectory}/AndroidManifest.xml")
+                def manifest = new XmlParser().parse(manifestFile)
+                def application = manifest.application[0]
+                if (application == null) {
+                    return
+                }
+                if (it.name.contains("Release")) {
+                    application.attributes().put(android.debuggable, "false")
+                    def content = groovy.xml.XmlUtil.serialize(manifest)
+                    manifestFile.write(content)
+                }
+                if (it.name.contains("Debug")) {
+                    application.attributes().put(android.debuggable, "true")
+                    def content = groovy.xml.XmlUtil.serialize(manifest)
+                    manifestFile.write(content)
+                }
+
+            }
+        }
+    }
+}
+
+def handleBuildPlatform(String packageName) {
+    tasks.all {
+        if (it.name.matches("process.*Manifest")) {
+            if (projectBuildPlatform.equalsIgnoreCase("PAD")) {
+                removePermissionActivityNode(it)
+                if (!packageName.equalsIgnoreCase("com.xiaoma.oilconsumption")
+                        && !packageName.equalsIgnoreCase("com.xiaoma.songname")
+                        && !packageName.equalsIgnoreCase("com.xiaoma.dialect")
+                        && !packageName.equalsIgnoreCase("com.xiaoma.carwxsdkdemo")
+                        && !packageName.equalsIgnoreCase("com.qiming.fawcard.synthesize")
+                        && !packageName.equalsIgnoreCase("com.xiaoma.instructiondistribute")) {
+                    changeLaunchActivity(it)
+                }
+            }
+            if (projectBuildPlatform.equalsIgnoreCase("CAR")) {
+                addShareUserId(it, packageName)
+                removePermissionActivityNode(it)
+            }
+        }
+    }
+}
+
+def addShareUserId(Task task, String packageName) {
+    task.doLast {
+        def manifestFile = file("${it.manifestOutputDirectory}/AndroidManifest.xml")
+        def manifest = new XmlParser().parse(manifestFile)
+        boolean contains = false
+        manifest.attributes().each {
+            if (it.key.toString()?.contains('sharedUserId')) {
+                contains = true
+                return
+            }
+        }
+        if (contains) {
+            return
+        }
+        manifest.attributes().put('android:sharedUserId', 'android.uid.system')
+        def content = groovy.xml.XmlUtil.serialize(manifest)
+        manifestFile.write(content)
+    }
+}
+
+def changeLaunchActivity(Task task) {
+    task.doLast {
+        def android = new groovy.xml.Namespace('http://schemas.android.com/apk/res/android', 'android')
+        def manifestFile = file("${it.manifestOutputDirectory}/AndroidManifest.xml")
+        def manifest = new XmlParser().parse(manifestFile)
+        def application = manifest.application[0]
+        if (application == null) {
+            return
+        }
+        application.activity.each { activityNode ->
+            def activityName = activityNode.attribute(android.name)
+            if ('com.xiaoma.component.base.PermissionActivity' != activityName) {
+                activityNode.'intent-filter'.each { intentFilterNode ->
+                    def action = intentFilterNode.action
+                    if (action != null) {
+                        action.each { actionNode ->
+                            def actionName = actionNode.attribute(android.name)
+                            if ('android.intent.action.MAIN' == actionName) {
+                                actionNode.parent().remove(actionNode)
+                            }
+                        }
+                    }
+
+                    def category = intentFilterNode.category
+                    if (category != null) {
+                        category.each { categoryNode ->
+                            def categoryName = categoryNode.attribute(android.name)
+                            if ('android.intent.category.LAUNCHER' == categoryName) {
+                                categoryNode.parent().remove(categoryNode)
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        def nodeText = createPermissionActivityNode()
+        def node = new XmlParser().parseText(nodeText)
+        application.append(node)
+        def content = groovy.xml.XmlUtil.serialize(manifest)
+        manifestFile.write(content)
+    }
+}
+
+def createPermissionActivityNode() {
+    def xml = new groovy.xml.StreamingMarkupBuilder().bind {
+        mkp.declareNamespace(android: 'http://schemas.android.com/apk/res/android')
+        activity(
+                'android:name': 'com.xiaoma.component.base.PermissionActivity',
+                'android:screenOrientation': 'landscape'
+        ) {
+            'intent-filter' {
+                action('android:name': 'android.intent.action.MAIN')
+                category('android:name': 'android.intent.category.LAUNCHER')
+            }
+        }
+    }
+    xml.setUseDoubleQuotes(true)
+    return xml.toString()
+}
+
+def removePermissionActivityNode(Task task) {
+    task.doLast {
+        def android = new groovy.xml.Namespace('http://schemas.android.com/apk/res/android', 'android')
+        def manifestFile = file("${it.manifestOutputDirectory}/AndroidManifest.xml")
+        def manifest = new XmlParser().parse(manifestFile)
+        def application = manifest.application[0]
+        if (application == null) {
+            return
+        }
+        application.activity.each { activityNode ->
+            def activityName = activityNode.attribute(android.name)
+            if ('com.xiaoma.component.base.PermissionActivity' == activityName) {
+                System.err.println("${project.name}:DeleteNode: " + activityName)
+                activityNode.parent().remove(activityNode)
+            }
+        }
+        def content = groovy.xml.XmlUtil.serialize(manifest)
+        manifestFile.write(content)
+    }
+}

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.xiaoma.personal.account.ui.view.WheelView
+            android:id="@+id/year_view"
+            android:layout_width="@dimen/width_dialog_personal_age_wheel"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"
+            app:unit_text="@string/dialog_personal_age_year" />
+
+        <com.xiaoma.personal.account.ui.view.WheelView
+            android:id="@+id/month_view"
+            android:layout_width="@dimen/width_dialog_personal_age_wheel"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"
+            app:unit_text="@string/dialog_personal_age_month" />
+
+        <com.xiaoma.personal.account.ui.view.WheelView
+            android:id="@+id/day_view"
+            android:layout_width="@dimen/width_dialog_personal_age_wheel"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"
+            app:unit_text="@string/dialog_personal_age_day" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_dialog_age_high_light"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout" />
+</android.support.constraint.ConstraintLayout>

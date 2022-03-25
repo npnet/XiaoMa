@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="560px"
+    android:layout_height="300px"
+    android:background="@drawable/bg_dialog">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="30px"
+        android:text="提示"
+        android:textColor="#a1a7b2"
+        android:textSize="28px" />
+
+    <TextView
+        android:id="@+id/tv_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:gravity="center"
+        android:paddingTop="50px"
+        android:paddingBottom="40px"
+        android:textColor="@color/white"
+        android:text="已答完全部题目"
+        android:textSize="30px" />
+
+    <Button
+        android:id="@+id/sure"
+        android:layout_width="185px"
+        android:layout_height="70px"
+        android:layout_below="@id/tv_msg"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/dialog_sure_n"
+        android:gravity="center"
+        android:text="确定"
+        android:textColor="@color/white"
+        android:textSize="28px" />
+
+
+</RelativeLayout>

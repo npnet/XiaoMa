@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/stop_detail_text_left"
+        android:layout_marginTop="@dimen/stop_detail_text_top"
+        android:text="@string/shop_detail"
+        android:textSize="@dimen/stop_detail_text_size" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/stop_detail_linear_top"
+        android:layout_marginLeft="@dimen/stop_detail_linear_left"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="@dimen/stop_detail_small_linear_width"
+            android:layout_height="@dimen/stop_detail_small_linear_height"
+            android:background="@drawable/small_shop_frame"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/stop_detail_small_linear_left"
+            android:orientation="vertical"
+          >
+            <TextView
+                android:id="@+id/detail_shop_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:textSize="@dimen/stop_detail_shop_name_tv_size" />
+
+            <TextView
+                android:id="@+id/detail_shop_phone_tv"
+                android:includeFontPadding="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/detail_shop_phone_tv_top"
+                android:textSize="@dimen/detail_shop_phone_tv_size" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/stop_detail_small_linear_width"
+            android:layout_height="@dimen/stop_detail_small_linear_height"
+            android:layout_marginLeft="@dimen/stop_detail_small_two_linear_left"
+            android:layout_marginRight="@dimen/stop_detail_small_two_linear_right"
+            android:paddingLeft="@dimen/stop_detail_small_two_linear_padding_left"
+            android:gravity="center_vertical"
+            android:background="@drawable/small_shop_frame"
+            android:orientation="vertical">
+
+            <TextView
+                android:includeFontPadding="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/business_time"
+                android:textSize="@dimen/shop_detail_business_time_size" />
+            <TextView
+                android:includeFontPadding="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/business_time_top"
+                android:text="8:00-17:00"
+                android:textSize="@dimen/business_time_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/shop_info"
+        android:includeFontPadding="false"
+        android:layout_width="@dimen/shop_detail_info_text_width"
+        android:layout_height="@dimen/shop_detail_info_text_height"
+        android:layout_marginLeft="@dimen/shop_detail_info_text_left"
+        android:layout_marginTop="@dimen/shop_detail_info_text_top"
+        android:layout_marginRight="@dimen/shop_detail_info_text_right"
+        android:background="@drawable/big_shop_frame"
+        android:padding="@dimen/shop_detail_info_text_padding"
+        android:text="@string/not_information_store"
+        android:textSize="@dimen/shop_detail_info_text_size" />
+</LinearLayout>

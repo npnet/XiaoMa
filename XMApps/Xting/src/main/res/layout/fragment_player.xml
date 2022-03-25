@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fm_player_bg">
+
+    <ImageView
+        android:id="@+id/ivShrink"
+        android:layout_width="@dimen/width_player_shrink"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/size_shrink_margin_left"
+        android:layout_marginTop="@dimen/size_shrink_margin_top"
+        android:padding="@dimen/size_add_click_padding"
+        android:src="@drawable/fm_player_shrink_press"
+        app:layout_constraintDimensionRatio="w,1:1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:background="@android:color/holo_red_dark" />
+
+
+    <ImageView
+        android:id="@+id/ivShowPlayList"
+        android:layout_width="@dimen/width_player_operate"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/size_player_list_margin_left"
+        android:layout_marginTop="@dimen/size_player_list_margin_top"
+        android:src="@drawable/fm_player_operate_list_selector_press"
+        app:layout_constraintBottom_toTopOf="@id/ivLike"
+        app:layout_constraintDimensionRatio="w,1:1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <ImageView
+        android:id="@+id/ivLike"
+        android:layout_width="@dimen/width_player_operate"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/size_player_operate_margin_span"
+        android:src="@drawable/fm_player_operate_love_selector_press"
+        app:layout_constraintBottom_toTopOf="@id/ivListenToRecognize"
+        app:layout_constraintDimensionRatio="w,1:1"
+        app:layout_constraintLeft_toLeftOf="@id/ivShowPlayList"
+        app:layout_constraintTop_toBottomOf="@id/ivShowPlayList" />
+
+    <ImageView
+        android:id="@+id/ivListenToRecognize"
+        android:layout_width="@dimen/width_player_operate"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/size_player_operate_margin_span"
+        android:src="@drawable/fm_player_operate_listen_selector_press"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="w,1:1"
+        app:layout_constraintLeft_toLeftOf="@id/ivShowPlayList"
+        app:layout_constraintTop_toBottomOf="@id/ivLike" />
+
+    <com.xiaoma.xting.player.view.PlayerControlView
+        android:id="@+id/viewPlayControl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_player_cover_margin_left"
+        android:layout_marginTop="@dimen/size_Player_control_margin_top"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/ivShowPlayList"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </com.xiaoma.xting.player.view.PlayerControlView>
+
+    <com.xiaoma.ui.view.AutoScrollTextView
+        android:id="@+id/tvTitle"
+        android:layout_width="@dimen/width_player_program_name"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_player_program_name_margin_left"
+        android:layout_marginTop="@dimen/size_player_program_name_margin_top"
+        android:ellipsize="marquee"
+        android:gravity="start"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:textSize="@dimen/font_player_program_name"
+        app:layout_constraintBottom_toTopOf="@id/tvSubInfo"
+        app:layout_constraintLeft_toRightOf="@id/viewPlayControl"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="@string/test" />
+
+    <TextView
+        android:id="@+id/tvSubInfo"
+        android:layout_width="@dimen/width_player_program_name"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_player_sub_info_margin_top"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textSize="@dimen/font_player_sub_info"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/tvTitle"
+        app:layout_constraintRight_toRightOf="@id/tvTitle"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        tools:text="@string/test" />
+
+    <android.support.constraint.Group
+        android:id="@+id/groupVisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:constraint_referenced_ids="seekbar,tvProgress,tvDuration" />
+
+    <com.xiaoma.xting.player.view.XmSeekBar
+        android:id="@+id/seekbar"
+        android:layout_width="@dimen/width_player_seekbar"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_player_seekbar_margin_left"
+        android:layout_marginBottom="@dimen/size_player_seekbar_margin_bottom"
+        android:maxHeight="@dimen/size_seekbar_heigth"
+        android:minHeight="@dimen/size_seekbar_heigth"
+        android:paddingStart="8dp"
+        android:paddingEnd="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/viewPlayControl"
+        app:progress="0" />
+
+    <TextView
+        android:id="@+id/tvProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seekbar"
+        android:layout_marginStart="@dimen/size_player_progress_text_margin_left"
+        android:textSize="@dimen/font_player_seek_progress_text"
+        app:layout_constraintLeft_toRightOf="@id/viewPlayControl"
+        app:layout_constraintTop_toBottomOf="@id/seekbar"
+        tools:text="@string/test" />
+
+    <TextView
+        android:id="@+id/tvDuration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seekbar"
+        android:layout_marginStart="@dimen/size_player_duration_margin_left"
+        android:textSize="@dimen/font_player_seek_progress_text"
+        app:layout_constraintLeft_toRightOf="@id/tvProgress"
+        app:layout_constraintTop_toTopOf="@id/tvProgress"
+        tools:text="@string/test" />
+
+    <ImageView
+        android:id="@+id/ivClose"
+        android:layout_width="@dimen/width_player_close"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/size_player_close_margin_top"
+        android:layout_marginRight="@dimen/size_player_close_margin_right"
+        android:padding="@dimen/size_add_click_padding"
+        android:src="@drawable/fm_player_close"
+        android:visibility="gone"
+        app:layout_constraintDimensionRatio="w,1:1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvAudioSource"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1612px"
+        android:layout_marginTop="649px"
+        android:textColor="#BDBEC1"
+        android:textSize="30px"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@tools:sample/last_names" />
+
+    <ImageView
+        android:id="@+id/ivAudioSource"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/size_audio_source_margin_end"
+        android:layout_marginBottom="@dimen/size_audio_source_margin_bottom"
+        android:src="@drawable/level_audio_source"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

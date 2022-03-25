@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/layout_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/layout_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60px"
+            android:layout_marginBottom="12px"
+            android:orientation="horizontal"
+            android:paddingTop="32px">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="36px"
+                android:layout_height="36px"
+                android:src="@drawable/icon_stock" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20px"
+                android:gravity="center"
+                android:text="@string/stock_results_are_queried_as_follows"
+                android:textColor="@color/white"
+                android:textSize="28px" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_assistant_diver"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@id/layout_title"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:background="#33ffffff" />
+
+        <TextView
+            android:id="@+id/tv_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_assistant_diver"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="130px"
+            android:layout_marginTop="14px"
+            android:gravity="center"
+            android:text="00083"
+            android:textColor="@color/white"
+            android:textSize="24px" />
+
+        <TextView
+            android:id="@+id/tv_update_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_assistant_diver"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="14px"
+            android:layout_marginRight="130px"
+            android:gravity="center"
+            android:text="@string/update_time"
+            android:textColor="#998a919d"
+            android:textSize="20px" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_code"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="130px"
+            android:layout_marginTop="11px"
+            android:gravity="center"
+            android:text="@string/daw_car"
+            android:textColor="@color/white"
+            android:textSize="28px" />
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_update_time"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="11px"
+            android:layout_marginRight="130px"
+            android:gravity="center"
+            android:text="6.55(50%)"
+            android:textColor="#f00"
+            android:textSize="28px" />
+
+        <ImageView
+            android:id="@+id/iv_assistant_diver2"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@id/tv_name"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="16px"
+            android:layout_marginRight="30px"
+            android:background="#33ffffff" />
+
+        <LinearLayout
+            android:id="@+id/layout_info1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_assistant_diver2"
+            android:layout_marginLeft="60px"
+            android:layout_marginTop="21px"
+            android:layout_marginRight="60px">
+
+            <TextView
+                android:id="@+id/tv_opening_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/today_open"
+                android:textColor="#99ffffff"
+                android:textSize="24px" />
+
+            <TextView
+                android:id="@+id/tv_max_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/highest"
+                android:layout_marginLeft="150px"
+                android:textColor="#99ffffff"
+                android:textSize="24px" />
+
+            <TextView
+                android:id="@+id/tv_turnover_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="150px"
+                android:text="@string/hand_turnover_rate"
+                android:textColor="#99ffffff"
+                android:textSize="24px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_info1"
+            android:layout_marginLeft="60px"
+            android:layout_marginTop="21px"
+            android:layout_marginRight="60px">
+
+            <TextView
+                android:id="@+id/tv_yesterday_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/yesterday"
+                android:textColor="#99ffffff"
+                android:textSize="24px" />
+
+            <TextView
+                android:id="@+id/tv_min_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="150px"
+                android:text="@string/lowest"
+                android:textColor="#99ffffff"
+                android:textSize="24px" />
+
+
+            <TextView
+                android:id="@+id/tv_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="150px"
+                android:text="@string/volume"
+                android:textColor="#99ffffff"
+                android:textSize="24px" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_stock_note"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/query_stock_no_msg"
+        android:visibility="gone" />
+
+</FrameLayout>

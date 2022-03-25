@@ -1,0 +1,19 @@
+apply plugin: 'com.android.library'
+apply from: "$rootDir$Android"
+
+android library()
+
+android{
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation project(':XMLibs:Utils')
+    implementation project(':XMLibs:Network')
+    implementation project(':XMLibs:Config')
+    implementation project(':XMLibs:Thread')
+    implementation project(':XMLibs:Model')
+}

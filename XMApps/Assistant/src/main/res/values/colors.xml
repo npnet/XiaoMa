@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#ffffff</color>
+
+    <color name="white_text">#ffffff</color>
+
+    <color name="weather1_color">#d9d9ec</color>
+    <color name="weather2_color">#686890</color>
+    <color name="weather3_color">#3f3f52</color>
+
+    <color name="input_message_text_color">#8fa8cc</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="assistant_yellow_color">#E7B706</color>
+    <color name="assistant_voice_text_color">#ffffff</color>
+    <color name="assistant_voice_search_result_text_color">#ffffff</color>
+    <color name="unselected_text_color">#8a919d</color>
+    <color name="gray">#8a919d</color>
+    <color name="gold">#fbd3a4</color>
+    <color name="light_gold">#ffcd91</color>
+    <color name="dull_red">#9A3C13</color>
+    <color name="light_gray">#fefefe</color>
+    <color name="num_color">#fbd3a4</color>
+    <color name="red">#ff0000</color>
+    <color name="stock_green">#00d80a</color>
+</resources>

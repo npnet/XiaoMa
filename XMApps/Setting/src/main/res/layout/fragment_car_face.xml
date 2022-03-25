@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_setting_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right" />
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.xiaoma.setting.common.views.SwitchAnimation
+                android:id="@+id/safety_daw"
+                style="@style/style_switch_animation_car"
+                android:layout_marginTop="@dimen/go_home_margin_top"
+                android:layout_marginLeft="@dimen/px_105"
+                app:switchText="@string/safety_daw" />
+
+        <com.xiaoma.setting.common.views.SwitchAnimation
+            android:id="@+id/switch_face_recognize_system"
+            style="@style/style_switch_animation_car"
+            android:layout_marginTop="@dimen/go_home_margin_top"
+            android:layout_marginLeft="@dimen/px_105"
+            app:switchText="@string/face_recognition_system" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/go_home_margin_top"
+                android:orientation="vertical">
+
+                <!--<View
+                    style="@style/line"
+                    android:layout_marginLeft="@dimen/go_home_group_line_margin_left"
+                    android:layout_marginBottom="@dimen/go_home_group_line_margin_bottom" />-->
+
+                <com.xiaoma.setting.common.views.SwitchAnimation
+                    android:id="@+id/switch_fatigue_notification"
+                    style="@style/style_switch_animation_car"
+                    app:switchText="@string/fatigue_reminder"
+                    app:textColor="@color/secondary_color"
+                    app:textSize="@dimen/secondary_font">
+
+                    <com.xiaoma.setting.common.views.SettingItemView
+                        android:id="@+id/item_sensitivity_adjust"
+                        style="@style/style_setting_item_v2_car"
+                        android:layout_marginTop="@dimen/go_home_margin_top"
+                        app:titleSize="@dimen/secondary_font"
+                        app:titleColor="@color/secondary_color"
+                        app:segmentTexts="@string/low_medium_high"
+                        app:titleTexts="@string/sensitivity_adjustment"
+                        app:itemType="2"/>
+
+                </com.xiaoma.setting.common.views.SwitchAnimation>
+
+                <com.xiaoma.setting.common.views.SwitchAnimation
+                    android:id="@+id/switch_sight_notification"
+                    style="@style/style_switch_animation_car"
+                    android:layout_marginTop="@dimen/go_home_margin_top"
+                    app:switchText="@string/decentralized_reminder"
+                    app:textColor="@color/secondary_color"
+                    app:textSize="@dimen/secondary_font" />
+
+                <com.xiaoma.setting.common.views.SwitchAnimation
+                    android:id="@+id/switch_bad_action_notification"
+                    style="@style/style_switch_animation_car"
+                    android:layout_marginTop="@dimen/go_home_margin_top"
+                    app:switchText="@string/bad_driving_behavior_reminder"
+                    app:textColor="@color/secondary_color"
+                    app:textSize="@dimen/secondary_font" />
+
+            </LinearLayout>
+
+        </com.xiaoma.setting.common.views.SwitchAnimation>
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

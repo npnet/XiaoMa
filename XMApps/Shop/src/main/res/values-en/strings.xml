@@ -1,0 +1,191 @@
+<resources>
+    <string name="app_name">Shop</string>
+    <string name="theme">Theme</string>
+    <string name="flow">Traffic mall</string>
+    <string name="Hologram">Holographic</string>
+    <string name="VehicleSound">Vehicle sound</string>
+    <string name="tab_system_theme">System theme</string>
+    <string name="tab_theme_sound">TTS</string>
+    <string name="bt_buyed">My goods</string>
+    <string name="clothing_title">Cloth</string>
+    <string name="skill_title">Skills</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="prompt_title">Prompt</string>
+    <string name="pay_confirm">OK</string>
+    <string name="pay_cancel">Cancel</string>
+    <string name="balance_lack">Balance is insufficient</string>
+    <string name="earn_car_coin">To earn Car coin</string>
+    <string name="network_does_not_force">Network bad</string>
+    <string name="refreshing_the_next_page">Please refresh</string>
+    <string name="reload">Reload</string>
+    <string name="network_unavailable">Network exception, please try again later</string>
+    <string name="congratulate_pay_success">Purchase successful</string>
+    <string name="now_use_resource">Immediate use</string>
+    <string name="not_use_resource">Temporarily no use</string>
+    <string name="network_anomaly">Network exception, please try again later</string>
+    <string name="purchase_success">Purchase successful</string>
+    <string name="confirm">OK</string>
+
+    <string name="trial_first_start">Start probation</string>
+    <string name="confirm_to_buy">OK</string>
+    <string name="close">Close</string>
+    <string name="hint">Prompt</string>
+
+    <!-- 我的购买 -->
+    <string name="buy_success">Purchase successful</string>
+    <string name="buy_system_theme_title">System skin</string>
+    <string name="buy_voice_style_title">TTS</string>
+    <string name="buy_hologram_title">Holographic image</string>
+    <string name="buy_vehicle_sound_title">Vehicle sound</string>
+    <string name="start_clean_cache">Clean up</string>
+    <string name="clean_cache">Clear files</string>
+    <string name="use_text">Use</string>
+    <string name="load_text">Download</string>
+    <string name="unzip_executing">Unpacking</string>
+    <string name="buy_failed">Network exception, please try again later</string>
+    <string name="pay_timeout">Trade timeout, please try again</string>
+    <string name="all_select">Select all</string>
+    <string name="executing_clean_cache">Cache cleaning, please wait</string>
+    <string name="i_known">OK</string>
+
+    <string name="bind_hologram_title">全息奔腾APP账号绑定</string>
+    <string name="bind_hologram_step_one">下载手机APP</string>
+    <string name="bind_hologram_step_two">使用手机APP扫码</string>
+    <string name="bind_hologram_step_three">绑定完成</string>
+    <string name="load_install_after">下载安装后进入\n“我的-绑定车机账号”页面</string>
+    <string name="scan_qr_code_bind_hologram">扫描此二维码\n进行账号绑定</string>
+    <string name="in_phone_click_confirm_bind">手机APP内\n点击 “确认绑定” 后完成</string>
+    <string name="cancel_bound_account">解绑</string>
+    <string name="confirm_cancel_bound">确认解绑</string>
+    <string name="cancel_bound_account_desc">解除与全息奔腾APP账号绑定后，将清空已\n上传的自定义3D形象数据</string>
+
+
+    <!--Common-->
+    <string name="tab_integrated">Comprehensive</string>
+    <string name="tab_sales">Sales</string>
+    <string name="tab_latest">Recently</string>
+    <string name="tab_price_score">Price</string>
+
+    <!--个性主题-->
+    <string name="state_use">Use</string>
+    <string name="state_buy">Buy</string>
+    <string name="state_trial">Probation</string>
+    <string name="state_using">Using</string>
+    <string name="state_trying">In the trial</string>
+    <string name="state_download_pending">Downloading</string>
+    <string name="state_free">free</string>
+    <string name="state_download">Download</string>
+    <string name="state_update">Update</string>
+
+    <string name="hint_start_trying">Start probation!</string>
+    <string name="hint_switch_skin_fail">Failure</string>
+    <string name="hint_download_error">Download failed, please try again later!</string>
+
+    <string name="str_buy_count">%1$s Times</string>
+    <string name="str_download_progress">%1$d%%</string>
+
+    <!--皮肤详情-->
+    <string name="str_download_size">Download %1$s</string>
+
+    <!-- string format -->
+    <string name="confirm_use_car_coin">You are sure to purchase with %1$s Car coins?</string>
+    <string name="current_car_coin_balance">Current balance: %1$s Car coins</string>
+    <string name="buy_valid_for_the_month">Buy</string>
+    <string name="scanCodeToPayCash">Scan to pay cash￥</string>
+    <string name="down_load_size">%1$s</string>
+    <string name="down_load_number">%1$s Times</string>
+    <string name="describe_skins">【%1$s】%2$s</string>
+    <string name="rmb_price">￥%1$s</string>
+    <string name="scan_code_pay_cash">Scan to pay cash￥%1$s</string>
+    <string name="own_cache_size">Occupied %1$s</string>
+    <string name="selected_cache_size">Selected space%1$s</string>
+    <string name="skin_trial_msg">The skin trial of your selected【%1$s】%2$s system\nwill end in %3$d days and can only be used once.</string>
+    <string name="clean_cache_success">The %1$s space is successfully cleaned</string>
+
+    <!--整车音效-->
+    <string name="status_download">Download</string>
+    <string name="audio_sound">Audio sound</string>
+    <string name="instrument_sound">IC sound</string>
+    <string name="reversing_radar_distance">Reversing radar voice prompt</string>
+    <string name="lane_change_aid">LCA voice prompt</string>
+    <string name="bluetooth_phone_button_tone">Bluetooth phone voice prompt</string>
+    <string name="front_collision_warning">FCW voice prompt</string>
+    <string name="turning_tips">Turning voice prompt</string>
+    <string name="seat_belt_is_not_reminded">The seat belt no fastened voice prompt</string>
+    <string name="alarm_prompt">Alarm voice prompt</string>
+    <string name="message_notification">Message voice prompt</string>
+    <string name="prompt">Prompt</string>
+    <string name="str_pro_update_msg">Download completed, Using now?</string>
+    <string name="str_update_left">Update</string>
+    <string name="str_update_right">Cancel</string>
+    <string name="str_update_msg_one">\tDownloaded completed, ready to use.\nThe instrument and audio will be restarted during this process. Please ensure the following status:\n\t1.The vehicle remains powered but not activated\n\t2.The vehicle gear remains in the P gear\n\t3.Electronic parking is pulled up\n\n</string>
+    <string name="str_update_msg_two">\tTo keep you safe, keep the above status until the end of the update.</string>
+    <string name="str_pro_undone_update_msg">\tUpdate now?</string>
+    <string name="str_undone_update_msg_one">\tUpdate now?The instrument and audio will be restarted during \nthis process. Please ensure the following status:\n\t1.The vehicle remains powered but not activated\n\t2.The vehicle gear remains in the P gear\n\t3.Electronic parking is pulled up\n\n</string>
+    <string name="str_undone_update_msg_two">\tTo keep you safe, keep the above status until the end of the update.</string>
+    <string name="now_download_resource">Download</string>
+    <string name="not_download_resource">Temporarily not download</string>
+    <string name="congratulations_purchase_success">Purchase successful</string>
+    <string name="update_failed">Use failed, please try again later.</string>
+    <string name="click_toshow_scan_code">You can click the corre-\nsponding "buy" button to\npurchase the goods \nand the payment qr code\n will pop up. \n\nUsers can pay through ali-\npay or WeChat scanning\ncode.</string>
+    <string name="commodity_purchase">Buy Goods</string>
+    <string name="skip">Skip</string>
+
+    <string name="car_coins_price">Car coins price</string>
+    <string name="cash_price">Cash price</string>
+    <string name="content_loading">Loading</string>
+    <string name="load_failed">Load failed</string>
+    <string name="avaliable_flow">Available traffic: </string>
+    <string name="avaliable_flow_OM">Available traffic: 0.00M</string>
+    <string name="total_flow_OM">Total traffic: 0.00M</string>
+    <string name="total_flow">Total traffic: </string>
+    <string name="no_more">Nothing more</string>
+    <string name="total">Total: 30</string>
+    <string name="unpack_failed">Unpack failed</string>
+    <string name="wait_for_complete">Please wait until the current download is complete</string>
+    <string name="sure_to_buy_990">You are sure to purchase with 990 Car coins?</string>
+
+    <string name="successful_use">Use successful</string>
+    <string name="condition_not_satisfied">Unsatisfied condition</string>
+    <string name="condition_unsatisfied_check_retry">Unsatisfied condition</string>
+    <string name="please_select_flow">Please select the purchased traffic packet</string>
+    <string name="guide_goods_list">Good list</string>
+    <string name="guide_goods_list_description">You can switch different\nlists of items, purchase\nor use.\n\nYou can click on the item\nto view the details of the\nproduct.</string>
+    <string name="guide_goods_details">Good details</string>
+    <string name="guide_goods_details_description">After entering, you can see\nthe details of the correspo-\nnding goods.\n\nYou can view, purchase,or\ntry out the selected items,\nclicking on the picture to\nview the big picture.</string>
+    <string name="guide_goods_pic">Good picture</string>
+    <string name="guide_goods_pic_description">Click the picture to view\n the product picture. \n\nClick "close" to return to \nthe product details page.</string>
+
+    <string name="goods_info_cannot_obtain">No product information was obtained</string>
+    <string name="tips_select_res_for_clean">Please select the res you need to clean up</string>
+    <string name="tips_no_need_to_clean">no need to clean</string>
+    <string name="tips_3d_invalid_role">Invalid image</string>
+    <string name="tips_3d_invalid_cloth">Invalid clothing</string>
+    <string name="invalid_audition_url">Invalid demo URL</string>
+    <string name="invalid_download_url">Invalid download URL</string>
+    <string name="please_wait">Please wait until the current installation is complete</string>
+    <string name="tips_wait_download_complete">Please wait until the current download is complete</string>
+    <string name="tips_download_success_and_use">Download complete, click use switch</string>
+    <string name="trial_end_msg_format">"The skin trial of the【%1$s】system you selected is over\nYou can continue to use it after purchase？"</string>
+    <string name="trial_failed">The trial failed</string>
+    <string name="trial_success">Probation successful</string>
+    <!--<string name="skin_using_condition">\t切换使用主题皮肤过程中会出现界面卡顿,\n请您保证以下状态：\n\t1.车辆档位保持在P档\n\t2.电子驻车为拉起状态\n\n\t为保证您的行驶安全, 请保持以上状态直至更新结束。</string>-->
+    <string name="skin_using_condition_one">\tDuring the process of switching to the theme skin, the page will appear Karton. Please ensure the following status:\n\t1.Vehicle Gears Keep in P Gears\n\t2.Electronic parking in pull-up state\n\n</string>
+    <string name="skin_using_condition_two">\tTo ensure your driving safety, please keep the above status until the end of the update.</string>
+    <string name="verify_fail">Validation failed. Please try again</string>
+    <string name="invalid_tts_id">Invalid timbre ID</string>
+    <string name="play_audio_error">Playback failed！</string>
+    <string name="to_clean">To clean up</string>
+    <string name="download_limit_prompt">You have downloaded 10 system skins. \n Please try again after cleaning the downloaded skin cache data</string>
+    <string name="cash_purchasing">	Cash purchase</string>
+    <string name="coin_purchasing">Redeem</string>
+    <string name="buy_failuer">Purchase failed</string>
+    <string name="network_error">Network abnormal</string>
+    <string name="txt_close_dialog">Close windows</string>
+    <string name="automatically_close_the_popup">the popover window is automatically closed after%1$ds</string>
+    <string name="buy_prefix">Buy with</string>
+    <string name="loading">Loading…</string>
+    <string name="str_installing">Installing...</string>
+</resources>

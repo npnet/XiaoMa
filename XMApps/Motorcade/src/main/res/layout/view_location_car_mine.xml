@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/location_image_bg"
+        android:layout_width="@dimen/width_mine_bg"
+        android:layout_height="@dimen/width_mine_bg"
+        android:background="@drawable/bg_location_share_mine" />
+
+    <ImageView
+        android:id="@+id/iv_user_head"
+        android:layout_width="@dimen/width_mine_head"
+        android:layout_height="@dimen/width_mine_head"
+        android:layout_gravity="center" />
+</FrameLayout>

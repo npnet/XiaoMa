@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:id="@+id/answer_fragment"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <fragment
+        android:id="@+id/play_fragment"
+        android:name="com.xiaoma.songname.ui.fragment.PlayMusicFragment"
+        android:layout_width="804px"
+        android:layout_height="match_parent" />
+</LinearLayout>

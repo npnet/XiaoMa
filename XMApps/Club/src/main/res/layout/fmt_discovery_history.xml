@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_discovery_search_content" />
+
+        <RelativeLayout
+            android:id="@+id/discovery_history_rl"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_search_history_text">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/size_discovery_search_margin"
+                android:text="@string/search_history"
+                android:textColor="@color/club_white"
+                android:textSize="@dimen/font_text_middle" />
+
+            <Button
+                android:id="@+id/discovery_clean_history"
+                android:layout_width="@dimen/width_history_clean"
+                android:layout_height="@dimen/height_history_clean"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin_history_clean_right"
+                android:background="@null"
+                android:text="@string/clean_history"
+                android:textColor="@color/club_white"
+                android:textSize="@dimen/font_text_middle" />
+        </RelativeLayout>
+
+        <com.xiaoma.ui.view.FlowLayout
+            android:id="@+id/flow_search_history"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/size_discovery_search_top"
+            android:paddingLeft="@dimen/size_discovery_search_margin"
+            android:paddingRight="@dimen/size_discovery_search_margin"
+            android:paddingTop="@dimen/size_discovery_search_top"
+            app:horizontalSpacing="@dimen/size_discovery_search_item_space"
+            app:itemColor="@color/club_white"
+            app:itemSize="@dimen/font_text_small_plus"
+            app:singleLine="true"
+            app:textPaddingH="@dimen/size_discovery_search_item_padingh"
+            app:textPaddingV="@dimen/size_discovery_search_item_padingv"
+            app:verticalSpacing="@dimen/size_discovery_search_item_padingv" />
+
+    </LinearLayout>
+
+</FrameLayout>

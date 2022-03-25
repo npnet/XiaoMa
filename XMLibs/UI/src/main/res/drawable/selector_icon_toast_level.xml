@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:drawable="@color/color_transparent"
+        android:maxLevel="0" />
+    <item
+        android:drawable="@drawable/toast_loading"
+        android:maxLevel="1" />
+    <item
+        android:drawable="@drawable/toast_success"
+        android:maxLevel="2" />
+    <item
+        android:drawable="@drawable/toast_error"
+        android:maxLevel="3" />
+
+</level-list>

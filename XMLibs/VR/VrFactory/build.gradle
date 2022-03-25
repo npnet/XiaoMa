@@ -1,0 +1,19 @@
+apply plugin: 'com.android.library'
+apply from: "$rootDir$Android"
+
+android library()
+
+
+
+dependencies {
+    implementation project(':XMLibs:Utils')
+    implementation project(':XMLibs:Network')
+    implementation project(':XMLibs:Config')
+    implementation project(':XMLibs:Thread')
+    implementation project(':XMLibs:Model')
+    api project(path: ':XMLibs:VR:Vr')
+    api project(path: ':XMLibs:VR:OpenIflytek')
+    api project(path: ':XMLibs:VR:CarIflytek')
+    api project(':XMLibs:CarLib')
+    implementation project(path: ':XMLibs:UI')
+}

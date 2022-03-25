@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_hotel_policy_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="735px"
+        android:layout_marginTop="96px"
+        android:text="@string/hotel_policy"
+        android:textSize="30px" />
+
+    <TextView
+        android:id="@+id/tv_hotel_policy_tip_small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_hotel_policy_tip"
+        android:layout_marginLeft="524px"
+        android:layout_marginTop="20px"
+        android:text="@string/hotel_policy_tip"
+        android:textColor="@color/color_8a919d"
+        android:textSize="24px" />
+
+    <LinearLayout
+        android:id="@+id/ll_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_hotel_policy_tip_small"
+        android:layout_marginTop="60px"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="355px"
+            android:text="@string/hotel_policy_time"
+            android:textSize="30px" />
+
+        <TextView
+            android:id="@+id/tv_time_policy"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="120px"
+            android:textSize="30px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_cancel_policy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_time"
+        android:layout_marginTop="50px"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="355px"
+            android:text="@string/hotel_policy_cancel"
+            android:textSize="30px" />
+
+        <TextView
+            android:id="@+id/tv_cancel_policy"
+            android:layout_width="930px"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="120px"
+            android:lineSpacingExtra="5px"
+            android:textSize="32px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_add_bed_policy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_cancel_policy"
+        android:layout_marginTop="50px"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="264px"
+            android:text="@string/hotel_policy_add_bed"
+            android:textSize="30px" />
+
+        <TextView
+            android:id="@+id/tv_add_bed_policy"
+            android:layout_width="930px"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="120px"
+            android:lineSpacingExtra="5px"
+            android:textSize="30px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_pet_policy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_add_bed_policy"
+        android:layout_marginTop="50px"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/hotel_policy_pet"
+            android:layout_marginLeft="415px"
+            android:textSize="30px" />
+
+        <TextView
+            android:id="@+id/tv_pet_policy"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="120px"
+            android:textSize="30px" />
+    </LinearLayout>
+
+</RelativeLayout>

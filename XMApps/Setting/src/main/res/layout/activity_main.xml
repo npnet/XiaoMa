@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.ui.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_menu"
+        android:layout_width="@dimen/parent_menu_width"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/menu_margin"
+        android:layout_marginTop="60px"
+        android:layout_marginRight="@dimen/menu_margin">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv"
+            android:layout_width="@dimen/menu_width"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bg_main_left_tab"
+            />
+
+    </RelativeLayout>
+
+
+    <include
+        android:id="@+id/system_bar"
+        layout="@layout/system_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/system_bar_height"
+        android:layout_toRightOf="@+id/rl_menu" />
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/system_bar"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/rl_menu"></FrameLayout>
+
+</RelativeLayout>

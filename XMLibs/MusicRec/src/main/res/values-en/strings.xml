@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">XMLibs</string>
+    <string name="start_rec">开始听歌识曲</string>
+    <string name="stop_rec">停止听歌识曲</string>
+    <string name="click_re_recognition">Click to re-recognize</string>
+    <string name="no_recognition_song">No related songs are recognized, please re-recognize</string>
+    <string name="recognition_success">Click the icon to re-recognize</string>
+    <string name="recognition_music">Recognizing music...</string>
+    <string name="click_recognition_stop">Click the icon to stop re-cognizing</string>
+    <string name="no_network_retry">Network exception, please reload</string>
+    <string name="no_network_prompt">Click the icon to reload</string>
+    <string name="recognition_stop">Melody recognition, recognizing the music on playing</string>
+    <string name="click_recognition_music">Click to recognizing music</string>
+    <string name="recognition_record">record</string>
+    <string name="clear_recognition_record">Delete all the record</string>
+    <string name="music_no_install">音乐未安装</string>
+    <string name="in_loading">Reloaing...</string>
+
+    <string name="successful_recognition">我知道了，这是%s的《%s》</string>
+    <string name="failure_recognition">哎呀，我孤陋寡闻了，没听出来</string>
+    <string name="you_not_have_record">No record yet</string>
+</resources>

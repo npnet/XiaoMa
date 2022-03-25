@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">NewGuide</string>
+    <string name="guide_skip">Skip</string>
+    <string name="guide_finish">Novice guidance end</string>
+    <string name="guide_net_error">Network exception, you can view it in the novice guidance mode of the personal center.</string>
+    <string name="guide_ok">OK</string>
+    <string name="guide_reopen">If you need to play it again, you can view it in the novice guidance module of the personal center.</string>
+</resources>

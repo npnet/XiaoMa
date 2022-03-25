@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_personal_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/bg_guide_task_center_three"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_personal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px_81"
+        android:layout_marginTop="@dimen/px_94"
+        android:src="@drawable/icon_guide_personal"
+        app:layout_constraintLeft_toLeftOf="@+id/iv_personal_bg"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:text="@string/guide_task_record"
+        android:textColor="@color/color_edf6fe"
+        android:textSize="@dimen/px_32"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_personal"
+        app:layout_constraintLeft_toRightOf="@+id/iv_personal"
+        app:layout_constraintTop_toTopOf="@+id/iv_personal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px_51"
+        android:text="@string/guide_task_record_description"
+        android:textSize="@dimen/px_28"
+        android:textColor="@color/color_8a919d"
+        app:layout_constraintLeft_toLeftOf="@+id/iv_personal"
+        app:layout_constraintTop_toBottomOf="@+id/iv_personal" />
+
+    <TextView
+        android:id="@+id/tv_guide_skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px_79"
+        android:layout_marginBottom="@dimen/px_60"
+        android:background="@drawable/selector_guide_skip"
+        android:gravity="center"
+        android:text="@string/guide_skip"
+        android:paddingBottom="@dimen/px_18"
+        android:textColor="@color/color_edf6fe"
+        android:textSize="@dimen/px_28"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/iv_personal_bg" />
+
+    <ImageView
+        android:id="@+id/iv_wave_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0"
+        android:src="@drawable/bg_guide_wave_vertical_one"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_wave_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0"
+        android:src="@drawable/bg_guide_wave_vertical_two"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_wave_three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0"
+        android:src="@drawable/bg_guide_wave_vertical_three"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_gesture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0"
+        android:src="@drawable/icon_guide_hand_one"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

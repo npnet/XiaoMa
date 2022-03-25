@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_setting_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right" />
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/px_105"
+            android:orientation="vertical">
+
+
+            <com.xiaoma.setting.common.views.SwitchAnimation
+                android:id="@+id/go_home_switch"
+                style="@style/style_switch_animation_car"
+                android:layout_marginTop="@dimen/go_home_margin_top"
+                app:switchText="@string/setting_item_go_home">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.xiaoma.setting.common.views.RadioButtonLayout
+                        android:id="@+id/go_home_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/go_home_group_margin_top"
+                        android:paddingBottom="@dimen/go_home_group_margin_bottom"
+                        app:buttonHeight="@dimen/blt_switch_height"
+                        app:buttonNames="@string/setting_item_go_home_opt"
+                        app:buttonWidth="@dimen/wrong_psw_dialog_width"
+                        app:textSize="@dimen/default_switch_text_size" />
+
+                    <View
+                        style="@style/line_car"
+                        android:layout_marginBottom="@dimen/go_home_group_line_margin_bottom" />
+                </LinearLayout>
+
+
+            </com.xiaoma.setting.common.views.SwitchAnimation>
+
+
+            <com.xiaoma.setting.common.views.SwitchAnimation
+                android:id="@+id/leave_light"
+                style="@style/style_switch_animation_car"
+                android:layout_marginTop="@dimen/leave_light_margin_top"
+                android:layout_marginBottom="@dimen/leave_light_margin_bottom"
+                android:visibility="gone"
+                app:switchText="@string/setting_item_leave_light" />
+
+            <com.xiaoma.setting.common.views.SettingItemView
+                android:id="@+id/indoor_light"
+                style="@style/style_setting_item_v2_car"
+                android:layout_marginTop="@dimen/in_door_light_margin_top"
+                android:layout_marginBottom="@dimen/in_door_light_margin_bottom"
+                android:visibility="gone"
+                app:itemType="2"
+                app:segmentTexts="@string/setting_item_indoor_light_opt"
+                app:titleTexts="@string/setting_item_indoor_light" />
+
+
+            <com.xiaoma.setting.common.views.SwitchAnimation
+                android:id="@+id/welcome_light"
+                style="@style/style_switch_animation_car"
+                android:visibility="gone"
+                app:switchText="@string/setting_item_welcome_light" />
+
+            <com.xiaoma.setting.common.views.SettingItemView
+                android:id="@+id/siv_change_lane_flashing"
+                style="@style/style_setting_item_v2_car"
+                android:layout_marginTop="@dimen/change_flash_margin_top"
+                android:layout_marginBottom="@dimen/change_flash_margin_bottom"
+                android:visibility="gone"
+                app:itemType="2"
+                app:segmentTexts="@string/setting_item_change_lane_flashing_opt"
+                app:titleTexts="@string/setting_item_change_lane_flashing" />
+
+
+            <com.xiaoma.setting.common.views.SwitchAnimation
+                android:id="@+id/ihc"
+                style="@style/style_switch_animation_car"
+                app:switchText="@string/setting_item_ihc" />
+
+
+            <com.xiaoma.setting.common.views.SwitchAnimation
+                android:id="@+id/ambient_light"
+                style="@style/style_switch_animation_car"
+                android:layout_marginBottom="@dimen/px_80"
+                app:switchText="@string/ambient_light">
+
+                <include
+                    android:id="@+id/ll_ambient_light_content"
+                    layout="@layout/include_setting_brightness"
+                    android:visibility="gone" />
+            </com.xiaoma.setting.common.views.SwitchAnimation>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/board_or_class_name"
+    android:layout_width="@dimen/width_category_item"
+    android:layout_height="@dimen/height_category_item"
+    android:background="@drawable/preference_tag_state_select"
+    android:ellipsize="end"
+    android:gravity="center"
+    android:padding="@dimen/size_category_item_padding"
+    android:maxLines="1"
+    android:textSize="@dimen/size_category_item_text"
+    tools:text="本地频道" />

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Vr</string>
+
+    <string name="voice_name_w_mandarin">普通话</string>
+    <string name="voice_name_m_mandarin">男普通话</string>
+    <string name="voice_name_cantonese">粤语</string>
+    <string name="voice_name_sichuan">四川话</string>
+    <string name="voice_name_northeast">东北话</string>
+    <string name="voice_name_henan">河南话</string>
+    <string name="voice_name_hunan">湖南话</string>
+    <string name="voice_name_shaanxi">陕西话</string>
+
+    <string name="audition_voice_content">你好，很高兴认识你</string>
+    <string name="switch_voice_hint">好的，已经为你切换成</string>
+    <string name="get_mic_failed">当前录音通道已被占用，暂不可使用</string>
+</resources>

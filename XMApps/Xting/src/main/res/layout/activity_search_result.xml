@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/size_search_root_padding_top"
+    tools:context=".search.ui.SearchResultActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/width_search_root_padding"
+        android:paddingRight="@dimen/width_search_root_padding">
+
+        <ImageView
+            android:id="@+id/tv_search"
+            android:layout_width="@dimen/size_search_result_magnifier"
+            android:layout_height="@dimen/size_search_result_magnifier"
+            android:layout_marginRight="10px"
+            android:src="@drawable/select_icon_search" />
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tablayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:tabIndicatorHeight="0dp"
+            app:tabPaddingEnd="@dimen/size_search_result_tablayout_padding"
+            app:tabPaddingStart="@dimen/size_search_result_tablayout_padding" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:textSize="@dimen/font_search_result_title"
+            tools:text="关于xxx的搜索结果" />
+
+        <!--<TextView-->
+        <!--android:id="@+id/tv_show"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="5px"-->
+        <!--android:layout_marginRight="5px"-->
+        <!--android:text="生活之声"-->
+        <!--android:textColor="@color/search_title"-->
+        <!--android:textSize="@dimen/font_search_result_title" />-->
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/search_result_title_right"-->
+        <!--android:textSize="@dimen/font_search_result_title" />-->
+    </LinearLayout>
+
+    <com.xiaoma.ui.view.ControllableViewPager
+        android:id="@+id/fragment_search_music_vp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+</LinearLayout>

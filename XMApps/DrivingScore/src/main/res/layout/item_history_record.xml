@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.constraint.Group
+        android:id="@+id/groupDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="tvDate,iv" />
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2018-01-02"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@id/tvClock"
+        app:layout_constraintLeft_toRightOf="@id/iv"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvClock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="10:00"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@id/layout_slide"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvDate" />
+
+    <com.xiaoma.drivingscore.common.view.SwipeMenuLayout
+        android:id="@+id/layout_slide"
+        android:layout_width="@dimen/width_slide_delete"
+        android:layout_height="60dp"
+        android:clickable="true"
+        app:ios="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintLeft_toRightOf="@id/tvClock"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvClock">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:text="GoGogogogog"
+            android:textColor="@android:color/holo_red_dark" />
+
+        <TextView
+            android:id="@+id/tvDelete"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/holo_red_dark"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text=" Delete " />
+
+    </com.xiaoma.drivingscore.common.view.SwipeMenuLayout>
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:background="@android:color/holo_red_dark"
+        app:layout_constraintBottom_toBottomOf="@id/tvDate"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvDate" />
+
+    <ImageView
+        android:layout_width="2dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="4dp"
+        android:background="@android:color/holo_red_dark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

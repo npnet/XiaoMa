@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="status_bar_bg">#88000000</color>
+    <color name="navigation_bar_bg">#00000000</color>
+    <color name="status_bar_text_color">#fff</color>
+    <color name="notification_item_title_text">#ffffff</color>
+    <color name="notification_item_content_text">#8a919d</color>
+    <color name="notification_item_time_text">#ffffff</color>
+</resources>

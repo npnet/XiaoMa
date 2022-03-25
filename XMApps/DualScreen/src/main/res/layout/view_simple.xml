@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/media_icon"
+            android:src="@drawable/icon_music_yellow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+        <com.xiaoma.ui.view.MarqueeTextView
+            android:id="@+id/tv_simple"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:maxWidth="300px"
+            android:lineSpacingExtra="0px"
+            android:paddingTop="-5px"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:focusable="true"
+            android:textColor="@color/simple_tv_color_yellow"
+            android:textSize="22px" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/rl_phone_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="60px"
+        android:paddingRight="60px"
+        android:orientation="horizontal"
+        android:paddingTop="-5px"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:textColor="@color/simple_tv_color_yellow"
+            android:gravity="left|center_vertical"
+            android:ellipsize="end"
+            android:layout_weight="1"
+            android:textSize="22px" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="2"
+            android:textColor="@color/simple_tv_color_yellow"
+            android:ellipsize="end"
+            android:textSize="22px" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:gravity="right|center_vertical"
+            android:textColor="@color/simple_tv_color_yellow"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:textSize="22px" />
+    </LinearLayout>
+
+</RelativeLayout>

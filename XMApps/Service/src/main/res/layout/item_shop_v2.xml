@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/shop_item_linear"
+    android:layout_width="@dimen/item_shop_linear_width"
+    android:layout_height="@dimen/item_shop_linear_height"
+    android:layout_marginLeft="@dimen/item_shop_linear_left"
+    android:background="@drawable/bg_4s_shop">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="210px"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/check_iv"
+            android:layout_width="46px"
+            android:layout_height="@dimen/item_shop_check_iv_width"
+            android:layout_marginLeft="@dimen/item_shop_check_iv_left"
+            android:layout_marginTop="67px"
+            android:src="@drawable/check_bg" />
+
+
+        <LinearLayout
+            android:id="@+id/details_linear"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/item_shop_img_width"
+                android:layout_height="@dimen/item_shop_img_height"
+                android:layout_marginLeft="@dimen/item_shop_img_left"
+                android:layout_marginTop="30px"
+                android:src="@drawable/icon_4s_shop" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30px"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/shop_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30px"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:paddingRight="20px"
+                    android:textSize="@dimen/item_shop_name_text_size" />
+
+                <TextView
+                    android:id="@+id/shop_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/item_shop_address_text_top"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:paddingRight="20px"
+                    android:textSize="@dimen/item_shop_address_text_size" />
+
+                <TextView
+                    android:id="@+id/shop_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/item_shop_distance_text_top"
+                    android:paddingRight="20px"
+                    android:text="@string/not_nvi_info"
+                    android:textSize="@dimen/item_shop_distance_text_size" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20px">
+
+        <ImageView
+            android:id="@+id/shop_phone"
+            android:layout_width="@dimen/item_shop_phone_img_width"
+            android:layout_height="@dimen/item_shop_phone_img_height"
+            android:layout_marginLeft="160px"
+            android:src="@drawable/icon_call" />
+
+        <ImageView
+            android:id="@+id/shop_navigation"
+            android:layout_width="@dimen/item_shop_navigation_img_width"
+            android:layout_height="@dimen/item_shop_navigation_img_height"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="160px"
+            android:src="@drawable/icon_navi" />
+    </LinearLayout>
+</RelativeLayout>

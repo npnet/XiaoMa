@@ -1,0 +1,12 @@
+apply plugin: 'com.android.application'
+apply from: "$rootDir$Android"
+apply from: "$rootDir$Modules"
+
+buildPlatform 'CAR'
+android application('com.xiaoma.systemui')
+dependencies dependency(SystemUI)
+
+dependencies {
+    implementation "com.android.support:support-v4:${SUPPORT_LIBRARY_VERSION}"
+    implementation "com.android.support:recyclerview-v7:${SUPPORT_LIBRARY_VERSION}"
+}
